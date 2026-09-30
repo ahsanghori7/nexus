@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClinkAutocomplete matches snapshot 1`] = `
+<div
+  class="MuiBox-root"
+  data-testid="mui-box"
+  position="relative"
+>
+  <div
+    data-testid="autocomplete-container"
+  >
+    <label
+      style="font-weight: bold; color: black;"
+    >
+      Company
+    </label>
+    <div
+      style="position: relative;"
+    >
+      <span
+        style="position: absolute; top: 15px; left: 15px;"
+      >
+        <img
+          alt="search"
+          src="search-icon-url"
+        />
+      </span>
+      <div
+        class="MuiTextField-root "
+        data-testid="textfield"
+        inputprops="[object Object]"
+      >
+        <div
+          class="MuiInputBase-root"
+        >
+          <input
+            id="textfield-input-company"
+            inputprops="[object Object]"
+            name="company"
+            placeholder="Search companies..."
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

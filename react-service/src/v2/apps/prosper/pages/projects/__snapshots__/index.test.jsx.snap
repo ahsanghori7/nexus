@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Projects Component creates snapshot correctly 1`] = `
+<div
+  align="text-align: end"
+  class="find-opportunities-filters"
+  data-testid="container-styled"
+>
+  <div
+    data-testid="filter-header"
+  >
+    Filter Header
+  </div>
+  <div
+    data-testid="loading-component"
+  />
+  <div
+    data-testid="opportunities-styled"
+  >
+    <div
+      component="p"
+      data-testid="mui-typography"
+      variant="boldTitle"
+    >
+      no-opportunities-message-2
+      <a
+        href="https://example.com/resources"
+      >
+        resources
+      </a>
+    </div>
+  </div>
+  <div
+    data=""
+    data-testid="load-more"
+    loaded="6"
+  >
+    Load More
+  </div>
+</div>
+`;

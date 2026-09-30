@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useDocumentsForm takes a snapshot 1`] = `
+{
+  "control": {},
+  "errors": {},
+  "handleSubmit": [MockFunction],
+  "register": [MockFunction],
+  "reset": [MockFunction],
+  "resetField": [MockFunction],
+  "setValue": [MockFunction],
+  "trigger": [MockFunction],
+  "values": {
+    "mockField": "mockValue",
+  },
+}
+`;

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpportunitiesHeader.jsx matches snapshot with default state 1`] = `
+<div
+  class="Opportunitiesstyled__StyledOpportunitiesHeader-sc-pwx7fa-1 ccyBcl project-header"
+  data-cy="opportunities-header"
+>
+  <div
+    class="project-name"
+  >
+    <h1>
+      opportunities
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`OpportunitiesHeader.jsx matches snapshot with project data 1`] = `
+<div
+  class="Opportunitiesstyled__StyledOpportunitiesHeader-sc-pwx7fa-1 ccyBcl project-header"
+  data-cy="opportunities-header"
+>
+  <div
+    class="project-name"
+  >
+    <h1>
+      opportunities
+    </h1>
+  </div>
+</div>
+`;

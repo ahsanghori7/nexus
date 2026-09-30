@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledFilter creates a snapshot for basic usage 1`] = `
+<div
+  class="Filterstyled__StyledFilter-sc-1k2zg7k-0 ginIML"
+>
+  <div>
+    Basic filter content
+  </div>
+</div>
+`;
+
+exports[`StyledFilter creates a snapshot for select-status-table usage 1`] = `
+<div
+  class="Filterstyled__StyledFilter-sc-1k2zg7k-0 ginIML select-status-table"
+>
+  <div
+    class="select-status-table--dropdown"
+  >
+    <button>
+      Status Filter
+      <img
+        alt="dropdown"
+        src="dropdown.png"
+      />
+    </button>
+  </div>
+</div>
+`;

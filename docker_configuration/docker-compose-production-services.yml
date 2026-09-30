@@ -1,0 +1,50 @@
+version: '3.7'
+
+volumes:
+  logs:
+    driver: local
+
+services:
+  new-relic-agent:
+    container_name: newrelic-infra
+    image: newrelic/infrastructure:latest
+    environment:
+      - NRIA_LICENSE_KEY=${NEW_RELIC_LICENSE_KEY}
+    cap_add:
+      - SYS_PTRACE
+    network_mode: host
+    pid: host
+    privileged: true
+    volumes:
+      - "/:/host:ro"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    restart: unless-stopped
+
+  new-relic-php-daemon:
+    container_name: newrelic-php-daemon
+    image: newrelic/php-daemon:latest
+    restart: unless-stopped
+
+  account_service:
+    container_name: account_service
+    image: ${ECR_REGISTRY}/account_service:${VERSION}
+    env_file:
+      - ../account_service/.env
+    ports:
+      - "8081:80"
+
+  project_service:
+    container_name: project_service
+    image: ${ECR_REGISTRY}/project_service:${VERSION}
+    env_file:
+      - ../project_service/.env
+    ports:
+      - "8082:80"
+
+  document_service:
+    container_name: document_service
+    image: ${ECR_REGISTRY}/document_service:${VERSION}
+    env_file:
+      - ../document_service/.env
+    ports:
+      - "8083:80"

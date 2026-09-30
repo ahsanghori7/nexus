@@ -1,0 +1,2790 @@
+[
+  {
+    "footer": {
+      "company_name": "",
+      "subcontract": "",
+      "html": ""
+    },
+    "header": {
+      "address": [],
+      "company_name": "",
+      "company_reg": "",
+      "logo": "",
+      "web_address": ""
+    },
+    "name": "document",
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{b:Sub-Contract Sum Analysis}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["{b:MCLAREN}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Trade:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Sub-Contractor"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Project:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": ["{br}"]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries purple"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["{b:Item}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["{b:Description}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["{b:Qty}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["{b:Unit}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["{b:Rate}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["{b:Total}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{b:Sub-Contractor Design Works Analysis}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries purple"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{b:Sub-Total}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{b:Sub-Contract Works}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Provision of all supporting information, paperwork and data to demonstrate delivery of Sub-Contractors Sustainability Requirements."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["{b:5.0%}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["-00"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["-00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries purple"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-right"
+                        },
+                        "children": ["{b:Sub-Total}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries purple"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-right"
+                        },
+                        "children": ["{b:Gross Total}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries purple"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{b:Purchase Discount}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries purple"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-right"
+                        },
+                        "children": ["{b:Sub-Contract Sum}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["0.00"]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

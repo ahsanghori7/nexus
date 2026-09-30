@@ -1,0 +1,21 @@
+.react-select-container {
+  .react-select {
+    &__control {
+      border: 1px solid $tender-purple-light;
+      border-radius: 4px;
+      opacity: 1;
+
+      &:hover {
+        border: 1px solid $tender-purple;
+      }
+      &--is-focused,
+      &:not(:disabled):not(.disabled):active {
+        border-color: $tender-purple-light;
+      }
+      &--is-focused,
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgb(244, 244, 244);
+      }
+    }
+  }
+}

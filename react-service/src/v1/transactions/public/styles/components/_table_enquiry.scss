@@ -1,0 +1,115 @@
+.item-container {
+  table {
+    &.simple-table {
+      &.table-enquiry {
+
+        thead,
+        tbody {
+
+          td,
+          th {
+            font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+
+            &:first-child {
+              min-width: 24.5%;
+              max-width: 24.5%;
+              width: 24.5%;
+            }
+
+            &:nth-child(2) {
+
+              min-width: calc(44.5% - 130px);
+              max-width: calc(44.5% - 130px);
+              width: calc(44.5% - 130px);
+
+            }
+
+            &:nth-child(3) {
+              min-width: 12%;
+              max-width: 12%;
+              width: 12%;
+            }
+
+            &:nth-last-child(2) {
+              min-width: 19%;
+              max-width: 19%;
+              width: 19%;
+            }
+
+            &:last-of-type {
+              border-top-right-radius: 0;
+              min-width: 130px;
+              max-width: 130px;
+              width: 130px;
+            }
+          }
+
+          th {
+            font-size: 15px;
+            font-weight: initial;
+          }
+        }
+
+        thead {
+          th {
+            font-weight: bold;
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              font-size: 16px;
+
+              &:first-child {
+                font-size: 15px;
+              }
+
+              &:not(:first-of-type) {
+                font-weight: 500;
+              }
+
+              .actions-order {
+                .btn {
+
+                  &:hover,
+                  &:focus {
+                    background-color: $white;
+                    border-color: rgba(142, 141, 190, 0.35);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  .item-container {
+    table {
+      &.simple-table {
+        &.table-enquiry {
+          tbody {
+            tr {
+              td {
+                .actions-order {
+                  .action-item {
+                    .action-tooltip {
+                      top: -2.6rem;
+                      padding: 0.4rem;
+                      font-size: 0.7rem;
+                      transform: translateX(calc(-50% + 1rem));
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

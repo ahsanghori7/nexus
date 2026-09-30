@@ -1,0 +1,55 @@
+.clink-form {
+  max-width: $app-width;
+  display: flex;
+  flex-wrap: wrap;
+
+  .field-holder {
+    padding: 0px 10px;
+
+    &.react-select-field-holder,
+    &.overall-quote-value,
+    &.measure-work-value,
+    &.prelims,
+    &.other-sums,
+    &.programme {
+      flex: 1 0 50%;
+      max-width: 50%;
+    }
+
+    &.submit-button-holder {
+      flex: 1 0 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .close-button {
+        margin: 3px;
+      }
+      .save-button-container {
+        margin-right: 5px;
+      }
+    }
+
+    &.react-select-field-holder {
+      max-width: 100%;
+
+      .react-select-container {
+        .react-select {
+          &__control {
+            min-height: 40px;
+          }
+        }
+      }
+    }
+
+    &.dropzone-documents {
+      width: 100%;
+    }
+
+    &.programme {
+      button.info-tooltip-btn {
+        margin: 0;
+        transform: translate(6px, 0px);
+      }
+    }
+  }
+}

@@ -1,0 +1,240 @@
+name: Claude Code Review
+
+# PR review powered by Claude Code. For now it runs ONLY manually, from the Actions
+# tab (or `gh workflow run claude_code_review.yml -f pr_number=123`), so it can be
+# tested safely. The automatic triggers are already written below but commented out:
+# - automatically when a PR is opened (non-draft) or marked ready for review
+# - on demand, by posting a PR comment containing "code-review" (top-level comments
+#   and replies in inline review threads both work)
+# To enable them, uncomment the trigger blocks under `on:` AND swap the job-level
+# `if:` for the full expression kept in the comment above it.
+# Claude posts the review as PR review comments.
+#
+# Auth:
+# - Claude: a subscription (Pro/Max) OAuth token, NOT an Anthropic API key. Generate it
+#   locally with `claude setup-token` and store it as the repo secret CLAUDE_CODE_OAUTH_TOKEN.
+# - Jira: a Cloud API token (https://id.atlassian.com/manage-profile/security/api-tokens).
+#   Store JIRA_URL (https://c-link.atlassian.net), JIRA_USERNAME (your Atlassian email),
+#   and JIRA_API_TOKEN as repo secrets. This gives Claude a READ-ONLY Jira MCP tool
+#   (sooperset/mcp-atlassian) that it can choose to use for ticket context during the
+#   review. If the secrets are absent, the tool just won't connect and the review runs
+#   without it.
+
+on:
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "PR number to review"
+        required: true
+        type: string
+  # --- Automatic triggers (disabled for now — uncomment to enable, and update the
+  # --- job-level `if:` below to match) ---
+  # pull_request:
+  #   types: [opened, ready_for_review]
+  # issue_comment covers top-level PR conversation comments; replies inside inline
+  # review threads are a different event (pull_request_review_comment), so both are
+  # needed for "code-review" to work anywhere on the PR.
+  # issue_comment:
+  #   types: [created]
+  # pull_request_review_comment:
+  #   types: [created]
+
+# One review per PR at a time — a comment trigger landing while an auto-review is
+# already running queues instead of double-posting.
+concurrency:
+  group: claude-review-${{ github.event.inputs.pr_number || github.event.pull_request.number || github.event.issue.number }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+  id-token: write
+
+jobs:
+  review:
+    # Manual runs only for now. When the automatic triggers under `on:` are enabled,
+    # replace this `if:` with the full expression (YAML comments can't live inside a
+    # block scalar, so it's kept here instead):
+    #
+    #   if: >-
+    #     github.event_name == 'workflow_dispatch' ||
+    #     (github.event_name == 'pull_request' && github.event.pull_request.draft == false) ||
+    #     (github.event_name == 'issue_comment' && github.event.issue.pull_request && contains(github.event.comment.body, 'code-review') && github.event.comment.user.type != 'Bot') ||
+    #     (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, 'code-review') && github.event.comment.user.type != 'Bot')
+    #
+    # pull_request: skip drafts (they get reviewed on ready_for_review instead).
+    # issue_comment: only PR comments (not plain issues) containing "code-review".
+    # pull_request_review_comment: inline-thread replies containing "code-review".
+    # Both comment triggers ignore bot comments — the review itself replies to inline
+    # threads, so a bot reply quoting "code-review" must not re-trigger the workflow.
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    env:
+      # The PR to review, whichever event triggered us.
+      PR_NUMBER: ${{ github.event.inputs.pr_number || github.event.pull_request.number || github.event.issue.number }}
+      # Pin the Jira MCP server to a specific release. Bump this to upgrade — the version
+      # is part of the cache key, so a new value re-pulls instead of serving a stale image.
+      # Tags: https://github.com/sooperset/mcp-atlassian/pkgs/container/mcp-atlassian
+      MCP_ATLASSIAN_VERSION: "0.21.1"
+    steps:
+      - name: Checkout PR
+        uses: actions/checkout@v5
+        with:
+          ref: refs/pull/${{ env.PR_NUMBER }}/head
+          fetch-depth: 0
+
+      # Cache the MCP server image so cold runners don't re-pull it on every review.
+      # The pinned version is in the cache key, so bumping MCP_ATLASSIAN_VERSION above
+      # automatically invalidates the cache and pulls the new image.
+      - name: Restore MCP image cache
+        id: mcp_cache
+        uses: actions/cache@v5
+        with:
+          path: /tmp/mcp-atlassian-image.tar
+          key: mcp-atlassian-image-${{ env.MCP_ATLASSIAN_VERSION }}
+
+      # continue-on-error: a GHCR outage or pull failure must NOT abort the review. Jira
+      # context is optional — if the image isn't available, the MCP server just won't
+      # connect and Claude reviews from the diff alone.
+      - name: Load or pull MCP image
+        continue-on-error: true
+        run: |
+          if [ -f /tmp/mcp-atlassian-image.tar ]; then
+            docker load -i /tmp/mcp-atlassian-image.tar
+          else
+            docker pull ghcr.io/sooperset/mcp-atlassian:${MCP_ATLASSIAN_VERSION}
+            docker save ghcr.io/sooperset/mcp-atlassian:${MCP_ATLASSIAN_VERSION} -o /tmp/mcp-atlassian-image.tar
+          fi
+
+      # Write the MCP config to a file rather than inlining it in claude_args, so the JSON
+      # never has to survive arg-tokenization, and secrets are read from env at runtime
+      # (not baked into a long CLI string). Built with jq so secret values are properly
+      # JSON-escaped (a stray quote/backslash/newline in a token won't corrupt the file).
+      # The creds pass straight through to the docker-run container. READ_ONLY_MODE locks
+      # it to reads; ENABLED_TOOLS narrows the surface to the read tools Claude needs.
+      - name: Write Jira MCP config
+        env:
+          JIRA_URL: ${{ secrets.JIRA_URL }}
+          JIRA_USERNAME: ${{ secrets.JIRA_USERNAME }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+        run: |
+          jq -n \
+            --arg image "ghcr.io/sooperset/mcp-atlassian:${MCP_ATLASSIAN_VERSION}" \
+            --arg url "$JIRA_URL" \
+            --arg user "$JIRA_USERNAME" \
+            --arg token "$JIRA_API_TOKEN" \
+            '{
+              mcpServers: {
+                atlassian: {
+                  command: "docker",
+                  args: [
+                    "run", "--rm", "-i",
+                    "-e", "JIRA_URL",
+                    "-e", "JIRA_USERNAME",
+                    "-e", "JIRA_API_TOKEN",
+                    "-e", "READ_ONLY_MODE=true",
+                    "-e", "ENABLED_TOOLS=jira_get_issue,jira_search,jira_get_link_types,jira_get_project_issues",
+                    $image
+                  ],
+                  env: {
+                    JIRA_URL: $url,
+                    JIRA_USERNAME: $user,
+                    JIRA_API_TOKEN: $token
+                  }
+                }
+              }
+            }' > /tmp/mcp-config.json
+
+      # Read REVIEW.md into a step output so it can be injected directly into the prompt
+      # below, rather than telling Claude to "go read REVIEW.md first" (which it skims or
+      # deprioritizes). The review principles/bar are the FIRST thing in the prompt —
+      # the single most reliable place for an instruction to actually be followed. REVIEW.md
+      # stays the one editable source of truth; this step just inlines it at runtime.
+      # The working tree is the PR under review, whose branch may predate REVIEW.md —
+      # fall back to the copy on develop (fetch-depth: 0 above makes it available).
+      - name: Load REVIEW.md
+        id: review_md
+        run: |
+          {
+            echo 'content<<REVIEW_MD_EOF'
+            if [ -f REVIEW.md ]; then
+              cat REVIEW.md
+            else
+              git show origin/develop:REVIEW.md
+            fi
+            echo 'REVIEW_MD_EOF'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Claude PR review
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            ${{ steps.review_md.outputs.content }}
+
+            ---
+
+            The block above (from REVIEW.md) is the bar you hold for this review —
+            principles, severity, what to skip, how to engage. Everything below is just
+            the mechanics of where to look and how to post.
+
+            Review pull request #${{ env.PR_NUMBER }} in the
+            ${{ github.repository }} repository.
+
+            Gather context:
+            - `gh pr view ${{ env.PR_NUMBER }} --comments` for the
+              description AND the existing discussion (review comments, replies, and any
+              earlier bot review). Read it. Don't repeat a point someone already made.
+            - `gh pr diff ${{ env.PR_NUMBER }}` for the changes
+            - `gh api repos/${{ github.repository }}/pulls/${{ env.PR_NUMBER }}/files`
+              to get exact file paths and the line numbers you can comment on.
+            - `gh api repos/${{ github.repository }}/pulls/${{ env.PR_NUMBER }}/comments`
+              for existing inline review comments, with their IDs (you may want to reply to
+              some — see below).
+
+            You also have a read-only Jira tool (the `atlassian` MCP server). Use it
+            whenever ticket context would help — e.g. look up the ticket the PR
+            implements (OPV2-XXX / AI2-XXX from the branch name or title), read its
+            description/epic/linked issues, and check whether the PR actually delivers
+            what was asked for. It's your call when it's worth it; skip it if it isn't.
+
+            What to look for and the bar to hold are in the block above (REVIEW.md) and in
+            CLAUDE.md — don't restate them, apply them.
+
+            HOW TO POST THE REVIEW — use inline comments:
+            Create a single pull request review with comments anchored to the exact
+            lines, using the GitHub API. Build a JSON body and post it:
+
+              gh api --method POST \
+                repos/${{ github.repository }}/pulls/${{ env.PR_NUMBER }}/reviews \
+                --input review.json
+
+            where review.json looks like:
+              {
+                "event": "COMMENT",
+                "body": "<short overall summary>",
+                "comments": [
+                  {"path": "project_service/src/Domain/Foo/FooRepository.php", "line": 42,
+                   "side": "RIGHT", "body": "<the comment>"}
+                ]
+              }
+            Inline comments can ONLY target lines that appear in the diff. For anything
+            about the wider file or cross-cutting concerns, put it in the top-level "body".
+            If the API rejects a line, drop that inline comment into the summary instead.
+
+            REPLYING TO EXISTING THREADS — the when/whether is in the REVIEW.md block
+            above ("Engage the discussion"); the mechanics are:
+
+              gh api --method POST \
+                repos/${{ github.repository }}/pulls/${{ env.PR_NUMBER }}/comments/<COMMENT_ID>/replies \
+                -f body="<your reply>"
+
+            Group new findings by severity: blockers first, then worth-fixing, then the
+            (very few) nits.
+          claude_args: |
+            --model claude-opus-5
+            --mcp-config /tmp/mcp-config.json
+            --allowedTools "Bash(gh pr diff:*),Bash(gh pr view:*),Bash(gh api:*),Read,Grep,Glob,Write,mcp__atlassian__jira_get_issue,mcp__atlassian__jira_search,mcp__atlassian__jira_get_link_types,mcp__atlassian__jira_get_project_issues"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,47 @@
+### Create Project
+POST http://project_service.local/v1/project
+Content-Type: application/json;charset=utf-8
+
+{
+  "name" : " DQS",
+  "group_id": 4,
+  "logo": "dqs logo",
+  "type": 1,
+  "region": 1,
+  "reference": "ref #1",
+  "description": "mega description by dqs"
+}
+
+### PATCH Project
+PATCH http://project_service.local/v1/project/1
+Content-Type: application/json;charset=utf-8
+
+{
+  "name" : "DQS DANYE 4L",
+  "logo" : "baseSscu",
+  "reference": "ref d33 patch",
+  "description": "mega des",
+  "region": 2
+}
+
+### DELETE Project
+DELETE http://project_service.local/v1/project/1
+Content-Type: application/json;charset=utf-8
+
+### Create Tender History
+POST http://project_service.local/v1/project/3/tender/8/history
+Content-Type: application/json;charset=utf-8
+
+{
+  "sender_id": 1,
+  "status_id":  1,
+  "tender_history_type":  "Awarded",
+  "recipient_id": [2345,333],
+  "meta": {
+    "location":44,
+    "phone":"0323 32332",
+    "email": "dqs.dasdsd",
+    "company": "Company",
+    "name": "Dan"
+  }
+}

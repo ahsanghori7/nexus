@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArrowButton snapshot test 1`] = `
+<button
+  aria-label="Test Arrow Button"
+  class="test-class"
+  data-testid="styled-button"
+  type="button"
+>
+  <img
+    alt="Test Arrow Button"
+    src="test-icon-src"
+  />
+</button>
+`;

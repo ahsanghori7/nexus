@@ -1,0 +1,44 @@
+
+### GET all companies
+GET http://account_service.local/v1/company?limit=2
+Accept: application/json
+
+### GET all company types
+GET http://account_service.local/v1/company/types
+Accept: application/json
+
+### Create Compoany
+POST http://account_service.local/v1/company
+Content-Type: application/json;charset=utf-8
+
+{
+  "access_token" : "3f2f51c35c82dbcf9dc8c0aae2f0f1604cddbba9",
+  "account_id" : "117",
+  "email" : "potato@potato.com",
+  "name" : "dan",
+  "landline": "05445542",
+  "mobile": "0723232232",
+  "reg_number": "1262134",
+  "logo": "logo.jpg",
+  "slogan": "slogan",
+  "description": "Super description",
+  "type_id": "4"
+}
+
+### Update Company
+PATCH http://account_service.local/v1/account/3756/company
+Content-Type: application/json;charset=utf-8
+
+{
+  "access_token" : "3f2f51c35c82dbcf9dc8c0aae2f0f1604cddbba9",
+  "account_id" : "3756",
+  "email" : "1johnmple@potato.com",
+  "name" : "dan 2",
+  "landline": "05445542",
+  "mobile": "0723232232",
+  "reg_number": "1262134",
+  "logo": "logo11.jpg",
+  "slogan": "slogan 2",
+  "description": "Super description 3",
+  "type_id": "4"
+}

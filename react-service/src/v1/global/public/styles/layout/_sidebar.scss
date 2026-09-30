@@ -1,0 +1,128 @@
+.side-menu-bar-react {
+  background: $white;
+  margin-bottom: -10000px;
+  padding-bottom: 10000px;
+  overflow: hidden;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: wrap;
+  align-content: baseline;
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  min-height: 100%;
+  margin-left: 0px;
+
+  ul {
+    padding: 15px 0px 15px 0px;
+    margin: 0px;
+    width: 100%;
+    max-width: 200px;
+    position: fixed;
+
+    &:nth-child(1) {
+      padding: 30px 0px;
+    }
+
+    li {
+      list-style: none;
+
+      &[role='presentation'] {
+        font-size: 0.65rem;
+        color: rgba($sec-color, 0.7);
+        padding: 40px 0px 15px 5%;
+        text-transform: uppercase;
+      }
+
+      a {
+        @include font-bold;
+        font-size: 0.8rem;
+        color: #333;
+        text-decoration: none;
+        display: block;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 12px 12px 12px 5%;
+        transition: ease 300ms;
+        border-bottom: 1px solid rgba($sec-color, 0.1);
+
+        .link-slide {
+          position: absolute;
+          left: 0px;
+          top: 2px;
+          width: 2%;
+          height: 100%;
+          background-color: rgba($sec-color, 0.3);
+          transition: ease 300ms;
+        }
+
+        span {
+          position: relative;
+
+          &.material-icons {
+            svg {
+              margin-right: 10px;
+              font-size: 0.85rem;
+            }
+          }
+        }
+
+        .badge {
+          background: $main-color;
+          color: $white;
+          float: right;
+          margin: 2px 0px 0px 0px;
+          padding: 5px;
+
+          &.new {
+            background: $sec-color;
+            color: $white;
+          }
+        }
+
+        &:hover {
+          color: $sec-color;
+
+          .link-slide {
+            width: 100%;
+            transition: ease 300ms;
+          }
+        }
+
+        &.selected {
+          color: $sec-color;
+
+          .link-slide {
+            width: 100%;
+            transition: ease 300ms;
+          }
+        }
+      }
+    }
+  }
+}
+// TODO: Remove/Review this when closing/opening sidebar is implemented
+@media (max-width: 979px) {
+  .side-menu-bar-react {
+    display: none;
+    max-width: 100%;
+    width: 100%;
+    left: -100%;
+    margin-bottom: -15000px; /* any large number will do */
+    padding-bottom: 15000px;
+    overflow: hidden;
+    top: 0px;
+
+    &.active {
+      display: block;
+      position: absolute;
+      top: 60px;
+    }
+
+    ul {
+      max-width: 100%;
+    }
+  }
+}

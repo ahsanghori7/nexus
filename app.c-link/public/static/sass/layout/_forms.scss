@@ -1,0 +1,50 @@
+// Default styles for FORMS
+
+form {
+
+  &.access-account {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 50px;
+
+    .input-wrapper {
+      margin-bottom: 20px;
+      padding: 0px;
+      height: auto;
+      position: relative;
+
+      label {
+        display: block;
+
+        i {
+          padding-right: 5px;
+        }
+
+      }
+
+      input {
+        width: 100%;
+      }
+
+      .f-pass {
+        color: $clink-green;
+        font-size: 0.7rem;
+
+        &:hover {
+          color: $clink-pink;
+        }
+
+      }
+
+    }
+
+  }
+
+  button {
+    display: block;
+    margin: 15px auto;
+    @include d-button;
+  }
+
+}

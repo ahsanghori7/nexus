@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clink/router/InstructionsWrapper should create snapshot of component 1`] = `
+<div
+  data-testid="layout"
+>
+  <div
+    data-testid="title"
+  >
+    Edit test-instruction
+  </div>
+  <div
+    data-testid="breadcrumbs"
+  >
+    [{"name":"project-breadcrumb"},{"name":"test-instruction","rest":"test_instruction"}]
+  </div>
+  <div
+    data-testid="form-instruction"
+  >
+    Form Instruction Component
+  </div>
+</div>
+`;

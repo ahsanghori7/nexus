@@ -1,0 +1,84 @@
+@import '~bootstrap';
+@import 'pricing-documents';
+
+.progress-bar-stepper-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 20px 0;
+
+  .progress-bar-stepper {
+    padding: 0px;
+    max-width: 680px;
+    width: 60%;
+
+    &-title {
+      padding: 0px;
+      width: 40%;
+
+      .card {
+        .sector-header {
+          padding-left: 0px;
+
+          .breadcrumbs {
+            margin-left: 0;
+            margin-top: -0.75rem;
+
+            &-elem {
+              &:after {
+                margin-left: 20px;
+              }
+
+              a {
+                text-decoration: underline !important;
+                font-weight: normal;
+              }
+            }
+          }
+
+          h1 {
+            font-size: 1.85rem;
+          }
+        }
+      }
+    }
+
+    .progress-step-bar {
+      padding: 0.25rem 1.5rem;
+
+      &-label-title {
+        line-height: 1.2;
+      }
+
+      &-title {
+        letter-spacing: 0.85px;
+        font-size: 1.05rem;
+        line-height: 1.2;
+      }
+
+      &-indicator {
+        padding-left: 1rem;
+        padding-right: 2vw;
+
+        .progress-step-bar-inner {
+          .progress-step-bar-label {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+
+            &-title {
+              line-height: 1.2;
+            }
+          }
+
+          .progress-step-bar-line {
+            height: 1rem;
+
+            &.active,
+            &.completed {
+              border-width: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

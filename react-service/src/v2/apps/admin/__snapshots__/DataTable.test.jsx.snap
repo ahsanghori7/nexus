@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataTable Snapshot matches snapshot for loading state 1`] = `
+<div
+  data-testid="box"
+  style="padding-top: 6px;"
+>
+  <div
+    data-testid="loading-component"
+  >
+    Loading...
+  </div>
+</div>
+`;
+
+exports[`DataTable Snapshot matches snapshot for normal state 1`] = `
+<div
+  data-testid="box"
+  style="padding-top: 6px;"
+>
+  <div
+    data-testid="table"
+  >
+    <div
+      data-testid="table-content"
+    >
+      Table with 
+      2
+       rows and 
+      2
+       columns
+    </div>
+    <div
+      data-testid="table-pagination"
+    >
+      Pagination: 
+      5, 10, 20, 50, 100
+    </div>
+  </div>
+</div>
+`;

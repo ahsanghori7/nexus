@@ -1,0 +1,37 @@
+// Abstracts
+@import 'abstracts/mixins',
+        'abstracts/variables';
+
+//Base
+
+// Components
+@import 'components/_alerts',
+        'components/_buttons',
+        'components/_default-elements',
+        'components/_header-simplified',
+        'components/_select-box',
+        'components/_tabs',
+        'components/_tables';
+
+
+// Layout
+@import 'layout/_header',
+        'layout/_main-nav',
+        'layout/_forms',
+        'layout/_sidebar',
+        'layout/_dash-navigation',
+        'layout/_footer';
+
+// Pages
+@import 'pages/_login',
+        'pages/_signup',
+        'pages/_success-page',
+        'pages/_pricing',
+        'pages/main-contractor/_dashboard.scss',
+        'pages/main-contractor/_profile.scss',
+        'pages/_maintenance.scss';
+
+// Themes
+
+@import 'themes/_default-theme',
+        'themes/_custom-calendar-theme';

@@ -1,0 +1,62 @@
+.item-container {
+  &.no-tender {
+    @media (max-width: 1099px) {
+      width: 100%;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      width: 100%;
+    }
+
+    .no-tender-templates {
+      display: flex;
+      min-height: 530px;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+
+      .no-tender-templates-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h4 {
+          font-size: 25px;
+          color: $clink-purple;
+          font-weight: bold;
+          margin-bottom: 12px;
+
+          @include media('<tablet') {
+            font-size: 21px;
+          }
+        }
+
+        p {
+          font-size: 16px;
+          margin-bottom: 34px;
+
+          @include media('<tablet') {
+            font-size: 15px;
+          }
+        }
+
+        .green-button {
+          font-size: 21px;
+          border-radius: 30px;
+          padding: 10px 36px;
+          font-weight: bold;
+
+          @include media('<tablet') {
+            font-size: 15px;
+            padding: 8px 24px;
+          }
+
+          svg {
+            transform: translate(-6px, -3px) scale(1.3);
+          }
+        }
+      }
+    }
+  }
+}

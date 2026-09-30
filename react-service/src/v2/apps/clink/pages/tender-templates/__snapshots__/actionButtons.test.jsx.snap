@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TemplateActionsButtons matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    display="flex"
+    gap="2"
+  >
+    <div
+      title="view-document"
+    >
+      <button
+        color="primary"
+      >
+        <svg
+          data-testid="view-icon"
+        />
+      </button>
+    </div>
+    <div
+      title="delete-template"
+    >
+      <button
+        color="error"
+      >
+        <svg
+          data-testid="delete-icon"
+        />
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

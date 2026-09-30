@@ -1,0 +1,22 @@
+@import 'select-field';
+@import 'date-field';
+@import 'text-area-field';
+@import 'input-file-field';
+@import 'radio-input';
+@import 'tooltip';
+@import 'checkbox';
+@import 'money';
+
+.clink-form {
+  .required {
+    color: $clink-red;
+    display: inline-block;
+  }
+
+  .submit-button-holder {
+    text-align: center;
+    button {
+      margin: auto;
+    }
+  }
+}

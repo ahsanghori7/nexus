@@ -1,0 +1,407 @@
+body {
+  font-family: "Arial" !important;
+  font-size: 14px;
+}
+
+a {
+  color:#0000EE;
+  text-decoration:underline;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.header-img {
+  max-height: 50px;
+}
+
+.header-no-img {
+  height: 40px;
+}
+
+.header-details-row {
+  font-size: 10px;
+  text-align: right;
+}
+
+.header-details-first {
+  margin-top: -80px;
+}
+
+.footer-text {
+  text-align: right;
+  font-size: 10px;
+}
+
+.text-middle {
+  padding-top: 200px;
+  height: 100%;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.justified {
+  text-align: justify;
+}
+
+.coverpage table {
+  width: 100%;
+}
+
+.coverpage td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 5px;
+  margin: 0;
+}
+
+.coverpage h2 {
+  font-size: 20px;
+}
+
+.coverpage .centered-text {
+  font-size: 16pt;
+}
+
+.indented-content {
+  padding-left: 5px;
+  margin-left: 15%;
+}
+
+.ql-indent-2 {
+  padding-left: 5px;
+  margin-left: 15%;
+  text-align: left;
+}
+
+.small-indented {
+  margin-left: 5%;
+}
+
+.justified div {
+  width: 100%;
+  min-width: 600px;
+  text-align: justify;
+}
+
+.three-row-questionnaire th {
+  border-top: 1px solid #e2e2ee;
+  border-bottom: 1px solid #e2e2ee;
+  border-right: 1px solid #e2e2ee;
+}
+
+.three-row-questionnaire td {
+  border-right: 1px solid #e2e2ee;
+  border-bottom: 1px solid #e2e2ee;
+}
+
+.three-row-questionnaire th:nth-child(1),
+.three-row-questionnaire td:nth-child(1) {
+  border-left: 1px solid #e2e2ee;
+}
+
+.purple td {
+  background-color: #e2e2ee;
+}
+
+.gray-first td:nth-child(1),
+.gray-second td:nth-child(2),
+.gray-third td:nth-child(3) {
+  background-color: #e2e2ee;
+  border-color: #e2e2ee;
+  font-weight: bold;
+}
+
+.margin-left {
+  margin-left: 100px;
+}
+
+.no-margin-top {
+  margin-top: 0px !important;
+}
+
+.table.tc td {
+  text-align: justify;
+  padding-bottom: 20px;
+}
+
+.table.tc,
+.table.tc td:nth-child(2) {
+  border: none;
+}
+
+.table.tc td:nth-child(1) {
+  width: 25%;
+  border: none;
+}
+
+.table.tc.esd td:nth-child(1) {
+  width: 8%;
+  border: none;
+}
+
+.table.esd-three-row td:nth-child(3) {
+  width: 25%;
+}
+
+.table.schedule-attendance td:nth-child(2),
+.table.schedule-attendance th:nth-child(2) {
+  width: 19%;
+  border-left: 1px solid #e2e2ee;
+}
+
+.table.schedule-attendance td:nth-child(3),
+.table.schedule-attendance th:nth-child(3) {
+  width: 18%;
+  border-left: 1px solid #e2e2ee;
+}
+
+.align-left td:nth-child(1) {
+  text-align: left;
+}
+
+.bullet-list td:nth-child(1) {
+  width: 6%;
+  padding-left: 20px;
+  vertical-align: top;
+}
+
+.bullet-list td:nth-child(2) {
+  padding-left: 0;
+  width: 94%;
+}
+
+.table.tc .pad-0 td:nth-child(1) {
+  padding-left: 0px;
+  vertical-align: top;
+}
+
+.table.tc .pad-15 td:nth-child(1) {
+  padding-left: 30px;
+  vertical-align: top;
+}
+
+.table.tc .pad-20 td:nth-child(1) {
+  padding-left: 40px;
+  vertical-align: top;
+}
+
+.table.tc .pad-40 td:nth-child(1) {
+  padding-left: 60px;
+  vertical-align: top;
+}
+
+.table.tc .pad-60 td:nth-child(1) {
+  padding-left: 80px;
+  vertical-align: top;
+}
+
+.table.tc .pad-80 td:nth-child(1) {
+  padding-left: 100px;
+  vertical-align: top;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.form-tender hr {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  text-align: center;
+  height: 1.5em;
+}
+
+.form-tender hr:before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+
+.hidden-reference {
+  visibility: hidden;
+}
+
+.form-tender hr:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  background-color: white;
+}
+
+.form-tender .hrt .hrt__elem {
+  display: table-cell;
+  background-color: white;
+  width: 40%;
+}
+
+.form-tender .hrt .hrt__elem.hrt__elem--center {
+  padding: 0 8px;
+  width: 20%;
+  text-align: center;
+}
+
+.red {
+  color: red;
+}
+
+.pink {
+  color: #d1347d;
+}
+
+.no-border.table,
+.no-border.table td:nth-child(1),
+.no-border.table td:nth-child(2),
+.no-border.table td:nth-child(3),
+.no-border.table td:nth-child(4) {
+  border: none;
+}
+
+.big-table.table td {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.pad-bot-25.table td {
+  padding-bottom: 25px;
+}
+
+.instruction-paragraph p {
+  margin: 0;
+  padding: 0;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.table.normalize-font-size {
+  overflow: wrap;
+}
+
+.table.hidden-overflow {
+  overflow: hidden;
+}
+
+.table.chosen-options {
+  overflow: wrap;
+  text-align: justify;
+  vertical-align: top;
+}
+
+.table.chosen-options td:nth-child(1),
+.table.chosen-options td:nth-child(3) {
+  width: 20%;
+  text-align: left;
+}
+
+.table.inner-two-rows td:nth-child(1),
+.table.inner-two-rows td:nth-child(2) {
+  text-align: center;
+  width: 50%;
+}
+
+.table.inner-three-rows td:nth-child(1),
+.table.inner-three-rows td:nth-child(2),
+.table.inner-three-rows td:nth-child(3) {
+  text-align: center;
+  width: 33%;
+  vertical-align: top;
+  text-align: left;
+}
+
+.justified-row td:nth-child(1),
+.justified-row td:nth-child(2),
+.justified-row td:nth-child(3) {
+  text-align: justify;
+}
+
+.centered-row td:nth-child(1),
+.centered-row td:nth-child(2),
+.centered-row td:nth-child(3) {
+  text-align: center;
+}
+
+.first-top-align td {
+  vertical-align: top;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.light-purple td {
+  background-color: #f3f3f9;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table.schedule-attendance td,
+.table.schedule-attendance th {
+  border-left: 1px solid #e2e2ee;
+}
+
+ol li ol {
+  list-style-type: lower-alpha !important;
+  list-style-position: inside !important;
+}
+
+ol li ol li ol {
+  list-style-type: lower-roman !important;
+  list-style-position: inside !important;
+}
+
+.row-pb-5 td {
+  padding-bottom: 5px;
+}
+
+.row-pb-10 td {
+  padding-bottom: 10px;
+}
+
+.row-pb-15 td {
+  padding-bottom: 15px;
+}
+
+.bullet-list-alt td:nth-child(1) {
+  width: 6%;
+  vertical-align: top;
+}
+
+.bullet-list-alt td:nth-child(2) {
+  width: 94%;
+  padding-right: 8px;
+}
+
+.bullet-list-alt .pad-0 td:nth-child(2) {
+  padding: 0;
+}
+
+.inner-bullet-50 td:nth-child(1) {
+  width: 50%;
+}
+
+.inner-bullet-50 td:nth-child(2) {
+  width: 50%;
+}
+
+.inner-bullet-50 .pad-5 td:nth-child(2) {
+  padding: 8px;
+}

@@ -1,0 +1,23 @@
+// Fonts
+
+@mixin font-lite {
+  font-family: 'sofia_pro_softlight', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin font-bold {
+  font-family: 'sofia_pro_softlight', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Buttons
+
+@mixin d-button {
+  display: block;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}

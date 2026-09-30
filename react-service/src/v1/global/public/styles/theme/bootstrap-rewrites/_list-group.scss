@@ -1,0 +1,19 @@
+.list-group {
+  background: $white;
+  border: 1px solid $purple-light;
+  border-radius: 8px;
+  opacity: 1;
+
+  .list-group-item {
+    display: flex;
+    min-height: 48px;
+    font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+    font-weight: bold;
+    padding: 8px 8px 8px 8px;
+    border: 1px solid $purple-lighter;
+
+    &:nth-child(odd) {
+      background: $purple-lightest;
+    }
+  }
+}

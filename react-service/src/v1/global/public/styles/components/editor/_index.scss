@@ -1,0 +1,45 @@
+@import '~react-quill/dist/quill.snow.css';
+@import 'attachment-files-area';
+@import '~bootstrap';
+
+.text-editor {
+  border: 1px solid $purple-light;
+  border-radius: 4px;
+  background-color: $white;
+
+  .quill {
+    height: 100px;
+
+    &.top-toolbar {
+      border-top: 1px solid $purple-light;
+    }
+
+    &.bottom-toolbar {
+      border-bottom: 1px solid $purple-light;
+    }
+
+    &.disabled-editor {
+      pointer-events: none;
+      background-color: $white;
+    }
+
+    .ql-container {
+      border: 0px;
+      font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+
+      .ql-blank::before {
+        font-style: normal;
+        color: $placeholder-color;
+      }
+
+      .ql-editor {
+        p {
+          font-weight: 400;
+        }
+        strong {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

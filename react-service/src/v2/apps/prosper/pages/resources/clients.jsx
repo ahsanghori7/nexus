@@ -1,0 +1,107 @@
+import { CONSTANTS } from 'clink-components';
+
+const {
+  armConcepts,
+  benmax,
+  dorplan,
+  GKDrywall,
+  SLE,
+  baseUFH,
+  LBC,
+  vepcons,
+  weatherfix,
+} = CONSTANTS.s3;
+
+export default [
+  {
+    src: armConcepts,
+    name: 'Ezio Muratore',
+    company: 'ARM Concepts Limited',
+    paragraph: 'clients-say-text-4',
+    link: 'https://armconcepts.co.uk',
+  },
+  {
+    src: baseUFH,
+    name: 'Shane Cox',
+    company: 'Base UFH',
+    paragraph: 'clients-say-text-1',
+    link: 'https://baseufh.co.uk/',
+  },
+  {
+    src: benmax,
+    name: 'Doug Benmax',
+    company: 'Benmax Building Contractors',
+    paragraph: 'clients-say-text-5',
+    link: 'https://bmxbuild.com',
+  },
+  {
+    src: dorplan,
+    name: 'Russell Evershed',
+    company: 'Dorplan',
+    paragraph: 'clients-say-text-3',
+    link: 'https://dorplan.co.uk',
+  },
+  {
+    src: GKDrywall,
+    name: 'Kieren Tree',
+    company: 'G&K Drywall Ltd',
+    paragraph: 'clients-say-text-6',
+    link: 'https://www.gkdrywallltd.co.uk',
+  },
+  {
+    src: LBC,
+    name: 'Luke Banfield',
+    company: 'LBC Design and Install',
+    paragraph: 'clients-say-text-7',
+    link: 'https://www.lbc-designandinstall.com/',
+  },
+  {
+    src: SLE,
+    name: 'Jeremy Wood',
+    company: 'SLE Electrical Ltd',
+    paragraph: 'clients-say-text-2',
+    link: 'https//sle-electrical.co.uk/',
+  },
+  {
+    src: vepcons,
+    name: 'Eugen Panciuc',
+    company: 'Vepcons Limited',
+    paragraph: 'clients-say-text-8',
+    link: 'https://www.vepcons.co.uk',
+  },
+  {
+    src: weatherfix,
+    name: 'Oliver Sweeney',
+    company: 'Weatherfix FRS',
+    paragraph: 'clients-say-text-9',
+    link: 'https://www.weatherfixfrs.co.uk/offline/',
+  },
+  {
+    src: null,
+    name: 'Elena Iordan',
+    company: 'Access Contractors',
+    paragraph: 'clients-say-text-10',
+    link: 'https://access-contractors.co.uk',
+  },
+  {
+    src: null,
+    name: 'Paul Peebles',
+    company: 'ATEC M&E Ltd',
+    paragraph: 'clients-say-text-11',
+    link: null,
+  },
+  {
+    src: null,
+    name: 'Wayne Sumner',
+    company: 'WS Brickwork',
+    paragraph: 'clients-say-text-12',
+    link: null,
+  },
+  {
+    src: null,
+    name: 'Steve Cooper',
+    company: 'AAC Air Conditioning',
+    paragraph: 'clients-say-text-13',
+    link: 'https://www.aac.uk.com/',
+  },
+];

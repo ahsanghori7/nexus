@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox Component takes a snapshot 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-item"
+  data-testid="mui-grid"
+>
+  <label
+    data-testid="mui-form-control-label"
+    name="snapshot"
+  >
+    <input
+      data-testid="mui-checkbox"
+      type="checkbox"
+      value="snapshot-value"
+    />
+    <span>
+      Snapshot Checkbox
+    </span>
+  </label>
+</div>
+`;

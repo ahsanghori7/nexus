@@ -1,0 +1,14 @@
+{
+  "output_file": null,
+  "wrapper": "",
+  "sections": {
+    "default": [
+      "../../global/letter-of-award",
+      "contract-document",
+      "subcontract-agreement",
+      "further-Information",
+      "conditions-of-the-sub-contract",
+      "schedule-1"
+    ]
+  }
+}

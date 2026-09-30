@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkList matches snapshot 1`] = `
+<ul
+  data-testid="mui-list"
+>
+  <li
+    data-testid="mui-list-item"
+  >
+    <a
+      data-testid="mui-link"
+    >
+      First Tender
+    </a>
+  </li>
+  <li
+    data-testid="mui-list-item"
+  >
+    <a
+      data-testid="mui-link"
+    >
+      Second Tender
+    </a>
+  </li>
+</ul>
+`;

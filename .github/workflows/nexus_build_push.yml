@@ -1,0 +1,277 @@
+name: CD - Build-Push NeXus images
+
+on:
+  push:
+    branches:
+      - develop
+      - rbt
+      - preprod
+      - uat
+      - main
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to build from'
+        required: true
+        default: 'develop'
+
+concurrency:
+  group: nexus-build-push-${{ github.event.inputs.branch || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  build_push_services:
+    name: Build & Push Images
+    runs-on: ubuntu-latest
+    outputs:
+      registry_url: ${{ steps.login-ecr.outputs.registry }}
+    strategy:
+      matrix:
+        service: [ account_service, project_service, document_service ]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.inputs.branch || github.ref }}
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ECR_NEXUS}}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ECR_NEXUS}}
+          aws-region: eu-west-2
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Set sanitized branch name
+        id: branch
+        run: |
+          BRANCH="${{ github.event.inputs.branch || github.ref_name }}"
+          echo "name=${BRANCH//\//-}" >> $GITHUB_OUTPUT
+
+      - name: Build and push the services image to Amazon ECR
+        uses: docker/build-push-action@v7
+        with:
+          context: ${{ matrix.service }}
+          file: 'docker_configuration/services8.Dockerfile'
+          push: true
+          provenance: false
+          tags: |
+            ${{ steps.login-ecr.outputs.registry }}/nexus/${{ matrix.service }}:latest-${{ steps.branch.outputs.name }}
+            ${{ steps.login-ecr.outputs.registry }}/nexus/${{ matrix.service }}:${{ github.run_number }}
+          build-args: |
+            SERVICE_NAME=${{ matrix.service }}
+            REGISTRY=${{ steps.login-ecr.outputs.registry }}/nexus/
+
+  build_push_app_c_link:
+    name: Build & Push app.c-link
+    runs-on: ubuntu-latest
+    outputs:
+      registry_url: ${{ steps.login-ecr.outputs.registry }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.inputs.branch || github.ref }}
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ECR_NEXUS}}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ECR_NEXUS}}
+          aws-region: eu-west-2
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Set sanitized branch name
+        id: branch
+        run: |
+          BRANCH="${{ github.event.inputs.branch || github.ref_name }}"
+          echo "name=${BRANCH//\//-}" >> $GITHUB_OUTPUT
+
+      - name: Select Dockerfile
+        id: dockerfile
+        run: |
+          # Each environment that needs its own composer manifest gets its own
+          # Dockerfile here; anything else falls through to the default.
+          BRANCH="${{ github.event.inputs.branch || github.ref_name }}"
+          case "$BRANCH" in
+            develop) FILE="docker_configuration/app.c-link-develop.Dockerfile" ;;
+            rbt)     FILE="docker_configuration/app.c-link-rbt.Dockerfile" ;;
+            *)       FILE="docker_configuration/app.c-link.Dockerfile" ;;
+          esac
+          echo "file=$FILE" >> "$GITHUB_OUTPUT"
+
+      - name: Build and push app.c-link image to Amazon ECR
+        uses: docker/build-push-action@v7
+        with:
+          context: app.c-link
+          file: ${{ steps.dockerfile.outputs.file }}
+          push: true
+          provenance: false
+          tags: |
+            ${{ steps.login-ecr.outputs.registry }}/nexus/app.c-link:latest-${{ steps.branch.outputs.name }}
+            ${{ steps.login-ecr.outputs.registry }}/nexus/app.c-link:${{ github.run_number }}
+          build-args: |
+            GITHUB_TOKEN=${{ secrets.GA_TOKEN }}
+            REGISTRY=${{ steps.login-ecr.outputs.registry }}/nexus/
+
+  build_push_framework:
+    name: Build & Push framework
+    runs-on: ubuntu-latest
+    outputs:
+      registry_url: ${{ steps.login-ecr.outputs.registry }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.inputs.branch || github.ref }}
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ECR_NEXUS}}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ECR_NEXUS}}
+          aws-region: eu-west-2
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Set sanitized branch name
+        id: branch
+        run: |
+          BRANCH="${{ github.event.inputs.branch || github.ref_name }}"
+          echo "name=${BRANCH//\//-}" >> $GITHUB_OUTPUT
+
+      - name: Build and push framework image to Amazon ECR
+        uses: docker/build-push-action@v7
+        with:
+          context: framework
+          file: docker_configuration/framework.Dockerfile
+          push: true
+          provenance: false
+          tags: |
+            ${{ steps.login-ecr.outputs.registry }}/nexus/framework:latest-${{ steps.branch.outputs.name }}
+            ${{ steps.login-ecr.outputs.registry }}/nexus/framework:${{ github.run_number }}
+          build-args: |
+            SETASIGN_USERNAME=${{ secrets.SETASIGN_USERNAME }}
+            SETASIGN_PASSWORD=${{ secrets.SETASIGN_PASSWORD }}
+
+  get_pr_info:
+    runs-on: ubuntu-latest
+    needs: [build_push_services, build_push_app_c_link, build_push_framework]
+    outputs:
+      pr_title: ${{ steps.get_pr.outputs.pr_title }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Get the latest merged PR title
+        id: get_pr
+        run: |
+          BRANCH="${{ github.ref_name }}"
+          PR_TITLE=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/pulls?state=closed&base=${BRANCH}" | jq -r '.[0].title')
+          echo "pr_title=$PR_TITLE" >> $GITHUB_OUTPUT
+
+  notify_slack_success:
+    runs-on: ubuntu-latest
+    needs: get_pr_info
+    if: success()
+    steps:
+      - name: Notify Slack on Success
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data '{
+            "channel": "#devops-auto-messages",
+            "attachments": [
+              {
+                "color": "#36a64f",
+                "pretext": "Deployment Notification :rocket:",
+                "title": "Build & Push to AWS ECR Successful",
+                "text": "Successfully built and pushed Docker images for all services.",
+                "fields": [
+                  {
+                    "title": "Version",
+                    "value": "`${{ github.run_number }}`",
+                    "short": false
+                  },
+                  {
+                    "title": "Branch",
+                    "value": "${{ github.ref_name }}",
+                    "short": false
+                  },
+                  {
+                    "title": "Latest Merged PR",
+                    "value": "${{ needs.get_pr_info.outputs.pr_title }}",
+                    "short": false
+                  }
+                ],
+                "footer": "GitHub Actions",
+                "footer_icon": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+              }
+            ]
+          }' $SLACK_WEBHOOK_URL
+
+  notify_slack_failure:
+    runs-on: ubuntu-latest
+    needs: get_pr_info
+    if: failure()
+    steps:
+      - name: Notify Slack on Failure
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data '{
+            "channel": "#devops-auto-messages",
+            "attachments": [
+              {
+                "color": "#ff0000",
+                "pretext": "Deployment Notification :rotating_light:",
+                "title": "Build & Push to AWS ECR Failed",
+                "text": "Failed to build and push Docker images for one or more services.",
+                "fields": [
+                  {
+                    "title": "Version",
+                    "value": "`${{ github.run_number }}`",
+                    "short": false
+                  },
+                  {
+                    "title": "Branch",
+                    "value": "${{ github.ref_name }}",
+                    "short": false
+                  },
+                  {
+                    "title": "Latest Merged PR",
+                    "value": "${{ needs.get_pr_info.outputs.pr_title }}",
+                    "short": false
+                  },
+                  {
+                    "title": "Action Run",
+                    "value": "<https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Run>",
+                    "short": false
+                  }
+                ],
+                "footer": "GitHub Actions",
+                "footer_icon": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+              }
+            ]
+          }' $SLACK_WEBHOOK_URL

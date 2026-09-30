@@ -1,0 +1,50 @@
+@import '~bootstrap';
+
+#clink-container {
+  @extend .row;
+  padding: 2rem 4.5rem;
+  padding-bottom: 6rem;
+
+  .header-items {
+    .header-left {
+      h1 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #clink-container {
+    padding: 1rem;
+    padding-bottom: 6rem;
+
+    .header-items {
+      flex-direction: column;
+
+      .header-left {
+        h1 {
+          font-size: 1.5rem;
+          padding-top: 0;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 399px) {
+  #clink-container {
+    padding: 0.5rem;
+    padding-bottom: 6rem;
+
+    .header-items {
+      .header-left {
+        h1 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "document-service-collection",
+		"name": "Document Service",
+		"description": "All endpoints from document_service/app/routes.php",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health",
+			"item": [
+				{ "name": "GET /", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/", "host": ["{{document_service_url}}"], "path": [""] } } }
+			]
+		},
+		{
+			"name": "V2",
+			"item": [
+				{ "name": "POST /v2/document", "request": { "method": "POST", "header": [{"key":"Content-Type","value":"application/json"}], "url": { "raw": "{{document_service_url}}/v2/document", "host": ["{{document_service_url}}"], "path": ["v2","document"] } } },
+				{ "name": "GET /v2/category", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v2/category", "host": ["{{document_service_url}}"], "path": ["v2","category"] } } }
+			]
+		},
+		{
+			"name": "Template (v1)",
+			"item": [
+				{ "name": "GET /v1/template", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/template", "host": ["{{document_service_url}}"], "path": ["v1","template"] } } },
+				{ "name": "GET /v1/template/{user_id}", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/template/{{user_id}}", "host": ["{{document_service_url}}"], "path": ["v1","template","{{user_id}}"] } } },
+				{ "name": "GET /v1/template/type", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/template/type", "host": ["{{document_service_url}}"], "path": ["v1","template","type"] } } }
+			]
+		},
+		{
+			"name": "Document (v1)",
+			"item": [
+				{ "name": "GET /v1/document", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document", "host": ["{{document_service_url}}"], "path": ["v1","document"] } } },
+				{ "name": "GET /v1/document/type", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/type", "host": ["{{document_service_url}}"], "path": ["v1","document","type"] } } },
+				{ "name": "GET /v1/document/subtype", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/subtype", "host": ["{{document_service_url}}"], "path": ["v1","document","subtype"] } } },
+				{ "name": "GET /v1/document/type/{type}/unmapped", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/type/{{type}}/unmapped", "host": ["{{document_service_url}}"], "path": ["v1","document","type","{{type}}","unmapped"] } } },
+				{ "name": "GET /v1/document/search/{term}", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/search/{{term}}", "host": ["{{document_service_url}}"], "path": ["v1","document","search","{{term}}"] } } },
+				{ "name": "GET /v1/document/{id}", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/{{id}}", "host": ["{{document_service_url}}"], "path": ["v1","document","{{id}}"] } } },
+				{ "name": "POST /v1/document", "request": { "method": "POST", "header": [{"key":"Content-Type","value":"application/json"}], "url": { "raw": "{{document_service_url}}/v1/document", "host": ["{{document_service_url}}"], "path": ["v1","document"] } } },
+				{ "name": "PATCH /v1/document/{id}", "request": { "method": "PATCH", "url": { "raw": "{{document_service_url}}/v1/document/{{id}}", "host": ["{{document_service_url}}"], "path": ["v1","document","{{id}}"] } } },
+				{ "name": "DELETE /v1/document/{id}", "request": { "method": "DELETE", "url": { "raw": "{{document_service_url}}/v1/document/{{id}}", "host": ["{{document_service_url}}"], "path": ["v1","document","{{id}}"] } } },
+				{ "name": "GET /v1/document/{id}/owner", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/{{id}}/owner", "host": ["{{document_service_url}}"], "path": ["v1","document","{{id}}","owner"] } } },
+				{ "name": "PATCH /v1/document/{id}/owner", "request": { "method": "PATCH", "url": { "raw": "{{document_service_url}}/v1/document/{{id}}/owner", "host": ["{{document_service_url}}"], "path": ["v1","document","{{id}}","owner"] } } },
+				{ "name": "GET /v1/document/{id}/children", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/{{id}}/children", "host": ["{{document_service_url}}"], "path": ["v1","document","{{id}}","children"] } } },
+				{ "name": "GET /v1/document/{id}/category", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/{{id}}/category", "host": ["{{document_service_url}}"], "path": ["v1","document","{{id}}","category"] } } },
+				{ "name": "GET /v1/document/{id}/signatory", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/{{id}}/signatory", "host": ["{{document_service_url}}"], "path": ["v1","document","{{id}}","signatory"] } } },
+				{ "name": "GET /v1/document/envelope/{token}", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/envelope/{{token}}", "host": ["{{document_service_url}}"], "path": ["v1","document","envelope","{{token}}"] } } },
+				{ "name": "POST /v1/document/{id}/signatory", "request": { "method": "POST", "url": { "raw": "{{document_service_url}}/v1/document/{{id}}/signatory", "host": ["{{document_service_url}}"], "path": ["v1","document","{{id}}","signatory"] } } },
+				{ "name": "GET /v1/document/{id}/signers", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/{{id}}/signers", "host": ["{{document_service_url}}"], "path": ["v1","document","{{id}}","signers"] } } },
+				{ "name": "GET /v1/document/{ids}/signers", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/{{ids}}/signers", "host": ["{{document_service_url}}"], "path": ["v1","document","{{ids}}","signers"] } } },
+				{ "name": "POST /v1/document/{id}/signatory/signer", "request": { "method": "POST", "url": { "raw": "{{document_service_url}}/v1/document/{{id}}/signatory/signer", "host": ["{{document_service_url}}"], "path": ["v1","document","{{id}}","signatory","signer"] } } },
+				{ "name": "POST /v1/document/{id}/clone", "request": { "method": "POST", "url": { "raw": "{{document_service_url}}/v1/document/{{id}}/clone", "host": ["{{document_service_url}}"], "path": ["v1","document","{{id}}","clone"] } } },
+				{ "name": "POST /v1/document/{id}/tender", "request": { "method": "POST", "url": { "raw": "{{document_service_url}}/v1/document/{{id}}/tender", "host": ["{{document_service_url}}"], "path": ["v1","document","{{id}}","tender"] } } },
+				{ "name": "DELETE /v1/document/{id}/tender/{tid}", "request": { "method": "DELETE", "url": { "raw": "{{document_service_url}}/v1/document/{{id}}/tender/{{tid}}", "host": ["{{document_service_url}}"], "path": ["v1","document","{{id}}","tender","{{tid}}"] } } },
+				{ "name": "GET /v1/document/constants", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/constants", "host": ["{{document_service_url}}"], "path": ["v1","document","constants"] } } },
+				{ "name": "GET /v1/document/requested", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/requested", "host": ["{{document_service_url}}"], "path": ["v1","document","requested"] } } },
+				{ "name": "POST /v1/document/request", "request": { "method": "POST", "url": { "raw": "{{document_service_url}}/v1/document/request", "host": ["{{document_service_url}}"], "path": ["v1","document","request"] } } },
+				{ "name": "PATCH /v1/document/request/{id}", "request": { "method": "PATCH", "url": { "raw": "{{document_service_url}}/v1/document/request/{{id}}", "host": ["{{document_service_url}}"], "path": ["v1","document","request","{{id}}"] } } },
+				{ "name": "GET /v1/document/request/type", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/request/type", "host": ["{{document_service_url}}"], "path": ["v1","document","request","type"] } } },
+				{ "name": "POST /v1/document/request/mapping", "request": { "method": "POST", "url": { "raw": "{{document_service_url}}/v1/document/request/mapping", "host": ["{{document_service_url}}"], "path": ["v1","document","request","mapping"] } } },
+				{ "name": "GET /v1/document/preq_default_certificates", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/document/preq_default_certificates", "host": ["{{document_service_url}}"], "path": ["v1","document","preq_default_certificates"] } } }
+			]
+		},
+		{
+			"name": "Signatory (v1)",
+			"item": [
+				{ "name": "GET /v1/signatory", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/signatory", "host": ["{{document_service_url}}"], "path": ["v1","signatory"] } } },
+				{ "name": "POST /v1/signatory", "request": { "method": "POST", "url": { "raw": "{{document_service_url}}/v1/signatory", "host": ["{{document_service_url}}"], "path": ["v1","signatory"] } } },
+				{ "name": "POST /v1/signatory/{id}/signer", "request": { "method": "POST", "url": { "raw": "{{document_service_url}}/v1/signatory/{{id}}/signer", "host": ["{{document_service_url}}"], "path": ["v1","signatory","{{id}}","signer"] } } },
+				{ "name": "PATCH /v1/signatory/{id}/signer", "request": { "method": "PATCH", "url": { "raw": "{{document_service_url}}/v1/signatory/{{id}}/signer", "host": ["{{document_service_url}}"], "path": ["v1","signatory","{{id}}","signer"] } } },
+				{ "name": "GET /v1/signatory/status", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/signatory/status", "host": ["{{document_service_url}}"], "path": ["v1","signatory","status"] } } }
+			]
+		},
+		{
+			"name": "Instruction (v1)",
+			"item": [
+				{ "name": "GET /v1/instruction/{id}", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/instruction/{{id}}", "host": ["{{document_service_url}}"], "path": ["v1","instruction","{{id}}"] } } }
+			]
+		},
+		{
+			"name": "Category (v1)",
+			"item": [
+				{ "name": "GET /v1/category", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/category", "host": ["{{document_service_url}}"], "path": ["v1","category"] } } },
+				{ "name": "POST /v1/category", "request": { "method": "POST", "url": { "raw": "{{document_service_url}}/v1/category", "host": ["{{document_service_url}}"], "path": ["v1","category"] } } },
+				{ "name": "POST /v1/category/default", "request": { "method": "POST", "url": { "raw": "{{document_service_url}}/v1/category/default", "host": ["{{document_service_url}}"], "path": ["v1","category","default"] } } },
+				{ "name": "GET /v1/category/{id}", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/category/{{id}}", "host": ["{{document_service_url}}"], "path": ["v1","category","{{id}}"] } } },
+				{ "name": "PATCH /v1/category/{id}", "request": { "method": "PATCH", "url": { "raw": "{{document_service_url}}/v1/category/{{id}}", "host": ["{{document_service_url}}"], "path": ["v1","category","{{id}}"] } } },
+				{ "name": "GET /v1/category/search/{term}", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/category/search/{{term}}", "host": ["{{document_service_url}}"], "path": ["v1","category","search","{{term}}"] } } },
+				{ "name": "PATCH /v1/category/{id}/mapping/clone/{clone}", "request": { "method": "PATCH", "url": { "raw": "{{document_service_url}}/v1/category/{{id}}/mapping/clone/{{clone}}", "host": ["{{document_service_url}}"], "path": ["v1","category","{{id}}","mapping","clone","{{clone}}"] } } },
+				{ "name": "DELETE /v1/category/entity/{id}", "request": { "method": "DELETE", "url": { "raw": "{{document_service_url}}/v1/category/entity/{{id}}", "host": ["{{document_service_url}}"], "path": ["v1","category","entity","{{id}}"] } } },
+				{ "name": "DELETE /v1/category/{id}", "request": { "method": "DELETE", "url": { "raw": "{{document_service_url}}/v1/category/{{id}}", "host": ["{{document_service_url}}"], "path": ["v1","category","{{id}}"] } } },
+				{ "name": "GET /v1/category/{id}/document", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/category/{{id}}/document", "host": ["{{document_service_url}}"], "path": ["v1","category","{{id}}","document"] } } },
+				{ "name": "PATCH /v1/category/{id}/document/{did}", "request": { "method": "PATCH", "url": { "raw": "{{document_service_url}}/v1/category/{{id}}/document/{{did}}", "host": ["{{document_service_url}}"], "path": ["v1","category","{{id}}","document","{{did}}"] } } },
+				{ "name": "DELETE /v1/category/{id}/document/{did}", "request": { "method": "DELETE", "url": { "raw": "{{document_service_url}}/v1/category/{{id}}/document/{{did}}", "host": ["{{document_service_url}}"], "path": ["v1","category","{{id}}","document","{{did}}"] } } },
+				{ "name": "POST /v1/category/{id}/document/bulk", "request": { "method": "POST", "url": { "raw": "{{document_service_url}}/v1/category/{{id}}/document/bulk", "host": ["{{document_service_url}}"], "path": ["v1","category","{{id}}","document","bulk"] } } },
+				{ "name": "GET /v1/category/constants", "request": { "method": "GET", "url": { "raw": "{{document_service_url}}/v1/category/constants", "host": ["{{document_service_url}}"], "path": ["v1","category","constants"] } } }
+			]
+		}
+	],
+	"variable": [
+		{ "key": "document_service_url", "value": "http://localhost:8083", "type": "string" },
+		{ "key": "id", "value": "1", "type": "string" },
+		{ "key": "ids", "value": "[1,2,3]", "type": "string" },
+		{ "key": "type", "value": "1", "type": "string" },
+		{ "key": "term", "value": "search-term", "type": "string" },
+		{ "key": "token", "value": "token123", "type": "string" },
+		{ "key": "did", "value": "1", "type": "string" },
+		{ "key": "clone", "value": "1", "type": "string" }
+	]
+}

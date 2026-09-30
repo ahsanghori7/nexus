@@ -1,0 +1,152 @@
+.layout-wrapper {
+
+  .c-box {
+
+    .c-box-heading {
+
+      i {
+        margin-right: 10px;
+        font-size: 0.9rem;
+        color: $clink-lite-green;
+      }
+
+    }
+
+  }
+
+  #activity-box{
+    width: 40%;
+
+    .activity-feed-wrapper {
+      height: calc(100% - 50px);
+      max-height: 600px;
+      padding: 0px;
+
+      .no-activities {
+
+        figure {
+          max-width: 250px;
+          display: block;
+          margin: 15px auto;
+        }
+
+        p {
+          color: #333;
+          text-align: center;
+          padding-bottom: 15px;
+          margin: 0px;
+
+          &.heading {
+            @include font-bold;
+            color: $clink-purple;
+            font-size: 1.4rem;
+          }
+
+        }
+
+      }
+
+      .activity-feed {
+        padding: 0px 15px 15px 30px;
+        border-bottom: 1px solid #f9f9f9;
+        margin-bottom: 15px;
+
+        p {
+          font-size: 0.9rem;
+
+          .tag {
+            display: inline-table;
+            width: auto;
+            background: $clink-purple;
+            color: #fff;
+            font-size: 0.7rem;
+            padding: 5px !important;
+            margin-right: 15px;
+          }
+
+          .new {
+            display: inline-table;
+            width: auto;
+            background: $clink-pink;
+            color: #fff;
+            font-size: 0.7rem;
+            padding: 5px !important;
+            margin-right: 15px;
+          }
+
+        }
+
+        .tag {
+          display: inline-table;
+          width: auto;
+          background: $clink-purple;
+          color: #fff;
+          font-size: 0.7rem;
+          padding: 5px !important;
+          margin-right: 15px;
+        }
+
+        .new {
+          display: inline-table;
+          width: auto;
+          background: $clink-pink;
+          color: #fff;
+          font-size: 0.7rem;
+          padding: 5px !important;
+          margin-right: 15px;
+        }
+
+        a {
+          @include font-bold;
+          color: $clink-green;
+          font-size: 0.9rem;
+
+          &.read {
+            margin-right: 10px;
+            color: $clink-purple;
+          }
+
+          &.delete {
+            margin-left: 10px;
+            color: $n02;
+          }
+
+          &:hover {
+            color: $clink-pink;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  #calendar-box {
+    width: 54%;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 1199px) {
+
+  .layout-wrapper {
+
+    #activity-box, #calendar-box {
+      width: 100%;
+    }
+
+    #activity-box {
+
+      .activity-feed-wrapper {
+        height: 100%;
+        max-height: 300px;
+        padding: 0px;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,61 @@
+@import '~bootstrap';
+
+#qat-container {
+  padding: 2rem 0;
+  padding-bottom: 6rem;
+
+  .header-items {
+    .header-left {
+      h1 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #qat-container {
+    padding: 1rem;
+    padding-bottom: 6rem;
+
+    .header-items {
+      flex-direction: column;
+
+      .header-left {
+        h1 {
+          font-size: 1.5rem;
+          padding-top: 0;
+          padding-left: 0;
+        }
+      }
+
+      .header-right {
+        .gia-container {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 399px) {
+  #qat-container {
+    padding: 0.5rem;
+    padding-bottom: 6rem;
+
+    .header-items {
+      .header-left {
+        h1 {
+          font-size: 1.2rem;
+        }
+      }
+
+      .header-right {
+        .gia-container {
+          min-width: none;
+        }
+      }
+    }
+  }
+}

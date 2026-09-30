@@ -1,0 +1,285 @@
+{
+	"info": {
+		"_postman_id": "account-service-collection",
+		"name": "Account Service",
+		"description": "All endpoints from account_service/app/routes.php",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{ "key": "token", "value": "{{token}}", "type": "string" }
+		]
+	},
+	"item": [
+		{
+			"name": "Health",
+			"item": [
+				{
+					"name": "GET /",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{account_service_url}}/",
+							"host": ["{{account_service_url}}"],
+							"path": [""]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{ "name": "GET /v1/account", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account", "host": ["{{account_service_url}}"], "path": ["v1","account"] } } },
+				{ "name": "GET /v1/account/search", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/search", "host": ["{{account_service_url}}"], "path": ["v1","account","search"] } } },
+				{ "name": "GET /v1/account/list", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/list", "host": ["{{account_service_url}}"], "path": ["v1","account","list"] } } },
+				{ "name": "GET /v1/account/{ids}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/{{ids}}", "host": ["{{account_service_url}}"], "path": ["v1","account","{{ids}}"] } } },
+				{ "name": "GET /v1/account/type", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/type", "host": ["{{account_service_url}}"], "path": ["v1","account","type"] } } },
+				{ "name": "GET /v1/account/subscription", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/subscription", "host": ["{{account_service_url}}"], "path": ["v1","account","subscription"] } } },
+				{ "name": "GET /v1/account/subscription/{id}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/subscription/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","account","subscription","{{id}}"] } } },
+				{ "name": "GET /v1/account/subscription/website/{website_id}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/subscription/website/{{website_id}}", "host": ["{{account_service_url}}"], "path": ["v1","account","subscription","website","{{website_id}}"] } } },
+				{ "name": "GET /v1/account/website", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/website", "host": ["{{account_service_url}}"], "path": ["v1","account","website"] } } },
+				{ "name": "POST /v1/account", "request": { "method": "POST", "header": [{"key":"Content-Type","value":"application/json"}], "url": { "raw": "{{account_service_url}}/v1/account", "host": ["{{account_service_url}}"], "path": ["v1","account"] } } },
+				{ "name": "GET /v1/account/{id}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}"] } } },
+				{ "name": "DELETE /v1/account/{id}", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}"] } } },
+				{ "name": "PATCH /v1/account/{id}", "request": { "method": "PATCH", "header": [{"key":"Content-Type","value":"application/json"}], "url": { "raw": "{{account_service_url}}/v1/account/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}"] } } },
+				{ "name": "GET /v1/account/{id}/membership", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/membership", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","membership"] } } },
+				{ "name": "PATCH /v1/account/{id}/membership", "request": { "method": "PATCH", "header": [{"key":"Content-Type","value":"application/json"}], "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/membership", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","membership"] } } },
+				{ "name": "POST /v1/account/membership", "request": { "method": "POST", "header": [{"key":"Content-Type","value":"application/json"}], "url": { "raw": "{{account_service_url}}/v1/account/membership", "host": ["{{account_service_url}}"], "path": ["v1","account","membership"] } } },
+				{ "name": "GET /v1/account/membership", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/membership", "host": ["{{account_service_url}}"], "path": ["v1","account","membership"] } } },
+				{ "name": "PATCH /v1/account/{id}/meta", "request": { "method": "PATCH", "header": [{"key":"Content-Type","value":"application/json"}], "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/meta", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","meta"] } } },
+				{ "name": "GET /v1/account/sso/{provider}/login", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/sso/{{provider}}/login", "host": ["{{account_service_url}}"], "path": ["v1","account","sso","{{provider}}","login"] } } },
+				{ "name": "GET /v1/account/sso/provider", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/sso/provider", "host": ["{{account_service_url}}"], "path": ["v1","account","sso","provider"] } } },
+				{ "name": "GET /v1/account/{id}/sso/provider", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/sso/provider", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","sso","provider"] } } },
+				{ "name": "GET /v1/account/activation_link/{email}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/activation_link/{{email}}", "host": ["{{account_service_url}}"], "path": ["v1","account","activation_link","{{email}}"] } } },
+				{ "name": "PATCH /v1/account/activate_account/{token}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/account/activate_account/{{token}}", "host": ["{{account_service_url}}"], "path": ["v1","account","activate_account","{{token}}"] } } },
+				{ "name": "GET /v1/account/payment_request/{id}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/payment_request/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","account","payment_request","{{id}}"] } } },
+				{ "name": "PATCH /v1/account/auto_loader/{token}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/account/auto_loader/{{token}}", "host": ["{{account_service_url}}"], "path": ["v1","account","auto_loader","{{token}}"] } } },
+				{ "name": "PATCH /v1/account/opt_in/{token}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/account/opt_in/{{token}}", "host": ["{{account_service_url}}"], "path": ["v1","account","opt_in","{{token}}"] } } },
+				{ "name": "GET /v1/account/{id}/session", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/session", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","session"] } } },
+				{ "name": "POST /v1/account/{id}/session", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/session", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","session"] } } },
+				{ "name": "DELETE /v1/account/{id}/session", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/session", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","session"] } } },
+				{ "name": "GET /v1/account/{id}/region", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/region", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","region"] } } },
+				{ "name": "GET /v1/account/{id}/trades", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/trades", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","trades"] } } },
+				{ "name": "GET /v1/account/{id}/projecttypes", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/projecttypes", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","projecttypes"] } } },
+				{ "name": "GET /v1/account/offerings", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/offerings", "host": ["{{account_service_url}}"], "path": ["v1","account","offerings"] } } },
+				{ "name": "PATCH /v1/account/{id}/region", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/region", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","region"] } } },
+				{ "name": "PATCH /v1/account/{id}/trades", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/trades", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","trades"] } } },
+				{ "name": "PATCH /v1/account/{id}/projecttypes", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/projecttypes", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","projecttypes"] } } },
+				{ "name": "GET /v1/account/supply_chain", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/supply_chain", "host": ["{{account_service_url}}"], "path": ["v1","account","supply_chain"] } } },
+				{ "name": "GET /v1/account/{id}/supply_chain", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/supply_chain", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","supply_chain"] } } },
+				{ "name": "GET /v1/account/{id}/supply_chain/subcontractor/{sid}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/supply_chain/subcontractor/{{sid}}", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","supply_chain","subcontractor","{{sid}}"] } } },
+				{ "name": "POST /v1/account/{id}/supply_chain", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/supply_chain", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","supply_chain"] } } },
+				{ "name": "POST /v1/account/{id}/supply_chain/external", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/supply_chain/external", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","supply_chain","external"] } } },
+				{ "name": "PATCH /v1/account/{id}/supply_chain/external/{child}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/supply_chain/external/{{child}}", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","supply_chain","external","{{child}}"] } } },
+				{ "name": "DELETE /v1/account/{id}/supply_chain/{child}", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/supply_chain/{{child}}", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","supply_chain","{{child}}"] } } },
+				{ "name": "PATCH /v1/account/{id}/supply_chain/{child}/trade", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/supply_chain/{{child}}/trade", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","supply_chain","{{child}}","trade"] } } },
+				{ "name": "PATCH /v1/account/{id}/supply_chain/{child}/region", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/supply_chain/{{child}}/region", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","supply_chain","{{child}}","region"] } } },
+				{ "name": "GET /v1/account/{id}/supply_chain/added_to", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/supply_chain/added_to", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","supply_chain","added_to"] } } },
+				{ "name": "GET /v1/account/{id}/supply_chain_v2", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/supply_chain_v2", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","supply_chain_v2"] } } },
+				{ "name": "GET /v1/account/customer_health_score", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/customer_health_score", "host": ["{{account_service_url}}"], "path": ["v1","account","customer_health_score"] } } },
+				{ "name": "PATCH /v1/account/customer_health_score", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/account/customer_health_score", "host": ["{{account_service_url}}"], "path": ["v1","account","customer_health_score"] } } },
+				{ "name": "DELETE /v1/account/customer_health_score/{aid}", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/account/customer_health_score/{{aid}}", "host": ["{{account_service_url}}"], "path": ["v1","account","customer_health_score","{{aid}}"] } } },
+				{ "name": "GET /v1/account/all", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/all", "host": ["{{account_service_url}}"], "path": ["v1","account","all"] } } },
+				{ "name": "GET /v1/account/{id}/engagement", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/engagement", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","engagement"] } } },
+				{ "name": "GET /v1/account/{ids}/engagements", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/{{ids}}/engagements", "host": ["{{account_service_url}}"], "path": ["v1","account","{{ids}}","engagements"] } } },
+				{ "name": "GET /v1/account/tracking", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/tracking", "host": ["{{account_service_url}}"], "path": ["v1","account","tracking"] } } },
+				{ "name": "GET /v1/account/tracking/type", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/tracking/type", "host": ["{{account_service_url}}"], "path": ["v1","account","tracking","type"] } } },
+				{ "name": "GET /v1/account/{id}/organisation", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/organisation", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","organisation"] } } },
+				{ "name": "POST /v1/account/{id}/organisation", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/account/{{id}}/organisation", "host": ["{{account_service_url}}"], "path": ["v1","account","{{id}}","organisation"] } } },
+				{ "name": "PATCH /v1/account/{aid}/organisation/{id}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/account/{{aid}}/organisation/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","account","{{aid}}","organisation","{{id}}"] } } },
+				{ "name": "DELETE /v1/account/{aid}/organisation/{id}", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/account/{{aid}}/organisation/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","account","{{aid}}","organisation","{{id}}"] } } },
+				{ "name": "GET /v1/account/organisation/type", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/organisation/type", "host": ["{{account_service_url}}"], "path": ["v1","account","organisation","type"] } } },
+				{ "name": "GET /v1/account/region/{rid}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account/region/{{rid}}", "host": ["{{account_service_url}}"], "path": ["v1","account","region","{{rid}}"] } } }
+			]
+		},
+		{
+			"name": "Prequalification",
+			"item": [
+				{ "name": "PATCH /v1/prequalification/{id}/company_information", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/prequalification/{{id}}/company_information", "host": ["{{account_service_url}}"], "path": ["v1","prequalification","{{id}}","company_information"] } } },
+				{ "name": "PATCH /v1/prequalification/{id}/organisation", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/prequalification/{{id}}/organisation", "host": ["{{account_service_url}}"], "path": ["v1","prequalification","{{id}}","organisation"] } } },
+				{ "name": "PATCH /v1/prequalification/{id}/turnover", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/prequalification/{{id}}/turnover", "host": ["{{account_service_url}}"], "path": ["v1","prequalification","{{id}}","turnover"] } } },
+				{ "name": "PATCH /v1/prequalification/{id}/references", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/prequalification/{{id}}/references", "host": ["{{account_service_url}}"], "path": ["v1","prequalification","{{id}}","references"] } } },
+				{ "name": "PATCH /v1/prequalification/{id}/reference/{rid}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/prequalification/{{id}}/reference/{{rid}}", "host": ["{{account_service_url}}"], "path": ["v1","prequalification","{{id}}","reference","{{rid}}"] } } },
+				{ "name": "PATCH /v1/prequalification/{id}/statuses", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/prequalification/{{id}}/statuses", "host": ["{{account_service_url}}"], "path": ["v1","prequalification","{{id}}","statuses"] } } },
+				{ "name": "GET /v1/prequalification/sections", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/prequalification/sections", "host": ["{{account_service_url}}"], "path": ["v1","prequalification","sections"] } } },
+				{ "name": "GET /v1/prequalification/section_list", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/prequalification/section_list", "host": ["{{account_service_url}}"], "path": ["v1","prequalification","section_list"] } } },
+				{ "name": "GET /v1/prequalification/{id}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/prequalification/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","prequalification","{{id}}"] } } },
+				{ "name": "GET /v1/prequalification/{id}/sections", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/prequalification/{{id}}/sections", "host": ["{{account_service_url}}"], "path": ["v1","prequalification","{{id}}","sections"] } } },
+				{ "name": "POST /v1/prequalification/{id}/sections", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/prequalification/{{id}}/sections", "host": ["{{account_service_url}}"], "path": ["v1","prequalification","{{id}}","sections"] } } },
+				{ "name": "PATCH /v1/prequalification/{id}/sections", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/prequalification/{{id}}/sections", "host": ["{{account_service_url}}"], "path": ["v1","prequalification","{{id}}","sections"] } } },
+				{ "name": "PATCH /v1/prequalification/{id}/section", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/prequalification/{{id}}/section", "host": ["{{account_service_url}}"], "path": ["v1","prequalification","{{id}}","section"] } } }
+			]
+		},
+		{
+			"name": "Distance",
+			"item": [
+				{ "name": "GET /v1/distance", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/distance", "host": ["{{account_service_url}}"], "path": ["v1","distance"] } } },
+				{ "name": "POST /v1/distance", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/distance", "host": ["{{account_service_url}}"], "path": ["v1","distance"] } } }
+			]
+		},
+		{
+			"name": "Token",
+			"item": [
+				{ "name": "GET /v1/token/type", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/token/type", "host": ["{{account_service_url}}"], "path": ["v1","token","type"] } } },
+				{ "name": "DELETE /v1/token/{token}", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/token/{{token}}", "host": ["{{account_service_url}}"], "path": ["v1","token","{{token}}"] } } },
+				{ "name": "POST /v1/token", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/token", "host": ["{{account_service_url}}"], "path": ["v1","token"] } } },
+				{ "name": "GET /v1/token/verify/{token}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/token/verify/{{token}}", "host": ["{{account_service_url}}"], "path": ["v1","token","verify","{{token}}"] } } },
+				{ "name": "GET /v1/token", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/token", "host": ["{{account_service_url}}"], "path": ["v1","token"] } } },
+				{ "name": "PATCH /v1/token/{token}/meta", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/token/{{token}}/meta", "host": ["{{account_service_url}}"], "path": ["v1","token","{{token}}","meta"] } } },
+				{ "name": "DELETE /v1/token/user/{id}", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/token/user/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","token","user","{{id}}"] } } }
+			]
+		},
+		{
+			"name": "Token History",
+			"item": [
+				{ "name": "GET /v1/token_history", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/token_history", "host": ["{{account_service_url}}"], "path": ["v1","token_history"] } } },
+				{ "name": "GET /v1/token_history/issued", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/token_history/issued", "host": ["{{account_service_url}}"], "path": ["v1","token_history","issued"] } } },
+				{ "name": "POST /v1/token_history/issued", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/token_history/issued", "host": ["{{account_service_url}}"], "path": ["v1","token_history","issued"] } } },
+				{ "name": "GET /v1/token_history/used", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/token_history/used", "host": ["{{account_service_url}}"], "path": ["v1","token_history","used"] } } },
+				{ "name": "POST /v1/token_history/used", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/token_history/used", "host": ["{{account_service_url}}"], "path": ["v1","token_history","used"] } } }
+			]
+		},
+		{
+			"name": "Email",
+			"item": [
+				{ "name": "PATCH /v1/email/unsubscribe/{token}/{email_id}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/email/unsubscribe/{{token}}/{{email_id}}", "host": ["{{account_service_url}}"], "path": ["v1","email","unsubscribe","{{token}}","{{email_id}}"] } } },
+				{ "name": "GET /v1/email/blacklist", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/email/blacklist", "host": ["{{account_service_url}}"], "path": ["v1","email","blacklist"] } } },
+				{ "name": "GET /v1/email/types", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/email/types", "host": ["{{account_service_url}}"], "path": ["v1","email","types"] } } },
+				{ "name": "POST /v1/email/log", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/email/log", "host": ["{{account_service_url}}"], "path": ["v1","email","log"] } } },
+				{ "name": "GET /v1/email/logs", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/email/logs", "host": ["{{account_service_url}}"], "path": ["v1","email","logs"] } } }
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{ "name": "GET /v1/user", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user", "host": ["{{account_service_url}}"], "path": ["v1","user"] } } },
+				{ "name": "GET /v1/user/{ids}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user/{{ids}}", "host": ["{{account_service_url}}"], "path": ["v1","user","{{ids}}"] } } },
+				{ "name": "GET /v1/user/search", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user/search", "host": ["{{account_service_url}}"], "path": ["v1","user","search"] } } },
+				{ "name": "GET /v1/user/account/{ids}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user/account/{{ids}}", "host": ["{{account_service_url}}"], "path": ["v1","user","account","{{ids}}"] } } },
+				{ "name": "GET /v1/user/all", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user/all", "host": ["{{account_service_url}}"], "path": ["v1","user","all"] } } },
+				{ "name": "POST /v1/user", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/user", "host": ["{{account_service_url}}"], "path": ["v1","user"] } } },
+				{ "name": "DELETE /v1/user/{id}", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/user/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","user","{{id}}"] } } },
+				{ "name": "GET /v1/user/type", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user/type", "host": ["{{account_service_url}}"], "path": ["v1","user","type"] } } },
+				{ "name": "POST /v1/user/session", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/user/session", "host": ["{{account_service_url}}"], "path": ["v1","user","session"] } } },
+				{ "name": "DELETE /v1/user/session/{token}", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/user/session/{{token}}", "host": ["{{account_service_url}}"], "path": ["v1","user","session","{{token}}"] } } },
+				{ "name": "GET /v1/user/session/{token}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user/session/{{token}}", "host": ["{{account_service_url}}"], "path": ["v1","user","session","{{token}}"] } } },
+				{ "name": "PATCH /v1/user/session/{token}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/user/session/{{token}}", "host": ["{{account_service_url}}"], "path": ["v1","user","session","{{token}}"] } } },
+				{ "name": "GET /v1/user/renew_session/{token}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user/renew_session/{{token}}", "host": ["{{account_service_url}}"], "path": ["v1","user","renew_session","{{token}}"] } } },
+				{ "name": "GET /v1/user/reset_password/{email}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user/reset_password/{{email}}", "host": ["{{account_service_url}}"], "path": ["v1","user","reset_password","{{email}}"] } } },
+				{ "name": "POST /v1/user/renew_password", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/user/renew_password", "host": ["{{account_service_url}}"], "path": ["v1","user","renew_password"] } } },
+				{ "name": "GET /v1/user/check_password", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user/check_password", "host": ["{{account_service_url}}"], "path": ["v1","user","check_password"] } } },
+				{ "name": "GET /v1/user/{id}/profile", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user/{{id}}/profile", "host": ["{{account_service_url}}"], "path": ["v1","user","{{id}}","profile"] } } },
+				{ "name": "PATCH /v1/user/{id}/profile", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/user/{{id}}/profile", "host": ["{{account_service_url}}"], "path": ["v1","user","{{id}}","profile"] } } },
+				{ "name": "GET /v1/user/{id}/token/auto_loader", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user/{{id}}/token/auto_loader", "host": ["{{account_service_url}}"], "path": ["v1","user","{{id}}","token","auto_loader"] } } },
+				{ "name": "GET /v1/user/session_usage/{token}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user/session_usage/{{token}}", "host": ["{{account_service_url}}"], "path": ["v1","user","session_usage","{{token}}"] } } },
+				{ "name": "PATCH /v1/user/session_usage/{token}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/user/session_usage/{{token}}", "host": ["{{account_service_url}}"], "path": ["v1","user","session_usage","{{token}}"] } } },
+				{ "name": "GET /v1/user/{id}/engagement", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user/{{id}}/engagement", "host": ["{{account_service_url}}"], "path": ["v1","user","{{id}}","engagement"] } } },
+				{ "name": "GET /v1/user/{id}/notifications", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user/{{id}}/notifications", "host": ["{{account_service_url}}"], "path": ["v1","user","{{id}}","notifications"] } } },
+				{ "name": "POST /v1/user/notifications", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/user/notifications", "host": ["{{account_service_url}}"], "path": ["v1","user","notifications"] } } },
+				{ "name": "PATCH /v1/user/notifications/{nid}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/user/notifications/{{nid}}", "host": ["{{account_service_url}}"], "path": ["v1","user","notifications","{{nid}}"] } } },
+				{ "name": "GET /v1/user/user_action_types", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/user/user_action_types", "host": ["{{account_service_url}}"], "path": ["v1","user","user_action_types"] } } }
+			]
+		},
+		{
+			"name": "Trade Category",
+			"item": [
+				{ "name": "GET /v1/trade_category", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/trade_category", "host": ["{{account_service_url}}"], "path": ["v1","trade_category"] } } },
+				{ "name": "POST /v1/trade_category", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/trade_category", "host": ["{{account_service_url}}"], "path": ["v1","trade_category"] } } },
+				{ "name": "POST /v1/trade_category/package", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/trade_category/package", "host": ["{{account_service_url}}"], "path": ["v1","trade_category","package"] } } },
+				{ "name": "PATCH /v1/trade_category/package/{id}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/trade_category/package/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","trade_category","package","{{id}}"] } } },
+				{ "name": "DELETE /v1/trade_category/package/{id}", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/trade_category/package/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","trade_category","package","{{id}}"] } } },
+				{ "name": "PATCH /v1/trade_category/{id}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/trade_category/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","trade_category","{{id}}"] } } },
+				{ "name": "DELETE /v1/trade_category/{id}", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/trade_category/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","trade_category","{{id}}"] } } }
+			]
+		},
+		{
+			"name": "Trade Group",
+			"item": [
+				{ "name": "GET /v1/trade_group/{type}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/trade_group/{{type}}", "host": ["{{account_service_url}}"], "path": ["v1","trade_group","{{type}}"] } } }
+			]
+		},
+		{
+			"name": "Region",
+			"item": [
+				{ "name": "GET /v1/region", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/region", "host": ["{{account_service_url}}"], "path": ["v1","region"] } } },
+				{ "name": "GET /v1/region/group", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/region/group", "host": ["{{account_service_url}}"], "path": ["v1","region","group"] } } },
+				{ "name": "POST /v1/region", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/region", "host": ["{{account_service_url}}"], "path": ["v1","region"] } } },
+				{ "name": "PATCH /v1/region/{id}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/region/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","region","{{id}}"] } } },
+				{ "name": "DELETE /v1/region/{id}", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/region/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","region","{{id}}"] } } }
+			]
+		},
+		{
+			"name": "Trade",
+			"item": [
+				{ "name": "GET /v1/trade", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/trade", "host": ["{{account_service_url}}"], "path": ["v1","trade"] } } }
+			]
+		},
+		{
+			"name": "Feature",
+			"item": [
+				{ "name": "GET /v1/feature", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/feature", "host": ["{{account_service_url}}"], "path": ["v1","feature"] } } },
+				{ "name": "GET /v1/feature/accounts", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/feature/accounts", "host": ["{{account_service_url}}"], "path": ["v1","feature","accounts"] } } },
+				{ "name": "GET /v1/feature/accounts/{aid}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/feature/accounts/{{aid}}", "host": ["{{account_service_url}}"], "path": ["v1","feature","accounts","{{aid}}"] } } },
+				{ "name": "PATCH /v1/feature/accounts", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/feature/accounts", "host": ["{{account_service_url}}"], "path": ["v1","feature","accounts"] } } },
+				{ "name": "DELETE /v1/feature/accounts/{aid}", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/feature/accounts/{{aid}}", "host": ["{{account_service_url}}"], "path": ["v1","feature","accounts","{{aid}}"] } } },
+				{ "name": "GET /v1/feature/envelope/{aid}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/feature/envelope/{{aid}}", "host": ["{{account_service_url}}"], "path": ["v1","feature","envelope","{{aid}}"] } } },
+				{ "name": "PATCH /v1/feature/envelope/{aid}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/feature/envelope/{{aid}}", "host": ["{{account_service_url}}"], "path": ["v1","feature","envelope","{{aid}}"] } } },
+				{ "name": "PATCH /v1/feature/{feature}/account_mapping/{maid}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/feature/{{feature}}/account_mapping/{{maid}}", "host": ["{{account_service_url}}"], "path": ["v1","feature","{{feature}}","account_mapping","{{maid}}"] } } }
+			]
+		},
+		{
+			"name": "Thresholds",
+			"item": [
+				{ "name": "GET /v1/thresholds/{aid}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/thresholds/{{aid}}", "host": ["{{account_service_url}}"], "path": ["v1","thresholds","{{aid}}"] } } },
+				{ "name": "POST /v1/thresholds", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/thresholds", "host": ["{{account_service_url}}"], "path": ["v1","thresholds"] } } },
+				{ "name": "PATCH /v1/thresholds/{id}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/thresholds/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","thresholds","{{id}}"] } } },
+				{ "name": "DELETE /v1/thresholds/{id}", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/thresholds/{{id}}", "host": ["{{account_service_url}}"], "path": ["v1","thresholds","{{id}}"] } } },
+				{ "name": "DELETE /v1/thresholds/account/{aid}", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/thresholds/account/{{aid}}", "host": ["{{account_service_url}}"], "path": ["v1","thresholds","account","{{aid}}"] } } },
+				{ "name": "GET /v1/thresholds/{aid}/users", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/thresholds/{{aid}}/users", "host": ["{{account_service_url}}"], "path": ["v1","thresholds","{{aid}}","users"] } } },
+				{ "name": "DELETE /v1/thresholds/user/{user_id}", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/thresholds/user/{{user_id}}", "host": ["{{account_service_url}}"], "path": ["v1","thresholds","user","{{user_id}}"] } } },
+				{ "name": "POST /v1/thresholds/user", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/thresholds/user", "host": ["{{account_service_url}}"], "path": ["v1","thresholds","user"] } } },
+				{ "name": "GET /v1/thresholds/user/{user_id}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/thresholds/user/{{user_id}}", "host": ["{{account_service_url}}"], "path": ["v1","thresholds","user","{{user_id}}"] } } }
+			]
+		},
+		{
+			"name": "Permissions",
+			"item": [
+				{ "name": "GET /v1/permissions", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/permissions", "host": ["{{account_service_url}}"], "path": ["v1","permissions"] } } },
+				{ "name": "GET /v1/permissions/user/{user_id}", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/permissions/user/{{user_id}}", "host": ["{{account_service_url}}"], "path": ["v1","permissions","user","{{user_id}}"] } } },
+				{ "name": "POST /v1/permissions/user", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/permissions/user", "host": ["{{account_service_url}}"], "path": ["v1","permissions","user"] } } },
+				{ "name": "DELETE /v1/permissions/user/{user_id}[/{permission_id}]", "request": { "method": "DELETE", "url": { "raw": "{{account_service_url}}/v1/permissions/user/{{user_id}}", "host": ["{{account_service_url}}"], "path": ["v1","permissions","user","{{user_id}}"] } } }
+			]
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{ "name": "GET /v1/roles/roles-level", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/roles/roles-level", "host": ["{{account_service_url}}"], "path": ["v1","roles","roles-level"] } } },
+				{ "name": "PATCH /v1/roles/mapping/{user_id}", "request": { "method": "PATCH", "url": { "raw": "{{account_service_url}}/v1/roles/mapping/{{user_id}}", "host": ["{{account_service_url}}"], "path": ["v1","roles","mapping","{{user_id}}"] } } }
+			]
+		},
+		{
+			"name": "Account Actions",
+			"item": [
+				{ "name": "POST /v1/account-actions", "request": { "method": "POST", "url": { "raw": "{{account_service_url}}/v1/account-actions", "host": ["{{account_service_url}}"], "path": ["v1","account-actions"] } } },
+				{ "name": "GET /v1/account-actions/fetch-action", "request": { "method": "GET", "url": { "raw": "{{account_service_url}}/v1/account-actions/fetch-action", "host": ["{{account_service_url}}"], "path": ["v1","account-actions","fetch-action"] } } }
+			]
+		}
+	],
+	"variable": [
+		{ "key": "account_service_url", "value": "http://localhost:8081", "type": "string" },
+		{ "key": "id", "value": "1", "type": "string" },
+		{ "key": "ids", "value": "[1,2,3]", "type": "string" },
+		{ "key": "aid", "value": "1", "type": "string" },
+		{ "key": "rid", "value": "1", "type": "string" },
+		{ "key": "sid", "value": "1", "type": "string" },
+		{ "key": "child", "value": "1", "type": "string" },
+		{ "key": "token", "value": "token123", "type": "string" },
+		{ "key": "email", "value": "user@example.com", "type": "string" },
+		{ "key": "website_id", "value": "1", "type": "string" },
+		{ "key": "provider", "value": "google", "type": "string" },
+		{ "key": "user_id", "value": "1", "type": "string" },
+		{ "key": "permission_id", "value": "1", "type": "string" }
+	]
+}

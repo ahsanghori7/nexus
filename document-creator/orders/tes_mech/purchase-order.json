@@ -1,0 +1,2675 @@
+[
+  {
+    "footer": {
+      "company_name": "",
+      "subcontract": ""
+    },
+    "header": {
+      "address": [],
+      "company_name": "",
+      "company_reg": "",
+      "logo": "",
+      "web_address": ""
+    },
+    "name": "document",
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width border-left border-right"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          {
+                            "name": "view",
+                            "props": {
+                              "className": "edit-document-table table full-width no-border"
+                            },
+                            "type": "table",
+                            "children": [
+                              {
+                                "name": "view",
+                                "props": {
+                                  "className": "edit-document-table-row"
+                                },
+                                "type": "row",
+                                "children": [
+                                  {
+                                    "name": "text",
+                                    "props": {
+                                      "className": "edit-document-table-column"
+                                    },
+                                    "type": "column",
+                                    "children": [
+                                      "{b:PROJECT\u00A0NAME:}"
+                                    ]
+                                  },
+                                  {
+                                    "name": "text",
+                                    "props": {
+                                      "className": "edit-document-table-column"
+                                    },
+                                    "type": "column",
+                                    "children": [
+                                      "{b:{ProjectName}}"
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "view",
+                                "props": {
+                                  "className": "edit-document-table-row align-top"
+                                },
+                                "type": "row",
+                                "children": [
+                                  {
+                                    "name": "text",
+                                    "props": {
+                                      "className": "edit-document-table-column"
+                                    },
+                                    "type": "column",
+                                    "children": [
+                                      "{b:PURCHASE\u00A0ORDER}"
+                                    ]
+                                  },
+                                  {
+                                    "name": "text",
+                                    "props": {
+                                      "className": "edit-document-table-column"
+                                    },
+                                    "type": "column",
+                                    "children": [
+                                      ""
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "view",
+                            "props": {
+                              "className": "edit-document-table table full-width no-border"
+                            },
+                            "type": "table",
+                            "children": [
+                              {
+                                "name": "view",
+                                "props": {
+                                  "className": "edit-document-table-row align-top"
+                                },
+                                "type": "row",
+                                "children": [
+                                  {
+                                    "name": "text",
+                                    "props": {
+                                      "className": "edit-document-table-column align-top align-right"
+                                    },
+                                    "type": "column",
+                                    "children": [
+                                      "{b:THE\u00A0ORDER\u00A0NUMBER:}"
+                                    ]
+                                  },
+                                  {
+                                    "name": "text",
+                                    "props": {
+                                      "className": "edit-document-table-column"
+                                    },
+                                    "type": "column",
+                                    "children": [
+                                      "{ProjectOrderNumber}"
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "view",
+                                "props": {
+                                  "className": "edit-document-table-row align-top"
+                                },
+                                "type": "row",
+                                "children": [
+                                  {
+                                    "name": "text",
+                                    "props": {
+                                      "className": "edit-document-table-column align-top align-right"
+                                    },
+                                    "type": "column",
+                                    "children": [
+                                      "{b:DATE\u00A0OF\u00A0ORDER:}"
+                                    ]
+                                  },
+                                  {
+                                    "name": "text",
+                                    "props": {
+                                      "className": "edit-document-table-column"
+                                    },
+                                    "type": "column",
+                                    "children": [
+                                      "{Date}"
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "view",
+                                "props": {
+                                  "className": "edit-document-table-row align-top"
+                                },
+                                "type": "row",
+                                "children": [
+                                  {
+                                    "name": "text",
+                                    "props": {
+                                      "className": "edit-document-table-column align-top align-right"
+                                    },
+                                    "type": "column",
+                                    "children": [
+                                      "{b:INTERNAL\u00A0REF:} "
+                                    ]
+                                  },
+                                  {
+                                    "name": "text",
+                                    "props": {
+                                      "className": "edit-document-table-column"
+                                    },
+                                    "type": "column",
+                                    "children": [
+                                      "{ProjectReference}"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column tes-mech-logo-container"
+                        },
+                        "type": "column",
+                        "children": [
+                          {
+                            "name": "image",
+                            "props": {
+                              "className": "cover-page-img tes-mech-logo",
+                              "src": "https://clink-assets.s3.eu-west-2.amazonaws.com/production/c-link/document-creator/tes_mech_logo.png"
+                            },
+                            "children": [
+                              ""
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width justified first-top-align quinn-one"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width justified first-top-align quinn-one"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:A CONTACT INFORMATION}",
+                          "\u00A0 \u00A0{b:THE SUPPLIER'S NAME & ADDRESS:}",
+                          "\u00A0 \u00A0{TheSupplier}",
+                          "\u00A0 \u00A0{SupplierRegisteredAddress}",
+                          "\u00A0 \u00A0{SupplierRegisteredNumber}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:B THE SUB-CONTRACTOR'S NAME & ADDRESS:}",
+                          "\u00A0 \u00A0TES MECH LTD, THE HAYES, LYE, STOURBRIDGE, DY9 8NX",
+                          "{br}",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:C THE SITE DELIVERY NAME & ADDRESS:}",
+                          "\u00A0 \u00A0{SiteAddress}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width justified first-top-align quinn-one"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:D TES MECH LIMITED}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Project Manager:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{WhoTesMechPM}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Mob:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{TesMechPMPhone}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Email:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{TesMechPMEmail}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Quantity Surveyor:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{WhoTesMechQS}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Mob:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{TesMechQSPhone}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Email:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{TesMechQSEmail}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Accounts:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "accountspayable@tes-mech.co.uk"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:E TERMS OF AGREEMENT:}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "1\u00A0Total Value of Purchase Order:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{TesMechOrderExcludingVAT}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "excl\u00A0vat"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "2\u00A0Delivery Dates Identified on Schedule of Materials and/or Good"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{TesMechDeliveryDate}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "3\u00A0Payment Terms -"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{TesMechPaymentTerms}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4\u00A0Fixed Price for the duration of the Contract"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{TesMechPriceFixed}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5\u00A0Retention Amount"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{Retention}%"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries no-border-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "6\u00A0Agreed Discount"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{TesMechAgreedDiscount}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row border-bottom"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "7\u00A0VAT Code"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{TesMechVATCode}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:F THE NUMBERED DOCUMENTS FOR THE PURPOSES OF THE ORDER, ARE THOSE LISTED BELOW, A COPY OF WHICH HAS FOR IDENTIFICATION BEEN NUMBERED SEQUENTIALLY, AND ANNEXED TO THIS AGREEMENT:}",
+                          "{br}",
+                          "{br}",
+                          "1 TES Mech Limited Purchase Order Conditions",
+                          "2 TES Mech Limited Schedule of Materials and Goods",
+                          "3 Extract from Quotation - {TesMechReferenceQuote}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{b:Appendix 1}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{b:Drawings and Specifications}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "editable": false
+                    },
+                    "children": [
+                      {
+                        "name": "view",
+                        "children": [
+                          {
+                            "type": "link",
+                            "code": "download_all_files",
+                            "name": "text",
+                            "children": [
+                              "{bpnk:Download all}"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "fileManager",
+                        "props": {
+                          "className": "edit-document-table full-width table"
+                        },
+                        "children": [
+                          {
+                            "name": "view",
+                            "type": "thead",
+                            "props": {
+                              "className": "edit-document-table-row"
+                            },
+                            "children": [
+                              {
+                                "name": "text",
+                                "type": "column",
+                                "props": {
+                                  "className": "edit-document-table-column table-header"
+                                },
+                                "children": [
+                                  "{b:Document Name}"
+                                ]
+                              },
+                              {
+                                "name": "text",
+                                "type": "column",
+                                "props": {
+                                  "className": "edit-document-table-column table-header"
+                                },
+                                "children": [
+                                  "{b:Category}"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "view",
+                            "type": "row",
+                            "props": {
+                              "className": "edit-document-table-row"
+                            },
+                            "children": [
+                              {
+                                "name": "text",
+                                "type": "column",
+                                "props": {
+                                  "className": "edit-document-table-column justified"
+                                },
+                                "children": [
+                                  "{br}"
+                                ]
+                              },
+                              {
+                                "name": "text",
+                                "type": "column",
+                                "props": {
+                                  "className": "edit-document-table-column justified"
+                                },
+                                "children": [
+                                  "{br}"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "children": [
+                          {
+                            "type": "link",
+                            "code": "download_all_files",
+                            "name": "text",
+                            "children": [
+                              "{bpnk:Download all}"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{b:TES Mech Limited Purchase Order Conditions}"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border numbered-table"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Definitions; in these conditions the following definitions will shall apply;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:\"The Conditions\"} shall mean the conditions set herein."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:\"The Sub-Contractor\"} shall mean TES Mech Limited."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:\"The Sub Contract\"} shall mean the contract between the sub-contractor and the main contractor under which the contractor is to carry out certain works and for which the materials or goods are required."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:\"The Order\"} shall mean the document issued by the Sub-Contractor to the Supplier with these conditions confirming \"the materials or goods\" to be provided by the Supplier with any other details referred to and the prices to be paid for the materials or goods. (\"The Price\")"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:\"The Project\"} shall mean the Project in respect of which the Sub-Contract has been let."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:\"The Site\"} shall mean the site where the materials or goods are to be delivered as indicated in the order."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:\"The Supplier\"} shall mean the company, firm or individual providing the materials or goods whether acting through an agent or otherwise and to whom or whose agent the order is addressed."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:The Contract; the Order and These Conditions shall together constitute \"The Contract\" between the Sub-Contractor and the Supplier}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Materials or goods to be supplied and the price therefor; the materials or goods to be supplied by the Supplier to the Sub-Contractor hereunder and the prices to be paid therefore are as shown in the Order to the Conditions, which Conditions shall govern the Contract to the exclusion of any other terms subject to which any offer or quotation from the Supplier is stated to be accepted or purported to be accepted by the Sub-Contractor.}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Alteration of the Order;} The Sub-Contractor shall be entitled to amend, alter or adjust the quantity or type of materials or goods stated in the Order at any time without liability for any loss occasioned to the Supplier thereby."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Quality of goods;} the materials or goods (including manufacturing, storing, testing and packaging) shall comply with any particular requirements detailed in the Order and with all relevant British and European standards and Codes of Practice or equivalent where applicable and shall be of satisfactory quality and fit for the purpose for which the Sub-Contractor intends to use such materials or goods and none of the materials or goods supplied or parts thereof shall be generally known or suspected within the construction or engineering industries at the time of supply the be deleterious to health and safety or to the durability of the Project in the particular circumstances in which they are to be used and shall be in accordance with the guidelines contained in the publication Good Practice in Selection of Construction Materials (1997): Ove Arup & Partners) as the same may be updated from time to time."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:6}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Information, unless otherwise specified in the Order the Supplier shall deliver with each consignment of materials or goods such written information as is required for the proper handling use processing storage and maintenance of the materials or goods and in particular but without limitation all documentary assessments, data sheets and other information required under the COSHH regulations.}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:7}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Delivery of the materials or goods shall be made to the site in accordance with the programme indicated in the Order and at the time or times specified or in the case of the latter if none after 8 am or before 4pm on weekdays only. The Supplier shall produce a delivery ticket to the Sub-Contractor for signature by the Sub-Contractor confirming delivery of the materials or goods but such signature shall not constitute acceptance by the Sub-Contractor of the conformity with the Contract of the materials or goods so delivered.}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:8}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Compliance with Sub-Contractor's procedures etc; The Supplier shall comply and shall ensure that any employee agent or sub-contractor they employ for the purpose of delivering and off-loading the materials or goods to the Site shall comply with all applicable procedures and policies (including health and safety procedures and policies) when delivering materials or goods to the Site and unloading the same and shall comply with the directions and instructions of the Sub-Contractor in relation thereof and in particular but without limitation}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "I."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "All drivers of delivery vehicles shall report to the site office and seek permission to enter the Site from the site representative at the site office and take directions as to the destination for offloading the materials or goods upon request the driver and any other occupant of the vehicle shall produce identification"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "II."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The delivery vehicle shall have an off-loading facility or other equipment or machinery that is suitable for offloading the material or goods all such equipment having been tested for compliance with statutory requirements at regular intervals and the operator shall hold the appropriate competency certificate."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "III."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "All drivers of delivery vehicles and other persons engaged in delivering and offloading the materials or goods shall wear appropriate protective clothing including safety helmets safety footwear and high visibility clothing and shall have all necessary and suitable equipment. The Sub-Contractor's Site is a designated hard hat site."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:9}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Healthy and safety assessments etc.}",
+                          "The Supplier shall provide either at or before delivery of the materials or goods either a global or specific"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "I"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Health and safety policy"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "II"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Relevant risk assessments"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "III."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Relevant method statements and"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "IV."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Relevant safety certification in relation to the materials or goods"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:10}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Time for the delivery of the Essence:}",
+                          "the programme and/or the times for delivery of the materials or goods (whether in installments or not) and any varied programme and/or time for delivery for the delivery pursuant to the conditions is of the essence. Notwithstanding the foregoing if the Sub-Contractor's programme of works under the Sub-Contract is interrupted or delayed for any reason the Sub-Contractor shall be entitled at any time to defer the programme or times(s) for delivery without being liable to make any additional payment or incurring any other liability to the Supplier as a result thereof."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:11}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Force majeure;} if for any cause which could not reasonably have been foreseen or which is beyond the reasonable control of either party the Sub-Contractor cannot accept delivery of the materials or goods in accordance with the terms of the Contract the time for the delivery shall be extended by such period or periods as is reasonable and neither party shall have a payment or incurring any other liability to the Supplier as a result of any loss occasioned thereby."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:12}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Cancellation:} as a result of non-performance of the main contract; if for any reason the Sub-Contractor does not perform that part of the Sub-Contract for which the materials or goods are require the Sub-Contractor may forthwith cancel the whole or remaining part of the Contract in the respect of which the terms have not yet been fulfilled by the Supplier and the Sub-Contractor's liability hereunder shall be limited to the price payable in respect of such of the materials or goods as have been delivered to the site in accordance with the terms hereof by the date of such cancellation."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:13}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Supply in excess of the quantities stated;} if any materials or goods delivered to the site are in excess of the quantities specified in the order the Sub-Contractor shall so notify the Supplier but the Sub-Contractor shall not be liable to pay any such excess materials or goods. Upon such notification the property in and the risk of damage to or loss of such excess materials or goods shall revert to the Supplier. The Supplier shall at its own cost collect and remove such excess material or goods within a reasonable time of such notification."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:14}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Inspection/testing;} where or to the extent that the Sub-Contractor (or the main contractor) operates quality control/management procedures which require tests or checks to verify and record compliance with the contract whether on or off the premises of the Supplier, the Sub-Contractor and/or the main contractor shall be entitled at all reasonable times to carry out such tests or checks and the Supplier shall co-operate with the Sub-Contractor and/or the main contractor in implementing those procedures and by providing any documentation reasonably required to record verification. Such tests shall not release the Supplier from any obligation under the contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:15}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Notice of readiness for testing;} where the Sub-Contractor has notified the Supplier that tests or checks under clause 14 are required the Supplier shall give the Sub-Contractor reasonable notice in writing that the materials or goods which the Sub-Contractor wishes to test or check are ready for such tests or checks and shall provide all the facilities, assistance, labour and materials reports or other documentation as may be necessary to carry out or verify a record of the results of such tests or checks. The Sub-Contractor reserves the right to reject any material or goods or part or parts thereof if after inspection or resting they are reasonably found to be defective or not in accordance with the requirements of the Contract. The costs of any further tests required as a result shall be borne by the Supplier."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:16}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Property/risk;} the property in the materials or goods shall pass to the Sub-Contractor once delivery has been made to the site by the Supplier and the Sub-Contractor has signed the delivery ticket for the materials or goods so delivered and risk of damage to or the loss of the materials or goods shall pass to the Sub-Contractor once the Sub-Contractor has taken delivery of the materials or goods."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:17}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Insurance;} the Supplier shall have and maintain insurances including employer's, public and product liability insurances in an amount and for a period sufficient to cover the Supplier's liabilities hereunder including his liabilities in respect of the materials or goods to be supplied hereunder and in particular but without limitation in respect of any damage in or loss of the materials or goods before the Sub-Contractor has taken delivery of the materials or goods as set out in clause 16 or any damage caused when delivering and off-loading on the site or entering or leaving the site. The Supplier shall if required by the Sub-Contractor produce documentary evidence of such insurances."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:18}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Copyright/license:} the copyright in all drawings, plans, specifications, and any other documentation provided by or on behalf of the Sub-Contractor to the Supplier shall remain vested in the contractor or whoever prepared such documentation for the purposes of the contract but shall not otherwise copy use or show such documentation to any third party without the Sub-Contractor's prior written consent. Such documentation shall be returned to the Sub-Contractor immediately upon request. The Sub-Contractor shall have a license to copy and use any drawings, plans, reports, specifications, and any other documentation provided by or on behalf of the Supplier for the purposes of the contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:19}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Payment/invoices;} once a consignment of materials or goods has been delivered to Site an invoice therefor at the price or prices set out in the order (unless varied under clause 20 and if so at the price or prices as so varied) shall be sent by the Supplier via email to accountspayable@torsion-eng.co.uk. Unless stated otherwise in the order payment will be made by the end of the month following the in which the invoice is received. Value added tax, where applicable shall be shown separately. Any invoice which qualifies for a cash discount for early payment shall be clearly marked with the appropriate details. All invoices must quote the order number and contract number shown on the order. If the Supplier fails to provide such details the invoice is invalid and the Sub-Contractor's obligation to pay does not arise until such time as a valid invoice is supplied. Monthly statements should also be sent to the Sub-Contractor at the same time."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:20}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Changes in prices;} Prices shall be fixed for the duration of the project and shall not be changed by the Supplier except where a substituted product is proposed by the Supplier, in which case the price shall not increase and Supplier shall advise the Sub-Contractor of the saving for providing a substituted alternative. This shall in all cases be subject to acceptance by the Sub-Contractor."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:21}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Other changes or variations;} any other alteration or variation to the order including those in respect of the quantity or type of materials or goods pursuant to clause 4 and in respect of delivery pursuant to the clause 10 shall be confirmed by the Sub-Contractor to the Supplier by a revised order issued by the Sub-Contractor to the Supplier."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:22}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Defects/making good;} the Supplier shall at their own expense make good by replacement or otherwise any defects in the materials or goods which appear on or before the expiry of any defects liability period under the main contract or if not applicable within a reasonable after delivery and which in either case are notified by the Sub-Contractor to the Supplier and shall bear any expenses reasonably incurred by the Sub-Contractor as a consequence of such defects provided that;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "I."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Where the materials or goods have been used or fixed such defects are not such that reasonable examination by the contractor ought to have revealed them before using or fixing/or"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "II."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Such defects are due solely to defective workmanship or materials in the materials or goods supplied."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:23}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Termination;} the Sub-Contractor may at any time forthwith terminate the Contract by written notice to the Supplier. In the event of such a notice the Sub-Contractor shall be liable for any payment outstanding in respect of any materials or goods already delivered to site but the Supplier shall not be entitled to reimbursement of any costs or other losses or compensation as a result of such termination."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:24}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Termination for breach;} in the event of any breach of the contract by the Supplier the Sub-Contractor may forthwith terminate the contract by written notice to the Supplier."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:25}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Accrued rights;} termination of the contract shall not prejudice or affect the accrued rights or claims of either party to the contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:26}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Set off;} the Sub-Contractor may set off all or any loss and/or expense which it may incur by reason of the Supplier's breach or failure to perform any of the terms and conditions of the contract or of any other contract between the parties against any sums otherwise due to the Supplier under the contract or any other contract between the Sub-Contractor and the Supplier."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:27}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Assignment/sub-letting}; the Supplier shall not without the prior written consent of the Sub-Contractor sublet or assign or in any way transfer any of the rights or obligations hereunder or any part thereof. The Sub-Contractor may without the prior written consent of the Supplier at any time sublet or assign or transfer any of the rights or obligations hereunder or any part thereof."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:28}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Severability}; if any provision of the contract is held by any competent authority to be invalid or unenforceable in whole or in part the validity of the other provisions of the contract and the remainder of the provisions in question, if any shall remain in full force and effect."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:29}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Jurisdiction}; The Contract shall be governed by and construed in all aspects in accordance with the law of England and Wales and each party hereby submits to the non-exclusive jurisdiction of the courts of the country as so determined"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:30}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Third party rights}; nothing in the contract confers or purports to confer on any third party any benefit or right to enforce any term of the contract pursuant to the contracts. (Rights of third parties) act 1999."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

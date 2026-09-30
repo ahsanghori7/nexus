@@ -1,0 +1,9 @@
+@import '~bootstrap';
+
+.asset {
+  @extend .col-3;
+  height: 190px;
+  margin: 20px;
+  border: 1px solid #c6c5de;
+  border-radius: 8px;
+}

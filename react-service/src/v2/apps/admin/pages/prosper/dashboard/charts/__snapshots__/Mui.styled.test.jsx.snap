@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Charts Mui.styled Components MuiCalendarContainer should match snapshot 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-container"
+  data-testid="mui-grid"
+  sx="[object Object]"
+>
+  <div>
+    Calendar Snapshot
+  </div>
+</div>
+`;
+
+exports[`Charts Mui.styled Components MuiChartsContainer should match snapshot 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-container"
+  data-testid="mui-grid"
+  sx="[object Object]"
+>
+  <div>
+    Snapshot Test
+  </div>
+</div>
+`;
+
+exports[`Charts Mui.styled Components MuiDateRangeContainer should match snapshot 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-container"
+  data-testid="mui-grid"
+  sx="[object Object]"
+>
+  <div>
+    Date Range Snapshot
+  </div>
+</div>
+`;

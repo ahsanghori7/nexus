@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BarComponent should match snapshot 1`] = `
+<div
+  data-testid="charts-container"
+>
+  <div
+    data-testid="charts-list"
+  >
+    <div
+      data-height="100"
+      data-testid="chart"
+      data-type="bar"
+      data-width="100"
+    >
+      <div
+        data-testid="chart-data"
+      >
+        {"labels":["January","February","March","April","May","June","July"],"datasets":[{"label":"Dataset 1","data":["1","2","3","4","5","6","7"],"backgroundColor":"rgba(255, 99, 132, 0.5)"},{"label":"Dataset 2","data":["8","7","9","14","15","16","17"],"backgroundColor":"rgba(53, 162, 235, 0.5)"}]}
+      </div>
+      <div
+        data-testid="chart-options"
+      >
+        {"maintainAspectRatio":false,"responsive":true,"plugins":{"title":{"display":false,"text":"Tokens"},"tooltip":{"callbacks":{"footer":"[Function]"}}},"interaction":{"mode":"index","intersect":false}}
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BarComponent should match snapshot with custom data 1`] = `
+<div
+  data-testid="charts-container"
+>
+  <div
+    data-testid="charts-list"
+  >
+    <div
+      data-height="100"
+      data-testid="chart"
+      data-type="bar"
+      data-width="100"
+    >
+      <div
+        data-testid="chart-data"
+      >
+        {"labels":["A","B"],"datasets":[{"label":"Test","data":[1,2],"backgroundColor":"red"}]}
+      </div>
+      <div
+        data-testid="chart-options"
+      >
+        {"maintainAspectRatio":false,"responsive":true,"plugins":{"title":{"display":false,"text":"Tokens"},"tooltip":{"callbacks":{"footer":"[Function]"}}},"interaction":{"mode":"index","intersect":false}}
+      </div>
+    </div>
+  </div>
+</div>
+`;

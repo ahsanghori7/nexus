@@ -1,0 +1,151 @@
+name: Back-merge pull request
+description: >-
+  Check whether a source branch merges cleanly into a target branch and, if it
+  does, open (or reuse) a back-merge pull request. Reports the outcome instead of
+  failing, so callers can decide how to escalate a conflict.
+  Requires the repository to be checked out with fetch-depth: 0, and leaves that
+  checkout untouched so later `uses: ./…` steps still resolve.
+
+inputs:
+  source:
+    description: Branch the changes come from.
+    required: false
+    default: main
+  target:
+    description: Long-lived branch that should receive the changes.
+    required: true
+  token:
+    description: >-
+      Token used for `gh pr create`. GITHUB_TOKEN works but pull requests opened
+      with it do not trigger `pull_request` workflows, so the PR arrives with no CI
+      checks and `warn_no_ci` should stay true. A PAT with the Pull requests scope
+      avoids that.
+    required: true
+  warn_no_ci:
+    description: >-
+      Add a note to the PR body saying CI checks did not run. Set to false when
+      `token` is a PAT that does trigger them.
+    required: false
+    default: 'true'
+  repository:
+    description: owner/repo the pull request belongs to.
+    required: false
+    default: ${{ github.repository }}
+
+outputs:
+  status:
+    description: >-
+      One of: up-to-date, pr-opened, pr-existing, conflict, missing-branch.
+    value: ${{ steps.pr.outputs.status || steps.check.outputs.status }}
+  ahead:
+    description: Number of commits the source branch is ahead of the target.
+    value: ${{ steps.check.outputs.ahead }}
+  pr_url:
+    description: URL of the back-merge pull request, when there is one.
+    value: ${{ steps.pr.outputs.pr_url }}
+
+runs:
+  using: composite
+  steps:
+    - name: Check whether ${{ inputs.source }} merges cleanly into ${{ inputs.target }}
+      id: check
+      shell: bash
+      env:
+        SOURCE: ${{ inputs.source }}
+        TARGET: ${{ inputs.target }}
+      run: |
+        set -euo pipefail
+
+        git fetch --no-tags origin "$SOURCE"
+        if ! git fetch --no-tags origin "$TARGET"; then
+          echo "::warning::Branch '$TARGET' does not exist on origin — skipping back-merge"
+          {
+            echo "status=missing-branch"
+            echo "ahead=0"
+          } >> "$GITHUB_OUTPUT"
+          exit 0
+        fi
+
+        AHEAD=$(git rev-list --count "origin/$TARGET..origin/$SOURCE")
+        echo "ahead=$AHEAD" >> "$GITHUB_OUTPUT"
+
+        if [ "$AHEAD" -eq 0 ]; then
+          echo "$TARGET is already up to date with $SOURCE — nothing to merge"
+          echo "status=up-to-date" >> "$GITHUB_OUTPUT"
+          exit 0
+        fi
+
+        echo "$SOURCE is $AHEAD commit(s) ahead of $TARGET — trialling the merge"
+
+        # merge-tree merges entirely in the object database: exit 0 = clean,
+        # 1 = conflicts, anything else = a real error. It must stay this way —
+        # this step MUST NOT touch the working tree. Checking the target branch out
+        # to trial the merge replaces the checkout with the target's tree, and any
+        # `uses: ./…` local action later in the job then vanishes from disk on every
+        # target that predates it (that broke the conflict notification for rbt).
+        set +e
+        git merge-tree --write-tree "origin/$TARGET" "origin/$SOURCE" >/dev/null
+        MERGE_RC=$?
+        set -e
+
+        case "$MERGE_RC" in
+          0)
+            echo "status=mergeable" >> "$GITHUB_OUTPUT"
+            ;;
+          1)
+            echo "::warning::$SOURCE → $TARGET has merge conflicts"
+            echo "status=conflict" >> "$GITHUB_OUTPUT"
+            ;;
+          *)
+            echo "::error::git merge-tree failed with exit code $MERGE_RC (needs git >= 2.38; runner has $(git --version))"
+            exit 1
+            ;;
+        esac
+
+    - name: Open back-merge pull request
+      id: pr
+      if: steps.check.outputs.status == 'mergeable'
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.token }}
+        REPO: ${{ inputs.repository }}
+        SOURCE: ${{ inputs.source }}
+        TARGET: ${{ inputs.target }}
+        AHEAD: ${{ steps.check.outputs.ahead }}
+        WARN_NO_CI: ${{ inputs.warn_no_ci }}
+        COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
+      run: |
+        set -euo pipefail
+
+        EXISTING_URL=$(gh pr list --repo "$REPO" --base "$TARGET" --head "$SOURCE" \
+          --state open --json url --jq '.[0].url // empty')
+
+        if [ -n "$EXISTING_URL" ]; then
+          echo "Back-merge PR already open: $EXISTING_URL"
+          {
+            echo "status=pr-existing"
+            echo "pr_url=$EXISTING_URL"
+          } >> "$GITHUB_OUTPUT"
+          exit 0
+        fi
+
+        BODY=$(printf '%s\n' \
+          "Automated PR to sync \`$TARGET\` with the latest changes merged into \`$SOURCE\` ($AHEAD commit(s) behind)." \
+          "" \
+          "Triggered by $COMMIT_URL")
+
+        if [ "$WARN_NO_CI" = "true" ]; then
+          BODY=$(printf '%s\n' "$BODY" \
+            "" \
+            ":warning: **CI checks have not run on this PR.** It was opened with \`GITHUB_TOKEN\`, and pull requests created with it do not trigger \`pull_request\` workflows. Close and reopen the PR (or push to \`$SOURCE\`) to make the checks run before merging.")
+        fi
+
+        PR_URL=$(gh pr create --repo "$REPO" --base "$TARGET" --head "$SOURCE" \
+          --title "Auto back-merge: $SOURCE → $TARGET" \
+          --body "$BODY" | tail -n 1)
+
+        echo "Opened back-merge PR: $PR_URL"
+        {
+          echo "status=pr-opened"
+          echo "pr_url=$PR_URL"
+        } >> "$GITHUB_OUTPUT"

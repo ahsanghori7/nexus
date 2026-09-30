@@ -1,0 +1,33 @@
+{
+  "name": "view",
+  "type": "row",
+  "props": {
+    "className": "edit-document-table-row"
+  },
+  "children": [
+    {
+      "name": "text",
+      "type": "column",
+      "props": {
+        "className": "edit-document-table-column width-60"
+      },
+      "children": [" "]
+    },
+    {
+      "name": "text",
+      "type": "column",
+      "props": {
+        "className": "edit-document-table-column width-20 centered-text"
+      },
+      "children": [" "]
+    },
+    {
+      "name": "text",
+      "type": "column",
+      "props": {
+        "className": "edit-document-table-column width-20 centered-text"
+      },
+      "children": [" "]
+    }
+  ]
+}

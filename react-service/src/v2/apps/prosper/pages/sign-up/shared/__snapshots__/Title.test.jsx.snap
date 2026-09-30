@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Component takes a snapshot 1`] = `
+<div
+  class="MuiGrid2-root"
+  data-testid="grid2"
+  marginbottom="3"
+>
+  <div
+    data-testid="mui-typography"
+    font-weight="bold"
+    variant="h2"
+  >
+    Snapshot Title
+  </div>
+</div>
+`;

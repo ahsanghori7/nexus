@@ -1,0 +1,127 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": {
+      "company_name": "",
+      "subcontract": ""
+    },
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": ["{b:Appendix 7 - Payment Timetable}", "{br}"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:Please refer to the Pricing Document appended under Appendix 2 of this document.}",
+                  "{br}",
+                  "The enclosed timetable sets out the valuation and payment dates for this project.",
+                  "{br}",
+                  "To ensure that your payment is not queried and is made on time with no issues please ensure that all back up information such as QLL site instruction numbers are clearly shown against any variation claimed.",
+                  "{br}",
+                  "All applications are to be submitted prior to the application dates detailed below. Applications submitted after will not be accepted, and the subcontractor will have to re-apply the following month.",
+                  "{br}",
+                  "Works are to be clearly broken down, and correctly quantified for valuing purposes. Works listed as 'item' will not be accepted and will be valued at the discretion of the QLL project QS. ",
+                  "{br}",
+                  "All valuations are to be submitted as an application, not a VAT invoice. VAT invoices will be returned, and a credit note requested. If the subsequent application falls outside the application dates listed below, the application will be deemed in time for the following application date, not the previous.",
+                  "{br}",
+                  "{b:Construction Industry Scheme (If Applicable)}",
+                  "{br}",
+                  "These sub-contracted Works fall within the scope of the Construction Industry Scheme, for this reason it is important that your payment application is itemised to distinguish between taxable and non-taxable works.",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Valuation Frequency:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{ValuationFrequency}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Payment Terms:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{PaymentTerms}"]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

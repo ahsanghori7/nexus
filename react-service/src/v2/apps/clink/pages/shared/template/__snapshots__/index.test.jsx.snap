@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Template matches snapshot 1`] = `
+<div
+  data-container="true"
+  data-flex-direction="column"
+  data-testid="mui-grid"
+>
+  <div
+    data-item="true"
+    data-testid="mui-grid"
+  >
+    <div
+      data-testid="header-component"
+    >
+      <span>
+        Header
+      </span>
+    </div>
+  </div>
+  <div
+    data-item="true"
+    data-testid="mui-grid"
+  >
+    <div
+      data-container="true"
+      data-flex-direction="column"
+      data-testid="mui-grid"
+      style="background: white; border-radius: 5px; border: 1px solid #e6e6e6; padding: 20px;"
+    >
+      <div
+        data-item="true"
+        data-testid="mui-grid"
+      >
+         
+        <div>
+          Content
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quality should take a snapshot 1`] = `
+<div>
+  <select
+    data-testid="select-label"
+  >
+    <option
+      disabled=""
+      value="ISO 9001"
+    >
+      ISO 9001
+    </option>
+    <option
+      disabled=""
+      value="Not ISO Accredited"
+    >
+      Not ISO Accredited
+    </option>
+  </select>
+  <input
+    data-testid="file-document"
+    type="file"
+  />
+</div>
+`;

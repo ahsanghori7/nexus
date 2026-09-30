@@ -1,0 +1,152 @@
+&__edit-content {
+  .modal-dialog {
+    max-width: 720px;
+
+    .modal-content {
+      min-height: 384px;
+
+      .text-editor {
+        height: 300px;
+      }
+
+      .quill {
+        height: 83%;
+      }
+
+      .ql-editor {
+        font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+        font-weight: 400;
+
+        strong {
+          font-family: 'proxima_nova_bold', 'sofia_pro_softlight', sans-serif;
+        }
+      }
+
+      @import '../container-buttons';
+
+      .container-action-buttons {
+        margin: 0px;
+        padding-top: 20px;
+        display: flex;
+
+        .close-btn {
+          display: flex;
+          justify-content: start;
+          flex: 1;
+        }
+
+        .save-btn {
+          display: flex;
+          justify-content: end;
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  &.modal-editor-component {
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          .ql-container-no-select {
+            .ql-container {
+              min-height: 150px;
+            }
+            .ql-editor ol {
+              list-style-type: none !important;
+              counter-reset: quill-counter !important;
+            }
+            .ql-editor li::before {
+              content: none !important;
+            }
+            .ql-editor li .ql-ui {
+              display: none !important;
+            }
+            .ql-editor li[data-list='bullet'] {
+              counter-reset: quill-counter 0 !important;
+              display: flex !important;
+            }
+            .ql-editor li[data-list='bullet']::before {
+              content: '\2022' !important;
+              margin-right: 8px;
+              width: 1.2em;
+              text-align: right;
+              display: inline-block;
+            }
+            .ql-editor li[data-list='ordered'] {
+              counter-increment: quill-counter !important;
+              display: flex !important;
+            }
+            .ql-editor li[data-list='ordered']::before {
+              content: counter(quill-counter) '. ' !important;
+              margin-right: 8px;
+              width: 1.2em;
+              text-align: right;
+              display: inline-block;
+            }
+            .ql-editor li[data-list='bullet'] ~ li[data-list='ordered'] {
+              counter-increment: post-bullet-counter !important;
+            }
+            .ql-editor
+              li[data-list='bullet']
+              ~ li[data-list='ordered']::before {
+              content: counter(post-bullet-counter) '. ' !important;
+            }
+            .ql-editor ol {
+              counter-reset: quill-counter post-bullet-counter !important;
+            }
+          }
+          .form-group {
+            position: relative;
+
+            .container-loading {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              z-index: 1010;
+              background-color: rgba(255, 255, 255, 0.5);
+
+              .loading {
+                margin: 0;
+                position: absolute;
+                top: 55%;
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+              }
+            }
+
+            .react-select-container {
+              width: 55%;
+
+              .react-select__control {
+                min-height: 40px;
+
+                .react-select__placeholder {
+                  color: $dark-grey;
+                }
+              }
+            }
+
+            label {
+              font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+              color: $dark-grey;
+              margin: 10px 0px 20px 0px;
+              opacity: 0.6;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+    }
+
+    .container-action-buttons {
+      justify-content: end;
+
+      .btn-outline-danger {
+        margin-left: 10px;
+      }
+    }
+  }
+}

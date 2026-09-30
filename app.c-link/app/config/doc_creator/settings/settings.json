@@ -1,0 +1,27 @@
+{
+  "clause_4_6_3": {
+  "code": "{clause_4_6_3}",
+  "dataref": "",
+  "value": 4
+  },
+  "clause_4_7_1": {
+    "code": "{clause_4_7_1}",
+    "dataref": "",
+    "value": 14
+  },
+  "clause_4_7_2": {
+    "code": "{clause_4_7_2}",
+    "dataref": "",
+    "value": 5
+  },
+  "clause_4_7_5": {
+    "code": "{clause_4_7_5}",
+    "dataref": "",
+    "value": 1
+  },
+  "variation_rules": {
+    "code": "{variation_rules}",
+    "dataref": "",
+    "value": 10
+  }
+}

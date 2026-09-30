@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Empty Component matches snapshot when hasEntities is false 1`] = `
+<paper
+  sx="[object Object]"
+>
+  <div
+    data-testid="mui-typography"
+    paddingbottom="2"
+    variant="h4"
+  >
+    no-entities-available
+  </div>
+  <div
+    data-testid="mui-typography"
+    paddingbottom="1"
+  >
+    please-click-add
+  </div>
+</paper>
+`;
+
+exports[`Empty Component matches snapshot when hasEntities is true (null render) 1`] = `null`;

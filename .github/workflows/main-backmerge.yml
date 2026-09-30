@@ -1,0 +1,98 @@
+name: Back-merge main into long-lived branches
+
+# Keeps develop, uat and rbt in sync with main by opening a back-merge PR per
+# branch. When a target conflicts we can't auto-PR it, so #devops is told to do
+# the merge by hand. The Slack broadcast to feature/release channels lives in
+# .github/workflows/main-notify-slack.yml
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  # Serialise runs so two quick merges into main can't race into duplicate PRs.
+  group: main-backmerge
+  cancel-in-progress: false
+
+env:
+  SLACK_DEVOPS_CHANNEL: C0627PZ1G0H
+
+jobs:
+  backmerge:
+    name: main → ${{ matrix.target }}
+    runs-on: ubuntu-latest
+    strategy:
+      # A conflicted target must not stop the others from getting their PR.
+      fail-fast: false
+      matrix:
+        target: [develop, uat, rbt]
+    steps:
+      - name: Checkout (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check and open back-merge PR
+        id: backmerge
+        uses: ./.github/actions/backmerge-pr
+        with:
+          source: main
+          target: ${{ matrix.target }}
+          # PRs opened with GITHUB_TOKEN don't trigger pull_request workflows, so
+          # these PRs arrive with no CI and the body says so. GA_TOKEN can't be
+          # used instead — the fine-grained PAT has no pull-requests scope
+          # ("Resource not accessible by personal access token"). Point this at a
+          # PAT with Pull requests: Read and write to get checks running.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build conflict message
+        id: conflict_message
+        if: steps.backmerge.outputs.status == 'conflict'
+        env:
+          TARGET: ${{ matrix.target }}
+          AHEAD: ${{ steps.backmerge.outputs.ahead }}
+          COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+
+          {
+            echo "text<<SLACK_TEXT_EOF"
+            printf '%s\n' \
+              ":warning: \`main\` → \`$TARGET\` back-merge has conflicts and couldn't be auto-PR'd ($AHEAD commit(s) behind). Please merge manually." \
+              "Commit: <$COMMIT_URL|${GITHUB_SHA::7}> · <$RUN_URL|workflow run>"
+            echo "SLACK_TEXT_EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Notify #devops of merge conflict
+        if: steps.backmerge.outputs.status == 'conflict'
+        uses: ./.github/actions/slack-post
+        with:
+          token: ${{ secrets.SLACK_BOT_RELEASES_TOKEN }}
+          channels: ${{ env.SLACK_DEVOPS_CHANNEL }}
+          text: ${{ steps.conflict_message.outputs.text }}
+
+      - name: Summary
+        if: always()
+        env:
+          TARGET: ${{ matrix.target }}
+          STATUS: ${{ steps.backmerge.outputs.status }}
+          AHEAD: ${{ steps.backmerge.outputs.ahead }}
+          PR_URL: ${{ steps.backmerge.outputs.pr_url }}
+        run: |
+          set -euo pipefail
+
+          {
+            echo "### main → \`$TARGET\`"
+            echo ""
+            echo "- Status: \`${STATUS:-unknown}\`"
+            echo "- Commits behind main: ${AHEAD:-unknown}"
+            if [ -n "$PR_URL" ]; then
+              echo "- Pull request: $PR_URL"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

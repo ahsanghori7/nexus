@@ -1,0 +1,1447 @@
+[
+  {
+    "footer": {
+      "company_name": "",
+      "subcontract": "",
+      "html": ""
+    },
+    "header": {
+      "address": [],
+      "company_name": "",
+      "company_reg": "",
+      "logo": "",
+      "web_address": ""
+    },
+    "name": "document",
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{b:Sub-Contract Valuation Schedule}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["{b:MCLAREN}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Project:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": ["{br}"]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["{b:Main Contract Valuation No.}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": [
+                          "{b:Sub-Contractor Application Submitted By:}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": [
+                          "{b:Main Contract Interim Valuation Date (Ref Only)}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": [
+                          "{b:Interim Valuation Date and Sub-Contract Due Date (7th of each month)}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": [
+                          "{b:Sub-Contract Payment Date (Due Date + 28 days)}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["1"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["23/04/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["30/04/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/05/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["04/06/2024"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["2"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24/05/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["31/05/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/06/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["05/07/2024"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["3"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["23/06/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["28/06/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/07/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["04/08/2024"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["4"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24/07/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["31/07/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/08/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["04/09/2024"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["5"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24/08/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["30/08/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/09/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["05/10/2024"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["6"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["23/09/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["30/09/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/10/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["04/11/2024"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["7"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24/10/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["31/10/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/11/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["05/12/2024"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["8"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["23/11/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["29/11/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/12/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["04/01/2025"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["9"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24/12/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["20/12/2024"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/01/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["04/02/2025"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["10"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24/01/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["31/01/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/02/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/03/2025"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["11"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["21/02/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["28/02/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/03/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["04/04/2025"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["12"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24/03/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["31/03/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/04/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["05/05/2025"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["13"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24/04/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["30/04/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/05/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["04/06/2025"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["14"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["23/05/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["30/05/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/06/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["05/07/2025"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["15"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24/06/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["30/06/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/07/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["04/08/2025"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["16"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24/07/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["31/07/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/08/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["04/09/2025"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["17"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24/08/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["30/08/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/09/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["05/10/2025"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["18"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["23/09/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["30/09/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/10/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["04/11/2025"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["19"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24/10/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["31/10/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/11/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["05/12/2025"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["20"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["23/11/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["28/11/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/12/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["04/01/2026"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["21"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24/12/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["22/12/2025"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/01/2026"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["04/02/2026"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["22"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24/01/2026"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["30/01/2026"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/02/2026"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/03/2026"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["23"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["21/02/2026"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["27/02/2026"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/03/2026"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["04/04/2026"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["24/03/2026"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["30/03/2026"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["07/04/2026"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["05/05/2026"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": ["{br}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "children": [""]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "edit-document-text"
+                },
+                "children": ["{b:Notes:}"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "edit-document-text"
+                },
+                "children": [
+                  "1. Prior to Payment CIS details must be provided for validation."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "edit-document-text"
+                },
+                "children": [
+                  "2. Prior to Payment Letter or Intent or Sub-Contract order must be executed and returned by the Sub-Contractor."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "edit-document-text"
+                },
+                "children": [
+                  "3. Prior to Payment all valid insurances, UTR number and bank details must be provided."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "edit-document-text"
+                },
+                "children": [
+                  "4. Failure by the Sub-Contractor to submit an application by the required date will result in zero paymnet being due."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

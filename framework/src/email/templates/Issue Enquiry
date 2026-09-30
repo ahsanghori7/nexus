@@ -1,0 +1,12 @@
+
+<div><h2>Hi {{recipient.name}},</h2></div>
+<br/>
+<div>Great to see you've received a tender through the C-Link/Prosper portal for the {{project.name}} project.</div>
+<br/>
+<div>I wanted to share some tips on what our most successful subcontractors have done to win work.</div>
+<br/>
+<div>The first step is to arrange a site visit - watch our video here: Why should a subcontractor visit site during tender</div>
+<br/>
+<div>When you're ready to return your quote/tender, the best way to present yourself is with a professional tender return - you can download a FREE copy here: What should a tender return look like?</div>
+<br/>
+<div>If you have any queries regarding the tender, feel free to book a call with me here.</div>

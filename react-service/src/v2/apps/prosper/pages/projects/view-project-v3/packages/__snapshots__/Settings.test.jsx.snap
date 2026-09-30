@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Settings Component matches snapshot 1`] = `
+<div
+  component="h2"
+  data-testid="mui-typography"
+>
+  Test settings text
+  <a
+    href="/mocked-url"
+    style="color: rgb(0, 255, 0); text-decoration-color: #00ff00;"
+  >
+    profile-settings
+  </a>
+</div>
+`;

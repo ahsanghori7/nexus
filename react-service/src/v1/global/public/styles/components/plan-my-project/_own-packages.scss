@@ -1,0 +1,62 @@
+.field-holder {
+  padding: 0px 10px;
+
+  &.add-own-package {
+    flex: 1 0 50%;
+    position: relative;
+
+    .add-own-package-btn {
+      @extend .rounded-pill;
+
+      position: absolute;
+      top: 32px;
+    }
+  }
+  &.add-package,
+  &.packages-own-package {
+    flex: 0 0 50%;
+  }
+  &.own-packages {
+    flex: 0 0 100%;
+  }
+  &.own-packages {
+    .list-group-item {
+      width: 49%;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-top: 0px;
+
+      .btn {
+        @extend .rounded-pill;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem;
+        bottom: auto;
+
+        svg:not(.no-legacy) {
+          bottom: auto;
+          right: auto;
+          overflow: hidden;
+          vertical-align: middle;
+        }
+      }
+    }
+    .list-group-item:first-child {
+      font-weight: initial;
+      border-top: 1px solid rgba(0, 0, 0, 0.125);
+      border-top-left-radius: inherit;
+      border-top-right-radius: inherit;
+    }
+    .list-group-item:nth-child(2) {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+    .list-group-item:nth-child(odd) {
+      background-color: $white;
+    }
+  }
+}

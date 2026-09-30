@@ -1,0 +1,52 @@
+services:
+  db:
+    image: mysql:8.4.0
+    command: --mysql-native-password=ON
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    volumes:
+      - testing-mysql-data:/var/lib/mysql
+
+  account_service:
+    build:
+      context: ../account_service
+      dockerfile: ../docker_configuration/services8.Dockerfile
+      args:
+        SERVICE_NAME: account_service
+        INSTALL_DEV_DEPENDENCIES: "true"
+    depends_on:
+      - db
+    volumes:
+      - ../account_service/build/logs:/var/www/html/account_service/build/logs
+
+  project_service:
+    build:
+      context: ../project_service
+      dockerfile: ../docker_configuration/services8.Dockerfile
+      args:
+        SERVICE_NAME: project_service
+        INSTALL_DEV_DEPENDENCIES: "true"
+    depends_on:
+      - db
+    volumes:
+      - ../project_service/build/logs:/var/www/html/project_service/build/logs
+
+  document_service:
+    build:
+      context: ../document_service
+      dockerfile: ../docker_configuration/services8.Dockerfile
+      args:
+        SERVICE_NAME: document_service
+        INSTALL_DEV_DEPENDENCIES: "true"
+    depends_on:
+      - db
+    volumes:
+      - ../document_service/build/logs:/var/www/html/document_service/build/logs
+
+volumes:
+  testing-mysql-data:

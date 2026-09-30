@@ -1,0 +1,29 @@
+.react-select-field-holder {
+  &--multiselect {
+    .react-select__indicators {
+      display: none;
+    }
+    // Custom Scroll
+    /* width */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: $purple-light;
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: $purple-lighter;
+    }
+    .c-link-control {
+      display: flex;
+      svg.search-icon {
+        align-self: flex-start;
+        margin-left: 11px;
+        margin-top: 9px;
+      }
+    }
+  }
+}

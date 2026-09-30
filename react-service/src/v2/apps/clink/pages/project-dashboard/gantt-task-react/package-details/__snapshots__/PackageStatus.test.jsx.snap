@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PackageStatus Component matches snapshot with warning 1`] = `
+<div
+  data-testid="badge-wrapper"
+>
+  <div
+    class="MuiBox-root"
+    data-testid="mui-box"
+    display="inline-flex"
+    position="relative"
+  >
+    <div
+      class="MuiCircularProgress-root"
+      color="success"
+      data-testid="mui-circular-progress"
+      role="progressbar"
+      thickness="1.5"
+      value="40"
+      variant="determinate"
+    />
+    <div
+      alignitems="center"
+      bottom="0"
+      class="MuiBox-root"
+      data-testid="mui-box"
+      display="flex"
+      justifycontent="center"
+      left="0"
+      position="absolute"
+      right="0"
+      top="0"
+    >
+      <img
+        alt="mock"
+        data-testid="mock-image"
+        src="progress-icon.png"
+        style="padding-top: 3px;"
+        width="26.94"
+      />
+    </div>
+  </div>
+  <span
+    data-testid="badge-content"
+  >
+    <img
+      alt="mock"
+      data-testid="mock-image"
+      src="warning-icon.png"
+    />
+  </span>
+</div>
+`;
+
+exports[`PackageStatus Component matches snapshot without warning 1`] = `
+<div
+  class="MuiBox-root"
+  data-testid="mui-box"
+  display="inline-flex"
+  position="relative"
+>
+  <div
+    class="MuiCircularProgress-root"
+    color="success"
+    data-testid="mui-circular-progress"
+    role="progressbar"
+    thickness="1.5"
+    value="40"
+    variant="determinate"
+  />
+  <div
+    alignitems="center"
+    bottom="0"
+    class="MuiBox-root"
+    data-testid="mui-box"
+    display="flex"
+    justifycontent="center"
+    left="0"
+    position="absolute"
+    right="0"
+    top="0"
+  >
+    <img
+      alt="mock"
+      data-testid="mock-image"
+      src="progress-icon.png"
+      style="padding-top: 3px;"
+      width="26.94"
+    />
+  </div>
+</div>
+`;

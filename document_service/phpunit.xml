@@ -1,0 +1,57 @@
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd"
+    bootstrap="tests/bootstrap.php"
+    colors="true"
+    cacheDirectory=".phpunit.cache"
+    backupGlobals="false"
+    failOnRisky="true"
+    failOnWarning="true"
+>
+    <testsuites>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Integration">
+            <directory suffix="Test.php">./tests/Integration</directory>
+        </testsuite>
+        <testsuite name="All">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+    <coverage includeUncoveredFiles="true">
+        <report>
+            <clover outputFile="build/logs/clover.xml"/>
+            <html outputDirectory="build/coverage/html"/>
+            <text outputFile="php://stdout" showUncoveredFiles="true" showOnlySummary="false"/>
+        </report>
+    </coverage>
+    <source>
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
+        <exclude>
+            <directory suffix=".php">./tests</directory>
+            <directory suffix=".php">./src/Domain/DomainException</directory>
+            <file>./src/Domain/Document/Category.php</file>
+            <file>./src/Domain/Document/CatgoryMapping.php</file>
+            <file>./src/Domain/Document/CategoryRepository.php</file>
+            <file>./src/Domain/Document/Document.php</file>
+            <file>./src/Domain/Document/DocumentOwnerMapping.php</file>
+            <file>./src/Domain/Document/DocumentSubType.php</file>
+            <file>./src/Domain/Document/DocumentType.php</file>
+            <file>./src/Domain/Document/Instruction.php</file>
+            <file>./src/Domain/Document/Manage.php</file>
+            <file>./src/Domain/Document/Tender.php</file>
+            <file>./src/Domain/Template/Template.php</file>
+            <file>./src/Domain/Template/TemplateMapping.php</file>
+            <file>./src/Domain/Template/TemplateRepository.php</file>
+            <file>./src/Domain/Template/TemplateType.php</file>
+            <file>./src/Domain/AbstractModel.php</file>
+            <file>./src/Domain/AbstractTypedModel.php</file>
+            <file>./src/Domain/AbstractTypeModel.php</file>
+            <file>./src/Domain/DomainException.php</file>
+            <file>./src/Domain/Oauth2.php</file>
+        </exclude>
+    </source>
+</phpunit>

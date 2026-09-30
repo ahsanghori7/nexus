@@ -1,0 +1,52 @@
+### Get Users Profiles
+GET http://account_service.local/v1/user?limit=3
+Accept: application/json
+
+### Get User Profile
+GET http://account_service.local/v1/user/4147/profile
+Accept: application/json
+
+### Create User Profile
+POST http://account_service.local/v1/user
+Content-Type: application/json;charset=utf-8
+
+{
+  "access_token" : "3f2f51c35c82dbcf9dc8c0aae2f0f1604cddbba9",
+  "account_id" : "3756",
+  "email" : "1111potatodanrobert@yahoo.com",
+  "firstname" : "dan",
+  "lastname": "alexandru",
+  "password": "123",
+  "type_id": "4"
+}
+
+### Update User Profile
+PATCH http://account_service.local/v1/user/4147/profile
+Content-Type: application/json;charset=utf-8
+
+{
+  "access_token" : "7d032f9cb522b9bec5b0b1c650e5b214",
+  "account_id" : "3756",
+  "email" : "12newflorinnew@yahoo.com",
+  "firstname" : "1221potato",
+  "lastname": "potato2",
+  "password": "12345666",
+  "type_id": "4"
+}
+
+### Verifiy Session
+GET http://account_service.local/v1/user/session/7d032f9cb522b9bec5b0b1c650e5b214
+Accept: application/json
+
+### Log in
+POST http://account_service.local/v1/user/session
+Content-Type: application/json
+
+{
+  "username": "dqs.danyel@yahoo.com",
+  "password": "123"
+}
+
+### Log out
+DELETE http://account_service.local/v1/user/session/747e52ca24036dbc4ee43400669cd473
+Accept: application/json

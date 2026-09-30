@@ -1,0 +1,33 @@
+{
+  "name": "clink/app-core",
+  "type": "library",
+  "require": {
+    "php": ">=8.1.0",
+    "aws/aws-sdk-php": "^3.288.1",
+    "stripe/stripe-php": "v7.116.0",
+    "mpdf/mpdf": "^v8.1.1",
+    "jurosh/pdf-merge": "^2.1.0",
+    "symfony/http-foundation": "6.4.29",
+    "phpoffice/phpspreadsheet": "^1.24.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Core\\": "code/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php install.php"
+    ],
+    "lint": "php lint.php",
+    "prettify": "vendor/bin/php-cs-fixer fix ../.",
+    "prettify-check": "vendor/bin/php-cs-fixer fix --dry-run ../."
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.8.11",
+    "phpunit/phpunit": "11.5.53",
+    "phpunit/php-code-coverage": "^10.1.0",
+    "friendsofphp/php-cs-fixer": "^3.9",
+    "jetbrains/phpstorm-attributes": "^1.0"
+  }
+}

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileCompleteUpdate matches snapshot for UI consistency 1`] = `
+<div
+  class="MuiBox-root"
+  data-testid="mui-box"
+  style="max-width: 1378px; margin: auto; box-sizing: border-box; display: flex;"
+>
+  <div
+    class="MuiBox-root"
+    data-testid="mui-box"
+  >
+    Your profile has been updated. You can now 
+    <a
+      href="https://test.example.com/my-company/prequalification"
+      style="cursor: pointer;"
+      target="_blank"
+    >
+      complete your prequalification
+    </a>
+     to access more opportunities or 
+    <a
+      href="https://test.example.com/projects/enquiries"
+      style="cursor: pointer;"
+      target="_blank"
+    >
+      browse current projects
+    </a>
+  </div>
+</div>
+`;

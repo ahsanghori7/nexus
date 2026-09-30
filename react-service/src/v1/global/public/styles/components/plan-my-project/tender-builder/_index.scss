@@ -1,0 +1,394 @@
+@import 'publish-modal';
+@import 'tender-date-modal';
+
+.tender-builder {
+  @import 'alert-message';
+  margin-top: 20px;
+
+  .panel-left {
+    @import 'loading-content';
+
+    .field-holder {
+      flex: 1 0 100%;
+
+      &.add-own-package {
+        flex: 1 0 50%;
+      }
+
+      &.add-package,
+      &.packages-own-package {
+        flex: 0 0 50%;
+      }
+
+      .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+
+        label.btn {
+          display: flex;
+          flex: 0 0 49%;
+          text-align: left;
+          align-items: center;
+          min-height: 50px;
+          border: 2px solid $clink-dark-purple;
+          font-weight: bold;
+
+          &:nth-child(odd) {
+            border-radius: 4px;
+            margin-right: 1%;
+          }
+
+          &:nth-child(even) {
+            border-radius: 4px;
+            margin-left: 1%;
+          }
+
+          &:hover {
+            svg {
+              path {
+                fill: $clink-green;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .tender-builder-data {
+      label,
+      input {
+        display: none;
+      }
+    }
+
+    .sector-content.card-body {
+      padding: 1.25rem 0 0;
+
+      .tender-builder-form {
+        width: 100%;
+
+        .group-0,
+        .group-1 {
+          padding-left: 1.25rem;
+          padding-right: 1.25rem;
+          width: 100%;
+        }
+
+        .group-1 {
+          background-color: $bg-purple;
+          border-top: 1px solid $purple-lighter;
+          padding-top: 23px;
+          padding-bottom: 1.25rem;
+          display: flex;
+          flex-wrap: wrap;
+
+          .field-holder {
+            flex: 1;
+
+            &.description-label {
+              flex: 1 0 100%;
+
+              label {
+                font-size: 18px;
+              }
+            }
+
+            &.submit-button-holder {
+              flex: 0;
+              padding-top: 23px;
+
+              button {
+                margin: 0px;
+                height: 45px;
+                white-space: nowrap;
+              }
+
+              &.submit-package {
+                padding-top: 0px;
+                height: 45px;
+              }
+            }
+          }
+        }
+      }
+
+      .tender-builder-message {
+        margin-right: 1.25rem;
+        margin-left: 1.25rem;
+        margin-bottom: 1.25rem;
+        flex: auto;
+      }
+    }
+  }
+
+  .panel-right {
+    &.disabled-bg {
+      opacity: 0.5;
+    }
+
+    &.success-bg {
+      .sector {
+        background-color: $clink-green-light;
+        border: 2px solid $clink-green !important;
+
+        .sector-header {
+          border-bottom-color: $clink-green;
+        }
+
+        .sector-content {
+          padding: 1rem;
+
+          .btn {
+            &.disabled,
+            &:disabled {
+              opacity: 1;
+              color: $disabled-btn-color;
+              background-color: $disabled-btn-background;
+              border-color: $disabled-btn-background;
+
+              &:hover {
+                opacity: 1;
+                background-color: $disabled-btn-background;
+                border-color: $disabled-btn-background;
+              }
+            }
+          }
+
+          .tender-packages-forms {
+            .loading.loading__full-div {
+              z-index: 1;
+              right: 0px;
+            }
+
+            margin-bottom: 10px;
+
+            p {
+              font-size: 0.85rem;
+            }
+
+            .accordion {
+              .card {
+                border: 1px solid $purple-light;
+                margin-bottom: 1rem;
+                border-radius: 4px;
+
+                &.red:not(.form-is-open) {
+                  border: 1px solid $clink-red;
+                  background-image: none;
+                }
+
+                &.form-is-open {
+                  border: 0px;
+                  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='4' ry='4' stroke='%234CC0ADFF' stroke-width='2' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+                  border-radius: 4px;
+
+                  .card-header {
+                    border: 0px;
+                    background-color: transparent;
+                    border-bottom: 1px solid $purple-light;
+                  }
+
+                  .card-body {
+                    border: 0px;
+
+                    .add-tender-date-modal {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      width: 100%;
+
+                      .clink-button {
+                        height: 45px;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                      }
+                    }
+                  }
+                }
+
+                .card-header {
+                  font-family:
+                    'proxima_nova', 'sofia_pro_softlight', sans-serif;
+                  background-color: $white;
+                  border: 0px;
+                  min-height: 54px;
+                  padding: 1rem;
+
+                  div[role='button'] {
+                    display: flex;
+                    justify-content: space-between;
+
+                    b {
+                      display: flex;
+                      font-weight: 300 !important;
+                      font-size: 1rem;
+
+                      .required {
+                        color: $clink-red;
+                      }
+                    }
+
+                    .toogle-icons {
+                      white-space: nowrap;
+
+                      svg {
+                        font-size: 18px;
+                        color: $purple-light;
+
+                        &.trash-bin {
+                          margin-right: 14px;
+                        }
+
+                        &.angle {
+                          position: relative;
+
+                          &--up {
+                            top: 4px;
+                          }
+
+                          &--down {
+                            top: -4px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .card-body {
+                  padding: 0.75rem 0.5rem;
+
+                  .clink-form {
+                    .field-holder {
+                      flex: 1 0 100%;
+                      padding: 0 0.5rem;
+                      margin-bottom: 0.75rem;
+
+                      .form-label {
+                        font-weight: 300;
+                        margin-bottom: 0.15rem;
+                      }
+                    }
+
+                    .react-select__indicator-separator {
+                      display: none;
+                    }
+                  }
+                }
+              }
+
+              & + .incomplete-error {
+                margin-top: -12px;
+                margin-bottom: 16px;
+                color: $clink-red;
+                font-size: 13px;
+                font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+              }
+            }
+          }
+
+          .tender-packages-actions {
+            width: 100%;
+
+            .col-6,
+            .col-12 {
+              padding: 0px;
+            }
+
+            .col-12 {
+              text-align: center;
+
+              span {
+                @include sub-text;
+                padding-top: 5px;
+              }
+            }
+
+            .col-6:nth-of-type(1) {
+              padding-right: 5px;
+            }
+
+            .col-6:nth-of-type(2) {
+              padding-left: 5px;
+            }
+
+            button {
+              @extend .rounded-pill;
+
+              width: 100%;
+              height: 3.2rem;
+              margin: 5px 0px;
+            }
+
+            .row {
+              &:last-of-type {
+                padding-top: 0.5rem;
+                padding-bottom: 2rem;
+              }
+
+              .col-6 {
+                .btn {
+                  &.btn-primary {
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                  }
+
+                  &.green-button {
+                    padding: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .tender-builder {
+    .panel-left {
+      .field-holder {
+        padding-left: 0;
+        padding-right: 0;
+
+        .btn-group {
+          label.btn {
+            flex: 0 0 100%;
+            padding-right: 0.75rem;
+
+            &:nth-child(odd) {
+              margin-right: 0;
+              margin-left: 0;
+            }
+
+            &:nth-child(even) {
+              margin-left: 0;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      .sector-content {
+        &.card-body {
+          .tender-builder-form {
+            .group-1 {
+              .field-holder {
+                &.submit-button-holder {
+                  flex: 1;
+
+                  .btn {
+                    margin-left: auto;
+                    margin-right: auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

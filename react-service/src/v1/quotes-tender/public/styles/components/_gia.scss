@@ -1,0 +1,30 @@
+@import '~bootstrap';
+
+.gia-container {
+  min-width: 280px;
+  max-width: 310px;
+
+  .gia-label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+
+    span {
+      color: $red;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border: 2px solid $purple-lighter;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+
+  ::placeholder {
+    color: $black;
+    font-weight: bold;
+  }
+}

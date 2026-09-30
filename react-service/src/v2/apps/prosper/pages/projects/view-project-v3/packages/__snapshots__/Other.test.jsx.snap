@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Other Component matches snapshot 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-container MuiGrid-item"
+  data-testid="mui-grid"
+  display="[object Object]"
+>
+  <div
+    component="h1"
+    data-testid="mui-typography"
+  >
+    label-other-packages
+  </div>
+</div>
+`;

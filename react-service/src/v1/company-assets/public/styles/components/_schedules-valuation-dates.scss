@@ -1,0 +1,81 @@
+.schedules-valuation-dates {
+  width: 100%;
+  padding: 20px;
+
+  table {
+    font-size: 12px;
+    table-layout: fixed;
+    width: 100%;
+
+    thead {
+      tr {
+        &:nth-child(odd) {
+          background-color: $clink-table-row;
+        }
+
+        &:nth-child(even) {
+          background-color: $white;
+        }
+
+        th {
+          padding: 14px;
+          vertical-align: top;
+          border-bottom: 0px;
+          color: $clink-black;
+
+          &.valuation-b {
+            width: 130px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          background-color: $white;
+        }
+
+        &:nth-child(even) {
+          background-color: $clink-table-row;
+        }
+        td {
+          padding: 12px;
+          word-break: break-all;
+          white-space: nowrap;
+          vertical-align: middle;
+          color: $disabled-btn-color;
+
+          &.valuation-b {
+            padding: 0px;
+            width: 130px;
+
+            .date-input {
+              cursor: pointer;
+              background-color: transparent;
+              font-size: 12px;
+              border: 0px;
+
+              &:focus {
+                box-shadow: none;
+              }
+
+              input {
+                color: $clink-black;
+              }
+            }
+          }
+
+          strong {
+            color: $clink-black;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    font-size: 12px;
+    text-align: center;
+  }
+}

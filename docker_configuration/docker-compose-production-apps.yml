@@ -1,0 +1,23 @@
+volumes:
+  logs:
+    driver: local
+
+services:
+  app.c-link:
+    container_name: app.c-link
+    image: ${ECR_REGISTRY}/app.c-link:${VERSION}
+    extra_hosts:
+      - "${DOCKER_SERVICES_HOSTS}"
+    env_file:
+      - ../app.c-link/.env
+    ports:
+      - "8085:80"
+  framework:
+    container_name: framework
+    image: ${ECR_REGISTRY}/framework:${VERSION}
+    extra_hosts:
+      - "${DOCKER_SERVICES_HOSTS}"
+    env_file:
+      - ../framework/.env
+    ports:
+      - "8086:80"

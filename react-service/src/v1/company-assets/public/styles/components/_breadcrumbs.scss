@@ -1,0 +1,16 @@
+.breadcrumbs {
+  margin-left: 0;
+  margin-bottom: 0.75rem;
+
+  .breadcrumbs-elem {
+    a {
+      color: $clink-purple;
+      text-decoration: underline !important;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $clink-purple-hover;
+      }
+    }
+  }
+}

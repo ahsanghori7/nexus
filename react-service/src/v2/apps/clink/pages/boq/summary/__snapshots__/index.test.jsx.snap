@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Summary Component matches snapshot 1`] = `
+<div
+  class="MuiBox-root"
+  data-testid="mui-box"
+>
+  <div
+    data-testid="mock-wrapper"
+  >
+    <div
+      data-testid="mock-table"
+    >
+      <div
+        data-testid="items-count"
+      >
+        2
+      </div>
+      <div
+        data-testid="actions-enabled"
+      >
+        false
+      </div>
+      <div
+        data-testid="item-0"
+      >
+        {"id":"test-entity-1","label":"Test Entity 1","tid":1,"status":"active","budget":300}
+      </div>
+      <div
+        data-testid="item-1"
+      >
+        {"id":"test-entity-2","label":"Test Entity 2","tid":2,"status":"pending","budget":360}
+      </div>
+    </div>
+  </div>
+</div>
+`;

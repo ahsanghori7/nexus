@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledRegisteredWrapper matches snapshot for v1 1`] = `
+<div
+  class="styled__StyledRegisteredWrapper-sc-t90v9h-0 ehBWrC"
+  version="v1"
+>
+  <div
+    class="card__item"
+  >
+    <div
+      class="card__item--title"
+    >
+      Test Title
+    </div>
+    <div
+      class="card__item--body"
+    >
+      Test Body
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StyledRegisteredWrapper matches snapshot for v2 1`] = `
+<div
+  class="styled__StyledRegisteredWrapper-sc-t90v9h-0 iPKyOq"
+  version="v2"
+>
+  <div
+    class="card__item"
+  >
+    <div
+      class="card__item--title"
+    >
+      Test Title
+    </div>
+    <div
+      class="card__item--body"
+    >
+      Test Body
+    </div>
+  </div>
+</div>
+`;

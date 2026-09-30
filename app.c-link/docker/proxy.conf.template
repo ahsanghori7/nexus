@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+    ServerName $APACHE_SERVICE_SERVER_NAME
+    ProxyPreserveHost On
+    ProxyPass / $APACHE_SERVICE_PROXY_PASS
+    ProxyPassReverse / $APACHE_SERVICE_PROXY_PASS
+
+    ErrorLog /var/log/apache2/$APACHE_SERVICE_SERVER_NAME-error.log
+    CustomLog /var/log/apache2/$APACHE_SERVICE_SERVER_NAME-access.log combined
+</VirtualHost>

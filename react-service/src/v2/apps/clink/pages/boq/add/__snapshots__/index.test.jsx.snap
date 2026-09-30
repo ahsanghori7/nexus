@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add Component matches snapshot 1`] = `
+<div
+  acceptstyleprop="[object Object]"
+  cancelstyleprop="[object Object]"
+  data-testid="modal"
+  style="width: 100%; max-width: 420px; background-color: rgb(255, 255, 255); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);"
+/>
+`;

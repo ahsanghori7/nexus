@@ -1,0 +1,153 @@
+.stepper {
+  &-desktop,
+  &-mobile {
+    display: none;
+  }
+  &-desktop {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  &-mobile {
+    @media screen and (max-width: 769px) {
+      display: block;
+      padding: 24px;
+      text-align: center;
+    }
+    &__active {
+      color: $clink-green;
+    }
+    &__total {
+      color: $clink-red;
+    }
+  }
+}
+
+.progress-step-bar {
+  background-color: $white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid $purple-light;
+
+  @media screen and (max-width: 769px) {
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: 0.5rem;
+  }
+  &-title {
+    flex: 2 1 13rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    @media screen and (max-width: 769px) {
+      flex: 2 1 3rem;
+    }
+  }
+
+  &-indicator {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 3 1 auto;
+
+    @media screen and (max-width: 769px) {
+      flex-direction: column;
+    }
+  }
+  &-inner {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+
+    @media screen and (max-width: 769px) {
+      width: 50%;
+    }
+  }
+
+  &-inner-last {
+    max-width: 1rem;
+    margin-bottom: 1.5rem;
+
+    @media screen and (max-width: 769px) {
+      width: 50%;
+      max-width: 50%;
+      margin-bottom: 0;
+    }
+  }
+  &-line {
+    height: 1.5rem;
+    background-color: $disabled-btn-background;
+    margin-left: 5px;
+
+    &.active {
+      border: 2px solid $disabled-btn-background;
+      background: linear-gradient(
+        to right,
+        rgb(255, 124, 48),
+        rgb(252, 183, 136),
+        rgb(244, 238, 239)
+      );
+    }
+
+    &.completed {
+      border: 2px solid $disabled-btn-background;
+      background-color: $clink-green;
+    }
+
+    &.first {
+      border-radius: 1.5rem 0 0 1.5rem;
+    }
+
+    &.last {
+      border-radius: 0 1.5rem 1.5rem 0;
+    }
+  }
+  &-label {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    height: 24px;
+    text-align: left;
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &.active {
+      color: rgb(255, 124, 48);
+    }
+    &-title {
+      flex: 1;
+      text-align: center;
+      position: relative;
+      left: -1.4rem;
+      max-width: 55px;
+    }
+    &-gt {
+      flex: 1;
+      text-align: center;
+      color: rgb(163, 164, 165);
+      &.blank {
+        @media screen and (max-width: 769px) {
+          display: none;
+        }
+      }
+    }
+
+    &.last {
+      @media screen and (max-width: 769px) {
+        max-width: 4.5rem;
+      }
+    }
+  }
+
+  &-steps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+  }
+}

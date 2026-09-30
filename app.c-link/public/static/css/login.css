@@ -1,0 +1,178 @@
+
+.background-wrapper {
+    background-image: url("/static/images/svg/clink-login-background.svg");
+    min-height: 100vh;
+    background-position: 450px 120px;
+    background-repeat: no-repeat;
+}
+
+.shadow-wrapper {
+    background: transparent linear-gradient(180deg, rgba(255,255,255,0.1) 58%, #ECECF4 107%) 0% 0% no-repeat padding-box;
+    min-height: 100vh;
+}
+
+.clink-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    font-family: rooney-sans, sans-serif;
+}
+
+.clink-login .clink-login-wrapper {
+    max-width: 500px;
+    width: 90%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.clink-login .clink-login-wrapper .clink-login-logo img {
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.clink-login .clink-login-wrapper h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.clink-login .clink-login-wrapper form.clink-login-form {
+    background-color: #F8F8FB;
+    border: 1px solid #DFDFEA;
+    max-width: 500px;
+    border-radius: 12px;
+    padding: 50px 10px;
+    margin-bottom: 30px;
+}
+
+.clink-login .clink-login-wrapper form.clink-login-form .field-wrapper {
+    width: 90%;
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.clink-login .clink-login-wrapper form.clink-login-form .field-wrapper label {
+    font-size: 18px;
+    font-family: rooney-sans, sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.clink-login .clink-login-wrapper form.clink-login-form .field-wrapper label span {
+    color: #ED1164;
+}
+
+.clink-login .clink-login-wrapper form.clink-login-form .field-wrapper.input-wrapper {
+    margin-bottom: 10px;
+}
+
+.clink-login .clink-login-wrapper form.clink-login-form .field-wrapper.input-wrapper input {
+    border: 1px solid #DFDFEA;
+    font-size: 18px;
+    border-radius: 12px;
+    height: 64px;
+    padding: 8px;
+    padding-left: 16px;
+}
+
+.clink-login .clink-login-wrapper form.clink-login-form .field-wrapper.clink-login-submit button.action-btn {
+    font-size: 23px;
+    background-color: #ED1164;
+    border: 1px solid #DB0A59;
+    padding: 18px 50px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 46px #ED11644D;
+    margin: 34px auto 30px;
+}
+
+.clink-login .clink-login-wrapper form.clink-login-form .field-wrapper.clink-login-submit button.action-btn:hover {
+    background-color: #DB0A59;
+}
+
+.clink-login .clink-login-wrapper form.clink-login-form .field-wrapper.new-account {
+    text-align: center;
+    font-size: 16px;
+}
+
+.clink-login .clink-login-wrapper form.clink-login-form .field-wrapper.new-account a {
+    color: #ED1164;
+    text-decoration: underline!important;
+}
+
+.clink-login .clink-login-wrapper form.clink-login-form .field-wrapper.new-account a:hover {
+    color: #DB0A59;
+}
+
+.clink-login .clink-login-wrapper .clink-login-forgot {
+    text-align: center;
+    display: block;
+    color: #4CC0AD;
+    text-decoration: underline!important;
+    font-size: 15px;
+}
+
+@media (max-width: 575px) {
+
+    .background-wrapper {
+        background-position: -247px 105px;
+        background-size: 650px;
+    }
+
+    .clink-login {
+        margin: 0 6px;
+    }
+
+    .clink-login .clink-login-wrapper {
+        padding-top: 30px;
+    }
+
+    .clink-login .clink-login-wrapper .clink-login-logo img {
+        max-width: 150px;
+    }
+
+    .clink-login .clink-login-wrapper h1 {
+        margin-top: 20px;
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    .clink-login .clink-login-wrapper form.clink-login-form {
+        padding: 30px 20px 24px;
+        margin-bottom: 20px;
+    }
+
+    .clink-login .clink-login-wrapper form.clink-login-form .field-wrapper label {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .clink-login .clink-login-wrapper form.clink-login-form .field-wrapper.input-wrapper {
+        margin-bottom: 6px;
+    }
+
+    .clink-login .clink-login-wrapper form.clink-login-form .field-wrapper.input-wrapper input {
+        font-size: 14px;
+    }
+
+    .clink-login .clink-login-wrapper form.clink-login-form .field-wrapper.new-account {
+        font-size: 14px;
+    }
+
+    .clink-login .clink-login-wrapper form.clink-login-form .field-wrapper.clink-login-submit button.action-btn {
+        font-size: 19px;
+        padding: 16px 42px;
+        margin: 28px auto 20px;
+    }
+
+    .clink-login .clink-login-wrapper form.clink-login-form .field-wrapper.new-account a {
+        text-underline-offset: 2px;
+    }
+
+    .clink-login .clink-login-wrapper .clink-login-forgot {
+        font-size: 13px;
+        text-underline-offset: 2px;
+    }
+}

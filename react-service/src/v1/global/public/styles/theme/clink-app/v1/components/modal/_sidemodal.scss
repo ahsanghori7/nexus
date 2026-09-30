@@ -1,0 +1,11 @@
+.sidemodal.left,
+.sidemodal.right {
+  .modal-dialog {
+    width: 420px;
+    .modal-content {
+      .modal-body {
+        padding: 0;
+      }
+    }
+  }
+}

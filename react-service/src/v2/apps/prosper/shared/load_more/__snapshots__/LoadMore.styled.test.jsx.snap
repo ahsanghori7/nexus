@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledLoadMore should match snapshot 1`] = `
+<div
+  class="LoadMorestyled__StyledLoadMore-sc-e9igai-0 eCXfGD"
+>
+  <button>
+    Load More Button
+  </button>
+</div>
+`;

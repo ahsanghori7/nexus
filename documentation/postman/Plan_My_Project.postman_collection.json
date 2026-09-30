@@ -1,0 +1,163 @@
+{
+  "info": {
+    "name": "Plan My Project — BoQ package/trade suggestions (AI2-516)",
+    "description": "Demo collection for the Plan My Project relay: upload BoQ/pricing spreadsheets for a project, poll for QSAI-suggested package names + trades per tab.\n\nSee documentation/plan-my-project-api.md for local setup (hosts entries, pointing framework at a local QSAI, data prerequisites).\n\nFlow: run '0. Auth > Login' once (saves session_token), then 'Submit BoQ documents' (pick .xlsx file(s) in the Body tab), then poll 'Get suggestions' until status is SUCCESS.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "0. Auth",
+      "item": [
+        {
+          "name": "Login (saves session_token)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('login ok', () => pm.response.to.have.status(200));",
+                  "const body = pm.response.json();",
+                  "const token = body?.data?.token;",
+                  "if (token) {",
+                  "    pm.environment.set('session_token', token);",
+                  "    console.log('session_token saved:', token);",
+                  "} else {",
+                  "    console.warn('No token in response — check credentials. Body:', JSON.stringify(body));",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"{{username}}\",\n  \"password\": \"{{password}}\"\n}"
+            },
+            "url": {
+              "raw": "{{account_service_url}}/v1/user/session",
+              "host": ["{{account_service_url}}"],
+              "path": ["v1", "user", "session"]
+            },
+            "description": "Logs in against account_service and saves the session token to the environment. The user must belong to the main-contractor account that OWNS the project you will use (project.group_id == account id), or be an administrator — anything else gets 403 from the relay."
+          }
+        }
+      ]
+    },
+    {
+      "name": "1. Via framework relay (as the FE calls it)",
+      "item": [
+        {
+          "name": "Submit BoQ documents",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('accepted', () => pm.expect([200, 202]).to.include(pm.response.code));",
+                  "pm.test('status PENDING', () => pm.expect(pm.response.json().status).to.eql('PENDING'));",
+                  "console.log(pm.response.text());"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{session_token}}" }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "files[]",
+                  "type": "file",
+                  "src": [],
+                  "description": "Pick one or more .xlsx/.xls BoQ or pricing documents"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{framework_api_url}}/ai/project-plan/{{project_id}}",
+              "host": ["{{framework_api_url}}"],
+              "path": ["ai", "project-plan", "{{project_id}}"]
+            },
+            "description": "Relays the uploaded spreadsheets to QSAI POST /api/project-plan. The relay adds external_project_id (from the URL), external_project_name (from the fetched project — not client input) and external_metadata (session context) itself.\n\nExpect: HTTP 200 with body {\"id\": N, \"status\": \"PENDING\"} (QSAI's 202 body passed through; the relay, like the other QSAI relays, answers 200).\nErrors: 400 no/invalid files (QSAI-side validation), 403 not your project, 404 project id unknown, 503 QSAI unreachable."
+          }
+        },
+        {
+          "name": "Get suggestions (poll)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('ok (200)', () => pm.response.to.have.status(200));",
+                  "const body = pm.response.json();",
+                  "console.log('status:', body?.status, body?.current_step !== undefined ? `(step ${body.current_step}/${body.total_steps})` : '');",
+                  "if (body?.status === 'SUCCESS') console.log(JSON.stringify(body.result, null, 2));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{session_token}}" }
+            ],
+            "url": {
+              "raw": "{{framework_api_url}}/ai/project-plan/{{project_id}}",
+              "host": ["{{framework_api_url}}"],
+              "path": ["ai", "project-plan", "{{project_id}}"]
+            },
+            "description": "Polls QSAI for the LATEST submission of this project (verbatim passthrough).\n\nBody status walks PENDING → STARTED → SUCCESS (result.packages[].trades[]) or FAILURE/UNPROCESSABLE (user_message, error_type, can_retry) — all with HTTP 200.\n\n404 = no submission exists yet for this project."
+          }
+        }
+      ]
+    },
+    {
+      "name": "2. Direct QSAI (bypasses framework auth)",
+      "item": [
+        {
+          "name": "Submit direct to QSAI",
+          "request": {
+            "method": "POST",
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                { "key": "files[0]", "type": "file", "src": [], "description": ".xlsx/.xls only" },
+                { "key": "external_project_id", "value": "{{project_id}}", "type": "text" },
+                { "key": "external_project_name", "value": "Postman demo project", "type": "text" },
+                { "key": "external_metadata", "value": "{\"source\": \"postman-direct\"}", "type": "text", "description": "Optional opaque passthrough" }
+              ]
+            },
+            "url": {
+              "raw": "{{qsai_url}}/api/project-plan",
+              "host": ["{{qsai_url}}"],
+              "path": ["api", "project-plan"]
+            },
+            "description": "Hits the QSAI API directly — no C-LINK session, no project checks. Useful to isolate QSAI behaviour from the relay. In production the relay supplies external_project_name/metadata itself."
+          }
+        },
+        {
+          "name": "Poll direct from QSAI",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{qsai_url}}/api/project-plan/{{project_id}}",
+              "host": ["{{qsai_url}}"],
+              "path": ["api", "project-plan", "{{project_id}}"]
+            },
+            "description": "Latest submission for this external_project_id, straight from QSAI."
+          }
+        }
+      ]
+    }
+  ]
+}

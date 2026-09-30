@@ -1,0 +1,261 @@
+// 3.1.3 Tables
+
+
+.flip-scroll{
+  margin: 20px 0px 20px 0px;
+
+
+  table {
+    width: 100%;
+
+    thead {
+
+      tr {
+        border-bottom: 1px solid #f2f2f2;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: #333;
+        th {
+          padding: 10px;
+
+          &:nth-child(1) {
+            width: 40px;
+
+            &.nr-crt {
+              width: 80px !important;
+            }
+          }
+
+          &:last-child {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid #f2f2f2;
+        font-size: 0.8rem;
+        transition: ease 300ms;
+
+        &:hover {
+          background: rgba(5, 205, 255, 0.1) !important;
+          transition: ease 300ms;
+        }
+
+        &:nth-child(odd) {
+          background: #f9f9f9;
+        }
+
+        td {
+          padding: 10px;
+
+          a {
+            color: #333;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+              color: $clink-green;
+            }
+
+          }
+
+          p {
+            margin: 0px;
+          }
+
+          span {
+            display: block;
+            width: 60px;
+            text-transform: uppercase;
+            font-size: 0.6rem;
+            padding: 3px;
+            color: white;
+            margin-right: 5px;
+            border-radius: 5px;
+            text-align: center;
+            &.admin {
+              background: $clink-purple;
+            }
+
+            &.manager {
+              background: $clink-green;
+            }
+
+            &.assistant {
+              background: $n02;
+              color: #333;
+            }
+
+            &.team-member {
+              display: inline-table;
+              width: auto;
+              background: $n02;
+              color: #333;
+              font-size: 0.7rem;
+              padding: 5px !important;
+              margin-right: 15px;
+
+              p {
+                margin: 5px;
+                display: inline-table;
+              }
+
+              a {
+                margin: 5px 5px 5px 10px;
+                color: $clink-pink;
+                display: inline-table;
+              }
+
+            }
+
+          }
+
+
+          &:nth-child(1) {
+            width: 40px;
+          }
+
+          &:last-child {
+            text-align: center;
+
+            .btn-group {
+
+              .dropdown-menu {
+
+                &.user-actions {
+
+                  border: none !important;
+                  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+                  top: 16px !important;
+                  z-index: 9999999;
+
+                  a {
+                    width: 100%;
+                    display: block;
+                    clear: both;
+                    font-size: 0.7rem;
+                    color: #333;
+                    padding: .4rem 1.5rem;
+                    white-space: nowrap;
+
+                    &:hover {
+                      color: $clink-purple;
+                    }
+
+                  }
+
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+    }
+
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+
+  .flip-scroll {
+
+    margin: 20px 0px 20px 0px;
+
+    .cf {
+
+      &::after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+      }
+
+    }
+
+    * html {
+
+      .cf {
+        zoom: 1;
+      }
+    }
+
+    * {
+      &:first-child+html {
+
+        .cf {
+          zoom: 1;
+        }
+
+      }
+    }
+
+    table {
+      min-width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      display: block;
+      position: relative;
+
+      thead {
+        display: block;
+        float: left;
+
+        tr {
+          display: block;
+          border-right: none;
+          box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      tbody {
+        display: block;
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        tr {
+          display: inline-block;
+          vertical-align: top;
+          border-left: 1px solid #f9f9f9;
+          padding-left: 20px;
+        }
+      }
+    }
+
+    th {
+      display: block;
+      text-align: left;
+      min-height: 60px;
+      margin: 0;
+      vertical-align: top;
+      border-bottom: 0;
+      border-left: 0;
+    }
+
+    td {
+      display: block;
+      min-height: 60px;
+      text-align: left;
+      margin: 0;
+      vertical-align: top;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0;
+
+    }
+
+  }
+
+}

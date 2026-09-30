@@ -1,0 +1,42 @@
+.nav-item {
+  border-top: 1px solid RGB(0, 0, 0, 0.1);
+  border-right: 1px solid RGB(0, 0, 0, 0.1);
+
+  &:last-child {
+    border-top-right-radius: 0.5rem;
+  }
+
+  a {
+    color: black;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+  }
+
+  .nav-link.active {
+    border-bottom: 3px solid $clink-green;
+  }
+}
+
+.flex-row.tab-bar {
+  border-bottom: 1px solid RGB(0, 0, 0, 0.1);
+}
+
+.tab-content {
+  display: flex;
+}
+
+.tab-content > .tab-pane {
+  display: block; /* undo "display: none;" */
+  visibility: hidden;
+  margin-right: -100%;
+  width: 100%;
+}
+
+.tab-content > .active {
+  visibility: visible;
+}
+
+.panel__packages .sector .sector-content {
+  flex-wrap: nowrap;
+  overflow: visible;
+}

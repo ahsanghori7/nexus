@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MuiCompanyCardContainer should match snapshot 1`] = `
+<div
+  class="MuiBox-root"
+  data-testid="mui-box"
+  style="height: calc(100% - 39px); overflow-x: hidden; overflow-y: scroll; margin: 0px 39px 39px;"
+>
+  <div>
+    Company Snapshot
+  </div>
+</div>
+`;
+
+exports[`MuiDashboardCardContainer should match snapshot 1`] = `
+<div
+  class="MuiBox-root"
+  data-testid="mui-box"
+  style="display: grid; grid-template-columns: repeat(12, 1fr); grid-template-rows: minmax(460px, max-content);"
+>
+  <div>
+    Snapshot Test
+  </div>
+</div>
+`;

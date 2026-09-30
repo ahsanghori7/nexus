@@ -1,0 +1,43 @@
+.accepted-files-list {
+  strong {
+    font-weight: bold;
+  }
+  ul {
+    padding-left: 10px;
+    margin-top: 10px;
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+.green-button {
+  &.add-category {
+    margin: 0 10px;
+    height: 64px;
+    border-radius: 8px;
+    font-size: 18px;
+    svg {
+      height: 16px;
+    }
+  }
+}
+
+.add-category-modal {
+  &.clink-form {
+    max-width: 100%;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+
+    button {
+      @extend .rounded-pill;
+
+      margin-left: 8px;
+      min-width: 91px;
+    }
+  }
+}

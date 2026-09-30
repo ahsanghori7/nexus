@@ -1,0 +1,212 @@
+/* Tabs */
+
+.tab-holder {
+  .nav-tabs {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2px 2px 0px 0px;
+
+    &.profile {
+      .nav-item {
+        width: 25%;
+      }
+    }
+
+    &.prequal {
+      .nav-item {
+        width: 20%;
+      }
+    }
+
+    .nav-item {
+      background-image: linear-gradient(135deg, $n01 0%, $n02 100%);
+
+      .nav-link {
+        background: transparent;
+        background-image: linear-gradient(
+          90deg,
+          transparent 70%,
+          rgba(255, 255, 255, 0.2) 100%
+        );
+        border: none;
+        outline: none;
+        cursor: pointer;
+        width: 100%;
+        height: 80px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9rem;
+        overflow: hidden;
+        transition: 0.3s ease;
+        color: rgba(0, 0, 0, 0.5);
+
+        .tab-title {
+          margin: 0px !important;
+          // TODO
+          // - refactor the code so z-index it will not be necessary anymore
+          // - refactor, so !important it will not be necessary anymore
+          // - replace any 'white' with HEX or RGB
+          z-index: 2;
+          transition: 0.3s ease-in-out;
+
+          span {
+            display: inline-block;
+            padding: 0.25em 0.4em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: 0.25rem;
+            transition: color 0.15s ease-in-out,
+              background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+              box-shadow 0.15s ease-in-out;
+
+            &.not-approved {
+              background: $snow;
+              color: $clink-pink;
+              margin-left: 10px;
+              margin-right: 10px;
+              z-index: 9;
+            }
+
+            &.approved {
+              background: $snow;
+              color: $clink-green;
+              margin-left: 10px;
+              margin-right: 10px;
+              z-index: 9;
+            }
+          }
+        }
+
+        &::before {
+          background-image: linear-gradient(
+            135deg,
+            $sec-color 0%,
+            $hover-color 100%
+          );
+          content: '';
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: 0.3s ease-in-out;
+        }
+
+        .badge {
+          background: $snow;
+          color: $clink-purple;
+          margin-left: 10px;
+          z-index: 9;
+        }
+
+        &:hover {
+          p {
+            color: white;
+            transition: 0.3s ease-in-out;
+          }
+        }
+
+        &:hover::before {
+          height: 100%;
+          bottom: 0;
+        }
+
+        &.active {
+          background-color: white;
+          z-index: 0;
+          border-right: 0px;
+          border-left: 0px;
+          bottom: 0px;
+          overflow: hidden;
+          cursor: pointer;
+
+          p {
+            color: $clink-purple;
+            font-weight: bold;
+          }
+
+          &::before {
+            content: '';
+            width: 100%;
+            height: 5px;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    padding: 30px 15px;
+    background: white;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+
+    .points-available {
+      padding: 15px;
+      font-size: 0.9rem;
+      @include font-bold;
+
+      span {
+        background: $clink-green;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    }
+
+    .select-menu {
+      max-width: 100%;
+    }
+
+    button {
+      margin: 15px auto;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tab-holder {
+    .nav-tabs {
+      height: auto;
+
+      &.profile {
+        .nav-item {
+          width: 50%;
+        }
+      }
+
+      &.prequal {
+        .nav-item {
+          width: 50%;
+
+          &:last-child {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .tab-holder {
+    .nav-tabs {
+      height: auto;
+
+      &.profile {
+        .nav-item {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

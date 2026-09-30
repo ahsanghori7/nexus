@@ -1,0 +1,266 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#sign-up-form-container {
+  display: none;
+}
+
+#supply-chain-welcome-container .form-header {
+  max-width: 790px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 133px;
+}
+
+@media screen and (max-width: 599px) {
+  #supply-chain-welcome-container .form-header {
+    height: 85px;
+    padding: 0 24px;
+  }
+}
+
+#supply-chain-welcome-container .form-header .form-name {
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 599px) {
+  #supply-chain-welcome-container .form-header .form-name {
+    font-size: 14px;
+  }
+}
+
+#supply-chain-welcome-container .form-header .form-name .account-activation {
+  margin-bottom: 4px;
+}
+
+#supply-chain-welcome-container .form-header .form-name.scs-form-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#supply-chain-welcome-container
+  .form-header
+  .form-name.scs-form-name
+  .powered-by {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#supply-chain-welcome-container
+  .form-header
+  .form-name.scs-form-name
+  .powered-by
+  span.powered-by-text {
+  font-size: 11px;
+  color: #ed1164;
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 599px) {
+  #supply-chain-welcome-container
+    .form-header
+    .form-name.scs-form-name
+    .powered-by
+    span.powered-by-text {
+    font-size: 7px;
+  }
+}
+
+#supply-chain-welcome-container
+  .form-header
+  .form-name.scs-form-name
+  .powered-by
+  img {
+  width: 82px;
+  height: auto;
+}
+
+@media screen and (max-width: 599px) {
+  #supply-chain-welcome-container
+    .form-header
+    .form-name.scs-form-name
+    .powered-by
+    img {
+    width: 59px;
+  }
+}
+
+#supply-chain-welcome-container .form-header .form-logo img {
+  width: 193px;
+  height: auto;
+}
+
+@media screen and (max-width: 599px) {
+  #supply-chain-welcome-container .form-header .form-logo img {
+    width: 116px;
+  }
+}
+
+#supply-chain-welcome-container .form-body {
+  background-color: #f3f7f9;
+  border-top: 1px solid #cfe4ef;
+  font-family: "AvantGardeGothic";
+  display: flex;
+  padding: 20px;
+  padding-bottom: 150px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#supply-chain-welcome-container .form-body .sc-title {
+  width: 100%;
+  max-width: 790px;
+  margin-bottom: 37px;
+  margin-top: 52px;
+}
+
+#supply-chain-welcome-container .form-body .sc-description {
+  width: 100%;
+  max-width: 790px;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+#supply-chain-welcome-container .form-body .sc-description u {
+  color: #d1347d;
+}
+
+#supply-chain-welcome-container .form-body .sp-logo {
+  width: 258px;
+}
+
+#supply-chain-welcome-container .form-body .sp-logo img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+}
+
+#supply-chain-welcome-container .form-body .sp-content {
+  width: 456px;
+  padding: 0 15px;
+}
+
+#supply-chain-welcome-container .form-body .sp-content p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media screen and (max-width: 599px) {
+  #supply-chain-welcome-container .form-body .sp-content {
+    width: 100%;
+  }
+
+  #supply-chain-welcome-container .form-body .sp-content p {
+    font-size: 12px;
+  }
+
+  #supply-chain-welcome-container .form-body .sc-description {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+#supply-chain-welcome-container .form-body .sp-content #p1 {
+  margin-top: 20px;
+}
+
+#supply-chain-welcome-container .form-body .sp-content #p2 {
+  margin-top: 30px;
+}
+
+#supply-chain-welcome-container .form-body .sc-video-title {
+  display: flex;
+  justify-content: center;
+  max-width: 790px;
+  width: 100%;
+  margin-top: 45px;
+  margin-bottom: 22px;
+  font-size: 14px;
+  font-weight: 100;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 599px) {
+  #supply-chain-welcome-container .form-body .sc-video-title {
+    font-size: 11px;
+  }
+}
+
+#supply-chain-welcome-container .form-body .sc-video-title b {
+  color: #59358c;
+  margin-right: 5px;
+}
+
+#supply-chain-welcome-container .form-body .sc-video {
+  display: block;
+  max-width: 752px;
+  width: 100%;
+}
+
+#supply-chain-welcome-container .form-body .sc-info {
+  font-size: 15px;
+  margin-top: 56px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 599px) {
+  #supply-chain-welcome-container .form-body .sc-info {
+    font-size: 12px;
+  }
+}
+
+#supply-chain-welcome-container .form-body .sc-info p {
+  margin: 0;
+  text-align: center;
+}
+
+#supply-chain-welcome-container .form-body h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 599px) {
+  #supply-chain-welcome-container .form-body h2 {
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+#supply-chain-welcome-container .form-body .sc-start-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 327px;
+  height: 73px;
+  background-color: #d1347d;
+  border: 1px solid #c3075e;
+  border-radius: 6px;
+  opacity: 1;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: normal;
+  font-family: "AvantGardeGothic";
+}
+
+@media screen and (max-width: 600px) {
+  #supply-chain-welcome-container .form-body .sc-start-btn button {
+    width: 201px;
+    height: 67px;
+    font-size: 16px;
+  }
+}

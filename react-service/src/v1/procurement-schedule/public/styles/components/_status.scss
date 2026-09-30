@@ -1,0 +1,57 @@
+.status {
+  padding-left: 18px;
+  font-size: 14px;
+  font-weight: initial;
+  font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+
+  &::marker {
+    font-size: 20px;
+  }
+
+  &__accepted {
+    color: $tender-purple;
+  }
+
+  &__dismissed,
+  &__deleted {
+    color: $tender-red;
+  }
+
+  &__info {
+    color: $tender-orange;
+  }
+
+  &__sent {
+    color: $tender-grey;
+  }
+
+  &__viewed {
+    color: $tender-grey;
+  }
+
+  &__tender_received {
+    color: $tender-green-dark;
+  }
+
+  &__awarded {
+    color: $tender-gold;
+  }
+
+  &__package-awarded {
+    padding-left: 0;
+
+    &-icon {
+      list-style: none;
+      font-weight: bold;
+    }
+  }
+
+  &__date {
+    font-size: 11px;
+    font-family: 'avant_garde_gothic', 'sofia_pro_softlight', sans-serif;
+    list-style: none;
+    letter-spacing: 0.11px;
+    color: $tender-grey;
+    opacity: 0.5;
+  }
+}

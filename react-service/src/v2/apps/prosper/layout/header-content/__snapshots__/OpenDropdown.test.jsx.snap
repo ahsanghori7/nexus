@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpenDropdown snapshot test 1`] = `
+<div
+  class="OpenDropdown__StyledContainer-sc-capc5e-0 bbbwyR"
+>
+  <div
+    data-testid="profile-section"
+  >
+    Profile Section 
+    Closed
+  </div>
+</div>
+`;
+
+exports[`OpenDropdown snapshot test when open 1`] = `
+<div
+  class="OpenDropdown__StyledContainer-sc-capc5e-0 bbbwyR"
+>
+  <div
+    data-testid="profile-section"
+  >
+    Profile Section 
+    Open
+  </div>
+</div>
+`;

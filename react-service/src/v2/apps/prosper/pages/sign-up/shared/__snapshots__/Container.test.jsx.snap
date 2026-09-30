@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container Component takes a snapshot 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-container"
+  data-testid="mui-grid"
+  sx="[object Object]"
+>
+  <div
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10.5 MuiGrid-grid-md-6 MuiGrid-grid-lg-4"
+    data-testid="mui-grid"
+    lg="4"
+    md="6"
+    xs="10.5"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container"
+      data-testid="mui-grid"
+      flexdirection="column"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item"
+        data-testid="mui-grid"
+        marginbottom="5"
+      >
+        <img
+          src="https://example.com/prosper-logo-full.svg"
+          style="height: 32px;"
+        />
+      </div>
+      <div
+        data-testid="mock-title"
+        styles="[object Object]"
+        variant="title2"
+      >
+        sign-up
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item"
+        data-testid="mui-grid"
+      >
+        <div>
+          Snapshot content
+        </div>
+      </div>
+      <div
+        data-resend="false"
+        data-testid="mock-footer"
+      >
+        <div
+          data-testid="footer-link-0"
+        >
+          login
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

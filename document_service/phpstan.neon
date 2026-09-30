@@ -1,0 +1,24 @@
+parameters:
+	checkMissingIterableValueType: false #https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type
+	treatPhpDocTypesAsCertain: false     #Because the type is coming from a PHPDoc, you can turn off this check by setting treatPhpDocTypesAsCertain: false in your phpstan.neon.
+	ignoreErrors:
+	    - '#Call to an undefined static method App\\Domain\\AbstractModel::where\(\)#'
+	    - '#Call to an undefined static method App\\Domain\\AbstractModel::create\(\)#'
+	    - '#Call to an undefined static method App\\Domain\\AbstractModel::find\(\)#'
+	    - '#Call to an undefined method App\\Domain\\AbstractModel::where\(\)#'
+	    - '#Call to an undefined method App\\Domain\\AbstractModel::select\(\)#'
+	    - '#Call to an undefined method App\\Domain\\AbstractModel::whereIn\(\)#'
+	excludePaths:
+	    - src/Domain/Document/Manage.php
+	    - src/Domain/Oauth2.php
+	    - src/*/Testing/*
+	    - src/*/testing/*
+	    - src/*/Test/*
+	    - src/*/test/*
+	    - src/*/tests/*
+	    - src/*/Tests/*
+	    - tests
+	level: 5
+	phpVersion: 70400
+	paths:
+		- src

@@ -1,0 +1,855 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": { "company_name": "", "subcontract": "" },
+    "props": { "className": "edit-document-document" },
+    "children": [
+      {
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "text",
+                "children": [
+                  {
+                    "name": "text",
+                    "props": { "className": "centered-text" },
+                    "children": ["{b:SCHEDULE A}", "{br}"]
+                  },
+                  {
+                    "name": "text",
+                    "props": { "className": "centered-text" },
+                    "children": ["{b:AMENDMENTS TO JCT TERMS}", "{br}"]
+                  },
+                  {
+                    "name": "text",
+                    "children": ["{br}", "{b:Schedule of Amendments}"]
+                  },
+                  {
+                    "name": "text",
+                    "children": [
+                      "{br}",
+                      "Clause 1.1: add/amend/delete definitions as follows:",
+                      "{br}"
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "table",
+                    "props": {
+                      "className": "edit-document-table full-width table justified"
+                    },
+                    "children": [
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["\"Interest Rate\""]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "a rate 3% above the official dealing rate of the Bank of England current at the date of payment due under this Sub-Contract becomes overdue."
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["\"Parent Company Guarantee\""]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "a guarantee from the parent company of the Sub-Contractor in the form of the draft parent company guarantee contained in Schedule \u00a0[6]."
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["\"Performance Bond\""]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "a performance bond in a sum equal to 10% of the Sub-Contract Sum from a clearing bank or surety acceptable to the Contractor in the form of the draft performance bond contained at Schedule [6]."
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["\"Prohibited Materials\""]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "\"any of the following:",
+                              "(a) goods or materials known generally to building contractors to be deleterious or prejudicial to health and safety and/or the environment and/or the durability or integrity of the Development, in the particular circumstances in which they are used; or",
+                              "(b) other goods or materials which at the time of use do not conform with British Standards and Codes of Practice; or",
+                              "(c) products or materials which have been identified in the Building Research Establishment Limited Digest of in the publication entitled \"Good Practice in the Selection of Construction Materials\" March 2011 edition provided by the British Council for Offices and updated from time to time as being deleterious to health and safety or to the durability of buildings and/or other structures and/or finishes and/or plant and machinery in the particular circumstances in which they are used.\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 1.3.6", "Interpretation"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Add a new clause 1.3.6 as follows: \"If any provision of this Sub-Contract is declared invalid, unenforceable or illegal by the courts of any jurisdiction to which it is subject, such invalidity, unenforceability or illegality shall not prejudice or affect the validity, enforceability or legality of the remaining provisions of this Sub-Contract.\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Clause 1.8.1.1",
+                              "Effect of Final Payment Notice"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Delete clause 1.8.1.1 and insert \"Not Used\"."
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Clause 2.3A",
+                              "Timing of commencement and completion"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Add a new clause 2.3A as follows:",
+                              "\"The Sub-Contractor acknowledges that failure by the Sub-Contractor to comply with the provisions of clause 2.3 may cause delay and/or disruption to the Main Contract Works and/or any part thereof and/or may cause the Contractor to suffer costs, loss and/or damage. The Sub-Contractor shall plan, carry out and complete the Sub-Contract Works and any Section in accordance with the Sub-Contract and will not delay, disrupt or contribute to any delay or disruption to any part of the Main Contract Works due to its own default. Provided that the Contractor shall keep the Sub-Contractor informed of the progress of the Main Contract Works and shall co-ordinate them to allow the Sub-Contractor to proceed in accordance with the Sub-Contractors Programme.\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Clause 2.3B",
+                              "Timing of commencement and completion"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Add a new clause 2.3B as follows: \"Without prejudice to any other rights and remedies of the Contractor, if actual progress of the Sub-Contract Works or any Section does not comply with clause 2.3 due to the default of the Sub-Contractor, then the Contractor shall be entitled to require the Sub-Contractor to produce a revised programme and proposals to ensure completion of the Sub-Contract Works or any Section in accordance with clause 2.3.\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 2.9.2", "Bill of Quantities"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Delete clause 2.9.2 and insert \"Not Used\"."
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 2.13.1", "Site Condition"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Add a new clause 2.13.1 as follows:",
+                              "\u201cThe Sub-Contractor has inspected the physical and other site conditions (conditions as would be discoverable upon inspection as at the date of this Sub-Contract and other conditions external to but affecting the Site including the land and structures adjacent to the Site, to the extent they relate to the Sub-Contract Works and/or are likely to affect the manner in which the Sub-Contract Works may be performed and has fully acquainted himself with the same and has reviewed all information issued to him as to risks, contingencies and related circumstances which may influence or affect the carrying out and completion of the Sub-Contract Works, including the means of access and facilities for storage and delivery of plant, materials and Sub-Contractor\u2019s equipment. No failure on the part of the Sub-Contractor to discover, review or foresee any such conditions, to the extent that they were issued for review, reasonably discoverable or foreseeable, shall entitle the Sub-Contractor to an adjustment to the Sub-Contract Sum or to an extension of time. Subject to clause 2.10, the Sub-Contractor shall be entitled to rely upon any survey, report or other document prepared by or on behalf of the Contractor and which forms part of this Sub-Contract regarding any such matter as is referred to in this clause as to the accuracy of any such survey, report or document or for any representation or statement contained therein, whether made negligently or otherwise save where the Sub-Contractor\u2019s obligations of performance under this Sub-Contract include a requirement to consider and/or verify the accuracy or completeness of and/or to identify any relevant discrepancies within or between any such survey, report or document.\u201d"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 2.13.2", "Permitted Materials"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Add a new clause 2.13.2 as follows:",
+                              "\u201cWithout prejudice to the Sub-Contractor\u2019s other obligations under this Sub-Contract, to the extent that the Sub-Contractor is responsible for selection of goods and materials, the Sub-Contractor warrants that it has not used, specified for use or permitted the use and shall not use, specify for use or permit the use in the Sub-Contractor\u2019s Works any Prohibited Materials. In the event the Sub-Contractor becomes aware that any Prohibited Materials or combinations of Prohibited Materials have been or may be used in the Development the Sub-Contractor shall immediately notify the Contractor.\u201d"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 2.13.3", "Works"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Add a new clause 2.13.3 as follows:",
+                              "\u201cThe Sub-Contractor will not vary, amend, change, add to or alter the Sub-Contract Works or any part thereof as described in the Sub-Contract Documents without first obtaining the prior written approval of the Contractor. In seeking the written approval of the Contractor, the Sub-Contractor shall provide to the Contractor adequate details of the proposed variation, amendment, change, addition or alteration including relevant performance and qualitative criteria in relation to any materials and highlighting and detailing on any documents the nature of the proposed variation, amendment, addition or alteration. Any additional cost to or delay in the Sub-Contract Works and/or the Main Contract Works arising out of any such variation, amendment, change, addition or alteration shall be borne by the Sub-Contractor unless such variation, amendment, change, addition or alteration is as a result of an instruction from the Employer or Contractor which is not due to any discrepancy or omission caused by the Sub-Contractor.\u201d"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 2.14", "Confidentiality"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Add a new clause 2.14 as follows:",
+                              "\u201cThe Sub-Contractor shall not during the period of its employment under this Sub-Contract or at any time after the expiry or termination of this Sub-Contract or of the Sub-Contractor\u2019s employment hereunder disclose to any person (other than Sub-Contractor\u2019s Persons in the proper course of their duties relative to this Sub-Contract and the Sub-Contractor\u2019s legal or other advisors, and law enforcement or other regulatory bodies insofar as the Sub-Contractor is required by law) any information not already in the public domain relating to this Sub-Contract, the Sub-Contract Works and/or the Development. The Sub-Contractor shall ensure that any persons having access to such information are aware of these obligations and are similarly bound by them.\u201d"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Clause 2.15.3",
+                              "Unfixed materials and goods"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Delete clause 2.15.3 and insert:",
+                              "\"No Site Materials delivered to the Main Contract Works or the Sub-Contract Works shall be The Employer\u2019s Agentd without the Contractors written consent. Any materials and goods whether delivered to the Site or otherwise, the value of which is included in an Interim Payment under the Main Contract, or for which payment has been made by the Contractor to the Sub-Contractor before their value is included in any Interim Payment under the Main Contract, or on delivery to the Site, whichever first occurs, shall, be and become the property of the Contractor. The Sub-Contractor shall indemnify the Contractor from and against any expense, liability, loss, claim, cost or proceedings whatsoever arising from any failure to pass to the Contractor a complete and unencumbered title in any materials or goods. The value under the Sub-Contract of all materials and goods for which title is transferred pursuant to this clause, and for which the Sub-Contractor has not previously received payment from the Contractor, shall become due and included for payment in the next interim Payment Notice. The Contractor shall be liable to the Sub-Contractor for the full unpaid value of any such property until such payment is made.\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 2.17.1", "Delay notices"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "After \"forthwith\" in line 3, insert \", and in no event any later than 28 days after the date upon which such delay or likelihood of delay became (or ought reasonably to have become) reasonably apparent to the Sub-Contractor,\"."
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 2.19.4", "Relevant events"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Delete and insert \"Not Used\"."]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 2.27", "Collateral Warranties"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Add a new clause 2.27 as follows:",
+                              "If the Sub-Contractor fails to execute and deliver any of the collateral warranties required under the Main Contract Particulars, the Sub-Contractor agrees to indemnify the Contractor to the extent of such failure.\u201d"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Clause 2.28",
+                              "Parent Company Guarantee"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Add a new clause 2.28 as follows: \"The Sub-Contractor shall, within 7 days following the receipt of its signed Sub-Contract, execute and deliver to the Contractor a Parent Company Guarantee. Pending receipt of an enforceable Parent Company Guarantee, the Contractor shall be entitled to deduct 10% of the value of each Interim Payment in addition to Retention.\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 2.29", "Performance Bond"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Add a new clause 2.29 as follows: \"The Sub-Contractor shall, within 7 days following the receipt of its signed Sub-Contract, execute and deliver to the Contractor a Performance Bond. Pending receipt of an enforceable Performance Bond, the Contractor shall be entitled to deduct 10% of the value of each Interim Payment in addition to Retention.\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 3.20A", "CDM Regulations"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Insert the following new clause: \"3.20A The Sub-Contractor warrants to the Contractor that: 3.20A.1 it has competence to perform the obligations imposed on it under this Sub-Contract in respect of the CDM Regulations, and to conduct its undertaking without contravening any prohibition contained in the CDM Regulations; and 3.20A.2 it has advised and supported and will continue to advise and provide support to the Contractor to assist the Contractor in performing its duties imposed by the CDM Regulations; and 3.20A.3 it has allocated or (as appropriate) will allocate adequate resources to enable it to comply with the obligations described in clauses 3.20 and 3.20A.\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 4.6.2"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Delete 4 days and insert \u201c{Clause_4_6_2} Days\u201d"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 4.7.1"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Delete 14 days and insert \u201c{Clause_4_7_1} Days\u201d"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 4.7.2"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Delete 5 days and insert \u201c{Clause_4_7_2} Days\u201d"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 4.7.5"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Delete 5 days and insert \u201c{Clause_4_7_5} Day\u201d"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Interim payments"]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Clause\u00a0 4.14.3",
+                              "Matters affecting regular progress"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Add a new clause 4.14.3 as follows: \"The Sub-Contractor shall not be entitled to reimbursement of direct loss and/or expense in respect of any Relevant Sub-Contract Matter which is concurrent with another matter for which the Sub-Contractor is responsible where the matter for which the Sub-Contractor is responsible is the dominant cause of the regular progress of the Sub-Contract Works having been affected to which the Relevant Sub-Contract Matter relates.\""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 4.16.5"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Delete"]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 4.16.6"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Delete"]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Clause 4.20.8",
+                              "Relevant sub-contract matters"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Delete the words in brackets in lines 2 and 3.",
+                              "Insert at the end \u201cprovided that the Sub-Contractor shall not be entitled to any loss and/or expense to the extent that any contractor or other person permitted access pursuant to the Main Contract undertakes its works in accordance with the Contract Documents and does not prevent the Sub-Contractor from meetings its progress obligations pursuant to this Sub-Contract\u201d."
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 5.12.2", "Valuation rules"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "After Clause 5.12.2, the following new clauses are inserted: \"5.12.3 The Sub-Contractor hereby waives any claim he may have against the Contractor in connection with the omission of work with a value of up to {ValuationRules}% of the Sub-Contract Sum (including and Sub-Contractor claim for loss of profit) and accepts that the Contractor shall be entitled to arrange for the same to be executed by another party or parties. 5.12.4 The Sub-Contractor irrevocably waives any entitlement to any additional payment or to any extension of time if and to the extent that any Variation is attributable to any negligence, default, breach of contract or breach of statutory duty by or on behalf of the Sub-Contractor."
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": ["Clause 8.9", "Entire agreement"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              "Add a new clause 8.9 as follows: \"This Sub-Contract constitutes the entire agreement between the parties relating to the subject matter of this Sub-Contract and supersedes and replaces any prior drafts, undertakings, representations, warranties and arrangements of any nature whether in writing or oral relating to such subject matter of this Sub-Contract.\""
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

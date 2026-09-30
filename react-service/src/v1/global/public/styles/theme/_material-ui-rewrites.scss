@@ -1,0 +1,24 @@
+.MuiStepper-horizontal {
+  .MuiStep-horizontal {
+    .MuiStepLabel-horizontal {
+      .MuiStepLabel-iconContainer {
+        svg {
+          circle {
+            color: $clink-red;
+          }
+
+          path {
+            color: $clink-green;
+          }
+        }
+      }
+
+      .MuiStepLabel-labelContainer {
+        span {
+          font-size: 16px;
+          font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+        }
+      }
+    }
+  }
+}

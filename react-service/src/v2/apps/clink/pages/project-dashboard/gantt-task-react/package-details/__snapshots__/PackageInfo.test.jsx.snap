@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PackageInfo Component matches snapshot with info and extra 1`] = `
+<div
+  data-testid="badge-wrapper"
+>
+  <button
+    data-testid="chip"
+  >
+    3
+  </button>
+  <span
+    data-testid="badge-content"
+  >
+    1
+  </span>
+</div>
+`;
+
+exports[`PackageInfo Component matches snapshot with info only 1`] = `
+<button
+  data-testid="chip"
+>
+  5
+</button>
+`;

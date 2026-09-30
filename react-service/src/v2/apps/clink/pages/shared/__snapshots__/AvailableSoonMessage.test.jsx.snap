@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AvailableSoonMessage matches snapshot 1`] = `
+<div
+  data-testid="loading-component"
+>
+  <div
+    data-testid="loading-status"
+  >
+    error
+  </div>
+  <div
+    data-testid="loading-message"
+  >
+    This page will be available soon
+  </div>
+</div>
+`;

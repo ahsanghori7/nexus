@@ -1,0 +1,1082 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": {
+      "company_name": "",
+      "subcontract": ""
+    },
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container iso-tables"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": ["{b:SUB-CONTRACT PARTICULARS}", "{br}"]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["{b:1. Conditions}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "The Sub-Contract Conditions are supplemented by the following",
+                          "{br}",
+                          "JCT Supplemental Provisions (where neither entry against one of the Supplemental Provisions 1 to 6 below is deleted, that Supplemental Provision applies.)"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "Collaborative working Supplemental Provision 1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["{SupplementalProvision1}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "Health and safety Supplemental Provision 2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["{SupplementalProvision2}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "Cost saving and value improvement Supplemental Provision 3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["{SupplementalProvision3}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "Sustainable development and environmental considerations Supplemental Provision 4"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["{SupplementalProvision4}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "Performance Indicators and monitoring Supplemental Provision 5"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["{SupplementalProvision5}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "Notification and negotiation of disputes Supplemental Provision 6"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["{SupplementalProvision6}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "{br}",
+                          "Where disputes provision applies, the respective nominees of the Parties are their Commercial Directors",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["{b:2. Arbitration}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "clauses 8.3 to 8.8 (Arbitration) do not apply"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["{b:3. Definitions} (Clause 1.1)"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["BIM Protocol"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["* No BIM Protocol applies"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "Design Submission Procedure (if the provisions as set out in the Sub-Contract Conditions have under the Main Contract been replaced or amended)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "See Main Contract Particulars Schedule for amendments (if any)"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["Sub-Contract Base Date"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["The date of this Sub-Contract"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "{b:4. Addresses for service of notices by the Parties} (Clause 1.7)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["See Contract Agreement"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["{b:5. Programme}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "The period of notice to commence work on site required to enable a start to be made to the Sub-Contract Works/each Section is {NoticeCommence}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "The period required tor the carrying out of the Sub-Contract Works on site and after the expiry of the period of notice to commence work is:{PeriodOfSubcontractWorks}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["Where completion by Sections applies"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["Section 1/A"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["[_________] weeks"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["Section 2/B"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["[_________] weeks"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["Section 3/C"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["[_________] weeks"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "{b:6. Third Party Rights and Collateral Warranties} (Clause 2.26)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "See Main Contract Particulars and Numbered Documents for details of requirements."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "{b:7. Attendances} (Clauses 3.16 to 3.18)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["See Schedule 2"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "{b:8. Fluctuations Provision} (Clauses 4.9 and 4.19 and JCT Schedule 4)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["Not applicable, no fluctuations."]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["{b:9. Interim payments} (Clause 4.6)"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["See Schedule 5"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["{b:10. Listed items} (Clause 4.11)"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "Not applicable unless otherwise stated in Schedule 5"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["{b:11. Retention} (Clause 4.12)"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["Retention percentage is {Retention}%"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "(No minimum retention amount)",
+                          "{br}",
+                          "The Retention Release Date is the day after expiry of a period from the Date for Completion of the Main Contract Works (or last Section of them) equivalent to the Rectification Period for such works or section plus a further 6 months.",
+                          "{br}",
+                          "The Date for Completion of the Main Contract Works (or last Section) is stated in the Main Contract Particulars.",
+                          "{br}",
+                          "The Rectification Period for the Main Contract Works (or last Section) is stated in the Main Contract Particulars."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "{b:12. Sub-Contractors Retention Bond} (Clause 4.13)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["not applicable"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["{b:13. Day works} (Clause 5.9)"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["see Schedule 3"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "{b:14. Insurance - personal injury and property damage} (Clause 6.5)"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "Insurance cover (for any one occurrence or series of occurrences arising out of one event) is"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["\u00a3______________"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "Sub-Contractors Professional Indemnity or Product Liability Insurance (Clause 6.10)"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "{b:16. Sub-Contractors Professional Indemnity or Product Liability Insurance} (Clause 6.10)"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "{b:17. Settlement of Disputes} (Clauses 8.2 and 8.4.1)",
+                          "{b:Adjudication}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["Nominating body"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": [
+                          "The Royal institution of Chartered Surveyors"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["Arbitration"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "children": ["Not applicable"]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

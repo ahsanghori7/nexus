@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filters Component matches snapshot 1`] = `
+<div
+  class="filters"
+  data-testid="styled-filters-container"
+>
+  <b
+    class="label-filters"
+  >
+    Test Filters
+    :
+  </b>
+  <div>
+    Test content
+  </div>
+</div>
+`;

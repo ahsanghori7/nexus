@@ -1,0 +1,3704 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": {
+      "company_name": "",
+      "subcontract": ""
+    },
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{b:SUB-CONTRACT ORDER}",
+                  "{br}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "table-documents-table full-width table big-table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "ORDER NUMBER:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{OrderReference}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "SUB-CONTRACTOR'S NAME:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{TheSupplier}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "COMPANY NUMBER:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{CompanyReg}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "REGISTERED ADDRESS:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{RegisteredAddress}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "TRADING ADDRESS:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "As above."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{br}",
+                  "This Sub-Contract Order is placed upon the documents and details listed within Appendix \"A\" attached\nhereto and in accordance with the Standard Conditions of Sub-Contract (v4.1 February 2021).",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "table-documents-table no-border table pad-bot-25"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{b:PROJECT TITLE & ADDRESS:}"                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{ProjectName}, {SiteAddress}"                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{b:SUB-CONTRACT WORKS:}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{SubContractorWorks}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{b:SUB-CONTRACT SUM:}",
+                          "(Lump Sum Basis)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{OrderPrice}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{b:DISCOUNT:}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{DiscountApplied}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{b:DATE FOR COMMENCEMENT:}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{StartDate}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{b:PERIOD FOR CARRYING OUT AND COMPLETING THE SUBCONTRACT WORKS:}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{CompletionDate}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{b:PERIOD REQUIRED FOR NOTICE\nTO COMMENCE WORKS ON SITE:}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{NoticePeriod}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{b:RETENTION:}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{Retention}%"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{b:LIQUIDATED AND ASCERTAINED\nDAMAGES UNDER THE CONTRACT:}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{DelayDamages} per week"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{b:DEFECTS LIABILITY PERIOD: }"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{RectificationPeriod}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{b:DESIGN SCOPE:}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{DesignScope}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{b:COLLATERAL WARRANTIES:}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{CollateralWarranty}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{b:INSURANCES REQUIRED:}",
+                          "Insurance against injury to persons or property:",
+                          "Employers Liability ",
+                          "Contractors All Risks Insurance",
+                          "Professional Indemnity "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{Public/Product}",
+                          "{Employers}",
+                          "{ContractorsAll}",
+                          "{ProfessionalIndemnity}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{b:DAYWORK RATES:}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "{DayworkRates}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "children": [
+                  "{b:In accepting this Sub-Contract Order, you are deemed to have withdrawn any and all\nqualifications that you have stated in your correspondence or your quotation.}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "table-documents-table table big-table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "Signed for and on behalf of the Sub-Contractor:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "Name:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "Position: "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "Date:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "table-documents-table table big-table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "Signed on behalf of C.J. O'Shea & Company Ltd:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "Name:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "Position: "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "table-documents-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          "Date:"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "table-documents-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "children": [
+                  "{b:CONDITIONS OF SUB-CONTRACT ORDER V4.1 FEBRUARY 2021}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:1.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "It is a condition precedent to the acceptance of this order by the Sub-Contractor\nthat the following terms and conditions shall apply to the Sub-Contract works and no\namendments, alternatives or qualifications thereto will be allowed unless expressly\nagreed to in writing by the Contractor."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:2.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "It is a condition precedent to payment being made under the Sub-Contract that the\nSub-Contractor shall have provided to the Contractor: -"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "(i)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The executed Sub-Contract Order"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "(ii)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Any Performance Bond/Parent Company Guarantee or Warranty Agreements\nrequired under the Sub-Contract"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "(iii)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Inland Revenue Documentation (as appropriate)"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "(iv)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Where the Sub-Contractor is required to effect insurance\u2019s, the provision of\nevidence by means of a Brokers/Insurers letter confirming the insurances held by\nthe Sub-Contractor in compliance with the Sub-Contract Order."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "(v)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Method Statement(s), Risk Assessment(s) and any other document(s) the SubContractor is required to provide to the Contractor to comply with Health & Safety\nRequirements and/or Regulations"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "(vi)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The O&M manuals that the Sub-Contractor is obliged to provide (In respect of the\nfinal payment to the Sub-Contractor)"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "(vii)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Completed Modern Slavery \u2013 Supplier Questionnaire"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:3.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor having full knowledge of the terms and conditions and of the\ndocuments appended hereto (hereafter referred to as \u201cthe Sub-Contract\ndocuments\u201d) shall undertake and perform to the satisfaction of the Contractor, all\nthe obligations imposed upon or undertaken by the Contractor under the Main\nContract in respect of the Sub-Contract works and the Sub-Contractor shall\nindemnify the Contractor against all claims (including action, damages, costs and\nexpenses) which may be brought against or be incurred by him in connection with\nor arising out of the execution and performance of this Sub-Contract and the SubContract works. Save where the provisions of the Sub-Contract requires, the SubContractor shall assume and perform all the obligations and liabilities of the\nContractor under the Main Contract in relation to the Sub-Contract works. Details of\nthe Main Contract may be inspected at the Contractor\u2019s offices by prior\nappointment."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:4.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Contractor will provide the Sub-Contractor with a Notice to Commence the SubContract Works in accordance with the provisions of the Sub-Contract Order. If such\nNotice to Commence the Sub-Contract Works is given otherwise than in writing, the\nSub-Contractor shall so confirm the receipt of such Notice to Commence the SubContract Works to the Contractor in writing. Shall neither party confirm in writing\neither the giving or the receiving of the Notice to Commence the Sub-Contract\nWorks, then the Sub-Contract Works will be deemed to have commenced on the first\nday that the Sub-Contractor attended site to carry out the Sub-Contract Works."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:5.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The risk of loss or of damage to the Sub-Contract Works or the plant and materials\non Site shall be that of the Sub-Contractor until Practical Completion of the Main\nContract works."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:6.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Notwithstanding clause 3 above, all materials, goods and workmanship provided\nshall be of the kinds and standards described in the Sub-Contract documents and\nshall become the property of the Contractor when delivered to site pursuant to the\ncontract. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:7.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Except where expressly stated to the contrary the temporary buildings, plant tools\nand equipment owned, hired or provided by the Sub-Contractor shall be at the sole\nrisk of the Sub-Contractor who shall indemnify the Contractor and his principals\nagainst any loss, claim or proceedings in respect thereof."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:8.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor may have free use of specified standing facilities as stated in\nthe Sub-Contract but will be responsible for any labour associated therewith. Any\nabuse or damage to such facilities will result in such facilities being withdrawn and\nany damaged plant will be replaced or repaired and charged to the Sub-Contractor.\nUse of such facilities will not be exclusive and continuity cannot be guaranteed."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:9.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Main Contractor will provide a basic datum in each area of work to establish the\nprimary gridlines. The Sub-Contractor is responsible for all other setting out."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:10.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contract works are at all times to be managed and supervised by the SubContractor using experienced and competent personnel."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:11.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The hours of work will be those in force on the site at the time the Sub-Contract\nworks are carried out and no additional payment will be made should it be\nnecessary for the Sub-Contractor to work outside the normal site hours, or employ\nadditional labour to maintain his programme, unless specifically instructed in writing\nby the Contractor and provided always that it is not due to any error, omission or\ndefault of the Sub-Contractor or his representatives. In the event of such an error,\nomission or default the Contractor shall be entitled to recover all reasonable costs\nincurred."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:12.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Contractor shall deduct tax from payments made under the Sub-Contract in\naccordance with the Construction Industry Scheme or any replacement legislation\ncurrent at the time of payment and/or at his discretion, terminate the Sub-Contract\nwith or without notice unless the Sub-Contractor produces to his satisfaction a letter\nfrom HM Revenue and Customs confirming company or partnership status, or, as\nthe case may be an Inland Revenue Exemption Certificate and such periodical\nrenewals thereof as may be necessary to keep it in force for the duration of the SubContract. The Contractor shall deduct the amount of any levy required by the\nConstruction Industry Training Board and the Sub-Contractor will be deemed to have\nincluded in his rates for the amount of any such levy."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:13.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor must comply with the requirements of all Construction (Design\nand Management) Regulations and of any other Statutory Rules and Regulations in\nrespect of Safety, Health and Welfare, Machinery, Electricity etc. as are relevant to\nthe undertaking of, and in force during the execution of, the Sub-Contract works.\nThe Sub-Contractor shall be bound by and be deemed to have allowed for full\ncompliance with the Contractor\u2019s Health and Safety Plan and any developments\nthereof. The Sub-Contractor shall provide to the Contractor for approval method\nstatements and risk assessments no later than 7 days prior to commencement of\nthe Sub-Contract works."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:14.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Contractor may require immediate compliance by the Sub-Contractor with\ndirections on matters affecting Health, Safety or Welfare. Notwithstanding any\nother stipulations, if the Sub-Contractor does not begin forthwith or within such\ntimes as stipulated by the Contractor to comply with the directions in respect of\nthose matters relating to Health, Safety and Welfare, then the Contractor may\nemploy and pay other persons to comply with such direction and all costs incurred\nin connection with such employment may be deducted from any monies due or to\nbecome due to the Sub-Contractor under the Sub-Contract or shall be recoverable\nfrom the Sub-Contractor as a debt. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:15.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor must comply with all Acts of Parliament Ordinances,\nRegulations, Bye-Laws and Statutory Instruments of any Government Minister or\nSecretary of State, Local Authority or Statutory Undertaker and shall furnish proof of\nso doing to the Contractor as and when requested. In addition, the Sub-Contractor\nshall indemnify the Contractor and his Principals free from and against all penalties,\nfines and liabilities whatsoever arising from the Sub-Contractors failure to so\ncomply."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:16.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "If the Sub-Contractor is a registered person within the meaning of the current\nregulation regarding Value Added Tax, he shall inform the Contractor of his\nregistration number and both the Sub-Contractor and the Contractor shall carry out\ntheir respective obligations under the Value Added Tax Regulations. The Contractor\noperates a self- billing system for Value Added Tax purposes with which the SubContractor shall comply."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:17.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor will be deemed to have included in his rates for the amount of\nany such levy required by the Construction Industry Training Board or such similar\nbodies as may be appropriate to the Sub-Contract Works and the Contractor shall be\nentitled to deduct such levy unless the Sub-Contractor makes direct payment of\nsuch levy and provides proof thereof. The Sub-Contractor shall regularly update any\ndocuments issued to his Labour force in the light of legislative changes and/or\nchanges in the above-named national agreements for the industry and the\nContractors Policy Statements."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:18.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor shall be liable for and shall indemnify the Contractor and his\nPrincipals against any liability, loss, claim or proceedings whatsoever arising under\nany statue or at common law in respect of personal injury to or death of any person\nwhomsoever or in respect of any injury or damage whatsoever to any property real\nor personal arising out of or in the course of or caused by the carrying out of the\nSub-Contract works unless due to any act or neglect of the Contractor, his servants\nor agents."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:19.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Without prejudice to his liability to indemnify the Contractor under clause 18 of this\nSub-Contract, the Sub-Contractor shall maintain such insurance as is necessary to\ncover the liability of the Sub-Contractor in respect of personal injury to or death of\nany person whomsoever or in respect of any injury or damage whatsoever to any\nproperty real or personal arising out of or in the course of or by reason of carrying\nout of the Sub-Contract works. The insurance in respect of claims for personal injury\nto or death of any person under contract of service or apprenticeship with the SubContractor and arising out of and in the course of such persons\u2019 employment shall\ncomply with Employers Liability (Compulsory Insurance) Act 1969 and any statutory\norder made thereunder or any amendment or re-enactment thereof. For all other\nclaims to which this clause applies the minimum insurance cover shall be as stated\nin the Main Contract, or any other amount reasonably required by the Contractor,\nfor any one occurrence or sequence of occurrences arising out of one event. These\ninsurances must extend to include a general Principals Indemnity clause."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:20.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "a) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Where the Sub-Contractor is required to affect insurances, he shall when reasonably\nrequired to do so by the Contractor produce for inspection the policy or policies and\nreceipts for the current premium or premiums."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "b) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Should the Sub-Contractor make default in insuring or continuing or in causing to\ninsure as provided in this Sub-Contract, the Contractor may himself insure against\nany risk with respect of which the default shall have occurred and may deduct a\nsum of sums equivalent to the amount paid or payable in respect of premiums from\nany monies due or to become due to the Sub-Contractor."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:21.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "a) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Interim payments shall be made as the periods identified in the Sub-Contract up to\ncompletion of the Sub-Contract Works. Thereafter payment shall be made by the\nContractor of any further amount ascertained following agreement of the Final SubContract Sum. The due dates for payment and the period for final payment shall be\nthose stated in the Sub-Contract Order. The Contractor shall give written notice to\nthe Sub-Contractor not later than 5 days after a payment becomes due specifying\nthe payment to be made (if any) and the basis of the calculation (\u201cthe Payment\nNotice\u201d). For the avoidance of doubt, if the Contractor does not issue a Payment\nNotice, the Sub-Contractor shall be entitled to payment of the amount stated in its\nvalid application for payment which it previously provided by recorded delivery to\nthe Contractors Finance Director, provided that the Sub-Contractor issues a notice\nspecifying the Contractor\u2019s default in not issuing a Payment Notice and specifying\nthat its application for payment is a notice in default of the Contractor not issuing a\nPayment Notice (\u201cthe Default Notice\u201d). The amount stated as due in the Payment\nNotice or the Default Notice shall be the notified sum (\u201cthe Notified Sum\u201d) subject to\nthe issue of a Pay Less Notice. The Contractor may give written notice to the SubContractor not later than 1 day before the final date for payment that it intends to\npay less than the Notified Sum (\u201cA Pay Less Notice\u201d) which shall specify the amount\nthe Contractor considers to be due on the date the notice is served, and the basis\non which the amount is calculated."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "b)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor is required to submit interim payment applications to the\nContractor for works properly executed at monthly intervals (or at the intervals\nshown in the Sub-Contract Particulars if not monthly). The payment application\nshould detail the gross cumulative amount applied for. The Sub-Contractor must\nsubmit its interim payment application by email to the Project Surveyor (contact\ndetails are as shown on the Sub-Contract Order) and retain a delivery receipt as\nevidence of sending. An application for payment must be received by the Contractor\nnot later than 5 days prior to the valuation date for calculation of the amount due by\nthe Contractor. Such work shall be valued in accordance with the Sub-Contract rates\nand prices or as otherwise agreed in writing with the Contractor. Any payment by\nthe Contractor shall not be held to signify approval by the Contractor of the whole or\nany part of the Sub-Contract Works. Failure by the Sub-Contractor to submit a valid\nand bona fide application for payment within the required timescale shall render the\napplication invalid and the amount properly due will be that ascertained by the\nContractor, if any."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "c)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Payments will be subject to a retention of 5% of which one half will be released to\nthe Sub-Contractor upon Practical Completion of the Sub- Contract works and the\nbalance in the valuation following the expiry of a period of 24 months thereafter and\ncompletion of all defects notified to the Sub-Contractor."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "d)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Contractor shall be entitled to withhold monies due under this Sub-Contract to\noffset any reasonable costs incurred or estimate of costs likely to be incurred on\nanother Sub-Contract, or agreement between the Contractor and the SubContractor. Similarly, the Contractor may withhold monies due on another SubContract, or agreement to offset any reasonable costs or estimate of costs that have\nor are likely to be incurred by the Contractor under this Sub-Contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "e)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "It is a condition precedent that this Sub-Contract has been returned to the\nContractor properly executed by the Sub-Contractor for any payment to be due. No\npayment will become due if this Sub-Contract has not been returned to the\nContractor properly executed by the Sub-Contractor."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "f)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "If the Employer under the Main Contract, or other party from which payment is to be\nreceived, commits an act of insolvency or bankruptcy or makes or enters into any\nDeed of Arrangement or Composition with his creditors or being a Company\nappoints or has appointed a Receiver or Administrator or Administrative Receiver or\nsuffers liquidation whether compulsory or voluntary or suffers or allows any\nexecution whether legal or equitable to be levied on his property or obtained\nagainst him, then the Contractor shall only subsequently be obliged to pay to the\nSub-Contractor sums due pursuant to this Sub-Contract following receipt of the\nequivalent sums due from the Employer."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:22.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "a) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Contractor reserves the right to vary the Sub-Contract works by written\ninstruction at any time from the Contractors Quantity Surveyor and the\nSubcontractor shall comply with such variations forthwith. Any such variation shall\nnot vitiate this Sub-Contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "b)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Within 7 days of the issue of a written instruction the Sub-Contractor shall advise\nthe Contractor in writing of any adjustments required to the Sub-Contract Sum by\nway of addition or omission as a result of a variation. The Contractor may then\naccept in writing such quantification or make adjustment calculated by using SubContract rates or prices so far as the same are applicable or, where they are not\napplicable, by reference to such rates or prices as may be reasonable in all the\ncircumstances. Should the Sub-Contractor not make written advice of any\nadjustments it shall be taken that no addition is required to the Subcontract Sum."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:23.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "If as a result of a variation the Sub-Contractor has incurred necessary additional\ncosts the Sub-Contractor will be entitled to payment of such additional costs or if as\na result of a variation the Sub-Contractor has incurred cost savings the Contractor\nwill be entitled to deduct such cost savings from the price of the Sub-Contract\nworks. Such costs/cost savings shall be calculated by reference and application to\nthe contract rates or prices so far as the same are applicable or, where they are not\napplicable, by the application of rates or prices as may be reasonable in all the\ncircumstances."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:24.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "a) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor must notify the Contractors Site Manager of any proposed\ndaywork, not less than 24 hours before commencing the dayworks, and must have\nreceived approval to so proceed."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "b)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "No daywork return/voucher will be accepted for payment unless presented for\nverification to the Contractor not later than the Thursday following the week in\nwhich the daywork is carried out and prior approval in accordance with 24(a) above\nhas been obtained."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "c)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Signature of daywork sheets does not signify agreement of payment on a daywork\nbasis. Where works carried out are of comparable character and nature to the SubContract works, the valuation of the works, whether or not recorded on the basis of\ntime and materials, will be calculated by using the rates and/or prices stated in this\nSub-Contract Order."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:25.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "a) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The issue of a bona fide written instruction under clause 22 (a)."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "b)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Delay due to any error, omission or default of the Contractor or of any person for\nwhom he is responsible"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "c)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Delay due to any error, omission or default of the Employer or of any person for\nwhom he is responsible under the Main Contract"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:26.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Any disputes or differences which may arise at any time between the Parties under\nthis Sub-Contract which cannot be resolved between the parties may (and shall in\nthe first instance) be the subject of an Adjudication process in accordance with the\nScheme for Construction Contracts (England and Wales) Regulations 1998, as\namended. Either the Contractor or the Sub-Contractor has the right to bring any\ndispute under this Sub-Contract to Adjudication. The adjudicator nominating body\nshall be The Royal Institution of Chartered Surveyors. The decision of the\nAdjudicator shall be binding upon the parties until the dispute is finally determined\nby arbitration or litigation."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:27.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "In addition, and without prejudice to any other rights or remedies that the\nContractor may have, he shall in the event of one or more of the following defaults\nbe entitled by notice in writing, to determine this Sub-Contract forthwith, or take\npart of the Sub-Contract works out of the Sub-Contractors hands and in any event\nrecover all reasonable costs from the Sub-Contractor or withhold sums amounting to\na reasonable estimate of the costs from monies otherwise due to the SubContractor."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "a) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "If at any time the Sub-Contract works are not being carried out to the satisfaction of\nthe Contractor or of the Employers Representative under the Main Contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "b) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "If the Sub-Contractor is not proceeding with the Sub-Contract works with due speed\nand diligence or in such sequence as shall in the Contractors opinion be necessary\nto avoid delay to other trades or the completion of the Sub-Contract Works within\nthe Sub-Contract period or such other period agreed between the parties."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "c) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractors failure to comply with a written instruction from the Contractor\nincluding but not limited to the replacement or rectification of defective\nworkmanship or materials."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "d) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractors failure in any way to comply with clause 14 of the Conditions of\nSub-Contract Order."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "e) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "If the Contractors employment under the Main Contract shall be determined"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "f) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "If the Sub-Contractor commits an act of insolvency or bankruptcy or makes or enters\ninto any Deed of Arrangement or Composition with his creditors or being a Company\nappoints or has appointed a Receiver or Administrator or Administrative Receiver or\nsuffers liquidation whether compulsory or voluntary or suffers or allows any\nexecution whether legal or equitable to be levied on his property or obtained\nagainst him."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "g) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor subletting the whole or any portion of the Sub-Contract works\nwithout the prior written approval of the Contractor."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "In the event of determination of the Sub-Contract the Sub-Contractor shall not be\nentitled to any further payment until Practical Completion of the whole of the SubContract Works as contained within the Main Contract, or until all reasonable costs\nas a consequence of the determination have been established, whichever is the\nlater. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:28.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "If the Sub-Contractor fails to complete the Sub-Contract works within the period or\nperiods for completion set out in this Order or any revised period agreed with the\nContractor and the delays are evidenced in writing, the Contractor shall be entitled\nto deduct from any monies otherwise due or to become due to the Sub-Contractor\nsuch sums or sums as the Contractor bona fide estimates to be the amount of loss\nor damage incurred or likely to be incurred by the Contractor and caused or likely to\nbe caused by the Sub-Contractors failure to do so complete within such period or\nperiods."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:29.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "No later than one month after the completion of the Sub-Contract works the SubContractor shall provide the Contractor with all documents reasonably required for\nthe purpose of ascertaining the Final Sub-Contract Sum. On the basis of this\ninformation only, together with any further amplification specifically requested or\nprovided by the Contractor, the Contractor will ascertain the Final Sub-Contract\nSum. For the avoidance of doubt the Sub-Contractor will not be entitled to payment\nfor any item unless all documents reasonably required for the ascertainment of such\npayment are provided by the Sub-Contractor to the Contractor within the timescale\nset out in this clause 29."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:30.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Where under the terms and conditions of the Main Contract the Contractor is\nrequired to make any return or give any notice the Sub-Contractor shall insofar as\nsuch return or notice relates to the Sub-Contract works provide the Contractor with\nsuch information as the Contractor may reasonably require to enable the Contractor\nto comply with such requirement."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:31.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Sub-Contractors shall operate methods and procedures for the employment of\nlabour which are in accordance with current Codes of Practice for Industrial\nRelations and Employment Protection and in particular ensure that all their\nemployees are issued, within one week of their engagement with a statement of\ntheir particulars of employment and copies of the Sub-Contractors Disciplinary\nProcedure, Grievance Procedure and Company Safety Policy."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:32.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor undertakes, warrants and represents that:"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "neither the Sub-Contractor nor any of its officers, employees, agents or\nsubcontractors has:"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "a. committed an offence under the Modern Slavery Act 2015 (an MSA Offence); or"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "b. been notified that it is subject to an investigation relating to an alleged MSA Offence\nor prosecution under the Modern Slavery Act 2015; or"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "c. is aware of any circumstances within its supply chain that could give rise to an\ninvestigation relating to an alleged MSA Offence or prosecution under the Modern\nSlavery Act 2015;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "It shall comply with the Modern Slavery Act 2015 and the Modern Slavery Policy"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Its responses to the Contractor's modern slavery and human trafficking due\ndiligence questionnaire are complete and accurate; and"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "It shall notify the Contractor immediately in writing if it becomes aware or has\nreason to believe that it, or any of its officers, employees, agents or subcontractors\nhave breached or potentially breached any of Contractor\u2019s obligations under Clause\n14. Such notice to set out full details of the circumstances concerning the breach or\npotential breach of Sub-Contractor\u2019s obligations."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Any breach of Clause 32 by the Sub-Contractor shall be deemed a material breach\nof the agreement and shall entitle the Contractor to terminate the agreement."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor shall not assign, delegate, subcontract, transfer, novate, charge\nor otherwise dispose of all or any of its rights and responsibilities under this\nagreement, nor appoint any sub-contractor, sub-distributor or sub-agent"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor shall during the term of this Agreement and for the period of six\nyears thereafter maintain such records relating to the Goods and/or Services\nprovided to the Contractor under this agreement as may be necessary to trace the\nsupply chain of such Goods and/or Services and to enable the Contractor to\ndetermine the Sub-Contractor's compliance with the Modern Slavery Policy."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor shall conduct a programme of regular training for its officers,\nemployees, agents, subcontractors and other members of its supply chain to ensure\ncompliance with the Modern Slavery Policy."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor shall keep a record of all training offered and completed by its\nofficers, employees, agents, subcontractors and other members of its supply chain\nto ensure compliance with the Modern Slavery Policy and shall make a copy of such\nrecords available to the Contractor on request."
+                        ]
+                      }
+                    ]
+                  }
+
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:Indemnity}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor shall indemnify defend and hold harmless the Contractor and its\ndirectors, officers and employees in full and on demand from and against any and\nall liabilities, claims, fines, demands, damages, losses or expenses (including legal\nand other professional adviser\u2019s fees and disbursements), interest and penalties\nincurred by them howsoever arising whether wholly or in part resulting from a\nbreach of the Modern Slavery Policy."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:33.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor warrants that:"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "a) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "it carries on its business in an honest, fair and open way and does not tolerate\npractices which could be classed as corrupt or acts of bribery to obtain an unfair\nadvantage, whether engaged in by the Sub-Contractor, its clients, its subcontractors or suppliers or others with whom it does business or, in each case, it\u2019s or\ntheir respective officers or employees;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "b) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "neither it nor any of its officers and employees have ever been convicted of any\noffence that amounts to bribery or corruption for the purposes of the Bribery Act\n2010 (referred to as the \u201cAct\u201d in this clause 33) and none of them has been charged\nor is currently being investigated for any such offence;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "c) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "to the best of its knowledge, information and belief, none of its clients, its subcontractors or suppliers or others with whom it does business have ever been\nconvicted of any offence that amounts to bribery or corruption for the purposes of\nthe Act, none of them has been charged or is currently being investigated for any\nsuch offence and none of their respective officers or employees have been so\nconvicted or charged or are being so investigated;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "d) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "it has and will at all times maintain in place an effective written policy for\naddressing the issues and risks raised by the Act and by the guidance issued from\ntime to time by the Ministry of Justice (or its successors) under S.9 of the Act\n(referred to in this clause 373 as the \u201cGuidance\u201d);"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "e) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "it has and will at all times maintain in place adequate measures to prevent bribery\nby those associated with it as set out in S.7(2) of the Act and as explained in the\nGuidance; and"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "f) "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "it has imposed on those associated with it for the purposes of the Act requirements\nno less stringent than those set out in this Clause 33."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The Sub-Contractor undertakes to the Employer to:"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "(i) inform the Employer forthwith in writing in the event that any of the warranties set\nout in Clause 33 ceases to be true, providing full written particulars of the noncompliance;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "(ii) provide on demand:"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "(a) a copy of the policy maintained under Clause 33 (d);"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "(b) full written particulars of the adequate measures maintained under Clause 33\n(e);"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "(c) reasonable written evidence that it has imposed requirements on those\nassociated with it as required by Clause 33 (f)."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "coverpage",
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text edit-document-title"
+                },
+                "children": [
+                  "{b:Schedule 1}",
+                  "{b:Drawings and Specifications}",
+                  "{b:\"Appendix A\"}"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "children": [
+                  "The documents referred to herein form part of the Sub-Contract between the Sub-Contractor and C.J.\nO'Shea and Company Limited.{br}{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "The Subcontract Agreement between {TheSupplier} and C.J. O'Shea and Company Limited including\nbut not limited to:",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "1.1. The provisions of the Main Contract between the Employer and the Contractor as it applies to the\nSubcontract Works.",
+                  "1.2 The documents noted below.",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "editable": false
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "fileManager",
+                    "props": {
+                      "className": "edit-document-table full-width table"
+                    },
+                    "children": [
+                      {
+                        "name": "view",
+                        "type": "thead",
+                        "props": {
+                          "className": "edit-document-table-row"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:Document Name}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:Category}"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": {
+                          "className": "edit-document-table-row"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              " "
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              " "
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "children": [
+                      {
+                        "type": "link",
+                        "code": "download_all_files",
+                        "name": "text",
+                        "children": [
+                          "Download all"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "coverpage",
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text edit-document-title"
+                },
+                "children": [
+                  "{b:Schedule 2}",
+                  "{b:Further Information}"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

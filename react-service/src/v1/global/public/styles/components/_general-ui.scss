@@ -1,0 +1,61 @@
+.green-button {
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem 0.5rem;
+  }
+
+  img {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-right: 0.3rem;
+
+    @media (max-width: 768px) {
+      width: 0.55rem;
+      height: 0.55rem;
+      margin-right: 0.1rem;
+    }
+  }
+
+  svg {
+    width: 12px;
+    height: 12px;
+    margin-right: 0.3rem;
+
+    @media (max-width: 768px) {
+      width: 0.55rem;
+      height: 0.55rem;
+      margin-right: 0.1rem;
+    }
+  }
+  &.btn-success {
+    svg {
+      opacity: 0.5;
+    }
+    &:disabled,
+    &.disabled {
+      background-color: $clink-green;
+    }
+  }
+}
+
+.text-button {
+  border: 0;
+  background: none;
+  padding: 0;
+  text-align: initial;
+  &:hover {
+    background-color: $snow;
+    border: 1px solid $clink-purple;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  &.editor-modal-input {
+    @import '../theme/clink-app/v1/components/clink-form/clink-input';
+    background-color: $white;
+    color: rgba($clink-black, 0.6);
+    overflow: hidden;
+    padding: 7px;
+    margin: 0px;
+    width: 100%;
+  }
+}

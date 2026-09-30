@@ -1,0 +1,67 @@
+.publish-subcontractors-modal {
+  .modal-dialog {
+    min-height: 92vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 590px !important;
+
+    .modal-content {
+      .moda-header {
+        .modal-subtitle {
+          p {
+            line-height: 1.5;
+
+            &.alert-subtitle {
+              max-width: 400px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+        }
+      }
+
+      .modal-body {
+        .pricing-document-radio {
+          .radio-button-group {
+            label {
+              display: flex;
+              align-items: center;
+              padding: 1rem 1rem 1rem 1.2rem;
+
+              &.toggle-button {
+                border-radius: 4px;
+                border-width: 2px;
+
+                &.btn-outline-success {
+                  color: $black !important;
+
+                  svg {
+                    font-size: 1.4rem;
+                    color: $clink-green;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .submit-button-holder {
+          justify-content: center !important;
+
+          button {
+            &.btn {
+              font-size: 1rem;
+              padding-left: 1.75rem;
+              padding-right: 1.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modal-subtitle {
+    margin-top: 15px;
+  }
+}

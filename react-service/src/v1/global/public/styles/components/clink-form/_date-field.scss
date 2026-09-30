@@ -1,0 +1,175 @@
+.react-datepicker__triangle {
+  left: 70px !important;
+}
+
+.calendar {
+  button.react-datepicker__close-icon {
+    margin: 0;
+    margin-right: 2rem;
+  }
+
+  .react-datepicker__close-icon::after {
+    cursor: pointer;
+    background-color: #216ba5;
+    color: #fff;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    padding: 2px;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    content: 'x';
+    /* \00d7 is unicode escape sequence for ×, but it's failling sometimes */
+  }
+
+  .navigation--custom-content {
+    button.MuiButtonBase-root {
+      position: unset;
+    }
+  }
+}
+
+.date-field {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+
+  svg {
+
+    &.calendar,
+    &.angle-down {
+      position: absolute;
+      top: 11px;
+      right: 10px;
+    }
+
+    &.calendar {
+      left: 10px;
+    }
+  }
+
+  .date-input {
+    width: 100%;
+    padding-left: 35px;
+  }
+
+  .form-control[readonly] {
+    background-color: $white;
+  }
+}
+
+.react-datepicker-popper {
+  .react-datepicker {
+    border: 1px solid $purple-light;
+    font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+
+    &__triangle {
+      display: none;
+    }
+
+    &__header {
+      background-color: $white;
+      border-bottom: none;
+
+      &--custom {
+        .navigation {
+          margin: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &--custom-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+
+          &--current-month {
+            font-size: 1rem;
+          }
+
+          &--previous,
+          &--next {
+            background: $white;
+            color: $clink-purple;
+            width: 30px;
+            height: 29px;
+
+            &:hover {
+              background: $clink-purple;
+              color: $white;
+            }
+
+            svg {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    &__day {
+
+      &--today,
+      &--keyboard-selected {
+        background-color: rgba($clink-green, 0.2);
+        color: $clink-green-dark;
+        border-radius: 50px;
+      }
+    }
+
+    &__day-names {
+      border-top: 1px solid $purple-light;
+    }
+
+    &__day-name {
+      color: $clink-purple;
+    }
+
+    .datepicker-custom-content {
+      padding: 10px 16px;
+      border-top: 1px solid $purple-light;
+
+      .datepicker-custom-content--message {
+        font-size: 16px;
+        font-weight: normal;
+        max-width: 206px;
+        margin: auto;
+        color: $clink-black;
+
+        .bold {
+          font-weight: bold;
+        }
+      }
+
+      .add-tender-date-modal {
+        justify-content: left !important;
+        max-width: 206px;
+        margin: auto;
+
+        .clink-button {
+          background: $white;
+          color: $clink-green;
+          padding: 0;
+          font-size: 16px;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+#date-picker-portal {
+  position: relative;
+  z-index: 9999;
+
+  .react-datepicker-popper {
+    z-index: 9999;
+  }
+}

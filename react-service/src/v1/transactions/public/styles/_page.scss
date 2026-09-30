@@ -1,0 +1,45 @@
+@import '~bootstrap';
+
+.item-container {
+  background-color: $white;
+  border-radius: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+
+  .accordion {
+    position: absolute;
+    right: 15px;
+    .accordion-toggle-button {
+      border: 1px solid #e2e2ee;
+      border-radius: 0px 8px 0px 0px;
+      color: $clink-purple;
+      background-color: transparent;
+      width: 32px;
+      min-width: 32px;
+      height: 32px;
+      padding: 0;
+    }
+  }
+}
+
+.page-header {
+  min-height: 130px;
+
+  .header-items {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      padding: 0.25rem;
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  .item-container {
+    .accordion {
+      right: 0;
+    }
+  }
+}

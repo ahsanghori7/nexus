@@ -1,0 +1,981 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": {
+      "company_name": "",
+      "subcontract": ""
+    },
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": ["{b:Sub-Contract Order}", "{br}"]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table full-width quinn-one table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "Order Number", "{br}", "{br}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "{OrderReference}", "{br}", "{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "Sub-Contractor's Name",
+                          "{br}",
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "{TheSupplier}", "{br}", "{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "Company Number", "{br}", "{br}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "{CompanyReg}", "{br}", "{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "Registered Address",
+                          "{br}",
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{RegisteredAddress}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "Project", "{br}", "{br}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "{ProjectName}", "{br}", "{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "Project Address", "{br}", "{br}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "{SiteAddress}", "{br}", "{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "Sum-Contract Sum", "{br}", "{br}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "{OrderPrice}", "{br}", "{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "Discount", "{br}", "{br}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{DiscountApplied}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Retention"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "children": ["{br}"]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["{Retention}%"]
+                          },
+                          {
+                            "name": "text",
+                            "props": {
+                              "className": "bullet-item"
+                            },
+                            "children": [
+                              "\u2022 50% released after Practical Completion"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "props": {
+                              "className": "bullet-item"
+                            },
+                            "children": [
+                              "\u2022 50% released 12 months after Practical Completion"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["{br}"]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["{br}"]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{b:Payment Terms}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "{PaymentTerms}", "{br}", "{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row no-border-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{b:Subcontractors Insurances Required}",
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row no-border-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022 {b:Public/Product Liability: }"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{Public/Product}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row no-border-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022 {b:Employers Liability: }"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{Employers}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row no-border-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "\u2022 {b:Contractors All Risk Insurance: }"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{ContractorsAll}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row border-bottom"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "\u2022 {b:Professional Indemnity: }",
+                          "{br}",
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{ProfessionalIndemnity}", "{br}", "{br}"]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{br}",
+                  "{b:Description of Subcontract Works:}",
+                  "{br}",
+                  "These  works  are  the  {Service}  of  the {PackageName}. The  documents  comprising  this Subcontract are included as an Appendix to this document.",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table full-width table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "Design Scope", "{br}", "{br}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "{DesignScope}", "{br}", "{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "Collateral Warranties",
+                          "{br}",
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{CollateralWarranty}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "children": ["{br}"]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["Programme (Clause 9)"]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["{br}"]
+                          },
+                          {
+                            "name": "text",
+                            "props": {
+                              "className": "padded-item"
+                            },
+                            "children": ["Commencement Date"]
+                          },
+                          {
+                            "name": "text",
+                            "props": {
+                              "className": "padded-item"
+                            },
+                            "children": ["Date for Completion"]
+                          },
+                          {
+                            "name": "text",
+                            "props": {
+                              "className": "padded-item"
+                            },
+                            "children": ["Period required for Notice to "]
+                          },
+                          {
+                            "name": "text",
+                            "props": {
+                              "className": "padded-item"
+                            },
+                            "children": ["Commence Works on Site"]
+                          },
+                          {
+                            "name": "text",
+                            "props": {
+                              "className": "padded-item"
+                            },
+                            "children": ["Liquidated and Ascertained "]
+                          },
+                          {
+                            "name": "text",
+                            "props": {
+                              "className": "padded-item"
+                            },
+                            "children": ["Damages under the Subcontract"]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["{br}"]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["{br}"]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "children": ["{br}"]
+                          },
+                          {
+                            "name": "text",
+                            "children": [" "]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["{br}"]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["{StartDate}"]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["{CompletionDate}"]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["{NoticePeriod}"]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["{br}"]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["{DelayDamages} per week"]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["{br}"]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["{br}"]
+                          },
+                          {
+                            "name": "text",
+                            "children": ["{br}"]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{br}",
+                  "{b:Executed as a Deed for and on behalf of Quinn (London) Limited} acting by:",
+                  "{br}",
+                  "a Director and Secretary/two Directors/a single Director in the presence of a Witness:",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table full-width table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{b:Signed:}",
+                          "{br}",
+                          "{b:Print Name:}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{b:Position:}",
+                          "{br}",
+                          "{b:Date:}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{br}"]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table full-width table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{b:Signed:}",
+                          "{br}",
+                          "{b:Print Name:}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{b:Position:}",
+                          "{br}",
+                          "{b:Date:}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{br}",
+                  "{b:Executed as a Deed for and on behalf of the Subcontractor} acting by:",
+                  "{br}",
+                  "a Director and Secretary/two Directors/a single Director in the presence of a Witness:",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table full-width table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{b:Signed:}",
+                          "{br}",
+                          "{b:Print Name:}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{b:Position:}",
+                          "{br}",
+                          "{b:Date:}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{br}"]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table full-width table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{b:Signed:}",
+                          "{br}",
+                          "{b:Print Name:}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{b:Position:}",
+                          "{br}",
+                          "{b:Date:}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{br}",
+                  "The Subcontractor's attention is drawn to clause 7.6 (requirement to notify of claims for time/money within 7 days) and clause 7.4 (requirement to object to set rates within 7 days)"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

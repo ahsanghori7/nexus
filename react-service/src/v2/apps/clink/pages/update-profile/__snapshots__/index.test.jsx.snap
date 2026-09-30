@@ -1,0 +1,825 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UpdateProfile matches snapshot 1`] = `
+<div
+  class="MuiBox-root"
+  component="form"
+  data-testid="mui-box"
+  maxwidth="1280"
+  style="margin: auto;"
+>
+  <div
+    data-testid="mui-typography"
+  >
+    update-profile
+  </div>
+  <div
+    class="MuiGrid-root MuiGrid-container"
+    data-testid="mui-grid"
+    spacing="4"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6"
+      data-testid="mui-grid"
+      md="6"
+      sx="[object Object]"
+      xs="12"
+    >
+      <div
+        data-testid="mui-typography"
+        variant="h6"
+      >
+        update-profile-pers-info
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="mui-grid"
+        spacing="4"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+          data-testid="mui-grid"
+          sm="6"
+          xs="12"
+        >
+          <div
+            data-testid="formcontrol"
+            margin="normal"
+            sx="[object Object]"
+          >
+            <div
+              component="label"
+              data-testid="mui-typography"
+              variant="body1"
+            >
+              <span
+                data-testid="PersonIcon"
+                sx="[object Object]"
+              >
+                👤
+              </span>
+               
+              First Name
+              <span
+                style="color: red;"
+              >
+                 *
+              </span>
+            </div>
+            <div
+              class="MuiTextField-root "
+              data-testid="textfield"
+              inputprops="[object Object]"
+              type="text"
+            >
+              <div
+                class="MuiInputBase-root"
+              >
+                <input
+                  id="textfield-input-user[firstname]"
+                  name="user[firstname]"
+                  required=""
+                  sx="[object Object]"
+                  type="text"
+                  value="John"
+                  variant="outlined"
+                />
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+          data-testid="mui-grid"
+          sm="6"
+          xs="12"
+        >
+          <div
+            data-testid="formcontrol"
+            margin="normal"
+            sx="[object Object]"
+          >
+            <div
+              component="label"
+              data-testid="mui-typography"
+              variant="body1"
+            >
+              <span
+                data-testid="PersonIcon"
+                sx="[object Object]"
+              >
+                👤
+              </span>
+               
+              Last Name
+              <span
+                style="color: red;"
+              >
+                 *
+              </span>
+            </div>
+            <div
+              class="MuiTextField-root "
+              data-testid="textfield"
+              inputprops="[object Object]"
+              type="text"
+            >
+              <div
+                class="MuiInputBase-root"
+              >
+                <input
+                  id="textfield-input-user[lastname]"
+                  name="user[lastname]"
+                  required=""
+                  sx="[object Object]"
+                  type="text"
+                  value="Doe"
+                  variant="outlined"
+                />
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="mui-grid"
+        spacing="4"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+          data-testid="mui-grid"
+          sm="6"
+          xs="12"
+        >
+          <div
+            data-testid="formcontrol"
+            margin="normal"
+            sx="[object Object]"
+          >
+            <div
+              component="label"
+              data-testid="mui-typography"
+              variant="body1"
+            >
+              <span
+                data-testid="mui-icon-LocalPhone"
+                sx="[object Object]"
+              >
+                LocalPhone
+              </span>
+               
+              Contact Number
+            </div>
+            <div
+              class="MuiTextField-root "
+              data-testid="textfield"
+              inputprops="[object Object]"
+              type="number"
+            >
+              <div
+                class="MuiInputBase-root"
+              >
+                <input
+                  id="textfield-input-user[contact_number]"
+                  name="user[contact_number]"
+                  sx="[object Object]"
+                  type="number"
+                  value="555-5678"
+                  variant="outlined"
+                />
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+          data-testid="mui-grid"
+          sm="6"
+          xs="12"
+        >
+          <div
+            data-testid="formcontrol"
+            margin="normal"
+            sx="[object Object]"
+          >
+            <div
+              component="label"
+              data-testid="mui-typography"
+              variant="body1"
+            >
+              <span
+                data-testid="mui-icon-Email"
+                sx="[object Object]"
+              >
+                Email
+              </span>
+               
+              Email
+              <span
+                style="color: red;"
+              >
+                 *
+              </span>
+            </div>
+            <div
+              class="MuiTextField-root "
+              data-testid="textfield"
+              inputprops="[object Object]"
+              type="email"
+            >
+              <div
+                class="MuiInputBase-root"
+              >
+                <input
+                  id="textfield-input-user[email]"
+                  name="user[email]"
+                  required=""
+                  sx="[object Object]"
+                  type="email"
+                  value="user@test.com"
+                  variant="outlined"
+                />
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-testid="formcontrol"
+        margin="normal"
+        sx="[object Object]"
+      >
+        <div
+          component="label"
+          data-testid="mui-typography"
+          variant="body1"
+        >
+          <span
+            data-testid="mui-icon-Work"
+            sx="[object Object]"
+          >
+            Work
+          </span>
+           
+          Job Title
+        </div>
+        <div
+          class="MuiTextField-root "
+          data-testid="textfield"
+          inputprops="[object Object]"
+          type="text"
+        >
+          <div
+            class="MuiInputBase-root"
+          >
+            <input
+              id="textfield-input-user[job_title]"
+              name="user[job_title]"
+              sx="[object Object]"
+              type="text"
+              value="Developer"
+              variant="outlined"
+            />
+          </div>
+          
+        </div>
+      </div>
+      <div
+        data-testid="mui-typography"
+        variant="h6"
+      >
+        update-profile-account-settings
+      </div>
+      <div
+        data-testid="formcontrol"
+        margin="normal"
+        sx="[object Object]"
+      >
+        <div
+          component="label"
+          data-testid="mui-typography"
+          variant="body1"
+        >
+          <span
+            data-testid="mui-icon-DriveFileRenameOutline"
+            sx="[object Object]"
+          >
+            DriveFileRenameOutline
+          </span>
+           
+          Display Name
+        </div>
+        <div
+          class="MuiTextField-root "
+          data-testid="textfield"
+          inputprops="[object Object]"
+          type="text"
+        >
+          <div
+            class="MuiInputBase-root"
+          >
+            <input
+              id="textfield-input-user[display_name]"
+              name="user[display_name]"
+              sx="[object Object]"
+              type="text"
+              value="Test User"
+              variant="outlined"
+            />
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="MuiBox-root"
+        data-testid="mui-box"
+        position="relative"
+      >
+        <div
+          data-testid="formcontrol"
+          margin="normal"
+          sx="[object Object]"
+        >
+          <div
+            component="label"
+            data-testid="mui-typography"
+            variant="body1"
+          >
+            <span
+              data-testid="mui-icon-Lock"
+              sx="[object Object]"
+            >
+              Lock
+            </span>
+             
+            New Password
+          </div>
+          <div
+            class="MuiTextField-root "
+            data-testid="textfield"
+            inputprops="[object Object]"
+            type="password"
+          >
+            <div
+              class="MuiInputBase-root"
+            >
+              <input
+                id="textfield-input-user[password]"
+                name="user[password]"
+                sx="[object Object]"
+                type="password"
+                value=""
+                variant="outlined"
+              />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root"
+        data-testid="mui-box"
+        position="relative"
+      >
+        <div
+          data-testid="formcontrol"
+          margin="normal"
+          sx="[object Object]"
+        >
+          <div
+            component="label"
+            data-testid="mui-typography"
+            variant="body1"
+          >
+            <span
+              data-testid="mui-icon-EnhancedEncryption"
+              sx="[object Object]"
+            >
+              EnhancedEncryption
+            </span>
+             
+            Repeat New Password
+          </div>
+          <div
+            class="MuiTextField-root "
+            data-testid="textfield"
+            inputprops="[object Object]"
+            type="password"
+          >
+            <div
+              class="MuiInputBase-root"
+            >
+              <input
+                id="textfield-input-password_confirm"
+                name="password_confirm"
+                sx="[object Object]"
+                type="password"
+                value=""
+                variant="outlined"
+              />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6"
+      data-testid="mui-grid"
+      md="6"
+      xs="12"
+    >
+      <div
+        data-testid="mui-typography"
+        variant="h6"
+      >
+        update-profile-comp-info
+      </div>
+      <div
+        data-testid="formcontrol"
+        margin="normal"
+        sx="[object Object]"
+      >
+        <div
+          component="label"
+          data-testid="mui-typography"
+          variant="body1"
+        >
+          <span
+            data-testid="mui-icon-Business"
+            sx="[object Object]"
+          >
+            Business
+          </span>
+           
+          Company Name
+          <span
+            style="color: red;"
+          >
+             *
+          </span>
+        </div>
+        <div
+          class="MuiTextField-root "
+          data-testid="textfield"
+          inputprops="[object Object]"
+          type="text"
+        >
+          <div
+            class="MuiInputBase-root"
+          >
+            <input
+              id="textfield-input-account[name]"
+              name="account[name]"
+              required=""
+              sx="[object Object]"
+              type="text"
+              value="Test Company"
+              variant="outlined"
+            />
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="MuiBox-root"
+        data-testid="mui-box"
+        style="display: flex; align-items: center; justify-content: center; z-index: 1; position: relative;"
+      >
+        <div
+          component="label"
+          data-testid="mui-typography"
+          variant="body1"
+        >
+          <span
+            data-testid="mui-icon-Image"
+            sx="[object Object]"
+          >
+            Image
+          </span>
+           
+          update-profile-logo
+        </div>
+        <div
+          class="MuiBox-root"
+          data-testid="mui-box"
+          style="position: relative; margin-top: 50px; margin-bottom: 39px;"
+        >
+          <div
+            alt="Company Logo"
+            data-testid="mui-avatar"
+            src=""
+            sx="[object Object]"
+          />
+          <input
+            accept=".png, .jpg, .jpeg"
+            class="upload"
+            id="account_image"
+            name="account[logo]"
+            style="display: none;"
+            type="file"
+          />
+          <div
+            class="MuiBox-root"
+            component="label"
+            data-testid="mui-box"
+            for="account_image"
+            style="position: absolute; bottom: 0px; right: 0px; left: 0px; top: 0px; display: flex; justify-content: center; align-items: center; cursor: pointer;"
+          >
+            <button
+              class="MuiIconButton-root"
+              color="primary"
+              component="span"
+              data-testid="icon-button"
+              role="button"
+              sx="[object Object]"
+              type="button"
+            >
+              <span
+                data-testid="mui-icon-PhotoCamera"
+                sx="[object Object]"
+              >
+                PhotoCamera
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        data-testid="formcontrol"
+        margin="normal"
+        sx="[object Object]"
+      >
+        <div
+          component="label"
+          data-testid="mui-typography"
+          variant="body1"
+        >
+          <div
+            class="MuiBox-root"
+            data-testid="mui-box"
+            style="width: 28px; position: relative; display: inline-block;"
+          >
+            <div
+              component="span"
+              data-testid="mui-typography"
+            >
+              ®
+            </div>
+          </div>
+           
+          Registration Number
+        </div>
+        <div
+          class="MuiTextField-root "
+          data-testid="textfield"
+          inputprops="[object Object]"
+          type="number"
+        >
+          <div
+            class="MuiInputBase-root"
+          >
+            <input
+              id="textfield-input-account[reg_number]"
+              name="account[reg_number]"
+              sx="[object Object]"
+              type="number"
+              value="REG123"
+              variant="outlined"
+            />
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="mui-grid"
+        spacing="4"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+          data-testid="mui-grid"
+          sm="6"
+          xs="12"
+        >
+          <div
+            data-testid="formcontrol"
+            margin="normal"
+            sx="[object Object]"
+          >
+            <div
+              component="label"
+              data-testid="mui-typography"
+              variant="body1"
+            >
+              <span
+                data-testid="mui-icon-Place"
+                sx="[object Object]"
+              >
+                Place
+              </span>
+               
+              Company Address
+            </div>
+            <div
+              class="MuiTextField-root "
+              data-testid="textfield"
+              inputprops="[object Object]"
+              type="text"
+            >
+              <div
+                class="MuiInputBase-root"
+              >
+                <input
+                  id="textfield-input-account[address]"
+                  name="account[address]"
+                  sx="[object Object]"
+                  type="text"
+                  value="123 Test Street"
+                  variant="outlined"
+                />
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+          data-testid="mui-grid"
+          sm="6"
+          xs="12"
+        >
+          <div
+            data-testid="formcontrol"
+            margin="normal"
+            sx="[object Object]"
+          >
+            <div
+              component="label"
+              data-testid="mui-typography"
+              variant="body1"
+            >
+              <span
+                data-testid="mui-icon-PhoneCallback"
+                sx="[object Object]"
+              >
+                PhoneCallback
+              </span>
+               
+              Company Landline Number
+            </div>
+            <div
+              class="MuiTextField-root "
+              data-testid="textfield"
+              inputprops="[object Object]"
+              type="number"
+            >
+              <div
+                class="MuiInputBase-root"
+              >
+                <input
+                  id="textfield-input-account[landline]"
+                  name="account[landline]"
+                  sx="[object Object]"
+                  type="number"
+                  value="555-1234"
+                  variant="outlined"
+                />
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="mui-grid"
+        spacing="4"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+          data-testid="mui-grid"
+          sm="6"
+          xs="12"
+        >
+          <div
+            data-testid="formcontrol"
+            margin="normal"
+            sx="[object Object]"
+          >
+            <div
+              component="label"
+              data-testid="mui-typography"
+              variant="body1"
+            >
+              <span
+                data-testid="mui-icon-Web"
+                sx="[object Object]"
+              >
+                Web
+              </span>
+               
+              Company Website
+            </div>
+            <div
+              class="MuiTextField-root "
+              data-testid="textfield"
+              inputprops="[object Object]"
+              type="text"
+            >
+              <div
+                class="MuiInputBase-root"
+              >
+                <input
+                  id="textfield-input-account[website]"
+                  name="account[website]"
+                  sx="[object Object]"
+                  type="text"
+                  value="https://test.com"
+                  variant="outlined"
+                />
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+          data-testid="mui-grid"
+          sm="6"
+          xs="12"
+        >
+          <div
+            data-testid="formcontrol"
+            margin="normal"
+            sx="[object Object]"
+          >
+            <div
+              component="label"
+              data-testid="mui-typography"
+              variant="body1"
+            >
+              <span
+                data-testid="mui-icon-MailOutline"
+                sx="[object Object]"
+              >
+                MailOutline
+              </span>
+               
+              Company Email
+              <span
+                style="color: red;"
+              >
+                 *
+              </span>
+            </div>
+            <div
+              class="MuiTextField-root "
+              data-testid="textfield"
+              inputprops="[object Object]"
+              type="email"
+            >
+              <div
+                class="MuiInputBase-root"
+              >
+                <input
+                  id="textfield-input-account[email]"
+                  name="account[email]"
+                  required=""
+                  sx="[object Object]"
+                  type="email"
+                  value="company@test.com"
+                  variant="outlined"
+                />
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+      data-testid="mui-grid"
+      sx="[object Object]"
+      xs="12"
+    >
+      <button
+        class="MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+        color="primary"
+        disabled=""
+        sx="[object Object]"
+        type="submit"
+        variant="contained"
+      >
+        update-profile-save
+      </button>
+    </div>
+  </div>
+</div>
+`;

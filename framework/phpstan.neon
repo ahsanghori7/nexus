@@ -1,0 +1,25 @@
+parameters:
+	level: 5
+    ignoreErrors:
+         - '#Call to an undefined method SupplyChain\\Model\\Abstraction::where\(\)#'
+         - '#Call to an undefined method SupplyChain\\Model\\Abstraction::select\(\)#'
+         - '#Call to an undefined method SupplyChain\\Model\\Abstraction::create\(\)#'
+         - '#Call to an undefined method SupplyChain\\Model\\Abstraction::whereIn\(\)#'
+         - '#Instantiated class Mpdf\\Mpdf not found#'
+         - '#Instantiated class Mpdf\\Config\\ConfigVariables not found#'
+         - '#Instantiated class Jurosh\\PDFMerge\\PDFMerger not found#'
+         - '#Call to method WriteHTML\(\) on an unknown class Mpdf\\Mpdf#'
+         - '#Call to method AddPage\(\) on an unknown class Mpdf\\Mpdf#'
+         - '#Call to method SetHTMLFooter\(\) on an unknown class Mpdf\\Mpdf#'
+         - '#Call to method Output\(\) on an unknown class Mpdf\\Mpdf#'
+         - '#Call to method getDefaults\(\) on an unknown class Mpdf\\Config\\ConfigVariables#'
+    inferPrivatePropertyTypeFromConstructor: true
+    excludePaths:
+        - '*/vendor/*'
+        - '*/tests/*'
+        - '*/files/*'
+    bootstrapFiles:
+        - init.php
+        - src/supply_chain/vendor/autoload.php
+    treatPhpDocTypesAsCertain: false
+    checkGenericClassInNonGenericObjectType: false

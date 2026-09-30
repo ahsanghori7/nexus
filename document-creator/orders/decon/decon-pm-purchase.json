@@ -1,0 +1,813 @@
+[
+    {
+        "name": "document",
+        "header": {
+            "company_name": "",
+            "address": [],
+            "company_reg": "",
+            "web_address": "",
+            "logo": ""
+        },
+        "footer": {
+            "company_name": "",
+            "subcontract": ""
+        },
+        "props": {
+            "className": "edit-document-document"
+        },
+        "children": [
+            {
+                "name": "page",
+                "props": {
+                    "className": "edit-document-page"
+                },
+                "children": [
+                    {
+                        "name": "view",
+                        "props": {
+                            "className": "edit-document-container"
+                        },
+                        "children": [
+                            {
+                                "name": "text",
+                                "props": {
+                                    "className": "centered-text"
+                                },
+                                "children": [
+                                    "{b:PURCHASE ORDER}"
+                                ]
+                            },
+                            {
+                                "name": "view",
+                                "type": "table",
+                                "props": {
+                                    "className": "edit-document-table table normalize-font-size full-width"
+                                },
+                                "children": [
+                                    {
+                                        "name": "view",
+                                        "type": "row",
+                                        "props": {
+                                            "className": "edit-document-table-row"
+                                        },
+                                        "children": [
+                                            {
+                                                "name": "text",
+                                                "type": "column",
+                                                "props": {
+                                                    "className": "edit-document-table-column"
+                                                },
+                                                "children": [
+                                                    "\u00A0 "
+                                                ]
+                                            },
+                                            {
+                                                "name": "text",
+                                                "type": "column",
+                                                "props": {
+                                                    "className": "edit-document-table-column"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "view",
+                                                        "type": "table",
+                                                        "props": {
+                                                            "className": "edit-document-table table full-width"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "Date:"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "{Date}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "Purchase Order Number:"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "{PONumber}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "view",
+                                        "type": "row",
+                                        "props": {
+                                            "className": "edit-document-table-row"
+                                        },
+                                        "children": [
+                                            {
+                                                "name": "text",
+                                                "type": "column",
+                                                "props": {
+                                                    "className": "edit-document-table-column"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "view",
+                                                        "type": "table",
+                                                        "props": {
+                                                            "className": "edit-document-table table normalize-font-size  full-width"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row purple"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column centered-text"
+                                                                        },
+                                                                        "children": [
+                                                                            "{b:Vendor}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "view",
+                                                        "type": "table",
+                                                        "props": {
+                                                            "className": "edit-document-table table normalize-font-size  full-width"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "Company Name:"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "{TheSupplier}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "Contact Name:"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "{PrimaryContactVendor}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "Quotation Reference:"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "{QuotationReference}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "text",
+                                                "type": "column",
+                                                "props": {
+                                                    "className": "edit-document-table-column"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "view",
+                                                        "type": "table",
+                                                        "props": {
+                                                            "className": "edit-document-table table normalize-font-size  full-width"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row purple"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column centered-text"
+                                                                        },
+                                                                        "children": [
+                                                                            "{b:*Client Site/Project Name*}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "view",
+                                                        "type": "table",
+                                                        "props": {
+                                                            "className": "edit-document-table table normalize-font-size  full-width"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "{br}",
+                                                                            "{ProjectName}, {SiteAddress}",
+                                                                            "{br}",
+                                                                            "{br}",
+                                                                            "{br}",
+                                                                            "{br}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "text",
+                                "children": [
+                                    "{br}",
+                                    "{binv:{MiniBoqReference}}"
+                                ]
+                            },
+                            {
+                                "name": "view",
+                                "children": [
+                                    {
+                                        "name": "view",
+                                        "type": "MiniBoqTemplate",
+                                        "props": {
+                                            "id": "MiniBoqTemplate",
+                                            "className": "edit-document-table full-width table schedule-attendance normalize-font-size"
+                                        },
+                                        "children": [
+                                            {
+                                                "name": "view",
+                                                "type": "row",
+                                                "props": {
+                                                    "className": "edit-document-table-row light-purple"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column centered-text purple width-25"
+                                                        },
+                                                        "children": [
+                                                            "Description"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column centered-text purple width-25"
+                                                        },
+                                                        "children": [
+                                                            "Quantity"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column centered-text width-25"
+                                                        },
+                                                        "children": [
+                                                            "Unit Price"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column centered-text width-25"
+                                                        },
+                                                        "children": [
+                                                            "Total"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "view",
+                                                "type": "row",
+                                                "props": {
+                                                    "className": "edit-document-table-row"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column width-25"
+                                                        },
+                                                        "children": [
+                                                            " "
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column width-25 centered-text"
+                                                        },
+                                                        "children": [
+                                                            " "
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column width-25 centered-text"
+                                                        },
+                                                        "children": [
+                                                            " "
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column width-25 centered-text"
+                                                        },
+                                                        "children": [
+                                                            " "
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "text",
+                                "children": [
+                                    "{br}"
+                                ]
+                            },
+                            {
+                                "name": "view",
+                                "type": "table",
+                                "props": {
+                                    "className": "edit-document-table table normalize-font-size full-width"
+                                },
+                                "children": [
+                                    {
+                                        "name": "view",
+                                        "type": "row",
+                                        "props": {
+                                            "className": "edit-document-table-row"
+                                        },
+                                        "children": [
+                                            {
+                                                "name": "text",
+                                                "type": "column",
+                                                "props": {
+                                                    "className": "edit-document-table-column"
+                                                },
+                                                "children": [
+                                                    ""
+                                                ]
+                                            },
+                                            {
+                                                "name": "text",
+                                                "type": "column",
+                                                "props": {
+                                                    "className": "edit-document-table-column"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "view",
+                                                        "type": "table",
+                                                        "subtype": "MiniBoqTotal",
+                                                        "props": {
+                                                            "className": "edit-document-table table full-width"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "Subtotal"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "{binv:{MiniBoqSubtotal}}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "VAT"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "20%"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "Total"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "{binv:{MiniBoqTotal}}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "text",
+                                "children": [
+                                    "{br}"
+                                ]
+                            },
+                            {
+                                "name": "view",
+                                "type": "table",
+                                "props": {
+                                    "className": "edit-document-table table normalize-font-size  full-width"
+                                },
+                                "children": [
+                                    {
+                                        "name": "view",
+                                        "type": "row",
+                                        "props": {
+                                            "className": "edit-document-table-row purple"
+                                        },
+                                        "children": [
+                                            {
+                                                "name": "text",
+                                                "type": "column",
+                                                "props": {
+                                                    "className": "edit-document-table-column centered-text"
+                                                },
+                                                "children": [
+                                                    "{b:Comments / Special Instructions}"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "view",
+                                        "type": "row",
+                                        "props": {
+                                            "className": "edit-document-table-row"
+                                        },
+                                        "children": [
+                                            {
+                                                "name": "text",
+                                                "type": "column",
+                                                "props": {
+                                                    "className": "edit-document-table-column centered-text"
+                                                },
+                                                "children": [
+                                                    "{br}",
+                                                    "Invoices should be made to {b:{TheSupplier}}",
+                                                    "{br}",
+                                                    "Invoices should be emailed to: {InvoiceEmail}. You should include on your invoice your PO number and bank payment details.",
+                                                    "{br}",
+                                                    "Payment terms are 30 days from receipt of goods and invoice.",
+                                                    "{br}",
+                                                    "{br}"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "text",
+                                "props": {
+                                    "className": "centered-text"
+                                },
+                                "children": [
+                                    "{br}",
+                                    "{br}",
+                                    "Disclaimer:",
+                                    "Please note that this purchase order is sent out by Decon PM (The Issuer) on behalf of {InvoiceBuyer} (The Buyer).",
+                                    "Payment will be made by the Buyer and not the Issuer.",
+                                    "The issuer is not financially liable for payments related to this purchase order. The third party named as the buyer assumes full responsibility for all payment obligations. Any disputes or issues regarding payments are to be resolved directly between the third party and the seller. The issuer shall not be held accountable for any outstanding payment matters arising from this transaction"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "page",
+                "props": {
+                    "className": "edit-document-page"
+                },
+                "children": [
+                    {
+                        "name": "view",
+                        "props": {
+                            "className": "edit-document-container"
+                        },
+                        "children": [
+                            {
+                                "name": "view",
+                                "props": {
+                                    "editable": false
+                                },
+                                "children": [
+                                    {
+                                        "name": "view",
+                                        "children": [
+                                            {
+                                                "type": "link",
+                                                "code": "download_all_files",
+                                                "name": "text",
+                                                "children": [
+                                                    "{bpnk:Download all}"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "view",
+                                        "type": "fileManager",
+                                        "props": {
+                                            "className": "edit-document-table full-width table"
+                                        },
+                                        "children": [
+                                            {
+                                                "name": "view",
+                                                "type": "thead",
+                                                "props": {
+                                                    "className": "edit-document-table-row"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column table-header"
+                                                        },
+                                                        "children": [
+                                                            "{b:Document Name}"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column table-header"
+                                                        },
+                                                        "children": [
+                                                            "{b:Category}"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "view",
+                                                "type": "row",
+                                                "props": {
+                                                    "className": "edit-document-table-row"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column"
+                                                        },
+                                                        "children": [
+                                                            "{br}"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column"
+                                                        },
+                                                        "children": [
+                                                            "{br}"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "view",
+                                        "children": [
+                                            {
+                                                "type": "link",
+                                                "code": "download_all_files",
+                                                "name": "text",
+                                                "children": [
+                                                    "{bpnk:Download all}"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

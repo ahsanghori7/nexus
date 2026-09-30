@@ -1,0 +1,27 @@
+body {
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+div {
+    text-align: justify;
+    padding: 0 0 0 0;
+}
+
+table {
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+table.noPadding {
+    padding: 0;
+    border-spacing: 0;
+}
+
+table.noPadding td {
+    padding: 0;
+}
+
+.hr {
+    width: 300px;
+}

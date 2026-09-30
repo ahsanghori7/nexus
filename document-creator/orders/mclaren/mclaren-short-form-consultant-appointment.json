@@ -1,0 +1,1858 @@
+[
+  {
+    "footer": {
+      "company_name": "",
+      "subcontract": "",
+      "html": "<table width='100%' style='border-collapse:collapse; font-size:10px; margin-top:6px;'><tr><td colspan='2' style='border:1px solid #000; padding:4px;'><strong>Information Classification: Protected</strong></td><td style='border:1px solid #000; padding:4px; width:20%;'>MCL-COM-FR-4752</td><td colspan='2' style='border:1px solid #000; padding:4px; width:40%;'>Short Form Consultant Appointment  </td></tr><tr><td style='border:1px solid #000; padding:4px;' colspan='3'>This document is uncontrolled if printed. Please always refer to TMW for the latest verion</td><td style='border-right:1px solid #000; padding:0 4px; text-align:left; vertical-align:middle; white-space:nowrap;border:1px solid #000;'>Rev 1</td><td colspan='1' style='padding:0 4px; text-align:right; vertical-align:middle; white-space:nowrap;border:1px solid #000;'>Page {PAGENO} of {nbpg}</td></tr></table>"
+    },
+    "header": {
+      "address": [],
+      "company_name": "",
+      "company_reg": "",
+      "logo": "",
+      "web_address": "",
+      "html": "<div>{MclarenEntityContractorHeader}</div>"
+    },
+    "name": "document",
+    "props": {
+      "className": "edit-document-document"
+    },
+    "options": {
+      "numbered_documents": true
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "children": [
+                  "{br}",
+                  "{br}",
+                  "{br}",
+                  "{br}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "(1)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column  align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{MclarenEntityContractor}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "(2)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{TheSupplier} (Company Number {SubContractorReg}), whose registered office is at {RegisteredAddress}, (\"the Consultant\")"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{br}",
+                  "{br}",
+                  "{br}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{hr}",
+                  "{b:PROFESSIONAL (SHORT FORM) APPOINTMENT}",
+                  "in respect of",
+                  "{ProjectName}",
+                  "{hr}"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "children": [
+                  "{b:THIS DEED IS MADE {Date}}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{b:BETWEEN}"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "(1)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{MclarenEntityContractor}; and"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "(2)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:{TheSupplier}} incorporated and registered in England and Wales with company number {SubContractorReg} whose registered office is {RegisteredAddress} (the \"{b:Consultant}\")."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified no-margin-top"
+                },
+                "children": [
+                  "This Deed sets out the terms of your appointment in connection with the development at {ProjectName} (the \"{b:Development}\"). This Deed will constitute the entire agreement between us and will replace any previous agreement in respect of the Development. Any services already provided by you relating to the Development shall be treated as having been provided under the terms of this Deed."
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "1."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:{u:Scope of Services}}",
+                          "{br}",
+                          "You will provide the services set out in the Schedule 1 and any other services reasonably required by the Employer (together the \"Services\") and in the provision of those services you will exercise the reasonable skill and care to be expected of an appropriately qualified member of your profession experienced in providing services for projects of a similar size, scope, nature, complexity, and value as the Development."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "2."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:{u:Your Obligations}}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "2.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The terms and conditions of this Deed and the warranties and undertakings which it contains are deemed to apply to all Services performed and to be performed by you in relation to the Development both before and after the date of this Deed."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "2.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "You will notify us in writing as soon as you have become aware of any matter arising out of the performance of the Services which may materially affect our interest regarding the Development."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "2.3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The approval by us of any plans, drawings, specifications, calculations or other documents prepared by or on your behalf or any inspections, enquiries, comments, consents and instructions by us shall not in any way limit or discharge your obligations set out in clause 1 above nor shall such approval be deemed to be any warranty that the site is suitable for the carrying out of the Development."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "3."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:{u:Professional Indemnity Insurance}}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "3.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "You will maintain professional indemnity insurance with insurers of repute in the European Union from the date of this Deed until twelve years after practical completion of the Development for an amount of not less than {ProfessionalIndemnity} for any one occurrence or series of occurrences arising out of any one event for a period beginning now and ending 12 years after (i) the date of practical completion of the Development or (ii) the date that you last carried out the Services under this Deed (whichever is later) provided such insurance is generally available in the market to members of your profession at commercially reasonable rates and terms and (for the avoidance of doubt) provided further that payment of any increased or additional premiums required by insurers by reason of your own claims record or other acts omissions matters or things peculiar to you will be deemed to be within your obligations. You will notify us in writing from time to time of any change in your professional indemnity insurance arrangements and, within 7 days of our  reasonable request at any time, you will produce for inspection documentary evidence as to your compliance with this clause and that payment has been made in respect of the last preceding premium payable under the policy. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "3.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "If the insurance referred to in clause 3.1 ceases to be available at commercially reasonable rates and terms, you will take out and maintain such reduced level of professional indemnity insurance as is available at commercially reasonable rates and as would be fair and reasonable in the circumstances for you to obtain."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "3.3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "If you fail to comply with its obligations under clause 3.1 and 3.2 we may take out insurance to cover some or all of the loss or damage which may result from your breach of this Deed and we may deduct the costs and expenses of taking out such insurance from any sums due to you or may recover them from you as a debt."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:{u:Intellectual Property Rights}}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4.1."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The copyright in all Materials provided by the Consultant in connection with the Project shall remain vested in the Consultant but the Consultant grants to the Employer and its nominees with full title guarantee a non-exclusive irrevocable royalty free licence to copy, use and reproduce the Materials for any purpose related to the Project including (but without limitation) the construction, completion, maintenance, letting, promotion, advertisement, reinstatement, extension and repair of the Project. Such licence shall include a licence to grant sub-licences and to transfer the same to third parties."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4.2."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Consultant shall not be liable for any such use by the Employer or its nominees of any Materials for any purpose other than that for which the same were prepared by the Consultant."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4.3."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Employer shall on written request, be entitled to be supplied by the Consultant with copies of any Materials (in either electronic format or hard copy where applicable and/or in such other format as the Employer may reasonably request)."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4.4."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Consultant unconditionally and irrevocably waives (and shall ensure that any sub-consultants waive), in respect of the Materials and the Project, all moral rights to which the Consultant (or any relevant sub-consultants) may now or at any future time be entitled under the Copyright, Designs and Patents Act 1988 as amended from time to time or under any other applicable laws."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4.5."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "This waiver is made in favour of the Employer and shall extend to the Employer's sub-licensees, assignees, and successors in title in accordance with this Deed."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4.6."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Consultant warrants that the Materials (save to the extent that duly authorised sub-consultants have been used to prepare the same) are the Consultant's own original work and that in any event their use in connection with the Project will not infringe the rights of any third party. The Consultant further warrants that where duly authorised sub-consultants are used their work will be original and that the Consultant will obtain the necessary consents in relation to clause 4.1."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:{u:Payment of Fees}}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Your fee shall be as stated in Schedule 2 (the \"{b:Fee}\") and the Fee, unless otherwise provided in this Deed will be inclusive of all expenses and disbursements. VAT will, where  chargeable, be paid on the Fee and all other sums payable under this Deed subject to receipt by us of a valid VAT invoice. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Fee will be payable by instalments as set out in Schedule 2 or in such other instalments as we subsequently may agree pursuant to this Deed."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5.3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Subject to compliance with clause 5.6 or clause 5.10, we may deduct from any payment under this Deed the amount of any bona fide claims set off or counterclaim by us against you after giving notice in accordance with clause 8."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5.4"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "You shall, as a pre-condition to our liability to pay any part of the Fee, submit an application for payment (an \"{b:Application}\") to us on or before the dates provided in Schedule 2 (the \"{b:Application Date}\"). The Application shall state the Development, the agreed Fee, the total fee claimed to date less the amount previously claimed, and a calculation of the total amount you consider is due under the Application, including details of and supporting information for all disbursements together (where appropriate) with an explanation of disbursements in question. Any Application submitted after the Application Date shall be deemed to be an Application for the next following Application Date."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5.5"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The payment due date for each Application shall be 10 days after the relevant Application Date (the \"{b:Due Date}\")."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5.6"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Not later than 5 days after the Due Date, we shall send a notice to you specifying the amount (if any) considered due to you at the Due Date and the basis on which that amount is calculated (\"{b:Payment Notice}\")."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5.7"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "If we fail to issue a Payment Notice in accordance with clause 5.6 the Application issued by you in accordance with clause 5.4 shall be deemed to be a notice of payment (\"{b:Default Payment Notice}\") and the sum to be paid by us shall, subject to any Pay Less Notice having been served by us under clause 5.10, be the sum specified in the Application."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5.8"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The final date for payment of each Application shall be 28 days from the Due Date referred to in clause 5.5."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5.9"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Notwithstanding anything to the contrary in this Deed, if you become insolvent as defined by section 113 of the Housing Grants Construction and Regeneration Act 1996 as amended by the Local Democracy, Economic Development and Construction Act 2009 and any further amendment, re-enactment or replacement thereof, after the last date upon which a Pay Less Notice could have been given to you, we shall not be obliged to pay the notified sum in accordance with Clause 5.8."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5.10"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "If we intend to pay less than the notified sum, we shall give you a notice stating the amount we consider due and the basis on which that amount is calculated (a \"{b:Pay Less Notice}\"). A Pay Less Notice shall be given not later than 1 day before the final date for payment of a notified sum in respect of which we intend to pay less."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "6."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:{u:Assignment and Subletting}}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "6.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "You are not entitled to assign the benefit of this Deed. Subject to the express provisions of this Deed, you must not delegate or sublet the whole or any part of your duties without our consent."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "6.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "We shall be entitled to assign or transfer this Deed and/or our rights arising under this Deed."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "7."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:{u:Third Party Rights}}",
+                          "{br}",
+                          "The parties to this Deed do not intend that any of its terms shall be enforceable by virtue of the Contracts (Rights of Third Parties) Act 1999 by any person not a party to it."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:{u:Suspension and Termination}}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "We may suspend the performance of any or all of the Services to be provided by you forthwith upon notice in writing. We may terminate your appointment on the expiry of not less than seven days' notice in writing."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "On suspension of your appointment you will be entitled to payment in respect of the Services properly rendered up to the time of suspension. Save where the reason for suspension is due to an act or omission of yours, during any period of suspension you will be entitled to be reimbursed by us for all proper and reasonable expenses and disbursements necessarily incurred and first approved by us (approval not to be unreasonably withheld) and on the resumption of suspended Services payments will be regarded as payments on account towards the total fee."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Services to be provided by you (when suspended) shall continue to be suspended until we serve notice on you terminating your appointment, continuing the suspension, or reactivating your appointment. If your appointment is reactivated, you shall be paid such reasonable and proper fees as are appropriate for the Services properly provided by you from the date of re-appointment."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.4"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "When your appointment is abandoned or terminated by us (other than termination due to unsatisfactory performance of Services or other breach by you) you will be entitled to be paid your reasonable and proper fees in accordance with Schedule 2 hereto for the Services which have been properly provided and no other fees shall be payable."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.5"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Upon termination or (if appropriate) upon suspension you will provide copies of all the Documents in accordance with paragraph 4 hereof."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.6"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Upon termination of this Deed we shall have no liability for the loss of any remaining part of the Fee or any other loss or damage howsoever arising or caused including but not limited to any claim for loss of profit, loss of chance or loss of future earnings."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "9."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:{u:Liability Period}}",
+                          "{br}",
+                          "Notwithstanding the provisions of the Limitation Act 1980, your obligations under this Deed shall cease 12 years after the date of practical completion of the Development save in respect of any cause of action under this Deed where proceedings have been commenced in such 12-year period."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "10."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:{u:Notices}}",
+                          "{br}",
+                          "Any notice to be given by either party under this Deed will be sufficiently served if sent by hand or by post to the registered office or if there is none the last known address of the party to be served. Any notice sent by hand will be deemed to be served on the date of delivery provided that if any notice sent by hand is sent after 4.45 pm on any day it will be deemed to be served on the next working day. Any notice sent by post will be deemed to have been duly served at the expiration of 48 hours after the time of posting, if the end of that period falls before 4.45 pm on a working day and otherwise on the next working day"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "11."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:{u:Disputes}}",
+                          "{br}",
+                          "Subject to either party's right to adjudicate at any time, the parties shall use  their  reasonable  endeavours  to  resolve  any  dispute  or  difference  between  them  through negotiation or mediation. Notwithstanding any other provision of this Deed either party may refer a dispute arising under this Deed to adjudication at any time under Part I of the Scheme for Construction Contracts  (England  and  Wales)  Regulations  1998  as  amended  by  the  Scheme  for  Construction Contracts  (England  and  Wales)  Regulations  1998  (Amendment)  (England)  Regulations  2011  (SI 2011/2333). The adjudicator shall be appointed by The Royal Institution of Chartered Surveyors."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "12."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:{u:Governing law and Jurisdiction}}",
+                          "{br}",
+                          "This Deed will be construed in accordance with English law and the parties hereby submit to the non-exclusive jurisdiction of the English courts."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "IN WITNESS whereof this Deed has been executed and delivered as a deed on the date first above written."
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "EXECUTED as a DEED and DELIVERED by {MclarenEntityContractor}",
+                  "acting by one director in the presence of:\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0)"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{br}",
+                  "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0{binv:{SignContractor}}",
+                  "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0{SignContractorName}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0{b:DIRECTOR}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "Witness' Signature: {binv:{SignContractorWitness}}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "Witness' Name: {SignContractorWitnessName}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "Witness' Address: ................................................"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "............................................................................"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "EXECUTED as a DEED and DELIVERED by  \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0)",
+                  " {TheSupplier} acting by one director in the presence,",
+                  " of: \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 )"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{br}",
+                  "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0{binv:{SignSubcontractor}}",
+                  "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0{SignSubcontractorName}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "\u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0{b:DIRECTOR}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "Witness' Signature: {binv:{SignSubcontractorWitness}}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "Witness' Name: {SignSubcontractorWitnessName}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "Witness' Address: ................................................"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "......................................................."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{b:SCHEDULE 1}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{b:THE SERVICES}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "{SubContractorWorks}"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{b:SCHEDULE 2}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{b:THE FEE}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "{OrderPrice}"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{b:SCHEDULE 3}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{b:THE DRAWINGS AND DOCUMENTS}"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "editable": false
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "children": [
+                      {
+                        "type": "link",
+                        "code": "download_all_files",
+                        "name": "text",
+                        "children": [
+                          "{bpnk:Download all}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "fileManager",
+                    "props": {
+                      "className": "edit-document-table full-width table"
+                    },
+                    "children": [
+                      {
+                        "name": "view",
+                        "type": "thead",
+                        "props": {
+                          "className": "edit-document-table-row"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:Document Name}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:Category}"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": {
+                          "className": "edit-document-table-row"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column justified"
+                            },
+                            "children": [
+                              "{br}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column justified"
+                            },
+                            "children": [
+                              "{br}"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "children": [
+                      {
+                        "type": "link",
+                        "code": "download_all_files",
+                        "name": "text",
+                        "children": [
+                          "{bpnk:Download all}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

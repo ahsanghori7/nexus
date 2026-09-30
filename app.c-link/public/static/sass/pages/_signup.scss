@@ -1,0 +1,121 @@
+.c-signup {
+  width: 100%;
+  max-width: 1300px;
+  height: auto;
+  margin: 5% auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5%;
+
+  h1 {
+    text-align: center;
+    color: #333;
+    padding-bottom: 50px;
+    grid-column: 1 / 3;
+
+    span {
+      @include font-bold;
+      color: $clink-purple;
+    }
+
+  }
+
+  figure {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    grid-column: 1 / 2;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: contain;
+    }
+
+  }
+
+  form {
+
+    background: #fff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    padding: 20px 35px;
+    border-radius: 5px;
+
+    &.sign-up {
+
+      .field-holder {
+        margin-bottom: 15px;
+      }
+
+      .note {
+        font-size: 0.7rem;
+        font-style: italic;
+      }
+
+      a {
+
+        text-align: center;
+        font-size: 0.8rem;
+        color: $n02;
+
+        &:hover {
+          color: $clink-green;
+        }
+
+        &.terms {
+
+          display: table;
+          color: rgba($clink-purple, 0.4);
+          margin: 0px auto;
+
+          .label--checkbox {
+            display: inline-table;
+          }
+
+          p {
+            display: inline-table;
+          }
+
+        }
+
+      }
+
+      button {
+        @include d-button;
+      }
+
+    }
+
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 1149px) {
+  .c-signup {
+    grid-template-columns: 100%;
+    column-gap: 0%;
+    row-gap: 1.5%;
+    align-content: start;
+
+    h1 {
+      padding-bottom: 0px;
+      grid-row: 1/2;
+    }
+
+    figure {
+
+      grid-row: 2/3;
+    }
+
+    form {
+      width: 90%;
+      margin: 20px auto;
+      margin-bottom: 50px;
+      grid-row: 3/3;
+      padding: 15px;
+    }
+
+  }
+
+}

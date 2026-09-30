@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clink/router/index should create snapshot of router configuration 1`] = `
+[
+  {
+    "element": "<div>Mock V1</div>",
+    "path": "/mock-v1-route",
+  },
+  {
+    "element": "<div>Mock V2</div>",
+    "path": "/mock-v2-route",
+  },
+]
+`;

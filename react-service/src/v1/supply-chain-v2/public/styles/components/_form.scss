@@ -1,0 +1,258 @@
+.clink-form {
+  &.find-subcontractor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &.find-subcontractor,
+  &.form-subcontractor {
+    .field-holder {
+      input {
+        height: 40px;
+        border: 1px solid $purple-light;
+        border-radius: 4px;
+        text-indent: initial;
+        width: 100%;
+        padding-left: 8px;
+
+        &::placeholder {
+          text-align: left;
+          font-family: 'proxima_nova', serif;
+          letter-spacing: 0px;
+          font-weight: initial;
+        }
+      }
+
+      .autocomplete-input-wrapper {
+        input {
+          padding-left: 30px;
+        }
+      }
+
+      .autocomplete-input-wrapper {
+        position: relative;
+
+        svg {
+          position: absolute;
+          top: 8px;
+          left: 4px;
+        }
+      }
+
+      &.input-error {
+
+        input,
+        .autocomplete-input-wrapper {
+          border-color: $clink-red;
+        }
+      }
+
+      flex: 0 0 47%;
+
+      @include media('<tablet') {
+        flex: 1 0 100%;
+      }
+
+      .form-label {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+
+        .clink-form__label-copy {
+          color: $clink-black;
+          white-space: nowrap;
+        }
+
+        .clink-form__error-wrap {
+          .invalid-feedback {
+            white-space: nowrap;
+            font-size: 14px;
+            margin-top: 0;
+          }
+        }
+      }
+
+      .form-control[readonly] {
+        background-color: $readonly-bg;
+      }
+
+      &.full {
+        flex: 1 0 100%;
+
+        &.half {
+          input {
+            width: 50%;
+          }
+        }
+      }
+
+      &.submit-button-holder {
+        margin-top: 86px;
+        flex-flow: row-reverse;
+        flex: 1 0 100%;
+        display: flex;
+        align-items: flex-end;
+
+        @include media('<tablet') {
+          margin-top: 44px;
+        }
+
+        .btn {
+          border-radius: 22px;
+        }
+
+        .green-button,
+        .green-button:disabled {
+          margin-left: 8px;
+          margin-right: 0;
+          background-color: $clink-green;
+          border: 1px solid $clink-green;
+          color: $white;
+
+          svg {
+            height: 12px;
+            color: $white;
+          }
+        }
+
+        .green-button:disabled {
+          opacity: 0.5;
+        }
+
+        .btn-outline-danger {
+          margin: 0;
+          margin-left: 8px;
+        }
+
+        .exit {
+          margin-right: auto;
+        }
+      }
+    }
+  }
+
+  &.form-subcontractor {
+    .icon-input-wrapper {
+      position: relative;
+
+      .tooltip-icon {
+        position: absolute;
+        z-index: 18;
+        right: 10px;
+        top: 5px;
+      }
+    }
+
+    input:read-only,
+    input:disabled {
+      background-color: $readonly-bg;
+      width: 100%;
+    }
+  }
+
+  &.find-subcontractor {
+    margin-top: 10px;
+
+    .field-holder {
+      .clink-searchbox {
+        &.company-name {
+          z-index: 1;
+        }
+
+        // TODO:
+        // check if it's worth add a new theme for
+        // react V1 inputs
+        &__list {
+          max-height: 100px;
+          position: absolute;
+          width: 100%;
+          margin-top: 0;
+          background-color: $purple-lightest;
+          border: 1px solid $purple-light;
+          border-radius: 5px;
+
+          /* width */
+          ::-webkit-scrollbar {
+            height: 6px;
+            width: 6px;
+          }
+
+          /* Track */
+          &::-webkit-scrollbar-track {
+            background-color: transparent;
+            border-radius: 5px;
+          }
+
+          /* Handle */
+          &::-webkit-scrollbar-thumb {
+            background: $purple-light;
+            border-radius: 5px;
+          }
+
+          /* Handle on hover */
+          &::-webkit-scrollbar-thumb:hover {
+            background: $clink-purple;
+          }
+
+          li {
+            font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+            font-size: 16px;
+            min-height: 40px;
+            cursor: pointer;
+            padding-top: 9px;
+
+            &:nth-of-type(2n) {
+              background-color: $white;
+              border-top: 1px solid $purple-light;
+              border-bottom: 1px solid $purple-light;
+            }
+          }
+        }
+      }
+
+      input {
+        width: 100%;
+        padding-left: 8px;
+      }
+
+      .form-label {
+        font-size: 14px;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+    }
+
+    .submit-button-holder {
+      margin-top: 25px !important;
+
+      button[disabled] {
+        background-color: $platinum;
+        border-color: $platinum;
+        opacity: 1;
+      }
+
+      button {
+        border-radius: 22px;
+      }
+
+      @include media('<tablet') {
+        button {
+          height: 36px;
+          font-size: 14px;
+          padding-left: 0;
+          padding-right: 0;
+          width: 100%;
+
+          &.btn-success {
+            max-width: 164px;
+          }
+
+          &.btn-outline-danger {
+            max-width: 84px;
+          }
+        }
+      }
+    }
+  }
+}

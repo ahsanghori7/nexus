@@ -1,0 +1,63 @@
+{
+  "name": "clink/document_service",
+  "description": "Document Service: Application for managing files",
+  "homepage": "https://c-link.com",
+  "require": {
+    "php": "^8.4",
+    "ext-json": "*",
+    "monolog/monolog": "^3.0",
+    "php-di/php-di": "^7.0",
+    "slim/psr7": "^1.5",
+    "slim/slim": "^4.12",
+    "illuminate/database": "^10.0",
+    "aws/aws-sdk-php": "^3.288.1",
+    "robmorgan/phinx": "^0.13.4"
+  },
+  "require-dev": {
+    "jangregor/phpstan-prophecy": "^1.0.0",
+    "phpstan/extension-installer": "^1.0.4",
+    "phpstan/phpstan": "^1.8.11",
+    "friendsofphp/php-cs-fixer": "^3.22",
+    "phpunit/phpunit": "11.5.53",
+    "odan/phinx-migrations-generator": "^5.7.1"
+  },
+  "config": {
+    "process-timeout": 0,
+    "sort-packages": true,
+    "allow-plugins": {
+      "phpstan/extension-installer": true
+    },
+    "platform": {
+      "php": "8.4"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": [
+        "tests/Unit/",
+        "tests/"
+      ]
+    }
+  },
+  "scripts": {
+    "start": "php -S localhost:8080 -t public",
+    "test": [
+      "@test:unit",
+      "@test:integration"
+    ],
+    "test:unit": "SKIP_DB=1 SKIP_ENV_WARNINGS=1 php -d xdebug.mode=coverage vendor/bin/phpunit --testsuite Unit --coverage-html=build/coverage/html --coverage-clover=build/logs/clover.xml && php tests/CoverageThreshold.php build/logs/clover.xml",
+    "test:integration": "[ -z \"$(find tests/Integration -name '*Test.php')\" ] && echo \"[tests] No integration tests to run\" || php vendor/bin/phpunit --testsuite Integration",
+    "db_status": "php vendor/bin/phinx status",
+    "db_migrate": "php vendor/bin/phinx migrate",
+    "db_rollback": "php vendor/bin/phinx rollback",
+    "prettify": "vendor/bin/php-cs-fixer fix",
+    "prettify-check": "vendor/bin/php-cs-fixer fix --dry-run",
+    "static-analysis": "vendor/bin/phpstan analyse -c phpstan.neon",
+    "code-quality-checks": ["@prettify-check", "@static-analysis"]
+  }
+}

@@ -1,0 +1,242 @@
+name: REACT - Unified Deploy
+
+run-name: REACT - Unified Deploy - ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.s3_path != '' && github.event.inputs.s3_path || github.event_name == 'workflow_dispatch' && github.event.inputs.environment || github.event_name == 'push' && github.ref_name || 'Unknown Environment' }}
+
+on:
+  push:
+    branches:
+      - develop
+      - uat
+      - rbt
+      - preprod
+    paths:
+      - 'react-service/**'
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Choose the environment to deploy to'
+        required: true
+        type: choice
+        options:
+          - local-v2
+          - uat
+          - rbt
+          - preprod
+          - stg
+          - staging
+          - prod
+          - prod-anz
+          - dev1
+          - dev2
+          - dev3
+          - dev4
+      s3_path:
+        description: 'S3 path for deployment (e.g., staging-v2, uat-v2, production-v2)'
+        required: false
+        type: string
+      config_name:
+        description: 'Configuration name for build (e.g., STAGING_CONFIG, UAT_CONFIG, PROD_CONFIG, CUSTOM_REACT_CONFIG)'
+        required: false
+        type: string
+        default: 'CUSTOM_REACT_CONFIG'
+      build_command:
+        description: 'Build command to execute (e.g., buildDev, build)'
+        required: false
+        type: string
+        default: 'buildDev'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 24 ]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 10
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: pnpm
+          cache-dependency-path: react-service/pnpm-lock.yaml
+
+      - name: Use .npmrc
+        uses: bduff9/use-npmrc@v2.0.0
+        with:
+          dot-npmrc: ${{ secrets.MY_NPMRC }}
+          working-directory: ./react-service
+
+      - name: Move to merge targeted branch
+        if: github.event_name == 'pull_request'
+        run: git fetch && git checkout ${{ github.event.pull_request.base.ref }}
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+        working-directory: ./react-service
+
+      - name: Set environment variables
+        id: set-env
+        run: |
+          S3_PATH=""
+          BUILD_COMMAND=""
+          CONFIG_NAME=""
+
+          if [ "${{ github.event_name }}" == "push" ]; then
+            if [ "${{ github.ref_name }}" == "develop" ]; then
+              S3_PATH="stg-v2"
+              BUILD_COMMAND="buildDev"
+              CONFIG_NAME="STG_CONFIG"
+            elif [ "${{ github.ref_name }}" == "uat" ]; then
+              S3_PATH="uat-v2"
+              BUILD_COMMAND="build"
+              CONFIG_NAME="UAT_CONFIG"
+            elif [ "${{ github.ref_name }}" == "rbt" ]; then
+              S3_PATH="rbt-v2"
+              BUILD_COMMAND="build"
+              CONFIG_NAME="RBT_CONFIG"
+            elif [ "${{ github.ref_name }}" == "preprod" ]; then
+              S3_PATH="preprod-v2"
+              BUILD_COMMAND="build"
+              CONFIG_NAME="PREPROD_CONFIG"
+            fi
+          elif [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            # Use provided inputs if available, otherwise fall back to environment-based defaults
+            S3_PATH="${{ github.event.inputs.s3_path }}"
+            BUILD_COMMAND="${{ github.event.inputs.build_command }}"
+            CONFIG_NAME="${{ github.event.inputs.config_name }}"
+
+            # If inputs are empty, use environment-based defaults
+            if [ -z "$S3_PATH" ]; then
+              if [[ "${{ github.event.inputs.environment }}" == "local-v2" || "${{ github.event.inputs.environment }}" == "dev1" || "${{ github.event.inputs.environment }}" == "dev2" || "${{ github.event.inputs.environment }}" == "dev3" || "${{ github.event.inputs.environment }}" == "dev4" ]]; then
+                S3_PATH="${{ github.event.inputs.environment }}"
+                BUILD_COMMAND="buildDev"
+                CONFIG_NAME="MY_CONFIG"
+              elif [ "${{ github.event.inputs.environment }}" == "uat" ]; then
+                S3_PATH="uat-v2"
+                BUILD_COMMAND="build"
+                CONFIG_NAME="UAT_CONFIG"
+              elif [ "${{ github.event.inputs.environment }}" == "rbt" ]; then
+                S3_PATH="rbt-v2"
+                BUILD_COMMAND="build"
+                CONFIG_NAME="RBT_CONFIG"
+              elif [ "${{ github.event.inputs.environment }}" == "preprod" ]; then
+                S3_PATH="preprod-v2"
+                BUILD_COMMAND="build"
+                CONFIG_NAME="PREPROD_CONFIG"
+              elif [ "${{ github.event.inputs.environment }}" == "stg" ]; then
+                S3_PATH="stg-v2"
+                BUILD_COMMAND="buildDev"
+                CONFIG_NAME="STG_CONFIG"
+              elif [ "${{ github.event.inputs.environment }}" == "staging" ]; then
+                S3_PATH="staging-v2"
+                BUILD_COMMAND="buildDev"
+                CONFIG_NAME="STAGING_CONFIG"
+              elif [ "${{ github.event.inputs.environment }}" == "prod" ]; then
+                S3_PATH="production-v2"
+                BUILD_COMMAND="build"
+                CONFIG_NAME="PROD_CONFIG"
+              elif [ "${{ github.event.inputs.environment }}" == "prod-anz" ]; then
+                S3_PATH="production-anz"
+                BUILD_COMMAND="build --env pathS3=/production-anz/"
+                CONFIG_NAME="PROD_ANZ_CONFIG"
+              fi
+            fi
+          fi
+
+          echo "s3_path=$S3_PATH" >> "$GITHUB_OUTPUT"
+          echo "build_command=$BUILD_COMMAND" >> "$GITHUB_OUTPUT"
+          echo "config_name=$CONFIG_NAME" >> "$GITHUB_OUTPUT"
+
+      - name: create-json
+        id: create-json
+        uses: jsdaniell/create-json@v1.2.3
+        with:
+          name: "config.json"
+          json: ${{ secrets[steps.set-env.outputs.config_name] }}
+          dir: "react-service/"
+
+      - name: Build assets
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: pnpm run ${{ steps.set-env.outputs.build_command }}
+        working-directory: ./react-service
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          aws-access-key-id: ${{ secrets.REACT_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.REACT_AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Deploy app build to S3 bucket
+        run: aws s3 sync react-service/dist s3://${{ secrets.REACT_AWS_BUCKET_NAME }}/${{ steps.set-env.outputs.s3_path }} --delete
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DIST_ID_CLINK_REACT }} \
+            --paths "/${{ steps.set-env.outputs.s3_path }}/*" \
+            --region us-east-1
+
+  deploy-local:
+    if: github.event_name == 'push' && github.ref_name == 'develop'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 24 ]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 10
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: pnpm
+          cache-dependency-path: react-service/pnpm-lock.yaml
+
+      - name: Use .npmrc
+        uses: bduff9/use-npmrc@v2.0.0
+        with:
+          dot-npmrc: ${{ secrets.MY_NPMRC }}
+          working-directory: ./react-service
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+        working-directory: ./react-service
+
+      - name: create-json
+        id: create-json
+        uses: jsdaniell/create-json@v1.2.3
+        with:
+          name: "config.json"
+          json: ${{ secrets.MY_CONFIG }}
+          dir: "react-service/"
+
+      - name: Build assets
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: pnpm run buildDev
+        working-directory: ./react-service
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          aws-access-key-id: ${{ secrets.REACT_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.REACT_AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Deploy app build to S3 bucket
+        run: aws s3 sync react-service/dist s3://${{ secrets.REACT_AWS_BUCKET_NAME }}/local-v2 --delete

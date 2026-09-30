@@ -1,0 +1,57 @@
+{
+  "name": "view",
+  "type": "row",
+  "props": {
+    "className": "edit-document-table-row soamc-row"
+  },
+  "children": [
+    {
+      "name": "text",
+      "type": "column",
+      "props": {
+        "className": "edit-document-table-column width-5 centered-text"
+      },
+      "children": [" "]
+    },
+    {
+      "name": "text",
+      "type": "column",
+      "props": {
+        "className": "edit-document-table-column width-40"
+      },
+      "children": [" "]
+    },
+    {
+      "name": "text",
+      "type": "column",
+      "props": {
+        "className": "edit-document-table-column width-10 centered-text"
+      },
+      "children": [" "]
+    },
+    {
+      "name": "text",
+      "type": "column",
+      "props": {
+        "className": "edit-document-table-column width-10 centered-text"
+      },
+      "children": [" "]
+    },
+    {
+      "name": "text",
+      "type": "column",
+      "props": {
+        "className": "edit-document-table-column width-30 centered-text"
+      },
+      "children": [" "]
+    },
+    {
+      "name": "text",
+      "type": "column",
+      "props": {
+        "className": "edit-document-table-column width-5 centered-text"
+      },
+      "children": [" "]
+    }
+  ]
+}

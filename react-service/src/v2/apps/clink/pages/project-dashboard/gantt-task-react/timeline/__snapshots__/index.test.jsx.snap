@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timeline Component takes a snapshot of the component 1`] = `
+<paper>
+  <div
+    class="MuiGrid-root MuiGrid-container"
+    data-testid="mui-grid"
+    sx="[object Object]"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+      data-testid="mui-grid"
+      sx="[object Object]"
+      xs="6"
+    >
+      <div
+        data-testid="mui-typography"
+        font-size="22"
+        m="1"
+        p="1"
+        variant="title"
+      >
+        timeline
+      </div>
+    </div>
+    <div
+      aligncontent="center"
+      class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-6"
+      data-testid="mui-grid"
+      id="ViewSwitcher"
+      justifycontent="flex-end"
+      pr="1"
+      sx="[object Object]"
+      xs="6"
+    >
+      <div
+        data-testid="mock-view-switcher"
+      >
+        <button>
+          Day
+        </button>
+        <button>
+          Week
+        </button>
+        <button>
+          Month
+        </button>
+        <span
+          data-testid="view-switcher-value"
+        >
+          week
+        </span>
+      </div>
+    </div>
+  </div>
+</paper>
+`;

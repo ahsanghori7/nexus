@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledFiltersContainer creates a snapshot 1`] = `
+<div
+  class="Filtersstyled__StyledFiltersContainer-sc-1ixdl9-0 jYKjlp"
+>
+  <div
+    class="label-filters"
+  >
+    Filters:
+  </div>
+  <div>
+    Filter 1
+  </div>
+  <div>
+    Filter 2
+  </div>
+</div>
+`;

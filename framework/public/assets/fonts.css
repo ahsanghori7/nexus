@@ -1,0 +1,22 @@
+@font-face {
+  font-family: AvantGardeGothic;
+  src: url("./fonts/avant-garde/ITCAvantGardeStdMd.otf") format("opentype");
+}
+
+@font-face {
+  font-family: AvantGardeGothic;
+  font-weight: 100;
+  src: url("./fonts/avant-garde/ITCAvantGardeStdBk.otf") format("opentype");
+}
+
+@font-face {
+  font-family: AvantGardeGothic;
+  font-weight: bold;
+  src: url("./fonts/avant-garde/ITCAvantGardeStdBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: AvantGardeGothicDemi;
+  font-weight: 700;
+  src: url("./fonts/avant-garde/ITCAvantGardeStdDemi.otf") format("opentype");
+}

@@ -1,0 +1,75 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": { "company_name": "", "subcontract": "" },
+    "props": { "className": "edit-document-document" },
+    "children": [
+      {
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "text",
+                "props": { "className": "justified" },
+                "children": [
+                  "Ref:{ProjectReference}/ITT/{SubContractorName}/01",
+                  "{Date}",
+                  "{br}",
+                  "{b:EMAIL {SubContractorEmail}}",
+                  "{br}",
+                  "{SubContractorName}",
+                  "{SubContractorAddress}",
+                  "{br}",
+                  "For the attention of {SubContactName}",
+                  "{br}",
+                  "{br}",
+                  "Dear Sirs,",
+                  "{br}",
+                  "{b:Re: Invitation to Tender: {ProjectName}}",
+                  "{b:Package: {PackageName}}",
+                  "{br}",
+                  "In regards to the above mentioned project, we would like you to \n  tender for the {PackageName} works in accordance with the tender \n  documentation and information listed below.",
+                  "{br}",
+                  "The {PackageName} works include:",
+                  "{br}",
+                  "{SubContractorWorks}",
+                  "{br}",
+                  "The above list is not explicit and the Sub-Contractor is to satisfy \n  themselves with the tender documentation to ensure all items and scope have \n  been allowed for within their tender submission.",
+                  "{br}",
+                  "Prior to commencement on site the following documentation will be required:",
+                  "{br}",
+                  "1. Job specific method statements and risk assessments.",
+                  "2. Relevant training certificates, CSCS, CITB etc, Health and safety policy",
+                  "{br}",
+                  "We look forward to receiving your quotation, however should you have \n  any queries, please do not hesitate to contact the undersigned.",
+                  "{br}",
+                  "Yours sincerely,",
+                  "{br}",
+                  "{br}",
+                  "{br}",
+                  "{b:For {MainContractorName}}",
+                  "{b:{UserName}}",
+                  "{b:{UserRole}}",
+                  "{br}",
+                  "{b:E: {UserEmail}}",
+                  "{b:T: {UserPhoneNumber}}"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,90 @@
+name: REACT CI + Unit Tests
+
+on:
+  pull_request:
+    paths:
+      - 'react-service/**'
+      - '.github/workflows/react_ci.yml'
+
+jobs:
+  lint:
+    name: React Lint
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8
+
+      - name: Use .npmrc
+        uses: bduff9/use-npmrc@v1.1
+        with:
+          dot-npmrc: ${{ secrets.MY_NPMRC }}
+          working-directory: ./react-service
+
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+        working-directory: ./react-service
+
+      - name: Run Eslint
+        run: pnpm run lint
+        working-directory: ./react-service
+
+  test-coverage:
+    name: React Test Coverage
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8
+
+      - name: Use .npmrc
+        uses: bduff9/use-npmrc@v1.1
+        with:
+          dot-npmrc: ${{ secrets.MY_NPMRC }}
+          working-directory: ./react-service
+
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+        working-directory: ./react-service
+
+      - name: create-json
+        id: create-json
+        uses: jsdaniell/create-json@1.1.2
+        with:
+          name: "config.json"
+          json: ${{ secrets.MY_CONFIG }}
+          dir: "react-service/"
+
+      - name: Run tests with coverage
+        run: pnpm coverage
+        working-directory: ./react-service

@@ -1,0 +1,27 @@
+@import '~bootstrap';
+
+.edit-project-header {
+  display: block;
+
+  .header-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .breadcrumbs-panel {
+    @extend .col-md-6;
+    @extend .col-lg-7;
+    @extend .col-xl-8;
+
+    .sector-header {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+
+  @import 'navigation';
+}

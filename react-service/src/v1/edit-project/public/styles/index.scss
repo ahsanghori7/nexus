@@ -1,0 +1,35 @@
+@import '../../../global/public/styles/theme/clink-app/v1';
+// Abstracts
+@import 'abstracts/colors';
+@import '../../../global/public/styles/abstracts/mixins';
+@import 'abstracts/dimensions';
+
+//Base
+
+// Layout
+
+// Pages
+
+// Themes
+@import 'theme/general-theme';
+// Components
+@import '../../../global/public/styles/components/plan-my-project';
+@import 'components/panel';
+
+.clink-form {
+  .submit-button-holder {
+    float: none !important;
+    justify-content: flex-start !important;
+  }
+
+  .save-button-container {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .save-button {
+    margin-left: 0 !important;
+    height: 3.5rem;
+    border-radius: 3rem;
+  }
+}

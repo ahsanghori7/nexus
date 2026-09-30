@@ -1,0 +1,4 @@
+Allow from all
+RewriteEngine On
+RewriteRule ^css.css$ shortcodes-css.php
+RewriteRule ^js.js$ shortcodes-js.php

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExampleDocuments should take a snapshot 1`] = `
+<div>
+  <select
+    data-testid="select-label"
+  >
+    <option
+      disabled=""
+      value="Certificate 1"
+    >
+      Certificate 1
+    </option>
+    <option
+      disabled=""
+      value="Certificate 2"
+    >
+      Certificate 2
+    </option>
+  </select>
+  <input
+    data-testid="file-document"
+    type="file"
+  />
+</div>
+`;

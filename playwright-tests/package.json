@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@percy/cli": "1.30.6",
+    "@percy/playwright": "1.0.6"
+  },
+  "pnpm": {
+    "overrides": {
+      "brace-expansion": "1.1.12",
+      "js-yaml@>=4.0.0 <4.1.1": ">=4.1.1"
+    }
+  }
+}

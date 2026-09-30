@@ -1,0 +1,422 @@
+.table {
+  border-top: 1px solid #e2e2ee;
+  border-left: 1px solid #e2e2ee;
+  border-right: 1px solid #e2e2ee;
+  border-collapse: collapse;
+  overflow: auto;
+}
+
+.thead {
+  background-color: #f3f3f9;
+}
+
+.table-documents,
+.legal-table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.table .col-1 {
+  border-left: 1px solid #e2e2ee;
+}
+
+.table td,
+.table th {
+  padding: 3px 5px;
+}
+
+.table td {
+  border-top: 1px solid #e2e2ee;
+  border-bottom: 1px solid #e2e2ee;
+  background-color: white;
+}
+
+.table.border-left td {
+  border-left: 1px solid #e2e2ee !important;
+}
+
+.table.border-right td {
+  border-right: 1px solid #e2e2ee !important;
+}
+
+.table .no-border-bottom td,
+.table .no-border-bottom {
+  border: none !important;
+}
+
+.table .no-border-top td,
+.table .no-border-top {
+  border: none !important;
+}
+
+.table tr.mbx td {
+  height: 98px !important;
+}
+
+.table tr.preliminaries th {
+  white-space: nowrap;
+}
+
+.table tr.preliminaries td {
+  border: 1px solid #e2e2ee;
+}
+
+.table tr.no-inner-border td {
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+.table td.align-top {
+  vertical-align: top;
+}
+
+.table-subcontractor-agreement {
+  border: 0px;
+}
+
+.table-subcontractor-agreement td {
+  padding: 3px 0px;
+}
+
+.legal-table .col-0 {
+  width: 15%;
+}
+
+.legal-table tr {
+  padding-top: 5px;
+}
+
+.legal-table-section .col-0 {
+  text-align: right;
+  vertical-align: top;
+}
+
+.legal-table-header {
+  text-align: left;
+}
+
+.legal-table-section td {
+  padding: 10px 0px;
+}
+
+.legal-table-section .col-1 {
+  width: 10%;
+}
+
+.legal-table-header .second-col,
+.legal-table-section .second-col {
+  width: 85%;
+}
+
+.legal-table-header .first-col,
+.legal-table-section .first-col {
+  text-align: center;
+}
+
+.legal-table-section .col-2 {
+  text-align: justify;
+}
+
+.table .td-2 {
+  width: 50%;
+}
+
+.table .three-cols {
+  width: 33%;
+}
+
+.table .width-20 {
+  border-left: 1px solid #e2e2ee !important;
+}
+
+.table .four-cols {
+  width: 25%;
+}
+
+.right-justified-col-2 .col-1 {
+  text-align: justify;
+}
+
+.inner-indented-content {
+  padding-left: 15px;
+}
+
+.nec-table,
+.nec-table-3-col,
+.nec-table-big,
+.nec-warning {
+  width: 100%;
+}
+
+.nec-table td {
+  height: 40px;
+}
+
+.nec-table td.col-0 {
+  width: 30%;
+}
+
+.nec-table td.col-1 {
+  width: 70%;
+  text-align: justify;
+}
+
+.nec-warning td.col-0 {
+  width: 100%;
+}
+
+.nec-table-3-col td.col-0 {
+  width: 30%;
+  height: 40px;
+}
+
+.nec-table-3-col td.col-1 {
+  width: 40%;
+  height: 40px;
+}
+
+.nec-table-3-col td.col-2 {
+  border-left: 1px solid #e2e2ee;
+  width: 30%;
+  height: 40px;
+}
+
+.nec-table-big td table.table-condition td {
+  width: 50%;
+}
+
+.nec-table-big {
+  border: 0;
+}
+
+.nec-table-big th {
+  background-color: #a4a39c !important;
+  font-size: 30px;
+  border: 1px solid #212529;
+}
+
+table.nec-table-big tr {
+  border: 1px solid #212529 !important;
+}
+
+table.nec-table-big td {
+  border: 1px solid #212529 !important;
+}
+
+.nec-table-big td table.table-further th {
+  height: 30px;
+}
+
+.nec-table-big td table.table-further td {
+  height: 50px;
+}
+
+.nec-table-big td.col-0 {
+  padding: 0px 10px;
+}
+
+.nec-table-big td table {
+  margin-bottom: 25px;
+}
+
+.nec-table-big td table {
+  margin-bottom: 25px;
+}
+
+.nec-table-big td table.first-table {
+  margin-top: 25px;
+}
+
+.nec-table-big td table.table-condition {
+  width: 100%;
+}
+
+.nec-table-big td table.table-condition td.col-0 {
+  vertical-align: top;
+}
+
+.nec-table-big td table th,
+.nec-table td table th {
+  font-size: 16px;
+}
+
+.nec-table-big td.col-0 table td.col-0,
+.nec-table td.col-0 table td.col-0 {
+  font-size: 14px;
+}
+
+.nec-table-big td.col-0 table {
+  table-layout: fixed;
+}
+
+.nec-table-big td.col-0 table td.empty-square {
+  height: 120px;
+}
+
+.nec-table-big td.col-0 table td.col-0 {
+  width: 50%;
+}
+
+.nec-table-big td.col-0 table td.col-1 {
+  width: 50%;
+}
+
+.nec-table-big .further-info th {
+  font-size: 30px;
+}
+
+.quinn-one.table .no-border-row td,
+.quinn-one.table .no-border-row td:nth-child(1),
+.quinn-one.table .no-border-row td:nth-child(2),
+.quinn-one.table .no-border-row td:nth-child(3),
+.quinn-one.table .no-border-row td:nth-child(4),
+.quinn-one.table .no-border-row td:nth-child(5),
+.quinn-one.table .no-border-row {
+  border: none !important;
+}
+
+.quinn-one.table .border-bottom,
+.quinn-one.table .border-bottom td {
+  border: none !important;
+  border-bottom: 1px solid #e2e2ee !important;
+}
+
+.justified-table .col-0,
+.justified-table .col-1,
+.justified-table .col-2 {
+  text-align: justify;
+}
+
+.numbered-table td.col-0 {
+  width: 10%;
+}
+
+.numbered-table td.col-1 {
+  width: 90%;
+}
+
+.tes-mech-logo {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.table-tes-mech {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table-tes-mech tr td {
+  padding: 0px;
+}
+
+.table-tes-mech tr td table {
+  margin-bottom: 5px;
+}
+
+.table-date-section {
+    margin-top: 5px !important;
+}
+
+.tes-mech-invoice-note {
+  font-size: 13px;
+}
+
+.table-tes-mech .col-1.td-3 {
+  text-align: center;
+}
+
+.full-border {
+  border: 1px solid #e2e2ee !important;
+}
+
+.width-21 {
+  width: 21% !important;
+}
+
+.width-64 {
+  width: 64% !important;
+}
+
+.width-15 {
+  width: 15% !important;
+}
+
+table.table-tes-mech tr td.edit-document-table-column.width-80 {
+  width: 80% !important;
+  min-width: 80% !important;
+  max-width: 80% !important;
+}
+
+table.table-tes-mech tr td.edit-document-table-column.width-20 {
+  width: 20% !important;
+  min-width: 20% !important;
+  max-width: 20% !important;
+}
+
+.table.schedule-attendance-mc td:nth-child(1),
+.table.schedule-attendance th:nth-child(1) {
+  width: 5%;
+  border-left: 1px solid #e2e2ee;
+}
+
+.table.schedule-attendance-mc td:nth-child(2),
+.table.schedule-attendance th:nth-child(2) {
+  width: 40%;
+  border-left: 1px solid #e2e2ee;
+}
+
+.table.schedule-attendance-mc td:nth-child(3),
+.table.schedule-attendance th:nth-child(3),
+.table.schedule-attendance-mc td:nth-child(4),
+.table.schedule-attendance th:nth-child(4) {
+  width: 15%;
+  border-left: 1px solid #e2e2ee;
+}
+
+.table.schedule-attendance-mc td:nth-child(5),
+.table.schedule-attendance th:nth-child(5) {
+  width: 25%;
+  border-left: 1px solid #e2e2ee;
+}
+
+/*
+ * Schedule of Changes column widths. The document title is what a reader is
+ * looking for, so it takes the room the revisions and the numbered document
+ * do not need. The two revision headings are broken over two lines in the
+ * template to keep those columns this narrow.
+ */
+.table.schedule-of-changes th:nth-child(1),
+.table.schedule-of-changes td:nth-child(1),
+.table.schedule-of-changes th:nth-child(2),
+.table.schedule-of-changes td:nth-child(2) {
+  width: 8%;
+}
+
+.table.schedule-of-changes th:nth-child(3),
+.table.schedule-of-changes td:nth-child(3) {
+  width: 20%;
+}
+
+.table.schedule-of-changes th:nth-child(4),
+.table.schedule-of-changes td:nth-child(4) {
+  width: 30%;
+}
+
+.table.schedule-of-changes th:nth-child(5),
+.table.schedule-of-changes td:nth-child(5) {
+  width: 14%;
+}
+
+.table.schedule-of-changes th:nth-child(6),
+.table.schedule-of-changes td:nth-child(6) {
+  width: 8%;
+}
+
+.table.schedule-of-changes th:nth-child(7),
+.table.schedule-of-changes td:nth-child(7) {
+  width: 12%;
+}

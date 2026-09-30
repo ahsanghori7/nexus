@@ -1,0 +1,4 @@
+- Keep pure unit tests in `tests/Unit/**` and avoid any real infrastructure: no Phinx, no MySQL adapters, and no calls to `SetupDatabase`.
+- Place anything that needs real persistence or migrations under `tests/Integration/**` instead.
+- Swap repositories/adapters for PHPUnit mocks or light fakes; do not change production code just to satisfy coverage.
+- Add fixtures under `tests/Fixtures/` if a test needs structured sample data.

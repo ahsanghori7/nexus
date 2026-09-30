@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HealthSafety should take a snapshot 1`] = `
+<div>
+  <select
+    data-testid="select-label"
+  >
+    <option
+      disabled=""
+      value="Safety Certificate 1"
+    >
+      Safety Certificate 1
+    </option>
+    <option
+      disabled=""
+      value="Safety Certificate 2"
+    >
+      Safety Certificate 2
+    </option>
+  </select>
+  <input
+    data-testid="file-document"
+    type="file"
+  />
+</div>
+`;

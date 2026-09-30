@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FooterContent snapshot test 1`] = `
+<div
+  class="styled__StyledContainer-sc-60mbni-0 hTnxHg"
+>
+  <div
+    class="styled__StyledContainerItem-sc-60mbni-1 kiGonh"
+  >
+    Prosper Admin
+  </div>
+  <div
+    class="styled__StyledContainerItem-sc-60mbni-1 lmvwGt"
+  >
+    Revision 1.6
+  </div>
+</div>
+`;
+
+exports[`FooterContent snapshot test with custom revision 1`] = `
+<div
+  class="styled__StyledContainer-sc-60mbni-0 hTnxHg"
+>
+  <div
+    class="styled__StyledContainerItem-sc-60mbni-1 kiGonh"
+  >
+    Prosper Admin
+  </div>
+  <div
+    class="styled__StyledContainerItem-sc-60mbni-1 lmvwGt"
+  >
+    Revision 4.5
+  </div>
+</div>
+`;

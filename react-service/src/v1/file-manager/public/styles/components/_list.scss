@@ -1,0 +1,233 @@
+.list-file-manager {
+  width: 100%;
+  .header-list-group-file-manager {
+    padding: 0px;
+
+    .column-headers {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      div {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .row,
+    .category-rows,
+    .files-rows {
+      width: 100%;
+      min-height: unset;
+      padding: 0.8rem 1rem;
+
+      strong {
+        font-size: 1rem;
+        color: $dark-lighter-grey;
+      }
+    }
+    .category-rows,
+    .files-rows {
+      &__header,
+      &__body {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .cell {
+        flex: 1;
+        &--first {
+          flex: 2;
+          align-items: center;
+          display: flex;
+          margin-right: 5px;
+          svg {
+            overflow: inherit;
+            margin-right: 15px;
+          }
+        }
+        &--second {
+          @media (max-width: 480px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    h5 {
+      font-weight: bold;
+      color: $black;
+      font-size: 1rem;
+      margin: 0px;
+
+      svg {
+        margin-right: 10px;
+      }
+
+      .category-name {
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: middle;
+        color: $black;
+      }
+    }
+
+    .dropdown {
+      .dropdown-toggle {
+        color: $dark-light-grey;
+        background-color: $white;
+        border-color: $purple-lighter;
+        font-weight: bold;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $dark-light-grey !important;
+          background-color: $white !important;
+          border-color: $dark-light-grey !important;
+        }
+
+        &::after {
+          display: inline-block;
+          margin-left: 0.75rem;
+          vertical-align: 0.1em;
+          border-top: 0.5em solid;
+          border-right: 0.5em solid transparent;
+          border-bottom: 0;
+          border-left: 0.5em solid transparent;
+        }
+      }
+    }
+
+    .show > .btn-primary.dropdown-toggle {
+      color: $dark-light-grey;
+      background-color: $white;
+      border-color: $dark-light-grey;
+    }
+  }
+
+  .list-group-file-manager {
+    border: none;
+
+    .list-group-item {
+      padding: 0px;
+      min-height: unset;
+      align-items: center;
+      border-right-width: 0;
+      border-left-width: 0;
+      border-top-width: 0;
+      cursor: pointer;
+
+      &:nth-child(odd) {
+        background-color: $white;
+      }
+
+      &:nth-child(even) {
+        background-color: $purple-lightest;
+      }
+
+      &:first-child {
+        border-top-width: 1px;
+      }
+
+      &:first-child,
+      &:last-child {
+        border-radius: 0px;
+      }
+
+      .row,
+      .category-rows,
+      .files-rows {
+        width: 100%;
+        min-height: unset;
+        padding: 1rem;
+
+        .item-name {
+          color: $black;
+          text-align: left;
+        }
+      }
+      .category-rows,
+      .files-rows {
+        &__header,
+        &__body {
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+        }
+        .cell {
+          flex: 1;
+          &--first {
+            flex: 2;
+            align-items: center;
+            display: flex;
+            margin-right: 5px;
+            svg {
+              overflow: inherit;
+              margin-right: 15px;
+            }
+          }
+          &--second {
+            @media (max-width: 480px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .actions-column-list {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    .category-item-action,
+    .file-item-action {
+      background-color: transparent;
+      border: 1px solid $purple-light;
+      height: 35px;
+      width: 35px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $dark-light-grey !important;
+        background-color: $white !important;
+        border-color: $dark-light-grey !important;
+      }
+
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .first-column-list {
+    align-items: center;
+    display: flex;
+    svg {
+      overflow: inherit;
+      margin-right: 15px;
+    }
+  }
+
+  button.btn-link {
+    display: inline-block;
+    padding: 0px;
+    min-width: unset;
+    font-size: 1rem;
+    font-weight: bold;
+    color: $dark-lighter-grey;
+  }
+
+  .input-container {
+    margin-right: 40px;
+
+    input {
+      height: 25px;
+      width: 25px;
+    }
+  }
+}

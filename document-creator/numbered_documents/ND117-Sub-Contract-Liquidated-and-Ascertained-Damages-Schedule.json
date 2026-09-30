@@ -1,0 +1,1622 @@
+[
+  {
+    "footer": {
+      "company_name": "",
+      "subcontract": ""
+    },
+    "header": {
+      "address": [],
+      "company_name": "",
+      "company_reg": "",
+      "logo": "",
+      "web_address": ""
+    },
+    "name": "document",
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Trade:"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Sub-Contractor:"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Project:"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{br}This Schedule relates to the level of Sub-Contract Liquidated and Ascertained Damages that apply under the Sub-Contract."
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": ["Value per Week or part thereof"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": ["Total Damages Capped at"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Where a sectional completions do NOT apply.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{br}",
+                  "{b:Where a sectional completions do NOT apply, and stepped damages apply.}"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x onwards]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{br}",
+                  "{b:Where a sectional completions do apply, and stepped damages apply.}"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Section\u00A0 \u00A0 \u00A0[Insert Section Reference]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Section\u00A0 \u00A0 \u00A0[Insert Section Reference]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Section\u00A0 \u00A0 \u00A0[Insert Section Reference]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Section\u00A0 \u00A0 \u00A0[Insert Section Reference]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Section\u00A0 \u00A0 \u00A0[Insert Section Reference]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{br}",
+                  "{b:Where a sectional completions do apply, and stepped damages apply.}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Section"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["[Insert Section Reference]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [" "]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [" "]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Section"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["[Insert Section Reference]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Section"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["[Insert Section Reference]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Section"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["[Insert Section Reference]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Week [ Insert x to y]"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Total/Maximum Damages"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["____________________"]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

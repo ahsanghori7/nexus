@@ -1,0 +1,60 @@
+.panel-form {
+  @extend .row;
+
+  .panel-left {
+    @extend .col-md-6;
+    @extend .col-lg-7;
+    @extend .col-xl-8;
+  }
+
+  .panel-right {
+    @extend .col-md-6;
+    @extend .col-lg-5;
+    @extend .col-xl-4;
+  }
+
+  .panel {
+    margin-bottom: 10px;
+
+    .sector {
+      background-color: $white;
+      border: 1px solid $purple-light !important;
+      border-radius: 8px !important;
+
+      .sector-header {
+        border-bottom: 1px solid $purple-light;
+
+        .sector-header__title {
+          font-size: 18px;
+          font-weight: bold;
+
+          b {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .sector-content {
+        // Remove MUI Stack wrapper styling
+        .MuiStack-root {
+          all: unset;
+          display: contents;
+        }
+      }
+    }
+  }
+
+  .sector-header {
+    // max-height: 52px;
+    .sc-search-box {
+      svg {
+        margin-top: -4px;
+      }
+    }
+
+    svg {
+      transform: scale(0.8);
+      margin-top: 0;
+    }
+  }
+}

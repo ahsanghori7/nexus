@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "project-service-collection",
+		"name": "Project Service",
+		"description": "All endpoints from project_service/app/routes.php",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health",
+			"item": [
+				{ "name": "GET /", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/", "host": ["{{project_service_url}}"], "path": [""] } } }
+			]
+		},
+		{
+			"name": "Project",
+			"item": [
+				{ "name": "GET /v1/project", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project", "host": ["{{project_service_url}}"], "path": ["v1","project"] } } },
+				{ "name": "GET /v1/project/{id}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}"] } } },
+				{ "name": "POST /v1/project", "request": { "method": "POST", "header": [{"key":"Content-Type","value":"application/json"}], "url": { "raw": "{{project_service_url}}/v1/project", "host": ["{{project_service_url}}"], "path": ["v1","project"] } } },
+				{ "name": "PATCH /v1/project/{id}", "request": { "method": "PATCH", "header": [{"key":"Content-Type","value":"application/json"}], "url": { "raw": "{{project_service_url}}/v1/project/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}"] } } },
+				{ "name": "DELETE /v1/project/{id}", "request": { "method": "DELETE", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}"] } } },
+				{ "name": "DELETE /v1/project/group/{id}", "request": { "method": "DELETE", "url": { "raw": "{{project_service_url}}/v1/project/group/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","project","group","{{id}}"] } } },
+				{ "name": "GET /v1/project/{group_id}/associates", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/{{group_id}}/associates", "host": ["{{project_service_url}}"], "path": ["v1","project","{{group_id}}","associates"] } } },
+				{ "name": "GET /v1/project/associates", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/associates", "host": ["{{project_service_url}}"], "path": ["v1","project","associates"] } } },
+				{ "name": "GET /v1/project/slug/{name}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/slug/{{name}}", "host": ["{{project_service_url}}"], "path": ["v1","project","slug","{{name}}"] } } },
+				{ "name": "GET /v1/project/{id}/tender", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tender", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tender"] } } },
+				{ "name": "POST /v1/project/{id}/tender", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tender", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tender"] } } },
+				{ "name": "PATCH /v1/project/{id}/tender/{tid}", "request": { "method": "PATCH", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tender/{{tid}}", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tender","{{tid}}"] } } },
+				{ "name": "DELETE /v1/project/{id}/tender/{tid}", "request": { "method": "DELETE", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tender/{{tid}}", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tender","{{tid}}"] } } },
+				{ "name": "GET /v1/project/{id}/tender/{tid}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tender/{{tid}}", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tender","{{tid}}"] } } },
+				{ "name": "PATCH /v1/project/{id}/tenders/publish/toggle", "request": { "method": "PATCH", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tenders/publish/toggle", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tenders","publish","toggle"] } } },
+				{ "name": "POST /v1/project/{id}/tender/{tid}/history", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tender/{{tid}}/history", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tender","{{tid}}","history"] } } },
+				{ "name": "GET /v1/project/{id}/tender/{tid}/history", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tender/{{tid}}/history", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tender","{{tid}}","history"] } } },
+				{ "name": "PATCH /v1/project/{id}/tender/{tid}/history/{hid}", "request": { "method": "PATCH", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tender/{{tid}}/history/{{hid}}", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tender","{{tid}}","history","{{hid}}"] } } },
+				{ "name": "GET /v1/project/{id}/tender/history", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tender/history", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tender","history"] } } },
+				{ "name": "PATCH /v1/project/tender/{tid}/history/{sid}/archive", "request": { "method": "PATCH", "url": { "raw": "{{project_service_url}}/v1/project/tender/{{tid}}/history/{{sid}}/archive", "host": ["{{project_service_url}}"], "path": ["v1","project","tender","{{tid}}","history","{{sid}}","archive"] } } },
+				{ "name": "GET /v1/project/{id}/tender/transaction", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tender/transaction", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tender","transaction"] } } },
+				{ "name": "GET /v1/project/{id}/tender/transaction/files", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tender/transaction/files", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tender","transaction","files"] } } },
+				{ "name": "GET /v1/project/{id}/tender/transaction/summary", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tender/transaction/summary", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tender","transaction","summary"] } } },
+				{ "name": "DELETE /v1/project/{id}/tender/transaction/{tid}", "request": { "method": "DELETE", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tender/transaction/{{tid}}", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tender","transaction","{{tid}}"] } } },
+				{ "name": "PATCH /v1/project/{id}/tender/transaction/{tid}", "request": { "method": "PATCH", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tender/transaction/{{tid}}", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tender","transaction","{{tid}}"] } } },
+				{ "name": "GET /v1/project/{id}/transaction", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/transaction", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","transaction"] } } },
+				{ "name": "GET /v1/project/{id}/procurement", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/procurement", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","procurement"] } } },
+				{ "name": "GET /v1/project/tender_history/{tid}/{sid}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/tender_history/{{tid}}/{{sid}}", "host": ["{{project_service_url}}"], "path": ["v1","project","tender_history","{{tid}}","{{sid}}"] } } },
+				{ "name": "GET /v1/project/constants", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/constants", "host": ["{{project_service_url}}"], "path": ["v1","project","constants"] } } },
+				{ "name": "GET /v1/project/{id}/instruction", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/instruction", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","instruction"] } } },
+				{ "name": "GET /v1/project/{id}/tender/dependency", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/tender/dependency", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","tender","dependency"] } } },
+				{ "name": "GET /v1/project/customer_health_score/{pids}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/customer_health_score/{{pids}}", "host": ["{{project_service_url}}"], "path": ["v1","project","customer_health_score","{{pids}}"] } } },
+				{ "name": "GET /v1/project/statuses", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/statuses", "host": ["{{project_service_url}}"], "path": ["v1","project","statuses"] } } },
+				{ "name": "GET /v1/project/{id}/team", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/team", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","team"] } } },
+				{ "name": "POST /v1/project/{id}/add_team_member", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/add_team_member", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","add_team_member"] } } },
+				{ "name": "PATCH /v1/project/{id}/team_member/{member}", "request": { "method": "PATCH", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/team_member/{{member}}", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","team_member","{{member}}"] } } },
+				{ "name": "DELETE /v1/project/{id}/team_member/{member}", "request": { "method": "DELETE", "url": { "raw": "{{project_service_url}}/v1/project/{{id}}/team_member/{{member}}", "host": ["{{project_service_url}}"], "path": ["v1","project","{{id}}","team_member","{{member}}"] } } },
+				{ "name": "GET /v1/project/team/role", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/project/team/role", "host": ["{{project_service_url}}"], "path": ["v1","project","team","role"] } } }
+			]
+		},
+		{
+			"name": "Tender",
+			"item": [
+				{ "name": "GET /v1/tender/{id}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/tender/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","tender","{{id}}"] } } },
+				{ "name": "GET /v1/tender/{id}/dependency", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/tender/{{id}}/dependency", "host": ["{{project_service_url}}"], "path": ["v1","tender","{{id}}","dependency"] } } },
+				{ "name": "POST /v1/tender/{id}/dependency", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v1/tender/{{id}}/dependency", "host": ["{{project_service_url}}"], "path": ["v1","tender","{{id}}","dependency"] } } },
+				{ "name": "GET /v1/tender/history", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/tender/history", "host": ["{{project_service_url}}"], "path": ["v1","tender","history"] } } },
+				{ "name": "GET /v1/tender/history/type", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/tender/history/type", "host": ["{{project_service_url}}"], "path": ["v1","tender","history","type"] } } },
+				{ "name": "GET /v1/tender", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/tender", "host": ["{{project_service_url}}"], "path": ["v1","tender"] } } },
+				{ "name": "POST /v1/tender/{tid}/transaction", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v1/tender/{{tid}}/transaction", "host": ["{{project_service_url}}"], "path": ["v1","tender","{{tid}}","transaction"] } } },
+				{ "name": "POST /v1/tender/{tid}/transaction/file", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v1/tender/{{tid}}/transaction/file", "host": ["{{project_service_url}}"], "path": ["v1","tender","{{tid}}","transaction","file"] } } },
+				{ "name": "GET /v1/tender/{pids}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/tender/{{pids}}", "host": ["{{project_service_url}}"], "path": ["v1","tender","{{pids}}"] } } },
+				{ "name": "GET /v1/tender/{tid}/quoteFiles", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/tender/{{tid}}/quoteFiles", "host": ["{{project_service_url}}"], "path": ["v1","tender","{{tid}}","quoteFiles"] } } }
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{ "name": "GET /v1/transaction", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/transaction", "host": ["{{project_service_url}}"], "path": ["v1","transaction"] } } },
+				{ "name": "GET /v1/transaction/{id}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/transaction/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","transaction","{{id}}"] } } },
+				{ "name": "GET /v1/transaction/tender/{ids}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/transaction/tender/{{ids}}", "host": ["{{project_service_url}}"], "path": ["v1","transaction","tender","{{ids}}"] } } },
+				{ "name": "GET /v1/transaction/type", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/transaction/type", "host": ["{{project_service_url}}"], "path": ["v1","transaction","type"] } } }
+			]
+		},
+		{
+			"name": "Transaction V2",
+			"item": [
+				{ "name": "GET /v2/transaction", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v2/transaction", "host": ["{{project_service_url}}"], "path": ["v2","transaction"] } } },
+				{ "name": "GET /v2/transaction/history", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v2/transaction/history", "host": ["{{project_service_url}}"], "path": ["v2","transaction","history"] } } },
+				{ "name": "POST /v2/transaction", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v2/transaction", "host": ["{{project_service_url}}"], "path": ["v2","transaction"] } } },
+				{ "name": "PATCH /v2/transaction/{id}", "request": { "method": "PATCH", "url": { "raw": "{{project_service_url}}/v2/transaction/{{id}}", "host": ["{{project_service_url}}"], "path": ["v2","transaction","{{id}}"] } } },
+				{ "name": "PATCH /v2/transaction/{tid}/item", "request": { "method": "PATCH", "url": { "raw": "{{project_service_url}}/v2/transaction/{{tid}}/item", "host": ["{{project_service_url}}"], "path": ["v2","transaction","{{tid}}","item"] } } },
+				{ "name": "POST /v2/transaction/{tid}/item", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v2/transaction/{{tid}}/item", "host": ["{{project_service_url}}"], "path": ["v2","transaction","{{tid}}","item"] } } },
+				{ "name": "POST /v2/transaction/{tid}/document", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v2/transaction/{{tid}}/document", "host": ["{{project_service_url}}"], "path": ["v2","transaction","{{tid}}","document"] } } },
+				{ "name": "DELETE /v2/transaction/{tid}/document", "request": { "method": "DELETE", "url": { "raw": "{{project_service_url}}/v2/transaction/{{tid}}/document", "host": ["{{project_service_url}}"], "path": ["v2","transaction","{{tid}}","document"] } } }
+			]
+		},
+		{
+			"name": "Instruction",
+			"item": [
+				{ "name": "GET /v1/instruction", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/instruction", "host": ["{{project_service_url}}"], "path": ["v1","instruction"] } } },
+				{ "name": "GET /v1/instruction/{id}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/instruction/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","instruction","{{id}}"] } } },
+				{ "name": "POST /v1/instruction", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v1/instruction", "host": ["{{project_service_url}}"], "path": ["v1","instruction"] } } },
+				{ "name": "PATCH /v1/instruction/{id}", "request": { "method": "PATCH", "url": { "raw": "{{project_service_url}}/v1/instruction/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","instruction","{{id}}"] } } },
+				{ "name": "DELETE /v1/instruction/{id}", "request": { "method": "DELETE", "url": { "raw": "{{project_service_url}}/v1/instruction/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","instruction","{{id}}"] } } },
+				{ "name": "GET /v1/instruction/type", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/instruction/type", "host": ["{{project_service_url}}"], "path": ["v1","instruction","type"] } } },
+				{ "name": "GET /v1/instruction/status", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/instruction/status", "host": ["{{project_service_url}}"], "path": ["v1","instruction","status"] } } }
+			]
+		},
+		{
+			"name": "BoQ",
+			"item": [
+				{ "name": "GET /v1/boq/{pid}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/boq/{{pid}}", "host": ["{{project_service_url}}"], "path": ["v1","boq","{{pid}}"] } } },
+				{ "name": "GET /v1/boq/entity/{eid}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/boq/entity/{{eid}}", "host": ["{{project_service_url}}"], "path": ["v1","boq","entity","{{eid}}"] } } },
+				{ "name": "GET /v1/boq/entity/tender/{tid}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/boq/entity/tender/{{tid}}", "host": ["{{project_service_url}}"], "path": ["v1","boq","entity","tender","{{tid}}"] } } },
+				{ "name": "POST /v1/boq/entity/{tid}", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v1/boq/entity/{{tid}}", "host": ["{{project_service_url}}"], "path": ["v1","boq","entity","{{tid}}"] } } },
+				{ "name": "PATCH /v1/boq/entity/{id}", "request": { "method": "PATCH", "url": { "raw": "{{project_service_url}}/v1/boq/entity/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","boq","entity","{{id}}"] } } },
+				{ "name": "GET /v1/boq/resource/{id}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/boq/resource/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","boq","resource","{{id}}"] } } },
+				{ "name": "GET /v1/boq/resource/entity/{eid}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/boq/resource/entity/{{eid}}", "host": ["{{project_service_url}}"], "path": ["v1","boq","resource","entity","{{eid}}"] } } },
+				{ "name": "GET /v1/boq/resource/type", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/boq/resource/type", "host": ["{{project_service_url}}"], "path": ["v1","boq","resource","type"] } } },
+				{ "name": "POST /v1/boq/resource", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v1/boq/resource", "host": ["{{project_service_url}}"], "path": ["v1","boq","resource"] } } },
+				{ "name": "PATCH /v1/boq/resource/{id}", "request": { "method": "PATCH", "url": { "raw": "{{project_service_url}}/v1/boq/resource/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","boq","resource","{{id}}"] } } },
+				{ "name": "POST /v1/boq/resource/{id}/version", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v1/boq/resource/{{id}}/version", "host": ["{{project_service_url}}"], "path": ["v1","boq","resource","{{id}}","version"] } } },
+				{ "name": "PATCH /v1/boq/resource/{id}/mapping", "request": { "method": "PATCH", "url": { "raw": "{{project_service_url}}/v1/boq/resource/{{id}}/mapping", "host": ["{{project_service_url}}"], "path": ["v1","boq","resource","{{id}}","mapping"] } } },
+				{ "name": "POST /v1/boq/item", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v1/boq/item", "host": ["{{project_service_url}}"], "path": ["v1","boq","item"] } } },
+				{ "name": "PATCH /v1/boq/item/{id}", "request": { "method": "PATCH", "url": { "raw": "{{project_service_url}}/v1/boq/item/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","boq","item","{{id}}"] } } },
+				{ "name": "PATCH /v1/boq/item/{id}/mapping", "request": { "method": "PATCH", "url": { "raw": "{{project_service_url}}/v1/boq/item/{{id}}/mapping", "host": ["{{project_service_url}}"], "path": ["v1","boq","item","{{id}}","mapping"] } } },
+				{ "name": "POST /v1/boq/item/{id}/version", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v1/boq/item/{{id}}/version", "host": ["{{project_service_url}}"], "path": ["v1","boq","item","{{id}}","version"] } } },
+				{ "name": "DELETE /v1/boq/item/{id}", "request": { "method": "DELETE", "url": { "raw": "{{project_service_url}}/v1/boq/item/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","boq","item","{{id}}"] } } },
+				{ "name": "GET /v1/boq/unit", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/boq/unit", "host": ["{{project_service_url}}"], "path": ["v1","boq","unit"] } } }
+			]
+		},
+		{
+			"name": "Order Approver",
+			"item": [
+				{ "name": "GET /v1/order_approver", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/order_approver", "host": ["{{project_service_url}}"], "path": ["v1","order_approver"] } } },
+				{ "name": "GET /v1/order_approver/{id}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/order_approver/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","order_approver","{{id}}"] } } },
+				{ "name": "POST /v1/order_approver", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v1/order_approver", "host": ["{{project_service_url}}"], "path": ["v1","order_approver"] } } },
+				{ "name": "PATCH /v1/order_approver/{id}", "request": { "method": "PATCH", "url": { "raw": "{{project_service_url}}/v1/order_approver/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","order_approver","{{id}}"] } } },
+				{ "name": "DELETE /v1/order_approver/{id}", "request": { "method": "DELETE", "url": { "raw": "{{project_service_url}}/v1/order_approver/{{id}}", "host": ["{{project_service_url}}"], "path": ["v1","order_approver","{{id}}"] } } },
+				{ "name": "DELETE /v1/order_approver/transaction/{tid}", "request": { "method": "DELETE", "url": { "raw": "{{project_service_url}}/v1/order_approver/transaction/{{tid}}", "host": ["{{project_service_url}}"], "path": ["v1","order_approver","transaction","{{tid}}"] } } },
+				{ "name": "GET /v1/order_approver/transaction/{tid}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/order_approver/transaction/{{tid}}", "host": ["{{project_service_url}}"], "path": ["v1","order_approver","transaction","{{tid}}"] } } },
+				{ "name": "GET /v1/order_approver/type", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/order_approver/type", "host": ["{{project_service_url}}"], "path": ["v1","order_approver","type"] } } },
+				{ "name": "POST /v1/order_approver/log", "request": { "method": "POST", "url": { "raw": "{{project_service_url}}/v1/order_approver/log", "host": ["{{project_service_url}}"], "path": ["v1","order_approver","log"] } } },
+				{ "name": "GET /v1/order_approver/transaction/{tid}/log", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/order_approver/transaction/{{tid}}/log", "host": ["{{project_service_url}}"], "path": ["v1","order_approver","transaction","{{tid}}","log"] } } },
+				{ "name": "GET /v1/order_approver/required-actions/{uid}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/order_approver/required-actions/{{uid}}", "host": ["{{project_service_url}}"], "path": ["v1","order_approver","required-actions","{{uid}}"] } } },
+				{ "name": "GET /v1/order_approver/completed-actions/{uid}", "request": { "method": "GET", "url": { "raw": "{{project_service_url}}/v1/order_approver/completed-actions/{{uid}}", "host": ["{{project_service_url}}"], "path": ["v1","order_approver","completed-actions","{{uid}}"] } } }
+			]
+		}
+	],
+	"variable": [
+		{ "key": "project_service_url", "value": "http://localhost:8082", "type": "string" },
+		{ "key": "id", "value": "1", "type": "string" },
+		{ "key": "group_id", "value": "1", "type": "string" },
+		{ "key": "tid", "value": "1", "type": "string" },
+		{ "key": "hid", "value": "1", "type": "string" },
+		{ "key": "sid", "value": "1", "type": "string" },
+		{ "key": "pids", "value": "[1,2,3]", "type": "string" },
+		{ "key": "member", "value": "1", "type": "string" },
+		{ "key": "uid", "value": "1", "type": "string" },
+		{ "key": "eid", "value": "1", "type": "string" },
+		{ "key": "name", "value": "slug-name", "type": "string" }
+	]
+}

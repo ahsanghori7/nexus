@@ -1,0 +1,11 @@
+.breadcrumbs {
+  &-elem {
+    a {
+      border-bottom: 1px solid $clink-purple;
+
+      &:hover {
+        color: $clink-purple-hover;
+      }
+    }
+  }
+}

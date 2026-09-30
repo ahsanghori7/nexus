@@ -1,0 +1,28 @@
+// Abstracts
+@import 'abstracts/colors';
+@import 'abstracts/dimensions';
+
+//Base
+
+// Themes
+@import 'theme/general-theme';
+
+// Components
+@import '../../../global/public/styles/theme/clink-app/v1';
+@import '../../../global/public/styles/components/confirmation-modal';
+@import '../../../global/public/styles/components/clink-form/single-checkbox';
+@import '../../../file-manager/public/styles/components/modal';
+@import '../../../file-manager/public/styles/components/sidemodal';
+@import '../../../file-manager/public/styles/components/archived';
+@import 'components/header';
+@import 'components/page';
+@import 'components/form';
+@import 'components/modal';
+@import 'components/viewer';
+@import 'components/edit';
+@import 'components/progress-bar';
+@import 'components/clink-alert';
+// Layout
+
+// Pages
+@import '../../../company-assets/public/styles/components/schedules-attendances';

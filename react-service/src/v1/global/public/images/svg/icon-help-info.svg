@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Group_926" data-name="Group 926" transform="translate(-1144 -262)">
+    <g id="Group_925" data-name="Group 925">
+      <circle id="Ellipse_89" data-name="Ellipse 89" cx="16" cy="16" r="16" transform="translate(1144 262)" fill="#ff7900"/>
+      <path id="Rectangle_578" data-name="Rectangle 578" d="M0,0H16a0,0,0,0,1,0,0V12a4,4,0,0,1-4,4H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(1160 278)" fill="#fe7921"/>
+    </g>
+    <text id="i" transform="translate(1158 285)" fill="#fff" font-size="20" font-family="ProximaNova-Bold, Proxima Nova" font-weight="700"><tspan x="0" y="0">i</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OptViewerPage Snapshot Testing matches snapshot 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-container"
+  data-testid="mui-grid"
+  sx="[object Object]"
+>
+  <div
+    data-discover="true"
+    data-testid="mock-opt-viewer"
+  >
+    <h2>
+      Mock OptViewer
+    </h2>
+    <div>
+      Mock OptViewer Component
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,4042 @@
+[
+  {
+    "footer": {
+      "company_name": "",
+      "subcontract": ""
+    },
+    "header": {
+      "address": [],
+      "company_name": "",
+      "company_reg": "",
+      "logo": "",
+      "web_address": ""
+    },
+    "name": "document",
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "type": "coverpage",
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+
+                {
+                  "name": "text",
+                  "props": {
+                    "className": "centered-text"
+                  },
+                  "children": [
+                    "{b:Leo Lynch}"
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": "centered-text"
+                  },
+                  "children": [
+                    "{b:Agreement and}",
+                    "{b:Conditions of Sub-Contract }"
+                  ]
+                }
+              ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                  "name": "text",
+                  "props": {
+                    "className": "centered-text"
+                  },
+                  "children": [
+                    "Project: {ProjectName}",
+                    "{br}",
+                    "Sub-Contract Works: {PackageName}",
+                    "{br}",
+                    "Ref No: {OrderNumber}",
+                    "{br}"
+                  ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width no-border gray-first"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Contents"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{br}",
+                          "AGREEMENT"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{br}",
+                          "3"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "SUB-CONTRACT PARTICULARS"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "{b:CONDITIONS}"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "THE SUB-CONTRACT"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "THE LAW"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "LOSS, DAMAGE AND INJURY"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "MANAGEMENT"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "LABOUR RECORDS"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "6"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "6"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "LOGISTICS"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "6"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "7"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "QUALITY"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "7"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "PAYMENT"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "7"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "9"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "TERMINATION"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "10"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "DISPUTES"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-right"
+                        },
+                        "type": "column",
+                        "children": [
+                          "9"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width no-border gray-first"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Agreement"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "THIS AGREEMENT is made on {Date}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "BETWEEN:"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "……XXXX……. (LLE)"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "and {TheSupplier} (company number {SubContractorReg}) whose registered office is at {RegisteredOffice} (the Sub contractor)"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "Signed by an Authorised Representative of LLE"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "…………………………………………………………………………………………………..."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "in the presence of",
+                  "…………………………………………………………………………………………………………………………",
+                  "(Witness)"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "Address                                                 of                                                 Witness"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "…………………………………………………………………………………………………………..."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "……………………………………………………………………………………...................................."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "............................"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "Signed by an Authorised Representative of the Subcontractor"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "…………………………………………………………………………………………………..."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "in the presence of"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "…………………………………………………………………………………………………………………………"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {},
+                "children": [
+                  "(Witness)"
+                ]
+              },
+              {
+                    "name": "text",
+                    "props": {
+                      "className": ""
+                    },
+                    "children": [
+                      "Address of Witness"
+                    ]
+
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": ""
+                  },
+                  "children": [
+                    "..........................................................................................."
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": ""
+                  },
+                  "children": [
+                    "..................................................................................................."
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": ""
+                  },
+                  "children": [
+                    "............................"
+                  ]
+                }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+                  {
+                  "name": "view",
+                  "props": {
+                    "className": "edit-document-table table full-width no-border gray-first"
+                  },
+                  "type": "table",
+                  "children": [
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": ["SUB-CONTRACT PARTICULARS"]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "view",
+                  "props": {
+                    "className": "edit-document-table table tc full-width no-border"
+                  },
+                  "type": "table",
+                  "children": [
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{br}",
+                            "1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{br}",
+                            "{b:The Sub-Contract}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "1.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Definitions}"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": "justified"
+                  },
+                  "children": [
+                    "In this Sub-Contract unless the context otherwise requires:"
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": "justified"
+                  },
+                  "children": [
+                    "Contractor is the Party named as Contractor in Article 4: 2. Sub-Contact Particulars, herein."
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": "justified"
+                  },
+                  "children": [
+                    "Defect means any part of the Sub-Contract Works that is not in accordance with any of the requirements as set out in the Sub-Contract Documents herein."
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": "justified"
+                  },
+                  "children": [
+                    "Employer means the party who has appointed the Contractor under the Lead Contract"
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": "justified"
+                  },
+                  "children": [
+                    "{b:Legal Requirements} means a requirement that applies to the Sub Contract Works as a result of any of the following:"
+                  ]
+                },
+                {
+                  "name": "view",
+                  "props": {
+                    "className": "edit-document-table full-width no-border"
+                  },
+                  "type": "table",
+                  "children": [
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row bullet-list"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "•"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "Law"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row bullet-list"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "•"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "a Consent"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row bullet-list"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "•"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "a decision of a UK court"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row bullet-list"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "•"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "the requirements of any person having authority in connection with the Sub Contract Works under any Law"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row bullet-list"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "•"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "the requirements of any person with whose systems the Sub Contract Works will connect"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row bullet-list"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "•"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "the legal rights of any person"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": "justified"
+                  },
+                  "children": [
+                    "LLE is [Leo Lynch] who shall be the 'other party' for the purposes of the Construction Contracts Act"
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": "justified"
+                  },
+                  "children": [
+                    "Main Contract is the contract between LLE and the Contractor."
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": "justified"
+                  },
+                  "children": [
+                    "Parties means LLE and the Sub contractor"
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": "justified"
+                  },
+                  "children": [
+                    "Payment Claim Dates are the dates agreed between the parties and recorded in the Pre Appointment Meeting Minutes and, if no dates are agreed, shall be the dates which occur in 30 day cycles commencing at the date of the first Payment Claim;"
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": "justified"
+                  },
+                  "children": [
+                    "Payment Disputes are disputes relating to payment."
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": "justified"
+                  },
+                  "children": [
+                    "Payment Claim means any claim for payment under the Sub Contract;"
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": "justified"
+                  },
+                  "children": [
+                    "Payment Claim Notice means any payment claim under the Sub-Contract which complies with the requirements of the Housing Grants, Construction and Regeneration Act 1996 (as amended)."
+                  ]
+                },
+                {
+                  "name": "text",
+                  "props": {
+                    "className": "justified"
+                  },
+                  "children": [
+                    "Response means the response to a Payment Claim Notice served, or to be served, by LLE within 21 days of a Payment Claim Date."
+                  ]
+                }
+
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "Site is the location where the Sub-Contract Works are to be performed including lay down areas, offices and temporary storage facilities."
+                ]
+
+            },
+            {
+              "name": "text",
+              "props": {
+                "className": "justified"
+              },
+              "children": [
+                "Sub-Contract Documents means the documents so identified in Appendix herein."
+              ]
+            },
+            {
+              "name": "text",
+              "props": {
+                "className": "justified"
+              },
+              "children": [
+                "Sub-Contract Sum means the value of the Sub-Contract works calculated in accordance with these Conditions of Sub-Contract."
+              ]
+            },
+            {
+              "name": "text",
+              "props": {
+                "className": "justified"
+              },
+              "children": [
+                "Sub-Contract Works means that portion of the Works which are to be designed and/or constructed by the Sub contractor including, where applicable, any design to be carried out by any party employed by the Sub contractor."
+              ]
+            },
+            {
+              "name": "text",
+              "props": {
+                "className": "justified"
+              },
+              "children": [
+                "Sub contractor is {TheSupplier}"
+              ]
+            },
+            {
+              "name": "text",
+              "props": {
+                "className": "justified"
+              },
+              "children": [
+                "Works means the works which are to be constructed under and in accordance with the Main Contract."
+              ]
+            },
+                {
+                  "name": "view",
+                  "props": {
+                    "className": "edit-document-table table tc full-width no-border"
+                  },
+                  "type": "table",
+                  "children": [
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "1.2"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Sub Contractor}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [""]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "The Sub contractor shall carry out and complete the Sub-Contract Works in accordancewith the Sub Contract Documents and to the reasonable satisfaction"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "2"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:The Law}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "2.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Law Governing the Contract}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [""]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "The Sub-Contract shall be governed by and construed in accordance with the laws of England and Wales"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "2.2"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Compliance with Legal Requirements}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [""]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "The Sub contractor shall, in performing its obligations under the Sub-Contract, comply with all Legal Requirements."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "2.3"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Safety, Health and Welfare Statutory Requirements}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [""]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "The Subcontractor will comply with all current health and safety legislation including the Health and Safety at Work Act 1974 and the Construction (Design and Management) Regulations 2015 and will provide to LLE all documents required for the Safety File (as defined in the current Safety, Health and Welfare at Work (Construction) Regulations) relevant to the Sub-Contract Works in sufficient time as to enable LLE meet its obligations under the Main Contract."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "3"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Loss, Damage and Injury}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "3.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "The Sub contractor will indemnify and save harmless LLE and the Contractor in respect of any loss arising as a result of:"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-40"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "3.1.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "Death, injury or illness of any person; and"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-40"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "3.1.2"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "Loss, destruction of or damage to any physical property."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "3.2"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Public Liability and Employer's Liability Insurance}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-40"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "3.2.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "Before commencing the Sub-Contract Works, the Sub contractor shall take out if not already in place Public Liability and Employer's Liability policies of insurance as provided herein. The Sub contractor will maintain such insurance until the end of the Defects Liability Period."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-40"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "3.2.2"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "The minimum indemnity limits of these policies shall be the sums stated in the Pre-Appointment Meeting Minutes or, if no sums are so stated, shall be those sums stated in the Main Contract."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "4"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Management}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "4.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Co-operation}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [""]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "LLE and the Sub contractor shall provide reciprocal co-operation and support for the Sub-Contract purposes."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "4.2"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Instructions}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-40"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "4.2.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "LLE may issue instructions to the Subcontractor in relation to any matter connected with the Sub-Contract Works The Sub contractor shall comply with the instructions of LLE."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-40"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "4.2.2"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "Instructions of LLE may vary the Sub-Contract Works including, without limitation, by adding to, omitting and changing the Sub- Contract Works and/or by imposing, removing and changing restrictions on how they are to be executed)."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "4.3"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Programme and Progress Reports}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [""]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "The Sub contractor shall carry out and complete the Sub-Contract Works to meet the requirements of the Main Contract programme which may be changed from time to time. LLE will provide reasonable notice of the Sub contractor of the dates on which the various elements of the Sub Contract Works are required to be carried out and the Sub contractor will attend on Site as necessary and as instructed to carry out each element as so instructed. Where LLE's requirements change, LLE will provide reasonable notice to the Sub contractor of that change. The Sub contractor has allowed within the Sub Contract Sum for carrying out the Sub Contract Works in the sequence and at the times instructed by LLE."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "5"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Labour Records}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "5.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "The Sub contractor shall ensure that it adheres to LLE's policies as set out in Appendices A and B or otherwise referred to in this Sub-Contract. In particular, the SubSub contractor shall collate, validate and store all appropriate documentation required to evidence the legal status of all workers on Site including as a minimum, the following:"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-40"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "5.1.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "Where required, proof of legal right to work in the jurisdiction (eg. UK Passport or valid work permit) as may be mandated under the local laws;"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-40"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "5.1.2"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "Personal income tax reference or the local equivalent thereof;"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-40"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "5.1.3"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "National Insurance Number"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "5.2"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "The Sub contractor shall ensure that copies of the abovementioned documentation are maintained for all Sub contractor Personnel on the Site and LLE shall be entitled to audit the Sub contractor's records in relation to such personnel to verify compliance with this provision."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "6"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Logistics}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "6.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Scaffolding}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [""]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "The Sub contractor, his employees and workmen in common with all other persons having the like right shall for the purposes of the Sub-Contract Works (but not further or otherwise) be entitled to use any properly labelled scaffolding belonging to or provided by LLE, while it remains so erected upon the site."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "6.2"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Attendances}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [""]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "LLE shall provide attendances as identified in Appendix A(i) Pre-appointment Meeting; Attendance and Facilities Matrix. Otherwise the Sub contractor shall provide everything necessary for the execution of the Sub-Contract Works. LLE will provide all attendances required by this clause in a timely manner so as to enable the Sub contractor to carry out the Sub contractor Works in the manner instructed by LLE under clause 4.3."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "6.3"                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Setting Out the Works}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [""]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "Unless otherwise agreed between the parties, the Sub contractor will set out the Sub-Contract  Works  in  compliance  with  Appendix  A(i)  Pre-appointment  Meeting  if applicable."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "6.4"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Working Times}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-40"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "6.4.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "For activities taking place on the works site, the Sub contractor shall ensure thatthe  Sub  contractor's  Personnel  work  on  the  Site  only  during  the  working  times permitted under the terms of the Main Contract unless:"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-60"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "6.4.1.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "there is imminent danger to safety or health or of damage to the Works or other property or"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-60"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "6.4.1.2"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "otherwise agreed with LLE."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "6.5"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Equipment, Facilities and Utilities}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [""]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "Save as regards any equipment, materials, facilities or utilities described in Appendix A(i) or Appendix A(iv) to be provided by LLE to the Sub contractor on a free-issued basis or at its own expense, the Sub contractor itself shall provide all facilities, utilities and supplies necessary for the performance of the Sub-Contract Works at his own expense,  including  but  not  limited  to  fuel,  IT,  telecoms,  site  offices,  accommodation, storage,  containers,  temporary  plumbing,  temporary  lighting,  temporary  power, welfare facilities, scaffolding, hoisting facilities and craneage. All such facilities, utilities and supplies shall be subject to the approval of LLE"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "7"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Quality}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "7.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Standards of Workmanship and Works Items}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [""]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "The Sub contractor shall ensure that the Sub Contract Works are executed and completed in a proper and workmanlike manner and using good industry practice."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "7.2"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Defects}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-40"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "7.2.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "The Sub contractor shall within a reasonable time of receipt of a written notice from LLE make good all defects, shrinkages or other faults in the Sub-Contract Works which are due to materials or workmanship which are not in accordance with the Main Contract or the Sub Contract"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-40"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "7.2.2"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "If the Sub contractor fails to rectify the damage or Defect in accordance with the notification  given  pursuant  to  Clauses  7.2.1  above,  then  LLE  may  appoint  others  to rectify the damage or Defect, and the Sub contractor shall allow or pay to LLE all costs incurred by reason of such rectification."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "8"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Contract Sum & Payment}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [""]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "For the avoidance of doubt the sub contract sum is; £XXX Excl. VAT."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-20"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "8.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "{b:Payment Claims}"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-40"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "8.1.1"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "The parties shall agree and record the Payment Claim Dates which are to apply to  this  Sub  Contract  and  same  shall  be  recorded  in  the  pre-Appointment  Meeting Minutes. If the parties have not agreed the Payment Claim Dates which shall apply (or any of them), the first Payment Claim Date will be deemed to have occurred 30 days after the Commencement Date."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "props": {
+                        "className": "edit-document-table-row pad-40"
+                      },
+                      "type": "row",
+                      "children": [
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column align-top"
+                          },
+                          "type": "column",
+                          "children": [
+                            "8.1.2"
+                          ]
+                        },
+                        {
+                          "name": "text",
+                          "props": {
+                            "className": "edit-document-table-column"
+                          },
+                          "type": "column",
+                          "children": [
+                            "Payments will be made in accordance with the provisions of the Housing Grants, Construction  and  Regeneration  Act  1996  (as  amended).  However,  it  is  a  condition precedent to LLE's obligation to make any payment that all insurances required to be provided by the Sub contractor are in place (and, where required, have been demonstrated to be in place) prior to the Commencement Date and kept up to date."
+                          ]
+                        }
+                      ]
+                    },
+                     {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.1.3"                          ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Payment terms and durations are as per the attached at Appendix D (iiii) payment application dates table."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Reduction of Scope}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Without prejudice to any other rights which LLE may possess, if, in the reasonable opinion of LLE, the Sub contractor fails to make satisfactory progress with the Sub Contract Works, LLE may remove a part of the remaining works from the scope of the Sub-Contract (in which case, LLE may have such part executed by others)."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Price Variation}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Sub Contract Sum is fixed and is not subject to adjustment due to price increases,regardless of the magnitude of such increases."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.4"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Deductions}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "LLE may deduct from any sum otherwise due to the Sub contractor any sum to which LLE is entitled by reason of contra-charge in respect of this Sub- Contract or arising as a consequence of any breach by the Sub contractor of the terms of this Sub-Contract. LLE shall notify the Sub contractor of any such deduction in its Response"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.5"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Retention}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Retention does not apply to this contract scope."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "9"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Termination}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "9.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Termination on Sub contractor Default}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "LLE may, without limiting any other rights or remedies, terminate the Sub contractor's employment under the Sub Contract if any of the following occurs:-"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "9.1.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Sub contractor in breach of contract fails to comply with its obligations under the Sub-Contract and, if the failure can be cured, the Sub contractor has failed to cure it within 10 days of being requested in writing to do so by LLE"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "9.1.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Any of the following insolvency events:"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-60"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "a)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "a petition is presented to wind up the Sub contractor and is not dismissed within 10 working days of presentation"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-60"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "b)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "any meeting of creditors or members of the Sub contractor is convened or held for the purpose of considering a resolution to wind up the Sub contractor"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-60"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "c)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "a liquidator, supervisor, receiver, administrator, administrative receiver, trustee or encumbrancer takes possession of or is appointed over the Sub contractor or any of its assets, or any distress, execution or other process is levied or enforced, and not discharged within 10 working days, on the Sub contractor or any of its assets"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-60"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "d)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "the Sub contractor ceases or threatens to cease carrying on business, or is, or is regarded by law or by a court to be, or declares itself to be, insolvent or unable to pay its debts as they fall due"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-60"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "e)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "a petition is presented to appoint an examiner to the Sub contractor, or an order is made appointing an examiner to LLE"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-60"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "f)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "the Sub contractor, being an individual, becomes bankrupt"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-60"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "g)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "any event similar to the above insolvency events occurs in respect of the Sub contractor in any jurisdiction in which it is incorporated or has a place of business (12) the Sub contractor, if an individual, dies or becomes incapable of performing the Sub Contract"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "9.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Consequences of Insolvency of the Contractor}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "In the event that the Sub Contractor becomes insolvent, LLE shall not be obliged to make any further payment to the Sub contractor of any sum which is due or may become  due  to  the  Sub  contractor  unless  and  until  LLE  has  received  payment  in respect thereof from the Contractor and then only to the extent of such receipt and subject always to LLE's right to make deductions. The Contractor shall be deemed \"insolvent\"  if  any  of  the  circumstances  specified  in  the  Housing  Grants,  Constructionand Regeneration Act 1996 (as amended)"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "10"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:DISPUTES}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "10.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Notice to Refer"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "If, any dispute arises between the parties in connection with or arising out of the Sub- Contract, either party may, by notice to the other, refer the dispute for arbitration by serving on the other a Notice to Refer. The Notice to Refer shall state the issues in dispute. The service of the Notice to Refer will be deemed to be the commencement of arbitration proceedings. Either party may within a period of 14 days of the Notice to Refer give notice to the other of further disputes and, if such notice is given, those further disputes will be deemed to be included in the reference to arbitration"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "10.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Arbitration"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "10.2.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Except in the case of a dispute to which Clause 10.1 hereof applies, the parties shall jointly appoint the arbitrator or, if the parties are unable to agree an arbitrator to be appointed under this clause, the arbitrator will be appointed by the President of the Chartered Institute of Arbitrators."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-40"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "10.2.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Any arbitration between LLE and the Sub contractor will be governed by and the English Arbitration Act 2025."
+                        ]
+                      }
+                    ]
+                  }
+                  ]
+                }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+
+                  "name": "text",
+                  "props": {
+                    "className": "centered-text"
+                  },
+                  "children": [
+                    "{b:THE SUB-CONTRACT APPENDICES}"
+                  ]
+
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{b:The Sub-Contract appendices are as follows:}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:Appendix A Scope of the Sub-Contract Works}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{SubContractorWorks}"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Appendix Number}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Appendix Title}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Used / Not Used}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Appendix B"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Pre-appointment Meeting"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "XXX"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Appendix C"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:DCT Proposal and}",
+                          "{b:Authorization to Proceed}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "XXX"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Appendix D"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Payment Dates"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "XXX"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Appendix E"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Drawings and Drawing Register"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Used"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "Appendix E Drawings and Drawing Register"
+                ]
+              },
+              {
+                  "name": "text",
+                  "props": {
+                      "className": "centered-text"
+                  },
+                  "children": [
+                      "{b:File Manager}"
+                  ]
+
+              },
+              {
+                "name": "view",
+                "props": {
+                  "editable": false
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "children": [
+                      {
+                        "type": "link",
+                        "code": "download_all_files",
+                        "name": "text",
+                        "children": [
+                          "{bpnk:Download all}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "fileManager",
+                    "props": {
+                      "className": "edit-document-table full-width table"
+                    },
+                    "children": [
+                      {
+                        "name": "view",
+                        "type": "thead",
+                        "props": {
+                          "className": "edit-document-table-row"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:Document Name}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:Category}"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": {
+                          "className": "edit-document-table-row"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column justified"
+                            },
+                            "children": [
+                              "{br}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column justified"
+                            },
+                            "children": [
+                              "{br}"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "children": [
+                      {
+                        "type": "link",
+                        "code": "download_all_files",
+                        "name": "text",
+                        "children": [
+                          "{bpnk:Download all}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

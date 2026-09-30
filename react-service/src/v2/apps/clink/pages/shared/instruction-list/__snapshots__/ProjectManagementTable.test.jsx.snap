@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectManagementTable matches snapshot 1`] = `
+<div
+  data-testid="mui-box"
+>
+  <table
+    data-testid="clink-table"
+    data-theme="custom-theme"
+  >
+    <thead>
+      <tr>
+        <th
+          data-testid="column-0"
+        >
+          ID
+        </th>
+        <th
+          data-testid="column-1"
+        >
+          Name
+        </th>
+        <th
+          data-testid="column-2"
+        >
+          Status
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        data-testid="row-0"
+      >
+        <td
+          data-testid="cell-0-0"
+        >
+          1
+        </td>
+        <td
+          data-testid="cell-0-1"
+        >
+          Task 1
+        </td>
+        <td
+          data-testid="cell-0-2"
+        >
+          Active
+        </td>
+      </tr>
+      <tr
+        data-testid="row-1"
+      >
+        <td
+          data-testid="cell-1-0"
+        >
+          2
+        </td>
+        <td
+          data-testid="cell-1-1"
+        >
+          Task 2
+        </td>
+        <td
+          data-testid="cell-1-2"
+        >
+          Completed
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

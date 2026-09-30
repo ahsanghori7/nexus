@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterHeader Component creates snapshot for FilterHeader component 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-container"
+  data-testid="mui-grid"
+  justifycontent="space-between"
+>
+  <div
+    class="MuiGrid-root MuiGrid-item"
+    data-testid="mui-grid"
+  >
+    <div
+      data-testid="opportunities-header"
+    >
+      Opportunities Header
+    </div>
+  </div>
+  <div
+    class="MuiGrid-root MuiGrid-item"
+    data-testid="mui-grid"
+    sx="[object Object]"
+  >
+    <div
+      data-testid="filters"
+    >
+      <span>
+        filter-by
+      </span>
+      <div
+        content="[object Object]"
+        data-testid="filter-component"
+        dropdowncontentwidth="200"
+        label="[object Object]"
+        xoffset="-170"
+        yoffset="5"
+      >
+        Filter Component
+      </div>
+      <div
+        content="[object Object]"
+        data-testid="filter-component"
+        dropdowncontentwidth="200"
+        label="[object Object]"
+        xoffset="-170"
+        yoffset="5"
+      >
+        Filter Component
+      </div>
+      <div
+        content="[object Object]"
+        data-testid="filter-component"
+        dropdowncontentwidth="200"
+        label="[object Object]"
+        xoffset="-170"
+        yoffset="5"
+      >
+        Filter Component
+      </div>
+      <div
+        content="[object Object]"
+        data-testid="filter-component"
+        dropdowncontentwidth="200"
+        label="[object Object]"
+        xoffset="-170"
+        yoffset="5"
+      >
+        Filter Component
+      </div>
+    </div>
+  </div>
+</div>
+`;

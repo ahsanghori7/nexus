@@ -1,0 +1,12 @@
+button {
+  @extend .rounded-pill;
+
+  height: 3.2rem;
+
+  &.btn-success {
+    margin-left: auto;
+  }
+  &.btn-outline-info {
+    margin-right: auto;
+  }
+}

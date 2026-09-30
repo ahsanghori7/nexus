@@ -1,0 +1,34 @@
+.change-subscription-modal {
+  .modal-box {
+    padding: 40px;
+    padding-top: 30px;
+  }
+}
+
+.confirm-modal {
+  .modal-box {
+    padding: 51px 30px 30px;
+    min-width: 462px;
+    @media (max-width: 480px) {
+      min-width: initial;
+      max-width: 230px;
+    }
+
+    button {
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 21px;
+      padding: 0;
+      width: 71px;
+      height: 49px;
+
+      &#btn-no {
+        margin-right: 5px;
+      }
+
+      &#btn-yes {
+        margin-left: 5px;
+      }
+    }
+  }
+}

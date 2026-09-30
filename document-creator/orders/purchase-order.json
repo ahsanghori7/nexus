@@ -1,0 +1,1009 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": { "company_name": "", "subcontract": "" },
+    "props": { "className": "edit-document-document" },
+    "children": [
+      {
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "table-documents-table full-width table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "table-documents-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": { "className": "table-documents-column" },
+                        "children": ["Order No: {PurchaseOrderNo}"]
+                      },
+                      {
+                        "name": "text",
+                        "props": { "className": "table-documents-column" },
+                        "children": ["PURCHASE OF MATERIALS ORDER"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{br}",
+                  "This Order is placed subject to the terms and conditions attached hereto and {mainContractor} (the \u201cContractor\u201d) is only willing to contract on this basis.",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "table-documents-table full-width table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "table-documents-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "table-documents-column align-top" },
+                        "children": [
+                          "{b:The Supplier:}",
+                          "{TheSupplier}",
+                          "{br}",
+                          "{b:Address}",
+                          "{RegisteredAddress}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "table-documents-column align-top" },
+                        "children": [
+                          "{b:Delivery Date & other specific programme requirements:}",
+                          "{DeliveryDate}",
+                          "{br}",
+                          "(if no Delivery Date is specified delivery will be within \n          xx days of order)"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "table-documents-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "table-documents-column align-top" },
+                        "children": [
+                          "{b:The Site :}",
+                          "{ProjectName}",
+                          "{br}",
+                          "{b:Site Address:}",
+                          "{SiteAddress}",
+                          "{br}",
+                          "{b:Site Tel:}",
+                          "{SiteTelephone}",
+                          "{br}",
+                          "{b:Site contact details}",
+                          "{u:Name}: {SiteName}",
+                          "{u:Role}: {SiteRole}",
+                          "{u:Tel}: {SiteTel}",
+                          "{u:Email}: {SiteEmail}",
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "table-documents-column align-top" },
+                        "children": [
+                          "{b:The Order Price}: {OrderPrice}",
+                          "{br}",
+                          "{br}",
+                          "{b:Price breakdown}",
+                          "{br}",
+                          "Stage\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Payment",
+                          "{br}",
+                          "[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0£[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]",
+                          "{br}",
+                          "[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0£[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]",
+                          "{br}",
+                          "[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0£[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]",
+                          "{br}",
+                          "[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0£[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]",
+                          "(no stage payments be made before delivery)"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "table-documents-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "table-documents-column align-top" },
+                        "children": [
+                          "{b:Specification reference and date}",
+                          "{b:(this includes Drawing reference/dates as follows)}",
+                          "{br}",
+                          "{SubContractorWorks}",
+                          "Refer to Schedule 1 for documents and details"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "table-documents-column align-top"
+                        },
+                        "children": [
+                          "{b:Further Information:}",
+                          "{br}",
+                          "Refer to Schedule 2 for documents and details"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "table-documents-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "table-documents-column align-top" },
+                        "children": [
+                          "Order issued by,",
+                          "{CompanyName}",
+                          "{br}",
+                          "{br}",
+                          "{br}",
+                          "{b:{UserName}}",
+                          "{b:{UserRole}}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "table-documents-column align-top" },
+                        "children": [
+                          "{b:Email and Address for Invoices:}",
+                          "{CompanyEmail}",
+                          "{CompanyName}",
+                          "{CompanyAddress}",
+                          "{br}",
+                          "{br}",
+                          "Tel: {CompanyTelephone}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "children": ["{b:TERMS & CONDITIONS}:"]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:1.0}"] },
+                      { "type": "text", "children": ["{b:INTERPRETATION}"] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:1.1}"] },
+                      {
+                        "type": "text",
+                        "props": { "className": "second-col" },
+                        "children": ["{b:Definitions}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "indented-content justified"
+                },
+                "children": [
+                  "{b:Business Day}: a day (other than a Saturday, Sunday or public \n              holiday) when banks in London are open for business.",
+                  "{br}",
+                  "{b:Conditions}: the terms and conditions set out in this document.",
+                  "{br}",
+                  "{b:Contract}: the contract between the Contractor and the Supplier for \n            the sale and purchase of the Goods in accordance with these \n            Conditions.",
+                  "{br}",
+                  "{b:Goods}: the goods (or any part of them) set out in the Order.",
+                  "{br}",
+                  "{b:Specification}: any specification for the Goods, including any related plans and drawings, that is agreed in writing by the Contractor and the Supplier.",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table justified" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:1.2}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "A reference to a statute or statutory provision is a reference to such statute or provision as amended or re-enacted. A reference to a statute or statutory provision includes any subordinate legislation made under that statute or statutory provision, as amended or re-enacted. Any phrase introduced by the terms including, include, in particular or any similar expression shall be construed  as illustrative and shall not limit the sense of the words preceding those terms; and a reference to writing or written includes emails."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table justified" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:2.0}"] },
+                      { "type": "text", "children": ["{b:BASIS OF CONTRACT}"] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:2.1}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "These Conditions apply to this Contract to the exclusion of any other terms that the Supplier seeks to impose or incorporate, or which are implied by trade, custom, practice or course of dealing."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:2.2}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Order constitutes an offer by the Contractor to purchase the Goods in accordance with these Conditions."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:2.3}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Order shall be deemed to be accepted on the earlier of (a) the Supplier issuing a written acceptance of the Order; and (b) the \n            Supplier doing any act consistent with fulfilling the Order, at \n            which point this Contract shall come into existence."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [" "] },
+                      { "type": "text", "children": [" "] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [" "] },
+                      { "type": "text", "children": [" "] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [" "] },
+                      { "type": "text", "children": [" "] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [" "] },
+                      { "type": "text", "children": [" "] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [" "] },
+                      { "type": "text", "children": [" "] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [" "] },
+                      { "type": "text", "children": [" "] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:3.0}"] },
+                      { "type": "text", "children": ["{b:THE GOODS}"] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:3.1}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier shall ensure that the Goods shall (a) correspond with their description and any applicable Specification; (b) be of satisfactory quality (within the meaning of the Sale of Goods Act 1979, as amended) and fit for any purpose held out by the Supplier or made known to the Supplier by the Contractor expressly or by implication, and in this respect the Contractor relies on the Supplier\u2019s skill and judgement; (c) where they are manufactured products, be free from defects in design, material and workmanship (d) comply with all applicable statutory and regulatory requirements relating to the manufacture, labelling, packaging, storage, handling and delivery of the Goods"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:3.2}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier shall ensure that at all times it has and maintains all the licences, permissions, authorisations, consents and permits that it needs to carry out its obligations under the Contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:3.3}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Contractor may inspect and test the Goods at any time before delivery. The Supplier shall remain fully responsible for the Goods despite any such inspection or testing and any such inspection or testing shall not reduce or otherwise affect the Supplier\u2019s obligations under the Contract. If following such inspection or testing the Contractor considers that the Goods do not conform or are unlikely to comply with the Supplier\u2019s \n            undertakings at Clause 3.1, the Contractor shall inform the Supplier and the Supplier shall immediately take such remedial action as is necessary to ensure compliance. The Contractor may conduct further inspections and tests after the Supplier has carried out its remedial actions."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:4.0}"] },
+                      { "type": "text", "children": ["{b:DELIVERY}"] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:4.1}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier shall ensure that (a) the Goods are properly \n            packed and secured in such manner as to enable them to reach their \n            destination in good condition; (b) each delivery of the Goods is \n            accompanied by a delivery note which shows the date of the Order, \n            the Order number (if any), the type and quantity of the Goods \n            (including the code number of the Goods, where applicable), special \n            storage instructions (if any) and, if the Goods are being delivered \n            by instalments, the outstanding balance of Goods remaining to be \n            delivered; and (c) if the Supplier requires the Contractor to return \n            any packaging material to the Supplier, that fact is clearly stated \n            on the delivery note. Any such packaging material shall be returned to the Supplier at the cost of the Supplier."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:4.2}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier shall deliver the Goods (a) on the Delivery Date \n            (b) at the Delivery Location; and (c) during the Contractor\u2019s normal \n            business hours, or as instructed by the Contractor. Delivery of the \n            Goods shall be completed on the completion of unloading the Goods at \n            the Delivery Location."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [" "] },
+                      { "type": "text", "children": [" "] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:4.3}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier shall not deliver the Goods in instalments without \n            the Contractor\u2019s prior written consent. Where it is agreed that the \n            Goods are to be delivered by instalments, they may be invoiced and \n            paid for separately. However, failure by the Supplier to deliver any \n            one instalment on time or at all, or any defect in an instalment \n            shall entitle the Contractor to the remedies set out in Clause 5."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:5.0}"] },
+                      { "type": "text", "children": ["{b:REMEDIES}"] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:5.1}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "If the Goods are not delivered on the Delivery Date, or do not \n            comply with the undertakings set out in Clause 3.1, then, without \n            limiting any of its other rights or remedies, and whether or not it \n            has accepted the Goods, the Contractor may exercise any one or more \n            of the following remedies (a) to terminate the Contract; (b) to \n            reject the Goods (in whole or in part) and return them to the \n            Supplier at the Supplier\u2019s risk and expense;(c) to require the \n            Supplier to repair or replace the rejected Goods, or to provide a \n            full refund of the price of the rejected Goods (if paid); (d) to \n            refuse to accept any subsequent delivery of the Goods which the \n            Supplier attempts to make; (e) to recover from the Supplier any \n            costs incurred by the Contractor in obtaining substitute goods from \n            a third party; and (f) to claim damages for any other costs, loss or \n            expenses incurred by the Contractor which are in any way \n            attributable to the Supplier\u2019s failure to carry out its obligations \n            under the Contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:5.2}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "These Conditions shall apply to any repaired or replacement \n            Goods supplied by the Supplier."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:5.3}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Contractor\u2019s rights and remedies under these Conditions \n            are in addition to its rights and remedies implied by statute and \n            common law."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:6.0}"] },
+                      { "type": "text", "children": ["{b:TITLE AND RISK}"] }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "indented-content inner-indented-content justified"
+                },
+                "children": [
+                  "Title and risk in the Goods shall pass to the Contractor on completion of delivery."
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "legal-table justified"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:7.0}"] },
+                      { "type": "text", "children": ["{b:PRICE AND PAYMENT}"] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:7.1}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The price of the Goods shall be the price set out in the Order."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:7.2}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The price of the Goods (a) excludes amounts in respect of value added tax (VAT), which the Contractor shall additionally be liable to pay to the Supplier at the prevailing rate, subject to the \n            receipt of a valid VAT invoice; and (b) includes the costs of \n            packaging, insurance and carriage of the Goods."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:7.3}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Contractor shall pay correctly rendered invoices within [30] days of receipt of the invoice. Payment shall be made to the bank account nominated in writing by the Supplier."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:7.4}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "If a party fails to make any payment due to the other under this Contract by the due date for payment, then the defaulting party",
+                          "shall pay interest on the overdue amount at the rate of [4]% per cent per annum above Bank of England\u2019s base rate from time to time. Such interest shall accrue on a daily basis from the due date until actual payment of the overdue amount, whether before or after \n            judgment. The defaulting party shall pay the interest together with \n            the overdue amount. This clause shall not apply to payments the \n            defaulting party disputes in good faith."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:7.5}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Contractor may at any time, without limiting any of its other rights or remedies, set off any liability of the Supplier to the Contractor against any liability of the Contractor to the Supplier."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:8.0}"] },
+                      { "type": "text", "children": ["{b:INDEMNITY}"] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:8.1}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier shall keep the Contractor indemnified against all \n            liabilities, costs, expenses, damages and losses (including but not \n              limited to any direct, indirect or consequential losses, loss of \n              profit, loss of reputation and all interest, penalties and legal \n              costs (calculated on a full indemnity basis) and all other \n              reasonable professional costs and expenses) suffered or incurred \n              by the Contractor as a result of or in connection with:(a) any \n              claim made against the Contractor for actual or alleged \n              infringement of a third party\u2019s intellectual property rights \n              arising out of or in connection with the supply or use of the \n              Goods, to the extent that the claim is attributable to the acts or \n              omissions of the Supplier, its employees, agents or \n              subcontractors; (b) any claim made against the Contractor by a \n              third party for death, personal injury or damage to property \n              arising out of or in connection with defects in Goods, to the \n              extent that the defects in the Goods are attributable to the acts \n              or omissions of the Supplier, its employees, agents or subcontractors; and (c) any claim made against the Contractor by a third party arising out of or in connection with the supply of the Goods, to the extent that such claim arises out of the breach,  negligent performance or failure or delay in performance of this Contract by the Supplier, its employees, agents or subcontractors. This Clause 8 shall survive termination of the Contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:9.0}"] },
+                      { "type": "text", "children": ["{b:INSURANCE}"] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:9.1}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "During the term of this Contract and for a period of 6 years  thereafter, the Supplier shall maintain in force, with a reputable insurance company, professional indemnity insurance, product \n            liability insurance and public liability insurance to cover the \n            liabilities that may arise under or in connection with the Contract, \n            and shall, on the Contractor\u2019s request, produce both the insurance \n            certificate giving details of cover and the receipt for the current \n            year\u2019s premium in respect of each insurance."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:10.0}"] },
+                      { "type": "text", "children": ["{b:TERMINATION}"] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:10.1}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Contractor may terminate this Contract in whole or in part at any time before delivery with immediate effect by giving the Supplier written notice, whereupon the Supplier shall discontinue all work on the Contract. The Contractor shall pay the Supplier fair and reasonable compensation for any work in progress on the Goods at \n            the time of termination, but such compensation shall not include loss of anticipated profits or any consequential loss."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:10.2}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Without limiting its other rights or remedies, the Contractor may terminate this Contract with immediate effect by giving written notice to the Supplier if (a) the Supplier commits a material breach of any term of this Contract and (if such a breach is remediable) fails to remedy that breach within 14 days of that party being \n            notified in writing to do so; (b) the Supplier takes any step or action in connection with its entering administration, provisional liquidation or any composition or arrangement with its creditors (other than in relation to a solvent restructuring), being wound up (whether voluntarily or by order of the court, unless for the purpose of a solvent restructuring), having a receiver appointed to any of its assets or ceasing to carry on business or, if the step or action is taken in another jurisdiction, in connection  with any analogous procedure in the relevant jurisdiction; (c) the Supplier takes any step or action in connection with the Supplier being made bankrupt, entering any composition or arrangement with his creditors, having a receiver appointed to any of his assets, or ceasing to carry on business or if the step or action is taken in another jurisdiction, in connection with any analogous \n              procedure in the relevant jurisdiction; (d) the Supplier suspends, \n              or threatens to suspend, or ceases or threatens to cease to carry on all or a substantial part of its business; or (e) the Supplier\u2019s financial position deteriorates to such an extent that in the Contractor\u2019s opinion the Supplier\u2019s capability to adequately fulfil its obligations under this Contract has been placed in jeopardy."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:10.3}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Termination of the Contract, however arising, shall not affect any of the parties\u2019 rights and remedies that have accrued as at termination. Clauses that expressly or by implication survive termination of this Contract shall continue in full force and effect."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:11.0}"] },
+                      { "type": "text", "children": ["{b:FORCE MAJEURE}"] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Neither party shall be in breach of this Contract nor liable for delay in performing, or failure to perform, any of its obligations under it if such delay or failure results from an event, circumstance or cause beyond its reasonable control. If the period of delay or non-performance continues for 4 weeks, the party not affected may terminate this Contract by giving 28 days written notice to the affected party."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:12.0}"] },
+                      { "type": "text", "children": ["{b:GENERAL}"] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:12.1}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Assignment and other dealings The Contractor may at any time assign, transfer, mortgage, charge, subcontract or deal in any other manner with any or all of its rights or obligations under the Contract. The Supplier may not assign, transfer, mortgage, charge, subcontract, declare a trust over or deal in any other manner with any or all of its rights or obligations under this Contract without the prior written consent of the Contractor."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:12.2}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Entire agreement. This Contract constitutes the entire agreement between the parties and supersedes and extinguishes all previous agreements, promises, assurances, warranties, representations and understandings between them, whether written or oral, relating to its subject matter."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:12.3}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Variation. No variation of the Contract, including any extra charge or additional terms and conditions, shall be effective unless agreed in writing and signed by the Contractor."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:12.4}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Waiver. No failure or delay by a party to exercise any right or remedy provided under this Contractor by law shall constitute a waiver of that or any other right or remedy, nor shall it prevent or restrict the further exercise of that or any other right or remedy. No single or partial exercise of such right or remedy shall prevent or restrict the further exercise of that or any other right or remedy."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:12.5}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Severance. If any provision or part-provision of this Contract is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable. If such modification is not possible, the relevant provision or part-provision shall be deemed deleted. Any modification to or deletion of a provision or part-provision under this clause shall not affect the validity and enforceability of the rest of the Contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "props": { "className": "first-col" }, "children": ["{b:12.6}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Governing law and Jurisdiction. The Contract, and any dispute or claim (including non-contractual disputes or claims) arising out of or in connection with it or its subject matter or formation, shall be governed by and construed in accordance with the law of England. Each party irrevocably agrees that the courts of England shall have exclusive jurisdiction to settle any dispute"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "coverpage",
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text edit-document-title"
+                },
+                "children": [
+                  "{b:Schedule 1}",
+                  "{b:Drawings and Specifications}"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "view",
+                "props": { "editable": false },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "fileManager",
+                    "props": {
+                      "className": "edit-document-table full-width table"
+                    },
+                    "children": [
+                      {
+                        "name": "view",
+                        "type": "thead",
+                        "props": {
+                          "className": "edit-document-table-row"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": ["{b:Document Name}"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": ["{b:Category}"]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [" "]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [" "]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "children": [
+                      {
+                        "type": "link",
+                        "code": "download_all_files",
+                        "name": "text",
+                        "children": ["Download all"]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

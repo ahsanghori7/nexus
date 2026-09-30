@@ -1,0 +1,3745 @@
+[
+  {
+    "footer": {
+      "company_name": "",
+      "subcontract": ""
+    },
+    "header": {
+      "address": [],
+      "company_name": "",
+      "company_reg": "",
+      "logo": "",
+      "web_address": ""
+    },
+    "name": "document",
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries purple"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Order No}: {OrderReference}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Order Date}: {Date}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:PURCHASE ORDER}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{br}",
+                  "This Order is placed subject to the terms and conditions attached hereto and the Purchaser is only willing to contract on this basis."
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table full-width"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Supplier Details}",
+                          "{br}{br}",
+                          "{b:The Supplier}: {TheSupplier}",
+                          "{br}",
+                          "{b:Address} {RegisteredAddress}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{br}",
+                          "{b:Delivery Date/Site Details:}",
+                          "{br}{br}",
+                          "{DeliveryDate}",
+                          "[]",
+                          "[]"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:The Purchaser and Purchaser Address:}",
+                          "{br}{br}",
+                          "{NameAcornPurchaserEntity}",
+                          "{br}{br}",
+                          "{b:Invoice Address}",
+                          "{br}{br}",
+                          "{BillingAddress}",
+                          "{br}{br}",
+                          "{b:Invoice E-Mail}",
+                          "{br}{br}",
+                          "{BillingEmail}",
+                          "{br}{br}",
+                          "All invoices must be issued to the Invoice Address and Invoice email stated above.",
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:The Site :} {ProjectName}",
+                          "{br}{br}",
+                          "{b:Site Address:} {SiteAddress}",
+                          "{br}{br}",
+                          "{b:Site Tel:} {SiteTelephone}",
+                          "{br}{br}",
+                          "{b:Site contact details}",
+                          "{br}{br}",
+                          "{b:Name:} {theContractor}",
+                          "{br}{br}",
+                          "{b:Role:} {SiteRole}",
+                          "{br}{br}",
+                          "{b:Tel:} {SubTelephone}",
+                          "{br}{br}",
+                          "{b:Email:} {EmailAddress}",
+                          "{br}{br}",
+                          "All delivery tickets MUST be signed by the Site Manager, or other approved Acorn personnel only."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries purple"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b: Order Summary}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table full-width"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Item Details}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Item Summary}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Qty}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Unit}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Value}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row centered-text"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "[]"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table full-width"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Quote Ref Nr (if appl.):}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{QuoteRefNrl}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:The Order Price}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{OrderPrice}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{br}",
+                  "{b:Specification reference and date (this includes Drawing reference/dates as follows)}",
+                  "{SubPurchaserWorks}",
+                  "Refer to Schedule 1 for documents and details",
+                  "{b:Purchaser's Addendum Terms and Conditions:}",
+                  "{AddendumConditions}",
+                  "Order issued by, {NameAcornEntity} , {UserName}"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:TERMS & CONDITIONS}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "1."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Interpretation}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "1.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Definitions:}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Purchaser's Addendum Terms and Conditions}: the Purchaser's addendum terms and conditions as set out in the Purchase Order in respect of the purchase of the Goods."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Business Day}: a day (other than a Saturday, Sunday or public holiday) when banks in London are open for business."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Conditions}: the terms and conditions set out in this document as amended from time to time in accordance with clause 15.2."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Contract}: the contract between the Purchaser and the Supplier for the supply of Goods and/or Services in accordance with the Purchase Order, any Purchaser's Addendum Terms and Conditions and these Conditions."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Deliverables}: all documents, products and materials developed by the Supplier or its agents, Purchasers and employees as part of or in relation to the Services in any form or media, including drawings, maps, plans, diagrams, designs, pictures, data, specifications and reports (including drafts)."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Delivery Date}: the date or where delivery is to take place by instalments the dates specified in the Purchase Order, or, if none is specified, as may be agreed between the Purchaser and the Supplier from time to time."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Delivery Location}: the address for delivery of Goods as set out in the Purchase Order."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Goods}: the goods (or any part of them) set out in the Purchase Order."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Goods Specification}: any specification for the Goods as referred to in the Purchase Order and any associated plans or drawings provided to the Supplier by the Purchaser (in Schedule 1 of this Contract or otherwise) in respect of the same."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Group Company}: means, in relation to the Purchaser, any direct or indirect subsidiary or any direct or indirect holding company [from time to time OR at the date of this agreement] or any such subsidiary of any such holding company or any such holding company of such subsidiary [from time to time OR at the date of this agreement], \"subsidiary\" and \"holding company\" having the meanings defined by Section 1159 of the Companies Act 2006."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Purchase Order}: the Purchaser's order for the Goods and/or Services, as set out in the Purchaser's purchase order form."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Service Specification}: the description or specification for the Services set out in the Purchase Order."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Services}: the services, including the Deliverables, supplied by the Supplier to the Purchaser as set out in the Service Specification (in Schedule 1 of this Contract)."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Site Manager}: the person(s) named in the Purchase Order, these parties named (and their contact details) may be varied from time to time upon written confirmation from the Purchaser to the Supplier by an authorised member of the Purchaser's personnel."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row pad-20"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Supplier}: the person or firm specified in the Purchase Order from whom the Purchaser purchases the Goods and/or Services."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "1.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "A reference to a statute or statutory provision is a reference to such statute or provision as amended or re-enacted. A reference to a statute or statutory provision includes any subordinate legislation made under that statute or statutory provision, as amended or re-enacted. Any phrase introduced by the terms including, include, in particular or any similar expression shall be construed as illustrative and shall not limit the sense of the words preceding those terms; and a reference to writing or written includes emails."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "1.3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Unless otherwise agreed by the Purchaser in writing, if this Purchase Order is for Plant Hire, The Model Conditions for the Hiring of Plant agreed between the Federation of Civil Engineering Contractors and the Construction Plant-hire Association will apply."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:2.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Basis of contract}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "2.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "These Conditions apply to the Contract to the exclusion of any other terms that the Supplier seeks to impose or incorporate, or which are implied by trade, custom, practice or course of dealing."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "2.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Only those Purchase Orders received from the Purchaser's purchasing department and containing a valid purchase order number shall constitute an offer by the Purchaser to purchase the Goods and/or Services in accordance with these Conditions."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "2.3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Purchase Order shall be deemed to be accepted on the earlier of (a) the Supplier issuing a written acceptance of the Purchase Order; and (b) the Supplier doing any act consistent with fulfilling the Purchase Order, at which point the Contract shall come into existence."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "2.4"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Supplier waives any right it might otherwise have to rely on any term endorsed upon, delivered with or contained in any documents of the Supplier that is inconsistent with these Conditions."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "2.5"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "All of these Conditions shall apply to the supply of both Goods and Services except where application to one or the other is specified."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "2.6"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The terms of this Purchase Order shall be unconditionally accepted by the Supplier's undertaking to deliver the goods, whether evidenced by writing or otherwise and any terms at variance with these terms contained within any quotation, written acceptance or delivery note issued by the Supplier shall be null and void."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "2.7"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "In the event any one or more of the Terms or Conditions of this Purchase Order are invalid the remainder shall remain in full force."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:3.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:The Goods}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "3.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Supplier shall ensure that the Goods shall (a) correspond with their description and any applicable Specification; (b) be of satisfactory quality (within the meaning of the Sale of Goods Act 1979, as amended) and fit for any purpose held out by the Supplier or made known to the Supplier by the Purchaser expressly or by implication, and in this respect the Purchaser relies on the Supplier's skill and judgement; (c) where they are manufactured products, be free from defects in design, material and workmanship and remain so for twelve (12) months after delivery; (d) comply with all applicable British Standards Institute standards and codes of practice and National House Building Council requirements; and (e) comply with all other applicable statutory and regulatory requirements relating to the manufacture, labelling, packaging, storage, handling and delivery of the Goods."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "3.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Supplier shall ensure that at all times it has and maintains all the licences, permissions, authorisations, consents and permits that it needs to carry out its obligations under the Contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "3.3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Purchaser may inspect and test the Goods at any time before delivery. The Supplier shall remain fully responsible for the Goods despite any such inspection or testing and any such inspection or testing shall not reduce or otherwise affect the Supplier's obligations under the Contract. If following such inspection or testing the Purchaser considers that the Goods do not conform or are unlikely to comply with the Supplier's undertakings at Clause 3.1, the Purchaser shall inform the Supplier and the Supplier shall immediately take such remedial action as is necessary to ensure compliance. The Purchaser may conduct further inspections and tests after the Supplier has carried out its remedial actions."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:4.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Delivery}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Supplier shall ensure that (a) the Goods are properly packed secured handled and transported in such manner as to enable them to reach their destination in good condition and to be offloaded safely (whether by hand or by mechanical means where the Goods exceed safe handling weights); (b) each delivery of the Goods is accompanied by a delivery note which shows the date of the Purchase Order, the Purchase Order number (if applicable), the type and quantity of the Goods (including the code number of the Goods, where applicable), special storage instructions (if any) and, if the Goods are being delivered by instalments, the outstanding balance of Goods remaining to be delivered; and (c) if the Supplier requires the Purchaser to return any packaging material to the Supplier, that fact is clearly stated on the delivery note. Any such packaging material shall be returned to the Supplier at the cost of the Supplier."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Supplier shall deliver the Goods (a) on the Delivery Date (or such other Business Day as the parties may agree); (b) at the Delivery Location; and (c) between the hours of 8:00 am and 4:30 pm, or as instructed by the Purchaser."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4.3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Delivery of the Goods shall be completed on the completion of unloading the Goods at the Delivery Location but the Goods shall not be deemed accepted by the Purchaser until the conditions in clause 5 have been complied with."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4.4"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Goods delivered other than in accordance with clauses 4.2 & 4.3 shall not be accepted by the Purchaser unless alternative arrangements have been agreed by the Purchaser in advance."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4.5"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Supplier shall not deliver the Goods in instalments unless so specified in the Purchase Order. Where the Goods are to be delivered by instalments, they may be invoiced and paid for separately. However, failure by the Supplier to deliver any one instalment on time or at all, or any defect in an instalment shall entitle the Purchaser to the remedies set out in clause 6."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4.6"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Goods shall be delivered with all relevant manufacturers' literature and with such further written information as may be necessary for their proper handling, use, processing, storage and maintenance."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4.7"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "In particular where the Goods are subject to the provisions of the Control of Substances Hazardous to Health Regulations the Supplier shall ensure that the Goods are accompanied on delivery by all necessary assessments, data sheets and associated documents."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4.8"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Supplier shall ensure that (a) where Goods delivered by a vehicle utilising a mechanical off-loading facility, the Supplier shall ensure that the operator of the vehicle holds an appropriate competency certificate (e.g. Construction Industry Training Board for safe operation) and shall produce appropriate evidence when reasonably requested so to do by the Purchaser; and (b) all vehicles used for the delivery of Goods to the Purchaser by the Supplier shall be adequately and appropriately insured for that purpose."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "4.9"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "All  personnel  used  by  the  Supplier  to  deliver  the  Goods,  directly  or otherwise,  shall  wear  as  a  minimum  the  following  Personal  Protective Clothing/Equipment (a) a high visibility vest or coat; (b) steel toe-cappedand steel midsole safety footwear; and (c) safety helmet."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:5.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b: Acceptance and defective goods}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Goods shall be not deemed accepted by the Purchaser until (a) the Delivery Note to which the Goods relate has been signed for by an authorised member of the Purchaser’s personnel (where the Delivery Location is a construction site, the Purchaser’s authorised personnel shall be the Purchaser’s Site Manager or Assistant Site Manager); and (b) it has had a reasonable time to inspect such Goods following Delivery, or, in the case of a latent defect in the Goods, until a reasonable time after the latent defect has become apparent."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "5.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Goods delivered other than in accordance with clauses 4.2 & 4.3 shall not be accepted by the Purchaser unless alternative arrangements have been agreed by the Purchaser in advance."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:6.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Remedies }"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "6.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "If the Goods are not accepted in accordance with clause 5, or if the Supplier does not comply with the undertakings set out in clauses 3.1 or 4, then, without limiting any of its other rights or remedies, and whether or not it has accepted the Goods, the Purchaser may exercise any one or more of the following remedies (a) terminate the Contract; (b) reject the Goods (in whole or in part) and return them to the Supplier at the Supplier's own risk and expense; (c) require the Supplier to repair or replace the rejected Goods, or to provide a full refund of the price of the rejected Goods (if paid); (d) refuse to accept any subsequent delivery of the Goods which the Supplier attempts to make; (e) recover from the Supplier any costs incurred by the Purchaser in obtaining substitute goods similar to the Goods from a third party; and (f) claim damages for any other costs, loss or expenses incurred by the Purchaser which are in any way attributable to the Supplier's failure to carry out its obligations under the Contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "6.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "These Conditions shall apply to any repaired or replacement Goods supplied by the Supplier."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "6.3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Purchaser's rights and remedies under these Conditions are in addition to its rights and remedies implied by statute and common law. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:7.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Title and risk }"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "7.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Subject to clause 7.2, title and risk in the Goods shall pass to the Purchaser on acceptance of the Goods in accordance with clause 5. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "7.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Where the Purchaser has agreed in a Purchase Order that it shall pay for the Goods in advance of delivery (a) title in the Goods shall pass to the Purchaser upon receipt, by the Supplier, of payment by the Purchaser under the relevant invoice; (b) risk in the Goods shall pass on acceptance of the Goods in accordance with clause 5; and (c) where required by the Purchaser, the Supplier shall enter into a vesting certificate (in a form suitable to the Purchaser) in respect of those Goods."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:8.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b: Supply of Services }"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Supplier shall supply the Services to the Purchaser in accordance with the Service Specification in all material respects. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Supplier shall meet any performance dates for the Services specified in the Purchase Order and time is of the essence in relation to any of those performance dates. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Supplier reserves the right to amend the Service Specification if necessary to comply with any applicable law or regulatory requirement, or if the amendment shall not materially affect the nature or quality of the Services, and the Supplier shall notify the Purchaser in any such event. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.4"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Supplier warrants to the Purchaser that the Services shall be provided using reasonable care and skill. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "8.5"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Supplier shall maintain complete and accurate records of the time spent and materials used by the Supplier in providing the Services, and the Supplier shall allow the Purchaser to inspect such records at all reasonable times on request. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:9.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b: Purchaser's obligations }"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "9.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Purchaser shall (a) provide the Supplier with reasonable access at reasonable times to the Purchaser's premises and/or site locations notified to the Supplier from time to time for the purpose of providing the Services; and (b) provide such necessary information for the provision of the Services as the Supplier may reasonably request.  "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:10.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b: Price and payment }"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "10.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Subject to clause 15.2, the price of the Goods shall be the price set out in the Purchase Order.  "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "10.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The price of the Goods (a) excludes amounts in respect of value added tax (VAT), which the Purchaser shall additionally be liable to pay to the Supplier at the prevailing rate, subject to the receipt of a valid VAT invoice; and (b) includes the costs of packaging, insurance and carriage of the Goods. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "10.3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The charges for the Services shall be set out in the Purchase Order, and shall be the full and exclusive remuneration of the Supplier in respect of the performance of the Services. Unless otherwise agreed in writing by the Purchaser, the charges shall include every cost and expense of the Supplier directly or indirectly incurred in connection with the performance of the Services. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "10.4"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "No extra charges shall be effective unless agreed in writing with the Purchaser. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "10.5"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "At any time before: (i) the fifth day of a calendar month; or (ii) the next Business Day immediately preceding the fifth day if the fifth day falls on a non-Business Day, the Supplier may invoice the Purchaser for the price of the Goods accepted by the Purchaser in the preceding calendar month. In respect of Services, the Supplier shall invoice the Purchaser on completion of the Services. The Supplier shall ensure that the invoice (a) is sent electronically and delivered to the email address(es) stipulated on the Purchase Order; and (b) includes the date of the Purchase Order, the invoice number, the Purchaser's order number, the Supplier's VAT registration number, the Delivery Location, related delivery note signed by the Purchaser and any supporting documents that the Purchaser may reasonably require. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "10.6"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Invoices properly issued in accordance with clause 10.5 relating to Goods delivered in the preceding calendar month, and received by the Purchaser no later than: (i) the fifth day of a calendar month; or (ii) the  Business Day immediately preceding the fifth day if the fifth day falls on a non-Business Day, shall be paid by the end of that calendar month. Invoices received by the Purchaser: (i) after the fifth day of a calendar month: or (ii) the Business Day immediately preceding the fifth day if the fifth day falls on a non-Business Day, shall be paid by the end of the following calendar month. The Purchaser and Supplier agree that the Purchaser shall not lose entitlement to any discount agreed in the Purchase Order in the event that payment is made at the end of the following calendar month.  "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "10.7"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "If a party fails to make any payment due to the other under the Contract by the due date for payment, then the defaulting party shall pay interest on the overdue amount at the rate of 4% per annum above National Westminster Bank PLC's base rate from time to time. Such interest shall accrue on a daily basis from the due date until actual payment of the overdue amount, whether before or after judgment. The defaulting party shall pay the interest together with the overdue amount. This clause shall not apply to payments the defaulting party disputes in good faith.  "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "10.8"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Purchaser may at any time, without limiting any of its other rights or remedies, set off any liability of the Supplier to the Purchaser, or any liability of the Supplier to a Group Company, against any liability of the Purchaser to the Supplier.   "
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:11.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b: Confidentiality and Intellectual Property  }"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "11.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Supplier acknowledges that (a) all materials, equipment, tools, drawings, plans, Specifications and any other documents provided to the Supplier by or on behalf of the Purchaser ({b:Purchaser Materials}) and all rights in the Purchaser Materials are and shall remain the exclusive property of the Purchaser; and (b) and such documents shall not be copied or disclosed to any third party by the Supplier without the Purchaser’s written consent. In the event that such consent is given the Supplier shall impose the same obligations upon the third party as those imposed on it by this clause 11.1. Such documents shall be returned to the Purchaser immediately upon receipt of a written request by the Purchaser. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "11.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Supplier shall not without the Purchaser’s written consent make, or permit to be made, for the purposes of publication any visual record or copy of the Purchaser Materials. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:12.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b: Indemnity  }"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "12.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Supplier shall keep the Purchaser indemnified against all liabilities, costs, expenses, damages and losses (including but not limited to any direct, indirect or consequential losses, loss of profit, loss of reputation and all interest, penalties and legal costs (calculated on a full indemnity basis) and all other reasonable professional costs and expenses) suffered or incurred by the Purchaser as a result of or in connection with (a) any claim made against the Purchaser for actual or alleged infringement of a third party's intellectual property rights arising out of or in connection with the supply or use of the Goods, or receipt use or supply of the Services to the extent that the claim is attributable to the acts or omissions of the Supplier, its employees, agents or subPurchasers; (b) any claim made against the Purchaser by a third party for death, personal injury or damage to property arising out of or in connection with defects in Goods, to the extent that the defects in the Goods are attributable to the acts or omissions of the Supplier, its employees, agents or subPurchasers; and (c) any claim made against the Purchaser by a third party arising out of or in connection with the supply of the Goods or the Services, to the extent that such claim arises out of the breach, negligent performance or failure or delay in performance of the Contract by the Supplier, its employees, agents or subPurchasers.  "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "12.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "This clause 12 shall survive termination of the Contract."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:13.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b: Insurance  }"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          ""
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "During the term of the Contract and for a period of 6 years thereafter, the Supplier shall maintain in force, with a reputable insurance company, professional indemnity insurance, product liability insurance and public liability insurance to cover the liabilities that may arise under or in connection with the Contract, and shall, on the Purchaser's request, produce both the insurance certificate giving details of cover and the receipt for the current year's premium in respect of each insurance.  "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:14.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Termination}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "14.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "The Purchaser may terminate the Contract in whole or in part at any time before delivery with immediate effect by giving the Supplier written notice, whereupon the Supplier shall discontinue all work on the Contract. The Purchaser shall pay the Supplier fair and reasonable compensation for any work in progress on the Goods at the time of termination, but such compensation shall not include loss of anticipated profits or any consequential loss."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "14.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Without limiting its other rights or remedies, the Purchaser may terminate the Contract with immediate effect by giving written notice to the Supplier if (a) the Supplier commits a material breach of any term of the Contract and (if such a breach is remediable) fails to remedy that breach within fourteen (14) days of that party being notified in writing to do so; (b) the Supplier seeks to increase the price for Goods set out in a Purchase Order in breach of clause 15.2; (c) the Supplier takes any step or action in connection with its entering administration, provisional liquidation or any composition or arrangement with its creditors (other than in relation to a solvent restructuring), being wound up (whether voluntarily or by order of the court, unless for the purpose of a solvent restructuring), having a receiver appointed to any of its assets or ceasing to carry on business; (d) the Supplier takes any step or action in connection with the Supplier being made bankrupt, entering any composition or arrangement with his creditors, having a receiver appointed to any of his assets, or ceasing to carry on business; or (e) the Supplier suspends, or threatens to suspend, or ceases or threatens to cease to carry on all or a substantial part of its business."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "14.3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Termination of the Contract, however arising, shall not affect any of the parties' rights and remedies that have accrued as at termination."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "14.4"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Clauses that expressly or by implication survive termination of the Contract shall continue in full force and effect."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:15.}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:General}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "15.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Assignment and other dealings.} The Purchaser may at any time assign, transfer, mortgage, charge, subcontract or deal in any other manner with any or all of its rights or obligations under the Contract. The Supplier may not assign, transfer, mortgage, charge, subcontract, declare a trust over or deal in any other manner with any or all of its rights or obligations under this Contract without the prior written consent of the Purchaser."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "15.1"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Entire agreement.} The Contract constitutes the entire agreement between the parties and supersedes and extinguishes all previous agreements, promises, assurances, warranties, representations and understandings between them, whether written or oral, relating to its subject matter."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "15.2"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Variation.} The Purchaser's authorised site personnel may at their sole discretion agree with the Supplier's personnel to amend the delivery time(s) stipulated in the Purchase Order. The Purchaser may without additional charge by the Supplier defer the delivery time(s) stipulated in the Purchase Order for such period or periods as may be necessary if the Purchaser is unable to accept delivery of the Goods as a result of civil commotion, local combination of workmen, strike or lockout or of any other cause which could not reasonably be foreseen, and which is beyond the Purchaser's reasonable control. The Purchaser may, by written instruction, vary any of the provisions of the Purchase Order and the Supplier shall forthwith comply with any such instruction. The Supplier shall be entitled to reasonable compensation for complying with such instruction and a fair valuation of the variation shall be determined by the Purchaser initially by reference to the Supplier's original prices and cost information. Where these are inappropriate, a fair and reasonable valuation shall be determined by agreement. No other variation or amendment to any provision of the Contract shall be permitted. In particular and without limitation, under no circumstances will the Supplier be permitted to vary the prices set out in a Purchase Order once that Purchase Order has been accepted."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "15.3"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Waiver.} Except as set out in clause 2.4, no failure or delay by a party to exercise any right or remedy provided under the Contract or by law shall constitute a waiver of that or any other right or remedy, nor shall it prevent or restrict the further exercise of that or any other right or remedy. No single or partial exercise of such right or remedy shall prevent or restrict the further exercise of that or any other right or remedy."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "15.4"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Severance.} If any provision or part-provision of the Contract is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable. If such modification is not possible, the relevant provision or part-provision shall be deemed deleted. Any modification to or deletion of a provision or part-provision under this clause shall not affect the validity and enforceability of the rest of the Contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "15.5"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Notices.} Any notice or other communication given to a party under or in connection with the Contract shall be in writing, addressed to that party at its registered office (if it is a company) or its principal place of business (in any other case) or such other address as that party may have specified to the other party in writing and shall be delivered personally, or sent by pre-paid first class post or other next working day delivery service or commercial courier."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "15.6"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Third party rights.} No one other than a party to the Contract [and their permitted assignees] shall have any right to enforce any of its terms."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "15.7"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Governing law.} The Contract, and any dispute or claim (including non-contractual disputes or claims) arising out of or in connection with it or its subject matter or formation, shall be governed by and construed in accordance with the law of England and Wales."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "15.8"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Jurisdiction.} Each party irrevocably agrees that the courts of England and Wales shall have exclusive jurisdiction to settle any dispute or claim (including non-contractual disputes or claims) arising out of or in connection with the Contract or its subject matter or formation. "
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "15.9"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Inspection and Testing} (a) The Supplier shall at no cost to the Purchaser carry out all such inspections, tests and operate such quality control procedures that may be necessary & / or the Purchaser specifies as necessary for ensuring that all goods comply with Clause 8 of this Purchase Order.; (b) The Purchaser and parties authorised by the Purchaser shall at all reasonable times have access to the premises of the Supplier and his sub-contractors and suppliers in order to monitor progress, carry out inspections and witness tests; (c) The Supplier shall repair and replace, without cost or delay, anything found defective during inspection; and (d) Where the goods are subject to inspection, test, approval or acceptance by the Purchaser’s client or employer, his agents or representatives, no approval or acceptance of the goods shall be binding on the Purchaser until such inspection, testing, approval or acceptance by such an individual has been made or given. The exercise of the foregoing rights and obligations shall not relieve the Supplier from his obligations under the terms of this Purchase Order.  The Purchaser is at all times relying on the skill and knowledge of the Supplier."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "15.10"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Specification} (a) All the goods shall be of the description, quality and quantity set out in this Purchase Order and in the absence of any other specification, all the goods shall be new, free from defects and of good quality and shall comply with all relevant Standards and specifications and shall in all cases be to the reasonable satisfaction of the Purchaser and if appropriate of the Purchaser’s client or employer, his agents or representatives and be fit for the purpose of the Contract works or other purpose as described in or inferred from this Purchase Order.  The Supplier shall satisfy himself that no materials or substances generally known to be or suspected of being deleterious by the Supplier’s trade including substances which have been referred to by the B.R.E. as being hazardous to health and safety or to durability of the goods or substances which are not in accordance with current British Standards Specifications and Codes of Practice have been incorporated in the goods to be supplied under this Purchaser Order. Any samples approved by the Purchaser shall be held to be representative in all respects of the goods offered; (b) Where any documentation provided by the Supplier defines any performance characteristic of the goods, then the goods shall additionally meet any such definition; (c) The Supplier shall appropriately pack and protect the goods such that proper protection shall be afforded to the goods to the point of final installation of the goods from the rigours of transportation multiple handling, on site distribution and, where appropriate, deep sea shipment. Any method of packing stipulated by the Purchaser in this Purchase Order is entirely without prejudice to the Supplier’s general obligations stated above and it is the responsibility of the Supplier to advise the Purchaser in the event that any stipulated method of packing is in any respect inadequate. Notwithstanding the generality of the foregoing the Supplier is also required to pack the goods suitable for forklift handling, maximum capacity 2 tonnes per lift, unless agreed to the contrary, and in the case of containerised freight the Supplier shall provide all necessary dunnage, lashing and strapping."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [
+                          "15.11"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Health and Safety} The Purchase Order is conditional on the Supplier complying with the duties imposed on it by the Health and Safety at work etc. Act 1974 and any amendment thereto as it may apply to the goods. The Supplier shall meet the requirements of all relevant health and safety legislation both in respect of the goods supplied and the manner of their delivery."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table full-width"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Schedule 1}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{b:Drawings and/or Specifications}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-container"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "centered-text"
+                    },
+                    "children": [
+                      "{b:File Manager}"
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "editable": false
+                    },
+                    "children": [
+                      {
+                        "name": "view",
+                        "children": [
+                          {
+                            "type": "link",
+                            "code": "download_all_files",
+                            "name": "text",
+                            "children": [
+                              "{bpnk:Download all}"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "fileManager",
+                        "props": {
+                          "className": "edit-document-table full-width table"
+                        },
+                        "children": [
+                          {
+                            "name": "view",
+                            "type": "thead",
+                            "props": {
+                              "className": "edit-document-table-row"
+                            },
+                            "children": [
+                              {
+                                "name": "text",
+                                "type": "column",
+                                "props": {
+                                  "className": "edit-document-table-column table-header"
+                                },
+                                "children": [
+                                  "{b:Document Name}"
+                                ]
+                              },
+                              {
+                                "name": "text",
+                                "type": "column",
+                                "props": {
+                                  "className": "edit-document-table-column table-header"
+                                },
+                                "children": [
+                                  "{b:Category}"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "view",
+                            "type": "row",
+                            "props": {
+                              "className": "edit-document-table-row"
+                            },
+                            "children": [
+                              {
+                                "name": "text",
+                                "type": "column",
+                                "props": {
+                                  "className": "edit-document-table-column justified"
+                                },
+                                "children": [
+                                  "{br}"
+                                ]
+                              },
+                              {
+                                "name": "text",
+                                "type": "column",
+                                "props": {
+                                  "className": "edit-document-table-column justified"
+                                },
+                                "children": [
+                                  "{br}"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "children": [
+                          {
+                            "type": "link",
+                            "code": "download_all_files",
+                            "name": "text",
+                            "children": [
+                              "{bpnk:Download all}"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

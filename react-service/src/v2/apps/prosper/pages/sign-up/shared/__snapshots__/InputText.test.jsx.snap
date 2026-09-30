@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputText Component takes a snapshot 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-item"
+  data-testid="mui-grid"
+  mb="0"
+>
+  <label
+    for="snapshot"
+    style="font-weight: bold; color: black;"
+  >
+    Snapshot Input
+  </label>
+  <div
+    class="MuiTextField-root "
+    data-testid="textfield"
+    inputprops="[object Object]"
+    type="text"
+  >
+    <div
+      class="MuiInputBase-root"
+    >
+      <input
+        id=""
+        name="snapshot"
+        placeholder="Test placeholder"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;

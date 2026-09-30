@@ -1,0 +1,30 @@
+.react-confirm-alert-overlay.overlay-react-confirm-alert {
+  .react-confirm-alert-body {
+    &.custom-ui {
+      &--success {
+        h1,
+        b {
+          color: $clink-green;
+        }
+        button.no {
+          border: none;
+          background-color: $clink-green;
+          color: $white;
+        }
+      }
+      &--error {
+        h1 {
+          color: $clink-pink;
+        }
+        b {
+          color: $clink-black;
+        }
+        button.no {
+          border: none;
+          background: $clink-pink;
+          color: $white;
+        }
+      }
+    }
+  }
+}

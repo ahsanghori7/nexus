@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddThresholdModal creates snapshot 1`] = `
+<dialog
+  class="MuiDialog-root"
+  data-testid="add-threshold-modal"
+  maxwidth="sm"
+>
+  <dialogtitle
+    class="MuiDialogTitle-root"
+    data-testid="modal-title"
+  >
+    approval-thresholds
+  </dialogtitle>
+  <dialogcontent
+    class="MuiDialogContent-root"
+    data-testid="modal-content"
+  >
+    <div
+      data-testid="mui-typography"
+      mb="2"
+      variant="body2"
+    >
+      threshold-group-text
+    </div>
+    <div
+      alignitems="center"
+      class="MuiGrid2-root"
+      data-testid="grid2"
+      spacing="2"
+      sx="[object Object]"
+      wrap="nowrap"
+    >
+      <div
+        class="MuiGrid2-root"
+        data-testid="grid2"
+        size="5"
+      >
+        <div
+          class="MuiTextField-root "
+          data-testid="textfield"
+          inputprops="[object Object]"
+          type="number"
+        >
+          <label
+            class="MuiInputLabel-root"
+            for="textfield-from-default"
+          >
+            From
+          </label>
+          <div
+            class="MuiInputBase-root"
+          >
+            <div
+              class="MuiInputAdornment-root MuiInputAdornment-positionStart"
+            >
+              <div
+                data-position="end"
+                data-testid="input-adornment"
+              >
+                £
+              </div>
+            </div>
+            <input
+              data-testid="threshold-from-input-0"
+              id="textfield-from-default"
+              type="number"
+              value=""
+              variant="outlined"
+            />
+            <div
+              class="MuiInputAdornment-root MuiInputAdornment-positionEnd"
+            >
+              <div
+                data-position="end"
+                data-testid="input-adornment"
+              >
+                <button
+                  class="MuiIconButton-root"
+                  data-testid="threshold-from-clear-0"
+                  role="button"
+                  sx="[object Object]"
+                  type="button"
+                >
+                  Clear
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid2-root"
+        data-testid="grid2"
+        size="5"
+      >
+        <div
+          class="MuiTextField-root "
+          data-testid="textfield"
+          inputprops="[object Object]"
+          type="number"
+        >
+          <label
+            class="MuiInputLabel-root"
+            for="textfield-to-default"
+          >
+            To
+          </label>
+          <div
+            class="MuiInputBase-root"
+          >
+            <div
+              class="MuiInputAdornment-root MuiInputAdornment-positionStart"
+            >
+              <div
+                data-position="end"
+                data-testid="input-adornment"
+              >
+                £
+              </div>
+            </div>
+            <input
+              data-testid="threshold-to-input-0"
+              id="textfield-to-default"
+              type="number"
+              value=""
+              variant="outlined"
+            />
+            <div
+              class="MuiInputAdornment-root MuiInputAdornment-positionEnd"
+            >
+              <div
+                data-position="end"
+                data-testid="input-adornment"
+              >
+                <button
+                  class="MuiIconButton-root"
+                  data-testid="threshold-to-clear-0"
+                  role="button"
+                  sx="[object Object]"
+                  type="button"
+                >
+                  Clear
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid2-root"
+        data-testid="grid2"
+        size="2"
+      >
+        <div
+          alignitems="center"
+          class="MuiBox-root"
+          data-testid="mui-box"
+          display="flex"
+          flexdirection="row"
+          gap="1"
+        >
+          <button
+            class="MuiIconButton-root"
+            data-testid="threshold-delete-row-0"
+            role="button"
+            type="button"
+          >
+            <svg
+              data-testid="delete-icon"
+            >
+              Delete
+            </svg>
+          </button>
+          <button
+            class="MuiIconButton-root"
+            data-testid="threshold-add-row-button"
+            role="button"
+            type="button"
+          >
+            <span
+              data-testid="mui-icon-Add"
+            >
+              Add
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      data-testid="threshold-over-value"
+    >
+      Over
+       
+      -
+    </div>
+  </dialogcontent>
+  <dialogactions>
+    <button
+      class="MuiButton-root"
+      data-testid="add-threshold-cancel-button"
+      type="button"
+    >
+      Cancel
+    </button>
+    <button
+      class="MuiButton-root MuiButton-contained"
+      data-testid="add-threshold-confirm-button"
+      type="button"
+      variant="contained"
+    >
+      confirm
+    </button>
+  </dialogactions>
+</dialog>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextEditor takes a snapshot 1`] = `
+<div
+  data-testid="mui-box"
+>
+  <div
+    data-testid="input-form-controlled"
+  >
+    <input
+      autocomplete="description"
+      control="[object Object]"
+      data-testid="input-description"
+      errors="[object Object]"
+      rules="[object Object]"
+      type="text"
+    />
+    <label>
+      Snapshot Test Label
+    </label>
+  </div>
+</div>
+`;

@@ -1,0 +1,6 @@
+composer.phar
+vendor/
+.env
+.idea
+.phplint-cache
+.php-cs-fixer.cache

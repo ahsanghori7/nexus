@@ -1,0 +1,157 @@
+.clink-form {
+  max-width: $app-width;
+
+  .field-holder {
+    padding: 0px 10px;
+    margin-bottom: 1.5rem;
+
+    .react-select__indicator-separator {
+      display: none;
+    }
+
+    &.dropzone-documents {
+      flex: 1 0 100%;
+      label.form-label {
+        font-weight: bold;
+      }
+      .list-group-item {
+        display: flex;
+        align-items: center;
+        .column-1,
+        .column-2,
+        .column-3 {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+
+        .column-3 {
+          height: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0rem;
+            bottom: auto;
+            border-radius: 20px;
+
+            svg:not(.no-legacy) {
+              bottom: auto;
+              right: auto;
+              overflow: hidden;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+      input[type='file'] {
+        border: initial;
+        padding: inherit;
+      }
+    }
+
+    &.type,
+    &.pricing-returned-date {
+      flex: 0 0 50%;
+    }
+
+    &.description,
+    &.project-image,
+    &.packages,
+    &.comments,
+    &.pricing-document {
+      flex: 1 0 100%;
+    }
+
+    &.pricing-document {
+      .radio-button-group {
+        display: inline-flex;
+        flex-wrap: unset;
+      }
+    }
+
+    &.site-postcode,
+    &.address {
+      margin-bottom: 0px;
+    }
+  }
+  &.tender-builder-form {
+    .package-name {
+      margin-bottom: 0;
+    }
+    .description-label {
+      margin-bottom: 15px;
+    }
+    .missing-trades {
+      margin: 0;
+      position: relative;
+      padding-top: 2.5rem;
+      padding-right: 0.9rem;
+
+      & + .cl-12 {
+        padding-top: 1.75rem;
+
+        .btn:not(.btn-sm) {
+          padding: 0.45rem 1.65rem;
+        }
+      }
+
+      label {
+        &.form-label {
+          position: absolute;
+          top: -0.25rem;
+          font-size: 1.15rem;
+
+          .sublabel {
+            color: $grey;
+            font-weight: initial;
+          }
+        }
+      }
+
+      .react-select__indicators {
+        display: none;
+      }
+    }
+    .submit-button-holder {
+      height: 95px;
+      button {
+        border-radius: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .clink-form {
+    .form-label {
+      min-width: 240px;
+    }
+
+    &.tender-builder-form {
+      .missing-trades {
+        flex: 1 0 100% !important;
+        padding-bottom: 0;
+
+        & + .cl-12 {
+          flex: 1 0 100% !important;
+          padding-top: 0;
+          height: 40px;
+          margin-top: 1.25rem;
+
+          .btn {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+        .react-select__placeholder {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

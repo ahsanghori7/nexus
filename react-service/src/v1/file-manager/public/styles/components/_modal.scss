@@ -1,0 +1,79 @@
+.modal-dialog {
+  .modal-content {
+    font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+    .modal-header {
+      padding: 40px 40px 4px 40px;
+      background-color: $white;
+      color: $clink-black;
+      text-align: start;
+      border-bottom: none;
+      .modal-title {
+        width: 100%;
+        font-weight: bold;
+      }
+      .modal-subtitle {
+        text-align: left;
+        font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+        letter-spacing: 0px;
+        color: $dark-grey;
+        opacity: 0.6;
+        font-size: 16px;
+      }
+    }
+    .modal-body {
+      padding: 0 40px 40px 40px;
+
+      label {
+        display: block;
+        font-size: 14px;
+
+        .required {
+          color: $clink-red;
+          display: inline-block;
+        }
+      }
+
+      #category-name {
+        font-size: 16px;
+        border: 1px solid #c6c5de;
+        border-radius: 4px;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+          @extend .rounded-pill;
+
+          margin: 0;
+          margin-left: 10px;
+          min-width: 100px;
+          font-weight: bold;
+
+          &:disabled {
+            color: $disabled-btn-color;
+            background-color: $disabled-btn-background;
+            border-color: $disabled-btn-background;
+          }
+        }
+      }
+
+      .delete-confirm-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: rgba($clink-red, 0.1);
+        margin: 8px auto 20px;
+
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}

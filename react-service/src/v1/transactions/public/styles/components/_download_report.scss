@@ -1,0 +1,29 @@
+.download-report-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 0;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: none;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .download-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 960px) {
+  .download-report-wrapper {
+    .download-button-wrapper {
+      justify-content: flex-start;
+      flex-basis: 100%;
+      margin-top: 20px;
+    }
+  }
+}

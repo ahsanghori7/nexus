@@ -1,0 +1,128 @@
+@import 'select-field';
+@import 'input';
+
+.clink-form {
+  .form-label {
+    font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    &.recommended {
+      position: relative;
+
+      .clink-form__label-copy {
+        flex-basis: 50%;
+      }
+
+      .clink-tooltip {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 14px;
+        color: $clink-orange;
+
+        span {
+          margin-left: 4px;
+          margin-right: 4px;
+        }
+      }
+
+      .clink-form__error-wrap {
+        position: absolute;
+        top: 70px;
+        left: 0;
+
+        .clink-form__error {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  .form-group {
+
+    input.form-control,
+    select.form-control {
+      @extend .clink-input !optional;
+    }
+
+    &.field-holder {
+      &__error {
+
+        label,
+        input,
+        input.form-control,
+        .react-select__control {
+          color: $clink-red;
+          border-color: $clink-red;
+
+          &::placeholder {
+            color: $clink-red;
+          }
+        }
+
+        svg {
+          color: $clink-red;
+
+          path {
+            fill: $clink-red;
+          }
+        }
+      }
+    }
+
+    .react-datepicker-wrapper {
+      display: block;
+
+      .react-datepicker__input-container {
+
+        input,
+        select {
+          @extend .clink-input !optional;
+        }
+      }
+    }
+  }
+
+  .submit-button-holder {
+    float: right;
+    margin-bottom: 0;
+    display: inline-flex;
+
+    .green-button {
+      margin-right: 8px;
+    }
+  }
+
+  .list-group {
+    margin-bottom: 24px;
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid $tender-purple-light;
+      height: 40px;
+      letter-spacing: 0px;
+      font-size: 16px;
+      line-height: 16px;
+      font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+
+      button:not(.no-legacy) {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        bottom: 5px;
+        margin: 0;
+
+        svg:not(.no-legacy) {
+          position: relative;
+          bottom: 0.19rem;
+          right: 0.09rem;
+        }
+      }
+    }
+  }
+}

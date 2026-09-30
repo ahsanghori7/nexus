@@ -1,0 +1,331 @@
+[
+  {
+    "footer": {
+      "company_name": "",
+      "subcontract": "",
+      "html": "<table width='100%' style='border-collapse:collapse; font-size:10px; margin-top:6px;'><tr><td colspan='2' style='border:1px solid #000; padding:6px;'><strong>Information Classification: Protected</strong></td><td style='border:1px solid #000; padding:6px; width:20%;'>MCL-COM-FR-4739</td><td colspan='2' style='border:1px solid #000; padding:6px; width:40%;'>ND109 Daywork Scedule</td></tr><tr><td style='border:1px solid #000; padding:6px;' colspan='3'>This document is uncontrolled if printed. Please always refer to TMW for the latest version</td><td style='border-right:1px solid #000; padding:0 4px; text-align:left; vertical-align:middle; white-space:nowrap;border:1px solid #000;'>Rev 1</td><td colspan='1' style='padding:0 4px; text-align:right; vertical-align:middle; white-space:nowrap;border:1px solid #000;'>Page {PAGENO} of {nbpg}</td></tr></table>"
+    },
+    "header": {
+      "address": [],
+      "company_name": "",
+      "company_reg": "",
+      "logo": "",
+      "web_address": ""
+    },
+    "name": "document",
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["{b:Contract:}"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{ProjectName}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["{b:Contract Number:}"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{ProjectReference}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["{b:Sub-Contractor:}"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "{SubContractorName}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{br}",
+                  "{b:A)}  {b:LABOUR}",
+                  "{br}",
+                  "{b:All-inclusive daywork rates per hour.}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table full-width"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [""]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column centered-text"
+                        },
+                        "type": "column",
+                        "children": ["{b:All-inclusive standard rate}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["{b:Tradesman 1}"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["{b:£}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["{b:Tradesman 2}"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["{b:£}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["{b:General Operative 1}"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["{b:£}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["{b:General Operative 2}"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["{b:£}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["{b:Designer}"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["{b:£}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{br}({b:no} percentage addition applies to the above \"all-inclusive\" labour rates){br}{br}It is deemed that \"all-inclusive\" labour daywork rates include for all labour costs, breaks, incidental costs, overheads and profit, as defined in the \"Definition of Prime Costs of Daywork\" issued by the Royal Institute of Chartered Surveyors. Daywork rates are chargeable on working time only and subject to all discounts within the Sub-Contract.{br}{br}Non-Productive Overtime addition shall only apply as set out below, for the avoidance of doubt when completing measured work, outside of contracted normal working hours, the below uplift to the Daywork rate stated, is deemed the only additional payment due in respect of the works undertaken."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified indented-content"
+                },
+                "children": [
+                  "1) \u00A0 \u00A0Saturday after 1.00pm, [  %] addition applied to standard rate above.",
+                  "2) \u00A0 \u00A0Sunday after 1.00pm, [  %] addition applied to standard rate above.",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{b:B)  MATERIALS AND GOODS}",
+                  "{br}",
+                  "Dayworks to be paid at cost plus percentage addition.{br}Cost is defined as the invoice price of materials inclusive of delivery to site, less any discounts.",
+                  "{br}",
+                  "Percentage addition \u00A0 \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 [    ] %",
+                  "{br}",
+                  "{b:C)  {u:PLANT}}",
+                  "{br}",
+                  "Dayworks to be paid at cost together with erection and dismantling plus percentage addition.",
+                  "Cost is defined as the invoice price of plant inclusive of delivery to site and any discounts.",
+                  "{br}",
+                  "Percentage addition \u00A0 \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 [    ] %"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

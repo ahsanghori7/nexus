@@ -1,0 +1,93 @@
+// Default theme style
+
+/*
+ * Reset default values if HTML and BODY to full width and height
+ */
+
+html, body {
+  min-height: 100vh;
+  height: auto;
+  padding: 0px;
+  @include font-lite;
+
+  a {
+    text-decoration: none !important;
+  }
+
+  ::placeholder {
+    color: #333;
+    opacity: 0.15; /* Firefox */
+  }
+
+  b, strong {
+    font-weight: bold !important;
+  }
+
+  .noPadding {
+    padding: 0px !important;
+  }
+
+}
+
+/*
+ * Main page content wrapper
+ */
+
+.c-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+  .c-main {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+
+    // Back-end main content wrapper
+    .layout-wrapper {
+      width: 100%;
+      height: auto;
+      padding: 5% 3% 5% 3%;
+
+      .c-box {
+        background: #fff;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        height: auto;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+
+        &.full {
+          width: 100%;
+        }
+
+      }
+
+    }
+
+  }
+
+  // Front-end main content wrapper
+  .c-content {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    height: auto;
+    margin-bottom: 80px;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 1199px) {
+
+  .c-wrapper {
+
+    .c-main {
+      margin-left: 0px;
+    }
+
+  }
+
+}

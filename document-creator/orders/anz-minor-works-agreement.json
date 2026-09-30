@@ -1,0 +1,589 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": {
+      "company_name": "",
+      "subcontract": ""
+    },
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "view",
+        "props": {
+          "className": "edit-document-container"
+        },
+        "children": [
+          {
+            "name": "text",
+            "props": {
+              "className": "centered-text"
+            },
+            "children": [
+              "{b:SUB-CONTRACT ORDER}",
+              "{br}",
+              "{br}"
+            ]
+          },
+          {
+            "name": "view",
+            "type": "table",
+            "props": {
+              "className": "table-documents-table full-width table big-table"
+            },
+            "children": [
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "ORDER NUMBER:"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{OrderReference}"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "SUB-CONTRACTOR'S NAME:"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{TheSupplier}"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "COMPANY NUMBER:"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{CompanyReg}"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "REGISTERED ADDRESS:"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{RegisteredAddress}"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "TRADING ADDRESS:"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "As above."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "text",
+            "children": [
+              "{br}",
+              "This Sub-Contract Order is placed upon the documents and details listed within Appendix \"A\" attached\nhereto and in accordance with the Standard Conditions of Sub-Contract (v4.1 February 2021).",
+              "{br}"
+            ]
+          },
+          {
+            "name": "view",
+            "type": "table",
+            "props": {
+              "className": "table-documents-table no-border table pad-bot-25"
+            },
+            "children": [
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{b:PROJECT TITLE & ADDRESS:}"                        ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{ProjectName}, {SiteAddress}"                        ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{b:SUB-CONTRACT WORKS:}"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{SubContractorWorks}"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{b:SUB-CONTRACT SUM:}",
+                      "(Lump Sum Basis)"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{OrderPrice}"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{b:DISCOUNT:}"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{DiscountApplied}"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{b:DATE FOR COMMENCEMENT:}"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{StartDate}"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{b:PERIOD FOR CARRYING OUT AND COMPLETING THE SUBCONTRACT WORKS:}"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{CompletionDate}"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{b:PERIOD REQUIRED FOR NOTICE\nTO COMMENCE WORKS ON SITE:}"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{NoticePeriod}"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{b:RETENTION:}"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{Retention}%"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{b:LIQUIDATED AND ASCERTAINED\nDAMAGES UNDER THE CONTRACT:}"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{DelayDamages} per week"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{b:DEFECTS LIABILITY PERIOD: }"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{RectificationPeriod}"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{b:DESIGN SCOPE:}"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{DesignScope}"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{b:COLLATERAL WARRANTIES:}"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{CollateralWarranty}"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{b:INSURANCES REQUIRED:}",
+                      "Insurance against injury to persons or property:",
+                      "Employers Liability ",
+                      "Contractors All Risks Insurance",
+                      "Professional Indemnity "
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{br}",
+                      "{Public/Product}",
+                      "{Employers}",
+                      "{ContractorsAll}",
+                      "{ProfessionalIndemnity}"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "table-documents-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{b:DAYWORK RATES:}"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props": {
+                      "className": "table-documents-column"
+                    },
+                    "children": [
+                      "{DayworkRates}"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+
+
+
+    ]
+  }
+]

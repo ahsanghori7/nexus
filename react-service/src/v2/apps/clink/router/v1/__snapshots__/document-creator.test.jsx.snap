@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clink/router/v1/document-creator should create snapshot of router configuration 1`] = `
+{
+  "path": "/document-creator",
+  "reactRouter": true,
+  "routes": [
+    {
+      "element": <MockLayout
+        breadCrumbItems={
+          [
+            {
+              "name": "project-breadcrumb",
+            },
+            {
+              "name": "tender-templates",
+              "rest": "issue_enquiry",
+            },
+          ]
+        }
+        title="document-creator"
+      >
+        <MockTemplate
+          docType="tender"
+          showForm={true}
+        />
+      </MockLayout>,
+      "path": "/template/:templateId/tender/:tenderId",
+    },
+    {
+      "element": <MockLayout
+        breadCrumbItems={
+          [
+            {
+              "name": "project-breadcrumb",
+            },
+            {
+              "name": "orders",
+              "rest": "orders",
+            },
+          ]
+        }
+        title="document-creator"
+      >
+        <MockTemplate
+          docType="order"
+          showForm={true}
+        />
+      </MockLayout>,
+      "path": "/template/:templateId/order/:tenderId",
+    },
+    {
+      "element": <MockLayout
+        breadCrumbItems={
+          [
+            {
+              "href": "/main-contractor/company-assets",
+              "label": "company-assets",
+              "name": "company-assets",
+            },
+            {
+              "href": "/main-contractor/company-assets/tender-templates",
+              "label": "tender-templates",
+              "name": "tender-templates",
+            },
+          ]
+        }
+        title="document-creator"
+      >
+        <MockTemplate />
+      </MockLayout>,
+      "path": "/template/:templateId",
+    },
+  ],
+}
+`;

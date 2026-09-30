@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clink/router/v1/index should create snapshot of router configuration 1`] = `
+[
+  {
+    "path": "/main-contractor",
+    "reactRouter": true,
+    "routes": [
+      {
+        "element": <_default
+          title="supply-chain"
+        >
+          <Unknown />
+        </_default>,
+        "path": "supply_chain",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={[]}
+          title="procurement-schedule"
+        >
+          <Unknown />
+        </_default>,
+        "path": "project/:slug/procurement_schedule",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={[]}
+          isFileManager={1}
+          state={1}
+          title="file-manager"
+        >
+          <Unknown />
+        </_default>,
+        "path": "/project/:slug/file_manager",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={[]}
+          title="file-manager"
+        >
+          <Unknown />
+        </_default>,
+        "path": "/project/:slug/file_manager/:folder",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={[]}
+          title="sent-tenders"
+        >
+          <Unknown
+            title="sent-tenders"
+          />
+        </_default>,
+        "path": "/project/:slug/issue_enquiry",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={[]}
+          title="quotes-tender-analysis"
+        >
+          <Unknown />
+        </_default>,
+        "path": "/project/:slug/quotes_tender",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={[]}
+          title="Edit Project Profile"
+        >
+          <Unknown
+            activeStep={0}
+          />
+        </_default>,
+        "path": "/projects/:slug/setup",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={[]}
+          title="Edit Project Profile"
+        >
+          <Unknown
+            activeStep={1}
+          />
+        </_default>,
+        "path": "/projects/:slug/setup/project_team",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={[]}
+          title="Edit Project Profile"
+        >
+          <Unknown
+            activeStep={2}
+          />
+        </_default>,
+        "path": "/projects/:slug/setup/scope_details",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={[]}
+          title="Edit Project Profile"
+        >
+          <Unknown
+            activeStep={3}
+          />
+        </_default>,
+        "path": "/projects/:slug/setup/reference_files",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={[]}
+          title="Edit Project Profile"
+        >
+          <Unknown
+            activeStep={4}
+          />
+        </_default>,
+        "path": "/projects/:slug/setup/work_packages",
+      },
+      {
+        "element": <_default
+          noReact={true}
+        />,
+        "path": "/cost-planning-tool",
+      },
+    ],
+  },
+  {
+    "path": "/document-creator",
+  },
+]
+`;

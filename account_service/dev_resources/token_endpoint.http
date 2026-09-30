@@ -1,0 +1,8 @@
+### POST OAUTH2 GET TOKEN
+POST http://account_service.local/v1/token
+Authorization: Basic admin password
+Content-Type: application/json;charset=utf-8
+
+{
+  "grant_type": "client_credentials"
+}

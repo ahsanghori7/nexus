@@ -1,0 +1,880 @@
+[
+  {
+    "footer": {
+      "company_name": "",
+      "subcontract": "",
+      "html": "<table width='100%' style='border-collapse:collapse; font-size:10px; margin-top:6px;'><tr><td colspan='2' style='border:1px solid #000; padding:4px; text-align:center;'>Information Classification:<br/>Protected</td><td style='border:1px solid #000; padding:4px; width:20%; text-align:center;'>MCL-COM-FR-4692</td><td colspan='2' style='border:1px solid #000; padding:4px; width:40%;'>Letter of Intent (Commercial Directors<br/>approval required)</td></tr><tr><td style='border:1px solid #000; padding:4px; text-align:center;' colspan='3'>This document is uncontrolled if printed. Please always refer to TMW for the latest<br/>version</td><td style='border:1px solid #000; padding:0 4px; text-align:center; vertical-align:middle; white-space:nowrap;'>Rev 1</td><td style='border:1px solid #000; padding:0 4px; text-align:center; vertical-align:middle; white-space:nowrap;'>Page {PAGENO} of {nbpg}</td></tr></table>"
+    },
+    "header": {
+      "address": [],
+      "company_name": "",
+      "company_reg": "",
+      "logo": "",
+      "web_address": "",
+      "html": ""
+    },
+    "name": "document",
+    "props": {
+      "className": "edit-document-document"
+    },
+    "options": {
+      "numbered_documents": true
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "align-right"
+                },
+                "children": [
+                  "{em:Please reply to:}",
+                  "McLaren",
+                  "11th Floor",
+                  "20 Churchill Place",
+                  "Canary Wharf",
+                  "London",
+                  "E14 5HJ"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{SubContractorName}",
+                  "{br}",
+                  "{SubContractorAddress}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "align-right"
+                },
+                "children": [
+                  "Date: {Date}",
+                  "{br}",
+                  "Ref: {ProjectReference}/LOI/{SubContractorName}/01"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{b:{u:For the attention of}} {SubContactName}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "Dear Sirs,"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{b:{u:Re; [XXX] and {ProjectName},}}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "We write to confirm that it is our intention to enter into a sub-contract agreement with yourselves to undertake and complete the {PackageName} package of works (‘the Subcontract Works’) as set out within the sub-contract documents attached under Schedule D of this letter(‘the Subcontract’), subject to us ourselves entering into contract (‘the Main Contract’) with our client {ProjectClientName} (‘the Employer’)."
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "The purpose of this Letter of Intent is to:"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table full-width no-border bullet-list"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": [
+                          "1)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": [
+                          "Confirm the agreement reached between XXX Ltd (‘the Contractor’) and {TheSupplier} (‘the Sub-Contractor’), refer to Schedule D of this letter."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": [
+                          "2)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": [
+                          "Secure your services in order to commence the ‘Authorised Activities’ as set out in Schedule A of this letter, on [Date]."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": [
+                          "3)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": [
+                          "Define the ‘Authorised Activities’ refer to Schedule A of this Letter."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": [
+                          "4)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": [
+                          "Define the programme and delivery sequence for the ‘Authorised Activities’ refer to Schedule B of the letter."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": [
+                          "5)"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": [
+                          "Define the ‘Authorised Expenditure’ associated with this Letter, which is XXX at this stage; as per the breakdown to the ‘Authorised Expenditure’ contained within Schedule C of this letter."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "In the event that the Main Contract is not entered into with or is rescinded by the Employer, or this letter is terminated by us, for any other reason than your own default, you will be paid in accordance with the express terms of the Subcontract as set out in this letter, but only up to a maximum sum equivalent to the limit advised within this letter. {u:For the avoidance of doubt no claim for loss of use, loss of profit or any other consequential loss arising from or in consequence of such termination will be considered.}"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "text",
+            "children": [
+              "On termination of this letter, you shall:"
+            ]
+          },
+          {
+            "name": "view",
+            "type": "table",
+            "props": {
+              "className": "edit-document-table table full-width no-border bullet-list"
+            },
+            "children": [
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "edit-document-table-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column align-top"
+                    },
+                    "children": [
+                      "1)"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column align-top"
+                    },
+                    "children": [
+                      "vacate the site properly and with as little disruption as possible, removing all plant and waste materials and leaving the site clean, tidy and safe;"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "edit-document-table-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column align-top"
+                    },
+                    "children": [
+                      "2)"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column align-top"
+                    },
+                    "children": [
+                      "deliver to us all designs, plans, programmes and other documents prepared in relation to the Subcontract Works by you or by your sub-contractors or consultants on your behalf;"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "edit-document-table-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column align-top"
+                    },
+                    "children": [
+                      "3)"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column align-top"
+                    },
+                    "children": [
+                      "consult us with regard to the action which you shall take for the fulfilment or cancellation of orders and shall supply to us invoices and other documents relating to orders made or intended to be made;"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "edit-document-table-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column align-top"
+                    },
+                    "children": [
+                      "4)"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column align-top"
+                    },
+                    "children": [
+                      "if so, required by us, you shall assign to the Employer or our nominee the benefit under this letter and/or the agreed Sub-Contract and of any or all contracts entered into with your sub-contractors, consultants, and suppliers."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "text",
+            "props": {
+              "className": "justified"
+            },
+            "children": [
+              "The costs will be ascertained by us and will be calculated from the date of this letter up to the date of termination."
+            ]
+          },
+          {
+            "name": "text",
+            "props": {
+              "className": "justified"
+            },
+            "children": [
+              "Please note that you will only be reimbursed to the extent that such work or materials are, in our view, in compliance with the requirements set out within Main Contract and the Sub-Contract contained in Schedule D of this letter. Notwithstanding anything expressed to the contrary, either within this Letter or otherwise, you should not undertake any work or expend any cost that is not an ‘Authorised Activity’ or exceeds the ‘Authorised Expenditure’."
+            ]
+          },
+          {
+            "name": "text",
+            "props": {
+              "className": "justified"
+            },
+            "children": [
+              "It is your responsibility to ensure that you do not carry out work which would exceed the ‘Authorised Expenditure’."
+            ]
+          },
+          {
+            "name": "text",
+            "props": {
+              "className": "justified"
+            },
+            "children": [
+              "We will accept no liability for costs exceeding this amount, unless clear written instructions have been issued to you by ‘the Contractor’ prior to such sum being expended."
+            ]
+          },
+          {
+            "name": "text",
+            "props": {
+              "className": "justified"
+            },
+            "children": [
+              "Unless ‘the Contractor’ otherwise agrees in writing, the arrangements under this letter will end on the XXX."
+            ]
+          },
+          {
+            "name": "text",
+            "props": {
+              "className": "justified"
+            },
+            "children": [
+              "This letter of intent supersedes any previous letter of intent issued which will cease, any ‘Authorised Activities’ completed under any and all previous letter of intents are deemed to be subsumed into this letter."
+            ]
+          },
+          {
+            "name": "text",
+            "props": {
+              "className": "justified"
+            },
+            "children": [
+              "Upon formal instruction by ‘the Contractor’ to the ‘Sub-Contractor’ to execute and return the Subcontract as set out within Schedule D of this letter, any obligation on us to make further payment to you under this letter shall cease."
+            ]
+          },
+          {
+            "name": "text",
+            "props": {
+              "className": "justified"
+            },
+            "children": [
+              "Upon execution of the Sub-Contract by us both, the Sub-Contract shall supersede this letter which shall thereupon cease to have any further effect."
+            ]
+          },
+          {
+            "name": "text",
+            "props": {
+              "className": "justified"
+            },
+            "children": [
+              "In any such event, any and all ‘Authorised Activities’ carried out by you under the terms of this letter shall be deemed to have been carried out under the terms of the Sub-Contract and any payment made by us under this letter in respect of such ‘Authorised Activities’ shall be deemed to be part of the Sub-Contract sum set out in the Sub-Contract."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "text",
+            "props": {
+              "className": "justified"
+            },
+            "children": [
+              "For the avoidance of doubt, the expressed intention, and terms above are not intended to constitute an offer by us, capable of acceptance."
+            ]
+          },
+          {
+            "name": "text",
+            "props": {
+              "className": "justified"
+            },
+            "children": [
+              "Please endorse the following, signifying your agreement to the contents of this letter, and return within 5 days of the date of this letter."
+            ]
+          },
+          {
+            "name": "text",
+            "children": [
+              "Yours faithfully",
+              "{br}",
+              "{br}",
+              "{br}",
+              "{b:{UserName}}"
+            ]
+          },
+          {
+            "name": "text",
+            "children": [
+              "{b:{UserRole}}",
+              "{b:E: {UserEmail}}",
+              "{b:T: {UserPhoneNumber}}",
+              "For and on Behalf of McLaren"
+            ]
+          },
+          {
+            "name": "text",
+            "children": [
+              "{br}",
+              "Encls.",
+              "Schedule A, B, C and D"
+            ]
+          },
+          {
+            "name": "text",
+            "props": {
+              "className": "justified"
+            },
+            "children": [
+              "{br}",
+              "{br}",
+              "{br}",
+              "I the undersigned confirmed I am authorised by below named to enter into legally binding agreements and confirm our acceptance and agreement to this Letter and the Schedules within it."
+            ]
+          },
+          {
+            "name": "view",
+            "type": "table",
+            "props": {
+              "className": "edit-document-table table full-width no-border"
+            },
+            "children": [
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "edit-document-table-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column"
+                    },
+                    "children": [
+                      "{br}",
+                      "SIGNED:"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column"
+                    },
+                    "children": [
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "edit-document-table-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column"
+                    },
+                    "children": [
+                      "{br}",
+                      "POSITION:"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column"
+                    },
+                    "children": [
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "edit-document-table-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column"
+                    },
+                    "children": [
+                      "{br}",
+                      "ON BEHALF OF:"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column"
+                    },
+                    "children": [
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "row",
+                "props": {
+                  "className": "edit-document-table-row"
+                },
+                "children": [
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column"
+                    },
+                    "children": [
+                      "{br}",
+                      "DATE:"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "type": "column",
+                    "props": {
+                      "className": "edit-document-table-column"
+                    },
+                    "children": [
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{b:THE DRAWINGS AND DOCUMENTS}"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "editable": false
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "children": [
+                      {
+                        "type": "link",
+                        "code": "download_all_files",
+                        "name": "text",
+                        "children": [
+                          "{bpnk:Download all}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "fileManager",
+                    "props": {
+                      "className": "edit-document-table full-width table"
+                    },
+                    "children": [
+                      {
+                        "name": "view",
+                        "type": "thead",
+                        "props": {
+                          "className": "edit-document-table-row"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:Document Name}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:Category}"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": {
+                          "className": "edit-document-table-row"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column justified"
+                            },
+                            "children": [
+                              "{br}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column justified"
+                            },
+                            "children": [
+                              "{br}"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "children": [
+                      {
+                        "type": "link",
+                        "code": "download_all_files",
+                        "name": "text",
+                        "children": [
+                          "{bpnk:Download all}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "text",
+            "props": {
+              "className": "centered-text edit-document-title"
+            },
+            "children": [
+              "{b:SCHEDULE A – AUTHORISED ACTIVITIES}"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "text",
+            "props": {
+              "className": "centered-text edit-document-title"
+            },
+            "children": [
+              "{b:SCHEDULE B – AUTHORISED ACTIVITIES PROGRAMME}"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "text",
+            "props": {
+              "className": "centered-text edit-document-title"
+            },
+            "children": [
+              "{b:SCHEDULE C – AUTHORISED EXPENDITURE BREAKDOWN}"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "text",
+            "props": {
+              "className": "centered-text edit-document-title"
+            },
+            "children": [
+              "{b:SCHEDULE D – AGREED SUB-CONTRACT ORDER DOCUMENT}"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

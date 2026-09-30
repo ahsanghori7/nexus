@@ -1,0 +1,1 @@
+import React from "react"; const DriveFileRenameOutline = (props) => (<span data-testid="mui-icon-DriveFileRenameOutline" {...props}>DriveFileRenameOutline</span>); DriveFileRenameOutline.displayName = "DriveFileRenameOutline"; export default DriveFileRenameOutline;

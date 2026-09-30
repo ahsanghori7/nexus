@@ -1,0 +1,22 @@
+// Abstracts
+@import 'abstracts/colors';
+@import 'abstracts/dimensions';
+
+//Base
+
+// Components
+@import '../../../global/public/styles/theme/clink-app/v1';
+@import '../../../global/public/styles/components/confirmation-modal';
+@import './components/breadcrums';
+@import './components/item-container';
+@import './components/header';
+@import './components/template-actions';
+@import './components/add-tender-template-modal';
+@import './components/no-tender-template';
+
+// Layout
+
+// Pages
+@import './page';
+// Themes
+@import '../../../global/public/styles/theme/clink-app/main-container';

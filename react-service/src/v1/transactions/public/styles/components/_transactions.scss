@@ -1,0 +1,343 @@
+@import '~bootstrap';
+
+.transaction-container {
+  padding: 2rem 0;
+  padding-bottom: 6rem;
+
+  .page-header {
+    min-height: auto;
+    padding: 0.65rem;
+
+    .header-items {
+      .header-left {
+        h1 {
+          font-size: 1.8rem;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .breadcrumbs {
+      .breadcrumbs-elem {
+        font-weight: bold;
+        font-size: 0.95rem;
+        letter-spacing: 0.2px;
+        margin-right: 1.3rem;
+
+        &:after {
+          margin-left: 1.3rem;
+        }
+      }
+    }
+  }
+
+  .item-container {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .transaction-container {
+    padding: 1rem;
+    padding-bottom: 6rem;
+
+    .header-items {
+      flex-direction: column;
+
+      .header-left {
+        h1 {
+          font-size: 1.5rem;
+          padding-top: 0;
+          padding-left: 0;
+        }
+      }
+
+      .header-right {
+        .gia-container {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 399px) {
+  .transaction-container {
+    padding: 0.5rem;
+    padding-bottom: 6rem;
+
+    .header-items {
+      .header-left {
+        h1 {
+          font-size: 1.2rem;
+        }
+      }
+
+      .header-right {
+        .gia-container {
+          min-width: none;
+        }
+      }
+    }
+  }
+}
+
+.clink-container {
+  padding-bottom: 30px;
+}
+
+.table-tab-options {
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+
+  .tab {
+    border-top: 1px solid rgb(0, 0, 0, 0.1);
+    height: 30px;
+    padding: 3px 19px 10px 10px;
+    font-weight: bold;
+
+    button {
+      background: transparent;
+      border: none;
+    }
+  }
+
+  :nth-child(n + 1) {
+    border-right: 1px solid rgb(0, 0, 0, 0.1);
+    border-left: 1px solid rgb(0, 0, 0, 0.1);
+  }
+
+  :last-child {
+    border-top-right-radius: 10px;
+  }
+}
+
+.simple-table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: unset;
+  padding-bottom: 1.25rem;
+
+  .buffer {
+    td {
+      padding: 3px;
+    }
+  }
+
+  td {
+    padding-left: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 15px;
+
+    img {
+      max-height: 50px;
+      max-width: 50px;
+      padding-right: 10px;
+    }
+  }
+
+  thead {
+    tr {
+      min-height: 50px;
+    }
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      td {
+        background-color: $bg-purple;
+      }
+    }
+
+    .simple-table-row {
+      .simple-table-actions {
+        display: inline-flex;
+
+        button {
+          background: transparent;
+        }
+
+        button {
+          &.action {
+            height: 40px;
+            width: 40px;
+            border-radius: 4px;
+            margin-right: 0.5rem;
+
+            svg {
+              top: -2px;
+              position: relative;
+            }
+
+            &.award-package {
+              svg {
+                width: 22px;
+                height: 22px;
+                right: -1px;
+              }
+            }
+
+            &.withdraw-order {
+              border-color: rgba(232, 28, 92, 0.5);
+
+              svg {
+                top: -1px;
+              }
+            }
+
+            &.quote-options {
+              border-color: rgba(142, 141, 190, 0.5);
+            }
+
+            &.withdraw-order,
+            &.quote-options {
+              height: 40px;
+              width: 40px;
+              border-radius: 4px;
+              margin-right: 0.5rem;
+            }
+          }
+        }
+
+        .award-package {
+          border: 2px solid #f6e6a7;
+          margin-right: 10px;
+        }
+
+        .withdraw-order {
+          border: 2px solid $clink-red;
+          position: relative;
+          z-index: 10;
+        }
+
+        .quote-options {
+          border: 2px solid $clink-purple;
+
+          &:after,
+          &:before {
+            display: none;
+          }
+        }
+      }
+
+      .quote-option-dropdown {
+        background-color: $white;
+        border-radius: 4px;
+        border: 1px solid rgb(0, 0, 0, 0.1);
+        min-width: 190px;
+        box-shadow: 0px 10px 10px 2px $placeholder-color;
+        padding: 0;
+
+        button,
+        a {
+          text-align: left;
+          font-weight: bold;
+          font-size: 0.8rem;
+          transition: all 0.25s ease;
+          display: block;
+          background-color: $white;
+        }
+
+        a {
+          padding: 0.75rem;
+          border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+
+          &:last-child {
+            border-bottom: none;
+            color: $clink-red;
+
+            button {
+              color: $clink-red;
+            }
+          }
+
+          &:focus,
+          &:hover {
+            background-color: $white;
+          }
+
+          button {
+            width: 100% !important;
+            height: auto !important;
+            padding: 0;
+            border: none;
+          }
+        }
+      }
+
+      .item-select {
+        display: inline-flex;
+
+        span {
+          display: block;
+          padding-left: 20px;
+        }
+
+        input {
+          height: 25px;
+          width: 25px;
+        }
+      }
+    }
+  }
+
+  tfoot {
+    span {
+      font-weight: bold;
+      padding-right: 10px;
+    }
+
+    td {
+      height: 50px;
+      border: 1px solid rgb(0, 0, 0, 0.1);
+      border-right: none;
+      background-color: $white;
+      padding-bottom: 20px;
+    }
+
+    td:nth-child(1) {
+      border-bottom-left-radius: 22px;
+    }
+
+    td:nth-child(3) {
+      border-bottom-right-radius: 22px;
+      border-right: 1px solid rgb(0, 0, 0, 0.1);
+    }
+
+    td:last-child {
+      border: none;
+    }
+
+    .budget {
+      input {
+        background: none;
+        border: none;
+        width: 100px;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .simple-table {
+    tbody {
+      .simple-table-row {
+        .simple-table-row-actions {
+          button {
+            &.action {
+              &.award-package {
+                svg {
+                  right: initial;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

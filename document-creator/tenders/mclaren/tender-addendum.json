@@ -1,0 +1,298 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "address": [],
+      "company_name": "",
+      "company_reg": "",
+      "logo": "",
+      "web_address": "",
+      "html": "<div>{MclarenEntityContractorHeader}</div>"
+    },
+    "footer": {
+      "company_name": "",
+      "subcontract": "",
+      "html": "<table width='100%' style='border-collapse:collapse; font-size:10px; margin-top:6px;'><tr><td style='border:0; padding:6px;' colspan='3'><strong>Information Classification: Protected</strong></td><td colspan='1' style='padding:0 4px;text-align:right;vertical-align:middle; white-space:nowrap;border:0;'>Page {PAGENO} of {nbpg}</td></tr></table>"
+    },
+    "props": { "className": "edit-document-document" },
+    "options": {
+      "numbered_documents": true
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "text",
+                "children": [
+                  "Ref:{ProjectReference}/{SubContractorName}/Addendum {AddendumNumber}",
+                  "{Date}",
+                  "{br}",
+                  "{b:EMAIL {SubContractorEmail}}",
+                  "{br}",
+                  "{SubContractorName}",
+                  "{SubContractorAddress}",
+                  "{br}",
+                  "For the attention of {SubContactName}",
+                  "{br}",
+                  "{br}",
+                  "Dear Sirs,",
+                  "{br}",
+                  "{b:Re: Tender Addendum: {ProjectName}}",
+                  "{b:Tender Package: {PackageName}}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": { "className": "justified" },
+                "children": [
+                  "Further to the previous issuance of our enquiry letter dated \n        {EnquiryDate} and referenced, {ProjectReference}/{SubContractorName}/Addendum {AddendumNumber}, \n        please find addtional project documents issued under this Addendum. \n        The additional and amended tender documents referred to in this addendum are available through {DownloadManager}. Please review these documents alongside the changes outlined above.",
+                  "{br}",
+                  "   - {b:What is the new information:} {NewInformation}",
+                  "   - {b:What are the primary changes:} {PrimaryChanges}",
+                  "{br}",
+                  "In consideration to the nature of these additional and \n        amended details, we can confirm the date for return of the \n        tender has been extended to {TenderReturnDateNew}.",
+                  "{br}",
+                  "Should you have any queries on the contents of this Tender Addendum, \n        or the original Tender itself, please do not hesitate to contact us. \n        In the meantime, please can you confirm receipt of this letter and its \n        enclosures and confirm you will be able to submit a tender in \n        accordance with the requirements.",
+                  "{br}",
+                  "We look forward to receiving your quotation.",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "Yours sincerely,",
+                  "{br}",
+                  "{br}",
+                  "{br}",
+                  "{b:For {MclarenEntityContractor}}",
+                  "{b:{UserName}}",
+                  "{b:{UserRole}}",
+                  "{br}",
+                  "{b:E: {UserEmail}}",
+                  "{b:T: {UserPhoneNumber}}"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "align-left"
+                },
+                "children": [
+                  "{b:Schedule of Changes}"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "editable": false
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "tenderAddendumDocumentChanges",
+                    "props": {
+                      "className": "edit-document-table full-width table border-left border-right schedule-of-changes"
+                    },
+                    "children": [
+                      {
+                        "name": "view",
+                        "type": "thead",
+                        "props": {
+                          "className": "edit-document-table-row"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:Previous{br}Revision}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:Current{br}Revision}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:Doc Ref}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:Doc Title}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:Originator}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:ND}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:Change}"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "columns": [
+                          "previous_rev",
+                          "current_rev",
+                          "doc_ref",
+                          "doc_title",
+                          "publisher_organisation",
+                          "nd",
+                          "changed"
+                        ],
+                        "props": {
+                          "className": "edit-document-table-row"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column justified"
+                            },
+                            "children": [
+                              "{br}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column justified"
+                            },
+                            "children": [
+                              "{br}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column justified"
+                            },
+                            "children": [
+                              "{br}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column justified"
+                            },
+                            "children": [
+                              "{br}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column justified"
+                            },
+                            "children": [
+                              "{br}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column justified"
+                            },
+                            "children": [
+                              "{br}"
+                            ]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column justified"
+                            },
+                            "children": [
+                              "{br}"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

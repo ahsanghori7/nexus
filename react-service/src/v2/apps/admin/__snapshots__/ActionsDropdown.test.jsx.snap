@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionsDropdown snapshot test for default rendering 1`] = `
+<div
+  class="justify "
+  data-testid="justify"
+>
+  <div
+    class="dropdown "
+    data-testid="dropdown"
+  >
+    <div>
+      <button
+        class="open-dropdown"
+        data-testid="open-dropdown"
+      >
+        <img
+          src="mock-black-carret-down-icon"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

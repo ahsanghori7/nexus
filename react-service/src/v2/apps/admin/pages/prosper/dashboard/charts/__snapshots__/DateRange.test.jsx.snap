@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateRange should match snapshot 1`] = `
+<div
+  data-testid="date-range-container"
+>
+  <div
+    data-testid="calendar-container"
+  >
+    <div
+      data-testid="input-calendar-from"
+    >
+      <label>
+        From
+      </label>
+      <input
+        data-testid="daterange-input-from"
+        name="from-date"
+        placeholder="Test placeholder"
+        theme="prosper"
+        type="text"
+        value="2023-10-01"
+      />
+    </div>
+  </div>
+  <div
+    data-testid="calendar-container"
+  >
+    <div
+      data-testid="input-calendar-to"
+    >
+      <label>
+        To
+      </label>
+      <input
+        data-testid="daterange-input-to"
+        name="from-date"
+        placeholder="Test placeholder"
+        theme="prosper"
+        type="text"
+        value="2023-10-15"
+      />
+    </div>
+  </div>
+</div>
+`;

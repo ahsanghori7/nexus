@@ -1,0 +1,33 @@
+.collapse {
+  min-height: 300px;
+  position: relative;
+
+  .tender-builder-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .loading-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 350px;
+      height: auto;
+      padding: 0px 25px;
+
+      .loading-content {
+        .center {
+          display: flex;
+          justify-content: center;
+        }
+        strong {
+          font-size: 20px;
+          font-weight: bold;
+        }
+        small {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

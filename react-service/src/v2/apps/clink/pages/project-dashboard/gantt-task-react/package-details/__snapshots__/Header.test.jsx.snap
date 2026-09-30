@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component matches snapshot 1`] = `
+<button
+  role="button"
+  sx="[object Object]"
+>
+  <span
+    color="secondaryBlack"
+    data-testid="ExpandMoreIcon"
+  >
+    ExpandMore
+  </span>
+  <div
+    class="MuiGrid-root MuiGrid-container"
+    data-testid="mui-grid"
+    sx="[object Object]"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+      data-testid="mui-grid"
+      xs="6"
+    >
+      <div
+        data-testid="listitemtext"
+      >
+        <span
+          class="MuiListItemText-primary"
+        >
+          <div
+            data-testid="mui-typography"
+            variant="title"
+          >
+            Test Tender
+          </div>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
+      data-testid="mui-grid"
+      sx="[object Object]"
+      xs="2"
+    >
+      <div
+        data-testid="mock-package-info"
+      >
+        5
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
+      data-testid="mui-grid"
+      sx="[object Object]"
+      xs="2"
+    >
+      <div
+        data-testid="mock-package-info"
+      >
+        3
+         (1)
+      </div>
+    </div>
+    <div
+      data-testid="mui-divider"
+      orientation="vertical"
+      sx="[object Object]"
+      variant="middle"
+    />
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
+      data-testid="mui-grid"
+      sx="[object Object]"
+      xs="2"
+    >
+      <div
+        data-testid="mock-package-status"
+      >
+        In Progress
+         
+      </div>
+    </div>
+  </div>
+</button>
+`;

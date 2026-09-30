@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForgotPassword Component Snapshot Tests matches snapshot in login request mode 1`] = `
+<div
+  data-testid="page"
+>
+  <div
+    class="ForgotPasswordstyled__StyledForgotPassword-sc-1v10is5-0 geCrTY forgot-password-wrapper"
+  >
+    <div
+      class="ForgotPasswordstyled__StyledForgotPasswordLogo-sc-1v10is5-3 cgDOwS forgot-password-logo"
+    >
+      <img
+        src="https://example.com/prosper-logo-full.svg"
+      />
+    </div>
+    <div
+      class="ForgotPasswordstyled__StyledForgotPasswordTitle-sc-1v10is5-2 ilcbYo forgot-password-title"
+    >
+      login-request
+    </div>
+    <form
+      data-testid="form-content"
+      method="POST"
+    >
+      <div
+        data-testid="input-form-email"
+      >
+        <label
+          for="email"
+        >
+          Email Address
+        </label>
+        <input
+          autocomplete="email"
+          data-testid="input-controlled-email"
+          id="email"
+          name="email"
+          placeholder="example@domain.com"
+          type="email"
+          value=""
+        />
+      </div>
+      <button
+        color="prosperGreenButton"
+        disabled=""
+        id="submit-button"
+        layout="square"
+        type="submit"
+      >
+        send-login-link
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`ForgotPassword Component Snapshot Tests matches snapshot in password reset mode 1`] = `
+<div
+  data-testid="page"
+>
+  <div
+    class="ForgotPasswordstyled__StyledForgotPassword-sc-1v10is5-0 geCrTY forgot-password-wrapper"
+  >
+    <div
+      class="ForgotPasswordstyled__StyledForgotPasswordLogo-sc-1v10is5-3 cgDOwS forgot-password-logo"
+    >
+      <img
+        src="https://example.com/prosper-logo-full.svg"
+      />
+    </div>
+    <div
+      class="ForgotPasswordstyled__StyledForgotPasswordTitle-sc-1v10is5-2 ilcbYo forgot-password-title"
+    >
+      recover-password
+    </div>
+    <form
+      data-testid="form-content"
+      method="POST"
+    >
+      <div
+        data-testid="input-form-email"
+      >
+        <label
+          for="email"
+        >
+          Email Address
+        </label>
+        <input
+          autocomplete="email"
+          data-testid="input-controlled-email"
+          id="email"
+          name="email"
+          placeholder="example@domain.com"
+          type="email"
+          value=""
+        />
+      </div>
+      <button
+        color="prosperGreenButton"
+        disabled=""
+        id="submit-button"
+        layout="square"
+        type="submit"
+      >
+        recover-password
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`ForgotPassword Component Snapshot Tests matches snapshot with error message 1`] = `
+<div
+  data-testid="page"
+>
+  <div
+    class="ForgotPasswordstyled__StyledForgotPassword-sc-1v10is5-0 geCrTY forgot-password-wrapper"
+  >
+    <div
+      class="ForgotPasswordstyled__StyledForgotPasswordLogo-sc-1v10is5-3 cgDOwS forgot-password-logo"
+    >
+      <img
+        src="https://example.com/prosper-logo-full.svg"
+      />
+    </div>
+    <div
+      class="ForgotPasswordstyled__StyledForgotPasswordMessage-sc-1v10is5-1 iyZxGX"
+      color="#F44336"
+      role="button"
+      tabindex="0"
+    >
+      sample-error-message
+    </div>
+    <div
+      class="ForgotPasswordstyled__StyledForgotPasswordTitle-sc-1v10is5-2 ilcbYo forgot-password-title"
+    >
+      recover-password
+    </div>
+    <form
+      data-testid="form-content"
+      method="POST"
+    >
+      <div
+        data-testid="input-form-email"
+      >
+        <label
+          for="email"
+        >
+          Email Address
+        </label>
+        <input
+          autocomplete="email"
+          data-testid="input-controlled-email"
+          id="email"
+          name="email"
+          placeholder="example@domain.com"
+          type="email"
+          value=""
+        />
+      </div>
+      <button
+        color="prosperGreenButton"
+        disabled=""
+        id="submit-button"
+        layout="square"
+        type="submit"
+      >
+        recover-password
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`ForgotPassword Component Snapshot Tests matches snapshot with token (password creation mode) 1`] = `
+<div
+  data-testid="page"
+>
+  <div
+    class="ForgotPasswordstyled__StyledForgotPassword-sc-1v10is5-0 geCrTY forgot-password-wrapper"
+  >
+    <div
+      class="ForgotPasswordstyled__StyledForgotPasswordLogo-sc-1v10is5-3 cgDOwS forgot-password-logo"
+    >
+      <img
+        src="https://example.com/prosper-logo-full.svg"
+      />
+    </div>
+    <div
+      class="ForgotPasswordstyled__StyledForgotPasswordTitle-sc-1v10is5-2 ilcbYo forgot-password-title"
+    >
+      create-new-password
+    </div>
+    <form
+      action="/account/password/new"
+      data-testid="form-content"
+      method="POST"
+    >
+      <div
+        data-testid="input-form-password"
+      >
+        <label
+          for="password"
+        >
+          new-password
+        </label>
+        <input
+          autocomplete="password"
+          data-testid="input-controlled-password"
+          id="password"
+          name="password"
+          placeholder="*******"
+          type="password"
+          value=""
+        />
+      </div>
+      <div
+        data-testid="input-form-token"
+      >
+        <input
+          autocomplete="token"
+          data-testid="input-token"
+          id="token"
+          name="token"
+          type="hidden"
+          value="test-reset-token"
+        />
+      </div>
+      <button
+        color="prosperGreenButton"
+        disabled=""
+        id="submit-button"
+        layout="square"
+        type="submit"
+      >
+        save-changes-sign-in
+      </button>
+    </form>
+  </div>
+</div>
+`;

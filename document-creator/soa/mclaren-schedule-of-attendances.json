@@ -1,0 +1,605 @@
+[
+  {
+    "id": "1",
+    "description": "Site Accommodation and Facilities for the Sub-Contractors Use",
+    "title": true
+  },
+  {
+    "id": "2",
+    "item": "Establish and remove temporary buildings",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "3",
+    "item": "Foundations and associated hard standings for temporary buildings",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "4",
+    "item": "Installation of temporary services",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "5",
+    "item": "Consumption charges for temporary services",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "6",
+    "item": "Site Consumables / Furniture",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "7",
+    "item": "Photocopier",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "8",
+    "item": "Telephone / Fax / Internet",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "9",
+    "description": "Statutory Health and Welfare Facilities",
+    "title": true
+  },
+  {
+    "id": "10",
+    "item": "Shared welfare / toilets",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "11",
+    "item": "Shared Drying room",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "12",
+    "item": "First aid facilities",
+    "mlc_provide": true,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "13",
+    "item": "Safety Lighting",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "14",
+    "item": "Task lighting",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "15",
+    "item": "Temporary barriers and signage to work areas",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "16",
+    "item": "All Personnel Protective Equipment (PPE) including hats, boots, hi-visibility clothing, glasses and gloves all of which are mandatory on the project, plus any further safety equipment to enable the Sub-Contract work to be carried out safely. Note: Prescription glasses do not constitute eye protection.  Over glasses or prescription safety glasses will be a mandatory requirement.",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": "Company branded - in line with MCL and site specific requirements."
+  },
+  {
+    "id": "17",
+    "description": "Scaffold - See ND 023",
+    "title": true
+  },
+  {
+    "id": "18",
+    "item": "Shared use of Standing Scaffold until dismantled, as stated on scaffold schedule (unless specifically stated, the Sub-Contractor is responsible for all access requirements).",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "19",
+    "item": "Mobile scaffold access provisions (towers and podiums etc.)",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": "If Applicable"
+  },
+  {
+    "id": "20",
+    "item": "Special Task Scaffold [To Carry out Scope of Works] including permits and the like",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": "If Applicable"
+  },
+  {
+    "id": "21",
+    "item": "Leading edge protection",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "22",
+    "item": "Safety Netting",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "23",
+    "description": "Tower Crane - See ND 021",
+    "title": true
+  },
+  {
+    "id": "24",
+    "item": "Tower Crane",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "25",
+    "item": "Tower Crane Driver",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "26",
+    "item": "Tower Crane Banksman",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "27",
+    "item": "Lifting Gear including slings and the like (Certified)",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "28",
+    "item": "Radios for use with Tower Crane",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "29",
+    "description": "Mobile Crane - See ND 021",
+    "title": true
+  },
+  {
+    "id": "30",
+    "item": "Mobile Crane Driver",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "31",
+    "item": "Road Closures / Traffic Management / Banksman for Mobile Craneage",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "32",
+    "item": "Radios for use with Mobile Cranes",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "33",
+    "description": "Hoisting - See ND 025",
+    "title": true
+  },
+  {
+    "id": "34",
+    "item": "Provision of static Hoist (Shared use)",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "35",
+    "item": "Provision of trained static hoist operator",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "36",
+    "item": "Provision of Mobile cranes and all associated equipment and drivers",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "37",
+    "item": "Provision of trained traffic marshall for traffic management",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "38",
+    "item": "Provision of trained signallers for craneage",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "39",
+    "description": "Offloading and Distribution",
+    "title": true
+  },
+  {
+    "id": "40",
+    "item": "Temporary site roads and hard standings (including maintenance)",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "41",
+    "item": "Mechanically assisted offloading (forklift or similar)",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": "Subcontractor is to be self sufficient i.e. no plant will be provided for offload/distribution."
+  },
+  {
+    "id": "42",
+    "item": "Specialist Lifting Equipment for Mechanically assisted offloading",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": "As above."
+  },
+  {
+    "id": "43",
+    "item": "Distribution of materials and equipment - Vertically",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": "As above."
+  },
+  {
+    "id": "44",
+    "item": "Distribution of materials and equipment - Horizontally",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": "As above."
+  },
+  {
+    "id": "45",
+    "item": "Hand unloading / Distribution Labour",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": "As above."
+  },
+  {
+    "id": "46",
+    "item": "Radios for offloading and distribution",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": "As above."
+  },
+  {
+    "id": "47",
+    "description": "Storage Areas / Containers",
+    "title": true
+  },
+  {
+    "id": "48",
+    "item": "Storage space with / without Hard standing",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "49",
+    "item": "Containers",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "50",
+    "description": "Construction Services",
+    "title": true
+  },
+  {
+    "id": "51",
+    "item": "110v single phase to a single point",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": "Please refer to ND27"
+  },
+  {
+    "id": "52",
+    "item": "240v / 415v 3 phase",
+    "mlc_provide": false,
+    "subcontractor_provide": false,
+    "comments": "N/A"
+  },
+  {
+    "id": "53",
+    "item": "Power from distribution boxes - leads, plugs and the like",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": "Please refer to ND27"
+  },
+  {
+    "id": "54",
+    "item": "Supply of Generators, transformers, and the like",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": "Please refer to ND27"
+  },
+  {
+    "id": "55",
+    "item": "Supply of water / standpipes - The Contractor guaranties no particular water pressure is provided. If required the Sub-Contractor shall provide any pumping, hoses, water butts, barrels, etc as required.",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": "Please refer to ND27"
+  },
+  {
+    "id": "56",
+    "item": "Supply of hoses / barrels etc",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "57",
+    "description": "b.    Plant, Tools and Tackle",
+    "title": true
+  },
+  {
+    "id": "58",
+    "item": "Small tools and tackle",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "59",
+    "item": "Plant",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "60",
+    "item": "PAT testing plant /equipment",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "61",
+    "description": "Environmental requirements",
+    "title": true
+  },
+  {
+    "id": "62",
+    "item": "Temperature control",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "63",
+    "item": "Humidity control",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "64",
+    "item": "Weather protection",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "65",
+    "item": "Dust Screens",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "66",
+    "description": "Temporary Works",
+    "title": true
+  },
+  {
+    "id": "67",
+    "item": "Design, Supply, Install, Maintain and Remove All Temporary Works required to successfully and safely complete the Sub-Contract Works.",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "68",
+    "item": "Temporary Works Design",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "69",
+    "item": "Temporary Works Design Checks",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "70",
+    "description": "Waste Management",
+    "title": true
+  },
+  {
+    "id": "71",
+    "item": "Clearance of waste to designated skips",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "72",
+    "item": "Disposal of waste from site",
+    "mlc_provide": true,
+    "subcontractor_provide": true,
+    "comments": "Please refer to ND100."
+  },
+  {
+    "id": "73",
+    "item": "Disposal of pallets, packaging, cable drums off site",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "74",
+    "item": "Disposal of hazardous waste off site",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": "Please refer to ND100."
+  },
+  {
+    "id": "75",
+    "description": "Setting Out",
+    "title": true
+  },
+  {
+    "id": "76",
+    "item": "Main grid lines and datum levels on each floor",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "77",
+    "item": "Setting from gridlines and datum levels",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "78",
+    "item": "Setting out from Main setting out point",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "79",
+    "item": "All other setting out and marking holes etc",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "80",
+    "item": "Setting out chases, holes cast in fixings and the like",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "81",
+    "description": "Protection of work",
+    "title": true
+  },
+  {
+    "id": "82",
+    "item": "Fix, maintain and removal and disposal of protection materials (to be fire rated)",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "83",
+    "description": "Generally",
+    "title": true
+  },
+  {
+    "id": "84",
+    "item": "Road Closures required to enable Subcontractor to complete his works",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "85",
+    "item": "Temporary Fencing around work areas",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "86",
+    "item": "Temporary access ramps to work areas",
+    "mlc_provide": false,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "87",
+    "description": "Other Items specific to Sub-Contractors works",
+    "title": true
+  },
+  {
+    "id": "88",
+    "item": "Wheel wash facilities",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "89",
+    "item": "Concrete wash out facilities",
+    "mlc_provide": true,
+    "subcontractor_provide": true,
+    "comments": ""
+  },
+  {
+    "id": "90",
+    "item": "Road Sweepers",
+    "mlc_provide": true,
+    "subcontractor_provide": false,
+    "comments": ""
+  },
+  {
+    "id": "91",
+    "item": "",
+    "mlc_provide": false,
+    "subcontractor_provide": false,
+    "comments": ""
+  }
+]

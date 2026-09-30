@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component matches snapshot 1`] = `
+<div
+  data-testid="mui-card-header"
+  subheader="Test Subheader"
+  subheadertypographyprops="[object Object]"
+  sx="[object Object]"
+  title="[object Object]"
+  titletypographyprops="[object Object]"
+>
+  <div
+    class="MuiBox-root"
+    data-testid="mui-box"
+    style="display: flex; align-items: center; margin-bottom: 10px;"
+  >
+    Test Title
+  </div>
+</div>
+`;

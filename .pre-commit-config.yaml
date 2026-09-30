@@ -1,0 +1,49 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-added-large-files
+        args: [ '--maxkb=2500' ]
+        exclude: '(.*\.test\.(js|jsx|ts|tsx)$|.*\.snap$)'
+      - id: check-ast
+        exclude: '(.*\.test\.(js|jsx|ts|tsx)$|.*\.snap$)'
+      - id: check-byte-order-marker
+        exclude: '(.*\.test\.(js|jsx|ts|tsx)$|.*\.snap$)'
+      - id: check-case-conflict
+        exclude: '(.*\.test\.(js|jsx|ts|tsx)$|.*\.snap$)'
+      - id: check-docstring-first
+        exclude: '(.*\.test\.(js|jsx|ts|tsx)$|.*\.snap$)'
+      - id: check-executables-have-shebangs
+        exclude: '(.*\.test\.(js|jsx|ts|tsx)$|.*\.snap$)'
+      - id: check-json
+        exclude: '(.*\.test\.(js|jsx|ts|tsx)$|.*\.snap$)'
+      - id: check-merge-conflict
+        exclude: '(.*\.test\.(js|jsx|ts|tsx)$|.*\.snap$)'
+      - id: check-toml
+        exclude: '(.*\.test\.(js|jsx|ts|tsx)$|.*\.snap$)'
+      - id: debug-statements
+        exclude: '(.*\.test\.(js|jsx|ts|tsx)$|.*\.snap$)'
+      - id: detect-private-key
+        exclude: '(.*\.test\.(js|jsx|ts|tsx)$|.*\.snap$)'
+      - id: end-of-file-fixer
+        exclude: '(.*\.test\.(js|jsx|ts|tsx)$|.*\.snap$)'
+      - id: requirements-txt-fixer
+        exclude: '(.*\.test\.(js|jsx|ts|tsx)$|.*\.snap$)'
+      - id: trailing-whitespace
+        exclude: '(.*\.test\.(js|jsx|ts|tsx)$|.*\.snap$)'
+      - id: no-commit-to-branch
+        args: [ -b, develop, -b, main ]
+
+  - repo: local
+    hooks:
+      - id: check-env-vars
+        name: Check environment variables
+        entry: scripts/check_env.py
+        language: python
+        stages: [pre-commit]
+        pass_filenames: false
+      - id: check-composer-lock
+        name: Check composer.lock is updated
+        entry: .git/hooks/check-composer.sh
+        language: script
+        files: .*composer\.json$

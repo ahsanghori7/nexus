@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wrapper Component matches snapshot with contentHeader 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+  data-testid="mui-grid"
+  id="ta-boq-wrapper"
+  sx="[object Object]"
+  xs="12"
+>
+  <div
+    data-testid="mui-card"
+    sx="[object Object]"
+    variant="outlined"
+  >
+    <div
+      data-testid="mui-card-header"
+      sx="[object Object]"
+    >
+      <span>
+        Header Content
+      </span>
+    </div>
+    <div
+      data-testid="mui-card-content"
+      sx="[object Object]"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12"
+        data-testid="mui-grid"
+        id="bow-page-wrapper"
+        xs="12"
+      >
+        <div>
+          Test content
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Wrapper Component matches snapshot without contentHeader 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+  data-testid="mui-grid"
+  id="ta-boq-wrapper"
+  sx="[object Object]"
+  xs="12"
+>
+  <div
+    data-testid="mui-card"
+    sx="[object Object]"
+    variant="outlined"
+  >
+    <div
+      data-testid="mui-card-content"
+      sx="[object Object]"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12"
+        data-testid="mui-grid"
+        id="bow-page-wrapper"
+        xs="12"
+      >
+        <div>
+          Test content
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

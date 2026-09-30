@@ -1,0 +1,28 @@
+.modal-dialog {
+  .modal-content {
+    .modal-header {
+      background-color: $clink-purple;
+      color: $white;
+      text-align: center;
+      .modal-title {
+        width: 100%;
+      }
+    }
+    .modal-body {
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.7rem;
+      }
+      h3 {
+        font-size: 1.45rem;
+      }
+    }
+  }
+}

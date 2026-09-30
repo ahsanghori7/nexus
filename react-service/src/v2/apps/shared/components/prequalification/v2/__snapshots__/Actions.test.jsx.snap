@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Actions Component matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-item"
+    data-testid="mui-grid"
+    sx="[object Object]"
+  >
+    <button
+      aria-haspopup="true"
+      aria-label="options"
+      class="MuiIconButton-root"
+      data-testid="icon-button"
+      id="basic-button"
+      role="button"
+      type="button"
+    >
+      <span
+        data-testid="more-horiz-icon"
+        font-size="small"
+        sx="[object Object]"
+      >
+        ⋯
+      </span>
+    </button>
+  </div>
+</div>
+`;

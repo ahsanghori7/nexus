@@ -1,0 +1,5 @@
+<svg id="Component_1_1" data-name="Component 1 – 1" xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22">
+  <path id="Path_56" data-name="Path 56" d="M103,168h-2v-2a2,2,0,0,0-2-2H89a2,2,0,0,0-2,2v14a2,2,0,0,0,2,2h2v2a2,2,0,0,0,2,2h10a2,2,0,0,0,2-2V170A2,2,0,0,0,103,168ZM89,180V166H99v2H93a2,2,0,0,0-2,2v10Zm4,4V170h10v14Z" transform="translate(-87 -164)" fill="#313237" opacity="0.7"/>
+  <path id="Path_57" data-name="Path 57" d="M100,172H96a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Z" transform="translate(-87 -164)" fill="#313237" opacity="0.7"/>
+  <path id="Path_58" data-name="Path 58" d="M98,175H96a1,1,0,0,0,0,2h2a1,1,0,0,0,0-2Z" transform="translate(-87 -164)" fill="#313237" opacity="0.7"/>
+</svg>

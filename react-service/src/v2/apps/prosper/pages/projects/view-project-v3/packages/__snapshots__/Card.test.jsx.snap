@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PackCard Component matches snapshot 1`] = `
+<div
+  class="parent-class"
+  data-testid="mui-card"
+  sx="[object Object]"
+>
+  <div
+    data-testid="mui-card-content"
+    sx="[object Object]"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container"
+      data-testid="mui-grid"
+    />
+    <div
+      class="MuiGrid-root MuiGrid-container"
+      data-testid="mui-grid"
+    >
+      <div
+        color="text.primary"
+        data-testid="mui-typography"
+      >
+        Test Package
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-container"
+      data-testid="mui-grid"
+    >
+      <div
+        data-testid="item-component"
+      >
+        text-service-required
+        : 
+        Test Service
+      </div>
+      <div
+        data-testid="item-component"
+      >
+        text-start-on-site
+        : 
+        1st January 2023
+      </div>
+      <div
+        data-testid="item-component"
+      >
+        text-project-size
+        : 
+        £100,000
+      </div>
+    </div>
+  </div>
+  <div
+    data-testid="mui-card-actions"
+    sx="[object Object]"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container"
+      data-testid="mui-grid"
+      flexdirection="column"
+      mt="0"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item"
+        data-testid="mui-grid"
+        mb="0"
+      >
+        <button
+          class="MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+          color="secondary"
+          sx="[object Object]"
+          type="button"
+          variant="contained"
+        >
+          <div
+            data-testid="mui-typography"
+          >
+            Register Interest
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

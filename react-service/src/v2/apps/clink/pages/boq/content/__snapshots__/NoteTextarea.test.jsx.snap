@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoteTextarea Component matches snapshot when editing 1`] = `
+<textarea
+  data-testid="textarea-autosize"
+  minrows="1"
+  placeholder="boq-add-notes-placeholder"
+  style="width: 100%;"
+>
+  Initial note text
+</textarea>
+`;
+
+exports[`NoteTextarea Component matches snapshot when readonly 1`] = `
+<textarea
+  data-testid="textarea-autosize"
+  minrows="1"
+  placeholder="boq-add-notes-placeholder"
+  readonly=""
+  style="width: 100%;"
+>
+  Initial note text
+</textarea>
+`;

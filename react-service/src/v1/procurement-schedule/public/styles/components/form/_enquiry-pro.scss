@@ -1,0 +1,283 @@
+.enquiry-generator-modal {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  .enquiry-generator-modal-dialog {
+    max-width: 740px;
+    width: 100%;
+
+    .modal-content {
+      max-height: 100vh;
+      max-width: 500px;
+
+      .modal-header {
+        padding: 40px 40px 10px 40px;
+      }
+
+      .modal-body {
+        padding: 10px 40px 40px 40px;
+        overflow-y: scroll;
+
+        form {
+          .field-holder {
+            &.react-select-field-holder {
+              &:nth-of-type(1) {
+                margin-bottom: 36px;
+              }
+
+              &:nth-of-type(2) {
+                #subcontractors {
+                  display: none;
+                }
+              }
+            }
+
+            button[type='submit'] {
+              background-color: $clink-green;
+              border-color: $clink-green;
+              margin-top: 44px;
+              margin-bottom: 64px;
+              transition: all 0.3s ease;
+
+              &:hover {
+                background-color: $clink-green-hover;
+                border-color: $clink-green-hover;
+              }
+            }
+          }
+
+          .react-select-container {
+            .react-select__control {
+              min-height: 40px;
+
+              .react-select__single-value,
+              .react-select__placeholder {
+                padding-left: 6px;
+              }
+
+              .react-select__indicators {
+                .react-select__indicator-separator {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          .page-three {
+            margin-top: -26px;
+            margin-left: -10px;
+            margin-right: -10px;
+
+            .carousel {
+              position: relative;
+
+              & > button {
+                position: absolute;
+                top: -44px;
+                right: 0;
+                color: $clink-purple;
+                padding: 8px 14px;
+                border-radius: 50%;
+                border: 1px solid $clink-purple;
+                background-color: $white;
+                margin: 0;
+
+                &.carousel__back-button {
+                  right: 52px;
+                }
+
+                &.carousel__next-button {
+                  right: 8px;
+                }
+
+                svg {
+                  transform: scale(1.1);
+                }
+              }
+
+              .carousel__slider {
+                .carousel__slider-tray {
+                  .carousel__slide {
+                    .carousel__inner-slide {
+                      padding: 4px;
+
+                      .carousel__slide-focus-ring {
+                        display: none;
+                      }
+
+                      .border-container {
+                        border: 1px solid $purple-lighter;
+                        border-radius: 8px;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding-bottom: 20px;
+
+                        &.grayed {
+                          & > * {
+                            &:not(.checkbox-wrapper) {
+                              opacity: 0.3;
+                            }
+                          }
+                        }
+
+                        .subcontractor__logo-container {
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          height: 125px;
+
+                          span {
+                            img {
+                              width: 100%;
+                              height: auto;
+                              max-width: 100px;
+                              max-height: 100px;
+                            }
+                          }
+                        }
+
+                        p {
+                          text-align: center;
+                          font-weight: bold;
+                          font-size: 16px;
+                          padding-left: 10px;
+                          padding-right: 10px;
+                        }
+
+                        // Checkbox stules
+                        .checkbox-wrapper {
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          min-height: 50px;
+
+                          .input-container {
+                            display: block;
+                            position: relative;
+                            padding-left: 35px;
+                            margin-bottom: 12px;
+                            cursor: pointer;
+                            font-size: 22px;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                          }
+
+                          .input-container input {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 0;
+                            width: 0;
+                          }
+
+                          .checkmark {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 22px;
+                            width: 22px;
+                            background-color: $white;
+                            border: 1px solid $purple-lighter;
+                            border-radius: 4px;
+                          }
+
+                          .input-container input:checked ~ .checkmark {
+                            background-color: $clink-green;
+                          }
+
+                          .checkmark:after {
+                            content: '';
+                            position: absolute;
+                            display: none;
+                          }
+
+                          .input-container input:checked ~ .checkmark:after {
+                            display: block;
+                          }
+
+                          .input-container .checkmark:after {
+                            left: 7px;
+                            top: 4px;
+                            width: 6px;
+                            height: 11px;
+                            border: solid $white;
+                            border-width: 0 2px 2px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.enquiry-pro-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  .field-holder {
+    flex: 1 0 30%;
+    &.project-name {
+      flex: 1 0 100%;
+    }
+    &.date-input,
+    &.your-details {
+      flex: 1 0 45%;
+    }
+    margin-right: 5px;
+    margin-left: 5px;
+    @media screen and (max-width: 768px) {
+      flex: 1 0 100%;
+    }
+  }
+  &__page-3 {
+    .field-holder {
+      flex: 1 0 100%;
+    }
+  }
+
+  .page-two {
+    margin-bottom: 15px;
+  }
+
+  .page-three {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .subcontractor {
+      text-align: center;
+      flex-grow: 1;
+      width: 33%;
+      margin-bottom: 15px;
+      &__logo-container {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          min-width: 80px;
+          max-width: 240px;
+          max-height: 100px;
+        }
+      }
+    }
+  }
+
+  .submit-button-holder {
+    flex: 1 0 100%;
+  }
+}

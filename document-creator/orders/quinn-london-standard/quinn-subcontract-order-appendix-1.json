@@ -1,0 +1,1655 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": {
+      "company_name": "",
+      "subcontract": ""
+    },
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{b:Appendix 1 - Scope of the Sub-Contract Works}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table full-width table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}", "{b:Project}", "{br}", "{br}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{b:{ProjectName}}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{b:Subcontract Package}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{br}",
+                          "{b:{PackageName}}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{br}",
+                  "{br}",
+                  "{b:1.1 Project Overview}",
+                  "{br}",
+                  "{ProjectDescription}",
+                  "{br}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:1.2 Subcontract Works}",
+                  "{br}",
+                  "{SubContractorWorks}",
+                  "{br}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:1.3 Quality and making good defects}",
+                  "{br}",
+                  "You must make good any defects in your Sub-contract works within the period stated in the sub-contract.",
+                  "{br}",
+                  "If you fail to comply with this obligation, then we are entitled to employ others to make good the defects and all charges reasonably incurred by us in employing others will be recoverable from you.",
+                  "{br}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:1.4 Inspection of site}",
+                  "{br}",
+                  "The sub-contractor should ensure that he has inspected the site prior to the award of a sub-contract to  satisfy  themselves  as  to  the  nature  of  the  site,  the  degree  or  working  space available, the means of access to the site and any restrictions these may have on the proposed method of working.",
+                  "{br}",
+                  "The contractor shall be deemed to be fully acquainted with the site and for the avoidance of doubt Quinn London shall have no liability arising out of, or in relation to any issues relating to the  access to  and  condition  of  the  site  unless  additional  instruction  is  provided  by  Quinn London during the duration of the contract.",
+                  "{br}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:1.5 Site Waste Management}",
+                  "{br}",
+                  "It is the responsibility of the Subcontractor to ensure their working environment is kept clear and tidy at all times and wherever possible, dust extractors/methods of suppression are to be employed throughout the works.",
+                  "{br}",
+                  "It   is  the   responsibility   of   the  subcontractor  to  collect   deposit   waste  into   designated bins/chutes/skips  etc.  in  accordance  with  the  procedures  advised  by  QLL  during  the  site induction.",
+                  "{br}",
+                  "If the subcontractor fails to keep their work areas clear and tidy the subcontractor will be issued a 'Corrective Action Notice'. Failure by the subcontractor to take immediate action may result in QLL employing others and a contra-charge will be levied against the subcontractor at a rate of no less than £300 per notice.",
+                  "{br}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:1.6 Key interfaces}",
+                  "{br}",
+                  "The Contractor and Others may undertake the following on Site during the course of the works and the  sub-contractor  should  make  allowance  for their  presence  as  part  of their  price  and programmeas required.",
+                  "{br}",
+                  "The subcontractor may encounter the following on Site during the works and the subcontractor should make allowance for their presence as part of their price and programme.",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Other trades*"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Clients' Professional team; architects, engineers, consultants and the like*"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": ["*All liaison to be through QLL", "{br}", "{br}"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:1.7 Environmental and Quality Management systems}",
+                  "{br}",
+                  "We at Quinn London operate an Environmental management system certified to ISO 14001 and  a  Quality  Management  System  certified  to  ISO9001  on  all  our  construction  sites.  As  a sub-contractor  you  should  ensure  that  you  are  aware  of our  Environmental  policy,  quality policy  and  site  safety  requirements  and  ensure  your  working  methods  are  in  line  with  the expectations set out within them.",
+                  "{br}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:1.8 Health and Safety on site}",
+                  "{br}",
+                  "The  sub-contractor  is  to  include  for  within  his  price  and  programme adherence  to  the requirements set out within this document.",
+                  "{br}",
+                  "Failure to adhere to these requirements can lead to the ejection of individuals from site and continued failure will lead to the termination of the contract.",
+                  "{br}",
+                  "Any and all costs associated with the ejection and any delay caused will be borne by the sub-contractor."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:1.9 Emergency Arrangements}",
+                  "{br}",
+                  "The  sub-contractor  shall  provide  arrangements  and  resources  to  deal  with  any  reasonably foreseeable accident or emergency occurring on their site.",
+                  "{br}",
+                  "The Sub-Contractor  shall  be  responsible  for  the  provision  of  First  Aid  facilities  for  his employees  in  line  with  common  law  and  statutory  obligations  under  the  Health  and  Safety (First Aid) Regulations 1981 and maintaining accident records.",
+                  "{br}",
+                  "All incidents shall be promptly logged with the Quinn London site manager.",
+                  "{br}",
+                  "The Sub-Contractor is obligated to report all accidents and near misses to the Quinn London site manager.",
+                  "{br}",
+                  "The Contractor's emergency arrangements must be accepted by the Project Manager before site work commences. These emergency arrangements must be in force at all times whilst the Contractor is  working.  A  demonstration  of  these  arrangements  to  prove  adequacy  will  be required.",
+                  "{br}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:1.10 Quality}",
+                  "{br}",
+                  "Where  and  to the  extent  that  materials,  products  and  workmanship  are  not fully  detailed  or specified they are to be:-",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "In   accordance   with   the   applicable   law,   Regulatory   Requirements,   applicable standards, including codes of practice, and"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Products are to be new unless otherwise specified."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "No  substances  or  materials  are  used  which  have  been  declared  deleterious  in  any publication  of  the  Building  Research  Establishment,  British  Standards  or  codes  of practice current at the time of incorporation of such substances and materials into the works."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Of  a  standard  appropriate  to  the  Works  and  suitable  for  the  functions  stated  in  or reasonably  to  be  inferred  from  the  drawings,  specification  and  all  other  documents appended to this document, and"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Takes all necessary precautions to prevent damage to the work from frost, rain and other hazards."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Inspects  components  and  products  carefully  before  fixing  or  using  and  rejects  any which are defective."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Fixes or lays securely, accurately and in alignment."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Where  not  specified  otherwise,  selects  fixing  and  jointing  methods  and  types,  sizes and  spacing's  of  fastenings  in  compliance  with  manufacturer's  recommendations. Fastenings to comply with relevant British Standards."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Provides  suitable,  tight  packings  at  screwed  and  bolted  fixing  points  to  take  up tolerances and prevent distortion and does not over-tighten fixings."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Adjusts location and fixing of components and products so that joints which are to be finished with mortar or sealant or otherwise left open toview are even and regular."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Ensures that all moving parts operate properly and freely and does not cut, grind or plane  prefinished  components  and  products  to  remedy  binding  or  poor  fit  without approval."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "In accordance with relevant good industry practice."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:1.11 Protection of Products}",
+                  "{br}",
+                  "The sub-contractor:",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Prevents over-stressing, distortion and any other type of physical damage to products."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Keeps  products  clean  and  free  from  contamination.  Prevents  staining,  chipping, scratching  or  other  disfigurement,  particularly  of  products  exposed  to  view  in  the finished work."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Keeps products dry and in a suitably low humidity atmosphere to prevent premature setting,  moisture  movement  and  similar  defects.  Where  appropriate  products  are stored off the ground to allow free air movement around and between products."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Prevents excessively high or low temperatures and rapid changes of temperature in the products."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Protects  products  adequately  from  rain,  damp,  frost,  sun  and  other  elements  as appropriate  and  ensures  that  products are  at  a  suitable  temperature  and  moisture content at time of use."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Ensures that sheds and covers are of ample size, in good weatherproof condition and well secured."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Keeps different types and grades of products separately and adequately identified."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "So far as possible keeps products in their original wrappings, packings or containers, until immediately before they are used."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Wherever  possible  retains  protective  wrappings  after  fixing  and  until  shortly  before Completion."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Ensures that protective measures are fully compatible with and not prejudicial to the products/materials."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:1.12 Communication}",
+                  "{br}",
+                  "{b:General communication}",
+                  "{br}",
+                  "All  communication  relating  to  the  scope  of  works  and  contract  documentation  should  be  in writing and sent to the QLL QS, and QLL Contracts Manager as a minimum.",
+                  "{br}",
+                  "Minutes will be taken during all meetings between Quinn London and the sub-contractor that will be issued and agreed by both parties.",
+                  "{br}",
+                  "Upon receipt of the draft minutes the sub-contractor has two days to send comments to the project QS. If no comments are received it is deemed that the sub-contractor agrees to the content of the minutes.",
+                  "{br}",
+                  "{b:Notice of change}",
+                  "{br}",
+                  "Any change to the scope and the associated documentation enclosed within this document will be notified to the sub-contractor through the issue of a contract notice by the project QS or  Contracts  Manager.  The  sub-contractor  should  not  accept  verbal  instructions  without confirmation being provided in writing from both the project QS and Contracts Manager.",
+                  "{br}",
+                  "Upon identification of what the sub-contractor feel warrants a change a notice should be sent to the Quinn London Project QS. These notices will relate to such matters as:",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Possession                        "]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Discrepancies in the contract documents"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Divergences from Statutory Requirements"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Emergency compliance with Statutory Requirements"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Delay to progress and relevant events"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Making good defects"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Non-compliance with instructions"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Confirmation of instructions other than in writing                         "
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{br}",
+                  "The  above  is  a  typical  list  it  is  however,  not  exhaustive.  Formal  notices  must  be  issued  by letter and sent to the specified address in the contract.",
+                  "{br}",
+                  "If a notice is not provided and subsequently agreed no change will be made to the contract sum.",
+                  "{br}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:1.13 Labour and Equipment Returns}",
+                  "{br}",
+                  "At the beginning of each week the sub-contractor submits to the project QS records showing, for the previous week:-",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The number, name and description of all persons,  including  managers, engineers, craftsmen, designers, labourers and other persons employed on or in connection with the work. The timesheets shall detail daily tasks, hours, start times, finish times and total hours worked on and off Site."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{br}",
+                  "The Quinn London site manager is required to sign all labour and equipment returns.",
+                  "{br}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:1.14 General}",
+                  "{br}",
+                  "{WashFacilities}. The sub-contractor must clean down all vehicles and plant before it leaves Site to minimise road cleaning.",
+                  "{br}",
+                  "The site is unguarded at night.",
+                  "{br}",
+                  "Regardless of the security measures in place and provided by the contractor, the sub-contractor is  responsible for the security of their own  material, plant and tools and the contractor takes no liability for their theft or damage.",
+                  "{br}",
+                  "The Sub-contractors does not advertise, make any press release or statement, publish or supply for publication any information, drawing or visual recording concerning the Works and does not use the Site for the purpose of advertisement without the written consent of Quinn London.",
+                  "{br}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:1.15 Commercial}",
+                  "{br}",
+                  "Claims, Applications and Invoices.",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "All claims for monies must be submitted in accordance with the timetable set out in the Subcontract order. Failure to meet the prescribed 'Final Date for Application' date may result in payment being delayed until the subsequent 'Final Date for Payment' date."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "If the Contract period extends beyond the dates shown in the Subcontract Order, all subsequent key dates will fall at regular intervals which are equal to and no less than the dates and intervals that precede. Unless advised otherwise by QLL."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "All claims must be submitted as an 'application'. Invoices will be rejected, and a credit note for the full value of the invoice requested before any claim can be certified."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "All  claims  must  give  an  elemental breakdown  of  the  works  in  sums  no  greater  than those shown in Appendix 10a 'Pricing Schedule' and include a cumulative percentage claim (or quantity, as appropriate) against each item."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "All claims must include a running, cumulative 'Estimated Final Account'."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "All additions or omissions to the 'Contract Sum' must be clearly defined, broken down and shown below the contract works under the heading 'Variations'."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "All  claims for  variations must  be  accompanied  by  a  signed  instruction from  both the project QS and the Contracts Manager."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Any discounts are to be taken on the net cumulative total; before retention, TAX/CIS etc."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "It is the responsibility of the Subcontractor to ensure their insurances are current and that QLL have up-to-date copies on record."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "It  is  the  responsibility  of  the  Subcontractor  to  sign  and  return  all  VAT  returns  on previous payments and return these to QLL."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "All applications must include at least one copy in an editable format i.e. Excel."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u2022"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "{b:Failure to adhere to any of the above may cause delays in the payment process. QLL accept no responsibility for delays arising as a result of non-conformance with the procedures described above.}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

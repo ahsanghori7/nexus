@@ -1,0 +1,88 @@
+body {
+  font-family: proxima-nova, sans-serif !important;
+
+  div,
+  span,
+  li,
+  ul {
+    font-family: proxima-nova, sans-serif !important;
+  }
+
+  /* Trick for match page with collapsed sidebar */
+  @media (max-width: 963px) {
+    &.margin-trick {
+      .app {
+        margin-right: 90px;
+      }
+    }
+  }
+}
+
+.c-header-menu {
+  line-height: 1.5;
+}
+
+.clink-dropdown-container__portal {
+  &__content {
+    border: none;
+  }
+
+  .clink-dropdown-content {
+    padding: 0px;
+    overflow: visible;
+    border-color: #e2e2ee;
+    box-shadow: 0px 4px 13px #2d3a4150;
+
+    button {
+      text-align: left;
+      font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif !important;
+      font-weight: 400;
+      height: 46px;
+      letter-spacing: 0;
+      color: #313237;
+      opacity: 1;
+
+      &:hover {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &.project-nav-desktop-dropdown {
+    & > div {
+      padding-top: 70px;
+      margin-top: -70px;
+      box-shadow: none;
+      background-color: transparent;
+
+      .dropdown-content {
+        box-shadow: 0px 4px 13px rgba(45, 58, 65, 0.3);
+      }
+    }
+  }
+}
+
+.preview-modal {
+  .modal-box {
+    width: 720px;
+    height: 1000px;
+
+    @media (max-width: 768px) {
+      width: 668px;
+    }
+
+    @media (max-width: 576px) {
+      width: 375px;
+    }
+
+    padding: 0;
+
+    iframe {
+      margin: 30px;
+    }
+  }
+}
+
+.MuiFormLabel-root {
+  top: 0;
+}

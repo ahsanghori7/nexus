@@ -1,0 +1,203 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": {
+      "company_name": "",
+      "subcontract": ""
+    },
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": { "className": "centered-text" },
+                "children": ["{b:MAIN CONTRACT PARTICULARS}", "{br}"]
+              },
+              {
+                "name": "text",
+                "props": { "className": "justified" },
+                "children": [
+                  "{b:1. Main Contract}",
+                  "{br}",
+                  "1.1 The Employer under the Main Contract is {TheEmployer}",
+                  "{br}",
+                  "1.2 The Employer\u2019s Agent is {EmployersAgent}",
+                  "{br}",
+                  "1.3 The Principal Designer is {PrincipalDesigner}",
+                  "{br}",
+                  "1.4 The Principal Contractor is the Contractor",
+                  "{br}",
+                  "1.5 The Main Contract Conditions are the Design and Build Contract 2016 Edition[1] subject to the Main Contract Modifications Schedule (if any) included in the Numbered Documents",
+                  "{br}",
+                  "1.6 Copies of the Main Contract Particulars are available on written request.",
+                  "{br}",
+                  "1.7 The Main Contract Works *are/are not divided into Sections.",
+                  "{br}",
+                  "Delay damages pursuant to the Main Contract are as follows",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table full-width three-row-questionnaire table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "thead",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column table-header three-cols"
+                        },
+                        "children": ["Section"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column table-header three-cols"
+                        },
+                        "children": ["Completion Date"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column table-header three-cols"
+                        },
+                        "children": ["Delay damages per day/week"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["Enter if applicable"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{br}",
+                  "1.8 Other documents and information relating to the Main Contract which are not included in the Numbered Documents but of which the Sub-Contractor has had a copy or a reasonable opportunity to inspect.",
+                  "{br}",
+                  "________________ ________________",
+                  "________________ ________________",
+                  "________________ ________________",
+                  "________________ ________________",
+                  "{br}",
+                  "{b:2. Programme Information}",
+                  "{br}",
+                  "2.1 The earliest starting date and the latest starting date for the Sub-Contract Works to be carried out on site are",
+                  "(earliest), {SubCommencement}",
+                  "(latest), {SubCompletion}",
+                  "{br}",
+                  "2.2 The site will be closed on Public Holidays and dates to be confirmed in relation to the sub-contract programme.",
+                  "{br}",
+                  "3.\u00a0 \u00a0 \u00a0 Collateral warranties",
+                  "Within 7 days of a request by the Contractor, the Sub-Contractor shall execute and deliver collateral warranties in the forms provided in the Numbered Documents.",
+                  "{br}",
+                  "4.\u00a0 \u00a0 \u00a0 The Rectification Period for the Main Contract Works (or last section)",
+                  "\u00a0{RectificationPeriod}"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

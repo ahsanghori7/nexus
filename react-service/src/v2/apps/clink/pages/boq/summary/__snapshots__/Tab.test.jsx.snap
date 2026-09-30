@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SummaryTab Component matches snapshot with sx prop 1`] = `
+<div
+  data-label="Summary"
+  data-testid="tab"
+  style="color: blue;"
+>
+  Summary
+</div>
+`;
+
+exports[`SummaryTab Component matches snapshot without sx prop 1`] = `
+<div
+  data-label="Summary"
+  data-testid="tab"
+>
+  Summary
+</div>
+`;

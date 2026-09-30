@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlreadyActive Component takes a snapshot 1`] = `
+<div
+  data-name-text=""
+  data-testid="mock-container"
+>
+  <div
+    class="MuiGrid-root MuiGrid-container"
+    data-testid="mui-grid"
+    flexdirection="column"
+  >
+    <div
+      data-margin-bottom="4"
+      data-testid="mock-title"
+      style="font-size: 24px; white-space: nowrap;"
+    >
+      Account Already Active
+    </div>
+  </div>
+</div>
+`;

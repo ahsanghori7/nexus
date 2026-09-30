@@ -1,0 +1,9 @@
+parameters:
+	treatPhpDocTypesAsCertain: false     #Because the type is coming from a PHPDoc, you can turn off this check by setting treatPhpDocTypesAsCertain: false in your phpstan.neon.
+	excludePaths:
+	    - tests
+	level: 5
+	paths:
+		- app
+	bootstrapFiles:
+		- bootstrap.php

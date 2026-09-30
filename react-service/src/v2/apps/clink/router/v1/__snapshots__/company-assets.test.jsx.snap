@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clink/router/v1/company-assets should create snapshot of router configuration 1`] = `
+[
+  {
+    "element": <MockLayout
+      title="company-assets"
+    >
+      <MockCompanyAssets />
+    </MockLayout>,
+    "path": "/company-assets",
+  },
+  {
+    "element": <MockLayout
+      breadCrumbItems={
+        [
+          {
+            "href": "/main-contractor/company-assets",
+            "label": "company-assets",
+            "name": "company-assets",
+          },
+        ]
+      }
+      title="order-templates"
+    >
+      <MockTemplates
+        tenderTemplate="Order Templates"
+        typeAsset="orders"
+      />
+    </MockLayout>,
+    "path": "/company-assets/order-templates",
+  },
+  {
+    "element": <MockLayout
+      breadCrumbItems={
+        [
+          {
+            "href": "/main-contractor/company-assets",
+            "label": "company-assets",
+            "name": "company-assets",
+          },
+        ]
+      }
+      title="letter-of-intent"
+    >
+      <MockTemplates
+        tenderTemplate="letter-of-intent"
+        typeAsset="letters"
+      />
+    </MockLayout>,
+    "path": "/company-assets/letter-of-intent",
+  },
+  {
+    "element": <MockLayout
+      breadCrumbItems={
+        [
+          {
+            "href": "/main-contractor/company-assets",
+            "label": "company-assets",
+            "name": "company-assets",
+          },
+        ]
+      }
+      title="pre-order"
+    >
+      <MockTemplates
+        tenderTemplate="pre-order"
+        typeAsset="preorder"
+      />
+    </MockLayout>,
+    "path": "/company-assets/pre-order",
+  },
+  {
+    "element": <MockLayout
+      breadCrumbItems={
+        [
+          {
+            "href": "/main-contractor/company-assets",
+            "label": "company-assets",
+            "name": "company-assets",
+          },
+        ]
+      }
+      title="tender-templates"
+    >
+      <MockTemplates
+        tenderTemplate="Tender Templates"
+        typeAsset="tenders"
+      />
+    </MockLayout>,
+    "path": "/company-assets/tender-templates",
+  },
+  {
+    "element": <MockLayout
+      breadCrumbItems={
+        [
+          {
+            "href": "/main-contractor/company-assets",
+            "label": "company-assets",
+            "name": "company-assets",
+          },
+        ]
+      }
+      title="schedule-attendances"
+    >
+      <MockPackages
+        editUrl="http://test-host/company-assets/schedule-of-attendances"
+        helpText="Here you can view, edit, and create schedule of attendances templates."
+        subtitle="Select a Schedule of attendances template to view"
+        title="Schedule of attendances"
+        type="soa"
+      />
+    </MockLayout>,
+    "path": "/company-assets/schedule-of-attendances",
+  },
+  {
+    "element": <MockLayout
+      breadCrumbItems={
+        [
+          {
+            "href": "/main-contractor/company-assets",
+            "label": "company-assets",
+            "name": "company-assets",
+          },
+        ]
+      }
+      title="scope-of-works"
+    >
+      <MockPackages
+        editUrl="http://test-host/company-assets/scope-of-works"
+        helpText="Here you can view, edit, and create scope of works templates."
+        subtitle="Select a Scope of Works template to view"
+        title="Scope of Works"
+        type="sow"
+      />
+    </MockLayout>,
+    "path": "/company-assets/scope-of-works",
+  },
+  {
+    "element": <MockLayout
+      breadCrumbItems={
+        [
+          {
+            "href": "/main-contractor/company-assets",
+            "label": "company-assets",
+            "name": "company-assets",
+          },
+          {
+            "href": "/main-contractor/company-assets/scope-of-works",
+            "label": "scope-of-works",
+            "name": "scope-of-works",
+          },
+        ]
+      }
+    >
+      <MockScopeOfWorksForm />
+    </MockLayout>,
+    "path": "/company-assets/scope-of-works/:templateId",
+  },
+]
+`;

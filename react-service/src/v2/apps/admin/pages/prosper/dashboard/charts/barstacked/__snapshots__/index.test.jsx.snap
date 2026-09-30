@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BarStackedComponent should match snapshot 1`] = `
+<div
+  data-testid="charts-container"
+>
+  <div
+    data-testid="charts-list"
+  >
+    <div
+      data-testid="chart"
+      data-type="barstack"
+    >
+      <div
+        data-testid="chart-data"
+      >
+        {"labels":["30 November 2022","01 December 2022","02 December 2022","03 December 2022","04 December 2022","05 December 2022","06 December 2022"],"datasets":[{"label":"Timber Doors","data":[6,6,1,6,0,2,2],"backgroundColor":"rgb(255, 99, 132)"},{"label":"Electrical Contractor","data":[3,2,1,6,9,8,9],"backgroundColor":"rgb(75, 192, 192)"},{"label":"Dataset Dry-Lining","data":[3,4,3,3,1,1,1],"backgroundColor":"rgb(53, 162, 235)"}]}
+      </div>
+      <div
+        data-testid="chart-options"
+      >
+        {"plugins":{"title":{"display":true,"text":"Subscriptions"},"tooltip":{"callbacks":{"footer":"[Function]"}}},"interaction":{"mode":"index","intersect":false},"responsive":true,"scales":{"x":{"stacked":true},"y":{"stacked":true}}}
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BarStackedComponent should match snapshot with custom data 1`] = `
+<div
+  data-testid="charts-container"
+>
+  <div
+    data-testid="charts-list"
+  >
+    <div
+      data-testid="chart"
+      data-type="barstack"
+    >
+      <div
+        data-testid="chart-data"
+      >
+        {"labels":["A","B"],"datasets":[{"label":"Test1","data":[10,20],"backgroundColor":"red"},{"label":"Test2","data":[5,15],"backgroundColor":"blue"}]}
+      </div>
+      <div
+        data-testid="chart-options"
+      >
+        {"plugins":{"title":{"display":true,"text":"Subscriptions"},"tooltip":{"callbacks":{"footer":"[Function]"}}},"interaction":{"mode":"index","intersect":false},"responsive":true,"scales":{"x":{"stacked":true},"y":{"stacked":true}}}
+      </div>
+    </div>
+  </div>
+</div>
+`;

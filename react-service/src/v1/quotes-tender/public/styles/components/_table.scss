@@ -1,0 +1,269 @@
+// ToDo: replace this with _package.scss
+
+table {
+  border-collapse: separate !important; //for custom border and border radius !important should be used
+  overflow: hidden;
+  tbody {
+    box-shadow: 0 0 0 1px RGB(0, 0, 0, 0.1);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    height: 100%;
+
+    .price-text {
+      margin-top: 0.8rem;
+      span {
+        font-size: 0.875rem;
+      }
+    }
+
+    .packages-component__title {
+      margin-top: 0.8rem;
+    }
+
+    tr {
+      td {
+        border-right: 1px solid rgb(0, 0, 0, 0.1);
+      }
+
+      td:first-child {
+        border-left: 1px solid rgb(0, 0, 0, 0.1);
+      }
+
+      &:nth-child(odd) {
+        background-color: $tender-purple-lightest;
+      }
+
+      &:first-child {
+        border-top-left-radius: 1rem;
+        td:first-child {
+          border-top-left-radius: 1rem;
+        }
+      }
+
+      &:first-child {
+        border-top-right-radius: 1rem;
+        td:last-child {
+          border-top-right-radius: 1rem;
+        }
+      }
+
+      &:last-child td:last-child {
+        border-bottom-right-radius: 1rem;
+      }
+
+      &:last-child td {
+        border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+      }
+
+      .delete-menu-item {
+        color: red;
+      }
+
+      .more-options-actions {
+        a:not(.dropdown-item),
+        button,
+        div.dropup button,
+        div.dropdown button {
+          width: 40px;
+          height: 40px;
+          padding: 0.25rem;
+          margin-right: 8px;
+          border-radius: 4px;
+        }
+        div.dropdown {
+          .show {
+            transform: translate(-150px, 36.3636px) !important;
+          }
+        }
+        div.dropup {
+          .show {
+            transform: translate(-150px, 63.3636px) !important;
+          }
+        }
+        div.dropdown,
+        div.dropup {
+          display: initial;
+          .dropdown-menu.show {
+            left: 30px !important;
+            box-shadow: 0px 10px 20px rgba($tender-black, 0.4);
+          }
+          button {
+            &:after {
+              display: none;
+            }
+            svg {
+              height: 22px;
+            }
+            border: 2px solid $tender-purple;
+            &:hover,
+            &:focus {
+              background: $tender-purple-lighter 0% 0% no-repeat padding-box;
+              svg {
+                circle,
+                path {
+                  fill: $tender-purple;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .dropdown-item {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  tr {
+    .more-options-actions {
+      div.dropdown {
+        .show {
+          left: 0px !important;
+          transform: translate3d(0px, 34px, 0px) !important;
+        }
+      }
+      div.dropup {
+        .show {
+          left: 0px !important;
+          transform: translate3d(0px, -30px, 0px) !important;
+        }
+      }
+    }
+  }
+}
+
+.table-header {
+  letter-spacing: 0px;
+  color: $dark-lighter-grey;
+  font-size: 0.9rem;
+  font-weight: 300;
+  border-bottom: none;
+  padding: 0;
+  padding-top: 1.5rem;
+
+  &-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .plus-button {
+    border-radius: 3px;
+    min-width: 1rem;
+    padding: 2px;
+    margin-left: 5px;
+
+    @extend .d-inline-flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+
+    svg {
+      margin: 0;
+      height: auto;
+      font-size: 0.7rem;
+      width: 1em;
+    }
+  }
+}
+
+.quotes-component__list {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  height: 100%;
+}
+
+.custom-dropdown-item {
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+  margin: 0 !important;
+  padding-left: 5px;
+  max-height: 2rem !important;
+  width: 100%;
+  label:last-child {
+    border-bottom: none;
+  }
+
+  span {
+    font-size: 14px;
+  }
+}
+
+.custom-dropdown-menu {
+  margin-top: 2px;
+  padding: 0;
+  min-width: 17vw !important;
+}
+
+.star:hover {
+  stroke: $white;
+}
+
+.footer {
+  border: none;
+  &-container {
+    display: flex;
+    width: 83%;
+  }
+
+  td {
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+    width: 26%;
+  }
+
+  .budget {
+    flex: 1 0 auto;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    height: 4rem;
+    margin-top: 3px;
+    border-bottom-left-radius: 1rem;
+    border-right: none;
+    display: flex;
+    align-items: center;
+  }
+  .total {
+    flex: 1 0 auto;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    height: 4rem;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+  }
+  .difference {
+    flex: 1 0 auto;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    height: 4rem;
+    margin-top: 3px;
+    border-bottom-right-radius: 1rem;
+    border-left: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &-label {
+    margin-left: 3px;
+    margin-right: 5px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: $black;
+  }
+
+  input {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: $dark-lighter-grey;
+    border: 0;
+    padding-left: 0;
+  }
+}
+
+.button-position {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+}

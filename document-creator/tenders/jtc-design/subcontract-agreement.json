@@ -1,0 +1,248 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": {
+      "company_name": "",
+      "subcontract": ""
+    },
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": ["{b:Sub-Contract Agreement}"]
+              },
+              {
+                "name": "text",
+                "props": { "className": "justified" },
+                "children": [
+                  "{br}",
+                  "{b:THIS AGREEMENT} is dated the                 day of\n              20[         ]",
+                  "{br}",
+                  "{b:BETWEEN}:",
+                  "{br}",
+                  "(1) {b:{CompanyName}} incorporated and registered in England and \n              Wales with company number ({CompanyReg}) whose registered office \n              is at {CompanyAddress} (the \"{b:Contractor}\") and",
+                  "{br}",
+                  "(2) {b:[Sub-Contractor Name]} incorporated and registered in England \n              and Wales with company number [Sub-Contractor Reg] whose \n              registered office is at [Registered Address] \n              (the \"{b:Sub-Contractor}\")",
+                  "{br}",
+                  "{b:BACKGROUND}",
+                  "{br}",
+                  "The Contractor has entered into the Main Contract as described in the Main \n    Contract Schedule of Information. The parties have agreed to enter into this \n    Sub Contractor for Sub-Contract Works on the terms and conditions set out \n    herein.",
+                  "{br}",
+                  "{b:NOW IT IS AGREED AS FOLLOWS:}",
+                  "{br}",
+                  "1. The following documents shall be deemed to form and shall be read and construed as comprising this Sub-Contract",
+                  "1.1 This Contract Agreement;",
+                  "1.2 The Sub-Contract Particulars appended hereto;",
+                  "1.3 The Main Contract Particulars Schedule and Main Contract Particulars appended hereto,",
+                  "1.4 The JCT Design and Build Sub-Contract Conditions DBSub/C 2016 Edition [subject to the amendments in Schedule A].",
+                  "1.5 Schedules and Numbered Documents"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "legal-table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "legal-table-section"
+                    },
+                    "children": [
+                      {
+                        "type": "text",
+                        "children": [
+                          "Schedule 1 : ",
+                          "Schedule 2 : ",
+                          "Schedule 3 : ",
+                          "Schedule 4 : ",
+                          "Schedule 5 : ",
+                          "Schedule 6 : "
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "children": [""]
+                      },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Scope of Works Document",
+                          "Schedule of Attendances",
+                          "Sub-Contract Sum Analysis/Pricing Document",
+                          "Drawings and Specifications",
+                          "Interim Valuation Dates",
+                          "The Numbered Documents"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{br}",
+                  "The Sub-Contract Works are described in the above documents."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": { "className": "justified" },
+                "children": [
+                  "2. The Contractor shall pay to the Sub-Contractor at the \n  times and in the manner specified in this Sub-Contract and in consideration \n  for the execution and completion of the Sub-Contract Works and the remedying \n  of defects the VAT exclusive sum of \u00a3TBC (\u201cthe Contract Sum\u201d) or such other \n  sum as becomes payable under this Contract.",
+                  "{br}",
+                  "3. In consideration of the payments to be made by the \n  Contractor to the Sub-Contractor pursuant to this Sub-Contract the \n  Sub-Contractor covenants with the Contractor to execute and complete the \n  Sub-Contract Works and remedy any defects therein, in conformity in all \n  respects with the provisions of this Sub-Contract.",
+                  "{br}",
+                  "{br}",
+                  "{br}",
+                  "{br}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "Executed as a deed by the Contractor acting by a Director"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table full-width no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "___________________",
+                          "{br}",
+                          "Signature of Director"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "____________________",
+                          "{br}",
+                          "Print name of Director"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "Executed as a deed by the Sub-Contractor acting by a Director"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table full-width no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "___________________",
+                          "{br}",
+                          "Signature of Director"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "____________________",
+                          "{br}",
+                          "Print name of Director"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

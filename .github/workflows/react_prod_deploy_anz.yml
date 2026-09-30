@@ -1,0 +1,59 @@
+name: REACT - PROD ANZ Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 18 ]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8
+
+      - name: Use .npmrc
+        uses: bduff9/use-npmrc@v1.1
+        with:
+          dot-npmrc: ${{ secrets.MY_NPMRC }}
+          working-directory: ./react-service
+
+      - name: Move to merge targeted branch
+        run: git fetch && git checkout ${{ github.event.pull_request.base.ref }}
+
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+        working-directory: ./react-service
+
+      - name: create-json
+        id: create-json
+        uses: jsdaniell/create-json@1.1.2
+        with:
+          name: "config.json"
+          json: ${{ secrets.PROD_ANZ_CONFIG }}
+          dir: "react-service/"
+
+      - name: Build assets
+        run: pnpm run build --env pathS3=/production-anz/
+        working-directory: ./react-service
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.REACT_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.REACT_AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Deploy app build to S3 bucket
+        run: aws s3 sync react-service/dist s3://${{ secrets.REACT_AWS_BUCKET_NAME }}/production-anz --delete

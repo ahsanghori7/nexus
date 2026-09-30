@@ -1,0 +1,1344 @@
+[
+  {
+    "footer": {
+      "company_name": "",
+      "subcontract": "",
+      "html": "<table width='100%' style='border-collapse:collapse; font-size:10px; margin-top:6px;'><tr><td colspan='2' style='border:1px solid #000; padding:6px;'><strong>Information Classification: Protected</strong></td><td style='border:1px solid #000; padding:6px; width:20%;'>MCL-COM-FR-4694</td><td colspan='2' style='border:1px solid #000; padding:6px; width:40%;'>JCT DBSub 2016 Articles and Contract Particulars</td></tr><tr><td style='border:1px solid #000; padding:6px;' colspan='3'>This document is uncontrolled if printed. Please always refer to TMW for the latest version</td><td style='border-right:1px solid #000; padding:0 4px; text-align:left; vertical-align:middle; white-space:nowrap;border:1px solid #000;'>Rev 2</td><td colspan='1' style='padding:0 4px; text-align:right; vertical-align:middle; white-space:nowrap;border:1px solid #000;'>Page {PAGENO} of {nbpg}</td></tr></table>"
+    },
+    "header": {
+      "address": [],
+      "company_name": "",
+      "company_reg": "",
+      "logo": "",
+      "web_address": ""
+    },
+    "name": "document",
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "conditionalContent": "{HRBAttached}",
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "HRB Supplemental Modifications Schedule to the JCT Design and Build Sub-Contract Conditions 2016 DBSub/C 2016 (Doc ref HRBM as referred to in Part One of Item 18 of the Sub-Contract Particulars)"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": ["{b:Section 1 – Definitions and Interpretation}"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": ["{b:Clause 1.1}"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": ["Insert the following new definitions:"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Accountable Person\"} means the person(s) who are or may be from time to time required by the Building Safety Laws to perform the functions of the accountable person."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"BSR Building Control Approval Application\"} means the building control approval application as defined by the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"BSR Building Control Approval\"} means the building control approval as defined by the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"BSR Completion Certificate Application\"} means the completion certificate application as defined by the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"BSR Completion Certificate\"} means the completion certificate or partial completion certificate, as the case may be, issued by the Building Safety Regulator in accordance with regulations 44 or 45, as appropriate, of the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Building Regulations Compliance Declaration\"} means the Building Regulations compliance declaration as defined by the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Building Regulations Compliance Statement\"} means the Building Regulations compliance statement as defined by the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Change Control Application\"} has the meaning given to it in the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Change Control Log\"} has the meaning given to it in the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Change Control Plan\"} means the change control plan as defined by the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Construction Control Plan\"} means the construction control plan as defined by the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Fire and Emergency File\"} the fire and emergency file as defined by the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Golden Thread\"} has the meaning given to it in the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Golden Thread Facility\"} means the electronic facility to be created and maintained for the purpose of holding the Golden Thread Information in accordance with the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Golden Thread Information\"} means the information required by the Building Safety Laws to be included in the Golden Thread Facility."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Major Change\"} has the meaning given to it in the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Mandatory Occurrence Reporting Plan\"} means the mandatory occurrence reporting plan as defined by the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Mandatory Occurrence Reporting System\"} means the mandatory occurrence reporting system as defined by the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Notifiable Change\"} has the meaning given to it in the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Partial Completion Strategy\"} means the partial completion strategy as defined by the HRB Regulations."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:\"Principal Accountable Person\"} means the person who is or may be from time to time required by the Building Safety Laws to perform the functions of the principal accountable person."
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{b:Clause 1.3}"]
+              },
+              {
+                "name": "text",
+                "children": ["Delete clause and insert the following:"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "\"Subject always to clauses 2.10 and 2.11, in the event of any inconsistency or conflict occurring between the contents of respectively, and in the following order:"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": ["1.3.8"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "the HRB Supplemental Modifications Schedule;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": ["1.3.9"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["the Sub-Contract Modifications Schedule;"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": ["1.3.10"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["the Articles of Agreement;"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": ["1.3.11"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "the Sub-Contract Particulars (excluding item 18 of the Sub-Contract Particulars for the purposes of this clause 1 .3);"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": ["1.3.12"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "the clauses set out in sections 1 to 8 of the printed JCT Design and Build Sub-Contract Conditions 2016 and the schedules thereto;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": ["1.3.13"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "the Numbered Documents prepared by the Contractor;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": ["1.3.14"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "the Numbered Documents prepared or provided by the Sub-Contractor; and"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": ["1.3.15"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["the Main Contract Information Schedule,"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "then the contents of the document earlier in the order shall prevail over any document later in the order. In the event of any inconsistency or conflict occurring between the Contractor's Requirements and the Sub-Contractor's Proposals the Contractor's Requirements shall take precedence.\""
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "{b:Section 2 – Carrying out the Sub-Contract Works}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{b:Clause 2.1}"]
+              },
+              {
+                "name": "text",
+                "children": ["Insert new clause 2.1.7 as follows:"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "\"The Sub-Contractor shall promptly liaise and co-operate with the Contractor, the Employer and/or the Building Safety Regulator in relation to the BSR Building Control Approval Application and the BSR Completion Certificate Application as may be required by the Building Safety Regulator, the Contractor, the Employer and/or the Building Safety Laws.\""
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{b:Clause 2.7A}"]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "After clause 2.7 insert new clause 2.7A as follows:"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "\"The Sub-Contractor acknowledges that the Contractor may be required to create and maintain on behalf of the Employer in accordance with the Building Safety Laws:"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".1"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Construction Control Plan;"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".2"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Change Control Plan;"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".3"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Change Control Log;"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".4"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Mandatory Occurrence Reporting Plan;"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".5"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": ["Fire and Emergency File;"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".6"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Building Regulations Compliance Declaration;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".7"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Building Regulations Compliance Statement;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".8"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Partial Completion Strategy, if applicable,"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "and shall promptly liaise and co-operate with the Contractor, the Employer and/or the Building Safety Regulator in relation to these documents (insofar as they relate to the Sub-Contract Works) as may be required by the Building Safety Regulator and the Building Safety Laws.\""
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{b:Clause 2.7B}"]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "After clause 2.7A insert new clause 2.7B as follows:"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "\"The Sub-Contractor shall create, upload to the Golden Thread Facility and retain such information and"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "documentation relating to the Sub-Contract Works as is referred to in the regulations set out in Part 4 of the HRB Regulations, including accurate and sufficient records about the Sub-Contract Works and information and documentation relevant to the management and reduction of building safety risks in the completed Sub-Contract Works, which:"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".1"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "is required by regulation 38 of the Building Regulations Part 8;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".2"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "is required by the Contractor or the Employer in order to discharge its obligations under any provisions of the Building Safety Laws;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".3"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "meets the requirements of {em:BS 8644-1: Digital management of fire safety information-design, construction, handover, asset management and emergency response} code of practice as may be amended, supplemented, updated or replaced from time to time;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row justified"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".4"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "meets the requirement of the \"Building Regulations Advisory Committee: golden thread report\" published 21 July 2021, including the golden thread principles set out in Section 3.5 of such report; and/or"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".5"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column justified"
+                        },
+                        "type": "column",
+                        "children": [
+                          "is referenced as \"golden thread information\" within the HRB Regulations,"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "and shall immediately provide the same to the Contractor forthwith upon the Contractor's request.\""
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{b:Clause 2.7C}"]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "After clause 2.7B insert new clause 2.7C as follows:"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "\"The Sub-Contractor and the Sub-Contractor's Persons shall promptly and without charge provide to the Contractor copies of any information relating to the Sub-Contract Works that the Contractor and the Contractor's Persons are required to provide to the Accountable Person and/or the Principal Accountable Person by the Building Safety Laws.\""
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{b:Clause 2.19.3}"]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "At the end of the clause before the semicolon insert:"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "\"except to the extent that any delay by the Building Safety Regulator in issuing the BSR Building Control Approval within the statutory period was caused or contributed to by any default, whether by act or omission, of the Sub-Contractor or any Sub-Contractor's Person\"."
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{b:Section 3 – Control of the Sub-Contract Works}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{b:Clause 3.3.2}"]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "Insert new clauses 3.3.2.4 and 3.3.2.5 as follows:"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row justified"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": ["\"3.3.2.4"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "the sub-subcontractor shall utilise the Golden Thread Facility and promptly update the Golden Thread to include all information that it is obliged to provide or procure of the type referenced in clause 2.7B; and"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": ["3.3.2.5"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "each party to the sub-contract shall promptly notify the Building Regulations Principal Designer and Building Regulations Principal Contractor of any incidents or situations that should be"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "reported through the Mandatory Occurrence Reporting System in accordance with the Building Safety Laws.\""
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{b:Clause 3.3.3}"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "After \"BIM Protocol\" insert \"and/or for the Golden Thread Facility\"."
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{b:Clause 3.9}"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "After \"authorised by either of them\" insert \", including, where relevant, the Building Safety Regulator\"."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "Delete from \"but subject to\" up to the end of the clause."
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{b:Clause 3.10}"]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "Delete the final sentence and insert the following:"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "\"To the extent that such direction(s) are reasonable (which includes but is not limited to where clause 3.11.3 applies or where work specified in a notice from the Building Safety Regulator has been covered up in contravention of such notice), whatever the results of the opening up for inspection or terms, no addition to the Sub-Contract Sum/Tender Sum shall be made and the Sub-Contractor shall not be entitled to any extension of time in respect of such opening up.\""
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{b:Clause 3.10A}"]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "After clause 3.10 insert new clause 3.10A as follows:"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "\"If any work, materials or goods are covered up in contravention of a notice from the Building Safety Regulator requiring specified work to remain uncovered for a specified time, the Sub-Contractor will comply with all instructions of the Building Safety Regulator, including any compliance or stop notices, and any instructions of the Contractor under clause 3.10 as applicable, and no addition shall be made to the Sub-Contract Sum and no extension of time shall be given whatever the results of the opening up.\""
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{b:Section 4 – Payment}"]
+              },
+              {
+                "name": "text",
+                "children": ["{b:Clause 4.9.9}"]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "At the end of the clause before the full stop insert:"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "\"including but not limited to all fees or charges (including any rates or taxes) legally demandable by the Building Safety Regulator, to the extent such amounts were incurred as a result of:"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".1"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "any delay in the Building Safety Regulator approving a Change Control Application or issuing the BSR Building Control Approval and/or the BSR Completion Certificate within the statutory period from the date when the relevant application was submitted where such delay is occasioned or contributed to by the act, omission or default of the Sub-Contractor or the Sub-Contractor's Persons; and/or"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".2"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "the Sub-Contractor's failure to comply with this Sub-Contract, the directions of the Building Safety Regulator or the Building Safety Laws.\""
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": ["{b:Section 5 – Valuation of Work and Variations}"]
+              },
+              {
+                "name": "text",
+                "children": ["{b:Clause 5.1.3}"]
+              },
+              {
+                "name": "text",
+                "children": ["Insert new clause 5.1.3 as follows:"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "\"a Major Change or a Notifiable Change instructed by the Contractor except to the extent that such instruction is occasioned or contributed to by the negligence or default of the Sub-Contractor or any Sub-Contractor's Person.\""
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{b:Clause 5.1A}"]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "After clause 5.1 insert new clause 5.1A as follows:"
+                ]
+              },
+              {
+                "name": "view",
+                "props": {
+                  "className": "edit-document-table table tc full-width no-border"
+                },
+                "type": "table",
+                "children": [
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": ["\".1"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Where a Major Change or a Notifiable Change is proposed, the Sub-Contractor shall notify the Contractor and assist and liaise with the Contractor in relation to the Contractor making a Change Control Application or notifying, as applicable, the Building Safety Regulator in accordance with the Building Safety Laws.\""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "type": "row",
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "type": "column",
+                        "children": [".2"]
+                      },
+                      {
+                        "name": "text",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "type": "column",
+                        "children": [
+                          "Where a Major Change or Notifiable Change is not a Change then the Sub-Contractor is not entitled to any addition to the Sub-Contract Sum or any extension of time.\""
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

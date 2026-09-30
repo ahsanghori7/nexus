@@ -1,0 +1,43 @@
+.react-select-container {
+  .react-select {
+    &__control {
+      min-height: 45px;
+      font-size: 0.9rem;
+      border: 5px solid rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      outline: none;
+
+      &:hover {
+        border: 5px solid rgba(0, 0, 0, 0.4);
+      }
+
+      &--is-focused,
+      &:not(:disabled):not(.disabled):active {
+        border-color: #d1d1d1;
+      }
+
+      &--is-focused,
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgb(244, 244, 244);
+      }
+    }
+  }
+}
+
+.choose-subcontractor-select {
+  #subcontractor_id {
+    .react-select__value-container {
+      margin-left: 25px;
+    }
+  }
+}
+
+.react-select-field-holder {
+  position: relative;
+
+  .select-react-icon-placeholder {
+    position: absolute;
+    top: 37px;
+    left: 18px;
+  }
+}

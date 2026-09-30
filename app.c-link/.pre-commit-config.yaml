@@ -1,0 +1,25 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+      - id: check-added-large-files
+        args: ["--maxkb=1000"]
+        exclude: ^react-service/vendor/
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-xml
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: no-commit-to-branch
+        args: [ -b, develop, -b, main ]
+
+  - repo: https://github.com/digitalpulp/pre-commit-php.git
+    rev: 1.4.0
+    hooks:
+      - id: php-cs-fixer
+        files: \.(php)$
+        args: [ --config=.php-cs-fixer.php ]
+      - id: php-stan
+        files: \.(php)$

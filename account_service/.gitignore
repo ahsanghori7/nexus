@@ -1,0 +1,13 @@
+.idea/
+.vscode/
+/coverage/
+/build/
+/vendor/
+/logs/*
+!/logs/README.md
+/tests/CoverageThreshold.shared.php
+.phpunit.result.cache
+db/schema_diagrams/*/*.dot
+.env
+.phplint-cache
+.php-cs-fixer.cache

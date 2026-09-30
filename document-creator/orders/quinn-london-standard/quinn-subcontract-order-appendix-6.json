@@ -1,0 +1,70 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": {
+      "company_name": "",
+      "subcontract": ""
+    },
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{b:Appendix 6 - Pricing Schedule/Bill of Quantities}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:Please refer to the Pricing Document appended under Appendix 2 of this document.}",
+                  "{br}",
+                  "The Sub-Contractor is to allow for all works shown, described, or required by the order documents, as the quantities provided within the enquiry documentation are for comparison purposes only and are neither warranted to be accurate or complete. The Sub-Contractor is required to price the quantities provided and to have made due allowance within his pricing of the same for any deficiency, error or mistake in the quantities provided, as the Sub-Contract Works will not be remeasurable on completion.",
+                  "{br}",
+                  "The Sub-Contractor is to ensure that their price includes for all management, labour, plant, materials, temporary materials, protection, design (including that of temporary works/supports) and all supervision necessary to carry out the Sub-Contract Works in accordance with the enclosed documentation.",
+                  "{br}",
+                  "The sub-contractor is to ensure that he has confirmed the accuracy of all information within this order and highlight any inaccuracies within this document.",
+                  "{br}",
+                  "The price provided in response to the enquiry is deemed to have been reviewed and no alterations based upon the inaccuracy of documentation will be accepted following the award of a sub-contract.",
+                  "{br}",
+                  "The Sub-Contractor is deemed to have included for compliance with all Contractor and Employer policies and procedures when on Site.",
+                  "{br}",
+                  "Notwithstanding the above items it is deemed that the Sub-Contractor has included for all works (insofar as they relate to the Sub-Contract Works) that are detailed on the drawings, or reasonable inferred therefrom, and has complied with the specifications contained within the order that this document is appended to.",
+                  "{br}",
+                  "In responding to this order, the Sub-Contractor is to provide the Contractor with a full breakdown of both fixed and time related preliminaries. - if relevant or requested."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

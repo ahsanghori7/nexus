@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Adornment Component takes a snapshot 1`] = `
+<div
+  data-position="end"
+  data-testid="input-adornment"
+>
+  <button
+    aria-label="toggle password visibility"
+    class="MuiIconButton-root"
+    data-testid="icon-button"
+    edge="end"
+    role="button"
+    type="button"
+  >
+    <div
+      class="MuiSvgIcon-root visibility-icon"
+      data-testid="VisibilityIcon"
+    >
+      visibility
+    </div>
+  </button>
+</div>
+`;

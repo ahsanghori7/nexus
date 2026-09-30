@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThankYou Component takes a snapshot 1`] = `
+<div
+  data-testid="mock-container"
+>
+  <div
+    class="MuiGrid-root MuiGrid-container"
+    data-testid="mui-grid"
+    flexdirection="column"
+  >
+    <div
+      data-margin-bottom="4"
+      data-testid="mock-title"
+      style="font-size: 24px; white-space: nowrap;"
+    >
+      Thank You
+    </div>
+    <div
+      data-font-weight="200"
+      data-margin-bottom="4"
+      data-testid="mock-title"
+      data-variant="normal"
+    >
+      Your account has been created successfully
+    </div>
+    <div
+      data-font-weight="200"
+      data-margin-bottom="4"
+      data-testid="mock-title"
+      data-variant="normal"
+    >
+      You can now start using Prosper
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item"
+      data-testid="mui-grid"
+    >
+      <div
+        data-discover="true"
+        data-show="false"
+        data-testid="opt-viewer"
+        data-title="Opportunities"
+      >
+        Opportunity Viewer
+      </div>
+    </div>
+  </div>
+  <div
+    data-testid="link-list"
+  >
+    <div
+      data-testid="link-0"
+    >
+      Complete Your Profile
+    </div>
+    <div
+      data-testid="link-1"
+    >
+      How to Use Prosper
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,41 @@
+.container-thumbnail-files {
+  position: relative;
+  margin-bottom: 0.5rem;
+  width: fit-content;
+
+  .thumbnail-upload-file {
+    width: auto;
+    height: auto;
+    max-width: $max-size-img-thumbnail;
+    max-height: $max-size-img-thumbnail;
+  }
+  .remove-file {
+    width: $size-btn-remove-file;
+    height: $size-btn-remove-file;
+    min-width: $size-btn-remove-file !important;
+    min-height: $size-btn-remove-file;
+    padding: 0px !important;
+    background-color: $white;
+    cursor: pointer;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+  }
+}
+
+.upload-btn {
+  @extend .rounded-pill;
+
+  line-height: normal !important;
+  display: flex !important;
+  align-items: center;
+  height: 40px;
+  padding: 0rem 1.3rem !important;
+
+  svg {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

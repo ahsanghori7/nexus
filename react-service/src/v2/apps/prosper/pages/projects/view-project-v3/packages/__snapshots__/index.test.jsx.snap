@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Packages Component matches snapshot 1`] = `
+<div
+  class="MuiBox-root"
+  data-testid="mui-box"
+  style="padding: 3px;"
+>
+  <div
+    data-testid="container"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container"
+      data-testid="mui-grid"
+      flexdirection="column"
+    >
+      <div
+        data-testid="matched-component"
+      >
+        Matched Component - unlocked: 
+        false
+      </div>
+      <div
+        data-testid="other-component"
+      >
+        Other Component - unlocked: 
+        false
+      </div>
+    </div>
+  </div>
+</div>
+`;

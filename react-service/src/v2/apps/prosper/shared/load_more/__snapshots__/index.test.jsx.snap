@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadMore Component should match snapshot when button is not visible 1`] = `
+<div
+  data-testid="styled-load-more"
+/>
+`;
+
+exports[`LoadMore Component should match snapshot when button is visible 1`] = `
+<div
+  data-testid="styled-load-more"
+>
+  <button
+    class="load-more-btn"
+    color="prosperGreenButton"
+    label="Load More"
+    layout="square"
+    sizebtn="large"
+  />
+</div>
+`;

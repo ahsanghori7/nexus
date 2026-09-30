@@ -1,0 +1,85 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": { "company_name": "", "subcontract": "" },
+    "props": { "className": "edit-document-document" },
+    "children": [
+      {
+        "type": "coverpage",
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "text",
+                "props": { "className": "centered-text edit-document-title" },
+                "children": ["{b:Letter of Award}"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "text",
+                "props": { "className": "justified" },
+                "children": [
+                  "Our Ref:LoA/{OrderReference}",
+                  "{br}",
+                  "{Date}",
+                  "{br}",
+                  "{b:EMAIL {SubContractorEmail}}",
+                  "{br}",
+                  "{TheSupplier}",
+                  "{RegisteredAddress}",
+                  "{br}",
+                  "For the attention of {SubContactName}",
+                  "{br}",
+                  "{br}",
+                  "Dear Sirs,",
+                  "{br}",
+                  "{b:Re: Project Name: {ProjectName}}",
+                  "{b:Order No: {OrderReference}}",
+                  "{br}",
+                  "Please find enclosed your Subcontract Order Agreements \n            {OrderReference} and documents incorporated therein.",
+                  "{br}",
+                  "Please arrange for a statutory Director to sign where indicated. \n            They should then be returned in order that we can arrange for our \n            completion of the documents, and return of an original to you for \n            your records. Please note that you should not under any \n            circumstances alter or amend the Subcontract contract documents \n            without prior consultation with the writer.",
+                  "{br}",
+                  "Commencement by you of any of the works, which form part of this \n            Subcontract Agreement, will be taken as express acceptance of the \n            terms and conditions contained therein.",
+                  "{br}",
+                  "Please return the signed Subcontract Documents by no later than \n            {OrderReturnDate}.",
+                  "{br}",
+                  "Yours faithfully,",
+                  "{br}",
+                  "{br}",
+                  "{br}",
+                  "{b:For {CompanyName}}",
+                  "{br}",
+                  "{b:{UserName}}",
+                  "{b:{UserRole}}"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

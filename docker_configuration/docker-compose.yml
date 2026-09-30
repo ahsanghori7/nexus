@@ -1,0 +1,179 @@
+volumes:
+  logs:
+    driver: local
+
+services:
+  db:
+    container_name: db
+    image: mysql:8.4.0
+    command: --mysql-native-password=ON
+    ports:
+      - 3306:3306
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    volumes:
+      - ./databases_cache/db:/var/lib/mysql
+      - ./databases_cache/temp/:/var/lib/db/tmp
+
+  phpmyadmin:
+    platform: linux/amd64
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin:5.2.1
+    environment:
+      - PMA_ARBITRARY=1
+      - UPLOAD_LIMIT=409600K
+    depends_on:
+      - db
+    ports:
+      - 8100:80
+
+  proxy:
+    container_name: proxy
+    build:
+      context: .
+      dockerfile: proxy.Dockerfile
+    ports:
+      - 80:80
+
+  # SERVICES
+  account_service:
+    container_name: account_service
+    env_file:
+      - ../account_service/.env
+    build:
+      context: ../account_service
+      dockerfile: ../docker_configuration/services8.Dockerfile
+      args:
+        SERVICE_NAME: account_service
+        REGISTRY: ${REGISTRY}
+    ports:
+      - "8081:80"
+    volumes:
+      - ../account_service/app:/var/www/html/account_service/app
+      - ../account_service/db:/var/www/html/account_service/db
+      - ../account_service/dev_resources:/var/www/html/account_service/dev_resources
+      - ../account_service/public:/var/www/html/account_service/public
+      - ../account_service/src:/var/www/html/account_service/src
+      - ../account_service/.env:/var/www/html/account_service/.env
+
+  project_service:
+    container_name: project_service
+    env_file:
+      - ../project_service/.env
+    build:
+      context: ../project_service
+      dockerfile: ../docker_configuration/services8.Dockerfile
+      args:
+        SERVICE_NAME: project_service
+        REGISTRY: ${REGISTRY}
+    ports:
+      - "8082:80"
+    volumes:
+      - ../project_service/app:/var/www/html/project_service/app
+      - ../project_service/db:/var/www/html/project_service/db
+      - ../project_service/dev_resources:/var/www/html/project_service/dev_resources
+      - ../project_service/public:/var/www/html/project_service/public
+      - ../project_service/src:/var/www/html/project_service/src
+      - ../project_service/.env:/var/www/html/project_service/.env
+      - ../project_service/fixtures.php:/var/www/html/project_service/fixtures.php
+
+  document_service:
+    container_name: document_service
+    env_file:
+      - ../document_service/.env
+    build:
+      context: ../document_service
+      dockerfile: ../docker_configuration/services8.Dockerfile
+      args:
+        SERVICE_NAME: document_service
+        REGISTRY: ${REGISTRY}
+    ports:
+      - "8083:80"
+    volumes:
+      - ../document_service/app:/var/www/html/document_service/app
+      - ../document_service/db:/var/www/html/document_service/db
+      - ../document_service/public:/var/www/html/document_service/public
+      - ../document_service/src:/var/www/html/document_service/src
+      - ../document_service/.env:/var/www/html/document_service/.env
+
+  # APPS
+  app.c-link:
+    container_name: app.c-link
+    env_file:
+      - ../app.c-link/.env
+    build:
+      context: ../app.c-link
+      dockerfile: ../docker_configuration/${APP_CLINK_DOCKERFILE:-app.c-link.Dockerfile}
+      args:
+        GITHUB_TOKEN: ${GITHUB_TOKEN}
+        SERVICE_NAME: app.c-link
+    hostname: ""
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "supply_chain.local:host-gateway"
+      - "api.local:host-gateway"
+      - "email.local:host-gateway"
+      - "prequalification.local:host-gateway"
+      - "company_profile.local:host-gateway"
+
+    ports:
+      - "8085:80"
+    volumes:
+      - ../app.c-link/app:/var/www/html/app.c-link/app
+      - ../app.c-link/public:/var/www/html/app.c-link/public
+      - ../app.c-link/bootstrap:/var/www/html/app.c-link/bootstrap
+      - ../app.c-link/.env:/var/www/html/app.c-link/.env
+
+  framework:
+    container_name: framework
+    env_file:
+      - ../framework/.env
+    build:
+      context: ../framework
+      dockerfile: ../docker_configuration/framework.Dockerfile
+      args:
+        SETASIGN_USERNAME: ${SETASIGN_USERNAME}
+        SETASIGN_PASSWORD: ${SETASIGN_PASSWORD}
+    hostname: ""
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "supply_chain.local:host-gateway"
+      - "admin.local:host-gateway"
+      - "analytics.local:host-gateway"
+      - "company_profile.local:host-gateway"
+      - "email.local:host-gateway"
+    ports:
+      - "8086:80"
+    volumes:
+      - ../framework/public:/var/www/html/framework/public
+      - ../framework/.env:/var/www/html/framework/.env
+      - ../framework/app.constants.php:/var/www/html/framework/app.constants.php
+      - ../framework/init.php:/var/www/html/framework/init.php
+      #      - ../framework/src:/var/www/html/framework/src  # This would overwrite the vendors files so we map folder by fodler
+      - ../framework/src/admin/code:/var/www/html/framework/src/admin/code
+      - ../framework/src/admin/config:/var/www/html/framework/src/admin/config
+      - ../framework/src/analytics/code:/var/www/html/framework/src/analytics/code
+      - ../framework/src/analytics/config:/var/www/html/framework/src/analytics/config
+      - ../framework/src/company_profile/code:/var/www/html/framework/src/company_profile/code
+      - ../framework/src/company_profile/config:/var/www/html/framework/src/company_profile/config
+      - ../framework/src/core/code:/var/www/html/framework/src/core/code
+      - ../framework/src/core/config:/var/www/html/framework/src/core/config
+      - ../framework/src/core/template:/var/www/html/framework/src/core/template
+      - ../framework/src/cost_planning_tool/code:/var/www/html/framework/src/cost_planning_tool/code
+      - ../framework/src/cost_planning_tool/config:/var/www/html/framework/src/cost_planning_tool/config
+      - ../framework/src/email/code:/var/www/html/framework/src/email/code
+      - ../framework/src/email/config:/var/www/html/framework/src/email/config
+      - ../framework/src/email/templates:/var/www/html/framework/src/email/templates
+      - ../framework/src/hubspot/code:/var/www/html/framework/src/hubspot/code
+      - ../framework/src/hubspot/config:/var/www/html/framework/src/hubspot/config
+      - ../framework/src/prequalification/code:/var/www/html/framework/src/prequalification/code
+      - ../framework/src/prequalification/config:/var/www/html/framework/src/prequalification/config
+      - ../framework/src/prosper/code:/var/www/html/framework/src/prosper/code
+      - ../framework/src/prosper/config:/var/www/html/framework/src/prosper/config
+      - ../framework/src/prosper/template:/var/www/html/framework/src/prosper/template
+      - ../framework/src/supply_chain/code:/var/www/html/framework/src/supply_chain/code
+      - ../framework/src/supply_chain/config:/var/www/html/framework/src/supply_chain/config
+      - ../framework/src/api/code:/var/www/html/framework/src/api/code
+      - ../framework/src/api/config:/var/www/html/framework/src/api/config
+      - ../framework/src/api/index.php:/var/www/html/framework/src/api/index.php

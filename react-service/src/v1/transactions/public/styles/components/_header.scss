@@ -1,0 +1,28 @@
+.package-header {
+  .header-left {
+    padding: 5px 0px 0px 0px;
+
+    .table-tab-options {
+      .tab {
+        background-color: $white;
+        border-bottom: 2px solid;
+        width: 8rem;
+        height: 2rem;
+        padding: 0;
+        text-align: center;
+        padding-top: 0.15rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        &.active {
+          border-bottom: 2px solid $clink-green;
+        }
+      }
+
+      :first-child {
+        border-top-left-radius: 10px;
+      }
+    }
+  }
+}

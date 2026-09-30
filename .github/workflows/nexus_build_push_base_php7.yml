@@ -1,0 +1,40 @@
+name: CD - Build-Push NeXus base php7 and php8 images
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version"
+        required: true
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ECR_NEXUS}}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ECR_NEXUS}}
+          aws-region: eu-west-2
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build, tag, and push the image to Amazon ECR
+        id: build-image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}/nexus
+          VERSION: ${{ github.event.inputs.version }}
+        run: |
+          make build_services_base
+          docker tag services-base-8:latest $ECR_REGISTRY/services-base-8:latest
+          docker tag services-base-8:latest $ECR_REGISTRY/services-base-8:$VERSION
+          docker push $ECR_REGISTRY/services-base-8:latest
+          docker push $ECR_REGISTRY/services-base-8:$VERSION

@@ -1,0 +1,39 @@
+.attachment-files-area {
+  &.top-toolbar {
+    border-top: 1px solid $purple-light;
+  }
+
+  &.bottom-toolbar {
+    border-bottom: 1px solid $purple-light;
+  }
+
+  .attachment-file {
+    max-width: $max-attachment-file;
+    display: inline-block;
+    position: relative;
+    color: $black;
+    text-decoration: unset;
+    font-size: 12px;
+    border: 1px dashed $placeholder-color;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+
+    svg {
+      width: 18px;
+      margin-right: 5px;
+    }
+
+    .remove-file {
+      width: 15px;
+      height: 15px;
+      padding: 2px 0px;
+      top: -5px;
+      right: -5px;
+      cursor: pointer;
+      position: absolute;
+      border: 1px solid $placeholder-color;
+      border-radius: 50%;
+    }
+  }
+}

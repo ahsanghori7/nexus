@@ -1,0 +1,20 @@
+.help-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  &-title {
+    span {
+      font-size: 1rem;
+      padding: 0.5rem 0.75rem;
+    }
+  }
+}
+
+.info-box {
+  span {
+    width: 100%;
+    padding: 1.25rem 1.25rem 1.75rem;
+    display: block;
+  }
+}

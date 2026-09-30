@@ -1,0 +1,97 @@
+name: Notify release channels on main update
+
+# Tells the feature/release channels that `main` moved, so teams refresh their
+# branches from it. The back-merge into develop/uat/rbt is a separate workflow:
+# .github/workflows/main-backmerge.yml
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  # Needed by the commits/{sha}/pulls lookup below — without it gh gets a 403.
+  pull-requests: read
+
+concurrency:
+  group: main-notify-slack
+  cancel-in-progress: false
+
+env:
+  # Channels that get the "main was updated" broadcast. Add or remove IDs here.
+  SLACK_RELEASE_CHANNELS: |
+    C019U082006
+    C09CH0AJH98
+    C0A0JSW3LRH
+    C0AU3NLDCBV
+    C0A0H8FLY7R
+  BRANCHING_DOCS_URL: https://c-link.atlassian.net/wiki/x/A4AvIQ
+
+jobs:
+  notify:
+    name: Notify feature/release channels
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Find the PR that triggered this push
+        id: trigpr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          # The broadcast matters more than the PR link, so a failed lookup
+          # degrades to the commit link rather than killing the notification.
+          if ! PR_JSON=$(gh api "repos/${{ github.repository }}/commits/${{ github.sha }}/pulls" --jq '.[0] // empty'); then
+            echo "::warning::Could not look up the PR for this commit — falling back to the commit link"
+            PR_JSON=''
+          fi
+
+          if [ -z "$PR_JSON" ]; then
+            echo "No pull request found for this commit — will link the commit instead"
+            exit 0
+          fi
+
+          # PR titles are user-controlled: collapse newlines and use a heredoc
+          # delimiter so nothing can inject extra step outputs.
+          PR_TITLE=$(printf '%s' "$PR_JSON" | jq -r '.title' | tr '\n\r' '  ')
+          {
+            echo "pr_url=$(printf '%s' "$PR_JSON" | jq -r '.html_url')"
+            echo "pr_title<<PR_TITLE_EOF"
+            echo "$PR_TITLE"
+            echo "PR_TITLE_EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Build message
+        id: message
+        env:
+          PR_URL: ${{ steps.trigpr.outputs.pr_url }}
+          PR_TITLE: ${{ steps.trigpr.outputs.pr_title }}
+          COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
+        run: |
+          set -euo pipefail
+
+          if [ -n "$PR_URL" ]; then
+            WHAT_CHANGED=":mag: What changed — see the merged PR: <$PR_URL|$PR_TITLE>"
+          else
+            WHAT_CHANGED=":mag: What changed — see the commit: <$COMMIT_URL|${GITHUB_SHA::7}>"
+          fi
+
+          {
+            echo "text<<SLACK_TEXT_EOF"
+            printf '%s\n' \
+              ":rotating_light: \`main\` was just updated — please update your release/feature branches from main." \
+              "Check documentation for how to work with branches: ${BRANCHING_DOCS_URL}" \
+              "$WHAT_CHANGED"
+            echo "SLACK_TEXT_EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Post to release channels
+        uses: ./.github/actions/slack-post
+        with:
+          token: ${{ secrets.SLACK_BOT_RELEASES_TOKEN }}
+          channels: ${{ env.SLACK_RELEASE_CHANNELS }}
+          text: ${{ steps.message.outputs.text }}

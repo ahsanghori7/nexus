@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Opportunities.styled.jsx StyledOpportunities matches snapshot 1`] = `
+<div
+  class="Opportunitiesstyled__StyledOpportunities-sc-pwx7fa-0 bfVDrz"
+/>
+`;
+
+exports[`Opportunities.styled.jsx StyledOpportunities matches snapshot with justify prop 1`] = `
+<div
+  class="Opportunitiesstyled__StyledOpportunities-sc-pwx7fa-0 inytTj"
+/>
+`;
+
+exports[`Opportunities.styled.jsx StyledOpportunitiesHeader matches snapshot 1`] = `
+<div
+  class="Opportunitiesstyled__StyledOpportunitiesHeader-sc-pwx7fa-1 ccyBcl"
+/>
+`;
+
+exports[`Opportunities.styled.jsx StyledOpportunitiesHeader matches snapshot with content 1`] = `
+<div
+  class="Opportunitiesstyled__StyledOpportunitiesHeader-sc-pwx7fa-1 ccyBcl"
+>
+  <span
+    class="two-dots"
+  >
+    ::
+  </span>
+  <div
+    class="project-name"
+  >
+    Test Project
+  </div>
+  <div
+    class="project-matches"
+  >
+    <span>
+      3 matches
+    </span>
+  </div>
+  <h1>
+    Main Title
+  </h1>
+</div>
+`;

@@ -1,0 +1,1 @@
+import React from "react"; const EnhancedEncryption = (props) => (<span data-testid="mui-icon-EnhancedEncryption" {...props}>EnhancedEncryption</span>); EnhancedEncryption.displayName = "EnhancedEncryption"; export default EnhancedEncryption;

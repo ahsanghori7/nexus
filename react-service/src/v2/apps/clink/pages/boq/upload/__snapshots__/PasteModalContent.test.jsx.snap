@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PasteModalContent Component matches snapshot with no data 1`] = `
+<div
+  class="MuiBox-root"
+  data-testid="mui-box"
+  style="height: 100%; position: relative;"
+>
+  <div
+    class="MuiBox-root"
+    data-testid="mui-box"
+    style="margin-top: -10px;"
+  >
+    <div
+      data-testid="mui-typography"
+    >
+      Paste Table Data
+    </div>
+    <div
+      data-testid="mui-typography"
+    >
+      Paste your data here
+    </div>
+  </div>
+  <div
+    class="MuiBox-root"
+    data-testid="mui-box"
+    style="width: 100%; min-height: 200px; border: 1px solid #e8e2f5; border-radius: 6px;"
+  >
+    <textarea
+      data-testid="mock-textarea"
+      placeholder="Paste here"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`PasteModalContent Component matches snapshot with pasted data 1`] = `
+<div
+  class="MuiBox-root"
+  data-testid="mui-box"
+  style="height: 100%; position: relative;"
+>
+  <div
+    class="MuiBox-root"
+    data-testid="mui-box"
+    style="margin-top: -10px;"
+  >
+    <div
+      data-testid="mui-typography"
+    >
+      Paste Table Data
+    </div>
+    <div
+      data-testid="mui-typography"
+    >
+      Paste your data here
+    </div>
+  </div>
+  <div
+    class="MuiBox-root"
+    data-testid="mui-box"
+    style="width: 100%; min-height: 200px; border: 1px solid #e8e2f5; border-radius: 6px;"
+  >
+    <div
+      data-testid="mock-table"
+    >
+      <div
+        data-testid="row-0"
+      >
+        A, B
+      </div>
+      <div
+        data-testid="row-1"
+      >
+        C, D
+      </div>
+    </div>
+  </div>
+  <div
+    data-testid="mui-typography"
+  >
+    2 rows and 2 columns with headers:
+  </div>
+  <button
+    data-testid="mock-button"
+    style="background-color: rgb(0, 200, 81);"
+  >
+    Continue
+  </button>
+</div>
+`;

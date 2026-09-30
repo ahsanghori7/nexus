@@ -1,0 +1,80 @@
+@import 'classes';
+
+.btn {
+  &.no-wrap {
+    text-wrap: nowrap;
+  }
+  &:not(.btn-sm) {
+    display: block;
+    padding: 10px 15px;
+    min-width: 80px;
+    font-size: 0.9rem;
+  }
+  &.btn-primary {
+    @extend .clink-primary-btn !optional;
+  }
+  &.btn-success,
+  &.btn-success:disabled,
+  &.btn-green,
+  &.btn-green:disabled {
+    @extend .clink-green-btn !optional;
+  }
+  &.btn-danger,
+  &.btn-red {
+    @extend .clink-red-btn !optional;
+  }
+  &.btn-outline-secondary {
+    @extend .clink-outline-secondary-btn !optional;
+  }
+  &.btn-outline-primary {
+    @extend .clink-outline-primary-btn !optional;
+  }
+  &.btn-outline-success {
+    @extend .clink-outline-success-btn !optional;
+  }
+  &.btn-red-inverted,
+  &.btn-outline-danger {
+    @extend .clink-outline-red-btn !optional;
+  }
+  // TODO: Info variant is used because is available, but this should be outline-primary
+  &.btn-outline-info {
+    @extend .clink-btn-outline-primary !optional;
+  }
+}
+
+input.form-control,
+select.form-control {
+  height: 45px;
+  font-size: 0.9rem;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  outline: none;
+
+  &:hover {
+    border: 5px solid rgba(0, 0, 0, 0.4);
+  }
+  &:focus,
+  &:not(:disabled):not(.disabled):active {
+    border-color: #d1d1d1;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgb(244, 244, 244);
+  }
+}
+
+.badge {
+  &.badge-primary {
+    background-color: $clink-pink;
+  }
+  &.badge-success {
+    background-color: $clink-green;
+  }
+}
+
+.img-fluid {
+  &__svg-logo {
+    height: 32px;
+  }
+}
+
+@import 'list-group';

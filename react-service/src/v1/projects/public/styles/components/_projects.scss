@@ -1,0 +1,26 @@
+.dashboard-projects {
+  .accordion {
+    &.project-panel-wrapper {
+      & > .card {
+        border-radius: 8px;
+        border: 1px solid $purple-lighter;
+
+        & > .card-header {
+          border-bottom: 1px solid $purple-lighter;
+          padding-bottom: 0;
+
+          @include media('<tablet') {
+            padding-left: 0;
+          }
+        }
+
+        .card-body {
+          @include media('<tablet') {
+            padding: 8px;
+            padding-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+}

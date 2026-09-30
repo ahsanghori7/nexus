@@ -1,0 +1,30 @@
+name: CI - Pre Commit Checks
+
+on:
+  pull_request:
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Set up Python for pre-commit
+      - name: Set up Python
+        id: setup-python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Prepare the composer check script
+      - name: Setup composer check script
+        run: |
+          # Create hooks directory if it doesn't exist
+          mkdir -p .git/hooks
+          # Copy our script to the hooks directory
+          cp scripts/check-composer.sh .git/hooks/
+          # Make the script executable
+          chmod +x .git/hooks/check-composer.sh
+
+      # Run pre-commit
+      - uses: pre-commit/action@v3.0.1

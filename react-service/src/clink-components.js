@@ -1,0 +1,72 @@
+import { constants } from 'constants';
+// Uncomment the library you want to use
+// import * as components from 'component-lib';
+import * as components from '@construction-link/react-components';
+/*
+  TODO: Find a webpack/dynamic way of chosing between goblal
+        and local components
+  */
+
+const newComponents = {
+  ...components,
+  CONSTANTS: constants,
+};
+export const {
+  Card,
+  CardBody,
+  CardDeleteButton,
+  CardImage,
+  CardInfoLine,
+  CardLink,
+  CardTitle,
+  CardSubtitle,
+  Feed,
+  Dropdown,
+  OpenDropdown,
+  GhostMode,
+  Form,
+  InputForm,
+  InputFormControlled,
+  InputEmail,
+  InputHidden,
+  PasswordValidationBox,
+  InputText,
+  InputCheckbox,
+  InputCalendar,
+  DropzoneContent,
+  DropzoneFooter,
+  DropzoneIcon,
+  DropzoneInputFile,
+  DropzoneWrapper,
+  DropzoneAccordionFileList,
+  DropzoneFileList,
+  Layout,
+  Login,
+  Modal,
+  ModalContent,
+  Panel,
+  Page,
+  Button,
+  Badge,
+  Tooltip,
+  Image,
+  Table,
+  Breadcrumbs,
+  ProfileSection,
+  Searchbox,
+  PageHeader,
+  ButtonImage,
+  Status,
+  Justify,
+  Tabs,
+  Carousel,
+  Chart,
+  Loader,
+  Error404,
+  Gantt,
+  ViewSwitcher,
+  ViewMode,
+  CONSTANTS,
+  HOOKS,
+  HELPERS,
+} = newComponents;

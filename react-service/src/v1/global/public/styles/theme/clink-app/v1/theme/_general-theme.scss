@@ -1,0 +1,10 @@
+@import 'bootstrap-rewrites';
+
+body {
+  .app {
+    font-size: 0.9rem;
+    font-family: 'sofia_pro_softlight', sans-serif;
+    background-color: $tender-purple-lightest;
+    letter-spacing: 0.01rem;
+  }
+}

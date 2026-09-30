@@ -1,0 +1,72 @@
+.panel {
+  .sector {
+    background: transparent;
+
+    .sector-header {
+      &__title {
+        font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+        font-size: 32px;
+      }
+
+      &__actions {
+        .accordion-toggle-button {
+          border: 1px solid $tender-purple-lighter;
+          border-radius: 0px 8px 0px 0px;
+          position: relative;
+          left: 21px;
+          bottom: 13px;
+        }
+      }
+    }
+
+    .sector-content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &.breadcrumbs-panel {
+      .sector-content {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+      }
+    }
+  }
+
+  &__packages,
+  &.subcontractor-panel {
+    .sector {
+      background: $white;
+      border: 1px solid $tender-purple-lighter;
+      border-radius: 8px;
+      opacity: 1;
+
+      .sector-header {
+        background-color: $white;
+
+        &__title {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  &__packages {
+    margin-bottom: 24px;
+
+    .sector {
+      .sector-content {
+        padding: 0;
+
+        .add-subcontractor {
+          margin: 24px 32px;
+          width: 205px;
+          font-size: 16px;
+          white-space: nowrap;
+        }
+
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.c-main {
+  background-color: $purple-lightest;
+
+  .app {
+    .panel-form {
+      .panel-left {
+        flex: 0 0 64%;
+        max-width: 64%;
+        padding-right: 0.75rem;
+      }
+
+      .panel-right {
+        flex: 0 0 36%;
+        max-width: 36%;
+        padding-left: 0.75rem;
+      }
+    }
+
+    .action-buttons-container {
+      .action-buttons-panel {
+        flex: 0 0 64%;
+        max-width: 64%;
+        padding-right: 0.75rem;
+
+        button {
+          padding: 0rem 1.3rem;
+          height: 3.5rem;
+          display: flex;
+          align-items: center;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}

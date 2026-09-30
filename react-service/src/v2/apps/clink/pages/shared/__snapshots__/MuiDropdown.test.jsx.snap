@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MuiDropdown (DropdownButton) matches snapshot 1`] = `
+<div>
+  <button
+    aria-controls="dropdown-menu"
+    aria-haspopup="true"
+    aria-label="more"
+    data-testid="mui-icon-button"
+    variant="archiveDropdown"
+  >
+    <span
+      data-testid="more-vert-icon"
+    >
+      ⋮
+    </span>
+  </button>
+</div>
+`;

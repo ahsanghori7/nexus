@@ -1,0 +1,144 @@
+.panel {
+  &.subcontractor-panel {
+    .card {
+      .sub-head {
+        .sub-head-text {
+          span {
+            color: $tender-grey;
+          }
+
+          h4 {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .carousel {
+        &.subcontractor-slider {
+          .carousel__slider-tray {
+            .carousel__slide {
+              padding-bottom: 250px !important;
+            }
+          }
+
+          .carousel__back-button,
+          .carousel__next-button {
+            display: flex;
+            width: 2.5rem;
+            height: 2.5rem;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 1.1rem;
+            border: 1px solid $tender-purple;
+            position: absolute;
+            top: -3.5rem;
+            color: $tender-purple;
+            background-color: #fff;
+
+            @media (max-width: 768px) {
+              display: none;
+            }
+
+            &:disabled {
+              opacity: 0.3;
+            }
+          }
+
+          .carousel__back-button {
+            right: 3.25rem;
+            padding: 1rem 1.1rem 1rem 0.9rem;
+          }
+
+          .carousel__next-button {
+            right: 0.5rem;
+            padding: 1rem 0.9rem 1rem 1.1rem;
+          }
+
+          .sub-wrapper {
+            border: 1px solid $tender-purple-lighter;
+            border-radius: 0.5rem;
+            height: 98%;
+
+            .sub-description {
+              p {
+                margin-bottom: 0;
+              }
+
+              .sub-specialization {
+                color: $tender-grey;
+              }
+            }
+
+            .sub-buttons {
+              .btn {
+                @media (max-width: 400px) {
+                  min-width: 20px;
+                  padding: 0.4rem 0.7rem 0.4rem;
+                  font-size: 0.7rem;
+                }
+              }
+            }
+
+            .sub-info {
+              top: 0.2rem;
+              right: 0.7rem;
+
+              img {
+                width: 2rem;
+                height: 2rem;
+              }
+            }
+
+            .sub-image {
+              height: 130px;
+              img {
+                width: auto;
+                height: auto;
+                max-width: 220px;
+                max-height: 90px;
+
+                @media (max-width: 992px) {
+                  max-height: 80px;
+                }
+
+                @media (max-width: 768px) {
+                  max-height: 70px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .no-slides {
+        border-radius: 0.5rem;
+
+        .no-slides-text {
+          p {
+            &.no-slides-big {
+              color: $tender-purple;
+              font-size: 1.65rem;
+
+              @media (max-width: 767px) {
+                font-size: 1.2rem;
+                max-width: 230px;
+                margin: auto;
+              }
+            }
+
+            &.no-slides-small {
+              font-size: 1.1rem;
+
+              @media (max-width: 767px) {
+                max-width: 170px;
+                margin: auto;
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

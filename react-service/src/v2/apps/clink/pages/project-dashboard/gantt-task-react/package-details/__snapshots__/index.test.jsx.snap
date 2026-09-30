@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PackageDetails Component matches snapshot for layout structure 1`] = `
+<paper>
+  <div
+    class="MuiGrid-root MuiGrid-container"
+    data-testid="mui-grid"
+    sx="[object Object]"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+      data-testid="mui-grid"
+      sx="[object Object]"
+      xs="12"
+    >
+      <div
+        data-testid="mui-typography"
+        m="1"
+        p="1"
+        pb="0.5"
+        variant="title"
+      >
+        Packages
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12"
+      data-testid="mui-grid"
+      pl="4"
+      pr="0.75"
+      xs="12"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+        data-testid="mui-grid"
+        xs="6"
+      />
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
+        data-testid="mui-grid"
+        sx="[object Object]"
+        xs="2"
+      >
+        <div
+          data-testid="mui-typography"
+        >
+          Interests
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
+        data-testid="mui-grid"
+        sx="[object Object]"
+        xs="2"
+      >
+        <div
+          data-testid="mui-typography"
+        >
+          Quotes
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
+        data-testid="mui-grid"
+        sx="[object Object]"
+        xs="2"
+      >
+        <div
+          data-testid="mui-typography"
+        >
+          Status
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-testid="mui-divider"
+  />
+  <div
+    data-testid="mock-packages"
+  >
+    Mock Packages Component
+  </div>
+</paper>
+`;

@@ -1,0 +1,18 @@
+// Abstracts
+@import 'abstracts/colors';
+@import 'abstracts/dimensions';
+
+// Themes
+@import 'theme/general-theme';
+
+// Components
+@import 'components/folders';
+@import 'components/assets';
+@import 'components/info-boxes';
+@import 'components/company-assets';
+@import 'components/scope-of-works';
+@import 'components/schedules-attendances';
+@import 'components/schedules-valuation-dates';
+@import 'components/table';
+@import 'components/breadcrumbs';
+@import 'components/modals';

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyleRemover creates snapshot 1`] = `
+<div
+  class="MuiBox-root"
+  data-testid="mui-box"
+  id="box-helper"
+>
+  <div>
+    Snapshot content
+  </div>
+</div>
+`;

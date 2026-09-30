@@ -1,0 +1,310 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TransferList Component should match snapshot 1`] = `
+<div
+  alignitems="center"
+  class="MuiGrid-root MuiGrid-container"
+  data-testid="mui-grid"
+  justifycontent="center"
+  spacing="2"
+>
+  <div
+    class="MuiGrid-root MuiGrid-item"
+    data-testid="mui-grid"
+  >
+    <div
+      data-testid="mui-card"
+    >
+      <div
+        avatar="[object Object]"
+        data-testid="mui-card-header"
+        subheader="0/4 selected"
+        sx="[object Object]"
+        title="Choices"
+      >
+        Choices
+      </div>
+      <div
+        data-testid="mui-divider"
+      />
+      <ul
+        component="div"
+        data-testid="list"
+        role="list"
+        style="width: 200px; height: 230px; overflow: auto;"
+      >
+        <button
+          data-testid="transferlist-item-0"
+          role="listitem"
+        >
+          <div
+            data-testid="mui-listitemicon"
+          >
+            <input
+              data-testid="mui-checkbox"
+              inputprops="[object Object]"
+              tabindex="-1"
+              type="checkbox"
+              value=""
+            />
+          </div>
+          <div
+            data-testid="listitemtext"
+            id="transfer-list-all-item-0-label"
+          >
+            <span
+              class="MuiListItemText-primary"
+            >
+              List item 1
+            </span>
+          </div>
+        </button>
+        <button
+          data-testid="transferlist-item-1"
+          role="listitem"
+        >
+          <div
+            data-testid="mui-listitemicon"
+          >
+            <input
+              data-testid="mui-checkbox"
+              inputprops="[object Object]"
+              tabindex="-1"
+              type="checkbox"
+              value=""
+            />
+          </div>
+          <div
+            data-testid="listitemtext"
+            id="transfer-list-all-item-1-label"
+          >
+            <span
+              class="MuiListItemText-primary"
+            >
+              List item 2
+            </span>
+          </div>
+        </button>
+        <button
+          data-testid="transferlist-item-2"
+          role="listitem"
+        >
+          <div
+            data-testid="mui-listitemicon"
+          >
+            <input
+              data-testid="mui-checkbox"
+              inputprops="[object Object]"
+              tabindex="-1"
+              type="checkbox"
+              value=""
+            />
+          </div>
+          <div
+            data-testid="listitemtext"
+            id="transfer-list-all-item-2-label"
+          >
+            <span
+              class="MuiListItemText-primary"
+            >
+              List item 3
+            </span>
+          </div>
+        </button>
+        <button
+          data-testid="transferlist-item-3"
+          role="listitem"
+        >
+          <div
+            data-testid="mui-listitemicon"
+          >
+            <input
+              data-testid="mui-checkbox"
+              inputprops="[object Object]"
+              tabindex="-1"
+              type="checkbox"
+              value=""
+            />
+          </div>
+          <div
+            data-testid="listitemtext"
+            id="transfer-list-all-item-3-label"
+          >
+            <span
+              class="MuiListItemText-primary"
+            >
+              List item 4
+            </span>
+          </div>
+        </button>
+      </ul>
+    </div>
+  </div>
+  <div
+    class="MuiGrid-root MuiGrid-item"
+    data-testid="mui-grid"
+  >
+    <div
+      alignitems="center"
+      class="MuiGrid-root MuiGrid-container"
+      data-testid="mui-grid"
+      direction="column"
+    >
+      <button
+        aria-label="move selected right"
+        class="MuiButton-root MuiButton-outlined"
+        data-testid="transferlist-button-move-right"
+        disabled=""
+        sx="[object Object]"
+        type="button"
+        variant="outlined"
+      >
+        &gt;
+      </button>
+      <button
+        aria-label="move selected left"
+        class="MuiButton-root MuiButton-outlined"
+        data-testid="transferlist-button-move-left"
+        disabled=""
+        sx="[object Object]"
+        type="button"
+        variant="outlined"
+      >
+        &lt;
+      </button>
+    </div>
+  </div>
+  <div
+    class="MuiGrid-root MuiGrid-item"
+    data-testid="mui-grid"
+  >
+    <div
+      data-testid="mui-card"
+    >
+      <div
+        avatar="[object Object]"
+        data-testid="mui-card-header"
+        subheader="0/4 selected"
+        sx="[object Object]"
+        title="Chosen"
+      >
+        Chosen
+      </div>
+      <div
+        data-testid="mui-divider"
+      />
+      <ul
+        component="div"
+        data-testid="list"
+        role="list"
+        style="width: 200px; height: 230px; overflow: auto;"
+      >
+        <button
+          data-testid="transferlist-item-4"
+          role="listitem"
+        >
+          <div
+            data-testid="mui-listitemicon"
+          >
+            <input
+              data-testid="mui-checkbox"
+              inputprops="[object Object]"
+              tabindex="-1"
+              type="checkbox"
+              value=""
+            />
+          </div>
+          <div
+            data-testid="listitemtext"
+            id="transfer-list-all-item-4-label"
+          >
+            <span
+              class="MuiListItemText-primary"
+            >
+              List item 5
+            </span>
+          </div>
+        </button>
+        <button
+          data-testid="transferlist-item-5"
+          role="listitem"
+        >
+          <div
+            data-testid="mui-listitemicon"
+          >
+            <input
+              data-testid="mui-checkbox"
+              inputprops="[object Object]"
+              tabindex="-1"
+              type="checkbox"
+              value=""
+            />
+          </div>
+          <div
+            data-testid="listitemtext"
+            id="transfer-list-all-item-5-label"
+          >
+            <span
+              class="MuiListItemText-primary"
+            >
+              List item 6
+            </span>
+          </div>
+        </button>
+        <button
+          data-testid="transferlist-item-6"
+          role="listitem"
+        >
+          <div
+            data-testid="mui-listitemicon"
+          >
+            <input
+              data-testid="mui-checkbox"
+              inputprops="[object Object]"
+              tabindex="-1"
+              type="checkbox"
+              value=""
+            />
+          </div>
+          <div
+            data-testid="listitemtext"
+            id="transfer-list-all-item-6-label"
+          >
+            <span
+              class="MuiListItemText-primary"
+            >
+              List item 7
+            </span>
+          </div>
+        </button>
+        <button
+          data-testid="transferlist-item-7"
+          role="listitem"
+        >
+          <div
+            data-testid="mui-listitemicon"
+          >
+            <input
+              data-testid="mui-checkbox"
+              inputprops="[object Object]"
+              tabindex="-1"
+              type="checkbox"
+              value=""
+            />
+          </div>
+          <div
+            data-testid="listitemtext"
+            id="transfer-list-all-item-7-label"
+          >
+            <span
+              class="MuiListItemText-primary"
+            >
+              List item 8
+            </span>
+          </div>
+        </button>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

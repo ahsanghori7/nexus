@@ -1,0 +1,57 @@
+.actions-order {
+  display: flex;
+  position: relative;
+
+  .action-item {
+    &:first-child {
+      margin-right: 0.5rem;
+    }
+
+    .action-tooltip {
+      position: absolute;
+      top: -2.8rem;
+      display: none;
+      white-space: nowrap;
+      background-color: $clink-green;
+      color: $white;
+      padding: 0.45rem 0.9rem;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 0.8rem;
+      transform: translateX(calc(-50% + 1.2rem));
+
+      &:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid $clink-green;
+        left: calc(50% - 0.25rem);
+        top: 83%;
+        transform: rotate(-90deg);
+      }
+    }
+
+    &:hover {
+      .action-tooltip {
+        display: block;
+      }
+    }
+
+    button {
+      color: $black;
+      background-color: inherit;
+      padding: 0.2rem 0.5rem 0.45rem;
+      border: 2px solid rgba(142, 141, 190, 0.35);
+      border-radius: 4px;
+
+      &.btn-danger {
+        color: $clink-red;
+        border: 2px solid rgba(232, 28, 92, 0.3);
+      }
+    }
+  }
+}

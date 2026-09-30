@@ -1,0 +1,3 @@
+export TEST_VALUE_ONE=test
+export TEST_VALUE_TWO=test_two
+export TEST_VALUE_THREE=test_three

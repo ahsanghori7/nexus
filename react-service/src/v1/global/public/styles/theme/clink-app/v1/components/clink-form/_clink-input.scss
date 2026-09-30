@@ -1,0 +1,18 @@
+@import '../../abstracts/colors';
+& {
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid $tender-purple-light;
+  border-radius: 4px;
+
+  &:hover {
+    border: 1px solid $tender-purple;
+  }
+  &:focus,
+  &:not(:disabled):not(.disabled):active {
+    border-color: #d1d1d1;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgb(244, 244, 244);
+  }
+}

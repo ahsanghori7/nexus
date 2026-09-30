@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InvitePanel creates snapshot 1`] = `
+<div
+  class="team-panel team-panel-invite"
+  data-testid="grid2"
+>
+  <div
+    class="MuiGrid2-root"
+    data-testid="grid2"
+    size="12"
+  >
+    <h2
+      class="page-subtitle"
+    >
+      Invite Outside
+    </h2>
+  </div>
+  <div
+    class="MuiGrid2-root"
+    data-testid="grid2"
+    size="12"
+    sx="[object Object]"
+  >
+    <form
+      data-testid="form-content"
+    >
+      <div
+        alignitems="flex-start"
+        class="MuiGrid2-root"
+        data-testid="grid2"
+        p="3"
+        spacing="2"
+      >
+        <div
+          class="MuiGrid2-root"
+          data-testid="grid2"
+        >
+          <input
+            data-testid="input-name"
+            name="name"
+            placeholder="Enter user name"
+            rules="[object Object]"
+            type="text"
+          />
+        </div>
+        <div
+          class="MuiGrid2-root"
+          data-testid="grid2"
+        >
+          <input
+            data-testid="input-email"
+            name="email"
+            placeholder="Enter user email"
+            rules="[object Object]"
+            type="email"
+          />
+        </div>
+        <div
+          class="MuiGrid2-root"
+          data-testid="grid2"
+        >
+          <select
+            data-testid="select-role"
+          >
+            <option
+              value="1"
+            >
+              Approver
+            </option>
+            <option
+              value="2"
+            >
+              Super Admin
+            </option>
+            <option
+              value="4"
+            >
+              Witness
+            </option>
+            <option
+              value="6"
+            >
+              Team Member
+            </option>
+            <option
+              value="7"
+            >
+              Manager
+            </option>
+            <option
+              value="8"
+            >
+              Admin
+            </option>
+          </select>
+        </div>
+        <div
+          class="MuiGrid2-root"
+          data-testid="grid2"
+          sx="[object Object]"
+        >
+          <div
+            data-testid="team-reset"
+          >
+            <button
+              class="MuiButton-root"
+              data-testid="invite-reset-button"
+              type="button"
+            >
+              Reset
+            </button>
+          </div>
+          <button
+            class="MuiButton-root MuiButton-contained MuiButton-containedSuccess"
+            color="success"
+            data-testid="invite-submit-button"
+            id="invite-to-team-button"
+            type="submit"
+            variant="contained"
+          >
+            Invite to Team
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;

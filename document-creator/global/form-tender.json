@@ -1,0 +1,226 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": {
+      "company_name": "",
+      "subcontract": ""
+    },
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "type": "coverpage",
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text edit-document-title"
+                },
+                "children": ["{b:Form of Tender}"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{b:Project:} {ProjectName}",
+                  "{b:Package:} {PackageName}",
+                  "{br}",
+                  "{b:6.0 FORM OF TENDER}",
+                  "{br}",
+                  "{b:To:} {SubContractorName}",
+                  "{SubContractorAddress}",
+                  "{br}",
+                  "We the undersigned offer to Supply and Install and execute the Works in their entirety, and in accordance with the Subcontract Documents, for the fixed lump sum price of:",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": { "className": "form-tender" },
+                "children": [
+                    {
+                      "name": "text",
+                      "children": [
+                        "{hr}"
+                      ]
+                    },
+                    {
+                      "name": "view",
+                      "type": "table",
+                      "props": {
+                        "className": "edit-document-table full-width no-border hrt"
+                      },
+                      "children": [
+                        {
+                          "name": "view",
+                          "type": "row",
+                          "props": {
+                            "className": "edit-document-table-row hrt__row"
+                          },
+                          "children": [
+                            {
+                              "name": "text",
+                              "type": "column",
+                              "props": {
+                                "className": "hrt__elem"
+                              },
+                              "children": [
+                                "{hr}"
+                              ]
+                            },
+                            {
+                              "name": "text",
+                              "type": "column",
+                              "props": {
+                                "className": "hrt__elem hrt__elem--center"
+                              },
+                              "children": [
+                                "Pounds sterling"
+                              ]
+                            },
+                            {
+                              "name": "text",
+                              "type": "column",
+                              "props": {
+                                "className": "hrt__elem"
+                              },
+                              "children": [
+                                "{hr}"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{br}",
+                  "net of all cash, trade, quantity or other discounts and exclusive \n              of Value Added Tax.",
+                  "{br}",
+                  "We confirm that we fully understand the extent and nature of the \n  Subcontract Works, the Project and the Site and have allowed for all items of \n  work shown upon, described by or referred to within the Tender Documents or \n  which are necessary to complete the Subcontract Works.",
+                  "{br}",
+                  "We further confirm all costs associated with the complete \n  installation of the Subcontract Works to the areas described and shown in the \n  Tender Documents are included within the detailed Subcontract lump sum.",
+                  "{br}",
+                  "We agree that this tender is open for acceptance for a period of \n              sixty (60) days from the date fixed for your receiving it.{br}{br}{br}{br}",
+                  "{br}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table full-width no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Signed\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..",
+                          "{br}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Date\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row preliminaries"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Print Name\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026 "
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "On behalf of\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026(the Subcontractor)"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

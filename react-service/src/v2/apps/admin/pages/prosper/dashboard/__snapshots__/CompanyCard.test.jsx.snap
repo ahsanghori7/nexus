@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompanyCard should match snapshot 1`] = `
+<div
+  data-testid="opportunity-card"
+  data-theme="prosper-analytics-card"
+>
+  <div
+    data-testid="project-image"
+  >
+    logo-proj-123.png
+  </div>
+  <div
+    data-testid="project-name"
+  >
+    Test Project
+  </div>
+  <div
+    data-testid="project-company"
+  >
+    Test Company
+  </div>
+  <div
+    data-testid="project-name2"
+  >
+    Secondary Name
+  </div>
+  <div
+    data-testid="project-pack"
+  >
+    Premium Pack
+  </div>
+  <div
+    data-testid="project-date"
+  >
+    2023-10-15
+  </div>
+  <div
+    data-testid="token-amount"
+  >
+    100
+  </div>
+  <div
+    data-testid="token-cost"
+  >
+    $50.75
+  </div>
+</div>
+`;

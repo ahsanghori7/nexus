@@ -1,0 +1,185 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": { "company_name": "", "subcontract": "" },
+    "props": { "className": "edit-document-document" },
+    "children": [
+      {
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "view",
+                "children": [
+                  {
+                    "name": "text",
+                    "children": [
+                      "Ref: {ProjectReference} / NCR / {SubContractorName}",
+                      "{Date}",
+                      "{br}",
+                      "{b:EMAIL: {SubContractorEmail}}",
+                      "{br}",
+                      "{SubContractorName}",
+                      "{SubContractorAddress}",
+                      "{br}",
+                      "For the attention of {SubContractorName}",
+                      "{br}",
+                      "Dear Sirs,",
+                      "{br}",
+                      "{b:Re: Project Name: {ProjectName}}",
+                      "{b:Package Name: {PackageName}}",
+                      "{b:Non-Conformance Number: {NCRNumber}}",
+                      "{br}"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "props" : {"className" :  "justified instruction-paragraph"},
+                    "children": [
+                      "In regards to the above mentioned project, we would like you to review a new Non-Conformance Report as listed below.",
+                      "{br}",
+                      "{b:The description of this NCR is as follows:}",
+                      "{br}",
+                      "{NonConformanceDescription}",
+                      "{br}",
+                      "{b:Value:}",
+                      "{PriceValue}",
+                      "{br}",
+                      "For further information relating to this NCR, please find relevant documents overleaf.",
+                      "{br}"
+                    ]
+                  },
+                  {
+                    "name": "text",
+                    "children": [
+                      "Yours sincerely,",
+                      "{br}",
+                      "{br}",
+                      "{b:For {MainContractorName} }",
+                      "{b:{UserName}}",
+                      "{b:{UserRole}}",
+                      "{b:E: {UserEmail} }",
+                      "{b:T: {UserPhoneNumber}}"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {"class" : "text-middle"},
+            "style": {},
+            "children": [
+              {
+                "name": "text",
+                "props": { "class": "centered-text" },
+                "style": { "fontSize": "18pt" },
+                "children": [
+                  "{b:RELEVANT DOCUMENTS}"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "view",
+                "props": {
+                  "editable": false
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "fileManager",
+                    "source": "instruction",
+                    "props": {
+                      "className": "edit-document-table full-width table no-border"
+                    },
+                    "children": [
+                      {
+                        "name": "view",
+                        "type": "thead",
+                        "props": {
+                          "className": "edit-document-table-row"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": [
+                              "{b:Document Name}"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "columns": ["name"],
+                        "props": {
+                          "className": "edit-document-table-row"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [
+                              " "
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "children": [
+                      {
+                        "type": "link",
+                        "code": "download_all_files",
+                        "name": "text",
+                        "children": [
+                          "Download all"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

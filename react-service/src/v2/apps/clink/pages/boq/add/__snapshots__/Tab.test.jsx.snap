@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddTab Component matches snapshot 1`] = `
+<div
+  data-label="Add"
+  data-testid="tab"
+  icon="[object Object]"
+  iconposition="start"
+  style="color: red;"
+>
+  Add
+</div>
+`;

@@ -1,0 +1,195 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": { "company_name": "", "subcontract": "" },
+    "props": { "className": "edit-document-document" },
+    "children": [
+      {
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "text",
+                "children": [
+                  "Ref:{ProjectReference}/ITT/{SubContractorName}/01",
+                  "{Date}",
+                  "{br}",
+                  "{b:EMAIL {SubContractorEmail}}",
+                  "{br}",
+                  "{SubContractorName}",
+                  "{SubContractorAddress}",
+                  "{br}",
+                  "For the attention of {SubContactName}",
+                  "{br}",
+                  "{br}",
+                  "Dear Sirs,",
+                  "{br}",
+                  "{b:Re: Tender Addendum: {ProjectName}}",
+                  "{b:Tender Package: {PackageName}}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "props" : {"className" :  "justified"},
+                "children": [
+                  "Further to the previous issuance of our enquiry letter dated \n        {EnquiryDate} and referenced, AF10/SC/ITT/{SubContractorName}/01, \n        please find enclosed some addtional project information \n        contained in Schedule 1.",
+                  "{br}",
+                  "   - {b:What is the new information:} {NewInformation}",
+                  "   - {b:What are the primary changes:} {PrimaryChanges}",
+                  "{br}",
+                  "In consideration to the significant nature of these additional and \n        amended details, we're happy to confirm the date for return of the \n        tender return has been extended to {TenderReturnDateNew}.",
+                  "{br}",
+                  "Should you have any queries on the contents of this Tender Addendum, \n        or the original Tender itself, please do not hesitate to contact us. \n        In the meantime, please can you confirm receipt of this letter and its \n        enclosures and confirm you will be able to submit a tender in \n        accordance with the requirements.",
+                  "{br}",
+                  "We look forward to receiving your quotation.",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "Yours sincerely,",
+                  "{br}",
+                  "{br}",
+                  "{br}",
+                  "{b:For {MainContractorName}}",
+                  "{b:{UserName}}",
+                  "{b:{UserRole}}",
+                  "{br}",
+                  "{b:E: {UserEmail}}",
+                  "{b:T: {UserPhoneNumber}}"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "coverpage",
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text edit-document-title"
+                },
+                "children": [
+                  "{b:Schedule 1}",
+                  "{b:Drawings and Specifications}"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "view",
+                "props": { "editable": false },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "fileManager",
+                    "source": "tenderAddendum",
+                    "props": {
+                      "className": "edit-document-table full-width table"
+                    },
+                    "children": [
+                      {
+                        "name": "view",
+                        "type": "thead",
+                        "props": {
+                          "className": "edit-document-table-row"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": ["{b:Document Name}"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": ["{b:Category}"]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [" "]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [" "]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "children": [
+                      {
+                        "type": "link",
+                        "code": "download_all_files",
+                        "name": "text",
+                        "children": ["Download all"]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

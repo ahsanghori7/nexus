@@ -1,0 +1,135 @@
+.item-container {
+  table {
+    &.simple-table {
+      &.table-order {
+
+        thead,
+        tbody {
+          tr {
+
+            td,
+            th {
+              font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+
+              &:first-child {
+                min-width: 16%;
+                max-width: 16%;
+                width: 16%;
+              }
+
+              &:nth-child(2) {
+                min-width: calc(21% - $order-last-column);
+                max-width: calc(21% - $order-last-column);
+                width: calc(21% - $order-last-column);
+              }
+
+              &:nth-child(3) {
+                min-width: 21%;
+                max-width: 21%;
+                width: 21%;
+                font-weight: bold;
+              }
+
+              &:nth-child(4) {
+                min-width: 21%;
+                max-width: 21%;
+                width: 21%;
+              }
+
+              &:nth-child(5) {
+                min-width: 21%;
+                max-width: 21%;
+                width: 21%;
+              }
+
+              &:last-of-type {
+                border-top-right-radius: 0;
+                min-width: $order-last-column;
+                max-width: $order-last-column;
+                width: $order-last-column;
+              }
+            }
+
+            th {
+              font-size: 16px;
+              font-weight: initial;
+
+              &:nth-child(3) {
+                font-weight: initial;
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            align-items: initial;
+
+            td {
+              font-size: 16px;
+              letter-spacing: 0.2px;
+              font-weight: 500;
+
+              &:nth-child(3) {
+                font-size: 15px;
+              }
+
+              span {
+                &.order-status {
+                  color: $black;
+                  position: relative;
+                  padding-left: 1rem;
+                  text-transform: capitalize;
+                  font-weight: bold;
+
+                  &:before {
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    background-color: $black;
+                    position: absolute;
+                    left: 0;
+                    top: 0.5rem;
+                    border-radius: 100%;
+                  }
+
+                  &.status {
+                    &-withdrawn {
+                      color: $clink-red;
+
+                      &:before {
+                        background-color: $clink-red;
+                      }
+                    }
+
+                    &-issued {
+                      color: $clink-green;
+
+                      &:before {
+                        background-color: $clink-green;
+                      }
+                    }
+
+                    &-superseded {
+                      color: $dark-light-grey;
+
+                      &:before {
+                        background-color: $dark-light-grey;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            &.simple-table-row {
+              td {
+                padding-left: 0.75rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

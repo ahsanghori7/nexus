@@ -1,0 +1,55 @@
+button.btn {
+  margin: 0;
+  font-weight: bold;
+}
+
+.form-check {
+  flex: 1 0 50%;
+  display: inline-block;
+}
+
+input.form-control {
+  height: 45px !important;
+}
+
+label.form-label {
+  display: block;
+}
+
+.clink-form {
+
+  .invalid-feedback,
+  .clink-form__error {
+    color: $clink-red;
+    font-size: 13px;
+    font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+    font-weight: initial;
+    margin-top: 0px;
+  }
+
+  .clink-form__label-error.form-label {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .clink-form__label-copy {
+    color: $clink-black;
+    font-weight: 600;
+  }
+}
+
+.field-holder {
+  flex: 1 0 50%;
+
+  .toggle-button {
+    &.disabled {
+      opacity: 0.3;
+    }
+  }
+
+  .react-select-container,
+  .react-select__control,
+  .ql-container {
+    font-size: 1rem;
+  }
+}

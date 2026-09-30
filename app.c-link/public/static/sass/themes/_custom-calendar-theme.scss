@@ -1,0 +1,77 @@
+.calendar {
+
+  .fc-header-toolbar {
+
+    .fc-toolbar-chunk {
+
+      button {
+        padding: 0.4rem;
+        font-size: 0.7rem;
+        margin: 0px 5px 0px 0px;
+        background-color:$clink-lite-green;
+        color: #333;
+        border-radius: 5px;
+
+        &.fc-button-active {
+          background-color: $clink-purple;
+          color: #fff;
+        }
+
+        &:hover {
+          background-color: $clink-purple;
+          color: #fff;
+        }
+
+        &:nth-last-child(n-1) {
+          margin: 0px;
+        }
+
+        &:focus {
+          outline: none !important;
+          border: none !important;
+        }
+
+        &.fc-today-button {
+          display: inline-block;
+        }
+
+      }
+
+      h2 {
+        font-size: 1rem;
+        @include font-bold;
+        color: $clink-purple;
+      }
+
+    }
+
+  }
+
+  table {
+
+    .fc-col-header-cell-cushion {
+      color: $clink-purple;
+      @include font-bold;
+    }
+
+    .fc-daygrid-day-number {
+      color: $clink-green;
+      @include font-bold;
+      font-size: 0.8rem;
+    }
+
+    .fc-day-today {
+      background-color: $clink-lite-green !important;
+      color: #333;
+
+      .fc-daygrid-day-number {
+        color: #fff;
+        background: $clink-purple;
+        border-radius: 5px;
+      }
+
+    }
+
+  }
+
+}

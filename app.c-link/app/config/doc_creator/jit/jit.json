@@ -1,0 +1,67 @@
+{
+  "date": {
+    "code": "{Date}",
+    "dataref": "",
+    "value": ""
+  },
+  "subcontractor_name": {
+    "code": "{SubContractorName}",
+    "dataref": "subcontractor.name"
+  },
+  "subcontractor_email": {
+    "code": "{SubContractorEmail}",
+    "dataref": "subcontractor.email"
+  },
+  "subcontractor_address": {
+    "code": "{SubContractorAddress}",
+    "dataref": "subcontractor.address"
+  },
+  "subcontact_name": {
+    "code": "{SubContactName}",
+    "dataref": "subcontractor.fullname"
+  },
+  "project_reference": {
+    "code": "{ProjectReference}",
+    "dataref": "project.reference"
+  },
+  "project_description": {
+    "code": "{ProjectDescription}",
+    "dataref": "project.description"
+  },
+  "tender_name": {
+    "code": "{PackageName}",
+    "dataref": "tender.label"
+  },
+  "quote_price": {
+    "code": "{QuotePrice}",
+    "dataref": "transaction.price"
+  },
+  "maincontractor_name": {
+    "code": "{MainContractorName}",
+    "dataref": "account.name"
+  },
+  "user_email": {
+    "code": "{UserEmail}",
+    "dataref": "user.email"
+  },
+  "user_name": {
+    "code": "{UserName}",
+    "dataref": "user.display_name"
+  },
+  "user_phone": {
+    "code": "{UserPhoneNumber}",
+    "dataref": "user.contact_number"
+  },
+  "user_role": {
+    "code": "{UserRole}",
+    "dataref": "user.job_title"
+  },
+  "project_address": {
+    "code": "{TheSiteAddress}",
+    "dataref": "project.getAddress"
+  },
+  "maincontractor_telehpone": {
+    "code": "{MainContractorTelephone}",
+    "dataref": "account.landline"
+  }
+}

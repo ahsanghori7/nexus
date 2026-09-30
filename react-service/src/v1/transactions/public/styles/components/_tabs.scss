@@ -1,0 +1,107 @@
+.nav-item {
+  border-top: 1px solid RGB(0, 0, 0, 0.1);
+  border-right: 1px solid RGB(0, 0, 0, 0.1);
+
+  &:last-child {
+    border-top-right-radius: 0.5rem;
+  }
+
+  a {
+    color: black;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+  }
+
+  .nav-link.active {
+    border-bottom: 3px solid $clink-green;
+  }
+}
+
+.flex-row.tab-bar {
+  border-bottom: 1px solid RGB(0, 0, 0, 0.1);
+}
+
+.tab-content {
+  display: flex;
+}
+
+.tab-content>.tab-pane {
+  display: block;
+  /* undo "display: none;" */
+  visibility: hidden;
+  margin-right: -100%;
+  width: 100%;
+}
+
+.tab-content>.active {
+  visibility: visible;
+}
+
+.panel__packages .sector .sector-content {
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+
+.transaction-container {
+  .package-header {
+    .header-left {
+      padding-top: 0;
+
+      .table-tab-options {
+        background-color: $white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+
+        .tab {
+          border-bottom: 2px solid $white;
+          height: 2.2rem;
+          padding-top: 0.25rem;
+
+          &.active {
+            border-bottom: 2px solid $clink-green;
+
+            button {
+              color: $black;
+
+              span {
+                border: none;
+                color: $clink-green;
+              }
+            }
+          }
+
+          button {
+            font-weight: bold;
+            color: $dark-lighter-grey;
+            letter-spacing: 0.3px;
+            font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+
+            span {
+              border: none;
+              color: $dark-lighter-grey;
+            }
+          }
+        }
+
+        :first-child {
+          border-top-left-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .transaction-container {
+    .package-header {
+      .header-left {
+        .table-tab-options {
+          .tab {
+            height: 1.9rem;
+            padding-top: 0.15rem;
+          }
+        }
+      }
+    }
+  }
+}

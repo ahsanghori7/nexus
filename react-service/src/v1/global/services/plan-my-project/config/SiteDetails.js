@@ -1,0 +1,132 @@
+import * as Yup from 'yup';
+import { ValidationSchemes } from '../../clink';
+
+const SITE_DETAILS = {
+  INITIAL_VALUES: {
+    manual: true,
+    sitePostcode: '',
+    address: '',
+    address1: '',
+    address2: '',
+    city: '',
+    postcode: '',
+    employer_liabilty_insurance: '',
+    public_product_insurance: '',
+    gia: 0,
+  },
+  FORM_FIELDS: [
+    {
+      key: 'manual',
+      type: 'hidden',
+      name: 'manual',
+    },
+    {
+      key: 'sitePostcode',
+      type: 'text',
+      name: 'sitePostcode',
+      label: 'Site postcode',
+      className: 'site-postcode',
+      placeholder: 'Postcode',
+      required: true,
+    },
+    {
+      key: 'address',
+      as: 'select',
+      name: 'address',
+      label: 'Site address',
+      className: 'address',
+      options: [],
+      placeholder: 'Please select an address',
+      required: true,
+    },
+    {
+      key: 'address1',
+      type: 'text',
+      name: 'address1',
+      label: 'Address line 1',
+      className: 'address-line-1',
+      placeholder: 'Address line 1',
+      required: true,
+    },
+    {
+      key: 'address2',
+      type: 'text',
+      name: 'address2',
+      label: 'Address line 2',
+      className: 'address-line-2',
+      placeholder: 'Address line 2',
+    },
+    {
+      key: 'city',
+      type: 'text',
+      name: 'city',
+      label: 'City',
+      className: 'city',
+      placeholder: 'City',
+      required: true,
+    },
+    {
+      key: 'postcode',
+      type: 'text',
+      name: 'postcode',
+      label: 'Postcode',
+      className: 'postcode',
+      placeholder: 'Postcode',
+      required: true,
+    },
+    {
+      key: 'employer_liabilty_insurance',
+      as: 'select',
+      name: 'employer_liabilty_insurance',
+      label: 'Contract Works Insurance',
+      className: 'employer_liabilty_insurance',
+      options: [],
+      required: true,
+    },
+    {
+      key: 'public_product_insurance',
+      as: 'select',
+      name: 'public_product_insurance',
+      label: 'Public / product liability',
+      className: 'public_product_insurance',
+      options: [],
+      required: true,
+    },
+    {
+      key: 'gia',
+      type: 'number',
+      name: 'gia',
+      label: 'GIA (Gross Internal Site Area)',
+      className: 'gia',
+      placeholder: 'Set a number',
+      required: false,
+    },
+  ],
+  VALIDATION_SCHEMA: Yup.object().shape({
+    manual: Yup.boolean(),
+    sitePostcode: Yup.string().when('manual', {
+      is: false,
+      then: ValidationSchemes.basicText,
+    }),
+    address: Yup.object().shape().when('manual', {
+      is: false,
+      then: ValidationSchemes.select,
+    }),
+    address1: Yup.string().when('manual', {
+      is: true,
+      then: ValidationSchemes.basicText,
+    }),
+    city: Yup.string().when('manual', {
+      is: true,
+      then: ValidationSchemes.basicText,
+    }),
+    postcode: Yup.string().when('manual', {
+      is: true,
+      then: ValidationSchemes.basicText,
+    }),
+    employer_liabilty_insurance: ValidationSchemes.select,
+    public_product_insurance: ValidationSchemes.select,
+  }),
+};
+
+export default SITE_DETAILS;

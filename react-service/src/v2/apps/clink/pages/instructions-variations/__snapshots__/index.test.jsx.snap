@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InstructionsVariations matches snapshot with custom contextType 1`] = `
+<div
+  data-testid="mock-instructions-list"
+>
+  Mock InstructionsList with contextType: 
+  test-context
+</div>
+`;
+
+exports[`InstructionsVariations matches snapshot with default props 1`] = `
+<div
+  data-testid="mock-instructions-list"
+>
+  Mock InstructionsList with contextType: 
+  clink
+</div>
+`;

@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ManagementSystem Component matches snapshot 1`] = `
+<div>
+  <div
+    data-testid="select-label"
+  >
+    <label>
+      type
+    </label>
+    <select
+      name="label"
+    >
+      <option
+        disabled=""
+        selected=""
+        value="ISO 9001"
+      >
+        ISO 9001
+      </option>
+      <option
+        disabled=""
+        value="Data Protection Policy"
+      >
+        Data Protection Policy
+      </option>
+      <option
+        disabled=""
+        value="Anti-Bribery Policy"
+      >
+        Anti-Bribery Policy
+      </option>
+      <option
+        disabled=""
+        value="UKAS"
+      >
+        UKAS
+      </option>
+      <option
+        disabled=""
+        value="Other certificate document"
+      >
+        Other certificate document
+      </option>
+    </select>
+  </div>
+  <div
+    data-testid="date-date"
+  >
+    <label>
+      insurances-date
+    </label>
+    <input
+      name="date"
+      type="date"
+      value="2024-01-01"
+    />
+  </div>
+  <div
+    data-testid="file-document"
+  >
+    <label>
+      upload-management-system-procedures
+    </label>
+    <input
+      name="document"
+      type="file"
+    />
+    <span
+      data-testid="file-value"
+    >
+      test-document.pdf
+    </span>
+  </div>
+</div>
+`;

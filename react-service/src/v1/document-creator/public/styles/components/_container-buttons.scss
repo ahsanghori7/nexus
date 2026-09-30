@@ -1,0 +1,61 @@
+.container-action-buttons {
+  width: 100%;
+  display: flex;
+  margin-bottom: 0.5rem;
+
+  .main-actions {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    border: 1px solid $purple-light;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+
+    button {
+      margin-left: auto;
+      margin-right: 10px;
+    }
+
+    @include media('<tablet') {
+      button {
+        margin-left: initial;
+        margin-right: initial;
+      }
+    }
+  }
+
+  .others-actions {
+    .loading {
+      left: -35px;
+    }
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    justify-content: flex-end;
+
+    button {
+      margin: 0px 5px;
+      display: inline-block;
+
+      &:disabled {
+        opacity: 1;
+        color: $disabled-btn-color;
+        background-color: $disabled-btn-background;
+        border-color: $disabled-btn-background;
+      }
+    }
+    @include media('<tablet') {
+      flex-wrap: wrap;
+    }
+  }
+
+  button {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1.3rem;
+    border-radius: 1.5rem;
+    font-weight: bold;
+  }
+}

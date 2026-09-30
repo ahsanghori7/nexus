@@ -1,0 +1,99 @@
+.toggle-button {
+  font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+
+  input[type='radio'],
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  &.btn-outline-secondary {
+    &.btn:hover {
+      background-color: $white;
+      border-color: $clink-green-hover;
+      color: $dark-grey;
+
+      .tooltip-content {
+        svg {
+
+          path,
+          rect {
+            color: $clink-red;
+            fill: $clink-red;
+          }
+        }
+      }
+    }
+
+    .icon-checkbox,
+    .icon-radio-button {
+      border: 1px solid rgba(49, 50, 55, 0.3);
+      margin-left: auto;
+      border-radius: 2px;
+      color: $white;
+      width: 1.2em;
+      height: 1.2em;
+      font-size: 1.4rem;
+    }
+  }
+
+  &.btn-outline-success.active {
+    background-color: $white !important;
+    color: $clink-green !important;
+    border-color: $clink-green !important;
+
+    span {
+      color: $clink-black;
+    }
+
+    .icon-checkbox {
+      font-size: 1.4rem;
+    }
+
+    svg {
+      margin-left: auto;
+      width: 1.2em;
+      height: 1.2em;
+    }
+
+    &:hover {
+      background-color: $white;
+      border-color: $clink-green-hover;
+      color: $clink-green-hover;
+
+      .icon-checkbox,
+      .icon-radio-button {
+        path {
+          fill: $clink-green;
+          color: $clink-green;
+        }
+      }
+
+      .tooltip-content {
+        svg {
+
+          path,
+          rect {
+            color: $clink-red;
+            fill: $clink-red;
+          }
+        }
+      }
+    }
+  }
+}
+
+.radio-input-group {
+  .list-group-item {
+    &:nth-child(odd) {
+      // TODO: general themes rewrites this
+      // Important refactor must be made in order to allow this styles
+      // to rewrite general
+      background-color: $white !important;
+    }
+
+    &.radio-item-checked {
+      background: $radio-input-backgound-selected !important;
+      border: 1px solid $radio-input-border-selected !important;
+    }
+  }
+}

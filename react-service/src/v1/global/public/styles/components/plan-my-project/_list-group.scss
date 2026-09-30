@@ -1,0 +1,75 @@
+.list-group {
+  border: none;
+
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $purple-light;
+    font-size: 15px;
+    font-weight: initial;
+    height: 70px;
+    line-height: 70px;
+    border-top-width: 1px;
+
+    &:first-child {
+      background-color: transparent;
+      font-size: 14px;
+      font-weight: bold;
+      padding-left: 0;
+      border-top: 1px solid $purple-light !important;
+      border-bottom: 1px solid $purple-light !important;
+    }
+
+    &:nth-child(2) {
+      border-top-left-radius: inherit;
+      border-top-right-radius: inherit;
+    }
+
+    .column-1,
+    .column-2,
+    .column-3 {
+      vertical-align: middle;
+    }
+
+    .column-1 {
+      flex: 2;
+
+      svg:not(.no-legacy) {
+        color: $clink-green;
+      }
+    }
+
+    .column-2 {
+      flex: 1;
+      text-align: center;
+    }
+
+    .column-3 {
+      flex: 1;
+      text-align: end;
+      padding-right: 10px;
+    }
+
+    &:first-child {
+      border: none;
+
+      .column-2,
+      .column-3 {
+        padding-right: 0;
+      }
+    }
+
+    &.error {
+      .column-1,
+      .column-3 {
+        color: $clink-red;
+      }
+
+      .column-1 {
+        svg:not(.no-legacy) {
+          color: $clink-red;
+        }
+      }
+    }
+  }
+}

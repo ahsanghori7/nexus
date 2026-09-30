@@ -1,0 +1,86 @@
+.template-actions {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  .template-action-container {
+    margin-right: 10px;
+    position: relative;
+
+    button {
+      background-color: inherit;
+      min-width: 20px;
+      padding: 6px;
+      width: 38px;
+      height: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: inherit;
+      }
+    }
+
+    .pop-dialog {
+      position: absolute;
+      background-color: $black;
+      color: $white;
+      top: -45px;
+      font-size: 14px;
+      padding: 6px 12px;
+      border-radius: 4px;
+      display: none;
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 33px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-top: 6px solid $black;
+      }
+    }
+
+    &.template-view {
+      .pop-dialog {
+        transform: translate(-35%, 0);
+
+        &:after {
+          left: 45%;
+        }
+      }
+    }
+
+    &.template-delete {
+      .pop-dialog {
+        transform: translate(-20%, 0);
+
+        &:after {
+          left: 40%;
+        }
+      }
+
+      button {
+        border-color: rgba(232, 28, 92, 0.4);
+
+        &:hover {
+          border-color: $clink-red;
+        }
+      }
+    }
+
+    &:hover {
+      .pop-dialog {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Component takes a snapshot 1`] = `
+<div
+  class="MuiGrid-root"
+  data-testid="mui-grid"
+  sx="[object Object]"
+>
+  <div
+    class="MuiGrid-root MuiGrid-item"
+    data-testid="mui-grid"
+    ml="1"
+    mt="7"
+  >
+    <div
+      data-testid="mui-typography"
+      variant="normal"
+    >
+      Already have an account?
+    </div>
+    <a
+      href="/login"
+    >
+      <a>
+        <div
+          data-testid="mui-typography"
+          variant="normal"
+        >
+          Login
+        </div>
+      </a>
+    </a>
+  </div>
+</div>
+`;

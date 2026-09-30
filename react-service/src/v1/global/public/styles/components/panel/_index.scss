@@ -1,0 +1,61 @@
+.panel {
+  .card {
+    border: none;
+    border-radius: 0;
+  }
+
+  .sector-header {
+    display: flex;
+    justify-content: space-between;
+
+    &.card-header {
+      background-color: transparent;
+      border-bottom: none;
+    }
+
+    .sector-header__actions {
+      display: flex;
+
+      .accordion-toggle-button {
+        color: $clink-purple;
+        background-color: transparent;
+        width: 32px;
+        min-width: 32px;
+        height: 32px;
+        padding: 0;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.panel-wrapper {
+  @extend .row;
+
+  .panel-left {
+    @extend .col-md-6;
+    @extend .col-lg-7;
+    @extend .col-xl-8;
+  }
+
+  .panel-right {
+    @extend .col-md-6;
+    @extend .col-lg-5;
+    @extend .col-xl-4;
+  }
+
+  .sector {
+    background-color: $white;
+    border: 1px solid #c6c5de;
+    border-radius: 8px;
+  }
+
+  .sector-content {
+    @extend .row;
+  }
+}
+
+@import 'form';

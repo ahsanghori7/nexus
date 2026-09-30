@@ -1,0 +1,549 @@
+name: CD - Deploy Nexus apps
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version'
+        required: false
+        default: 'latest-develop'
+      environment:
+        description: 'Deployment Environment'
+        required: true
+        type: choice
+        options:
+          - STAGING
+          - STG
+          - RBT
+          - PREPROD
+          - UAT
+          - PROD
+          - ANZ
+  workflow_run:
+    workflows: ["CD - Build-Push NeXus images"]
+    types: [completed]
+
+concurrency:
+  group: nexus-deploy-apps-${{ github.event.inputs.environment || github.event.workflow_run.head_branch }}
+  cancel-in-progress: false
+
+jobs:
+  resolve_environment:
+    name: Resolve Deployment Environment
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') }}
+    outputs:
+      environment: ${{ steps.resolve.outputs.environment }}
+      version: ${{ steps.resolve.outputs.version }}
+    steps:
+      - name: Resolve environment & version
+        id: resolve
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            ENVIRONMENT="${{ github.event.inputs.environment }}"
+            VERSION="${{ github.event.inputs.version || 'latest-develop' }}"
+          else
+            # Auto-chained by CD - Build-Push NeXus images completing on a
+            # branch push. Only stg/rbt/preprod have an ECS "apps" job —
+            # uat/main (and anything else) resolve to empty, so no job below
+            # fires; their framework/app-clink deploy is the legacy SSH path.
+            case "${{ github.event.workflow_run.head_branch }}" in
+              develop) ENVIRONMENT="STG" ;;
+              rbt)     ENVIRONMENT="RBT" ;;
+              preprod) ENVIRONMENT="PREPROD" ;;
+              *)       ENVIRONMENT="" ;;
+            esac
+            VERSION="latest-${{ github.event.workflow_run.head_branch }}"
+          fi
+          echo "environment=$ENVIRONMENT" >> "$GITHUB_OUTPUT"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+  deploy_apps_ssh:
+    name: Deploy app.c-link and framework via SSH
+    runs-on: ubuntu-latest
+    needs: resolve_environment
+    # Explicit whitelist for the legacy SSH-deployed environments only —
+    # STG/RBT/PREPROD use ECS instead (previously this job had NO guard at
+    # all on this branch, which would have wrongly fired for them too once
+    # they became valid options).
+    if: ${{ needs.resolve_environment.outputs.environment == 'STAGING' || needs.resolve_environment.outputs.environment == 'UAT' || needs.resolve_environment.outputs.environment == 'PROD' || needs.resolve_environment.outputs.environment == 'ANZ' }}
+    steps:
+      - name: Deploy app-clink and framework via ssh commands
+        uses: appleboy/ssh-action@v1.2.5
+        with:
+          host: ${{ secrets[format('{0}_HOST', needs.resolve_environment.outputs.environment)] }}
+          username: ${{ secrets[format('{0}_DEPLOY_USER', needs.resolve_environment.outputs.environment)] }}
+          key: ${{ secrets[format('{0}_DEPLOYER_PRIVATE_KEY', needs.resolve_environment.outputs.environment)] }}
+          script: |
+            set -e  # Exit immediately if a command exits with a non-zero status
+            ssh apps << 'EOF'
+            set -e
+
+            export VERSION=${{ needs.resolve_environment.outputs.version }}
+            export ECR_REGISTRY=${{ needs.resolve_environment.outputs.environment == 'ANZ' && secrets.ANZ_ECR_REGISTRY || secrets.ECR_REGISTRY }}
+            export DEPLOY_ENVIRONMENT=${{ needs.resolve_environment.outputs.environment }}
+
+            # Clean up Docker
+            docker system prune -f --all
+            # Pull latest images and restart services
+            cd /opt/nexus
+            docker compose -f docker_configuration/docker-compose-production-apps.yml --env-file docker_configuration/.env  pull
+            docker compose -f docker_configuration/docker-compose-production-apps.yml --env-file docker_configuration/.env down --remove-orphans
+            docker compose -f docker_configuration/docker-compose-production-apps.yml --env-file docker_configuration/.env up --force-recreate -d --remove-orphans
+
+            # Call S3 upload script after successful deployment
+            if [ -f "scripts/upload-s3.sh" ]; then
+              chmod +x scripts/upload-s3.sh
+              ./scripts/upload-s3.sh >/dev/null 2>&1 &  # Run in background
+            fi
+            # Docusign-Key-Fix
+            if [ -f "scripts/restore-docusign-key.sh" ]; then
+                chmod +x scripts/restore-docusign-key.sh
+               ./scripts/restore-docusign-key.sh >/dev/null 2>&1 &  # Run in background
+            fi
+            # Prequalification temp directory fix
+            if [ -f "scripts/ensure-prequalification-temp.sh" ]; then
+              chmod +x scripts/ensure-prequalification-temp.sh
+              ./scripts/ensure-prequalification-temp.sh
+            fi
+            EOF
+
+  update_ecs_apps_staging:
+    name: Update ECS Services
+    runs-on: ubuntu-latest
+    needs: [resolve_environment, deploy_apps_ssh]
+    if: ${{ needs.resolve_environment.outputs.environment == 'STAGING' }}
+    env:
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      ECS_CLUSTER: ${{ secrets.ECS_CLUSTER_STAGING_FRAMEWORK }}
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ECR_NEXUS }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ECR_NEXUS }}
+          aws-region: ${{ env.AWS_REGION }}
+      - name: Update ECS services with new image
+        run: |
+          aws ecs update-service --cluster "${{ env.ECS_CLUSTER }}" --service ${{ secrets.ECS_STAGING_FRAMEWORK_PROSPER }} --force-new-deployment --region "${{ env.AWS_REGION }}"
+          aws ecs update-service --cluster "${{ env.ECS_CLUSTER }}" --service ${{ secrets.ECS_STAGING_FRAMEWORK_API }} --force-new-deployment --region "${{ env.AWS_REGION }}"
+
+  update_ecs_apps_stg:
+    name: Deploy apps to STG (ECS)
+    runs-on: ubuntu-latest
+    needs: resolve_environment
+    if: ${{ needs.resolve_environment.outputs.environment == 'STG' }}
+    permissions:
+      id-token: write
+      contents: read
+    env:
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN_STG }}
+      ECS_CLUSTER: ${{ secrets.ECS_CLUSTER_STG }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Configure AWS Credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ env.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Update ECS apps
+        run: |
+          echo "Deploying version ${{ needs.resolve_environment.outputs.version }} to STG"
+          for SERVICE in stg-framework stg-app-clink stg-framework-cron-worker stg-app-clink-cron-worker; do
+            aws ecs update-service --cluster "$ECS_CLUSTER" \
+              --service "$SERVICE" \
+              --force-new-deployment \
+              --region "$AWS_REGION"
+          done
+
+      # framework can take longer than the default 10-minute waiter (same
+      # extended waiter the rbt/preprod branches use: 80 attempts x 15s = 20 min)
+      - name: Configure ECS waiter timeout
+        run: |
+          mkdir -p ~/.aws/models/ecs/2014-11-13/
+          cat > ~/.aws/models/ecs/2014-11-13/waiters-2.json << 'EOF'
+          {
+            "version": 2,
+            "waiters": {
+              "ServicesStable": {
+                "delay": 15,
+                "operation": "DescribeServices",
+                "maxAttempts": 80,
+                "acceptors": [
+                  {
+                    "expected": "MISSING",
+                    "matcher": "pathAny",
+                    "state": "failure",
+                    "argument": "failures[].reason"
+                  },
+                  {
+                    "expected": "DRAINING",
+                    "matcher": "pathAny",
+                    "state": "failure",
+                    "argument": "services[].status"
+                  },
+                  {
+                    "expected": "INACTIVE",
+                    "matcher": "pathAny",
+                    "state": "failure",
+                    "argument": "services[].status"
+                  },
+                  {
+                    "expected": true,
+                    "matcher": "path",
+                    "state": "success",
+                    "argument": "length(services[?!(length(deployments) == `1` && runningCount == desiredCount)]) == `0`"
+                  }
+                ]
+              }
+            }
+          }
+          EOF
+
+      - name: Wait for services to stabilize
+        run: |
+          echo "Waiting for services to become stable..."
+          aws ecs wait services-stable --cluster "$ECS_CLUSTER" \
+            --services stg-framework stg-app-clink stg-framework-cron-worker stg-app-clink-cron-worker \
+            --region "$AWS_REGION"
+          echo "All services are stable"
+
+      - name: Sync document-creator templates to S3
+        run: |
+          aws s3 sync document-creator/ s3://clink-assets/stg/templates/ \
+            --exclude "*.php" \
+            --exclude "*.md" \
+            --exclude "*.lock" \
+            --exclude "composer.json" \
+            --exclude "assets/*" \
+            --exclude "src/*" \
+            --region "$AWS_REGION"
+
+      - name: Notify SNS on sync success
+        if: success()
+        run: |
+          aws sns publish \
+            --topic-arn ${{ vars.AWS_SNS_STG_FUE_TOPIC_URL }} \
+            --message "Document Creator Sync: templates synced to s3://clink-assets/stg/templates/ by GitHub Actions" \
+            --subject "S3 Upload Success" \
+            --region "$AWS_REGION"
+
+  update_ecs_apps_rbt:
+    name: Deploy apps to RBT (ECS)
+    runs-on: ubuntu-latest
+    needs: resolve_environment
+    if: ${{ needs.resolve_environment.outputs.environment == 'RBT' }}
+    permissions:
+      id-token: write
+      contents: read
+    env:
+      AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN_RBT }}
+    steps:
+     - name: Checkout
+       uses: actions/checkout@v7
+
+     - name: Configure AWS Credentials (OIDC)
+       uses: aws-actions/configure-aws-credentials@v6
+       with:
+         role-to-assume: ${{ env.AWS_ROLE_ARN }}
+         aws-region:     ${{ secrets.AWS_REGION }}
+
+     - name: Update ECS apps
+       run: |
+         aws ecs update-service \
+          --cluster "${{ secrets.ECS_CLUSTER_RBT }}" \
+          --service "${{ secrets.ECS_RBT_FRAMEWORK }}" \
+          --force-new-deployment --region "${{ secrets.AWS_REGION }}"
+
+         aws ecs update-service \
+          --cluster "${{ secrets.ECS_CLUSTER_RBT }}" \
+          --service "${{ secrets.ECS_RBT_APP_C_LINK }}" \
+          --force-new-deployment --region "${{ secrets.AWS_REGION }}"
+
+         aws ecs update-service \
+          --cluster "${{ secrets.ECS_CLUSTER_RBT }}" \
+          --service "${{ secrets.ECS_RBT_FRAMEWORK_CRON_WORKER }}" \
+          --force-new-deployment --region "${{ secrets.AWS_REGION }}"
+
+         aws ecs update-service \
+          --cluster "${{ secrets.ECS_CLUSTER_RBT }}" \
+          --service "${{ secrets.ECS_RBT_APP_CLINK_CRON_WORKER }}" \
+          --force-new-deployment --region "${{ secrets.AWS_REGION }}"
+
+     - name: Configure ECS waiter timeout
+       run: |
+         mkdir -p ~/.aws/models/ecs/2014-11-13/
+         cat > ~/.aws/models/ecs/2014-11-13/waiters-2.json << 'EOF'
+         {
+           "version": 2,
+           "waiters": {
+             "ServicesStable": {
+               "delay": 15,
+               "operation": "DescribeServices",
+               "maxAttempts": 80,
+               "acceptors": [
+                 {
+                   "expected": "MISSING",
+                   "matcher": "pathAny",
+                   "state": "failure",
+                   "argument": "failures[].reason"
+                 },
+                 {
+                   "expected": "DRAINING",
+                   "matcher": "pathAny",
+                   "state": "failure",
+                   "argument": "services[].status"
+                 },
+                 {
+                   "expected": "INACTIVE",
+                   "matcher": "pathAny",
+                   "state": "failure",
+                   "argument": "services[].status"
+                 },
+                 {
+                   "expected": true,
+                   "matcher": "path",
+                   "state": "success",
+                   "argument": "length(services[?!(length(deployments) == `1` && runningCount == desiredCount)]) == `0`"
+                 }
+               ]
+             }
+           }
+         }
+         EOF
+
+     - name: Wait for apps to stabilise
+       run: |
+         aws ecs wait services-stable \
+          --cluster "${{ secrets.ECS_CLUSTER_RBT }}" \
+          --services "${{ secrets.ECS_RBT_FRAMEWORK }}" \
+          --region "${{ secrets.AWS_REGION }}"
+
+         aws ecs wait services-stable \
+          --cluster "${{ secrets.ECS_CLUSTER_RBT }}" \
+          --services "${{ secrets.ECS_RBT_APP_C_LINK }}" \
+          --region "${{ secrets.AWS_REGION }}"
+
+         aws ecs wait services-stable \
+          --cluster "${{ secrets.ECS_CLUSTER_RBT }}" \
+          --services "${{ secrets.ECS_RBT_FRAMEWORK_CRON_WORKER }}" \
+          --region "${{ secrets.AWS_REGION }}"
+
+         aws ecs wait services-stable \
+          --cluster "${{ secrets.ECS_CLUSTER_RBT }}" \
+          --services "${{ secrets.ECS_RBT_APP_CLINK_CRON_WORKER }}" \
+          --region "${{ secrets.AWS_REGION }}"
+
+     - name: Sync document-creator templates to S3
+       run: |
+         aws s3 sync document-creator/ s3://clink-assets/rbt/templates/ \
+          --exclude "*.php" \
+          --exclude "*.md" \
+          --exclude "*.lock" \
+          --exclude "composer.json" \
+          --exclude "assets/*" \
+          --exclude "src/*" \
+          --region ${{ secrets.AWS_REGION }}
+
+     - name: Notify SNS on sync success
+       if: success()
+       run: |
+         aws sns publish \
+          --topic-arn ${{ secrets.AWS_SNS_RBT_FUE_TOPIC_URL }} \
+          --message "Document Creator Sync: templates synced to s3://clink-assets/rbt/templates/ by GitHub Actions" \
+          --subject "S3 Upload Success" \
+          --region ${{ secrets.AWS_REGION }}
+
+  update_ecs_apps_preprod:
+    name: Deploy apps to PREPROD (ECS)
+    runs-on: ubuntu-latest
+    needs: resolve_environment
+    if: ${{ needs.resolve_environment.outputs.environment == 'PREPROD' }}
+    permissions:
+      id-token: write
+      contents: read
+    env:
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN_PREPROD }}
+      ECS_CLUSTER: ${{ secrets.ECS_CLUSTER_PREPROD }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Configure AWS Credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ env.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Update ECS apps
+        run: |
+          echo "Deploying version ${{ needs.resolve_environment.outputs.version }} to PREPROD"
+          for SERVICE in preprod-framework preprod-app-clink preprod-framework-cron-worker preprod-app-clink-cron-worker; do
+            aws ecs update-service --cluster "$ECS_CLUSTER" \
+              --service "$SERVICE" \
+              --force-new-deployment \
+              --region "$AWS_REGION"
+          done
+
+      # framework can take longer than the default 10-minute waiter (same
+      # extended waiter the stg/rbt branches use: 80 attempts x 15s = 20 min)
+      - name: Configure ECS waiter timeout
+        run: |
+          mkdir -p ~/.aws/models/ecs/2014-11-13/
+          cat > ~/.aws/models/ecs/2014-11-13/waiters-2.json << 'EOF'
+          {
+            "version": 2,
+            "waiters": {
+              "ServicesStable": {
+                "delay": 15,
+                "operation": "DescribeServices",
+                "maxAttempts": 80,
+                "acceptors": [
+                  {
+                    "expected": "MISSING",
+                    "matcher": "pathAny",
+                    "state": "failure",
+                    "argument": "failures[].reason"
+                  },
+                  {
+                    "expected": "DRAINING",
+                    "matcher": "pathAny",
+                    "state": "failure",
+                    "argument": "services[].status"
+                  },
+                  {
+                    "expected": "INACTIVE",
+                    "matcher": "pathAny",
+                    "state": "failure",
+                    "argument": "services[].status"
+                  },
+                  {
+                    "expected": true,
+                    "matcher": "path",
+                    "state": "success",
+                    "argument": "length(services[?!(length(deployments) == `1` && runningCount == desiredCount)]) == `0`"
+                  }
+                ]
+              }
+            }
+          }
+          EOF
+
+      - name: Wait for services to stabilize
+        run: |
+          echo "Waiting for services to become stable..."
+          aws ecs wait services-stable --cluster "$ECS_CLUSTER" \
+            --services preprod-framework preprod-app-clink preprod-framework-cron-worker preprod-app-clink-cron-worker \
+            --region "$AWS_REGION"
+          echo "All services are stable"
+
+      - name: Sync document-creator templates to S3
+        run: |
+          aws s3 sync document-creator/ s3://clink-assets/preprod/templates/ \
+            --exclude "*.php" \
+            --exclude "*.md" \
+            --exclude "*.lock" \
+            --exclude "composer.json" \
+            --exclude "assets/*" \
+            --exclude "src/*" \
+            --region "$AWS_REGION"
+
+      - name: Notify SNS on sync success
+        if: success()
+        run: |
+          aws sns publish \
+            --topic-arn ${{ vars.AWS_SNS_PREPROD_FUE_TOPIC_URL }} \
+            --message "Document Creator Sync: templates synced to s3://clink-assets/preprod/templates/ by GitHub Actions" \
+            --subject "S3 Upload Success" \
+            --region "$AWS_REGION"
+
+  notify_slack_success:
+    runs-on: ubuntu-latest
+    needs: [resolve_environment, deploy_apps_ssh, update_ecs_apps_staging, update_ecs_apps_stg, update_ecs_apps_rbt, update_ecs_apps_preprod]
+    if: |
+      always() &&
+      needs.resolve_environment.result == 'success' &&
+      !contains(needs.*.result, 'failure') &&
+      !contains(needs.*.result, 'cancelled')
+    steps:
+      - name: Notify Slack on Success
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data '{
+            "channel": "#dev-chat",
+            "attachments": [
+              {
+                "color": "#36a64f",
+                "pretext": "Deployment Notification :rocket:",
+                "title": "Deployment to ${{ needs.resolve_environment.outputs.environment }} for apps",
+                "text": "Successfully deployed apps",
+                "fields": [
+                  {
+                    "title": "Version",
+                    "value": "`${{ needs.resolve_environment.outputs.version }}`",
+                    "short": false
+                  },
+                  {
+                    "title": "Initiated by",
+                    "value": "${{ github.actor }}",
+                    "short": false
+                  },
+                  {
+                    "title": "Action Run",
+                    "value": "<https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Run>",
+                    "short": false
+                  }
+                ],
+                "footer": "GitHub Actions",
+                "footer_icon": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+              }
+            ]
+          }' $SLACK_WEBHOOK_URL
+
+  notify_slack_failure:
+    runs-on: ubuntu-latest
+    needs: [resolve_environment, deploy_apps_ssh, update_ecs_apps_staging, update_ecs_apps_stg, update_ecs_apps_rbt, update_ecs_apps_preprod]
+    if: |
+      always() &&
+      (contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled'))
+    steps:
+      - name: Notify Slack on Failure
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data '{
+            "channel": "#dev-chat",
+            "attachments": [
+              {
+                "color": "#ff0000",
+                "pretext": "Deployment Notification :rotating_light:",
+                "title": "Deployment to ${{ needs.resolve_environment.outputs.environment }} apps",
+                "text": "Failed to deploy apps.",
+                "fields": [
+                  {
+                    "title": "Version",
+                    "value": "`${{ needs.resolve_environment.outputs.version }}`",
+                    "short": false
+                  },
+                  {
+                    "title": "Initiated by",
+                    "value": "${{ github.actor }}",
+                    "short": false
+                  },
+                  {
+                    "title": "Action Run",
+                    "value": "<https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Run>",
+                    "short": false
+                  }
+                ],
+                "footer": "GitHub Actions",
+                "footer_icon": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+              }
+            ]
+          }' $SLACK_WEBHOOK_URL

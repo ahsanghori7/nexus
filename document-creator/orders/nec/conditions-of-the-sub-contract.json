@@ -1,0 +1,461 @@
+[
+    {
+        "name": "document",
+        "header": {
+            "company_name": "",
+            "address": [],
+            "company_reg": "",
+            "web_address": "",
+            "logo": ""
+        },
+        "footer": {
+            "company_name": "",
+            "subcontract": ""
+        },
+        "props": {
+            "className": "edit-document-document"
+        },
+        "children": [
+            {
+                "name": "page",
+                "props": {
+                    "className": "edit-document-page"
+                },
+                "children": [
+                    {
+                        "name": "view",
+                        "props": {
+                            "className": "edit-document-container"
+                        },
+                        "children": [
+                            {
+                                "name": "view",
+                                "props": {
+                                    "className": "edit-document-container"
+                                },
+                                "children": [
+                                    {
+                                        "name": "view",
+                                        "type": "table",
+                                        "props": {
+                                            "className": "edit-document-table full-width table nec-table-big"
+                                        },
+                                        "children": [
+                                            {
+                                                "name": "view",
+                                                "type": "thead",
+                                                "props": {
+                                                    "className": "edit-document-table-row"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column table-header"
+                                                        },
+                                                        "children": [
+                                                            "Conditions of the Sub-Contract"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "view",
+                                                "type": "row",
+                                                "props": {
+                                                    "className": "edit-document-table-row"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "text",
+                                                                "props": {
+                                                                    "className": "justified"
+                                                                },
+                                                                "children": [
+                                                                    "{br}",
+                                                                    "The conditions of contract are the NEC4 Engineering and Construction Short Subcontract June 2017 (with amendments January 2019) and the following Amendments to NEC Terms.",
+                                                                    "{br}",
+                                                                    "Amendments to NEC Terms - add/amend/delete definitions or clauses as follows:",
+                                                                    "{br}"
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "view",
+                                                                "type": "table",
+                                                                "props": {
+                                                                    "className": "edit-document-table full-width table table-condition"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "view",
+                                                                        "type": "row",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-row"
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column align-top"
+                                                                                },
+                                                                                "children": [
+                                                                                    "“Prohibited Materials”"
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column"
+                                                                                },
+                                                                                "children": [
+                                                                                    "\"any of the following:",
+                                                                                    "{br}",
+                                                                                    "(a) goods or materials known generally to building contractors to be deleterious or prejudicial to health and safety and/or the environment and/or the durability or integrity of the Development, in the particular circumstances in which they are used; or",
+                                                                                    "(b) other goods or materials which at the time of use do not conform with British Standards and Codes of Practice; or",
+                                                                                    "(c) products or materials which have been identified in the Building Research Establishment Limited Digest of in the publication entitled \"Good Practice in the Selection of Construction Materials\" March 2011 edition provided by the British Council for Offices and updated from time to time as being deleterious to health and safety or to the durability of buildings and/or other structures and/or finishes and/or plant and machinery in the particular circumstances in which they are used.\""
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "view",
+                                                                        "type": "row",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-row"
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column align-top"
+                                                                                },
+                                                                                "children": [
+                                                                                    "Clause 12.4",
+                                                                                    "{br}",
+                                                                                    "{em:Interpretation and the Law}"
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column"
+                                                                                },
+                                                                                "children": [
+                                                                                    "Delete and insert: \"This Sub-Contract constitutes the entire agreement between the parties relating to the subject matter of this Sub-Contract and supersedes and replaces any prior drafts, undertakings, representations, warranties and arrangements of any nature whether in writing or oral relating to such subject matter of this Sub-Contract.\""
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "view",
+                                                                        "type": "row",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-row"
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column align-top"
+                                                                                },
+                                                                                "children": [
+                                                                                    "Clause 51.2",
+                                                                                    "{br}",
+                                                                                    "{em:Payment}"
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column"
+                                                                                },
+                                                                                "children": [
+                                                                                    "Interest is paid if a payment is late or includes a correction of an earlier payment. Interest is assessed from the date by which the correct payment should have been made until the date when it is paid. Interest is calculated at the rate stated in the Subcontract Data or, if none is stated, at 1.0% of the delayed amount per complete week of delay."
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "page",
+                "props": {
+                    "className": "edit-document-page"
+                },
+                "children": [
+                    {
+                        "name": "view",
+                        "props": {
+                            "className": "edit-document-container"
+                        },
+                        "children": [
+                            {
+                                "name": "view",
+                                "props": {
+                                    "className": "edit-document-container"
+                                },
+                                "children": [
+                                    {
+                                        "name": "view",
+                                        "type": "table",
+                                        "props": {
+                                            "className": "edit-document-table full-width table nec-table-big"
+                                        },
+                                        "children": [
+                                            {
+                                                "name": "view",
+                                                "type": "thead",
+                                                "props": {
+                                                    "className": "edit-document-table-row"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column table-header"
+                                                        },
+                                                        "children": [
+                                                            "{b:Conditions of the Sub-Contract}"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "view",
+                                                "type": "row",
+                                                "props": {
+                                                    "className": "edit-document-table-row"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "text",
+                                                        "type": "column",
+                                                        "props": {
+                                                            "className": "edit-document-table-column"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "view",
+                                                                "type": "table",
+                                                                "props": {
+                                                                    "className": "edit-document-table full-width table table-condition first-table"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "view",
+                                                                        "type": "row",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-row"
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column empty-square"
+                                                                                },
+                                                                                "children": [
+                                                                                    "{br}"
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column empty-square"
+                                                                                },
+                                                                                "children": [
+                                                                                    "{br}"
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "view",
+                                                                        "type": "row",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-row"
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column empty-square"
+                                                                                },
+                                                                                "children": [
+                                                                                    "{br}"
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column empty-square"
+                                                                                },
+                                                                                "children": [
+                                                                                    "{br}"
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "view",
+                                                                        "type": "row",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-row"
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column empty-square"
+                                                                                },
+                                                                                "children": [
+                                                                                    "{br}"
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column empty-square"
+                                                                                },
+                                                                                "children": [
+                                                                                    "{br}"
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "view",
+                                                                        "type": "row",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-row"
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column empty-square"
+                                                                                },
+                                                                                "children": [
+                                                                                    "{br}"
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column empty-square"
+                                                                                },
+                                                                                "children": [
+                                                                                    "{br}"
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "view",
+                                                                        "type": "row",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-row"
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column empty-square"
+                                                                                },
+                                                                                "children": [
+                                                                                    "{br}"
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column empty-square"
+                                                                                },
+                                                                                "children": [
+                                                                                    "{br}"
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "view",
+                                                                        "type": "row",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-row"
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column empty-square"
+                                                                                },
+                                                                                "children": [
+                                                                                    "{br}"
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "name": "text",
+                                                                                "type": "column",
+                                                                                "props": {
+                                                                                    "className": "edit-document-table-column empty-square"
+                                                                                },
+                                                                                "children": [
+                                                                                    "{br}"
+                                                                                ]
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

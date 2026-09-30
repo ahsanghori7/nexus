@@ -1,0 +1,1 @@
+import React from "react"; const MailOutline = (props) => (<span data-testid="mui-icon-MailOutline" {...props}>MailOutline</span>); MailOutline.displayName = "MailOutline"; export default MailOutline;

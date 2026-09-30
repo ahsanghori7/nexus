@@ -1,0 +1,24 @@
+{
+  "output_file": null,
+  "wrapper": "",
+  "sections": {
+    "default": [
+      "../../global/invitation-to-tender",
+      "jct-intro",
+      "tender-details",
+      "../../global/form-tender",
+      "contract-document",
+      "subcontract-agreement",
+      "../../global/subcontract-particulars-design",
+      "main-contract-particulars",
+      "../../global/schedule-a-design",
+      "../../global/scope-of-works-design",
+      "../../global/schedule-of-attendances",
+      "../../global/sub-contract-sum-analysis",
+      "../../global/schedule-3b",
+      "../../global/schedule-4",
+      "../../global/schedule-5",
+      "../../global/schedule-6"
+    ]
+  }
+}

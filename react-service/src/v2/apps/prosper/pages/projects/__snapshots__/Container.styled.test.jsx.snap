@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container.styled Components StyledContainer creates snapshot for StyledContainer 1`] = `
+<div
+  class="Containerstyled__StyledContainer-sc-i9fiwz-0 gQPpPy find-opportunities-filters"
+>
+  <div
+    class="clink-status"
+  >
+    Status content
+  </div>
+  <div
+    class="table-container"
+  >
+    Table content
+  </div>
+</div>
+`;
+
+exports[`Container.styled Components StyledEnquiryModal creates snapshot for StyledEnquiryModal 1`] = `
+<div
+  class="Containerstyled__StyledEnquiryModal-sc-i9fiwz-1 jChsKL"
+>
+  <button
+    class="auto-open-btn"
+  >
+    Auto Open
+  </button>
+  <div>
+    Modal content
+  </div>
+</div>
+`;

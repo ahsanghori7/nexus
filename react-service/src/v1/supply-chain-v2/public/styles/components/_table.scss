@@ -1,0 +1,67 @@
+.supply-chain-table {
+  width: 100%;
+
+  table {
+    td {
+      vertical-align: middle;
+    }
+  }
+}
+
+.clink-dropdown-content {
+  padding: 0;
+
+  .column-actions-container {
+    &__options {
+      /* Border of the arrow */
+      &:before {
+        content: '';
+        display: block;
+        top: -9%;
+        position: absolute;
+        border: 6px solid transparent;
+        border-top: 5px solid $wild-blue-yonder;
+        transform: translateX(130%) rotate(180deg);
+        left: 50%;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        top: -9%;
+        position: absolute;
+        border: 6px solid transparent;
+        border-top: 6px solid $white;
+        transform: translateX(130%) rotate(180deg);
+        left: 50%;
+      }
+
+      button {
+        min-height: 40px;
+        min-width: 40px;
+        font-family: proxima_nova, serif;
+        font-size: 14px;
+        font-weight: 700;
+        border-top: 1px solid $purple-lighter;
+
+        .remove-data-btn {
+          color: $clink-red;
+
+          br {
+            color: $clink-red;
+          }
+        }
+      }
+    }
+  }
+}
+
+.MuiModal-root {
+  #btn-no {
+    margin-right: 5px;
+  }
+
+  #btn-yes {
+    margin-left: 5px;
+  }
+}

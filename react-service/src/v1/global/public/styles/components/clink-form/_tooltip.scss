@@ -1,0 +1,26 @@
+.info-tooltip-btn {
+  padding: 0px !important;
+  min-width: unset !important;
+  display: inline-flex !important;
+
+  background: transparent;
+}
+
+.simple-tooltip {
+  .tooltip-inner {
+    border-radius: 4px;
+    color: $white;
+    background-color: $clink-red;
+    width: 110px;
+    height: 36px;
+    font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+    font-weight: bold;
+    line-height: 25px;
+  }
+
+  .arrow {
+    &:before {
+      border-top-color: $clink-red !important;
+    }
+  }
+}

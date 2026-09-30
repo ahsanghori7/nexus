@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Styled Components StyledBuyTokenBanner snapshot 1`] = `
+<div
+  class="styled__StyledBuyTokenBanner-sc-zttd8w-8 gCrbOh"
+/>
+`;
+
+exports[`Header Styled Components StyledContainer snapshot 1`] = `
+<div
+  class="styled__StyledContainer-sc-zttd8w-0 eTrJgM"
+/>
+`;
+
+exports[`Header Styled Components StyledList snapshot 1`] = `
+<ul
+  class="styled__StyledList-sc-zttd8w-2 jwNofQ"
+/>
+`;
+
+exports[`Header Styled Components StyledListItem snapshot 1`] = `
+<li
+  class="styled__StyledListItem-sc-zttd8w-3 boaGYn"
+/>
+`;

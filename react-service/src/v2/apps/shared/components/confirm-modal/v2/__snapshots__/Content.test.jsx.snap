@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmModal Content renders nav title and triggers handlers through user interactions 1`] = `
+<div
+  class="MuiBox-root"
+  data-testid="mui-box"
+  style="position: absolute; top: 50%; left: 50%; text-align: center; transform: translate(-50%, -50%); width: 335px; min-height: 150px; color: rgb(255, 255, 255); border: 0px; border-radius: 5px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);"
+  tabindex="-1"
+>
+  <div
+    data-testid="mock-mui-appbar"
+    position="static"
+    sx="[object Object]"
+  >
+    <div
+      data-testid="mock-mui-toolbar"
+      sx="[object Object]"
+    >
+      <div
+        color="#112"
+        component="div"
+        data-testid="mui-typography"
+        font-size="20"
+        font-weight="bold"
+        textalign="left"
+        title="nav-title"
+      >
+        nav-title
+      </div>
+      <button
+        aria-label="close"
+        class="MuiIconButton-root"
+        data-testid="icon-button"
+        edge="end"
+        role="button"
+        sx="[object Object]"
+        type="button"
+      >
+        <div
+          data-testid="close-icon"
+          font-size="small"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    class="MuiBox-root"
+    data-testid="mui-box"
+    style="padding: 20px;"
+    tabindex="-1"
+  >
+    <div
+      component="h2"
+      data-testid="mui-typography"
+      id="modal-modal-title"
+      variant="h6"
+    >
+      modal-title
+    </div>
+    <div
+      data-testid="mui-typography"
+      id="modal-modal-description"
+    >
+      modal-description
+    </div>
+    <div
+      class="MuiBox-root"
+      data-testid="mui-box"
+      mt="2"
+    >
+      <div>
+        child-content
+      </div>
+    </div>
+    <div
+      class="MuiBox-root"
+      data-testid="mui-box"
+      mt="2"
+    >
+      <button
+        class="MuiButton-root"
+        sx="[object Object]"
+        type="button"
+      >
+        cancel-label
+      </button>
+      <button
+        class="MuiButton-root"
+        id="modal-accept-button"
+        sx="[object Object]"
+        type="button"
+      >
+        confirm-label
+      </button>
+    </div>
+  </div>
+</div>
+`;

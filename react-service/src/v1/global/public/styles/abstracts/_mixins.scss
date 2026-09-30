@@ -1,0 +1,46 @@
+// Fonts
+
+@mixin font-lite {
+  font-family: 'sofia_pro_softlight', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin font-bold {
+  font-family: 'sofia_pro_softlight', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Screen
+
+@mixin full-screen {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+}
+
+// Gradients
+
+@mixin silver-gradient {
+  background: linear-gradient(60deg,
+      rgba(252, 252, 252, 1) 0%,
+      rgba(249, 249, 249, 1) 48%,
+      rgba(255, 255, 255, 0.2049194677871149) 100%);
+}
+
+@mixin purple-gradient {
+  background: linear-gradient(34deg,
+      rgba(142, 141, 190, 1) 0%,
+      rgba(237, 17, 100, 1) 100%);
+}
+
+//Text
+@mixin sub-text {
+  font-family: 'proxima_nova', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: $clink-black;
+  opacity: 0.5;
+}

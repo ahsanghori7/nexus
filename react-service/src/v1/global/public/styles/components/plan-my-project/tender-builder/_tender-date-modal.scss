@@ -1,0 +1,142 @@
+.add-tender-date--content {
+  box-sizing: border-box;
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+
+  .add-tender-date--content-head {
+    box-sizing: border-box;
+    border-bottom: 1px solid $purple-lighter;
+    padding: 10px 10px 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    background-color: $white;
+
+    .close-button {
+      min-width: 10px;
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      height: auto;
+    }
+  }
+
+  .add-tender-date--content-body {
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 340px;
+    margin: 46px auto 0;
+    margin-bottom: 80px;
+
+    .another-dependency {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+      background-color: $gray-bg;
+      color: $clink-green;
+      font-size: 17px;
+      border: none;
+      font-weight: bold;
+    }
+
+    .delete-button {
+      position: absolute;
+      top: 7px;
+      right: 7px;
+
+      .clink-button {
+        padding: 0;
+        min-width: auto;
+        border: none;
+        background-color: transparent;
+      }
+    }
+
+    .clink-form {
+      background-color: $gray-bg;
+      border-radius: 5px;
+      padding: 16px 12px 8px;
+      position: relative;
+      margin: 10px 0 16px;
+
+      .field-holder {
+        margin-bottom: 12px;
+        flex: 100%;
+
+        .required {
+          display: none;
+        }
+      }
+    }
+
+    .react-select-container {
+      position: relative;
+
+      .react-select__menu-portal {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        right: 0;
+
+        .react-select__menu {
+          .react-select__menu-list {
+            max-height: 220px;
+
+            .react-select__option {
+              padding: 4px 12px;
+              font-size: 14px;
+
+              &.react-select__option--is-focused {
+                background-color: $clink-green-light;
+                font-size: 14px;
+                color: $clink-black;
+              }
+            }
+          }
+        }
+      }
+
+      .react-select__control {
+        min-height: 38px;
+      }
+    }
+  }
+
+  .add-tender-date--content-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 10px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $white;
+
+    .clink-button {
+      padding: 14px;
+      flex-basis: calc(50% - 15px);
+
+      &.cancel-button {
+        color: $clink-purple;
+        border: 2px solid $clink-purple;
+        background-color: $white;
+      }
+
+      &.confirm-button {
+        color: $white;
+        border: 2px solid $clink-purple;
+        background-color: $clink-purple;
+      }
+    }
+  }
+}

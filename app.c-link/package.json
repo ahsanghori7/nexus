@@ -1,0 +1,23 @@
+{
+  "name": "app.c-link",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass --watch public/static/sass:public/static/css",
+    "build": "babel --presets @babel/preset-react js_app -d public/static/js/dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-react": "^7.12.7",
+    "react": "^17.0.1",
+    "nodemon": "^2.0.4",
+    "sass": "^1.29.0"
+  }
+}

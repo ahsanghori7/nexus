@@ -1,0 +1,10 @@
+.btn {
+  &:not(.btn-sm) {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    padding: 0.4rem 1.3rem 0.5rem;
+  }
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 18px;
+}

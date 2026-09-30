@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SimpleAccordion matches snapshot 1`] = `
+<div
+  data-testid="mui-box"
+  id="test-accordion"
+  style="width: 100%; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;"
+>
+  <div
+    data-expanded="true"
+    data-testid="mui-accordion"
+  >
+    <div
+      data-testid="accordion-toggle"
+    >
+      Toggle
+    </div>
+    <div
+      data-testid="mui-accordion-summary"
+    >
+      <div
+        data-testid="mui-typography"
+        style="font-size: 24px;"
+      >
+        Test Accordion
+      </div>
+      <div
+        data-testid="expand-icon"
+      >
+        <button
+          data-size="small"
+          data-testid="mui-icon-button"
+        >
+          <span
+            data-testid="remove-icon"
+          >
+            −
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      data-testid="mui-box"
+      style="border-top: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0;"
+    >
+      <div>
+        Test content
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'sofia_pro_softlight';
+  src: url('../fonts/sofia-pro-soft-light-webfont.woff2') format('woff2'),
+    url('../fonts/sofia-pro-soft-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova';
+  src: url('../fonts/Proxima/ProximaNova-Regular.otf') format('otf'),
+    url('../fonts/Proxima/ProximaNova-Regular.otf') format('otf'),
+    url('../fonts/Proxima/ProximaNovaSoft-Regular.ttf') format('ttf'),
+    url('../fonts/Proxima/ProximaNovaSoft-Regular.ttf') format('woff2'),
+    url('../fonts/Proxima/ProximaNovaSoft-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_bold';
+  src: url('../fonts/Proxima/ProximaNova-Bold.otf') format('otf'),
+    url('../fonts/Proxima/ProximaNovaSoft-Bold.ttf') format('ttf'),
+    url('../fonts/Proxima/ProximaNovaSoft-Bold.ttf') format('woff2'),
+    url('../fonts/Proxima/ProximaNovaSoft-Bold.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Numeric font
+
+$char-w: 1ch;
+$gap: 0.5 * $char-w;
+$n-char: 11;
+$in-w: $n-char * ($char-w + $gap);

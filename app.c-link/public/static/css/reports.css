@@ -1,0 +1,31 @@
+table {
+  border: 1px solid #8e8dbe;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border-right: 1px solid #8e8dbe;
+  border-bottom: 1px solid #8e8dbe;
+}
+
+td:last-child {
+  border-right: 0;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+
+th {
+  background-color: #c2c2c2;
+  font-size: 12px;
+}
+
+td {
+  background-color: white;
+  font-size: 10px;
+}

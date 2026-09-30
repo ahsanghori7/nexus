@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "app-clink-relay-collection",
+		"name": "App C-Link Relay",
+		"description": "Relay endpoints discovered from RelayController and API classes. Use action+method with query params.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"item": [
+				{ "name": "GET emailExists", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=account&method=emailExists&email={{email}}", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"account"},{"key":"method","value":"emailExists"},{"key":"email","value":"{{email}}"}] } } },
+				{ "name": "GET companyExists", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=account&method=companyExists&company={{company_name}}", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"account"},{"key":"method","value":"companyExists"},{"key":"company","value":"{{company_name}}"}] } } },
+				{ "name": "GET listSubscriptions", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=account&method=listSubscriptions", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"account"},{"key":"method","value":"listSubscriptions"}] } } },
+				{ "name": "PATCH update", "request": { "method": "PATCH", "header": [{"key":"Content-Type","value":"application/json"}], "url": { "raw": "{{app_clink_url}}/relay?action=account&method=update", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"account"},{"key":"method","value":"update"}] } } },
+				{ "name": "GET info (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=account&method=info", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"account"},{"key":"method","value":"info"}] } } },
+				{ "name": "GET team (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=account&method=team", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"account"},{"key":"method","value":"team"}] } } }
+			]
+		},
+		{
+			"name": "Project",
+			"item": [
+				{ "name": "GET getLiveTenders", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=project&method=getLiveTenders", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"project"},{"key":"method","value":"getLiveTenders"}] } } },
+				{ "name": "GET getAll (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=project&method=getAll", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"project"},{"key":"method","value":"getAll"}] } } },
+				{ "name": "GET getOne (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=project&method=getOne&pid={{pid}}", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"project"},{"key":"method","value":"getOne"},{"key":"pid","value":"{{pid}}"}] } } },
+				{ "name": "PATCH addProject (requires_session)", "request": { "method": "PATCH", "header": [{"key":"Content-Type","value":"application/json"}], "url": { "raw": "{{app_clink_url}}/relay?action=project&method=addProject", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"project"},{"key":"method","value":"addProject"}] } } },
+				{ "name": "GET getProjectProcurement (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=project&method=getProjectProcurement&pid={{pid}}", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"project"},{"key":"method","value":"getProjectProcurement"},{"key":"pid","value":"{{pid}}"}] } } }
+			]
+		},
+		{
+			"name": "Document",
+			"item": [
+				{ "name": "GET templates (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=document&method=templates", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"document"},{"key":"method","value":"templates"}] } } },
+				{ "name": "GET type (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=document&method=type", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"document"},{"key":"method","value":"type"}] } } },
+				{ "name": "POST create (requires_session)", "request": { "method": "POST", "header": [{"key":"Content-Type","value":"application/x-www-form-urlencoded"}], "body": {"mode":"urlencoded","urlencoded":[{"key":"type","value":"contract"}]}, "url": { "raw": "{{app_clink_url}}/relay?action=document&method=create", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"document"},{"key":"method","value":"create"}] } } },
+				{ "name": "POST clone (requires_session)", "request": { "method": "POST", "url": { "raw": "{{app_clink_url}}/relay?action=document&method=clone&did={{did}}", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"document"},{"key":"method","value":"clone"},{"key":"did","value":"{{did}}"}] } } },
+				{ "name": "DELETE remove (requires_session)", "request": { "method": "DELETE", "url": { "raw": "{{app_clink_url}}/relay?action=document&method=remove&did={{did}}", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"document"},{"key":"method","value":"remove"},{"key":"did","value":"{{did}}"}] } } }
+			]
+		},
+		{
+			"name": "Supply Chain",
+			"item": [
+				{ "name": "GET getChain (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=supply_chain&method=getChain", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"supply_chain"},{"key":"method","value":"getChain"}] } } },
+				{ "name": "GET getContractors (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=supply_chain&method=getContractors", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"supply_chain"},{"key":"method","value":"getContractors"}] } } },
+				{ "name": "PATCH removeSub (requires_session)", "request": { "method": "PATCH", "url": { "raw": "{{app_clink_url}}/relay?action=supply_chain&method=removeSub", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"supply_chain"},{"key":"method","value":"removeSub"}] } } },
+				{ "name": "GET regions", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=supply_chain&method=regions", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"supply_chain"},{"key":"method","value":"regions"}] } } }
+			]
+		},
+		{
+			"name": "V2 Supply Chain",
+			"item": [
+				{ "name": "GET fetchAll (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=v2_supply_chain&method=fetchAll", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"v2_supply_chain"},{"key":"method","value":"fetchAll"}] } } },
+				{ "name": "POST create (requires_session)", "request": { "method": "POST", "url": { "raw": "{{app_clink_url}}/relay?action=v2_supply_chain&method=create", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"v2_supply_chain"},{"key":"method","value":"create"}] } } },
+				{ "name": "PATCH update (requires_session)", "request": { "method": "PATCH", "url": { "raw": "{{app_clink_url}}/relay?action=v2_supply_chain&method=update", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"v2_supply_chain"},{"key":"method","value":"update"}] } } },
+				{ "name": "DELETE remove (requires_session)", "request": { "method": "DELETE", "url": { "raw": "{{app_clink_url}}/relay?action=v2_supply_chain&method=remove", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"v2_supply_chain"},{"key":"method","value":"remove"}] } } },
+				{ "name": "GET getChain (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=v2_supply_chain&method=getChain", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"v2_supply_chain"},{"key":"method","value":"getChain"}] } } },
+				{ "name": "PATCH send_reminder (requires_session)", "request": { "method": "PATCH", "url": { "raw": "{{app_clink_url}}/relay?action=v2_supply_chain&method=send_reminder", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"v2_supply_chain"},{"key":"method","value":"send_reminder"}] } } },
+				{ "name": "PATCH send_pqq_reminder (requires_session)", "request": { "method": "PATCH", "url": { "raw": "{{app_clink_url}}/relay?action=v2_supply_chain&method=send_pqq_reminder", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"v2_supply_chain"},{"key":"method","value":"send_pqq_reminder"}] } } }
+			]
+		},
+		{
+			"name": "Trade",
+			"item": [
+				{ "name": "GET fetchAll (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=trade&method=fetchAll", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"trade"},{"key":"method","value":"fetchAll"}] } } }
+			]
+		},
+		{
+			"name": "Unit",
+			"item": [
+				{ "name": "GET fetchAll (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=unit&method=fetchAll", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"unit"},{"key":"method","value":"fetchAll"}] } } }
+			]
+		},
+		{
+			"name": "Transactions",
+			"item": [
+				{ "name": "GET getQuotes (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=getQuotes&pid={{pid}}", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"getQuotes"},{"key":"pid","value":"{{pid}}"}] } } },
+				{ "name": "GET getQuotesFiles (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=getQuotesFiles", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"getQuotesFiles"}] } } },
+				{ "name": "GET getPrequalDocument (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=getPrequalDocument", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"getPrequalDocument"}] } } },
+				{ "name": "POST addQuote (requires_session)", "request": { "method": "POST", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=addQuote", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"addQuote"}] } } },
+				{ "name": "PATCH updateQuote (requires_session)", "request": { "method": "PATCH", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=updateQuote", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"updateQuote"}] } } },
+				{ "name": "GET deleteQuote (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=deleteQuote", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"deleteQuote"}] } } },
+				{ "name": "GET getSummary (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=getSummary", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"getSummary"}] } } },
+				{ "name": "POST award (requires_session)", "request": { "method": "POST", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=award", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"award"}] } } },
+				{ "name": "POST withdrawAward (requires_session)", "request": { "method": "POST", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=withdrawAward", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"withdrawAward"}] } } },
+				{ "name": "POST issueOrder (requires_session)", "request": { "method": "POST", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=issueOrder&id={{id}}&tid={{tid}}&qid={{qid}}&sid={{sid}}", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"issueOrder"},{"key":"id","value":"{{id}}"},{"key":"tid","value":"{{tid}}"},{"key":"qid","value":"{{qid}}"},{"key":"sid","value":"{{sid}}"}] } } },
+				{ "name": "POST toggledSelected (requires_session)", "request": { "method": "POST", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=toggledSelected", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"toggledSelected"}] } } },
+				{ "name": "POST toggledCompliant (requires_session)", "request": { "method": "POST", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=toggledCompliant", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"toggledCompliant"}] } } },
+				{ "name": "GET getItemsPerTender (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=getItemsPerTender&pid={{pid}}&tid={{tid}}&type={{itype}}", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"getItemsPerTender"},{"key":"pid","value":"{{pid}}"},{"key":"tid","value":"{{tid}}"},{"key":"type","value":"{{itype}}"}] } } },
+				{ "name": "GET editOrder (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=editOrder&pid={{pid}}&id={{id}}", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"editOrder"},{"key":"pid","value":"{{pid}}"},{"key":"id","value":"{{id}}"}] } } },
+				{ "name": "GET downloadOrder (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=downloadOrder&pid={{pid}}&id={{id}}", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"downloadOrder"},{"key":"pid","value":"{{pid}}"},{"key":"id","value":"{{id}}"}] } } },
+				{ "name": "PATCH withdrawOrder (requires_session)", "request": { "method": "PATCH", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=withdrawOrder&pid={{pid}}&id={{id}}&did={{did}}", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"withdrawOrder"},{"key":"pid","value":"{{pid}}"},{"key":"id","value":"{{id}}"},{"key":"did","value":"{{did}}"}] } } },
+				{ "name": "GET downloadTenderAnalysis (requires_session)", "request": { "method": "GET", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=downloadTenderAnalysis&pid={{pid}}&id={{id}}", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"downloadTenderAnalysis"},{"key":"pid","value":"{{pid}}"},{"key":"id","value":"{{id}}"}] } } },
+				{ "name": "PATCH markAsSigned (requires_session)", "request": { "method": "PATCH", "url": { "raw": "{{app_clink_url}}/relay?action=transaction&method=markAsSigned&pid={{pid}}&id={{id}}", "host": ["{{app_clink_url}}"], "path": ["relay"], "query": [{"key":"action","value":"transaction"},{"key":"method","value":"markAsSigned"},{"key":"pid","value":"{{pid}}"},{"key":"id","value":"{{id}}"}] } } }
+			]
+		}
+	],
+	"variable": [
+		{ "key": "app_clink_url", "value": "http://localhost:8085", "type": "string" },
+		{ "key": "email", "value": "user@example.com", "type": "string" },
+		{ "key": "company_name", "value": "Example Company", "type": "string" },
+		{ "key": "pid", "value": "1", "type": "string" },
+		{ "key": "did", "value": "1", "type": "string" },
+		{ "key": "id", "value": "1", "type": "string" },
+		{ "key": "tid", "value": "1", "type": "string" },
+		{ "key": "qid", "value": "1", "type": "string" },
+		{ "key": "sid", "value": "abc", "type": "string" },
+		{ "key": "itype", "value": "summary", "type": "string" }
+	]
+}

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Team Manager Styled Components creates snapshot 1`] = `
+<div
+  class="styled__StyledTeamContent-sc-1owtm47-1 hsmInS"
+>
+  <div>
+    Snapshot test
+  </div>
+</div>
+`;

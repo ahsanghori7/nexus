@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AreaComponent should match snapshot 1`] = `
+<div
+  data-testid="charts-container"
+>
+  <div
+    data-testid="charts-list"
+  >
+    <div
+      data-testid="chart"
+      data-type="area"
+    >
+      <div
+        data-testid="chart-data"
+      >
+        {"labels":["January","February","March","April","May","June","July"],"datasets":[{"fill":true,"label":"Dataset 2","data":[1,2,3,4,5,6,8],"borderColor":"rgb(53, 162, 235)","backgroundColor":"rgba(53, 162, 235, 0.5)"}]}
+      </div>
+      <div
+        data-testid="chart-options"
+      >
+        {"responsive":true,"plugins":{"legend":{"position":"top"},"title":{"display":false,"text":"Tokens"}}}
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AreaComponent should match snapshot with custom data 1`] = `
+<div
+  data-testid="charts-container"
+>
+  <div
+    data-testid="charts-list"
+  >
+    <div
+      data-testid="chart"
+      data-type="area"
+    >
+      <div
+        data-testid="chart-data"
+      >
+        {"labels":["X","Y"],"datasets":[{"label":"Area Test","data":[5,10],"backgroundColor":"blue"}]}
+      </div>
+      <div
+        data-testid="chart-options"
+      >
+        {"responsive":true,"plugins":{"legend":{"position":"top"},"title":{"display":false,"text":"Tokens"}}}
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,789 @@
+name: CD - Deploy Nexus services
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version (e.g., latest-uat, latest-develop, or build number)'
+        required: true
+        default: 'latest-develop'
+      environment:
+        description: 'Deployment Environment'
+        required: true
+        type: choice
+        options:
+          - STAGING
+          - STG
+          - RBT
+          - PREPROD
+          - UAT
+          - PROD
+          - ANZ
+  workflow_run:
+    workflows: ["CD - Build-Push NeXus images"]
+    types: [completed]
+
+concurrency:
+  group: nexus-deploy-services-${{ github.event.inputs.environment || github.event.workflow_run.head_branch }}
+  cancel-in-progress: false
+
+jobs:
+  validate_inputs:
+    name: Validate Deployment Inputs
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') }}
+    outputs:
+      environment: ${{ steps.resolve.outputs.environment }}
+      version: ${{ steps.resolve.outputs.version }}
+    steps:
+      - name: Resolve environment & version
+        id: resolve
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            ENVIRONMENT="${{ github.event.inputs.environment }}"
+            VERSION="${{ github.event.inputs.version }}"
+          else
+            # Auto-chained by CD - Build-Push NeXus images completing on a
+            # branch push — map branch to environment. Anything not listed
+            # (including main) resolves to empty, so no job below fires.
+            case "${{ github.event.workflow_run.head_branch }}" in
+              develop) ENVIRONMENT="STG" ;;
+              rbt)     ENVIRONMENT="RBT" ;;
+              preprod) ENVIRONMENT="PREPROD" ;;
+              uat)     ENVIRONMENT="UAT" ;;
+              *)       ENVIRONMENT="" ;;
+            esac
+            VERSION="latest-${{ github.event.workflow_run.head_branch }}"
+          fi
+          echo "environment=$ENVIRONMENT" >> "$GITHUB_OUTPUT"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Validate version for environment
+        run: |
+          ENVIRONMENT="${{ steps.resolve.outputs.environment }}"
+          VERSION="${{ steps.resolve.outputs.version }}"
+
+          echo "Deploying version: $VERSION to environment: $ENVIRONMENT"
+
+          # Warn if deploying develop to production environments
+          if [[ "$ENVIRONMENT" == "PROD" || "$ENVIRONMENT" == "ANZ" ]] && [[ "$VERSION" == *"develop"* ]]; then
+            echo "::warning::Deploying a 'develop' version to production environment. Please verify this is intentional."
+          fi
+
+          # Recommend version format for UAT
+          if [[ "$ENVIRONMENT" == "UAT" ]] && [[ "$VERSION" != *"uat"* ]] && [[ "$VERSION" != "latest-uat" ]]; then
+            echo "::warning::Deploying to UAT but version doesn't contain 'uat'. Recommended: latest-uat"
+          fi
+
+  deploy_services_ssh:
+    name: Deploy Services via SSH
+    runs-on: ubuntu-latest
+    needs: validate_inputs
+    # Only run SSH deployment for ANZ (other environments use ECS); dispatch-only, never auto-chained
+    if: ${{ needs.validate_inputs.outputs.environment == 'ANZ' }}
+    steps:
+      - name: Deploy nexus via ssh commands
+        uses: appleboy/ssh-action@v1.2.5
+        with:
+          host: ${{ secrets[format('{0}_HOST', needs.validate_inputs.outputs.environment)] }}
+          username: ${{ secrets[format('{0}_DEPLOY_USER', needs.validate_inputs.outputs.environment)] }}
+          key: ${{ secrets[format('{0}_DEPLOYER_PRIVATE_KEY', needs.validate_inputs.outputs.environment)] }}
+          script: |
+            set -e  # Exit immediately if a command exits with a non-zero status
+
+            ssh nexus-services << 'EOF'
+            set -e
+
+            export VERSION=${{ needs.validate_inputs.outputs.version }}
+            export ECR_REGISTRY=${{ secrets.ANZ_ECR_REGISTRY }}
+            export DEPLOY_ENVIRONMENT=${{ needs.validate_inputs.outputs.environment }}
+
+            echo "Starting deployment of version: $VERSION"
+
+            # Clean up Docker
+            docker system prune -f --all
+
+            # Pull latest images and restart services
+            cd /opt/nexus
+            docker-compose -f docker_configuration/docker-compose-production-services.yml --env-file docker_configuration/.env pull
+            docker-compose -f docker_configuration/docker-compose-production-services.yml --env-file docker_configuration/.env down --remove-orphans
+            docker-compose -f docker_configuration/docker-compose-production-services.yml --env-file docker_configuration/.env up --force-recreate -d --remove-orphans
+
+            # Wait for services to be healthy
+            sleep 10
+
+            # Database migrations
+            echo "Running database migrations..."
+            docker exec -t account_service composer db_migrate
+            docker exec -t project_service composer db_migrate
+            docker exec -t document_service composer db_migrate
+
+            echo "Deployment completed successfully"
+            EOF
+
+  update_ecs_services_staging:
+    name: Deploy to STAGING (ECS)
+    runs-on: ubuntu-latest
+    needs: validate_inputs
+    if: ${{ needs.validate_inputs.outputs.environment == 'STAGING' }}
+    env:
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      ECS_CLUSTER: ${{ secrets.ECS_CLUSTER_STAGING_SERVICE }}
+      PRIVATE_SUBNET_1: ${{ secrets.ECS_STAGING_PRIVATE_SUBNET_1 }}
+      PRIVATE_SUBNET_3: ${{ secrets.ECS_STAGING_PRIVATE_SUBNET_3 }}
+      SECURITY_GROUP: ${{ secrets.ECS_TASK_DEFINITION_STAGING_SECURITY_GROUP }}
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ECR_NEXUS }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ECR_NEXUS }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Update ECS services with new image
+        run: |
+          echo "Deploying version ${{ needs.validate_inputs.outputs.version }} to STAGING"
+
+          aws ecs update-service --cluster "${{ env.ECS_CLUSTER }}" \
+            --service ${{ secrets.ECS_STAGING_ACCOUNT_SERVICE }} \
+            --force-new-deployment \
+            --region "${{ env.AWS_REGION }}"
+
+          aws ecs update-service --cluster "${{ env.ECS_CLUSTER }}" \
+            --service ${{ secrets.ECS_STAGING_PROJECT_SERVICE }} \
+            --force-new-deployment \
+            --region "${{ env.AWS_REGION }}"
+
+          aws ecs update-service --cluster "${{ env.ECS_CLUSTER }}" \
+            --service ${{ secrets.ECS_STAGING_DOCUMENT_SERVICE }} \
+            --force-new-deployment \
+            --region "${{ env.AWS_REGION }}"
+
+      - name: Wait for services to stabilize
+        run: |
+          echo "Waiting for services to become stable..."
+
+          aws ecs wait services-stable --cluster "${{ env.ECS_CLUSTER }}" \
+            --services ${{ secrets.ECS_STAGING_ACCOUNT_SERVICE }} \
+            --region "${{ env.AWS_REGION }}"
+
+          aws ecs wait services-stable --cluster "${{ env.ECS_CLUSTER }}" \
+            --services ${{ secrets.ECS_STAGING_PROJECT_SERVICE }} \
+            --region "${{ env.AWS_REGION }}"
+
+          aws ecs wait services-stable --cluster "${{ env.ECS_CLUSTER }}" \
+            --services ${{ secrets.ECS_STAGING_DOCUMENT_SERVICE }} \
+            --region "${{ env.AWS_REGION }}"
+
+          echo "All services are stable"
+
+      - name: Run database migrations
+        run: |
+          echo "Running database migrations for STAGING..."
+
+          # Account Service Migration
+          aws ecs run-task \
+            --cluster "${{ env.ECS_CLUSTER }}" \
+            --task-definition "${{ secrets.ECS_TASK_DEFINITION_STAGING_ACCOUNT_SERVICE }}" \
+            --launch-type FARGATE \
+            --network-configuration "awsvpcConfiguration={subnets=[\"${{ env.PRIVATE_SUBNET_1 }}\",\"${{ env.PRIVATE_SUBNET_3 }}\"],securityGroups=[\"${{ env.SECURITY_GROUP }}\"],assignPublicIp=\"ENABLED\"}" \
+            --overrides '{"containerOverrides":[{"name":"account_service","command":["vendor/bin/phinx","migrate"]}]}' \
+            --region "${{ env.AWS_REGION }}"
+
+          # Project Service Migration
+          aws ecs run-task \
+            --cluster "${{ env.ECS_CLUSTER }}" \
+            --task-definition "${{ secrets.ECS_TASK_DEFINITION_STAGING_PROJECT_SERVICE }}" \
+            --launch-type FARGATE \
+            --network-configuration "awsvpcConfiguration={subnets=[\"${{ env.PRIVATE_SUBNET_1 }}\",\"${{ env.PRIVATE_SUBNET_3 }}\"],securityGroups=[\"${{ env.SECURITY_GROUP }}\"],assignPublicIp=\"ENABLED\"}" \
+            --overrides '{"containerOverrides":[{"name":"project_service","command":["vendor/bin/phinx","migrate"]}]}' \
+            --region "${{ env.AWS_REGION }}"
+
+          # Document Service Migration
+          aws ecs run-task \
+            --cluster "${{ env.ECS_CLUSTER }}" \
+            --task-definition "${{ secrets.ECS_TASK_DEFINITION_STAGING_DOCUMENT_SERVICE }}" \
+            --launch-type FARGATE \
+            --network-configuration "awsvpcConfiguration={subnets=[\"${{ env.PRIVATE_SUBNET_1 }}\",\"${{ env.PRIVATE_SUBNET_3 }}\"],securityGroups=[\"${{ env.SECURITY_GROUP }}\"],assignPublicIp=\"ENABLED\"}" \
+            --overrides '{"containerOverrides":[{"name":"document_service","command":["vendor/bin/phinx","migrate"]}]}' \
+            --region "${{ env.AWS_REGION }}"
+
+          echo "Database migrations completed"
+
+  update_ecs_services_stg:
+    name: Deploy to STG (ECS)
+    runs-on: ubuntu-latest
+    needs: validate_inputs
+    if: ${{ needs.validate_inputs.outputs.environment == 'STG' }}
+    permissions:
+      id-token: write
+      contents: read
+    env:
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN_STG }}
+      ECS_CLUSTER: ${{ secrets.ECS_CLUSTER_STG }}
+      # stg VPC private subnets — tasks reach ECR/SSM via NAT + VPC endpoints,
+      # so assignPublicIp must stay DISABLED (unlike the other environments).
+      PRIVATE_SUBNET_1: ${{ secrets.STG_PRIVATE_SUBNET_1 }}
+      PRIVATE_SUBNET_2: ${{ secrets.STG_PRIVATE_SUBNET_2 }}
+      SECURITY_GROUP: ${{ secrets.ECS_TASK_DEFINITION_STG_SECURITY_GROUP }}
+    steps:
+      - name: Configure AWS Credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ env.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Update ECS services with new image
+        run: |
+          echo "Deploying version ${{ needs.validate_inputs.outputs.version }} to STG"
+          for SERVICE in stg-account-service stg-project-service stg-document-service; do
+            aws ecs update-service --cluster "$ECS_CLUSTER" \
+              --service "$SERVICE" \
+              --force-new-deployment \
+              --region "$AWS_REGION"
+          done
+
+      - name: Wait for services to stabilize
+        run: |
+          echo "Waiting for services to become stable..."
+          aws ecs wait services-stable --cluster "$ECS_CLUSTER" \
+            --services stg-account-service stg-project-service stg-document-service \
+            --region "$AWS_REGION"
+          echo "All services are stable"
+
+      - name: Run database migrations
+        run: |
+          echo "Running database migrations for STG..."
+
+          # Unlike the other environments this waits for each migration task
+          # and fails the job on a non-zero exit code — a migration that dies
+          # must not pass silently.
+          run_migration() {
+            SERVICE="$1"; CONTAINER="$2"
+
+            TASK_DEF=$(aws ecs describe-services --cluster "$ECS_CLUSTER" \
+              --services "$SERVICE" --region "$AWS_REGION" \
+              --query "services[0].taskDefinition" --output text)
+
+            TASK_ARN=$(aws ecs run-task \
+              --cluster "$ECS_CLUSTER" \
+              --task-definition "$TASK_DEF" \
+              --launch-type FARGATE \
+              --network-configuration "awsvpcConfiguration={subnets=[\"$PRIVATE_SUBNET_1\",\"$PRIVATE_SUBNET_2\"],securityGroups=[\"$SECURITY_GROUP\"],assignPublicIp=\"DISABLED\"}" \
+              --overrides "{\"containerOverrides\":[{\"name\":\"$CONTAINER\",\"command\":[\"vendor/bin/phinx\",\"migrate\"]}]}" \
+              --region "$AWS_REGION" \
+              --query "tasks[0].taskArn" --output text)
+            echo "$SERVICE migration task: $TASK_ARN"
+
+            aws ecs wait tasks-stopped --cluster "$ECS_CLUSTER" \
+              --tasks "$TASK_ARN" --region "$AWS_REGION"
+
+            EXIT_CODE=$(aws ecs describe-tasks --cluster "$ECS_CLUSTER" \
+              --tasks "$TASK_ARN" --region "$AWS_REGION" \
+              --query "tasks[0].containers[?name=='$CONTAINER'].exitCode | [0]" --output text)
+            STOP_REASON=$(aws ecs describe-tasks --cluster "$ECS_CLUSTER" \
+              --tasks "$TASK_ARN" --region "$AWS_REGION" \
+              --query "tasks[0].stoppedReason" --output text)
+
+            if [ "$EXIT_CODE" != "0" ]; then
+              echo "::error::$SERVICE migration FAILED (exitCode=$EXIT_CODE, stoppedReason=$STOP_REASON)"
+              exit 1
+            fi
+            echo "$SERVICE migration completed"
+          }
+
+          run_migration stg-account-service account_service
+          run_migration stg-project-service project_service
+          run_migration stg-document-service document_service
+
+  update_ecs_services_rbt:
+    name: Deploy to RBT (ECS)
+    runs-on: ubuntu-latest
+    needs: validate_inputs
+    if: ${{ needs.validate_inputs.outputs.environment == 'RBT' }}
+    permissions:
+      id-token: write
+      contents: read
+    env:
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN_RBT }}
+      ECS_CLUSTER: ${{ secrets.ECS_CLUSTER_RBT }}
+      PRIVATE_SUBNET_1: ${{ secrets.RBT_PRIVATE_SUBNET_1 }}
+      PRIVATE_SUBNET_2: ${{ secrets.RBT_PRIVATE_SUBNET_2 }}
+      SECURITY_GROUP: ${{ secrets.ECS_TASK_DEFINITION_RBT_SECURITY_GROUP }}
+    steps:
+      - name: Configure AWS Credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ env.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Update ECS services with new image
+        run: |
+          echo "Deploying version ${{ needs.validate_inputs.outputs.version }} to RBT"
+
+          aws ecs update-service --cluster "${{ env.ECS_CLUSTER }}" \
+            --service "${{ secrets.ECS_RBT_ACCOUNT_SERVICE }}" \
+            --force-new-deployment \
+            --region "${{ env.AWS_REGION }}"
+
+          aws ecs update-service --cluster "${{ env.ECS_CLUSTER }}" \
+            --service "${{ secrets.ECS_RBT_PROJECT_SERVICE }}" \
+            --force-new-deployment \
+            --region "${{ env.AWS_REGION }}"
+
+          aws ecs update-service --cluster "${{ env.ECS_CLUSTER }}" \
+            --service "${{ secrets.ECS_RBT_DOCUMENT_SERVICE }}" \
+            --force-new-deployment \
+            --region "${{ env.AWS_REGION }}"
+
+      - name: Wait for services to stabilize
+        run: |
+          echo "Waiting for services to become stable..."
+          aws ecs wait services-stable --cluster "${{ env.ECS_CLUSTER }}" \
+            --services "${{ secrets.ECS_RBT_ACCOUNT_SERVICE }}" "${{ secrets.ECS_RBT_PROJECT_SERVICE }}" "${{ secrets.ECS_RBT_DOCUMENT_SERVICE }}" \
+            --region "${{ env.AWS_REGION }}"
+          echo "All services are stable"
+
+      - name: Run database migrations
+        run: |
+          echo "Running database migrations for RBT..."
+
+          # Waits for each migration task and fails the job on a non-zero
+          # exit code — a migration that dies must not pass silently (same
+          # pattern as STG/PREPROD; RBT previously fired-and-forgot).
+          run_migration() {
+            SERVICE="$1"; CONTAINER="$2"
+
+            TASK_DEF=$(aws ecs describe-services --cluster "${{ env.ECS_CLUSTER }}" \
+              --services "$SERVICE" --region "${{ env.AWS_REGION }}" \
+              --query "services[0].taskDefinition" --output text)
+
+            TASK_ARN=$(aws ecs run-task \
+              --cluster "${{ env.ECS_CLUSTER }}" \
+              --task-definition "$TASK_DEF" \
+              --launch-type FARGATE \
+              --network-configuration "awsvpcConfiguration={subnets=[\"${{ env.PRIVATE_SUBNET_1 }}\",\"${{ env.PRIVATE_SUBNET_2 }}\"],securityGroups=[\"${{ env.SECURITY_GROUP }}\"],assignPublicIp=\"DISABLED\"}" \
+              --overrides "{\"containerOverrides\":[{\"name\":\"$CONTAINER\",\"command\":[\"vendor/bin/phinx\",\"migrate\"]}]}" \
+              --region "${{ env.AWS_REGION }}" \
+              --query "tasks[0].taskArn" --output text)
+            echo "$SERVICE migration task: $TASK_ARN"
+
+            aws ecs wait tasks-stopped --cluster "${{ env.ECS_CLUSTER }}" \
+              --tasks "$TASK_ARN" --region "${{ env.AWS_REGION }}"
+
+            EXIT_CODE=$(aws ecs describe-tasks --cluster "${{ env.ECS_CLUSTER }}" \
+              --tasks "$TASK_ARN" --region "${{ env.AWS_REGION }}" \
+              --query "tasks[0].containers[?name=='$CONTAINER'].exitCode | [0]" --output text)
+            STOP_REASON=$(aws ecs describe-tasks --cluster "${{ env.ECS_CLUSTER }}" \
+              --tasks "$TASK_ARN" --region "${{ env.AWS_REGION }}" \
+              --query "tasks[0].stoppedReason" --output text)
+
+            if [ "$EXIT_CODE" != "0" ]; then
+              echo "::error::$SERVICE migration FAILED (exitCode=$EXIT_CODE, stoppedReason=$STOP_REASON)"
+              exit 1
+            fi
+            echo "$SERVICE migration completed"
+          }
+
+          run_migration "${{ secrets.ECS_RBT_ACCOUNT_SERVICE }}" account_service
+          run_migration "${{ secrets.ECS_RBT_PROJECT_SERVICE }}" project_service
+          run_migration "${{ secrets.ECS_RBT_DOCUMENT_SERVICE }}" document_service
+
+  update_ecs_services_preprod:
+    name: Deploy to PREPROD (ECS)
+    runs-on: ubuntu-latest
+    needs: validate_inputs
+    if: ${{ needs.validate_inputs.outputs.environment == 'PREPROD' }}
+    permissions:
+      id-token: write
+      contents: read
+    env:
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN_PREPROD }}
+      ECS_CLUSTER: ${{ secrets.ECS_CLUSTER_PREPROD }}
+      # preprod private subnets — tasks reach ECR/SSM via NAT + the shared
+      # VPC endpoint SG (extended to allow these CIDRs), so assignPublicIp
+      # must stay DISABLED, same as stg.
+      PRIVATE_SUBNET_1: ${{ secrets.PREPROD_PRIVATE_SUBNET_1 }}
+      PRIVATE_SUBNET_2: ${{ secrets.PREPROD_PRIVATE_SUBNET_2 }}
+      SECURITY_GROUP: ${{ secrets.ECS_TASK_DEFINITION_PREPROD_SECURITY_GROUP }}
+    steps:
+      - name: Configure AWS Credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ env.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Update ECS services with new image
+        run: |
+          echo "Deploying version ${{ needs.validate_inputs.outputs.version }} to PREPROD"
+          for SERVICE in preprod-account-service preprod-project-service preprod-document-service; do
+            aws ecs update-service --cluster "$ECS_CLUSTER" \
+              --service "$SERVICE" \
+              --force-new-deployment \
+              --region "$AWS_REGION"
+          done
+
+      - name: Wait for services to stabilize
+        run: |
+          echo "Waiting for services to become stable..."
+          aws ecs wait services-stable --cluster "$ECS_CLUSTER" \
+            --services preprod-account-service preprod-project-service preprod-document-service \
+            --region "$AWS_REGION"
+          echo "All services are stable"
+
+      - name: Run database migrations
+        run: |
+          echo "Running database migrations for PREPROD..."
+
+          # Waits for each migration task and fails the job on a non-zero
+          # exit code — a migration that dies must not pass silently.
+          run_migration() {
+            SERVICE="$1"; CONTAINER="$2"
+
+            TASK_DEF=$(aws ecs describe-services --cluster "$ECS_CLUSTER" \
+              --services "$SERVICE" --region "$AWS_REGION" \
+              --query "services[0].taskDefinition" --output text)
+
+            TASK_ARN=$(aws ecs run-task \
+              --cluster "$ECS_CLUSTER" \
+              --task-definition "$TASK_DEF" \
+              --launch-type FARGATE \
+              --network-configuration "awsvpcConfiguration={subnets=[\"$PRIVATE_SUBNET_1\",\"$PRIVATE_SUBNET_2\"],securityGroups=[\"$SECURITY_GROUP\"],assignPublicIp=\"DISABLED\"}" \
+              --overrides "{\"containerOverrides\":[{\"name\":\"$CONTAINER\",\"command\":[\"vendor/bin/phinx\",\"migrate\"]}]}" \
+              --region "$AWS_REGION" \
+              --query "tasks[0].taskArn" --output text)
+            echo "$SERVICE migration task: $TASK_ARN"
+
+            aws ecs wait tasks-stopped --cluster "$ECS_CLUSTER" \
+              --tasks "$TASK_ARN" --region "$AWS_REGION"
+
+            EXIT_CODE=$(aws ecs describe-tasks --cluster "$ECS_CLUSTER" \
+              --tasks "$TASK_ARN" --region "$AWS_REGION" \
+              --query "tasks[0].containers[?name=='$CONTAINER'].exitCode | [0]" --output text)
+            STOP_REASON=$(aws ecs describe-tasks --cluster "$ECS_CLUSTER" \
+              --tasks "$TASK_ARN" --region "$AWS_REGION" \
+              --query "tasks[0].stoppedReason" --output text)
+
+            if [ "$EXIT_CODE" != "0" ]; then
+              echo "::error::$SERVICE migration FAILED (exitCode=$EXIT_CODE, stoppedReason=$STOP_REASON)"
+              exit 1
+            fi
+            echo "$SERVICE migration completed"
+          }
+
+          run_migration preprod-account-service account_service
+          run_migration preprod-project-service project_service
+          run_migration preprod-document-service document_service
+
+  update_ecs_services_uat:
+    name: Deploy to UAT (ECS)
+    runs-on: ubuntu-latest
+    needs: validate_inputs
+    if: ${{ needs.validate_inputs.outputs.environment == 'UAT' }}
+    env:
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      ECS_CLUSTER: ${{ secrets.ECS_CLUSTER_SERVICES_UAT }}
+      PRIVATE_SUBNET_1: ${{ secrets.PROD_PRIVATE_SUBNET_1 }}
+      PRIVATE_SUBNET_2: ${{ secrets.PROD_PRIVATE_SUBNET_2 }}
+      SECURITY_GROUP: ${{ secrets.ECS_TASK_DEFINITION_UAT_SECURITY_GROUP }}
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ECR_NEXUS }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ECR_NEXUS }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Update ECS services with new image
+        run: |
+          echo "Deploying version ${{ needs.validate_inputs.outputs.version }} to UAT"
+
+          aws ecs update-service --cluster "${{ env.ECS_CLUSTER }}" \
+            --service ${{ secrets.ECS_UAT_ACCOUNT_SERVICE }} \
+            --force-new-deployment \
+            --region "${{ env.AWS_REGION }}"
+
+          aws ecs update-service --cluster "${{ env.ECS_CLUSTER }}" \
+            --service ${{ secrets.ECS_UAT_PROJECT_SERVICE }} \
+            --force-new-deployment \
+            --region "${{ env.AWS_REGION }}"
+
+          aws ecs update-service --cluster "${{ env.ECS_CLUSTER }}" \
+            --service ${{ secrets.ECS_UAT_DOCUMENT_SERVICE }} \
+            --force-new-deployment \
+            --region "${{ env.AWS_REGION }}"
+
+      - name: Wait for services to stabilize
+        run: |
+          echo "Waiting for services to become stable..."
+          aws ecs wait services-stable --cluster "${{ env.ECS_CLUSTER }}" \
+            --services ${{ secrets.ECS_UAT_ACCOUNT_SERVICE }} ${{ secrets.ECS_UAT_PROJECT_SERVICE }} ${{ secrets.ECS_UAT_DOCUMENT_SERVICE }} \
+            --region "${{ env.AWS_REGION }}"
+          echo "All services are stable"
+
+      - name: Run database migrations
+        run: |
+          echo "Running database migrations for UAT..."
+
+          # Account Service Migration
+          ACCOUNT_TASK_DEF=$(aws ecs describe-services \
+            --cluster "${{ env.ECS_CLUSTER }}" \
+            --services "${{ secrets.ECS_UAT_ACCOUNT_SERVICE }}" \
+            --region "${{ env.AWS_REGION }}" \
+            --query "services[0].taskDefinition" \
+            --output text)
+
+          aws ecs run-task \
+            --cluster "${{ env.ECS_CLUSTER }}" \
+            --task-definition "$ACCOUNT_TASK_DEF" \
+            --launch-type FARGATE \
+            --network-configuration "awsvpcConfiguration={subnets=[\"${{ env.PRIVATE_SUBNET_1 }}\",\"${{ env.PRIVATE_SUBNET_2 }}\"],securityGroups=[\"${{ env.SECURITY_GROUP }}\"],assignPublicIp=\"ENABLED\"}" \
+            --overrides '{"containerOverrides":[{"name":"account_service","command":["vendor/bin/phinx","migrate"]}]}' \
+            --region "${{ env.AWS_REGION }}"
+
+          # Project Service Migration
+          PROJECT_TASK_DEF=$(aws ecs describe-services \
+            --cluster "${{ env.ECS_CLUSTER }}" \
+            --services "${{ secrets.ECS_UAT_PROJECT_SERVICE }}" \
+            --region "${{ env.AWS_REGION }}" \
+            --query "services[0].taskDefinition" \
+            --output text)
+
+          aws ecs run-task \
+            --cluster "${{ env.ECS_CLUSTER }}" \
+            --task-definition "$PROJECT_TASK_DEF" \
+            --launch-type FARGATE \
+            --network-configuration "awsvpcConfiguration={subnets=[\"${{ env.PRIVATE_SUBNET_1 }}\",\"${{ env.PRIVATE_SUBNET_2 }}\"],securityGroups=[\"${{ env.SECURITY_GROUP }}\"],assignPublicIp=\"ENABLED\"}" \
+            --overrides '{"containerOverrides":[{"name":"project_service","command":["vendor/bin/phinx","migrate"]}]}' \
+            --region "${{ env.AWS_REGION }}"
+
+          # Document Service Migration
+          DOCUMENT_TASK_DEF=$(aws ecs describe-services \
+            --cluster "${{ env.ECS_CLUSTER }}" \
+            --services "${{ secrets.ECS_UAT_DOCUMENT_SERVICE }}" \
+            --region "${{ env.AWS_REGION }}" \
+            --query "services[0].taskDefinition" \
+            --output text)
+
+          aws ecs run-task \
+            --cluster "${{ env.ECS_CLUSTER }}" \
+            --task-definition "$DOCUMENT_TASK_DEF" \
+            --launch-type FARGATE \
+            --network-configuration "awsvpcConfiguration={subnets=[\"${{ env.PRIVATE_SUBNET_1 }}\",\"${{ env.PRIVATE_SUBNET_2 }}\"],securityGroups=[\"${{ env.SECURITY_GROUP }}\"],assignPublicIp=\"ENABLED\"}" \
+            --overrides '{"containerOverrides":[{"name":"document_service","command":["vendor/bin/phinx","migrate"]}]}' \
+            --region "${{ env.AWS_REGION }}"
+
+          echo "Database migrations completed"
+
+  update_ecs_services_prod:
+    name: Deploy to PROD (ECS)
+    runs-on: ubuntu-latest
+    needs: validate_inputs
+    if: ${{ needs.validate_inputs.outputs.environment == 'PROD' }}
+    env:
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      ECS_CLUSTER: ${{ secrets.ECS_CLUSTER_SERVICES_PROD }}
+      PRIVATE_SUBNET_1: ${{ secrets.PROD_PRIVATE_SUBNET_1 }}
+      PRIVATE_SUBNET_2: ${{ secrets.PROD_PRIVATE_SUBNET_2 }}
+      SECURITY_GROUP: ${{ secrets.ECS_TASK_DEFINITION_PROD_SECURITY_GROUP }}
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ECR_NEXUS }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ECR_NEXUS }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Update ECS services with new image
+        run: |
+          echo "Deploying version ${{ needs.validate_inputs.outputs.version }} to PRODUCTION"
+
+          aws ecs update-service --cluster "${{ env.ECS_CLUSTER }}" \
+            --service ${{ secrets.ECS_PROD_ACCOUNT_SERVICE }} \
+            --force-new-deployment \
+            --region "${{ env.AWS_REGION }}"
+
+          aws ecs update-service --cluster "${{ env.ECS_CLUSTER }}" \
+            --service ${{ secrets.ECS_PROD_PROJECT_SERVICE }} \
+            --force-new-deployment \
+            --region "${{ env.AWS_REGION }}"
+
+          aws ecs update-service --cluster "${{ env.ECS_CLUSTER }}" \
+            --service ${{ secrets.ECS_PROD_DOCUMENT_SERVICE }} \
+            --force-new-deployment \
+            --region "${{ env.AWS_REGION }}"
+
+      - name: Wait for services to stabilize
+        run: |
+          echo "Waiting for services to become stable..."
+          # Single parallel wait covering all 3 services, matching STG's
+          # pattern — this used to be 3 sequential waits, one per service,
+          # which was likely the real source of PROD deploys taking much
+          # longer than every other environment.
+          aws ecs wait services-stable --cluster "${{ env.ECS_CLUSTER }}" \
+            --services ${{ secrets.ECS_PROD_ACCOUNT_SERVICE }} ${{ secrets.ECS_PROD_PROJECT_SERVICE }} ${{ secrets.ECS_PROD_DOCUMENT_SERVICE }} \
+            --region "${{ env.AWS_REGION }}"
+          echo "All services are stable"
+
+      - name: Run database migrations
+        run: |
+          echo "Running database migrations for PRODUCTION..."
+
+          # Account Service Migration
+          ACCOUNT_TASK_DEF=$(aws ecs describe-services \
+            --cluster "${{ env.ECS_CLUSTER }}" \
+            --services "${{ secrets.ECS_PROD_ACCOUNT_SERVICE }}" \
+            --region "${{ env.AWS_REGION }}" \
+            --query "services[0].taskDefinition" \
+            --output text)
+
+          aws ecs run-task \
+            --cluster "${{ env.ECS_CLUSTER }}" \
+            --task-definition "$ACCOUNT_TASK_DEF" \
+            --launch-type FARGATE \
+            --network-configuration "awsvpcConfiguration={subnets=[\"${{ env.PRIVATE_SUBNET_1 }}\",\"${{ env.PRIVATE_SUBNET_2 }}\"],securityGroups=[\"${{ env.SECURITY_GROUP }}\"],assignPublicIp=\"ENABLED\"}" \
+            --overrides '{"containerOverrides":[{"name":"account_service","command":["vendor/bin/phinx","migrate"]}]}' \
+            --region "${{ env.AWS_REGION }}"
+
+          # Project Service Migration
+          PROJECT_TASK_DEF=$(aws ecs describe-services \
+            --cluster "${{ env.ECS_CLUSTER }}" \
+            --services "${{ secrets.ECS_PROD_PROJECT_SERVICE }}" \
+            --region "${{ env.AWS_REGION }}" \
+            --query "services[0].taskDefinition" \
+            --output text)
+
+          aws ecs run-task \
+            --cluster "${{ env.ECS_CLUSTER }}" \
+            --task-definition "$PROJECT_TASK_DEF" \
+            --launch-type FARGATE \
+            --network-configuration "awsvpcConfiguration={subnets=[\"${{ env.PRIVATE_SUBNET_1 }}\",\"${{ env.PRIVATE_SUBNET_2 }}\"],securityGroups=[\"${{ env.SECURITY_GROUP }}\"],assignPublicIp=\"ENABLED\"}" \
+            --overrides '{"containerOverrides":[{"name":"project_service","command":["vendor/bin/phinx","migrate"]}]}' \
+            --region "${{ env.AWS_REGION }}"
+
+          # Document Service Migration
+          DOCUMENT_TASK_DEF=$(aws ecs describe-services \
+            --cluster "${{ env.ECS_CLUSTER }}" \
+            --services "${{ secrets.ECS_PROD_DOCUMENT_SERVICE }}" \
+            --region "${{ env.AWS_REGION }}" \
+            --query "services[0].taskDefinition" \
+            --output text)
+
+          aws ecs run-task \
+            --cluster "${{ env.ECS_CLUSTER }}" \
+            --task-definition "$DOCUMENT_TASK_DEF" \
+            --launch-type FARGATE \
+            --network-configuration "awsvpcConfiguration={subnets=[\"${{ env.PRIVATE_SUBNET_1 }}\",\"${{ env.PRIVATE_SUBNET_2 }}\"],securityGroups=[\"${{ env.SECURITY_GROUP }}\"],assignPublicIp=\"ENABLED\"}" \
+            --overrides '{"containerOverrides":[{"name":"document_service","command":["vendor/bin/phinx","migrate"]}]}' \
+            --region "${{ env.AWS_REGION }}"
+
+          echo "Database migrations completed"
+
+  notify_slack_success:
+    runs-on: ubuntu-latest
+    needs: [validate_inputs, deploy_services_ssh, update_ecs_services_staging, update_ecs_services_stg, update_ecs_services_rbt, update_ecs_services_preprod, update_ecs_services_uat, update_ecs_services_prod]
+    if: |
+      always() &&
+      needs.validate_inputs.result == 'success' &&
+      !contains(needs.*.result, 'failure') &&
+      !contains(needs.*.result, 'cancelled')
+    steps:
+      - name: Notify Slack on Success
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data '{
+            "channel": "#dev-chat",
+            "attachments": [
+              {
+                "color": "#36A64F",
+                "pretext": "Deployment Notification :rocket:",
+                "title": "Deployment to ${{ needs.validate_inputs.outputs.environment }} - SUCCESS",
+                "text": "Successfully deployed Nexus services",
+                "fields": [
+                  {
+                    "title": "Environment",
+                    "value": "${{ needs.validate_inputs.outputs.environment }}",
+                    "short": true
+                  },
+                  {
+                    "title": "Version",
+                    "value": "${{ needs.validate_inputs.outputs.version }}",
+                    "short": true
+                  },
+                  {
+                    "title": "Initiated by",
+                    "value": "${{ github.actor }}",
+                    "short": true
+                  },
+                  {
+                    "title": "Timestamp",
+                    "value": "'"$(date -u +"%Y-%m-%d %H:%M:%S UTC")"'",
+                    "short": true
+                  },
+                  {
+                    "title": "Action Run",
+                    "value": "<https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Run>",
+                    "short": false
+                  }
+                ],
+                "footer": "GitHub Actions",
+                "footer_icon": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+              }
+            ]
+          }' $SLACK_WEBHOOK_URL
+
+  notify_slack_failure:
+    runs-on: ubuntu-latest
+    needs: [validate_inputs, deploy_services_ssh, update_ecs_services_staging, update_ecs_services_stg, update_ecs_services_rbt, update_ecs_services_preprod, update_ecs_services_uat, update_ecs_services_prod]
+    if: |
+      always() &&
+      (contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled'))
+    steps:
+      - name: Notify Slack on Failure
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data '{
+            "channel": "#dev-chat",
+            "attachments": [
+              {
+                "color": "#ff0000",
+                "pretext": "Deployment Notification :rotating_light:",
+                "title": "Deployment to ${{ needs.validate_inputs.outputs.environment }} - FAILED",
+                "text": "Failed to deploy Nexus services. Please check the logs immediately.",
+                "fields": [
+                  {
+                    "title": "Environment",
+                    "value": "${{ needs.validate_inputs.outputs.environment }}",
+                    "short": true
+                  },
+                  {
+                    "title": "Version",
+                    "value": "${{ needs.validate_inputs.outputs.version }}",
+                    "short": true
+                  },
+                  {
+                    "title": "Initiated by",
+                    "value": "${{ github.actor }}",
+                    "short": true
+                  },
+                  {
+                    "title": "Timestamp",
+                    "value": "'"$(date -u +"%Y-%m-%d %H:%M:%S UTC")"'",
+                    "short": true
+                  },
+                  {
+                    "title": "Action Run",
+                    "value": "<https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Run>",
+                    "short": false
+                  }
+                ],
+                "footer": "GitHub Actions",
+                "footer_icon": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+              }
+            ]
+          }' $SLACK_WEBHOOK_URL

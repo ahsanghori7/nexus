@@ -1,0 +1,11 @@
+/.github
+/dev_resources
+/logs
+/tests
+/var
+/vendor
+docker-compose.yml
+Dockerfile
+phpstan.neon
+phpunit.xml
+README.md

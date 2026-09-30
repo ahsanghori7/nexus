@@ -1,0 +1,79 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": { "company_name": "", "subcontract": "" },
+    "props": { "className": "edit-document-document" },
+    "children": [
+      {
+        "type": "coverpage",
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "text",
+                "props": { "className": "centered-text edit-document-title" },
+                "children": ["{b:Contract Document}"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "text",
+                "props": { "className": "centered-text text-middle" },
+                "children": [
+                  "For use where payment periods not per JCT",
+                  "{br}",
+                  "DATED______________________________20",
+                  "{br}",
+                  "{br}",
+                  "{CompanyName}",
+                  "{br}",
+                  "and",
+                  "{br}",
+                  "{TheSupplier}",
+                  "{br}",
+                  "{br}",
+                  "______________________________________",
+                  "{br}",
+                  "{br}",
+                  "SUB-CONTRACT",
+                  "for",
+                  "{PackageName}",
+                  "{br}",
+                  "Incorporating JCT Conditions of Contract",
+                  "{br}",
+                  "IN RELATION TO",
+                  "{br}",
+                  "{ProjectName}",
+                  "SUB-CONTRACT Nr. - {OrderReference}",
+                  "{br}",
+                  "______________________________________"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

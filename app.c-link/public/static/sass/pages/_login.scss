@@ -1,0 +1,139 @@
+// Styles for login page
+
+/*
+ * PAGES/LOGIN - Background pulsing effect
+ */
+.c-wrapper {
+
+  &.pulsing-bg {
+    background: linear-gradient(326deg, rgba($clink-purple, 0.3), rgba($clink-lite-green, 0.3), rgba($clink-green, 0.3));
+    background-size: 400% 400%;
+    -webkit-animation: bg-change 15s ease infinite;
+    -moz-animation: bg-change 15s ease infinite;
+    animation: bg-change 15s ease infinite;
+  }
+
+  .login-wrapper {
+    max-width: 500px;
+    width: 90%;
+    height: auto;
+    padding: 20px 35px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+
+    &.flex-center {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    figure {
+
+      &.logo {
+        width: 40px;
+        height: 40px;
+      }
+
+      &.login-illustration {
+        width: 100%;
+        height: auto;
+        margin-top: -50px;
+
+      }
+
+      &.get-keys {
+        width: 250px;
+        height: auto;
+        margin-bottom: 30px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: $clink-purple;
+      @include font-bold;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      color: $clink-pink;
+      @include font-bold;
+      padding: 15px 0px 15px 0px;
+    }
+
+    p {
+      font-size: 0.9rem;
+      line-height: 1.8rem;
+      color: $clink-lite-green;
+      padding-bottom: 15px;
+      @include font-bold;
+
+      a {
+        @include font-lite;
+        color: $clink-purple;
+
+        &:hover {
+          color: $clink-green;
+        }
+      }
+
+    }
+
+    #login-wrapper {
+      display: block;
+      min-width: 300px;
+      height: auto;
+      overflow: hidden;
+    }
+
+  }
+
+}
+
+// Animation
+
+@-webkit-keyframes bg-change {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes bg-change {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes bg-change {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}

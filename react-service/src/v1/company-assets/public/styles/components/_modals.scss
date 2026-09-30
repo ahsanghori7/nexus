@@ -1,0 +1,198 @@
+.modal {
+  &.modal-create-package {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    .modal-dialog {
+      width: 550px;
+      max-width: 550px;
+
+      .modal-content {
+        width: 550px;
+        max-width: 550px;
+        border: 1px solid $purple-light;
+        border-radius: 4px;
+
+        .modal-header {
+          text-align: left;
+          background-color: $white;
+          color: $black;
+          padding: 26px 36px 8px;
+          border-bottom: none;
+
+          .modal-title {
+            font-size: 28px;
+            font-weight: bold;
+            font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+
+            .modal-subtitle {
+              font-size: 16px;
+              color: $dark-grey;
+              font-weight: normal;
+              opacity: 0.6;
+              font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+            }
+          }
+        }
+
+        .modal-body {
+          padding: 8px 36px 26px;
+          font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+
+          form {
+            .form-group {
+              label {
+                font-size: 14px;
+              }
+
+              input {
+                &.form-control {
+                  border: 1px solid $purple-light;
+                  font-size: 16px;
+                }
+
+                &.error-input {
+                  border: 1px solid $clink-red;
+                }
+              }
+
+              .error-message {
+                width: 100%;
+                margin-top: 0.25rem;
+                color: $clink-red;
+              }
+            }
+
+            .button-container {
+              display: flex;
+              width: 100%;
+              justify-content: flex-end;
+              align-items: center;
+              flex-direction: row;
+
+              button {
+                margin-right: 0;
+                margin-left: 10px;
+                padding: 7px 20px;
+                border-radius: 22px;
+                font-size: 16px;
+
+                &.btn.btn-success:disabled {
+                  background-color: $disabled-btn-background;
+                  border-color: $disabled-btn-background;
+                  color: $disabled-btn-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.modal-restore-template,
+  &.modal-confirm-action {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    .modal-dialog {
+      width: 540px;
+      max-width: 540px;
+
+      .modal-content {
+        width: 540px;
+        max-width: 540px;
+        border: 1px solid $purple-light;
+        border-radius: 4px;
+
+        .modal-header {
+          text-align: left;
+          background-color: $white;
+          color: $black;
+          padding: 26px 36px 2px;
+          border-bottom: none;
+
+          .modal-title {
+            font-size: 28px;
+            font-weight: bold;
+            font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+            line-height: 1.3;
+            max-width: 410px;
+
+            .modal-subtitle {
+              font-size: 18px;
+              color: $dark-grey;
+              font-weight: normal;
+              opacity: 0.6;
+              font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+              margin-top: 18px;
+            }
+          }
+        }
+
+        .modal-body {
+          padding: 2px 36px 26px;
+          font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+
+          form {
+            .button-container {
+              display: flex;
+              width: 100%;
+              justify-content: flex-end;
+              align-items: center;
+              flex-direction: row;
+
+              button {
+                margin-right: 0;
+                margin-left: 10px;
+                border: 2px solid $clink-pink;
+                font-size: 18px;
+                transition: all 0.3s ease;
+                font-weight: bold;
+                padding: 12px 26px;
+                border-radius: 30px;
+
+                &:hover {
+                  border-color: $clink-red-hover;
+                }
+
+                &.btn-outline {
+                  background-color: $white;
+                  border: 2px solid $dark-light-grey;
+
+                  &:hover {
+                    background-color: $black;
+                    border-color: $black;
+                    color: $white;
+                  }
+                }
+              }
+            }
+
+            &.form-confirm-modal {
+              .button-container {
+                justify-content: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.modal-confirm-action {
+    .modal-header {
+      padding: 40px 36px 2px !important;
+
+      .modal-title {
+        max-width: unset !important;
+      }
+    }
+
+    .modal-body {
+      padding: 50px 25px !important;
+    }
+  }
+}

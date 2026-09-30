@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderContent snapshot test 1`] = `
+<div
+  class="styled__StyledContainer-sc-zttd8w-0 euXAeO"
+>
+  <div
+    class="styled__StyledNotifications-sc-zttd8w-1 jVtlSr prosper-notifications"
+  >
+    <div
+      class="styled__StyledToken-sc-zttd8w-4 styled__StyledTokenLG-sc-zttd8w-6 bWgCsw gDLXvp prosper-tokens"
+    >
+      <div
+        data-testid="token-modal-mock"
+      >
+        <div
+          class="buy-more-tokens-box"
+          data-testid="token-modal-trigger"
+        >
+          <button
+            class="buy-more-tokens"
+            data-testid="button-wrapper-mock"
+            id="navbar-token-text-button"
+          >
+            <div
+              class="styled__StyledTokensNumber-sc-zttd8w-9 SVQsI"
+            >
+              <div
+                class="styled__StyledBuyTokenBanner-sc-zttd8w-8 hxJWGN"
+              >
+                Buy More Tokens
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        data-testid="token-modal-mock"
+      >
+        <button
+          data-testid="token-modal-trigger"
+          id="navbar-token-coin-button"
+        >
+          <img
+            data-testid="image"
+            src="/mock-empty-token.png"
+          />
+          <div
+            class="styled__StyledTokensNumber-sc-zttd8w-9 hxfFTv"
+          >
+            5
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="styled__StyledSeparator-sc-zttd8w-7 gycihy prosper-nav-separator"
+  />
+  <div
+    class="styled__StyledNavProfileWrapper-sc-zttd8w-10 bjqcSA"
+  >
+    <div
+      class="styled__StyledToken-sc-zttd8w-4 styled__StyledTokenSM-sc-zttd8w-5 bWgCsw kfWIKy"
+    >
+      <div
+        data-testid="token-modal-mock"
+      >
+        <button
+          data-testid="token-modal-trigger"
+          id="navbar-token-coin-mobile-button"
+        >
+          <div
+            class="MuiBox-root"
+            data-testid="mui-box"
+            position="relative"
+          >
+            <img
+              data-testid="image"
+              src="/mock-empty-token.png"
+            />
+            <div
+              class="styled__StyledTokensNumber-sc-zttd8w-9 hxfFTv"
+            >
+              5
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      class="profile-section-prosper"
+      data-testid="dropdown"
+      theme="prosper"
+    >
+      <div
+        class="OpenDropdown__StyledContainer-sc-capc5e-0 bbbwyR"
+      >
+        <div
+          data-testid="profile-section"
+          theme="prosper"
+        >
+          Profile Section 
+          Closed
+        </div>
+      </div>
+      <ul
+        class="styled__StyledList-sc-zttd8w-2 iInpWD"
+      >
+        <a
+          href="/my-company/profile"
+        >
+          <li
+            class="styled__StyledListItem-sc-zttd8w-3 huNXDg"
+          >
+            My profile
+          </li>
+        </a>
+        <a
+          href="/change-password"
+        >
+          <li
+            class="styled__StyledListItem-sc-zttd8w-3 huNXDg"
+          >
+            Change password
+          </li>
+        </a>
+        <li
+          class="styled__StyledListItem-sc-zttd8w-3 huNXDg"
+        >
+          Log out
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`HeaderContent snapshot test with EU country 1`] = `
+<div
+  class="styled__StyledContainer-sc-zttd8w-0 euXAeO"
+>
+  <div
+    class="styled__StyledSeparator-sc-zttd8w-7 gycihy prosper-nav-separator"
+  />
+  <div
+    class="styled__StyledNavProfileWrapper-sc-zttd8w-10 bjqcSA"
+  >
+    <div
+      class="profile-section-prosper"
+      data-testid="dropdown"
+      theme="prosper"
+    >
+      <div
+        class="OpenDropdown__StyledContainer-sc-capc5e-0 bbbwyR"
+      >
+        <div
+          data-testid="profile-section"
+          theme="prosper"
+        >
+          Profile Section 
+          Closed
+        </div>
+      </div>
+      <ul
+        class="styled__StyledList-sc-zttd8w-2 iInpWD"
+      >
+        <a
+          href="/my-company/profile"
+        >
+          <li
+            class="styled__StyledListItem-sc-zttd8w-3 huNXDg"
+          >
+            My profile
+          </li>
+        </a>
+        <a
+          href="/change-password"
+        >
+          <li
+            class="styled__StyledListItem-sc-zttd8w-3 huNXDg"
+          >
+            Change password
+          </li>
+        </a>
+        <li
+          class="styled__StyledListItem-sc-zttd8w-3 huNXDg"
+        >
+          Log out
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

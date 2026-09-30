@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clink/router/SPWrapper should create snapshot of component 1`] = `
+<div
+  data-testid="layout"
+>
+  <div
+    data-testid="title"
+  >
+    supply-chain
+  </div>
+  <div
+    data-testid="breadcrumbs"
+  >
+    [{"label":"supply-chain","name":"supply-chain","href":"/main-contractor/supply_chain"}]
+  </div>
+  <div
+    data-testid="company-name"
+  >
+    true
+  </div>
+  <div
+    data-testid="supply-chain"
+  >
+    Supply Chain Component
+  </div>
+</div>
+`;

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content snapshot test 1`] = `
+<div
+  data-testid="mock-browser-router"
+>
+  <ul
+    class="styled__StyledList-sc-zttd8w-2 jwNofQ"
+  >
+    <a
+      href="/my-company/profile"
+    >
+      <li
+        class="styled__StyledListItem-sc-zttd8w-3 boaGYn"
+      >
+        My profile
+      </li>
+    </a>
+    <a
+      href="/change-password"
+    >
+      <li
+        class="styled__StyledListItem-sc-zttd8w-3 boaGYn"
+      >
+        Change password
+      </li>
+    </a>
+    <li
+      class="styled__StyledListItem-sc-zttd8w-3 boaGYn"
+    >
+      Log out
+    </li>
+  </ul>
+</div>
+`;

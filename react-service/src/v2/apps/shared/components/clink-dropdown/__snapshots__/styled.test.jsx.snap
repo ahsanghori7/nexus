@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Clink Dropdown Styled Components StyledDropdownContent takes a snapshot 1`] = `
+<div
+  class="styled__StyledDropdownContent-sc-1vd5x1q-0 bprkDf left-align"
+>
+  <div>
+    Dropdown Item 1
+  </div>
+  <button>
+    Dropdown Item 2
+  </button>
+  <a
+    href="/test"
+  >
+    Dropdown Link
+  </a>
+</div>
+`;
+
+exports[`Clink Dropdown Styled Components StyledDropdownContent takes a snapshot without left-align class 1`] = `
+<div
+  class="styled__StyledDropdownContent-sc-1vd5x1q-0 bprkDf"
+>
+  <div>
+    Simple Content
+  </div>
+</div>
+`;

@@ -1,0 +1,28 @@
+parameters:
+	checkMissingIterableValueType: false #https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type
+	treatPhpDocTypesAsCertain: false     #Because the type is coming from a PHPDoc, you can turn off this check by setting treatPhpDocTypesAsCertain: false in your phpstan.neon.
+	ignoreErrors:
+	    - '#Static call to instance method stdClass::getRow\(\)#'
+	    - '#Static call to instance method stdClass::getRedBean\(\)#'
+	    - '#Static call to instance method stdClass::load\(\)#'
+	    - '#Static call to instance method stdClass::exec\(\)#'
+	    - '#Static call to instance method stdClass::getAll\(\)#'
+	    - '#Static call to instance method stdClass::store\(\)#'
+	    - '#Static call to instance method stdClass::findOne\(\)#'
+	    - '#Static call to instance method stdClass::trash\(\)#'
+	    - '#Static call to instance method stdClass::xdispense\(\)#'
+	    - '#Static call to instance method stdClass::getAssoc\(\)#'
+	excludePaths:
+	    - src/Domain/Account/Manage.php
+	    - src/Domain/Oauth2.php
+	    - src/*/Testing/*
+	    - src/*/testing/*
+	    - src/*/Test/*
+	    - src/*/test/*
+	    - src/*/tests/*
+	    - src/*/Tests/*
+	    - tests
+	level: 5
+	phpVersion: 70400
+	paths:
+		- src

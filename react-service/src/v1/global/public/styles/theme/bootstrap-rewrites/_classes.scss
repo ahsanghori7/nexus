@@ -1,0 +1,127 @@
+.clink-primary-btn {
+  background-color: $clink-purple;
+  border: 1px solid $clink-purple;
+  color: $white;
+  &:hover,
+  &:focus,
+  &:not(:disabled):not(.disabled):active {
+    border-color: $clink-purple;
+    background: $clink-purple-hover;
+  }
+  &:not(:disabled):not(.disabled):focus {
+    box-shadow: 0 0 0 0.2rem rgb(189, 188, 221) !important;
+  }
+}
+.clink-btn-outline-primary {
+  padding: 0px;
+  margin: 0px;
+  color: $clink-purple;
+  border-color: $purple-light;
+  &:hover,
+  &:not(:disabled):not(.disabled):active {
+    color: $white;
+    border-color: $purple-light;
+    svg path,
+    circle,
+    rect {
+      fill: $white;
+    }
+  }
+  &:hover {
+    background-color: $clink-purple-hover;
+  }
+  &:not(:disabled):not(.disabled):active {
+    background-color: $clink-dark-purple;
+  }
+  &:not(:disabled):not(.disabled):focus {
+    box-shadow: 0 0 0 0.2rem $purple-lighter !important;
+  }
+  &.disabled,
+  &:disabled {
+    color: $clink-purple;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $purple-light;
+    }
+  }
+}
+.clink-green-btn {
+  background-color: $clink-green;
+  border: 1px solid $clink-green;
+  color: $white;
+  &:hover,
+  &:focus,
+  &:not(:disabled):not(.disabled):active {
+    background: $clink-green-hover;
+    border: 1px solid $clink-green-hover;
+  }
+}
+.clink-red-btn {
+  background-color: $clink-red;
+  border: 1px solid $clink-red;
+  color: $white;
+  &:hover,
+  &:focus,
+  &:not(:disabled):not(.disabled):active {
+    background: $clink-red-hover;
+    border: 1px solid $clink-red-hover;
+  }
+}
+// TODO: Select another variant color for greys
+.clink-outline-primary-btn {
+  color: $dark-lighter-grey;
+  border-color: $dark-lighter-grey;
+  &:hover {
+    color: $white;
+    background-color: $dark-lighter-grey;
+    border-color: $dark-lighter-grey;
+    svg path,
+    circle,
+    rect {
+      fill: $white;
+    }
+  }
+}
+.clink-outline-secondary-btn {
+  color: $dark-grey;
+  border: 1px solid rgba(49, 50, 55, 0.3);
+  &:hover {
+    color: $white;
+    background-color: $dark-grey;
+    border-color: $dark-grey;
+    svg path,
+    circle,
+    rect {
+      fill: $white;
+    }
+  }
+}
+.clink-outline-success-btn {
+  color: $clink-green;
+  border: 1px solid rgb(76, 192, 173, 0.6);
+  &:hover {
+    color: $white;
+    background-color: $clink-green-hover;
+    border-color: $clink-green-hover;
+    svg path,
+    circle,
+    rect {
+      fill: $white;
+    }
+  }
+}
+.clink-outline-red-btn {
+  border: 1px solid $clink-red;
+  color: $clink-red;
+  &:hover {
+    color: $white;
+    background-color: $clink-red-hover;
+    border-color: $clink-red-hover;
+    svg path,
+    circle,
+    rect {
+      fill: $white;
+    }
+  }
+}

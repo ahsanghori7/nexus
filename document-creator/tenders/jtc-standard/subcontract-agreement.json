@@ -1,0 +1,351 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": { "company_name": "", "subcontract": "" },
+    "props": { "className": "edit-document-document" },
+    "children": [
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": ["{b:Sub-Contract Agreement}"]
+              },
+              {
+                "name": "text",
+                "props": { "className": "justified" },
+                "children": [
+                  "{br}",
+                  "{b:THIS AGREEMENT} is dated the                 day of\n              20[         ]",
+                  "{br}",
+                  "{b:BETWEEN:}",
+                  "{br}",
+                  "(1) {b:{CompanyName}} incorporated and registered in England and \n              Wales with company number ({CompanyReg}) whose registered office \n              is at {CompanyAddress} (the \"{b:Contractor}\") and",
+                  "{br}",
+                  "(2) {b:[Sub-Contractor Name]} incorporated and registered in England \n              and Wales with company number [Sub-Contractor Reg] whose \n              registered office is at [Registered Address] \n              (the \"{b:Sub-Contractor}\")",
+                  "{br}",
+                  "{b:BACKGROUND}",
+                  "{br}",
+                  "The Contractor has entered into the Main Contract as described in the Main \n    Contract Schedule of Information. The parties have agreed to enter into this \n    Sub Contractor for Sub-Contract Works on the terms and conditions set out \n    herein.",
+                  "{br}",
+                  "{b:NOW IT IS AGREED AS FOLLOWS:}",
+                  "{br}",
+                  "1. The following documents shall be deemed to form and shall be read and construed as comprising this Sub-Contract",
+                  "1.1 This Contract Agreement;",
+                  "1.2 The Sub-Contract Particulars appended hereto;",
+                  "1.3 The Main Contract Particulars Schedule and Main Contract Particulars appended hereto,",
+                  "1.4 The JCT Standard Sub-Contract Conditions SBSub/C 2016 Edition [subject to the amendments in Schedule A].",
+                  "1.5 Schedules and Numbered Documents",
+                  "Schedule 1 : Scope of Works Document",
+                  "Schedule 2 : Schedule of Attendances",
+                  "Schedule 3 : Sub-Contract Sum Analysis/Pricing Document",
+                  "Schedule 4 : Drawings and Specifications",
+                  "Schedule 5 : Interim Valuation Dates",
+                  "Schedule 6 : The Numbered Documents",
+                  "{br}",
+                  "{br}",
+                  "The Sub-Contract Works are described in the above documents."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "text",
+                "props": { "className": "justified" },
+                "children": [
+                  "2. The Contractor shall pay to the Sub-Contractor at the \n  times and in the manner specified in this Sub-Contract and in consideration \n  for the execution and completion of the Sub-Contract Works and the remedying \n  of defects the VAT exclusive sum of \u00a3TBC (\u201cthe Contract Sum\u201d) or such other \n  sum as becomes payable under this Contract.",
+                  "{br}",
+                  "3. In consideration of the payments to be made by the \n  Contractor to the Sub-Contractor pursuant to this Sub-Contract the \n  Sub-Contractor covenants with the Contractor to execute and complete the \n  Sub-Contract Works and remedy any defects therein, in conformity in all \n  respects with the provisions of this Sub-Contract.",
+                  "{br}",
+                  "",
+                  "{br}",
+                  "",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table full-width table no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row no-inner-border"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Executed as a deed and delivered by"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row no-inner-border"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{b:the Contractor}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          " ) ___________________",
+                          "{br}",
+                          " ) Director"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row no-inner-border"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["acting by a director"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row no-inner-border"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["in the presence of:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          " ) ___________________",
+                          "{br}",
+                          " ) Name"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row no-inner-border"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row no-inner-border"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Executed as a deed and delivered by"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row no-inner-border"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{b:the Sub-Contractor}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          " ) ___________________",
+                          "{br}",
+                          " ) Director"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row no-inner-border"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["acting by a director"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{br}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row no-inner-border"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["in the presence of:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          " ) ___________________",
+                          "{br}",
+                          " ) Name"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

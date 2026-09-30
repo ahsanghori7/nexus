@@ -1,0 +1,97 @@
+/*
+ * COMPONENTS - BUTTONS
+ */
+
+button, a {
+
+  border: none;
+  outline: none !important;
+  line-height: inherit;
+
+  &.main-btn {
+    background: $clink-purple;
+    color: white;
+    transition: ease 0.2s;
+
+    &:hover {
+      background: $clink-green;
+      transition: ease 0.2s;
+    }
+
+  }
+
+  &.action-btn {
+    background: $clink-green;
+    color: white;
+    transition: ease 0.2s;
+
+    &:hover {
+      background: $clink-purple;
+      transition: ease 0.2s;
+    }
+
+  }
+
+  &.danger-btn {
+    background: $clink-pink;
+    color: white;
+    transition: ease 0.2s;
+
+    &:hover {
+      background: $clink-purple;
+      transition: ease 0.2s;
+    }
+
+  }
+
+  /*
+   * COMPONENTS - BUTTONS -> File Upload Button
+   */
+
+  &.fileUpload {
+    position: absolute;
+    overflow: hidden;
+    min-width: 40px;
+    width: 40px;
+    background: #95989a;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    -webkit-transition: ease 0.3s;
+    -moz-transition: ease 0.3s;
+    transition: ease 0.3s;
+    color: #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+
+    span {
+      cursor: pointer;
+    }
+
+
+    input {
+
+      &.upload {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        filter: alpha(opacity=0);
+
+      }
+
+    }
+
+  }
+
+}

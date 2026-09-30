@@ -1,0 +1,34 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": { "company_name": "", "subcontract": "" },
+    "props": { "className": "edit-document-document" },
+    "children": [
+      {
+        "type": "coverpage",
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "text",
+                "props": { "className": "centered-text edit-document-title" },
+                "children": ["{b:Schedule 2}", "{b:Schedule of Attendances}"]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+/*
+
+    The CSS placed here is for styling the PDF component container,
+    not to edit the content of the PDFs
+
+ */
+.PDFViewer {
+  @include media('>tablet') {
+    &>div>div {
+      border: 1px solid $dark-lighter-grey;
+
+      button {
+        color: inherit;
+        font-weight: inherit;
+      }
+    }
+  }
+
+  &>div>div {
+    button {
+      mark {
+        background-color: $yellow;
+      }
+    }
+  }
+
+  .text-middle {
+    padding-top: 200px;
+    height: 100%;
+  }
+
+  .centered-text {
+
+    div,
+    button,
+    img {
+      text-align: center;
+    }
+  }
+
+  img.cover-page-img {
+    width: 300px;
+  }
+
+  strong {
+    &.red {
+      color: $red;
+    }
+
+    &.pink {
+      color: $prosper-pink;
+    }
+
+    &.inv {
+      color: transparent;
+    }
+
+    &.trow {
+      font-weight: 500;
+    }
+  }
+}

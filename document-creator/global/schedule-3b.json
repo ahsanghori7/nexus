@@ -1,0 +1,532 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": {
+      "company_name": "",
+      "subcontract": ""
+    },
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "type": "coverpage",
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text edit-document-title"
+                },
+                "children": ["{b:Schedule 3b}", "{b:Daywork Schedule}"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": { "className": "justified" },
+                "children": [
+                  "{b:Project}: {ProjectName}",
+                  "{b:Package}: {PackageName}",
+                  "{br}",
+                  "{b:Secondary Subcontract Sum Analysis}",
+                  "{br}",
+                  "{b:3.4\u00a0 \u00a0 \u00a0 \u00a0 \u00a0DAYWORK SCHEDULE}",
+                  "{b:3.4.1\u00a0 \u00a0 \u00a0 Generally:}",
+                  "{br}",
+                  "Where the Subcontractor has been instructed in writing by the Contractor to carry out any additional or substitute work on a daywork basis the Subcontractor shall be paid for such work in accordance with the provisions of the Subcontractor and at the rates and prices set out in this daywork schedule; provided always that payment on a daywork basis is conditional upon:",
+                  "{br}",
+                  "The Subcontractor having given the Contractor reasonable notice of the commencement of any work for which the Subcontractor intends to seek payment on a daywork basis.",
+                  "{br}",
+                  "The Subcontractor maintaining contemporary records (daywork sheets) of all resources engaged upon the instructed daywork (including the names and site pass/NI No's of all operatives) and delivering such records to the Contractor's Project Manager or Quantity Surveyor each day during the currency of the instructed daywork for endorsement or comment.",
+                  "{br}",
+                  "NB. For the avoidance of endorsement of any daywork sheet by the Contractor will constitute verification of resource expenditure only. Daywork hours must be recorded net (exclusive of all meal/refreshments breaks and travel time).",
+                  "{br}",
+                  "Endorsed daywork sheets together with any further substantive information shall be included within the Subcontractor's interim application for payment, with the daywork sheets fully priced, extended and totalled prior to submission. Further, all daywork sheets shall be specifically referenced to the Contractor's instruction.",
+                  "{br}",
+                  "All labour rates herein are fully inclusive of all direct and indirect costs including but not restricted to the Subcontractor's overheads and profit, head office charges, site management, supervision and other preliminary costs, PPE, small tools and consumables, all direct and indirect employee costs and all other charges, and shall not be subject to any further adjustment. All rates included herein are fixed and firm for the duration of the Works.",
+                  "{br}",
+                  "The Subcontractor labour rates shall include for the amount of wages to be paid to the work people inclusive of all overheads and profits and such extra payments of differentials as are paid in respect of staff responsibility, discomfort, inconvenience and risk in accordance with the rules and awards of the recognised wage fixing bodies of the trades concerned.",
+                  "{br}",
+                  "The Subcontractor labour rates shall include for the amount of wages to be paid to the work people inclusive of all overheads and profits and such extra payments of differentials as are paid in respect of staff responsibility, discomfort, inconvenience and risk in accordance with the rules and awards of the recognised wage fixing bodies of the trades concerned.",
+                  "{br}",
+                  "Where the Subcontractoris instructed to supply materials to execute daywork the Subcontractor shall be reimbursed the actual and reasonable net cost of the material, plus the additional percentage stated herein. For the avoidance of doubt the noted additional percentage shall cater for all direct and indirect costs associated with the supply of the materials, including but not restricted to the Subcontractor's overheads and profit, all delivery, off-loading and further handling costs, the disposal of packaging and arisings associated with the materials from site and any further statutory or other costs.",
+                  "{br}",
+                  "{b:3.4.2\u00a0\u00a0 Labour:}",
+                  "{br}",
+                  "The Subcontractor must insert below, various categories of craftsmen, labourers, apprentices, etc., he proposes to use, and the hourly rates, calculated as before described.",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table three-row-questionnaire full-width table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "thead",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column table-header three-cols"
+                        },
+                        "children": ["Weekday working"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column table-header three-cols"
+                        },
+                        "children": ["Basic hour"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column table-header three-cols"
+                        },
+                        "children": ["After 18.00 (weekdays) Premium"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": ["{br}", "{br}"]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table three-row-questionnaire full-width table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "thead",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column table-header three-cols"
+                        },
+                        "children": ["{b:Weekend Working}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column table-header three-cols"
+                        },
+                        "children": ["{b:Saturdays}"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column table-header three-cols"
+                        },
+                        "children": ["{b:Sunday Premium}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column three-cols"
+                        },
+                        "children": ["\u00a0"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "justified"
+                },
+                "children": [
+                  "{br}",
+                  "{b:3.4.3\u00a0\u00a0 Plant:}",
+                  "{br}",
+                  "Specify the percentage addition to be added to the net cost of hire of plant calculated as before described:______ %",
+                  "{br}",
+                  "{b:3.4.4\u00a0\u00a0 Materials:}",
+                  "{br}",
+                  "Specify the percentage addition to be added to the net cost of purchase of materials as before described:______%",
+                  "{br}"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

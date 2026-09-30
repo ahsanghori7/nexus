@@ -1,0 +1,1086 @@
+[
+  {
+    "footer": {
+      "company_name": "",
+      "subcontract": "",
+      "html": "<table width='100%' style='border-collapse:collapse; font-size:10px; margin-top:6px;'><tr><td colspan='2' style='border:1px solid #000; padding:6px;'><strong>Information Classification: Protected</strong></td><td style='border:1px solid #000; padding:6px; width:20%;'>MCL-COM-FR-4732</td><td colspan='2' style='border:1px solid #000; padding:6px; width:40%;'>ND100 Scope of Work Template</td></tr><tr><td style='border:1px solid #000; padding:6px;' colspan='3'>This document is uncontrolled if printed. Please always refer to TMW for the latest version</td><td style='border-right:1px solid #000; padding:0 4px; text-align:left; vertical-align:middle; white-space:nowrap;border:1px solid #000;'>Rev 1</td><td colspan='1' style='padding:0 4px; text-align:right; vertical-align:middle; white-space:nowrap;border:1px solid #000;'>Page {PAGENO} of {nbpg}</td></tr></table>"
+    },
+    "header": {
+      "address": [],
+      "company_name": "",
+      "company_reg": "",
+      "logo": "",
+      "web_address": ""
+    },
+    "name": "document",
+    "props": {
+      "className": "edit-document-document"
+    },
+    "children": [
+      {
+        "type": "coverpage",
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": [
+                  "{b:SCOPE OF WORKS FOR}",
+                  "{br}",
+                  "{b:THE}",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text"
+                },
+                "children": ["{b:[INSERT TRADE]}", "{br}", "{b:PACKAGE }"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "view",
+        "type": "table",
+        "props": {
+          "className": "edit-document-table table tc full-width no-border"
+        },
+        "children": [
+          {
+            "name": "view",
+            "type": "row",
+            "props": {
+              "className": "edit-document-table-row"
+            },
+            "children": [
+              {
+                "name": "text",
+                "type": "column",
+                "props": {
+                  "className": "edit-document-table-column align-top"
+                },
+                "children": ["{b:CONTENTS}"]
+              }
+            ]
+          },
+          {
+            "name": "view",
+            "type": "row",
+            "props": {
+              "className": "edit-document-table-row"
+            },
+            "children": [
+              {
+                "name": "text",
+                "type": "column",
+                "props": {
+                  "className": "edit-document-table-column align-top"
+                },
+                "children": ["1."]
+              },
+              {
+                "name": "text",
+                "type": "column",
+                "props": {
+                  "className": "edit-document-table-column"
+                },
+                "children": ["SCOPE OF WORKS"]
+              }
+            ]
+          },
+          {
+            "name": "view",
+            "type": "row",
+            "props": {
+              "className": "edit-document-table-row pad-20"
+            },
+            "children": [
+              {
+                "name": "text",
+                "type": "column",
+                "props": {
+                  "className": "edit-document-table-column align-top"
+                },
+                "children": ["1.1."]
+              },
+              {
+                "name": "text",
+                "type": "column",
+                "props": {
+                  "className": "edit-document-table-column"
+                },
+                "children": ["OUTLINE SCOPE OF WORKS"]
+              }
+            ]
+          },
+          {
+            "name": "view",
+            "type": "row",
+            "props": {
+              "className": "edit-document-table-row pad-20"
+            },
+            "children": [
+              {
+                "name": "text",
+                "type": "column",
+                "props": {
+                  "className": "edit-document-table-column align-top"
+                },
+                "children": ["1.2."]
+              },
+              {
+                "name": "text",
+                "type": "column",
+                "props": {
+                  "className": "edit-document-table-column"
+                },
+                "children": ["SPECIFIC SUBCONTRACT INCLUSIONS / EXCLUSIONS"]
+              }
+            ]
+          },
+          {
+            "name": "view",
+            "type": "row",
+            "props": {
+              "className": "edit-document-table-row pad-20"
+            },
+            "children": [
+              {
+                "name": "text",
+                "type": "column",
+                "props": {
+                  "className": "edit-document-table-column align-top"
+                },
+                "children": ["1.3."]
+              },
+              {
+                "name": "text",
+                "type": "column",
+                "props": {
+                  "className": "edit-document-table-column"
+                },
+                "children": ["PROJECT SPECIFIC INTERFACE AND COORDINATION"]
+              }
+            ]
+          },
+          {
+            "name": "view",
+            "type": "row",
+            "props": {
+              "className": "edit-document-table-row"
+            },
+            "children": [
+              {
+                "name": "text",
+                "type": "column",
+                "props": {
+                  "className": "edit-document-table-column align-top"
+                },
+                "children": ["2."]
+              },
+              {
+                "name": "text",
+                "type": "column",
+                "props": {
+                  "className": "edit-document-table-column"
+                },
+                "children": ["DRAWING REGISTER"]
+              }
+            ]
+          },
+          {
+            "name": "view",
+            "type": "row",
+            "props": {
+              "className": "edit-document-table-row"
+            },
+            "children": [
+              {
+                "name": "text",
+                "type": "column",
+                "props": {
+                  "className": "edit-document-table-column align-top"
+                },
+                "children": ["3."]
+              },
+              {
+                "name": "text",
+                "type": "column",
+                "props": {
+                  "className": "edit-document-table-column"
+                },
+                "children": ["DRAWINGS, SPECIFICATIONS AND SCHEDULES"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": ["{b:1.1  \u00A0 \u00A0    OUTLINE SCOPE OF WORKS}"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "The following generally describes the work to be carried out under the subcontract package and draws attention to certain associated items that are to be completed. It is not intended to limit or exclude items required by the Sub-Contract Documents."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "For the avoidance of doubt The Subcontractor is to assume full responsibility for his trade package works as described within the Contract documents as a whole."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "The Subcontractor is entirely responsible for carrying out the [Enter Description of package trade]"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": ["{br}"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "{b:1.2 \u00A0 \u00A0     SPECIFIC SUBCONTRACT INCLUSIONS / EXCLUSIONS}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "The Sub-Contractor has included for the following:"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "full-width tc no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "The Sub-Contractor has excluded the following items:"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "full-width tc no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["\u00A0 [\u00A0 \u00A0 ]"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "{b:1.3 \u00A0 \u00A0     PROJECT SPECIFIC INTERFACE AND COORDINATION}"
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "The Subcontractor shall be responsible for liaising directly with other Subcontractors and determining requirements for the co-ordination of the design, and carrying out such co-ordination, subject to the agreement of the Contractor."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "The key interfaces within this package are as follows:"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "full-width tc no-border"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Metalwork"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Plastering"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Etc"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "edit-document-table-row bullet-list"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column align-top"
+                        },
+                        "children": ["•"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Etc"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": ["{br}"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": ["{b:2.0  \u00A0 \u00A0    DRAWINGS}"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "Marked up drawings are indicative only and are not deemed to fully describe or limit the works required under this sub-contract order, the contract drawings and other related contract documents read as a whole describe fully all the works required for the Sub-Contract Package."
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": ["{br}"]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": ""
+                },
+                "children": [
+                  "{b:3.0 \u00A0 \u00A0    DRAWINGS, SPECIFICATIONS AND SCHEDULES}"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wrapper Component takes a snapshot 1`] = `
+<div
+  data-testid="mock-component"
+>
+  <div
+    data-testid="styles"
+  >
+    {"img":32,"mb":7,"inputMb":3,"subtitleSize":"18px","titleSize":"36px","noWrap":"nowrap","bottomMt":5}
+  </div>
+  <div
+    data-testid="test-prop"
+  >
+    snapshot
+  </div>
+</div>
+`;

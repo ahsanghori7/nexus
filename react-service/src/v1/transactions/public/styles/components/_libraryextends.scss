@@ -1,0 +1,17 @@
+.center {
+  @extend .align-items-center;
+  @extend .justify-content-center;
+}
+.no-margin-no-padding {
+  @extend .m-0;
+  @extend .p-0;
+}
+
+.table-nav {
+  @extend .flex-row;
+  @extend .tab-bar;
+}
+
+.bottom-margin {
+  @extend .mb-3;
+}

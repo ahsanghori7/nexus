@@ -1,0 +1,288 @@
+.packages-component {
+  &__list {
+    @import 'table';
+  }
+
+  h3.other-candidates {
+    font-size: 16px;
+    font-family: 'sofia_pro_softlight', sans-serif;
+    letter-spacing: -0.32px;
+    color: $tender-black;
+    margin-top: 26px;
+    margin-left: 32px;
+    font-weight: bold;
+  }
+
+  &__not-awarded-list {
+    padding: 0 32px 32px 32px;
+    line-height: 1;
+
+    .list-group-item {
+      display: flex;
+      min-height: 48px;
+      font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+      font-weight: bold;
+      padding: 8px 8px 8px 8px;
+      border: 1px solid $tender-purple-lighter;
+
+      &:nth-child(odd) {
+        background: $tender-purple-lightest;
+      }
+
+      .packages-component__not-awarded-title {
+        align-items: center;
+        display: flex;
+
+        @media (min-width: 1201px) {
+          max-width: initial;
+        }
+
+        @import 'status';
+
+        .status {
+          align-self: center;
+          margin: 0;
+          font-weight: normal;
+        }
+
+        @media screen and (max-width: 600px) {
+          span {
+            width: 10%;
+          }
+
+          .title-copy {
+            width: 50%;
+          }
+
+          .extra-content {
+            width: 40%;
+          }
+        }
+
+        span {
+          width: 10%;
+        }
+
+        .title-copy {
+          width: 40%;
+          margin-left: 15px;
+          min-width: unset;
+        }
+
+        .extra-content {
+          width: 50%;
+        }
+
+        img {
+          margin-right: 16px;
+          max-height: 32px;
+          max-width: 32px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    display: flex;
+
+    img {
+      margin-right: 16px;
+      max-height: 32px;
+      max-width: 32px;
+    }
+  }
+
+  &__tender-log-list {
+    @import 'table';
+
+    .MuiButton-label:first-child,
+    .MuiTableCell-head:first-child {
+      opacity: 0.5;
+    }
+
+    th[class^='MUIDataTableHeadCell-fixedHeader'],
+    th[class*='MUIDataTableHeadCell-fixedHeader'] {
+      position: relative;
+    }
+
+    th:nth-child(2):nth-last-child(3) {
+      width: 2% !important;
+    }
+
+    th:first-child:nth-last-child(4) {
+      padding-left: 2.5rem;
+      width: 15% !important;
+    }
+
+    th:nth-child(4):nth-last-child(1) {
+      width: 15% !important;
+      padding-left: 10px;
+    }
+
+    svg {
+      opacity: 1;
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+
+    .date-category {
+      max-width: 6.5rem;
+    }
+
+    .tender-log-category {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      padding-left: 1.5rem;
+    }
+
+    .tender-log-name {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .lighter {
+        font-weight: 400;
+
+        &.lower-opacity {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .tender-log-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .tender-log-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tender-log-green-button {
+      border-radius: 2rem;
+      flex: 0.5;
+    }
+
+    .tender-log-more-options {
+      flex: 1;
+      display: none;
+    }
+  }
+}
+
+.tender-log-modal-dialog {
+  max-width: 46%;
+
+  table {
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          background-color: $tender-purple-lightest;
+        }
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 0 0 40px 0 !important;
+
+    .modal-go-back-button {
+      margin-top: 2rem;
+      margin-left: auto;
+      margin-right: 3rem;
+    }
+
+    .loading {
+      margin-top: 40px;
+    }
+  }
+
+  .modal-header {
+    padding: 40px 0 40px 2.5rem !important;
+    border-bottom: inherit !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .panel {
+    &.panel__packages {
+      &.normal {
+        .sector-header {
+          p {
+            margin-bottom: 0;
+          }
+        }
+
+        div[class*='MUIDataTableToolbarSelect-root-'] {
+          >.MUIDataTableToolbarSelect-custom {
+            >.dropdown {
+              margin-left: 1rem;
+            }
+          }
+        }
+
+        td.MuiTableCell-root {
+          border: none;
+
+          &:first-child {
+            position: relative;
+
+            >div:not([class]) {
+              position: absolute;
+              top: 0.5rem;
+              left: 0.5rem;
+            }
+          }
+
+          &[data-colindex='0'] {
+            padding-bottom: 0;
+
+            >div {
+              &:first-child {
+                display: none;
+              }
+            }
+
+            &[colspan='4'] {
+              padding: 0.25rem 1rem;
+              background-color: $bg-purple;
+
+              div[class*='MUIDataTableBody-emptyTitle'] {
+                color: $dark-lighter-grey;
+              }
+            }
+
+            .packages-component__title {
+              padding-left: 0;
+
+              span {
+                display: none !important;
+              }
+            }
+          }
+
+          &[data-colindex='1'] {
+            display: none;
+          }
+
+          &[data-colindex='2'] {
+            padding-top: 0;
+
+            .lastColumn {
+              color: $dark-lighter-grey;
+              font-size: 0.85rem;
+              padding: 0 0 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

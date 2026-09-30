@@ -1,0 +1,17 @@
+.action-buttons-container {
+  @extend .row;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px -15px;
+
+  .action-buttons-panel {
+    @extend .col-md-6;
+    @extend .col-lg-7;
+    @extend .col-xl-8;
+
+    display: flex;
+
+    @import 'buttons';
+  }
+}

@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HealthSafetyEnvironmentalQualifications Component matches snapshot 1`] = `
+<div>
+  <div
+    data-testid="select-component"
+  >
+    <select
+      data-default-value=""
+      data-testid="select-label"
+      name="label"
+    >
+      <option
+        value="ISO 9001"
+      >
+        ISO 9001
+      </option>
+      <option
+        value="ISO 14001"
+      >
+        ISO 14001
+      </option>
+      <option
+        value="OHSAS 18001"
+      >
+        OHSAS 18001
+      </option>
+      <option
+        value="CV for Health and Safety Manager / Consultant"
+      >
+        CV for Health and Safety Manager / Consultant
+      </option>
+      <option
+        value="Other certificate document"
+      >
+        Other certificate document
+      </option>
+    </select>
+  </div>
+  <div
+    data-testid="date-component"
+  >
+    <input
+      data-testid="date-date"
+      name="date"
+      type="date"
+    />
+  </div>
+  <div
+    data-testid="file-component"
+  >
+    <input
+      data-testid="file-document"
+      name="document"
+      type="file"
+    />
+  </div>
+</div>
+`;

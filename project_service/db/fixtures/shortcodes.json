@@ -1,0 +1,15 @@
+{
+  "{ContractorId}":                "getContractorId",
+  "{Unique}":                      "generateUniqueName",
+  "{GenerateSlugFromProjectName}": "generateSlugFromProjectName",
+  "{SubcontractorId1}":            "replaceSubcontractorId",
+  "{SubcontractorId2}":            "replaceSubcontractorId",
+  "{SubcontractorId3}":            "replaceSubcontractorId",
+  "{SubcontractorId4}":            "replaceSubcontractorId",
+  "{SubcontractorId5}":            "replaceSubcontractorId",
+  "{SubcontractorId6}":            "replaceSubcontractorId",
+  "{SubcontractorId7}":            "replaceSubcontractorId",
+  "{SubcontractorId8}":            "replaceSubcontractorId",
+  "{SubcontractorId9}":            "replaceSubcontractorId",
+  "{SubcontractorId10}":           "replaceSubcontractorId"
+}

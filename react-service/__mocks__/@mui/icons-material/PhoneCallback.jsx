@@ -1,0 +1,1 @@
+import React from "react"; const PhoneCallback = (props) => (<span data-testid="mui-icon-PhoneCallback" {...props}>PhoneCallback</span>); PhoneCallback.displayName = "PhoneCallback"; export default PhoneCallback;

@@ -1,0 +1,28 @@
+.panel {
+  &.header-panel {
+    .form-subcontractor-show-button {
+      width: 191px;
+      height: 40px;
+      white-space: nowrap;
+      border-radius: 22px;
+
+      @include media('<tablet') {
+        width: 70px;
+        height: 36px;
+
+        svg {
+          height: 14px;
+        }
+      }
+    }
+  }
+
+  &.supply-chain {
+    .sector-header {
+      .sector-header__title {
+        width: 100%;
+        // max-width: 550px;
+      }
+    }
+  }
+}

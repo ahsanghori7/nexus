@@ -1,0 +1,63 @@
+.modal-open {
+  .modal {
+    &.confirmation-modal {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+
+      .modal-dialog {
+        width: 100%;
+        max-width: 550px;
+
+        .modal-content {
+          .modal-header {
+            .modal-title {
+              font-size: 28px;
+              margin-bottom: 14px;
+              line-height: normal;
+
+              .tender-name {
+                color: $clink-red;
+              }
+
+              .modal-subtitle {
+                font-size: 18px;
+                margin-top: 14px;
+              }
+            }
+          }
+
+          .modal-body {
+            .confirmation-modal-actions-btn {
+              display: flex;
+              width: 100%;
+              justify-content: flex-end;
+
+              .btn {
+                font-size: 18px;
+                margin-left: 8px;
+                padding: 0.75rem 2rem;
+                border-radius: 2rem;
+                border-width: 2px;
+                font-weight: bold;
+
+                &.btn-inverted {
+                  background-color: $white;
+                  color: $clink-black;
+                  border-color: $disabled-btn-color;
+                  transition: all 0.3s ease;
+
+                  &:hover {
+                    background-color: $clink-black;
+                    color: $white;
+                    border-color: $clink-black;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

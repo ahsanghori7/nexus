@@ -1,0 +1,16 @@
+### Delete an Account
+DELETE http://account_service.local/v1/account/3754
+
+{
+  "grant_type": "client_credentials"
+}
+
+### Account Profile
+POST http://account_service.local/v1/account
+Content-Type: application/json;charset=utf-8
+
+{
+  "access_token" : "3f2f51c35c82dbcf9dc8c0aae2f0f1604cddbba9",
+  "email" : "potato",
+  "firstname" : "rob"
+}

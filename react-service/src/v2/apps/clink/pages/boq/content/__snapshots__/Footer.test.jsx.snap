@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Component matches snapshot with custom total and editing false 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-container"
+  data-testid="mui-grid"
+  sx="[object Object]"
+>
+  <div
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8"
+    data-testid="mui-grid"
+    xs="8"
+  />
+  <div
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+    data-testid="mui-grid"
+    sx="[object Object]"
+    xs="4"
+  >
+    <div
+      class="MuiBox-root"
+      data-testid="mui-box"
+      style="text-align: right;"
+    >
+      <div
+        component="div"
+        data-testid="mui-typography"
+      >
+        Total
+      </div>
+      <div
+        component="div"
+        data-testid="mui-typography"
+      >
+        $2000.50
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Footer Component matches snapshot with custom total and editing true 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-container"
+  data-testid="mui-grid"
+  sx="[object Object]"
+>
+  <div
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8"
+    data-testid="mui-grid"
+    xs="8"
+  />
+  <div
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+    data-testid="mui-grid"
+    sx="[object Object]"
+    xs="4"
+  >
+    <div
+      class="MuiBox-root"
+      data-testid="mui-box"
+      style="text-align: right;"
+    >
+      <div
+        component="div"
+        data-testid="mui-typography"
+      >
+        Total
+      </div>
+      <div
+        component="div"
+        data-testid="mui-typography"
+      >
+        $1500.75
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Footer Component matches snapshot with default props 1`] = `
+<div
+  class="MuiGrid-root MuiGrid-container"
+  data-testid="mui-grid"
+  sx="[object Object]"
+>
+  <div
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8"
+    data-testid="mui-grid"
+    xs="8"
+  />
+  <div
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+    data-testid="mui-grid"
+    sx="[object Object]"
+    xs="4"
+  >
+    <div
+      class="MuiBox-root"
+      data-testid="mui-box"
+      style="text-align: right;"
+    >
+      <div
+        component="div"
+        data-testid="mui-typography"
+      >
+        Total
+      </div>
+      <div
+        component="div"
+        data-testid="mui-typography"
+      >
+        $0.00
+      </div>
+    </div>
+  </div>
+</div>
+`;

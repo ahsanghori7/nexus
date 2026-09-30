@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BOQ Component matches snapshot 1`] = `
+<div
+  data-testid="boq-container-styled"
+>
+  <div
+    data-testid="boq-header"
+  />
+</div>
+`;

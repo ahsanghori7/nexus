@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DocContainer Component matches snapshot 1`] = `
+<div>
+  <div
+    data-testid="mui-box"
+  >
+    <div
+      data-testid="mui-box"
+      style="width: 100%; height: 100%;"
+    >
+      <div
+        data-testid="mui-subtitle"
+      >
+        Test Document Title
+      </div>
+      <div
+        data-testid="mui-typography"
+        style="font-size: 14px; font-weight: 100;"
+      >
+        This is a test description
+      </div>
+    </div>
+    <div
+      data-testid="mui-box"
+    >
+      <div
+        data-testid="test-children"
+      >
+        Test Children
+      </div>
+    </div>
+    <div
+      data-testid="mui-box"
+      style="width: 100%; height: 100%;"
+    >
+      <div
+        data-capitalize="false"
+        data-testid="mui-submit-wrapper"
+      >
+        <button
+          color="secondary"
+          data-testid="mui-button"
+          fullwidth=""
+          variant="contained"
+        >
+          Add Document
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DocContainer Component matches snapshot with dialog open 1`] = `
+<div>
+  <div
+    data-testid="mui-box"
+  >
+    <div
+      data-testid="mui-box"
+      style="width: 100%; height: 100%;"
+    >
+      <div
+        data-testid="mui-subtitle"
+      >
+        Test Document Title
+      </div>
+      <div
+        data-testid="mui-typography"
+        style="font-size: 14px; font-weight: 100;"
+      >
+        This is a test description
+      </div>
+    </div>
+    <div
+      data-testid="mui-box"
+    >
+      <div
+        data-testid="test-children"
+      >
+        Test Children
+      </div>
+    </div>
+    <div
+      data-testid="mui-box"
+      style="width: 100%; height: 100%;"
+    >
+      <div
+        data-capitalize="false"
+        data-testid="mui-submit-wrapper"
+      >
+        <button
+          color="secondary"
+          data-testid="mui-button"
+          fullwidth=""
+          variant="contained"
+        >
+          Add Document
+        </button>
+      </div>
+    </div>
+    <div
+      data-testid="mui-dialog"
+      data-title="Document Dialog"
+      data-width="448"
+    >
+      <button
+        data-testid="dialog-close"
+      >
+        Close
+      </button>
+      <div
+        data-testid="custom-form"
+      >
+        <span
+          data-testid="custom-form-aid"
+        >
+          test-aid
+        </span>
+        <button
+          data-testid="custom-form-submit"
+        >
+          Custom Submit
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

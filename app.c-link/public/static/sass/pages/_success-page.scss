@@ -1,0 +1,47 @@
+.success {
+  display: block;
+  max-width:600px;
+  width: 90%;
+  height: auto;
+
+  .avatar {
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: $clink-purple;
+    padding-bottom: 15px;
+    @include font-bold;
+  }
+
+  article {
+    padding-bottom: 15px;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  button {
+    @include d-button;
+    min-width:150px;
+    display: block;
+    margin: 15px auto;
+  }
+
+}

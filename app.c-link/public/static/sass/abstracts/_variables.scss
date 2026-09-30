@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'sofia_pro_softlight';
+  src: url('fonts/sofia-pro-soft-light-webfont.woff2') format('woff2'),
+  url('fonts/sofia-pro-soft-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Color Palette
+
+$clink-purple: #8e8dbe;
+$clink-green: #4cc0ad;
+$clink-pink: #ed1164;
+$clink-grey: #e7e5df;
+$clink-lite-green: #c6d8d3;
+$lite-blue: #05cdff;
+$n01: #f5f7fa; // neutral
+$n02: #c3cfe2; // neutral
+
+$main-color: $clink-green;
+$sec-color: $clink-purple;
+$hover-color: $clink-pink;

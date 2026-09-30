@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interest matches snapshot 1`] = `
+<div
+  data-testid="registered-card"
+  data-version="v1"
+>
+  <div
+    data-testid="card-image"
+  >
+    mocked-project-logo-url
+  </div>
+  <div
+    data-testid="card-content"
+  >
+    <div
+      data-testid="card-id"
+    >
+      test-project-123
+    </div>
+    <div
+      data-testid="card-title"
+    >
+      Test Project
+    </div>
+    <div
+      data-testid="card-description"
+    >
+      Test project description
+    </div>
+  </div>
+</div>
+`;

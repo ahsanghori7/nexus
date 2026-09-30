@@ -1,0 +1,126 @@
+.document-creator-modal {
+  .modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    margin: 1.75rem auto;
+
+    .modal-body {
+      .form-label {
+        font-weight: bold;
+      }
+      .react-select-container
+        .react-select__control
+        .react-select__placeholder {
+        color: $black;
+      }
+      .ql-editor ol {
+        list-style-type: none !important;
+        counter-reset: quill-counter !important;
+      }
+      .ql-editor li::before {
+        content: none !important;
+      }
+      .ql-editor li .ql-ui {
+        display: none !important;
+      }
+      .ql-editor li[data-list='bullet'] {
+        counter-reset: quill-counter 0 !important;
+        display: flex !important;
+      }
+      .ql-editor li[data-list='bullet']::before {
+        content: '\2022' !important;
+        margin-right: 8px;
+        width: 1.2em;
+        text-align: right;
+        display: inline-block;
+      }
+      .ql-editor li[data-list='ordered'] {
+        counter-increment: quill-counter !important;
+        display: flex !important;
+      }
+      .ql-editor li[data-list='ordered']::before {
+        content: counter(quill-counter) '. ' !important;
+        margin-right: 8px;
+        width: 1.2em;
+        text-align: right;
+        display: inline-block;
+      }
+      .ql-editor li[data-list='bullet'] ~ li[data-list='ordered'] {
+        counter-increment: post-bullet-counter !important;
+      }
+      .ql-editor li[data-list='bullet'] ~ li[data-list='ordered']::before {
+        content: counter(post-bullet-counter) '. ' !important;
+      }
+      .ql-editor ol {
+        counter-reset: quill-counter post-bullet-counter !important;
+      }
+      .react-select__control {
+        .react-select__indicators {
+          .react-select__indicator-separator {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .title-last-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .modal-subtitle {
+    margin: 1rem 0rem;
+  }
+
+  .list-group {
+    margin: 20px 0px;
+    border: 1px solid $purple-lighter;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+
+    &__change-template {
+      button {
+        font-size: 18px;
+        height: 50px;
+      }
+    }
+
+    button {
+      @extend .rounded-pill;
+
+      margin: 0;
+      margin-left: 10px;
+      min-width: 120px;
+      min-height: 40px;
+      font-size: 0.8rem;
+      font-weight: bold;
+
+      &.return-btn {
+        flex: 5;
+        margin-left: 0px;
+        margin-right: 5px;
+        padding: 10px;
+      }
+
+      &.dashboard-btn {
+        flex: 3;
+        margin-left: 5px;
+        padding: 10px;
+      }
+
+      &:disabled {
+        opacity: 1;
+        color: $disabled-btn-color;
+        background-color: $disabled-btn-background;
+        border-color: $disabled-btn-background;
+      }
+    }
+  }
+
+  @import 'edit-content';
+}

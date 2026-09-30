@@ -1,0 +1,28 @@
+.side-details {
+  button.change-form-btn {
+    border: 0px;
+    margin-top: 10px;
+    padding: 0px 0px 0px 10px;
+    text-decoration: underline;
+    color: $purple-light;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  label.btn {
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+    min-height: 50px;
+    border-radius: 4px;
+
+    &#pricingDocument-yes {
+      margin-right: 10px;
+    }
+
+    &#pricingDocument-no {
+      margin-left: 10px;
+    }
+  }
+}

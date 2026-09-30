@@ -1,0 +1,118 @@
+{
+  "res_one": [
+    {
+      "id": 1,
+      "name": "Subcontractor company one",
+      "number": "0776934343",
+      "email": "sub1@prosper.com",
+      "postcode": "SW1W 0NY",
+      "reg_number": "000",
+      "address": "Test address, London",
+      "prosper_account": true,
+      "users": [{ "name": "Sub one", "email": "sub_one@subbie.com" }],
+      "trades": [
+        { "id": 1, "label": "Brickwork" },
+        { "id": 2, "label": "Plastering" }
+      ],
+      "regions": [
+        { "id": 1, "label": "London" },
+        { "id": 2, "label": "South East" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Subcontractor company two",
+      "number": "0776934343",
+      "email": "sub2@prosper.com",
+      "postcode": "SW1W 0NY",
+      "reg_number": "001",
+      "address": "Test address, London",
+      "prosper_account": true,
+      "users": [{ "name": "Sub Two", "email": "sub_two@subbie.com" }],
+      "trades": [
+        { "id": 1, "label": "Brickwork" },
+        { "id": 2, "label": "Plastering" }
+      ],
+      "regions": [{ "id": 3, "label": "Northwest" }]
+    },
+    {
+      "id": 3,
+      "name": "Subcontractor company three",
+      "number": "0776934343",
+      "email": "sub3@prosper.com",
+      "postcode": "SW1W 0NY",
+      "reg_number": "002",
+      "address": "Test address, London",
+      "prosper_account": true,
+      "users": [{ "name": "Sub Three", "email": "sub_three@subbie.com" }],
+      "trades": [
+        { "id": 55, "label": "Plumbing" },
+        { "id": 67, "label": "Doors and Windows" }
+      ],
+      "regions": [{ "id": 4, "label": "Midlands" }]
+    },
+    {
+      "id": 4,
+      "name": "External Subcontractor company one",
+      "number": "0776934343",
+      "email": "sub1@external.com",
+      "postcode": "SW1W 0NY",
+      "reg_number": "003",
+      "address": "Test address, London",
+      "prosper_account": false,
+      "users": [{ "name": "External One", "email": "external_one@subbie.com" }],
+      "trades": [
+        { "id": 1, "label": "Brickwork" },
+        { "id": 2, "label": "Plastering" }
+      ],
+      "regions": [
+        { "id": 1, "label": "London" },
+        { "id": 2, "label": "South East" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "External Subcontractor company two",
+      "number": "0776934343",
+      "email": "sub2@external.com",
+      "postcode": "SW1W 0NY",
+      "reg_number": "004",
+      "address": "Test address, London",
+      "prosper_account": false,
+      "users": [{ "name": "External Two", "email": "external_two@subbie.com" }],
+      "trades": [{ "id": 1, "label": "Brickwork" }],
+      "regions": [{ "id": 2, "label": "South East" }]
+    },
+    {
+      "id": 6,
+      "name": "External Subcontractor company three",
+      "number": "0776934343",
+      "email": "sub3@external.com",
+      "postcode": "SW1W 0NY",
+      "reg_number": "005",
+      "address": "Test address, London",
+      "prosper_account": false,
+      "users": [
+        { "name": "External Three", "email": "external_three@subbie.com" }
+      ],
+      "trades": [{ "id": 2, "label": "Groundworks" }],
+      "regions": [{ "id": 7, "label": "Northeast" }]
+    },
+    {
+      "id": 7,
+      "name": "Subcontractor company four",
+      "number": "0776934343",
+      "email": "sub4@prosper.com",
+      "postcode": "SW1W 0NY",
+      "reg_number": "006",
+      "address": "Test address, London",
+      "prosper_account": true,
+      "users": [{ "name": "Sub four", "email": "sub_four@subbie.com" }],
+      "trades": [{ "id": 1, "label": "drainage" }],
+      "regions": [
+        { "id": 1, "label": "London" },
+        { "id": 2, "label": "South East" }
+      ]
+    }
+  ]
+}

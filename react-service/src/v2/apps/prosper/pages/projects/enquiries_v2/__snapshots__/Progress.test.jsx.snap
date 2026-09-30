@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Progress Component matches snapshot 1`] = `
+<div
+  class="MuiBox-root"
+  data-testid="mui-box"
+  style="max-width: 450px;"
+>
+  <div
+    activestep="1"
+    data-testid="enquiry-progress"
+    orientation="vertical"
+    sx="[object Object]"
+  >
+    <div
+      data-testid="step"
+    >
+      <div
+        data-testid="step-label"
+        slotprops="[object Object]"
+        slots="[object Object]"
+        sx="[object Object]"
+      >
+        <div
+          class="MuiBox-root"
+          data-testid="mui-box"
+          style="display: flex; align-items: center; gap: 1px; justify-content: space-between;"
+        >
+          <span>
+            STEP-1
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      data-testid="step"
+    >
+      <div
+        data-testid="step-label"
+        slotprops="[object Object]"
+        slots="[object Object]"
+        sx="[object Object]"
+      >
+        <div
+          class="MuiBox-root"
+          data-testid="mui-box"
+          style="display: flex; align-items: center; gap: 1px; justify-content: space-between;"
+        >
+          <span>
+            STEP-2
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

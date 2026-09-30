@@ -1,0 +1,1887 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": { "company_name": "", "subcontract": "" },
+    "props": { "className": "edit-document-document" },
+    "children": [
+      {
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "table-documents-table full-width table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "table-documents-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": { "className": "table-documents-column" },
+                        "children": ["Order No: {OrderReference}"]
+                      },
+                      {
+                        "name": "text",
+                        "props": { "className": "table-documents-column" },
+                        "children": ["SMALL WORKS ORDER (Stage Payments)"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "children": [
+                  "{br}",
+                  "This Order is placed subject to the terms and conditions attached hereto and {mainContractor} (the \u201cContractor\u201d) is only willing to contract on this basis.",
+                  "{br}"
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "table-documents-table full-width table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "table-documents-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "table-documents-column align-top" },
+                        "children": [
+                          "{b:The Supplier:}",
+                          "{TheSupplier}",
+                          "{br}",
+                          "{b:Address}",
+                          "{RegisteredAddress}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "table-documents-column align-top" },
+                        "children": [
+                          "{StartDate} (the \u201c{b:Start Date}\u201d)",
+                          "{CompletionDate} (the \u201c{b:Completion Date}\u201d).",
+                          "{br}",
+                          "Other specific programme requirements:",
+                          "{br}",
+                          "Clause 2 delay damages \u00a3{DelayDamages} per week"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "table-documents-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "table-documents-column align-top" },
+                        "children": [
+                          "{b:The Site (Property) :}",
+                          "{ProjectName}",
+                          "{br}",
+                          "{b:Site Address:}",
+                          "{SiteAddress}",
+                          "{br}",
+                          "{b:Site Tel:}",
+                          "{SiteTelephone}",
+                          "{br}",
+                          "{b:Site contact details}",
+                          "{u:Name}: {SiteName}",
+                          "{u:Role}: {SiteRole}",
+                          "{u:Tel}: {SiteTel}",
+                          "{u:Email}: {SiteEmail}",
+                          "{br}",
+                          "{b:Retention} : {Retention}%",
+                          "To be released in two tranches - 50% at Practical Completion and 50% upon the expiry of the Defects Liability Period - {RectificationPeriod}."
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "table-documents-column align-top" },
+                        "children": [
+                          "{b:The Order Price}: {OrderPrice}",
+                          "{br}",
+                          "{br}",
+                          "{b:Price breakdown}",
+                          "{br}",
+                          "The Contractor will page to the Supplier [95%] of the Order Price (as adjusted by clause 9, if applicable) in installments when each of the following stages of the Works is finished to the Contractors's reasonable satisfaction",
+                          "Stage\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Payment",
+                          "{br}",
+                          "[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0£[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]",
+                          "{br}",
+                          "[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0£[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]",
+                          "{br}",
+                          "[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0£[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]",
+                          "{br}",
+                          "[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0£[\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0]"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "table-documents-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "table-documents-column align-top"
+                        },
+                        "children": [
+                          "{b:The Small Works scope (\u201cWork Details\u201d)}:",
+                          "{SubContractorWorks}",
+                          "{br}",
+                          "Refer to Schedule 1 for documents and details"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "table-documents-column align-top" },
+                        "children": [
+                          "{b:Further Information (\u201cWork Details\u201d):}",
+                          "{br}",
+                          "{b:Principal Contractor under CDM is} {PrincipalContractor}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "table-documents-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "table-documents-column align-top" },
+                        "children": [
+                          "{b:Signed for & on behalf of}",
+                          "{br}",
+                          "{b:The Contractor}: {MainContractorName}",
+                          "{br}",
+                          "{b:Address}: {MainContractorAddress}",
+                          "{br}",
+                          "{b:Tel}: {MainContractorTelephone}"
+                        ]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "table-documents-column align-top" },
+                        "children": [
+                          "{b:Signed for & on behalf of}",
+                          "{br}",
+                          "{b:The Supplier}: {TheSupplier}",
+                          "{br}",
+                          "{b:Address}: {RegisteredAddress}",
+                          "{br}",
+                          "{b:Tel}: {TheSupplierPhone}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": {
+          "className": "edit-document-page"
+        },
+        "children": [
+          {
+            "name": "view",
+            "props": {
+              "className": "edit-document-container"
+            },
+            "children": [
+              {
+                "name": "text",
+                "children": ["{b:TERMS & CONDITIONS}:"]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:1.0}"] },
+                      { "type": "text", "children": ["{b:ORDER PRICE}"] }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:1.1}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Prior to commencement of the Works the Supplier shall provide documentary evidence of insurances together with company registration number and Unique Taxpayer Reference (UTR). For the avoidance of doubt the provision of such information shall be a pre-requisite for payment."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:1.2}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "If the Work Details are changed, the Order Price will be increased or reduced depending on the change(s) made in accordance with clause 9 below. The Order Price also includes the Supplier's costs of dealing with any unexpected problems which it could have discovered by carrying out a careful inspection of Property and the  Work Details."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:2.0}"] },
+                      {
+                        "type": "text",
+                        "children": ["{b:TIME FOR COMPLETION}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:2.1}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Start Date may be amended by a written instruction from the Contractor provided that the Supplier shall receive a minimum of 14 days' notice of the Start Date. The Completion Date may be extended as provided for in clause 10."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:2.2}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "If a sum per week is stated in this Works Order for delay damages, the Supplier shall pay to the Contractor or the Contractor shall be entitled to deduct from sums otherwise due to the Supplier, liquidated and ascertained damages in the sum stated per week (or part thereof) for any delay to completion of the Works beyond the Completion Date, as the same may be extended by clause 10. If no sum is stated or the relevant section of the Works Order is otherwise deleted or not applicable, the Contractor's rights to general damages in relation to any breach of this Contract are fully reserved."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:3.0}"] },
+                      {
+                        "type": "text",
+                        "children": ["{b:PRODUCT GUARANTEES AND TITLE}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "legal-table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "legal-table-section"
+                    },
+                    "children": [
+                      {
+                        "type": "text",
+                        "children": ["{b:3.1}"]
+                      },
+                      {
+                        "type": "text",
+                        "children": [""]
+                      },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier will give the Contractor any guarantees issued by the manufacturers of products installed in the Works."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": {
+                      "className": "legal-table-section"
+                    },
+                    "children": [
+                      {
+                        "type": "text",
+                        "children": ["{b:3.2}"]
+                      },
+                      {
+                        "type": "text",
+                        "children": [""]
+                      },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Title in the Works or parts thereof shall pass to the Contractor upon payment or upon the delivery to site whichever is the sooner. In the event that stage payments are agreed prior to delivery to site, payment will be conditional on written proof of transfer of ownership and appropriate storage arrangements. Notwithstanding transfer of title, the Supplier shall effect and maintain insurance in respect of such parts of the Works as provided in clause 4 below until the Completion Date."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [" "] },
+                      { "type": "text", "children": [" "] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [" "] },
+                      { "type": "text", "children": [" "] }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:4.0}"] },
+                      {
+                        "type": "text",
+                        "props": { "className": "second-col" },
+                        "children": ["{b:INSURANCE}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:4.1}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier shall provide all plant, tools and consumables required for the complete execution of the Works. Such items shall be at the sole risk of the Supplier and any loss or damage to the same shall be the sole liability of the Supplier who shall indemnity the Contractor against any loss claims or proceedings in respect thereof."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:4.2}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Before the Works start the Supplier will have an “all risks“ insurance policy to cover itself and the Contractor for the full costs of damage to the Works and to unfixed materials which are on the Property before being used in the Works. The Supplier will maintain such “all risks” insurance policy up to and including the date of completion of the Works or until the date of termination under clause 12 or clause 13 (if earlier)."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:4.3}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier will have an up to date public liability insurance policy in the amount of {Public/Product/QuickTender} for any one claim arising from one event for death or injury to people and damage to any property (real or personal). The Supplier will maintain such public liability insurance policy up to and including the date of completion of the or until the date of termination under clause 12 or clause 13 (if earlier)."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:5.0}"] },
+                      { "type": "text", "children": ["{b:WORKING HOURS}"] },
+                      { "type": "text", "children": [""] }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "text",
+                "props": {
+                  "className": "indented-content"
+                },
+                "children": [
+                  "The Contractor will allow the Supplier to carry out and complete the Works between 8 am and 6 pm from Monday to Friday and between 8 am and 1 pm on Saturday, unless they agree otherwise."
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "legal-table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:6.0}"] },
+                      {
+                        "type": "text",
+                        "children": ["{b:SUPPLIER’S RESPONSIBILITIES}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "legal-table"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:6.1}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier warrants to the Contractor that it shall:-"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:6.1.1}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "carry out the Works with all skill, care and diligence and as the Contractor instructs;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:6.1.2}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "use materials which are of satisfactory quality and suitable for their intended purpose. The materials will be new unless the Contractor agrees otherwise;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:6.1.3}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "start the Works by the Start Date and complete the Works by the Completion Date, as may be extended by clause 10;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:6.1.4}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "not sub-contract any of the Works without the Contractor's permission;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:6.1.5}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "regularly dispose of any rubbish from the Works;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:6.1.6}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "be responsible for any damage it may cause to the Property and its contents or to neighbouring properties;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:6.1.7}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "keep and leave the working areas in a clean and tidy condition ; and"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:6.1.8}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "comply with all its legal duties and responsibilities in connection with the Works including, but not limited to, those contained in this Contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:6.2}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Where the Supplier designs any part of the Works (including all associated or related works whether permanent or temporary in nature) the Supplier warrants that it shall exercise all reasonable skill and care to be expected of an expertly qualified and competent specialist contractor experienced in carrying out work of a similar scope, nature and size to the Works in (a) the design of the Works; and (b) the selection of kinds and standards of materials and 1.1 goods for incorporation nto the Works; and (c) the coordination and integration of the Supplier's design with the remainder of the Works and design by others."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:6.3}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier warrants that the Works shall satisfy any performance specification or other requirements included or referred to in the Works Details and shall comply with any statutory requirements which are applicable to the Works."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:6.4}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier shall comply with any instruction of the Contractor in relation to the submission of any documents and drawings relating to the Works and shall revise and return any documents and drawings as may be required in accordance with the terms of this Contract. No approval or revision of any documents or drawings shall relieve the Supplier of his obligations and the warranties given under this Contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:6.5}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier hereby grants to the Contractor a royalty free irrevocable non-exclusive licence to use such documents and drawings prepared and produced by the Supplier for any purpose relating to the Works. If required the Supplier shall supply the Contractor with such drawings, negatives and information showing or describing the Works as built and concerning the maintenance, operation and management of the Works."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:6.6}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "All of the Supplier's operatives engaged in the execution of the Works must be experienced and skilled in their particular discipline and appropriately qualified. Additionally, all operatives shall be CSCS certified. All representatives on site must adhere to site rules, attend site inductions and be eligible to work in the UK."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:6.7}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier is deemed to have visited the site, to have taken into account all local and existing conditions and to be thoroughly acquainted with the position and accessibility of the Subcontract works and the conditions under which they will have to be carried out. Claims based on lack of knowledge will not be entertained."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:6.7}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier is deemed to have visited the site, to have taken into account all local and existing conditions and to be thoroughly acquainted with the position and accessibility of the Subcontract works and the conditions under which they will have to be carried out. Claims based on lack of knowledge will not be entertained."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:7.0}"] },
+                      { "type": "text", "children": ["{b:HEALTH AND SAFETY}"] }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:7.1}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier will comply with its obligations under the Construction (Design and Management) Regulations 2015 (as may be from time to time amended, re-enacted or substituted) (the “Regulations“) including, without limitation, those as a contractor and as a designer (in the case of the designer's duties, only where the Supplier is deemed to be a designer under the Regulations)."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:7.2}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "In carrying out the Works, the Supplier undertakes to:"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:7.2.1}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "comply with any and all statutory and/or regulatory duties and responsibilities associated with health and safety, including but not limited to compliance with the Health & Safety at Work etc. Act 1974, and any and all approved codes of practice produced by or on behalf of the Health and Safety Executive and/or the Health and Safety Commission;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:7.2.2}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "ensure that all personnel engaged by the Supplier and members of the Supplier's supply chain on the Property receive appropriate site-specific health and safety induction training and regular refresher training, where it is appropriate to do so;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:7.2.3}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "ensure that all such personnel have access at all times to competent health and safety advice in accordance with regulation 7 of the Management of Health and Safety at Work Regulations 1999;"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:7.2.4}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "ensure that there is full and proper health and safety consultation with all such personnel in accordance with the Health and 1.1.1 Safety (Consultation with Employees) Regulations 1996; and"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:7.2.5}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "7.2.5 take all practical steps to:",
+                          "(a)prevent or minimise health and safety risks to the occupiers / visitors to the Property;",
+                          "(b)prevent environmental disturbance, nuisance or pollution from the Works; and",
+                          "(c)make sure that any temporary protection for the Works is safe and weatherproof."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:7.3}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier shall be liable for, and shall indemnify the Contractor against any expense, liability, loss, claim or proceedings whatsoever in respect of personal injury to or the death of any person and loss, injury or damage to any property (real or personal) arising out of or in the course of or caused by the carrying out of the Works, except to the extent that the same is due to any neglect of the Contractor."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:7.4}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Where necessary detailed method statements, risk assessments and other relevant documentation must be provided to the Contractor for review and comment prior to the commencement of the Works . Such information must be submitted in an agreed format and a timeous manner. For the avoidance of doubt no comment or approval by the Contractor of such information shall The Employer's Agent or lessen the Supplier's obligation to adhere to all prevalent statutory legislation and site specific regulations."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:7.5}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Where the Works include the provision of plant, machinery or equipment the Supplier is responsible for ensuring that such complies and is maintained in accordance with recognised good practice and all prevalent legislation. The Supplier will further be responsible for the complete delivery to and collection from Site of all such plant items."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:7.6}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier shall provide all requisite PPE for operatives engaged in the execution of the Works. The Supplier shall ensure that at all reasonable times it has on the Property a competent person in charge and any instructions given to that person by or on behalf of the Contractor shall be deemed to have been issued to the Supplier."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:8.0}"] },
+                      { "type": "text", "children": ["{b:SITE CONTROL}"] }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:8.1}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": ["{LevelSiteControlSubcontractor}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:9.0}"] },
+                      {
+                        "type": "text",
+                        "children": ["{b:CHANGING THE WORK DETAILS}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:9.1}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Only the Contractor can change the Work Details, such changes to be instructed to the Supplier in writing. Changes will be dealt with as follows:"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:9.1.1}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "If the change(s) increase the amount of Works shown in the Work Details, the Supplier will quote a price for the extra work and time involved. The Contractor will then decide whether to go ahead with the change(s). If the Contractor agrees to the change(s), it will confirm the instruction and notify the Supplier of the new Order Price taking into account the increased amount of work."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:9.1.2}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "If the change(s) reduce the amount of Works shown in the Work Details, the Contractor will make an appropriate reduction in the Order Price and notify the Supplier of the same in writing."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:9.1.3}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          " If the change(s) alter the cost of any items in the Work Details without increasing or reducing the amount of Works involved, an appropriate adjustment of the Order Price will be made by the Contractor and notified to the Supplier in writing to reflect those changes."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:10.0}"] },
+                      {
+                        "type": "text",
+                        "children": ["{b:EXTENDING THE COMPLETION DATE}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:10.1}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Contractor will extend the Completion Date by a fair and reasonable amount if the Supplier:"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:10.1.1}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "has to spend extra time on the Works because of change(s) made to the Work Details; and"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:10.1.2}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "cannot finish the Works on time for reasons beyond its control which it has taken all reasonable steps to avoid, including any delay caused by the Contractor but excluding delay caused by its suppliers or sub-contractors."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:10.2}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier can claim any reasonable and proper costs arising from the working period being extended because of any delay caused by the Contractor."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:11.0}"] },
+                      {
+                        "type": "text",
+                        "children": ["{b:PAYMENT AND MAKING GOOD OF DEFECTS}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:11.1}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier shall submit invoices on the valuation date(s) set out in this Works Order and if no date(s) are specified, invoices shall, unless otherwise agreed in writing, be submitted on the working day nearest to 25th day of each month after the date of commencement of the Works on site. Such invoice shall specify the sum that the Supplier considers to be due on the valuation date(s) and the basis upon which that sum is calculated."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:11.2}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The payment due date of each invoice submitted shall be 7 days after receipt of an invoice from the Supplier 1 (the “Payment Due Date”). The final date for payment of any sum becoming due shall be 14 days after the Payment Due Date (the “Final Date for Payment”)."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:11.3}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Not later than 5 days after the Payment Due Date, the Contractor shall give the Supplier Notice specifying the amount (if any) of the payment to be made, and the basis on which that amount is calculated (the “Payment Notice”). In relation to all requirements to give Notices under this clause, it shall be immaterial that the amount the Contractor considers to be due may be zero."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:11.4}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Unless the Contractor has served a Pay Less Notice the Contractor shall pay to the Supplier on or before the Final Date for Payment:"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:11.4.1}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "the sum referred to in the Payment Notice above; or"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:11.4.2}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "(if the Contractor has not served a Payment Notice) the sum referred to in the Supplier invoice properly submitted in accordance with this Contract);,(in each case the applicable amount being the “Notified Sum”)."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:11.5}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Not less than 5 days before the Final Date for Payment (the “Prescribed Period”) the Contractor may give Notice to the Supplier that it intends to pay less than the Notified Sum (the “Pay Less Notice”) provided that:"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:11.5.1}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "the Payment Notice may suffice as a Pay Less Notice if it complies with sub-clause 11.4, and"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": ["{b:11.5.2}"] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "to be effective such Notice specifies the sum the Contractor propose is due on the date the Pay Less Notice is served and the basis on which that sum is calculated."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:11.6}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Where a Notified Sum due to the Supplier from the Contractor is not paid in full by the Final Date for Payment and the Contractor has not given the Supplier a Pay Less Notice in accordance with sub-clause 11.5 within the Prescribed Period, the Supplier shall have the right, having given the Contractor at least 14 days' Notice of the Supplier's intention to do so, to suspend performance of any or all of the Supplier's obligations under this Contract. Such Notice shall state the ground or grounds on which it is intended to suspend performance. Such right to suspend performance shall cease upon payment of the relevant Notified Sum."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:11.7}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "In the event that the Supplier exercise the Supplier's right to suspend in accordance with sub-clause 11.6 above, the Contractor shall be liable for the costs and expenses reasonably incurred by the Supplier as a result of exercising such right and such payment shall be the Supplier'9s sole remedy for suspension of its obligations under this Contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:11.8}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "In the event that any sum properly due under this Contract remains unpaid after the Final Date for Payment of such sum, such unpaid sum shall bear 1.1 simple interest at the rate of 3% over the base lending rate of the Bank of England as set from time to time."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:11.9}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "All invoices issued in connection with this Contract shall be valid VAT invoices and for the purposes of service, shall be treated as Notices"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:11.10}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "No later than [12] months after all the Works have been completed, the Contractor shall notify the Supplier of any defects or faults in the Works which the Supplier is responsible for."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:11.11}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Supplier shall rectify any such defects or faults within one month of such notification by the Contractor or such other period as agreed with the Contractor."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:11.12}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "When the Supplier has rectified all such defects and faults notified to it to the Contractor's reasonable satisfaction, the Contractor will issue a statement to confirm this. The Contractor will then pay the remaining 5% of the Order Price (as adjusted by clause 9 above, if applicable) no later than 28 days after the date on which the Contractor issued its statement."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:12.0}"] },
+                      {
+                        "type": "text",
+                        "children": ["{b:TERMINATION AND SUSPENSION}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:12.1}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "If the Supplier is in material breach of the terms of this Contract (including breach of its completion obligations as to time) and does not correct the matter within 14 days of receiving a written warning from the Contractor (or immediately in the case of any breach representing an imminent health and safety risk), the Contractor may terminate this Contract by giving the Supplier a written notice. The Supplier's employment under this Contract will terminate as soon as that notice is given. On any such termination, the Contractor will only have to pay for work properly carried out by the Supplier once the Works have been finished by another contractor and subject to receipt of a VAT invoice properly addressed to the Contractor in respect of such amount. The Contractor may deduct from such monies otherwise due to the Supplier any additional costs above the Order Price (as adjusted by clause 9 above, if applicable) the Contractor incurs in having the Works completed by others in circumstances where the Contractor has terminated this Contract pursuant to this sub-clause 12.1 and such additional costs shall be owed by the Supplier to the Contractor as a debt."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:12.2}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Contractor may also at its entire discretion terminate this Contract on giving the Supplier 28 days' prior written notice. If this Contract is terminated pursuant to this sub-clause 12.2, the Contractor will pay the Supplier for work properly carried out within 28 days of the Contract being terminated, subject to receipt of a VAT invoice properly addressed to the Contractor in respect of such amount.",
+                          "{br}",
+                          "{br}",
+                          "{br}",
+                          "{br}",
+                          "{br}",
+                          "{br}"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:13.0}"] },
+                      { "type": "text", "children": ["{b:INSOLVENCY}"] }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:13.1}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "If the Contractor or the Supplier becomes insolvent (within the meaning of section 113 of the Housing Grants Construction and Regeneration Act 1996 (as amended) or an analogous event any other applicable jurisdiction), the Supplier's employment under this Contract will automatically terminate."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:13.2}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "If the Supplier's employment under this Contract terminates because the Supplier becomes insolvent (as defined at 13.1 above), the Contractor will not have to pay any amount then due to the Supplier for work properly carried out by the Supplier until the Works have been finished by another contractor and subject always to the Contractor having the right to deduct any additional costs above the Order Price (as adjusted by clause 9 above, if applicable) it incurs in having the Works completed by others and such additional \\n            costs shall be owed by the Supplier to the Contractor as a debt."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:14.0}"] },
+                      {
+                        "type": "text",
+                        "children": ["{b:OTHER RIGHTS AND REMEDIES}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:14.1}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Contractor and the Supplier may claim from each other the costs and expenses which result from either of them failing to keep to the terms of this Contract save that the Supplier shall not be entitled to claim for loss of profits or loss of contract or any indirect or consequential loss in connection with this Contract."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:14.2}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "This Contract does not exclude or limit any other legal remedies which may be available to the Contractor or the Supplier."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:15.0}"] },
+                      { "type": "text", "children": ["{b:THIRD PARTY RIGHTS}"] }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The parties do not intend that any of its terms shall be enforceable by virtue of the Contracts (Rights of Third Parties) Act 1999 by any person not a party to this Contract."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:16.0}"] },
+                      { "type": "text", "children": ["{b:ASSIGNMENT}"] }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": [""] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "The Contractor's rights under this Contract may be assigned. The Supplier may not assign or charge the benefit of this Contract or any right arising under it without the consent of the Contractor."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-header" },
+                    "children": [
+                      { "type": "text", "children": ["{b:17.0}"] },
+                      {
+                        "type": "text",
+                        "children": ["{b:LAW OF THIS CONTRACT AND DISPUTES}"]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "view",
+                "type": "table",
+                "props": { "className": "legal-table" },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:17.1}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "This Contract shall be governed by English law and any dispute or difference arising hereunder shall be subject to the jurisdiction of the English Courts."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "legal-table-section" },
+                    "children": [
+                      { "type": "text", "children": ["{b:17.2}"] },
+                      { "type": "text", "children": [""] },
+                      {
+                        "type": "text",
+                        "children": [
+                          "Any dispute or difference which by virtue of Part II of the Housing Grants Construction and Regeneration Act 1996 is to be referred to adjudication shall be referred to adjudication in accordance with the Adjudication Rules of the Technology and Construction Solicitors Association, which are incorporated into this Contract by reference. The decision of the Adjudicator shall be binding on the parties unless and until the dispute or difference is finally determined by the appropriate court of England and Wales."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "coverpage",
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "text",
+                "props": {
+                  "className": "centered-text edit-document-title"
+                },
+                "children": [
+                  "{b:Schedule 1}",
+                  "{b:Drawings and Specifications}"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "view",
+                "props": { "editable": false },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "fileManager",
+                    "props": {
+                      "className": "edit-document-table full-width table"
+                    },
+                    "children": [
+                      {
+                        "name": "view",
+                        "type": "thead",
+                        "props": {
+                          "className": "edit-document-table-row"
+                        },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": ["{b:Document Name}"]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column table-header"
+                            },
+                            "children": ["{b:Category}"]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "view",
+                        "type": "row",
+                        "props": { "className": "edit-document-table-row" },
+                        "children": [
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [" "]
+                          },
+                          {
+                            "name": "text",
+                            "type": "column",
+                            "props": {
+                              "className": "edit-document-table-column"
+                            },
+                            "children": [" "]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "children": [
+                      {
+                        "type": "link",
+                        "code": "download_all_files",
+                        "name": "text",
+                        "children": ["Download all"]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

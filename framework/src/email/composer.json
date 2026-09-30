@@ -1,0 +1,20 @@
+{
+  "name": "clink/app-core",
+  "type": "library",
+  "require": {
+    "php": ">=8.1.0",
+    "google/apiclient": "^2.0",
+    "phpmailer/phpmailer": "^6.8.1",
+    "defuse/php-encryption": "^v2.4.0",
+    "illuminate/database": "9.12.2",
+    "wildbit/postmark-php": "^4.0.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Email\\": "code/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "11.5.53"
+  }
+}

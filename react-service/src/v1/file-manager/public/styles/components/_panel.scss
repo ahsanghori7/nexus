@@ -1,0 +1,88 @@
+.file-manager-container {
+  .panel-form {
+    .panel-left {
+      .sector {
+        padding-bottom: 40px;
+        border-color: $purple-lighter !important;
+      }
+
+      .sector-content {
+        padding: 0px;
+
+        .delete-btn {
+          color: $clink-red;
+        }
+
+        .dropdown-menu a {
+          font-weight: bold;
+          height: 32px;
+          line-height: 32px;
+        }
+
+        .row {
+          margin: 0;
+        }
+      }
+    }
+
+    .panel-right {
+      .search-icon {
+        .input-group-text {
+          background-color: $white;
+          border-radius: 0.25rem;
+          border-right: 0px;
+          border-top-left-radius: 0.25rem;
+          border-bottom-left-radius: 0.25rem;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          border-color: $purple-light;
+        }
+      }
+
+      .react-select-container {
+        &.form-control {
+          padding: 0rem;
+          border: none;
+        }
+
+        .react-select {
+          &__control {
+            min-height: 36px;
+            border: 1px solid $purple-light;
+            border-left: 0px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+
+            &:hover {
+              border: 1px solid $purple-light;
+              border-left: 0px;
+              border-top-left-radius: 0;
+              border-bottom-left-radius: 0;
+            }
+
+            &--is-focused {
+              box-shadow: none;
+            }
+          }
+
+          &__value-container {
+            padding-left: 0px;
+          }
+        }
+      }
+
+      .panel-info {
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &--panel-right,
+  &--panel-left {
+    @media (max-width: 900px) {
+      flex: initial !important;
+      max-width: initial !important;
+    }
+  }
+}

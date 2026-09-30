@@ -1,0 +1,39 @@
+.transaction-input {
+  flex-basis: 50%;
+
+  &-wrapper {
+    max-width: 550px;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    input {
+      border: 1px solid rgba(142, 141, 190, 0.35);
+      padding-left: 2.5rem;
+      font-size: 1rem;
+      font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+      color: $dark-grey;
+      height: 44px;
+      width: 100%;
+
+      &:focus-visible {
+        outline: none;
+        border: 1px solid rgba(142, 141, 190, 0.35);
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .transaction-input {
+    flex-basis: 100%;
+
+    &-wrapper {
+      max-width: none;
+    }
+  }
+}

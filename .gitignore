@@ -1,0 +1,45 @@
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+
+# Laravel 5 & Lumen specific with changed public path
+public_html/storage
+public_html/hot
+
+.vscode
+storage/*.key
+.env
+docker_configuration/.env
+document-creator/vendor
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache
+.idea
+docker_configuration/databases_cache/
+playwright-tests/**/__pycache__/
+.playwright_venv/
+repomix-output.xml
+my_envs.zip
+.scannerwork
+.DS_Store
+prompts
+prompt
+account_service/test-output.log
+*.code-workspace
+
+# Test/temporary PDF files
+*/tmp/*.pdf
+
+/.cursor
+.claude/
+project_service/build/logs/clover.xml

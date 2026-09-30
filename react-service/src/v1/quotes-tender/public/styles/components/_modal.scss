@@ -1,0 +1,387 @@
+.modal-dialog {
+  @extend .mw-100;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+
+  .modal-content {
+    width: 80%;
+    max-width: 750px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    border-color: $purple-lightest;
+
+    .modal-header {
+      .modal-title {
+        font-size: 1.75rem;
+        padding: 0 0.5rem;
+
+        .red,
+        b {
+          color: $clink-red;
+        }
+      }
+
+      .close {
+        display: none;
+      }
+    }
+
+    .modal-body {
+      .submit-button-holder {
+        margin-top: 1.5rem;
+
+        button {
+          margin: 0;
+          margin-left: 0.5rem;
+          transition: all 0.25s ease;
+
+          &:disabled {
+            color: $disabled-btn-color;
+            background-color: $disabled-btn-background;
+            border-color: $disabled-btn-background;
+          }
+
+          &.btn {
+            &.btn-primary {
+              border-radius: 1.5rem;
+
+              &.btn-red-inverted {
+                background-color: $white;
+                color: $clink-red;
+
+                &:hover {
+                  background-color: $clink-red;
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.issue-order-modal,
+.delete-quote-modal {
+  .modal-content {
+    max-width: 500px;
+
+    .modal-title {
+      b {
+        color: $clink-red;
+      }
+    }
+  }
+}
+
+.issue-order-modal {
+  &.bigger {
+    .modal-content {
+      max-width: 586px !important;
+    }
+  }
+}
+
+.award-quote-modal {
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        border-radius: 1rem;
+        padding: 30px 30px 12px 30px;
+
+        .modal-title {
+          padding: 0 10px;
+
+          h5 {
+            b {
+              color: $black;
+            }
+          }
+
+          svg {
+            margin-bottom: 0.5rem;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+
+      .modal-body {
+        padding: 0 30px 40px 30px;
+      }
+    }
+  }
+}
+
+.edit-quote-modal,
+.issue-order-modal,
+.delete-quote-modal {
+  z-index: 1302 !important;
+}
+.edit-quote-modal,
+.add-quote-modal {
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        border-radius: 0.5rem;
+      }
+
+      .modal-body {
+        .clink-form {
+          margin-top: 0.5rem;
+
+          .field-holder {
+            margin-bottom: 1.5rem;
+
+            input {
+              padding-left: 0.75rem;
+            }
+
+            &.submit-button-holder {
+              margin: 0;
+              justify-content: flex-end !important;
+            }
+
+            .react-select-container {
+              .react-select__control {
+                padding-left: 1.5rem;
+
+                .react-select__indicators {
+                  display: none;
+                }
+              }
+            }
+
+            button {
+              &.info-tooltip-btn {
+                transform: translate(6px, -3px);
+                font-size: 1.1rem;
+                color: $dark-light-grey;
+              }
+            }
+          }
+
+          .dropzone-documents {
+            margin-top: 0.5rem;
+            max-width: 100%;
+
+            input[type='file'] {
+              border: initial;
+              padding: inherit;
+              line-height: 1.3;
+            }
+
+            p {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.issue-order-modal {
+  .modal-dialog {
+    .modal-content {
+      max-width: 550px;
+
+      .modal-header {
+        .modal-title {
+          padding-bottom: 1rem;
+
+          b {
+            color: $clink-red;
+          }
+        }
+      }
+
+      .modal-body {
+        .submit-button-holder {
+          margin-top: 0.5rem;
+
+          .loading {
+            left: -2px;
+            top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.delete-quote-modal {
+  .modal-dialog {
+    .modal-content {
+      max-width: 550px;
+
+      .modal-header {
+        .modal-title {
+          line-height: 2.25rem;
+
+          .modal-subtitle {
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding-top: 1.25rem;
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .modal-body {
+        .submit-button-holder {
+          margin-top: 1rem;
+
+          button {
+            &.btn {
+              &.btn-primary {
+                padding: 1rem 2rem;
+                border-radius: 2rem;
+                font-size: 1.1rem;
+
+                &.btn-outline-secondary {
+                  background-color: $white;
+
+                  &:hover {
+                    color: $white;
+                    background-color: $black;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .edit-quote-modal,
+  .add-quote-modal {
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          .clink-form {
+            .field-holder {
+              &.overall-quote-value,
+              &.measure-work-value,
+              &.prelims,
+              &.other-sums,
+              &.programme {
+                flex: 1 0 100%;
+                max-width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .modal-dialog {
+    .modal-content {
+      width: 96%;
+
+      .modal-header {
+        padding: 20px 20px 4px 20px;
+
+        .modal-title {
+          font-size: 1.2rem;
+          line-height: 1.75rem;
+        }
+      }
+
+      .modal-body {
+        padding: 0 20px 20px 20px;
+
+        .clink-form {
+          .field-holder {
+            &.overall-quote-value,
+            &.measure-work-value,
+            &.prelims,
+            &.other-sums,
+            &.programme,
+            &.start-date {
+              flex: 1 0 100%;
+              max-width: 100%;
+            }
+
+            &.submit-button-holder {
+              .btn {
+                &:not(.btn-sm) {
+                  font-size: 0.8rem;
+                  padding: 0.4rem 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .award-quote-modal {
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          padding: 20px 20px 12px 20px;
+        }
+
+        .modal-body {
+          padding: 0 20px 30px 20px;
+        }
+      }
+    }
+  }
+
+  .delete-quote-modal {
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          .modal-title {
+            line-height: 1.75rem;
+
+            .modal-subtitle {
+              padding-top: 0.75rem;
+            }
+          }
+        }
+
+        .modal-body {
+          .submit-button-holder {
+            padding: 0;
+
+            button {
+              &.btn {
+                &.btn-primary {
+                  padding: 0.5rem 1.25rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 399px) {
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        padding: 10px 10px 4px 10px;
+      }
+
+      .modal-body {
+        padding: 0 10px 10px 10px;
+      }
+    }
+  }
+}

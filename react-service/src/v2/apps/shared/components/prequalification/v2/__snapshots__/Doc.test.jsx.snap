@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Doc matches snapshot 1`] = `
+<div
+  data-testid="mui-card"
+  sx="[object Object]"
+  variant="elevation"
+>
+  <div
+    data-testid="mui-card-content"
+    sx="[object Object]"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container"
+      columnspacing="[object Object]"
+      data-testid="mui-grid"
+      rowspacing="1"
+      sx="[object Object]"
+    >
+      <div
+        data-testid="content"
+      >
+        Test content
+      </div>
+    </div>
+  </div>
+</div>
+`;

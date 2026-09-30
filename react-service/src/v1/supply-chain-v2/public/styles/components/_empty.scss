@@ -1,0 +1,56 @@
+.empty-data-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .empty-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    padding: 0px 25px;
+
+    img.no-data {
+      width: 65%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+    }
+
+    small,
+    strong,
+    button {
+      display: block;
+      text-align: center;
+      margin: 5px 0px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 191px;
+      height: 40px;
+      white-space: nowrap;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    .no-messge-gray-label {
+      color: $dark-lighter-grey;
+    }
+
+    svg {
+      @include media('<tablet') {
+        width: 12px;
+        height: 12px;
+        margin-right: 0.3rem;
+      }
+    }
+  }
+}

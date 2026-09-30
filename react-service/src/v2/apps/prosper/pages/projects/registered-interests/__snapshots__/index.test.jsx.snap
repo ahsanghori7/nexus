@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisteredInterests matches snapshot 1`] = `
+<div
+  class="registered-filters"
+  data-testid="container-component"
+  style="text-align: end;"
+>
+  <div
+    data-testid="filters-component"
+  >
+    <div
+      data-testid="filter-title"
+    >
+      filter-by
+    </div>
+    <div
+      data-testid="filters-children"
+    >
+      <div
+        data-testid="filter-component"
+      >
+        <div
+          data-testid="filter-label"
+        >
+          <span
+            class="max-width-filter"
+          >
+            text-interest-status
+          </span>
+        </div>
+        <div
+          data-testid="filter-content"
+          style="width: 170px;"
+        >
+          <div
+            data-testid="filter-content-inner"
+          >
+            <div
+              data-testid="filter-option-0"
+              style="background-color: transparent;"
+            >
+              Open
+            </div>
+            <div
+              data-testid="filter-option-1"
+              style="background-color: transparent;"
+            >
+              Closed
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="loading-component"
+    data-testid="loading-component"
+  />
+  <div
+    class="styled__StyledRegisteredWrapper-sc-t90v9h-0 ehBWrC"
+    version="v1"
+  >
+    <div
+      data-testid="registered-card"
+      data-version="v1"
+    >
+      <div
+        data-testid="card-image"
+      >
+        project-logo-project-1
+      </div>
+      <div
+        data-testid="card-content"
+      >
+        <div
+          data-testid="card-id"
+        >
+          project-1
+        </div>
+        <div
+          data-testid="card-title"
+        >
+          Test Project 1
+        </div>
+        <div
+          data-testid="card-description"
+        />
+      </div>
+    </div>
+    <div
+      data-testid="registered-card"
+      data-version="v1"
+    >
+      <div
+        data-testid="card-image"
+      >
+        project-logo-project-2
+      </div>
+      <div
+        data-testid="card-content"
+      >
+        <div
+          data-testid="card-id"
+        >
+          project-2
+        </div>
+        <div
+          data-testid="card-title"
+        >
+          Test Project 2
+        </div>
+        <div
+          data-testid="card-description"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

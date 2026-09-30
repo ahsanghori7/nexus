@@ -1,0 +1,84 @@
+{
+  "plugins": ["jsx-a11y", "react", "prettier", "no-hex-colors", "react-hooks"],
+  "parser": "@babel/eslint-parser",
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src", "src/v2"],
+        "extensions": [".js", ".jsx"]
+      },
+      "jest": {
+        "jestConfigFile": "./jest.config.js"
+      }
+    },
+    "react": {
+      "version": "17.0.2"
+    }
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
+  "rules": {
+    "react/prop-types": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/require-default-props": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/role-supports-aria-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "no-unused-vars": "warn",
+    "react/forbid-prop-types": "off",
+    "no-undef": "off",
+    "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+    "arrow-body-style": "off",
+    "class-methods-use-this": "off",
+    "react/display-name": "off",
+    "no-restricted-syntax": "off",
+    "no-plusplus": "off",
+    "no-restricted-globals": "off",
+    "react/button-has-type": "off",
+    "react/jsx-wrap-multilines": "off",
+    "no-param-reassign": "off",
+    "import/prefer-default-export": "off",
+    "react/destructuring-assignment": "off",
+    "camelcase": "off",
+    "prefer-template": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "prefer-destructuring": "off",
+    "spaced-comment": "off",
+    "react/jsx-curly-newline": "off",
+    "react/jsx-curly-brace-presence": "off",
+    "no-useless-computed-key": "off",
+    "import/order": "off",
+    "no-hex-colors/no-hex-colors": "warn",
+    "react/jsx-curly-spacing": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "no-extra-boolean-cast": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/function-component-definition": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }]
+  },
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "no-hex-colors/no-hex-colors": "warn"
+      }
+    }
+  ],
+  "env": {
+    "jest": true,
+    "browser": true,
+    "es2021": true
+  }
+}

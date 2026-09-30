@@ -1,0 +1,614 @@
+[
+  {
+    "name": "document",
+    "header": {
+      "company_name": "",
+      "address": [],
+      "company_reg": "",
+      "web_address": "",
+      "logo": ""
+    },
+    "footer": { "company_name": "", "subcontract": "" },
+    "props": { "className": "edit-document-document" },
+    "children": [
+      {
+        "name": "page",
+        "props": { "className": "edit-document-page" },
+        "children": [
+          {
+            "name": "view",
+            "props": { "className": "edit-document-container" },
+            "children": [
+              {
+                "name": "view",
+                "type": "table",
+                "props": {
+                  "className": "edit-document-table table right-justified-col-2"
+                },
+                "children": [
+                  {
+                    "name": "view",
+                    "type": "thead",
+                    "props": {
+                      "className": "edit-document-table-row table-full-header"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{b:Tender Details}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["Site Address:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["{TheSiteAddress}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["The Works:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["{ProjectDescription}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["The Sub-Contract works:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["{SubContractorWorks}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["Scope of Works:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": [
+                          "As per tender specification, drawings, and documents"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["Pricing Schedule:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["{PricingSchedule}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["Quotation Return Due Date:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{bred:{QuotationReturnDate}}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["Documents to be Included Within Tender:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": [
+                          "1. Signed Form of Tender document",
+                          "2. Quotation",
+                          "3. Indicative Programme & Lead-ins",
+                          "4. Proposals",
+                          "5. Insurance Details / Certificate",
+                          "6. Tax / CIS details"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "thead",
+                    "props": {
+                      "className": "edit-document-table-row table-full-header"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{b:Contract Particulars}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["Form of Main Contract:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["{FormOfMainContract}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["Date of Possession:"]
+                      },
+                      {
+                        "name": "text",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["{DateOfPossession}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["Date of Completion:"]
+                      },
+                      {
+                        "name": "text",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["{DateOfCompletion}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["Overall Period on Site:"]
+                      },
+                      {
+                        "name": "text",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["{OverallPeriodOnSite}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "thead",
+                    "props": {
+                      "className": "edit-document-table-row table-full-header"
+                    },
+                    "children": [
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": {
+                          "className": "edit-document-table-full-column"
+                        },
+                        "children": ["{b:Sub-Contract Details:}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["Form of Contract:"]
+                      },
+                      {
+                        "name": "text",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": [
+                          "The JCT Standard Sub-Contract Conditions SBSub/C \n      2016 Edition [subject to the amendments in Schedule A]"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["Interim Payments:"]
+                      },
+                      {
+                        "name": "text",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": [
+                          "As per schedule 5 Interim Valuation Dates"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["Retention:"]
+                      },
+                      {
+                        "name": "text",
+                        "type": "column",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["{Retention}%"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["Rectification Period:"]
+                      },
+                      {
+                        "name": "text",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["{RectificationPeriod}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["Commencement:"]
+                      },
+                      {
+                        "name": "text",
+                        "props": { "className": "edit-document-table-column" },
+                        "children": ["{SubCommencement}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Completion:"]
+                      },
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{SubCompletion}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Period Of Sub-Contract Works:"]
+                      },
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{PeriodOfSubcontractWorks}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Preliminaries & Preambles:"]
+                      },
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["To be requested by the Sub-Contractor"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Specification & Drawings:"]
+                      },
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "As per schedule 4 Drawings and Specifications"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Insurance Cover:"]
+                      },
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "1. Public / Product Liability Insurance: {Public/Product}",
+                          "2. Employers Liability Insurance: {Employers}",
+                          "3. Professional Indemnity Insurance: {ProfessionalIndemnity} (N.B. Expiry of required period of CDP PI insurance:12 years)",
+                          "4. Contractors all Risk Insurance: {ContractorsAll}",
+                          "5. Cover for asbestos claims: {AsbestosClaims}",
+                          "6. Cover for pollution and contamination claims: {ContaminationClaims}"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Collateral Warranty:"]
+                      },
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["{CollateralWarranty}"]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Site Rules:"]
+                      },
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "All representatives on site must adhere to site rules, attend site inductions, be eligible to work in the UK and hold a valid CSCS card. Access to site for deliveries and attendance to be agreed in writing by {MainContractorName}."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Site Visits:"]
+                      },
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "The tenderer shall be deemed to have visited site to satisfy himself as to the full extend and scope of works, the supply and conditions affecting labours, the conditions affecting supply and delivery of materials and all local conditions and restrictions affecting the work."
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "view",
+                    "type": "row",
+                    "props": { "className": "edit-document-table-row" },
+                    "children": [
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": ["Arranging a Site Visit:"]
+                      },
+                      {
+                        "name": "text",
+
+                        "props": {
+                          "className": "edit-document-table-column"
+                        },
+                        "children": [
+                          "Arrangements to visit the site should be made through {MainContractorName}."
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

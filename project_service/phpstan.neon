@@ -1,0 +1,15 @@
+parameters:
+	treatPhpDocTypesAsCertain: false     #Because the type is coming from a PHPDoc, you can turn off this check by setting treatPhpDocTypesAsCertain: false in your phpstan.neon.
+	ignoreErrors:
+	excludePaths:
+	    - src/Domain/Project/Manage.php
+	    - src/*/Testing/*
+	    - src/*/testing/*
+	    - src/*/Test/*
+	    - src/*/test/*
+	    - src/*/tests/*
+	    - src/*/Tests/*
+	    - tests
+	level: 2
+	paths:
+		- src

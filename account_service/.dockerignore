@@ -1,0 +1,9 @@
+/.github
+/dev_resources
+/logs
+/var
+/vendor
+docker-compose.yml
+Dockerfile
+phpstan.neon
+README.md

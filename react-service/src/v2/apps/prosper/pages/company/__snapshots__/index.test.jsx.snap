@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompanyProfile matches snapshot for UI consistency 1`] = `
+<div
+  countrycode="US"
+  data-testid="mock-tabs"
+  hideactionbuttonsintabs="0,1"
+  pagefromexternal="0"
+>
+  <div
+    data-testid="tab-1"
+  >
+    <div
+      data-testid="tab-title-1"
+    >
+      profile-user-details
+    </div>
+    <div
+      data-testid="tab-content-1"
+    >
+      <div
+        aid="test-account-123"
+        contexttype="prosper"
+        data="[object Object]"
+        data-testid="mock-user-details"
+        id="test-account-123"
+        theme="prosper"
+      >
+        User Details Component
+      </div>
+    </div>
+  </div>
+  <div
+    data-testid="tab-2"
+  >
+    <div
+      data-testid="tab-title-2"
+    >
+      profile-company-details
+    </div>
+    <div
+      data-testid="tab-content-2"
+    >
+      <div
+        aid="test-account-123"
+        contexttype="prosper"
+        data="[object Object]"
+        data-testid="mock-company-details"
+        id="test-account-123"
+      >
+        Company Details Component
+      </div>
+    </div>
+  </div>
+  <div
+    data-testid="tab-3"
+  >
+    <div
+      data-testid="tab-title-3"
+    >
+      trades-and-locations
+    </div>
+    <div
+      data-testid="tab-content-3"
+    >
+      <div
+        aid="test-account-123"
+        contexttype="prosper"
+        data="[object Object]"
+        data-testid="mock-trades-locations"
+        id="test-account-123"
+      >
+        Trades Locations Component
+      </div>
+    </div>
+  </div>
+  <button
+    data-testid="last-step-button"
+  >
+    Complete
+  </button>
+</div>
+`;

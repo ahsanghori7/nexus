@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditDate Component matches snapshot 1`] = `
+<div
+  data-testid="localization-provider"
+>
+  <div
+    data-testid="mobile-date-picker"
+  >
+    <input
+      data-testid="date-input"
+      placeholder="TBC"
+    />
+  </div>
+</div>
+`;

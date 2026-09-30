@@ -1,0 +1,35 @@
+/* Check documentation to learn how include-media works */
+/* https://eduardoboucas.github.io/include-media/documentation/ */
+/* Example
+
+@include media("<phone") {
+  background-color: red;
+}
+@include media(">=phone", "<tablet") {
+  background-color: yellow;
+}
+@include media(">=tablet", "<desktop") {
+  background-color: green;
+}
+@include media(">=desktop") {
+  background-color: blue;
+}
+
+*/
+@import '~include-media';
+$max-attachment-file: 350px;
+$width-send-btn: 90px;
+$max-size-img-thumbnail: 200px;
+$size-btn-remove-file: 25px;
+$app-width: 100%;
+
+// TODO: Investigate why adding new breakpoints doesn't work
+$breakpoints: (
+  'phone': 320px,
+  'tablet': 768px,
+  'desktop': 1024px,
+  'desktopL': 1200px,
+  'desktopXL': 1700px,
+  'desktopXXL': 2050px,
+  'desktop2K': 2560px,
+) !default;

@@ -1,0 +1,321 @@
+[
+  {
+    "id": "1",
+    "description": "Statutory Health & Welfare Facilities & Storage",
+    "title": true
+  },
+  {
+    "id": "2",
+    "description": "Use of mess rooms",
+    "companyName": true,
+    "subcontractor": false
+  },
+  {
+    "id": "3",
+    "description": "Use of sanitary accommodation",
+    "companyName": true,
+    "subcontractor": false
+  },
+  {
+    "id": "4",
+    "description": "Use of welfare facilities",
+    "companyName": true,
+    "subcontractor": false
+  },
+  {
+    "id": "5",
+    "description": "Phone",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "6",
+    "description": "Fax",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "7",
+    "description": "Copier",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "8",
+    "description": "Space for storage (Subcontractor to identify space required)",
+    "companyName": true,
+    "subcontractor": false
+  },
+  {
+    "id": "9",
+    "description": "Office Accommodation including any local council rate charges",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "10",
+    "description": "Space for storage (Subcontractor to identify space required)",
+    "companyName": true,
+    "subcontractor": false
+  },
+  {
+    "id": "11",
+    "description": "Provision of bunded storage area for hazardous materials",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "12",
+    "description": "Lighting, Power and Fuel",
+    "title": true
+  },
+  {
+    "id": "13",
+    "description": "Safety lighting",
+    "companyName": true,
+    "subcontractor": false
+  },
+  {
+    "id": "14",
+    "description": "Task lighting",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "15",
+    "description": "Single phase supply of electricity at 240v for temporary site accommodation",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "16",
+    "description": "Single phase supply of electricity at 110v at location determined by Contractor for tools and temporary lighting",
+    "companyName": true,
+    "subcontractor": false
+  },
+  {
+    "id": "17",
+    "description": "Any other power or fuel requirement (e.g. welding, commissioning)",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "18",
+    "description": "Access/Scaffolding/Edge Protection",
+    "title": true
+  },
+  {
+    "id": "19",
+    "description": "Provision and erection of all necessary scaffolding and scaffold boards for work over 3.30 metres",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "20",
+    "description": "All other access requirements (Note use of step ladders will not be permitted unless it is deemed the only option in which case an appropriate permit to work will be issued by site management.  Any tower scaffolds must only be erected adapted or dismantled by PASMA trained and qualified operatives.)",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "21",
+    "description": "Provision  of safety barriers in accordance with current legislation",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "22",
+    "description": "Provision of Small Tools",
+    "title": true
+  },
+  {
+    "id": "23",
+    "description": "Supply of tools as well as hand held tools and the like of a quality and quantity to carry out the subcontract works safely and in accordance with current legislation",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "24",
+    "description": "Water",
+    "title": true
+  },
+  {
+    "id": "25",
+    "description": "Water supplied at the points determined by Contractor",
+    "companyName": true,
+    "subcontractor": false
+  },
+  {
+    "id": "26",
+    "description": "Supply of hose, hydrants, barrels etc and distribution",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "27",
+    "description": "Setting Out & Minor Works",
+    "title": true
+  },
+  {
+    "id": "28",
+    "description": "Base Stations only",
+    "companyName": true,
+    "subcontractor": false
+  },
+  {
+    "id": "29",
+    "description": "From Base Stations",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "30",
+    "description": "Setting out Chases, Holes, Cast-in-Fixings",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "31",
+    "description": "Forming holes up to 50mm diameter and chases and secondary support",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "32",
+    "description": "Unloading/Distribution",
+    "title": true
+  },
+  {
+    "id": "33",
+    "description": "Unloading",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "34",
+    "description": "Distribution from point of unloading to stack or store and distribution from stack or store to workforce",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "35",
+    "description": "Provision of air bags, handrails or harnesses for the safe unloading of vehicles",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "36",
+    "description": "Hoisting Facilities",
+    "title": true
+  },
+  {
+    "id": "36",
+    "description": "Static Hoist",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "37",
+    "description": "Craneage",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "38",
+    "description": "Fork Lift Trucks",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "39",
+    "description": "Hoisting and placing in position",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "40",
+    "description": "Regular Cleaning",
+    "title": true
+  },
+  {
+    "id": "41",
+    "description": "Clearing rubbish to skips or wheelie bins",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "42",
+    "description": "Provision of skips or wheelie bins",
+    "companyName": true,
+    "subcontractor": false
+  },
+  {
+    "id": "43",
+    "description": "Removal off site",
+    "companyName": true,
+    "subcontractor": false
+  },
+  {
+    "id": "44",
+    "description": "Specific Environmental Requirements",
+    "title": true
+  },
+  {
+    "id": "45",
+    "description": "Control of relative humidity",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "46",
+    "description": "Control of Temperature",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "47",
+    "description": "Cure & Protect",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "48",
+    "description": "Any other business",
+    "title": true
+  },
+  {
+    "id": "49",
+    "description": "Responsibility for the protection of subcontract works",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "50",
+    "description": "Observing the requirements of the subcontract to prevent loss or damage to the Contractor's/Other Subcontractor's Work",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "51",
+    "description": "Final clean",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "52",
+    "description": "Security",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "53",
+    "description": "Parking – [(no on site parking permitted)]",
+    "companyName": false,
+    "subcontractor": true
+  },
+  {
+    "id": "54",
+    "description": "Other",
+    "companyName": false,
+    "subcontractor": true
+  }
+]

@@ -1,0 +1,134 @@
+name: TESTS - Nexus Backend Unittests
+
+on:
+  pull_request:
+
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      backend: ${{ steps.filter.outputs.backend }}
+    steps:
+      - name: Filter paths
+        uses: dorny/paths-filter@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          filters: |
+            backend:
+              - 'account_service/**'
+              - 'project_service/**'
+              - 'document_service/**'
+
+  account_service_unittests:
+    needs: changes
+    if: ${{ github.base_ref == 'main' || github.base_ref == 'develop' || needs.changes.outputs.backend == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ECR_NEXUS }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ECR_NEXUS }}
+          aws-region: eu-west-2
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # Create .env files for each service
+      - name: Set up .env for account_service
+        run: |
+          echo "${{ secrets.ACCOUNT_SERVICE_DOTENV }}" > ./account_service/.env
+
+      - name: Set up dummy .env for other services
+        run: |
+          touch  ./app.c-link/.env
+          touch  ./framework/.env
+          touch  ./project_service/.env
+          touch  ./document_service/.env
+
+      - name: Execute make recipe
+        run: |
+          ECR_REGISTRY=${{ steps.login-ecr.outputs.registry }}/nexus/ make account_service_unittests
+
+  project_service_unittests:
+    needs: changes
+    if: ${{ github.base_ref == 'main' || github.base_ref == 'develop' || needs.changes.outputs.backend == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ECR_NEXUS }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ECR_NEXUS }}
+          aws-region: eu-west-2
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # Create .env files for each service
+      - name: Set up .env for project_service
+        run: |
+          echo "${{ secrets.PROJECT_SERVICE_DOTENV }}" > ./project_service/.env
+
+      - name: Set up dummy .env for other services
+        run: |
+          touch  ./app.c-link/.env
+          touch  ./framework/.env
+          touch  ./account_service/.env
+          touch  ./document_service/.env
+
+      - name: Execute make recipe
+        run: |
+          ECR_REGISTRY=${{ steps.login-ecr.outputs.registry }}/nexus/ make project_service_unittests
+
+  document_service_unittests:
+    needs: changes
+    if: ${{ github.base_ref == 'main' || github.base_ref == 'develop' || needs.changes.outputs.backend == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ECR_NEXUS }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ECR_NEXUS }}
+          aws-region: eu-west-2
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # Create .env files for each service
+      - name: Set up .env for document_service
+        run: |
+          echo "${{ secrets.DOCUMENT_SERVICE_DOTENV }}" > ./document_service/.env
+
+      - name: Set up dummy .env for other services
+        run: |
+          touch  ./app.c-link/.env
+          touch  ./framework/.env
+          touch  ./account_service/.env
+          touch  ./project_service/.env
+
+      - name: Execute make recipe
+        run: |
+          ECR_REGISTRY=${{ steps.login-ecr.outputs.registry }}/nexus/ make document_service_unittests

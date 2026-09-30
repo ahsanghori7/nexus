@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProsperCarousel snapshot test 1`] = `
+<div
+  data-testid="carousel"
+>
+  <div
+    data-testid="carousel-prev-arrow"
+  >
+    <button
+      aria-label="Previous"
+      data-testid="arrow-button-control-arrow control-prev"
+    >
+      <img
+        alt="Previous"
+        src="mock-red-caret-left-icon"
+      />
+    </button>
+  </div>
+  <div
+    data-testid="carousel-content"
+  >
+    <div
+      data-testid="test-carousel-slides"
+    >
+      <div>
+        Slide 1
+      </div>
+      <div>
+        Slide 2
+      </div>
+      <div>
+        Slide 3
+      </div>
+    </div>
+  </div>
+  <div
+    data-testid="carousel-next-arrow"
+  >
+    <button
+      aria-label="Next"
+      data-testid="arrow-button-control-arrow control-next"
+    >
+      <img
+        alt="Next"
+        src="mock-red-caret-right-icon"
+      />
+    </button>
+  </div>
+</div>
+`;

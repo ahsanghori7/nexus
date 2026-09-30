@@ -1,0 +1,374 @@
+[
+    {
+        "name": "document",
+        "header": {
+            "company_name": "",
+            "address": [],
+            "company_reg": "",
+            "web_address": "",
+            "logo": ""
+        },
+        "footer": {
+            "company_name": "",
+            "subcontract": ""
+        },
+        "props": {
+            "className": "edit-document-document"
+        },
+        "children": [
+            {
+                "name": "page",
+                "props": {
+                    "className": "edit-document-page"
+                },
+                "children": [
+                    {
+                        "name": "view",
+                        "props": {
+                            "className": "edit-document-container"
+                        },
+                        "children": [
+                            {
+                                "name": "view",
+                                "type": "table",
+                                "props": {
+                                    "className": "edit-document-table full-width table nec-table-big"
+                                },
+                                "children": [
+                                    {
+                                        "name": "view",
+                                        "type": "row",
+                                        "props": {
+                                            "className": "edit-document-table-row"
+                                        },
+                                        "children": [
+                                            {
+                                                "name": "text",
+                                                "type": "column",
+                                                "props": {
+                                                    "className": "edit-document-table-column"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "name": "view",
+                                                        "type": "table",
+                                                        "props": {
+                                                            "className": "edit-document-table full-width table table-further first-table further-info"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "view",
+                                                                "type": "thead",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column table-header further-info-title"
+                                                                        },
+                                                                        "children": [
+                                                                            "{b:Further Information}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "view",
+                                                        "type": "table",
+                                                        "props": {
+                                                            "className": "edit-document-table full-width table table-further"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "view",
+                                                                "type": "thead",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column table-header"
+                                                                        },
+                                                                        "children": [
+                                                                            "{b:1 The Price List}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "Please refer to Schedule 1 for details of the Price List."
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "view",
+                                                        "type": "table",
+                                                        "props": {
+                                                            "className": "edit-document-table full-width table table-further"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "view",
+                                                                "type": "thead",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column table-header"
+                                                                        },
+                                                                        "children": [
+                                                                            "{b:2 The Scope}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "{SubContractorWorks}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "view",
+                                                        "type": "table",
+                                                        "props": {
+                                                            "className": "edit-document-table full-width table table-further"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "view",
+                                                                "type": "thead",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column table-header"
+                                                                        },
+                                                                        "children": [
+                                                                            "{b:3 Drawings, Specifications and Documents}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "Please refer to Schedule 1 for details of all the relevant Drawings, Specifications and Documents."
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "view",
+                                                        "type": "table",
+                                                        "props": {
+                                                            "className": "edit-document-table full-width table table-further"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "view",
+                                                                "type": "thead",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column table-header"
+                                                                        },
+                                                                        "children": [
+                                                                            "{b:4 Constraints on how the Subcontractor Provides the Works}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "Manual Insert"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "view",
+                                                        "type": "table",
+                                                        "props": {
+                                                            "className": "edit-document-table full-width table table-further"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "view",
+                                                                "type": "thead",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column table-header"
+                                                                        },
+                                                                        "children": [
+                                                                            "{b:5 Requirements for the programme}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "Please refer to Schedule 1 for details of all the relevant Programme Information."
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "view",
+                                                        "type": "table",
+                                                        "props": {
+                                                            "className": "edit-document-table full-width table table-further"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "name": "view",
+                                                                "type": "thead",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column table-header"
+                                                                        },
+                                                                        "children": [
+                                                                            "{b:6 Services and other things provided by the Client}"
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "view",
+                                                                "type": "row",
+                                                                "props": {
+                                                                    "className": "edit-document-table-row"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "name": "text",
+                                                                        "type": "column",
+                                                                        "props": {
+                                                                            "className": "edit-document-table-column"
+                                                                        },
+                                                                        "children": [
+                                                                            "Manual Insert to describe what the Contractor will provide, i.e. services (including water and electricity) and’ Plant or materials."
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

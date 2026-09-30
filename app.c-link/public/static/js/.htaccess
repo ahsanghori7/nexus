@@ -1,0 +1,13 @@
+# Disable server signature
+ServerSignature Off
+
+Options -MultiViews
+Options -Indexes
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^page.js$ pages.php

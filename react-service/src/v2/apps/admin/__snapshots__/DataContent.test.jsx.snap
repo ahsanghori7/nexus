@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataContent Component Snapshot matches snapshot for admin tabs 1`] = `
+<div
+  class="preq-tab-wrapper"
+  data-testid="account-tabs-wrapper"
+>
+  <div
+    class="tabs-component"
+    data-testid="preq-tab-wrapper"
+  >
+    <div
+      class="tab-option"
+      data-testid="tab-option-0"
+    >
+      <div
+        data-testid="clink-engagement-tab"
+      >
+        Enquiries: 5, Quotes: 3, Context: snapshot-test
+      </div>
+    </div>
+    <div
+      class="tab-option"
+      data-testid="tab-option-1"
+    >
+      <div
+        data-testid="clink-activity-tab"
+      >
+        Activity tab for context: snapshot-test
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DataContent Component Snapshot matches snapshot for adminProsper tabs 1`] = `
+<div
+  class="preq-tab-wrapper"
+  data-testid="account-tabs-wrapper"
+>
+  <div
+    class="tabs-component"
+    data-testid="preq-tab-wrapper"
+  >
+    <div
+      class="tab-option"
+      data-testid="tab-option-0"
+    >
+      <div
+        data-testid="prosper-profile-tab"
+      >
+        Profile tab for context: snapshot-test, UID: test-user-123
+      </div>
+    </div>
+    <div
+      class="tab-option"
+      data-testid="tab-option-1"
+    >
+      <div
+        data-testid="prosper-prequalification-tab"
+      >
+        Prequalification tab for context: snapshot-test
+      </div>
+    </div>
+    <div
+      class="tab-option"
+      data-testid="tab-option-2"
+    >
+      <div
+        data-testid="prosper-activity-tab"
+      >
+        Activity tab for context: snapshot-test
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DataContent Component Snapshot matches snapshot for features tabs 1`] = `
+<div
+  class="preq-tab-wrapper"
+  data-testid="account-tabs-wrapper"
+>
+  <div
+    class="tabs-component"
+    data-testid="preq-tab-wrapper"
+  >
+    <div
+      class="tab-option"
+      data-testid="tab-option-0"
+    >
+      <div
+        data-testid="features-envelopes-tab"
+      >
+        Envelopes tab for context: snapshot-test, Features: ["feature1","feature2"]
+      </div>
+    </div>
+  </div>
+</div>
+`;

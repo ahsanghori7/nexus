@@ -1,0 +1,288 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clink/router/v2 should create snapshot of router configuration 1`] = `
+[
+  {
+    "path": "/login",
+    "reactRouter": true,
+    "routes": [
+      {
+        "element": <Unknown />,
+        "path": "",
+      },
+    ],
+  },
+  {
+    "path": "/auth",
+    "reactRouter": true,
+    "routes": [
+      {
+        "element": <Unknown />,
+        "path": "",
+      },
+    ],
+  },
+  {
+    "path": "/reset-password",
+    "reactRouter": true,
+    "routes": [
+      {
+        "element": <Unknown />,
+        "path": "",
+      },
+    ],
+  },
+  {
+    "path": "/main-contractor",
+    "reactRouter": true,
+    "routes": [
+      {
+        "element": <_default>
+          <Unknown />
+        </_default>,
+        "path": "",
+      },
+      {
+        "element": <_default
+          title="team-manager"
+        >
+          <Unknown />
+        </_default>,
+        "path": "add_team",
+      },
+      {
+        "element": <_default>
+          <Unknown />
+        </_default>,
+        "path": "profile",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={[]}
+          projectName={true}
+        >
+          <Unknown />
+        </_default>,
+        "path": "project_dashboard/:slug",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={
+            [
+              {
+                "name": "instructions-variations",
+                "rest": "instructions_variations",
+              },
+            ]
+          }
+          title="instructions-variations"
+        >
+          <Unknown />
+        </_default>,
+        "path": "project/:slug/instructions_variations",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={
+            [
+              {
+                "name": "ncr",
+                "rest": "ncr",
+              },
+            ]
+          }
+          title="ncr"
+        >
+          <Unknown />
+        </_default>,
+        "path": "project/:slug/ncr",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={[]}
+          title="forecast-finals"
+        >
+          <Unknown />
+        </_default>,
+        "path": "project/:slug/forecast_final",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={
+            [
+              {
+                "name": "tender-recommendations",
+                "rest": "tender_recommendations",
+              },
+            ]
+          }
+          title="tender-recommendations"
+        >
+          <Connected(TenderRecommendations) />
+        </_default>,
+        "path": "project/:slug/tender_recommendations",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={
+            [
+              {
+                "name": "tender-recommendations",
+                "rest": "tender_recommendations",
+              },
+            ]
+          }
+        >
+          <Connected(TenderRecommendationForm) />
+        </_default>,
+        "path": "project/:slug/tender_recommendation/:packageId/:recommendationId",
+      },
+      {},
+      {
+        "element": <_default
+          breadCrumbItems={[]}
+          title="orders"
+        >
+          <Unknown />
+        </_default>,
+        "path": "project/:slug/orders",
+      },
+      {},
+      {
+        "element": <_default
+          breadCrumbItems={
+            [
+              {
+                "label": "procurement-schedule",
+                "name": "procurement-schedule",
+                "rest": "procurement_schedule",
+              },
+              {
+                "label": "boq",
+                "name": "boq",
+                "rest": "boq",
+              },
+            ]
+          }
+          title="boq"
+        >
+          <Unknown />
+        </_default>,
+        "path": "project/:slug/boq",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={
+            [
+              {
+                "label": "procurement-schedule",
+                "name": "procurement-schedule",
+                "rest": "procurement_schedule",
+              },
+              {
+                "label": "boq",
+                "name": "boq",
+                "rest": "boq",
+              },
+            ]
+          }
+          title="boq"
+        >
+          <Unknown />
+        </_default>,
+        "path": "project/:slug/boq/:tid",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={
+            [
+              {
+                "label": "quotes-tender-analysis",
+                "name": "quotes-tender-analysis",
+                "rest": "quotes_tender",
+              },
+              {
+                "label": "ta-quotes-comparison",
+                "name": "ta-quotes-comparison",
+              },
+            ]
+          }
+        >
+          <Unknown />
+        </_default>,
+        "path": "project/:slug/boq/:tid/tender_analysis",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={
+            [
+              {
+                "label": "quotes-tender-analysis",
+                "name": "quotes-tender-analysis",
+                "rest": "quotes_tender",
+              },
+              {
+                "label": "ta-quotes-comparison",
+                "name": "ta-quotes-comparison",
+              },
+            ]
+          }
+        >
+          <Unknown />
+        </_default>,
+        "path": "project/:slug/boq/:tid/tender_analysis/summary",
+      },
+      {
+        "element": <_default
+          breadCrumbItems={
+            [
+              {
+                "label": "quotes-tender-analysis",
+                "name": "quotes-tender-analysis",
+                "rest": "quotes_tender",
+              },
+              {
+                "label": "ta-quotes-comparison",
+                "name": "ta-quotes-comparison",
+              },
+            ]
+          }
+        >
+          <Unknown />
+        </_default>,
+        "path": "project/:slug/boq/:tid/quote/:quote_id",
+      },
+    ],
+  },
+  {
+    "path": "/download-all/tender/categories/:rest",
+    "reactRouter": true,
+    "routes": [
+      {
+        "element": <Unknown />,
+        "path": "",
+      },
+    ],
+  },
+  {
+    "path": "/download-manager/:context/:documentId",
+    "reactRouter": true,
+    "routes": [
+      {
+        "element": <DownloadManager />,
+        "path": "",
+      },
+    ],
+  },
+  {
+    "path": "/download-manager/:context/:documentId/:token",
+    "reactRouter": true,
+    "routes": [
+      {
+        "element": <DownloadManager />,
+        "path": "",
+      },
+    ],
+  },
+]
+`;

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Styled Components Snapshot Tests matches snapshot for StyledButton variations 1`] = `
+<div>
+  <div>
+    <button
+      class="styled-component"
+      data-testid="clink-button"
+    >
+      Normal Button
+    </button>
+    <button
+      class="styled-component styled-component clink-button"
+      data-testid="clink-button"
+    >
+      Big Button
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Styled Components Snapshot Tests matches snapshot for StyledContainer 1`] = `
+<div
+  class="styled-component"
+  data-testid="styled-div"
+>
+  <div
+    class="breadcrumbs"
+  >
+    <div
+      class="breadcrumb-item"
+    >
+      Home
+    </div>
+  </div>
+</div>
+`;

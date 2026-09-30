@@ -1,0 +1,17 @@
+.idea/
+.vscode/
+/coverage/
+/vendor/
+/log/*
+!/logs/README.md
+.phpunit.result.cache
+db/schema_diagrams/*/*.dot
+.env
+.phplint-cache
+.php-cs-fixer.cache
+jesua.env
+composer.phar
+app/log
+node_modules
+package-lock.json
+docusign_privateKey*.key

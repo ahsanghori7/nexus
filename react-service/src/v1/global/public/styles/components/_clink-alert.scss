@@ -1,0 +1,85 @@
+@import 'react-confirm-alert/src/react-confirm-alert';
+
+.react-confirm-alert-overlay.overlay-react-confirm-alert {
+  z-index: 1051;
+
+  .react-confirm-alert-body {
+    &.custom-ui {
+      text-align: center;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      b {
+        font-weight: bold;
+      }
+
+      button {
+        outline: none;
+        background: #333;
+        border: none;
+        display: inline-block;
+        padding: 6px 18px;
+        color: #eee;
+        margin-right: 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        cursor: pointer;
+
+        &.yes {
+          background: $clink-green;
+          line-height: 20px;
+        }
+
+        &.no {
+          background: $clink-pink;
+        }
+      }
+
+      &--error {
+        h1 {
+          color: $clink-pink;
+        }
+
+        b {
+          color: $clink-black;
+        }
+      }
+
+      &--success {
+
+        h1,
+        b {
+          color: $clink-green;
+        }
+
+        button.no {
+          background-color: $clink-green;
+          height: 40px;
+          margin-top: 10px;
+          width: auto;
+          padding: 0 24px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &.alert-prequal {
+    .react-confirm-alert-body {
+      text-align: center !important;
+      min-height: initial !important;
+      min-width: initial !important;
+
+      .custom-ui__buttons {
+        display: block !important;
+
+        button {
+          background-color: $clink-red !important;
+          color: $white !important;
+        }
+      }
+    }
+  }
+}

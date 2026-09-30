@@ -1,0 +1,103 @@
+@import 'bootstrap-rewrites';
+@import 'material-ui-rewrites';
+
+/* 1. General Rules & Hacks */
+
+body,
+html {
+  min-height: 100vh;
+  height: auto;
+}
+
+// General Classes to be used
+.background-green {
+  background-color: $main-color;
+}
+
+.background-purple {
+  background-color: $sec-color;
+}
+
+.background-white {
+  background-color: #ffffff;
+}
+
+.text-green {
+  color: $main-color;
+}
+
+.positive {
+  font-weight: bold;
+  color: $clink-green;
+}
+
+.negative {
+  font-weight: bold;
+  color: $clink-red;
+}
+
+.text-purple {
+  color: $sec-color;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+// Custom Scroll
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #ffffff;
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ebe9e3;
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #808080;
+}
+/* Dropdown toggle removed */
+
+.dropdown-toggle {
+  &::after {
+    display: none;
+  }
+}
+
+body {
+  @include font-lite;
+  @include silver-gradient;
+
+  .app {
+    font-size: 0.9rem;
+    font-family: 'proxima_nova', 'sofia_pro_softlight', sans-serif;
+    background-color: $purple-lightest;
+    letter-spacing: 0.01rem;
+
+    @include full-screen;
+
+    .single-page {
+      @include full-screen;
+      position: relative;
+    }
+
+    .layout {
+      .content {
+        display: flex;
+        .elements-wrapper {
+          @include full-screen;
+          padding: 20px;
+          padding-top: 35px;
+        }
+      }
+    }
+  }
+}

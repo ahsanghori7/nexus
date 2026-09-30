@@ -1,0 +1,24 @@
+.panel-form {
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  .supply-chain {
+    width: 100%;
+    &--sector {
+      padding: 0px;
+
+      .sector-header {
+        // min-height: 125px;
+        align-items: center;
+        padding: 20px 24px;
+      }
+
+      .sector-content {
+        padding: 20px 24px;
+      }
+    }
+    &__empty {
+      min-height: 400px;
+    }
+  }
+}

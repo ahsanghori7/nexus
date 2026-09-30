@@ -1,0 +1,379 @@
+{
+  "name": "page",
+  "props": {
+    "className": "edit-document-page"
+  },
+  "children": [
+    {
+      "name": "view",
+      "props": {
+        "className": "edit-document-container"
+      },
+      "children": [
+        {
+          "name": "view",
+          "props": {
+            "editable": false
+          },
+          "children": [
+            {
+              "name": "view",
+              "type": "scheduleValuationDates",
+              "props": {
+                "className": "edit-document-table full-width table"
+              },
+              "children": [
+                {
+                  "name": "view",
+                  "type": "thead",
+                  "props": {
+                    "className": "edit-document-table-row"
+                  },
+                  "children": [
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column table-header"
+                      },
+                      "children": [
+                        "{b:Supplier/ Subcontractor Application Submission}"
+                      ]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column table-header"
+                      },
+                      "children": ["{b:Interm Valuation Date}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column table-header"
+                      },
+                      "children": ["{b:Payment Due Date}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column table-header"
+                      },
+                      "children": ["{b:Payments Notice / Certification Date}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column table-header"
+                      },
+                      "children": ["{b:Payless Notice Date}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column table-header"
+                      },
+                      "children": [
+                        "{b:Supplier/ Sub-Specialist Final Date for Payment}"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "view",
+                  "type": "row",
+                  "props": {
+                    "className": "edit-document-table-row"
+                  },
+                  "children": [
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{b:A}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{b:B}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{b:C}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{b:D}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{b:E}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{b:F}"]
+                    }
+                  ]
+                },
+                {
+                  "name": "view",
+                  "type": "row",
+                  "props": {
+                    "className": "edit-document-table-row"
+                  },
+                  "children": [
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["= B - 4 days"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": [""]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["= B + 12 days"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["= C + 5 days"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["= F - 5 days"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["= C + 14 days"]
+                    }
+                  ]
+                },
+                {
+                  "name": "view",
+                  "type": "row",
+                  "props": {
+                    "className": "edit-document-table-row"
+                  },
+                  "children": [
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{b:Clause 4.6.3}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{b:As Below}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{b:Clause 4.6.1}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{b:Clause 4.7.2}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{b:Clause 4.7.5}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{b:Clause 4.7.1}"]
+                    }
+                  ]
+                },
+                {
+                  "name": "view",
+                  "type": "row",
+                  "props": {
+                    "className": "edit-document-table-row"
+                  },
+                  "children": [
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{br}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{br}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{br}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{br}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{br}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{br}"]
+                    }
+                  ]
+                },
+                {
+                  "name": "view",
+                  "type": "row",
+                  "props": {
+                    "className": "edit-document-table-row"
+                  },
+                  "children": [
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{br}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{br}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{br}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{br}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{br}"]
+                    },
+                    {
+                      "name": "text",
+                      "type": "column",
+                      "props": {
+                        "className": "edit-document-table-column"
+                      },
+                      "children": ["{br}"]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
